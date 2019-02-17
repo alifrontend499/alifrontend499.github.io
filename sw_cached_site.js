@@ -36,6 +36,6 @@ self.addEventListener('fetch', (ev) => {
                 cache.put(ev.request, resClone)
             });
             return res;
-        }).catch(err => caches.map(e.request).then(res))
+        }).catch(err => caches.match(ev.request).then(res => res))
     )
 })
