@@ -8,3 +8,23 @@ if ('serviceWorker' in navigator) {
         })
     });
 }
+
+
+// let data = document.querySelectorAll('[action="/action_page.php"] input');
+
+// console.time("start");
+// if (data.length) {
+//         // for (const itr of data) {
+//         //     console.log(itr.value);
+//         // }
+//     // for (let i = 0; i < data.length; i++) {
+//     //     const element = data[i];
+//     //     console.log(element.value);        
+//     // }
+//     // data.forEach(elem => {
+//     //     console.log(elem.value);
+//     // });
+// } else {
+//     console.log("Not found");
+// }
+// console.timeEnd("start");
