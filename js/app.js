@@ -1,30 +1,38 @@
-// CHECKING SUPPORT
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', (ev) => {
-        navigator.serviceWorker.register("../sw_cached_site.js").then(reg => {
-            console.log(`Success`);
-        }).catch(err => {
-            console.log(err);
-        })
+$(function () {
+    // HOMEPAGE SLIDER
+    $('#homepageslider').owlCarousel({
+        items: 1,
+        nav: false,
     });
-}
 
+    // HEADER MARGIN PADDING CLASSES
+    (function () {
+        var headHeight = $('header').innerHeight();
+        $('.head-marg').css({
+            marginTop: headHeight
+        });
+        $('.head-padd').css({
+            paddingTop: headHeight
+        });
+    })();
+});
 
-// let data = document.querySelectorAll('[action="/action_page.php"] input');
+// HEADER SETTING
+(function () {
+    $(window).on('load scroll', function () {
+        var headHeight = $('header').innerHeight();
+        var headTopHeight = $('#HD_TP').innerHeight();
+        if ($(this).scrollTop() > headHeight) {
+            $('header').addClass('fixed');
+            $('#HD_TP').css({
+                marginTop: -headTopHeight
+            });
+        } else {
+            $('header').removeClass('fixed');
+            $('#HD_TP').css({
+                marginTop: 0
+            });
+        }
+    });
+})();
 
-// console.time("start");
-// if (data.length) {
-//         // for (const itr of data) {
-//         //     console.log(itr.value);
-//         // }
-//     // for (let i = 0; i < data.length; i++) {
-//     //     const element = data[i];
-//     //     console.log(element.value);        
-//     // }
-//     // data.forEach(elem => {
-//     //     console.log(elem.value);
-//     // });
-// } else {
-//     console.log("Not found");
-// }
-// console.timeEnd("start");

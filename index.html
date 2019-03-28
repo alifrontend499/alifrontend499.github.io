@@ -1,172 +1,272 @@
 <!DOCTYPE html>
-<html>
-<title>BR Architects</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="manifest" href="manifest.json">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/style.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brookside Reality</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/animatecss/css/animate.css" />
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css" />
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.theme.default.min.css" />
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="assets/rangeSlider/css/ion.rangeSlider.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <header>
+        <div id="HD_TP">
+            <div class="container">
+                <div class="HD_TP com-pad-lr d-flex align-items-center justify-content-between">
+                    <div class="LT text-center">
+                        <p>
+                            Welcome to Brookside Reality
+                        </p>
+                    </div>
+                    <div class="CT text-center">
+                        <a href="">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>(209)-123-456789</span>
+                        </a>
+                    </div>
+                    <div class="RT text-center">
+                        <a href="">
+                            Sign in / Sign up
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="HD_BM">
+            <div class="container">
+                <div class="HD_BM com-pad-lr">
+                    <nav class="navbar navbar-expand-lg navbar-light px-0">
+                        <div class="logo">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/Logo.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-        <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-        <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span>
-                <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="active">
+                                    <a class="text-uppercase" href="#">Home</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="#">Sell</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="#">buy</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="#">find an agent</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="#">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Page content -->
-    <div class="w3-content w3-padding" style="max-width:1564px">
-
-        <!-- Project Section -->
-        <div class="w3-container w3-padding-32" id="projects">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-        </div>
-
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+    <div id="wrapper" class="head-marg">
+        <!-- SLIDER -->
+        <section id="slider">
+            <div class="container-fluid px-0">
+                <div class="slider">
+                    <div class="owl-carousel owl-theme" id="homepageslider">
+                        <div class="item position-relative">
+                            <div class="img-sec">
+                                <img src="images/slider-images/brian-babb-256298-unsplash.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="caption">
+                                <div class="caption-inner">
+                                    <p class="heading text-white text-center">GET YOUR PROPERTY TODAY</p>
+                                    <div class="search-sec ">
+                                        <div class="TP">
+                                            <div class="address d-flex mb-3">
+                                                <div class="input position-relative">
+                                                    <input type="text" class="form-control rounded-0 text-uppercase"
+                                                        placeholder="Address, city or zip">
+                                                    <i class="fas fa-search position-absolute"></i>
+                                                </div>
+                                                <button class="search btn primary-bg-btn ripple text-uppercase">
+                                                    <span>search</span>
+                                                </button>
+                                            </div>
+                                            <div class="OT_OP d-flex">
+                                                <div class="select flex-grow-1 mr-3">
+                                                    <select name="" id="" class="form-control rounded-0">
+                                                        <option value="">Min price</option>
+                                                        <option value="#">
+                                                            500
+                                                        </option>
+                                                        <option value="#">
+                                                            1000
+                                                        </option>
+                                                        <option value="#">
+                                                            1000
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="select flex-grow-1 mr-3">
+                                                    <select name="" id="" class="form-control rounded-0">
+                                                        <option value="">Max price</option>
+                                                        <option value="#">
+                                                            1000
+                                                        </option>
+                                                        <option value="#">
+                                                            2000
+                                                        </option>
+                                                        <option value="#">
+                                                            2000
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="select flex-grow-1 mr-3">
+                                                    <select name="" id="" class="form-control rounded-0">
+                                                        <option value="">Beds</option>
+                                                        <option value="">Beds</option>
+                                                        <option value="">Beds</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select flex-grow-1 mr-3">
+                                                    <select name="" id="" class="form-control rounded-0">
+                                                        <option value="">Baths</option>
+                                                        <option value="">Baths</option>
+                                                        <option value="">Baths</option>
+                                                    </select>
+                                                </div>
+                                                <div class="select flex-grow-1">
+                                                    <select name="" id="" class="form-control rounded-0">
+                                                        <option value="">Property type</option>
+                                                        <option value="">Property type</option>
+                                                        <option value="">Property type</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+        </section>
+        <!-- FEATURED CATS -->
+        <section id="fet-cats" class="com-mar-tb">
+            <div class="container">
+                <div class="fet-cats com-pad-lr">
+                    <div class="row">
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img1.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        <span>Houses With</span>
+                                        Swimming <br>
+                                        Pools
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img2.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        Open <br>
+                                        Houses
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img3.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        Luxury <br>
+                                        Apartments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img4.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        Studio <br>
+                                        Apartments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img5.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        Bedroom <br>
+                                        Apartments
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner position-relative">
+                                <img src="images/featured-cats/img6.jpg" alt="" class="img-fluid">
+                                <div class="caption position-absolute h-100 w-100">
+                                    <a href="" class="text text-center">
+                                        Cozy <br>
+                                        Houses
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-                </div>
-            </div>
-        </div>
-
-        <!-- About Section -->
-        <div class="w3-container w3-padding-32" id="about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-
-        <div class="w3-row-padding w3-grayscale">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-                <h3>John Doe</h3>
-                <p class="w3-opacity">CEO & Founder</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-                <h3>Jane Doe</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-                <h3>Mike Ross</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-                <h3>Dan Star</h3>
-                <p class="w3-opacity">Architect</p>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="w3-container w3-padding-32" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-            <p>Lets get in touch and talk about your next project.</p>
-            <form action="/action_page.php" target="_blank">
-                <input class="w3-input w3-border" type="text" value="Name" required name="Name">
-                <input class="w3-input w3-section w3-border" type="text" value="Email" required name="Email">
-                <input class="w3-input w3-section w3-border" type="text" value="Subject" required name="Subject">
-                <input class="w3-input w3-section w3-border" type="text" value="Comment" required name="Comment">
-                <button class="w3-button w3-black w3-section" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-            </form>
-        </div>
-
-        <!-- Image of location/map -->
-        <div class="w3-container">
-            <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-        </div>
-
-        <!-- End page content -->
+        </section>
     </div>
 
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-        <p>Powered by <a href="#home" title="BR Architects" class="w3-hover-text-green">BR Architects</a></p>
-    </footer>
 
-
+    <!-- JQUERY -->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <!-- POPPER -->
+    <script src="assets/bootstrap/js/popper/popper.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owlCarousel/js/owl.carousel.min.js"></script>
+    <!-- IMAGE ZOOMER -->
+    <script src="assets/image-zoomer/jquery.elevateZoom-3.0.8.min.js"></script>
+    <!-- RANGE SLIDER -->
+    <script src="assets/rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- MAIN JS -->
     <script src="js/app.js"></script>
 </body>
 
