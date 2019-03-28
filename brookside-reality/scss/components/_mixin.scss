@@ -1,0 +1,15 @@
+@mixin min_width($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin max_width($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin transition($time: .3s) {
+    transition: $time;
+}

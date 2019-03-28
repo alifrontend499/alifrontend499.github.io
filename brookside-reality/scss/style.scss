@@ -1,0 +1,283 @@
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixin";
+@import "components/common";
+
+body {
+    font-family: "itc-avant-book", sans-serif;
+}
+
+// HEADER CSS
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    background: #fff;
+
+    #HD_TP {
+        background: $primary-color;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        @include transition(.4s);
+    }
+
+    .HD_TP {
+        padding: 10px 0;
+
+        p,
+        a {
+            font: 13px "itc-avant-demi", sans-serif;
+            color: #111;
+            display: block;
+
+            i {
+                font-size: 25px;
+                vertical-align: middle;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .HD_BM {
+        .navbar {
+            .logo {
+                img {
+                    width: 200px;
+                    @include transition(.4s);
+                }
+            }
+        }
+
+        .navbar-nav {
+            >li {
+                font: 17px "itc-avant-book", sans-serif;
+                padding: 0 15px;
+                @include transition(.4s);
+
+                >a {
+                    font-weight: 600;
+                    padding: 0 !important;
+                    color: #444;
+                    text-decoration: none;
+                }
+
+                &:hover,
+                &.active {
+                    >a {
+                        color: #000;
+                    }
+                }
+
+                @include min_width(992px) {
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // HEADER FIXED
+    &.fixed {
+        // #HD_TP {
+        //     margin-top: -45px;
+        // }
+
+        -webkit-box-shadow: 0px 1px 5px #333;
+        box-shadow: 0px 1px 5px #333;
+
+        .HD_BM {
+            .navbar {
+                .logo {
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        .navbar-nav {
+            >li {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+// SLIDER
+.slider {
+
+    .item {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+
+            .heading {
+                font: 65px "itc-avant-book", sans-serif;
+                margin-bottom: 40px;
+            }
+
+            .search-sec {
+                padding: 20px;
+
+                background: rgba(0, 0, 0, 0.3);
+                margin: 0 auto;
+
+                @include min_width(992px) {
+                    width: 60%;
+                }
+
+                input:not([type="radio"]),
+                input:not([type="checkbox"]),
+                select {
+                    border: none;
+                    font-family: "itc-avant-book", sans-serif;
+                    color: #000;
+                }
+
+                .address {
+
+                    .input input,
+                    .btn {
+                        height: 60px;
+                        font-family: "itc-avant-book", sans-serif;
+                    }
+
+                    .input {
+                        width: calc(100% - 150px);
+
+                        input {
+                            padding-left: 55px;
+                            font-size: 20px;
+
+                        }
+
+                        i {
+                            top: 50%;
+                            transform: translatey(-50%);
+                            left: 9px;
+                            font-size: 32px;
+                            color: #111;
+                        }
+                    }
+
+                    .btn {
+                        width: 150px;
+                        font-size: 23px;
+                    }
+                }
+
+                .OT_OP {
+                    @include min_width(992px) {
+                        >.select:last-child {
+                            width: 150px;
+                        }
+                    }
+
+                    input:not([type="radio"]),
+                    input:not([type="checkbox"]),
+                    select {
+                        height: 45px;
+                        padding: 2px 6px;
+                        width: 100%;
+                        font-size: 16px;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// FEATURED CATS
+.fet-cats {
+
+    .item {
+        padding: 0 15px 30px;
+        overflow: hidden;
+
+        >.inner {
+            overflow: hidden;
+
+            img {
+                @include transition;
+            }
+
+            &:hover {
+                img {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+            }
+
+            .caption {
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+
+                a {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                    color: #fff;
+                    font-size: 33px;
+                    line-height: 50px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    @include transition;
+                    text-decoration: none;
+
+                    span {
+                        font-size: 17px;
+                        font-weight: normal;
+                    }
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        height: 2px;
+                        width: 0;
+                        background: #fff;
+                        margin: 10px auto 0;
+                        @include transition(.4s);
+                    }
+                }
+
+                &:hover {
+                    a {
+                        top: calc(50% - 20px);
+
+                        &::after {
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
