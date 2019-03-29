@@ -1,0 +1,199 @@
+@media (max-width: 991px) {
+    .navbar-toggler {
+        padding: 2px 5px;
+    }
+
+    .navbar-nav {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 9px;
+        padding-top: 4px;
+    }
+
+    header .HD_BM .navbar-nav>li {
+        padding: 7px 10px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    header .HD_TP p,
+    header .HD_TP a {
+        font-size: 12px;
+    }
+
+    header .HD_TP p i,
+    header .HD_TP a i {
+        display: none;
+    }
+
+    header .HD_BM .navbar .logo img {
+        width: 140px;
+
+    }
+
+    .slider .item .caption .heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .slider .item .caption .search-sec {
+        padding: 10px;
+
+    }
+
+    .slider .item .caption .search-sec .address .input {
+        width: calc(100% - 100px);
+    }
+
+
+    .slider .item .caption .search-sec .address .btn {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .slider .item .caption .search-sec .address .input input {
+        padding-left: 14px;
+        font-size: 11px;
+    }
+
+    .slider .item .caption .search-sec .address .input i {
+        display: none;
+    }
+
+    .slider .item .caption .search-sec .address .input input,
+    .slider .item .caption .search-sec .address .btn {
+        height: 40px;
+    }
+
+    .slider .item .caption .search-sec .OT_OP input:not([type="radio"]),
+    .slider .item .caption .search-sec .OT_OP input:not([type="checkbox"]),
+    .slider .item .caption .search-sec .OT_OP select {
+        height: 35px;
+        font-size: 11px;
+
+    }
+
+    .slider .item .caption .search-sec {
+        width: calc(100% - 20px);
+    }
+
+    .fet-cats .item>.inner .caption a {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .slider .item .caption .mb-3 {
+        margin-bottom: 5px !important;
+    }
+
+    .slider .item .caption .mr-3 {
+        margin-right: 5px !important;
+    }
+
+    .buyORsale .head {
+        font-size: 20px;
+    }
+
+
+    .buyORsale .underline-btn {
+        font-size: 11px;
+        padding: 8px 10px;
+        width: 100%;
+    }
+
+    .underline-btn {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .site-heading {
+        font-size: 30px;
+    }
+
+    .featured_list .more-properties .underline-btn {
+        font-size: 16px;
+        padding: 11px 10px 10px;
+    }
+
+    .ft-bottom {
+        padding: 7px 0 4px;
+    }
+
+    .ft-bottom p {
+        font-size: 13px;
+    }
+
+    .ft-top>.col-12:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .ft-top .footer-ul>li {
+        display: inline-block;
+        margin-bottom: 0 !important;
+    }
+
+    .ft-top .footer-ul>li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .ft-top .ft-head {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .slider .item .caption .search-sec {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header .HD_TP {
+        padding: 7px 0;
+    }
+
+    .underline-btn {
+        font-size: 16px;
+        padding: 10px 19px;
+    }
+
+    .slider .item .caption .heading {
+        font-size: 45px;
+    }
+
+    .fet-cats .item>.inner .caption a {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .featured_list .more-properties .underline-btn {
+        font-size: 16px;
+        padding: 12px 12px 11px;
+    }
+
+    .featured_list .item .text-sec .heading {
+        font-size: 17px;
+    }
+
+    .featured_list .item .text-sec .price {
+        font-size: 21px;
+    }
+
+    .site-heading {
+        font-size: 20px;
+    }
+
+    .ft-top .one p.d-flex {
+        font-size: 13px;
+    }
+
+    .ft-top .one p.d-flex i {
+        font-size: 17px;
+        margin-right: 10px;
+    }
+
+    .ft-bottom p {
+        font-size: 18px;
+    }
+}

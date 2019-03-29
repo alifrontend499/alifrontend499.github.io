@@ -1,3 +1,4 @@
+// ITC AVANT BOLD
 @font-face {
     font-family: "itc-avant-bold";
     src: url('../fonts/itc-avant-garde-gothic-std/itc-avant-garde-gothic-std-bold.otf') format('opentype');
@@ -21,4 +22,30 @@
 @font-face {
     font-family: "itc-avant-medium";
     src: url('../fonts/itc-avant-garde-gothic-std/itc-avant-garde-gothic-std-medium-condensed.otf') format('opentype');
+}
+
+// POPINS
+@font-face {
+    font-family: "popins-light";
+    src: url('../../fonts/poppins/Poppins-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "popins-regular";
+    src: url('../../fonts/poppins/Poppins-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "popins-medium";
+    src: url('../../fonts/poppins/Poppins-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "popins-bold";
+    src: url('../../fonts/poppins/Poppins-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "popins-extrabold";
+    src: url('../../fonts/poppins/Poppins-ExtraBold.otf') format('opentype');
 }
