@@ -140,6 +140,9 @@
     .ft-top .ft-head {
         margin-bottom: 10px;
     }
+    .ST_Banner .caption .cap-inner p {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -195,5 +198,8 @@
 
     .ft-bottom p {
         font-size: 18px;
+    }
+    .ST_Banner .caption .cap-inner p {
+        font-size: 30px;
     }
 }

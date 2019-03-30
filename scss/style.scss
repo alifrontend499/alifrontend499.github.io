@@ -3,13 +3,11 @@
 @import "components/variables";
 @import "components/mixin";
 @import "components/common";
-
 body {
     font-family: "itc-avant-book", sans-serif;
 }
 
 // HEADER CSS
-
 header {
     position: fixed;
     top: 0;
@@ -17,23 +15,19 @@ header {
     z-index: 12;
     width: 100%;
     background: #fff;
-
     #HD_TP {
         background: $primary-color;
         -webkit-transform: translatey(0);
         transform: translatey(0);
         @include transition(.4s);
     }
-
     .HD_TP {
         padding: 10px 0;
-
         p,
         a {
             font: 13px "itc-avant-demi", sans-serif;
             color: #111;
             display: block;
-
             i {
                 font-size: 25px;
                 vertical-align: middle;
@@ -41,7 +35,6 @@ header {
             }
         }
     }
-
     .HD_BM {
         .navbar {
             .logo {
@@ -49,36 +42,30 @@ header {
                     @include min_width(768px) {
                         width: 150px;
                     }
-
                     @include min_width(992px) {
                         width: 200px;
                     }
-
                     @include transition(.4s);
                 }
             }
         }
-
         .navbar-nav {
             >li {
                 font: 17px "itc-avant-book", sans-serif;
                 padding: 0 15px;
                 @include transition(.4s);
-
                 >a {
                     font-weight: 600;
                     padding: 0 !important;
                     color: #444;
                     text-decoration: none;
                 }
-
                 &:hover,
                 &.active {
                     >a {
                         color: #000;
                     }
                 }
-
                 @include min_width(992px) {
                     &:last-child {
                         padding-right: 0;
@@ -86,17 +73,13 @@ header {
                 }
             }
         }
-    }
-
-    // HEADER FIXED
+    } // HEADER FIXED
     &.fixed {
         // #HD_TP {
         //     margin-top: -45px;
         // }
-
         -webkit-box-shadow: 0px 1px 5px #333;
         box-shadow: 0px 1px 5px #333;
-
         .HD_BM {
             .navbar {
                 .logo {
@@ -106,7 +89,6 @@ header {
                 }
             }
         }
-
         .navbar-nav {
             >li {
                 font-size: 13px;
@@ -115,10 +97,8 @@ header {
     }
 }
 
-
 // SLIDER
 .slider {
-
     .item {
         &::after {
             content: '';
@@ -129,7 +109,6 @@ header {
             width: 100%;
             background-color: rgba(0, 0, 0, 0.4);
         }
-
         .caption {
             position: absolute;
             top: 50%;
@@ -138,30 +117,23 @@ header {
             transform: translate(-50%, -50%);
             z-index: 1;
             width: 100%;
-
             .heading {
                 font: 65px "itc-avant-book", sans-serif;
                 margin-bottom: 20px;
             }
-
             .search-sec {
                 padding: 20px;
-
                 background: rgba(0, 0, 0, 0.3);
                 margin: 0 auto;
-
                 @include min_width(768px) {
                     width: 85%;
                 }
-
                 @include min_width(992px) {
                     width: 80%;
                 }
-
                 @include min_width(1200px) {
                     width: 60%;
                 }
-
                 input:not([type="radio"]),
                 input:not([type="checkbox"]),
                 select {
@@ -169,24 +141,18 @@ header {
                     font-family: "itc-avant-book", sans-serif;
                     color: #000;
                 }
-
                 .address {
-
                     .input input,
                     .btn {
                         height: 60px;
                         font-family: "itc-avant-book", sans-serif;
                     }
-
                     .input {
                         width: calc(100% - 150px);
-
                         input {
                             padding-left: 55px;
                             font-size: 20px;
-
                         }
-
                         i {
                             top: 50%;
                             transform: translatey(-50%);
@@ -195,20 +161,17 @@ header {
                             color: #111;
                         }
                     }
-
                     .btn {
                         width: 150px;
                         font-size: 23px;
                     }
                 }
-
                 .OT_OP {
                     @include min_width(992px) {
                         >.select:last-child {
                             width: 150px;
                         }
                     }
-
                     input:not([type="radio"]),
                     input:not([type="checkbox"]),
                     select {
@@ -216,50 +179,40 @@ header {
                         padding: 2px 6px;
                         width: 100%;
                         font-size: 16px;
-
                     }
                 }
             }
         }
-
     }
 }
 
 // FEATURED CATS
 .fet-cats {
-
     .item {
         padding: 0 15px 30px;
         overflow: hidden;
-
         @include min_width(768px) {
-
             &:last-child,
             &:nth-last-child(2),
             &:nth-last-child(3) {
                 padding-bottom: 0;
             }
         }
-
         >.inner {
             overflow: hidden;
-
             img {
                 @include transition;
             }
-
             &:hover {
                 img {
                     -webkit-transform: scale(1.1);
                     transform: scale(1.1);
                 }
             }
-
             .caption {
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, 0.5);
-
                 a {
                     position: absolute;
                     top: 50%;
@@ -274,12 +227,10 @@ header {
                     letter-spacing: 1px;
                     @include transition;
                     text-decoration: none;
-
                     span {
                         font-size: 17px;
                         font-weight: normal;
                     }
-
                     &::after {
                         content: '';
                         display: block;
@@ -290,18 +241,15 @@ header {
                         @include transition(.4s);
                     }
                 }
-
                 &:hover {
                     a {
                         top: calc(50% - 20px);
-
                         &::after {
                             width: 90px;
                         }
                     }
                 }
             }
-
         }
     }
 }
@@ -310,7 +258,6 @@ header {
 #buyORsale {
     background: transparent url('../images/buy-or-sell-bg.jpg') no-repeat center / cover;
     position: relative;
-
     &::after {
         content: '';
         height: 100%;
@@ -320,13 +267,10 @@ header {
         left: 0;
         background: rgba(0, 0, 0, 0.4);
     }
-
     padding: 50px 0;
-
     @include min_width(768px) {
         padding: 70px 0;
     }
-
     @include min_width(992px) {
         padding: 140px 0;
     }
@@ -335,15 +279,12 @@ header {
 .buyORsale {
     position: relative;
     z-index: 1;
-
     .head {
         font: 48px "itc-avant-demi", sans-serif;
         margin-bottom: 30px;
-
         @include min_width(768px) {
             margin-bottom: 70px;
         }
-
         @include min_width(992px) {
             margin-bottom: 100px;
         }
@@ -356,33 +297,26 @@ header {
         margin-top: 30px;
         margin-left: -5px;
         width: calc(100% + (5px * 2));
-
         @include min_width(992px) {
             margin-top: 70px;
             margin-left: -22px;
             width: calc(100% + (22px * 2));
         }
-
         .item {
             padding: 0 5px 10px;
-
             @include min_width(992px) {
                 padding: 0 22px 44px;
             }
-
             .text-sec {
                 background-color: #f7f5f5;
                 padding: 20px 15px;
             }
         }
     }
-
     .item {
         padding: 0 22px 44px;
-
         >.inner {
             @include transition;
-
             @include min_width(992px) {
                 &:hover {
                     -webkit-box-shadow: 0px 0px 5px #d8d8d8;
@@ -390,54 +324,42 @@ header {
                 }
             }
         }
-
         .text-sec {
             background-color: #f7f5f5;
             padding: 20px 15px;
-
             .address {
                 font: 14px "itc-avant-demi", sans-serif;
                 color: #000;
                 margin-bottom: 10px;
-
                 i {
                     font-size: 25px;
                     margin-right: 15px;
                     padding-top: 5px;
                 }
             }
-
             .heading {
                 font: 23px "itc-avant-demi", sans-serif;
                 margin-bottom: 10px;
-
             }
-
             .price {
                 font: 27px "popins-bold", sans-serif;
                 margin-bottom: 20px;
-
             }
-
             .description {
                 font-size: 13px;
                 line-height: 28px;
                 color: #000;
                 margin-bottom: 15px;
             }
-
         }
-
         &:hover {
             .text-sec {
                 // background-color: #ececec;
             }
         }
     }
-
     .more-properties {
         margin-top: 30px;
-
         .underline-btn {
             font-size: 22px;
             padding: 13px 12px 12px;
@@ -452,7 +374,6 @@ footer {}
     background-color: #1a1a1a;
     padding-top: 35px;
     padding-bottom: 35px;
-
     @include min_width(992px) {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -465,20 +386,17 @@ footer {}
         margin-bottom: 20px;
         color: #fff;
     }
-
     .footer-ul {
         >li {
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-
             >a {
                 color: #d4d4d4;
                 text-decoration: none;
                 font-weight: 100;
                 font-size: 14px;
                 @include transition;
-
                 &:hover {
                     text-decoration: underline;
                     margin-left: 3px;
@@ -486,58 +404,46 @@ footer {}
             }
         }
     }
-
     .one {
         img {
             width: 70px;
             margin-bottom: 20px;
-
             @include min_width(992px) {
                 width: 130px;
             }
         }
-
         p.d-flex {
             color: #d4d4d4;
             font-size: 15px;
-
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-
             @include min_width(992px) {
                 &:not(:last-child) {
                     margin-bottom: 20px;
                 }
-
             }
-
             i {
                 font-size: 25px;
                 margin-right: 15px;
             }
-
             a {
                 color: #d4d4d4;
                 text-decoration: none;
             }
         }
     }
-
     .social-links {
         >li {
             &:not(:last-child) {
                 padding-right: 21px;
             }
-
             >a {
                 color: $primary-color;
                 font-size: 30px;
-
                 i {
                     @include transition(.1s);
                 }
-
                 &:hover {
                     i {
                         transform: scale(1.1);
@@ -546,40 +452,31 @@ footer {}
             }
         }
     }
-
     .newsletter {
         >p {
             font-size: 16px;
             color: #fff;
             margin: 14px 0;
         }
-
         >.d-flex {
-
             input,
             .btn {
                 height: 45px;
             }
-
             input {
                 width: calc(100% - 50px);
                 border: 1px solid $primary-color;
                 font: 18px "itc-avant-demi", sans-serif;
                 color: #000;
-
             }
-
             .btn {
                 width: 50px;
-
                 background-color: $primary-color;
                 border: 1px solid $primary-color;
                 color: #fff;
                 @include transition;
-
                 &:hover {
-                    background-color: #000;
-                    // color: #000;
+                    background-color: #000; // color: #000;
                 }
             }
         }
@@ -588,7 +485,6 @@ footer {}
 
 .ft-bottom {
     padding: 10px 0;
-
     p {
         font-size: 21px;
         color: #000;
@@ -600,7 +496,6 @@ footer {}
     .caption {
         top: 0;
         left: 0;
-
         &::after {
             content: '';
             height: 100%;
@@ -610,11 +505,9 @@ footer {}
             left: 0;
             background: rgba(0, 0, 0, 0.5);
         }
-
         .cap-inner {
             z-index: 1;
             position: relative;
-
             p {
                 font: 50px "itc-avant-demi", sans-serif;
             }
@@ -624,74 +517,69 @@ footer {}
 
 // CONTACT US SECTIONS
 .contact-us {
-
     .contact-form {
         input {
             height: 45px;
         }
-
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-
         @include min_width(768px) {
             margin-top: 60px;
             width: 80%;
         }
-
         @include min_width(1200px) {
             width: 60%;
         }
-
         .st-form {
             @include min_width(768px) {
                 &.left {
                     padding-right: 20px;
                 }
-
                 &.right {
                     padding-left: 20px;
                 }
-
                 input {
                     height: 50px;
                 }
             }
         }
     }
-
     .contact-details {
         margin-top: 20px;
-
         @include min_width(768px) {
             margin-top: 30px;
         }
-
         p.d-flex {
             color: #d4d4d4;
             font: 17px "itc-avant-demi", sans-serif;
-
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-
             @include min_width(992px) {
                 font-size: 20px;
                 &:not(:last-child) {
                     margin-bottom: 20px;
                 }
-
             }
-
             i {
                 font-size: 25px;
                 margin-right: 15px;
             }
-
             a {
                 color: #000;
                 text-decoration: none;
             }
         }
+    }
+}
+
+// FIND-AGENT
+.find-agent {
+    .description {
+        font-size: 14.5px;
+        line-height: 34px;
+        margin-top: 30px;
+        color: #000;
     }
 }
