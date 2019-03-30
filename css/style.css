@@ -49,10 +49,24 @@ h1, h1, h3, h4, h5, h6, p, ul { margin-bottom: 0; }
 .underline-btn.primary:hover, .underline-btn.primary:focus, .underline-btn.primary:active { color: #fff !important; }
 .underline-btn.primary:after { background-color: #ba8a4d; }
 
+.site-btn { background-color: #ba8a4d; color: #fff; font-size: 20px; text-transform: capitalize; }
+.site-btn:hover { background-color: #000; }
+
 .site-heading { color: #ba8a4d; font: 45px "itc-avant-book", sans-serif; margin-bottom: 20px; }
+.site-heading.small { font-size: 30px; }
+.site-heading.small span { font-size: 16px; color: #000; margin-top: 5px; }
 
 .ST_bold-text { font: 17px "popins-bold", sans-serif; color: #ba8a4d; transition: 0.3s; }
 .ST_bold-text:hover { color: #000; }
+
+.clear-parent:after { content: ''; display: block; clear: both; }
+
+.st-form input:not([type="radio"]), .st-form input:not([type="checkbox"]), .st-form select, .st-form textarea { border-radius: 0; border: 2px solid #bdbdbd; font-size: 16px; }
+.st-form input:not([type="radio"]), .st-form input:not([type="checkbox"]), .st-form select { height: 40px; }
+.st-form label { font-size: 18px; color: #000; margin-bottom: 10px; }
+@media (min-width: 768px) { .st-form.left, .st-form.right { float: left; width: 50%; }
+  .st-form.left { padding-right: .5em; }
+  .st-form.right { padding-left: .5em; } }
 
 body { font-family: "itc-avant-book", sans-serif; }
 
@@ -153,5 +167,26 @@ header.fixed .navbar-nav > li { font-size: 13px; }
 
 .ft-bottom { padding: 10px 0; }
 .ft-bottom p { font-size: 21px; color: #000; }
+
+.ST_Banner .caption { top: 0; left: 0; }
+.ST_Banner .caption::after { content: ''; height: 100%; width: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.5); }
+.ST_Banner .caption .cap-inner { z-index: 1; position: relative; }
+.ST_Banner .caption .cap-inner p { font: 50px "itc-avant-demi", sans-serif; }
+
+.contact-us .contact-form { margin-top: 20px; margin-left: auto; margin-right: auto; }
+.contact-us .contact-form input { height: 45px; }
+@media (min-width: 768px) { .contact-us .contact-form { margin-top: 60px; width: 80%; } }
+@media (min-width: 1200px) { .contact-us .contact-form { width: 60%; } }
+@media (min-width: 768px) { .contact-us .contact-form .st-form.left { padding-right: 20px; }
+  .contact-us .contact-form .st-form.right { padding-left: 20px; }
+  .contact-us .contact-form .st-form input { height: 50px; } }
+.contact-us .contact-details { margin-top: 20px; }
+@media (min-width: 768px) { .contact-us .contact-details { margin-top: 30px; } }
+.contact-us .contact-details p.d-flex { color: #d4d4d4; font: 17px "itc-avant-demi", sans-serif; }
+.contact-us .contact-details p.d-flex:not(:last-child) { margin-bottom: 10px; }
+@media (min-width: 992px) { .contact-us .contact-details p.d-flex { font-size: 20px; }
+  .contact-us .contact-details p.d-flex:not(:last-child) { margin-bottom: 20px; } }
+.contact-us .contact-details p.d-flex i { font-size: 25px; margin-right: 15px; }
+.contact-us .contact-details p.d-flex a { color: #000; text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

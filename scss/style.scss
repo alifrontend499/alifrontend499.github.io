@@ -517,12 +517,6 @@ footer {}
                 margin-right: 15px;
             }
 
-            &:hover {
-                i {
-                    // font-size: 26px;
-                }
-            }
-
             a {
                 color: #d4d4d4;
                 text-decoration: none;
@@ -598,5 +592,106 @@ footer {}
     p {
         font-size: 21px;
         color: #000;
+    }
+}
+
+// BANNER
+.ST_Banner {
+    .caption {
+        top: 0;
+        left: 0;
+
+        &::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .cap-inner {
+            z-index: 1;
+            position: relative;
+
+            p {
+                font: 50px "itc-avant-demi", sans-serif;
+            }
+        }
+    }
+}
+
+// CONTACT US SECTIONS
+.contact-us {
+
+    .contact-form {
+        input {
+            height: 45px;
+        }
+
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include min_width(768px) {
+            margin-top: 60px;
+            width: 80%;
+        }
+
+        @include min_width(1200px) {
+            width: 60%;
+        }
+
+        .st-form {
+            @include min_width(768px) {
+                &.left {
+                    padding-right: 20px;
+                }
+
+                &.right {
+                    padding-left: 20px;
+                }
+
+                input {
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    .contact-details {
+        margin-top: 20px;
+
+        @include min_width(768px) {
+            margin-top: 30px;
+        }
+
+        p.d-flex {
+            color: #d4d4d4;
+            font: 17px "itc-avant-demi", sans-serif;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            @include min_width(992px) {
+                font-size: 20px;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            i {
+                font-size: 25px;
+                margin-right: 15px;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
     }
 }

@@ -150,11 +150,32 @@
     }
 }
 
+.site-btn {
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: #000;
+    }
+}
+
 
 .site-heading {
     color: $primary-color;
     font: 45px "itc-avant-book", sans-serif;
     margin-bottom: 20px;
+
+    &.small {
+        font-size: 30px;
+
+        span {
+            font-size: 16px;
+            color: #000;
+            margin-top: 5px;
+        }
+    }
 }
 
 .ST_bold-text {
@@ -164,5 +185,53 @@
 
     &:hover {
         color: #000;
+    }
+}
+
+.clear-parent:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+// SITE FORM
+.st-form {
+
+    input:not([type="radio"]),
+    input:not([type="checkbox"]),
+    select,
+    textarea {
+        border-radius: 0;
+        border: 2px solid #bdbdbd;
+        font-size: 16px;
+    }
+
+    input:not([type="radio"]),
+    input:not([type="checkbox"]),
+    select {
+        height: 40px;
+    }
+
+    label {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    @include min_width(768px) {
+
+        &.left,
+        &.right {
+            float: left;
+            width: 50%;
+        }
+
+        &.left {
+            padding-right: .5em;
+        }
+
+        &.right {
+            padding-left: .5em;
+        }
     }
 }
