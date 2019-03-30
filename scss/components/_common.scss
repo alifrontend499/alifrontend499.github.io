@@ -235,3 +235,174 @@
         }
     }
 }
+
+.heading-linethrough {
+    font-size: 33px;
+    line-height: 33px;
+
+    span {
+        position: relative;
+        z-index: 1;
+        background-color: #fff;
+        padding: 0 11px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translatey(-50%);
+        transform: translatey(-50%);
+    }
+}
+
+// MODAL-STYLING 
+.modal-dialog {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    @include max_width(767px) {
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+.modal-content {
+    border-radius: 0 !important;
+    border-radius: 0 !important;
+    min-height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 100%;
+    border: 2px solid #333;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 0 0px 1px;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    @include transition;
+    z-index: 1;
+
+    &:hover {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+}
+
+// SITE FORM
+
+
+// LOGIN REGISTER FORM
+.loginregisterform {
+    .heading {
+        font: 22px "itc-avant-demi", sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .form-main {
+        @include min_width(768px) {
+            width: 70%;
+            margin: 30px auto 0;
+        }
+
+        .st-form {
+
+            input:not([type="radio"]),
+            input:not([type="checkbox"]),
+            select {
+                height: 45px;
+            }
+        }
+
+        .validation {
+            font-size: 11px;
+            color: #000;
+        }
+
+        .forgot-password {
+            margin-top: -10px;
+
+            a {
+                font-size: 13px;
+
+            }
+        }
+
+        .submit-btn {
+            margin: 30px 0 20px;
+
+            .button {
+                padding: 4px 18px;
+                font-size: 17px;
+            }
+        }
+
+        .options {
+            p {
+                font-size: 17px;
+                color: #000;
+
+                &.orr {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .socail-options {
+            margin: 15px 0;
+
+            >li {
+                padding: 0 15px;
+
+                >a {
+                    height: 45px;
+                    width: 45px;
+                    background-color: lightgray;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 25px;
+
+                    &.facebook {
+                        background-color: #3c5a9a;
+                    }
+
+                    &.google {
+                        background-color: #dc4e40;
+                    }
+
+                    @include transition;
+
+                    &:hover {
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .account-related {
+            font-size: 15px;
+        }
+    }
+}

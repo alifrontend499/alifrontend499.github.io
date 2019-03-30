@@ -74,13 +74,31 @@
 
     }
 
+    .fet-cats>.row {
+        padding: 0 10px;
+    }
+
     .slider .item .caption .search-sec {
         width: calc(100% - 20px);
     }
 
+    .fet-cats .item {
+        padding: 0 5px 10px;
+        overflow: hidden;
+    }
+
+    .fet-cats .item:nth-last-child(1),
+    .fet-cats .item:nth-last-child(2) {
+        padding-bottom: 0;
+    }
+
+    .fet-cats .item>.inner .caption a span {
+        font-size: 13px;
+    }
+
     .fet-cats .item>.inner .caption a {
-        font-size: 23px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 22px;
     }
 
     .slider .item .caption .mb-3 {
@@ -108,7 +126,8 @@
     }
 
     .site-heading {
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-size: 27px;
     }
 
     .featured_list .more-properties .underline-btn {
@@ -140,8 +159,42 @@
     .ft-top .ft-head {
         margin-bottom: 10px;
     }
+
     .ST_Banner .caption .cap-inner p {
         font-size: 14px;
+    }
+
+    .find-agent .search-agent .address .input input,
+    .find-agent .search-agent .address .btn {
+        height: 45px;
+    }
+
+    .other-option>.LT {
+        padding: 0;
+    }
+
+    .other-option .tags>li {
+        padding: 0 5px 5px 0;
+    }
+
+    .other-option .tags>li>a {
+        border-color: #efefef;
+        padding: 7px 10px 7px;
+        font-size: 14px;
+    }
+
+    .heading-linethrough {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .heading-linethrough::after {
+        height: 1px;
+    }
+
+    .find-agent .description {
+        font-size: 14px;
+        line-height: 25px;
     }
 }
 
@@ -199,6 +252,7 @@
     .ft-bottom p {
         font-size: 18px;
     }
+
     .ST_Banner .caption .cap-inner p {
         font-size: 30px;
     }
