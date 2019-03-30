@@ -72,10 +72,10 @@
                                 <li class="">
                                     <a class="text-uppercase" href="#">Sell</a>
                                 </li>
-                                <li class="">
+                                <li class="active">
                                     <a class="text-uppercase" href="buy.html">buy</a>
                                 </li>
-                                <li class="active">
+                                <li class="">
                                     <a class="text-uppercase" href="find-agent.html">find an agent</a>
                                 </li>
                                 <li class="">
@@ -195,7 +195,7 @@
                         <div class="form-main">
                             <div class="form-group st-form">
                                 <label class="text-capitalize">Account name</label>
-                                <select name="" id="" class="form-control rounded-0">
+                                <select name="" id="" class="form-control rounded-0 site-select">
                                     <option value="">Owner</option>
                                     <option value="">Buyer</option>
                                 </select>
@@ -214,7 +214,7 @@
                             </div>
                             <div class="form-group st-form">
                                 <label class="text-capitalize">date of month</label>
-                                <select name="" id="" class="form-control rounded-0">
+                                <select name="" id="" class="form-control rounded-0 site-select">
                                     <option value="">DD/MM/YYYY</option>
                                 </select>
                             </div>
@@ -224,7 +224,7 @@
                             </div>
                             <div class="form-group st-form">
                                 <label class="text-capitalize">gender</label>
-                                <select name="" id="" class="form-control rounded-0">
+                                <select name="" id="" class="form-control rounded-0 site-select">
                                     <option value="">Male</option>
                                     <option value="">Female</option>
                                 </select>
@@ -283,121 +283,306 @@
                     </div>
                     <div class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
                         <div class="cap-inner">
-                            <p class="name text-white text-capitalize">agent</p>
+                            <p class="name text-white text-capitalize">buy</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTATC MAIN -->
-        <section id="find-agent" class="com-mar-tb">
+        <!-- ADVANCE SEARCH -->
+        <section id="advance-search" class="com-mar-tb">
             <div class="container">
-                <div class="find-agent com-pad-lr">
-                    <p class="site-heading text-center">
-                        Find a Real Estate Agent
+                <div class="advance-search com-pad-lr">
+                    <p class="site-heading-bold small text-center">
+                        <b class="">ADVANCED PROPERTY SEARCH</b>
+                        <span class="d-block primary-color">
+                            Search your desired propert here
+                        </span>
                     </p>
-                    <p class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including
-                        versions of Lorem Ipsum.
+                    <div class="search-form">
+                        <div class="d-flex-wrap">
+                            <div class="col-12 form-group st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Select City
+                                    </option>
+                                    <option value="">
+                                        Select City
+                                    </option>
+                                    <option value="">
+                                        Select City
+                                    </option>
+                                    <option value="">
+                                        Select City
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Search Type
+                                    </option>
+                                    <option value="">
+                                        Search Type
+                                    </option>
+                                    <option value="">
+                                        Search Type
+                                    </option>
+                                    <option value="">
+                                        Search Type
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Bedrooms
+                                    </option>
+                                    <option value="">
+                                        Bedrooms
+                                    </option>
+                                    <option value="">
+                                        Bedrooms
+                                    </option>
+                                    <option value="">
+                                        Bedrooms
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Bathrooms
+                                    </option>
+                                    <option value="">
+                                        Bathrooms
+                                    </option>
+                                    <option value="">
+                                        Bathrooms
+                                    </option>
+                                    <option value="">
+                                        Bathrooms
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Area (sqft)
+                                    </option>
+                                    <option value="">
+                                        Area (sqft)
+                                    </option>
+                                    <option value="">
+                                        Area (sqft)
+                                    </option>
+                                    <option value="">
+                                        Area (sqft)
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Min. Price
+                                    </option>
+                                    <option value="">
+                                        Min. Price
+                                    </option>
+                                    <option value="">
+                                        Min. Price
+                                    </option>
+                                    <option value="">
+                                        Min. Price
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group col-12 col-md-4 st-form">
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">
+                                        Max. Price
+                                    </option>
+                                    <option value="">
+                                        Max. Price
+                                    </option>
+                                    <option value="">
+                                        Max. Price
+                                    </option>
+                                    <option value="">
+                                        Max. Price
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="search-button">
+                            <button class="btn underline-btn primary big text-uppercase ripple d-table mx-auto">
+                                <span>search</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH RESULTS -->
+
+        <section id="featured_list" class="com-mar-b search-results">
+            <div class="container">
+                <div class="featured_list com-pad-lr">
+                    <p class="site-heading-bold small text-center">
+                        <b class="">SEARCH RESULTS</b>
                     </p>
-                    <div class="search-agent col-12 col-md-11 col-lg-10 mx-auto">
-                        <div class="inner">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#loacation"
-                                        role="tab" aria-controls="home" aria-selected="true">Loacation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#agent" role="tab"
-                                        aria-controls="profile" aria-selected="false">Agent</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="loacation" role="tabpanel"
-                                    aria-labelledby="home-tab">
-                                    <div class="address d-flex-wrap mb-2 mb-md-3">
-                                        <div class="input position-relative">
-                                            <input type="text" class="form-control rounded-0"
-                                                placeholder="City, State or Zip Code">
-                                            <i class="fas fa-search position-absolute"></i>
-                                        </div>
-                                        <button class="search btn primary-bg-btn ripple text-uppercase">
-                                            <span>find an agent</span>
-                                        </button>
-                                    </div>
+                    <div class="listing d-flex-wrap col-12">
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
                                 </div>
-                                <div class="tab-pane fade" id="agent" role="agent" aria-labelledby="profile-tab">
-                                    <h5>Agent</h5>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item col-12 col-sm-6 col-md-4">
+                            <div class="inner">
+                                <div class="img-sec">
+                                    <img src="images/search-results-img.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="text-sec">
+                                    <p class="address d-flex">
+                                        <i class="fas fa-map-marker-alt primary-color"></i>
+                                        <span>
+                                            5167 Hall Road, Santa Rosa
+                                            CA 95401
+                                        </span>
+                                    </p>
+                                    <p class="heading text-center primary-color">
+                                        Luxury Home For Sale
+                                    </p>
+                                    <p class="for-saletag d-table mx-auto my-1 primary-bg px-2 text-capitalize text-white">
+                                        for sale
+                                    </p>
+                                    <p class="price text-center primary-color">$ 1,500,000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- OTHER-OPTION -->
-        <section id="other-option" class="com-mar-b">
-            <div class="container">
-                <div class="other-option d-flex-wrap">
-                    <div class="LT col-12 col-lg-7">
-                        <div class="inn">
-                            <p class="heading-linethrough text-center text-uppercase text-dark position-relative">
-                                <span>or</span>
-                            </p>
-                            <ul class="list-unstyled tags d-flex-wrap">
-                                <li> <a href=""
-                                        class="btn rounded-0 d-block text-left ripple"><span>California</span></a> </li>
-                                <li> <a href=""
-                                        class="btn rounded-0 d-block text-left ripple"><span>California</span></a> </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>New York</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Florida</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Illinois</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Michigan</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Ohio</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Utah</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Virgina</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Oregon</span></a>
-                                </li>
-                                <li> <a href=""
-                                        class="btn rounded-0 d-block text-left ripple"><span>Washington</span></a> </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Vermont</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Maine</span></a>
-                                </li>
-                                <li> <a href="" class="btn rounded-0 d-block text-left ripple"><span>Michigan</span></a>
-                                </li>
-                                <li> <a href=""
-                                        class="btn rounded-0 d-block text-left ripple"><span>Missisipi</span></a> </li>
-                                <li> <a href=""
-                                        class="btn rounded-0 d-block text-left ripple"><span>Pennsylvania</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="RT col-12 col-lg-5 d-none d-lg-block">
-                        <div class="inn">
-                            <img src="images/other-option-right-img.jpg" alt="" class="img-fluid">
-                        </div>
+                    <div class="more-properties text-center">
+                        <a href="" class="btn underline-btn big primary text-uppercase ripple">
+                            <span>load more</span>
+                        </a>
                     </div>
                 </div>
             </div>

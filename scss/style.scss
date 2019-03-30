@@ -382,6 +382,12 @@ header {
             }
         }
 
+        .img-sec {
+            img {
+                width: 100%;
+            }
+        }
+
         .text-sec {
             background-color: #f7f5f5;
             padding: 20px 15px;
@@ -810,6 +816,53 @@ footer {}
                     background-color: rgba(0, 0, 0, .1);
                 }
             }
+        }
+    }
+}
+
+
+// ADVANCE SEARCH
+.advance-search {
+
+    .search-form {
+        .st-form {
+            padding: 0 10px 20px;
+            margin-bottom: 0;
+        }
+
+
+        .st-form input:not([type="radio"]),
+        .st-form input:not([type="checkbox"]),
+        .st-form select,
+        .st-form textarea {
+            height: 40px;
+            border-color: $primary-color;
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        @include min_width(992px) {
+            .st-form {
+                padding: 0 15px 30px;
+            }
+
+            .st-form input:not([type="radio"]),
+            .st-form input:not([type="checkbox"]),
+            .st-form select,
+            .st-form textarea {
+                height: 60px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// SEARCH-RESULTS
+.search-results {
+    @include min_width(992px) {
+        .featured_list .listing {
+            margin-top: 40px;
         }
     }
 }

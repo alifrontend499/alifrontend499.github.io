@@ -147,6 +147,19 @@
         &:after {
             background-color: $primary-color;
         }
+
+        &.big {
+            font: 14px "itc-avant-demi", sans-serif;
+            padding: 10px 30px;
+        }
+
+        @include min_width(992px) {
+
+            &.big {
+                font-size: 24px;
+                padding: 12px 90px;
+            }
+        }
     }
 }
 
@@ -175,6 +188,17 @@
             color: #000;
             margin-top: 5px;
         }
+    }
+}
+
+.site-heading-bold {
+    color: $primary-color;
+    font: 35px "itc-avant-demi", sans-serif;
+    margin-bottom: 20px;
+
+    span {
+        font: 19px "itc-avant-book", sans-serif;
+        margin-top: 5px;
     }
 }
 
@@ -277,7 +301,7 @@
     height: calc(100% - 20px);
 }
 
-.modal-content {    
+.modal-content {
     border-radius: 0 !important;
     border-radius: 0 !important;
     min-height: 100px;
@@ -310,6 +334,7 @@ button.close {
         color: $primary-color;
     }
 }
+
 .modal-body {
     overflow: auto;
 }
@@ -408,5 +433,27 @@ button.close {
         .account-related {
             font-size: 15px;
         }
+    }
+}
+
+.site-select {
+    background-image: url('../images/icons/select-icon.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    padding-right: 17px !important;
+    background-size: 6px;
+
+    @include min_width(768px) {
+        background-position: calc(100% - 10px) center;
+        padding-right: 35px !important;
+        background-size: 10px;
+    }
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+        display: none;
     }
 }
