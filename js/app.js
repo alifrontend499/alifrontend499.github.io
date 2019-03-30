@@ -15,6 +15,25 @@ $(function () {
             paddingTop: headHeight
         });
     })();
+
+    // LOGIN SIGNUP MODALS
+    (function () {
+        $('.open-sign-in-modal').click(function (ev) {
+            ev.preventDefault();
+            $('.modal').modal("hide");
+            $('#signin_modal').modal("show");
+        });
+        $('.open-sign-up-modal').click(function (ev) {
+            ev.preventDefault();
+            $('.modal').modal("hide");
+            $('#signup_modal').modal("show");
+        });
+        $('.open-forgot-password-modal').click(function (ev) {
+            ev.preventDefault();
+            $('.modal').modal("hide");
+            $('#forgot-password_modal').modal("show");
+        });
+    })();
 });
 
 // HEADER SETTING

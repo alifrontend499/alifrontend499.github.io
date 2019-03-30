@@ -255,9 +255,16 @@
 }
 
 // MODAL-STYLING 
-.modal-dialog {
-    height: 100%;
+
+
+.modal,
+.modal-content,
+.modal-body {
+    max-height: 100%;
     width: 100%;
+}
+
+.modal-dialog {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -265,19 +272,16 @@
     align-items: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
-
-    @include max_width(767px) {
-        // margin: 0;
-        padding: 0;
-    }
+    margin: 10px auto 0;
+    padding: 0;
+    height: calc(100% - 20px);
 }
 
-.modal-content {
-    overflow: auto;
+.modal-content {    
     border-radius: 0 !important;
     border-radius: 0 !important;
     min-height: 100px;
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 15px;
     margin: 10px;
 }
@@ -305,6 +309,9 @@ button.close {
         border-color: $primary-color;
         color: $primary-color;
     }
+}
+.modal-body {
+    overflow: auto;
 }
 
 // SITE FORM

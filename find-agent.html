@@ -41,10 +41,10 @@
                             <span>(209)-123-456789</span>
                         </a>
                     </div>
-                    <div class="RT text-center">
-                        <a href="">
-                            Sign in / Sign up
-                        </a>
+                    <div class="RT text-center d-flex align-items-center">
+                        <a href="" data-toggle="modal" data-target="#signin_modal">Sign in</a>
+                        /
+                        <a href="" data-toggle="modal" data-target="#signup_modal">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -90,13 +90,8 @@
     </header>
 
     <div id="wrapper" class="head-marg">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade p-0" id="exampleModal" class="ST_modal" tabindex="-1" role="dialog"
+        <!-- SIGN IN MODAL -->
+        <div class="modal fade p-0" id="signin_modal" class="ST_modal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -117,7 +112,8 @@
                                     <span class="validation">Password must be 8 charachters long</span>
                                 </div>
                                 <div class="forgot-password d-flex">
-                                    <a href="" class="ml-auto primary-color">Forgot Password?</a>
+                                    <a href="" class="ml-auto primary-color open-forgot-password-modal">Forgot
+                                        Password?</a>
                                 </div>
                                 <div class="submit-btn">
                                     <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">sign
@@ -146,7 +142,129 @@
                                 </div>
                                 <p class="account-related text-center">
                                     <span class="d-block">Do not have an account?</span>
-                                    <a href="" class="text-lowercase primary-color">sign up</a>
+                                    <a href="" class="text-lowercase primary-color open-sign-up-modal">sign up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORGOT-PASSWORD MODAL -->
+        <div class="modal fade p-0" id="forgot-password_modal" class="ST_modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-body">
+                        <div class="sign-in loginregisterform">
+                            <p class="heading text-uppercase text-center text primary-color">forgot password?</p>
+                            <div class="form-main">
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">enter your email</label>
+                                    <input type="text" class="form-control rounded-0">
+                                </div>
+                                <div class="submit-btn">
+                                    <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">continue</button>
+                                </div>
+                                <p class="account-related text-center">
+                                    <span class="d-block">Do you have an account?</span>
+                                    <a href="" class="text-lowercase primary-color open-sign-in-modal">sign in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIGN UP Modal -->
+        <div class="modal fade p-0" id="signup_modal" class="ST_modal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="modal-body">
+                        <div class="sign-in loginregisterform">
+                            <p class="heading text-uppercase text-center text primary-color">Sign up</p>
+                            <div class="form-main">
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">Account name</label>
+                                    <select name="" id="" class="form-control rounded-0">
+                                        <option value="">Owner</option>
+                                        <option value="">Buyer</option>
+                                    </select>
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">First name</label>
+                                    <input type="text" class="form-control rounded-0">
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">Last name</label>
+                                    <input type="text" class="form-control rounded-0">
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">Email</label>
+                                    <input type="email" class="form-control rounded-0">
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">date of month</label>
+                                    <select name="" id="" class="form-control rounded-0">
+                                        <option value="">DD/MM/YYYY</option>
+                                    </select>
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">phone</label>
+                                    <input type="text" class="form-control rounded-0">
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">gender</label>
+                                    <select name="" id="" class="form-control rounded-0">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">password</label>
+                                    <input type="password" class="form-control rounded-0">
+                                </div>
+                                <div class="form-group st-form">
+                                    <label class="text-capitalize">re-enter password</label>
+                                    <input type="password" class="form-control rounded-0">
+                                </div>
+                                <div class="submit-btn">
+                                    <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">sign
+                                        up</button>
+                                </div>
+                                <div class="options text-center">
+                                    <p class="orr text-uppercase">
+                                        or
+                                    </p>
+                                    <p class="head text-capitalize">continue with</p>
+                                    <ul
+                                        class="list-unstyled socail-options d-flex align-items-center justify-content-center">
+                                        <li>
+                                            <a href=""
+                                                class="facebook d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                                class="google d-flex align-items-center justify-content-center rounded-circle">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="account-related text-center">
+                                    <span class="d-block">Do you have an account?</span>
+                                    <a href="" class="text-lowercase primary-color open-sign-in-modal">sign in</a>
                                 </p>
                             </div>
                         </div>
