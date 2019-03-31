@@ -119,8 +119,8 @@
 
 
     .buyORsale .underline-btn {
-        font-size: 11px;
-        padding: 8px 10px;
+        font-size: 13px;
+        padding: 5px 2px;
         width: 100%;
     }
 
@@ -165,7 +165,7 @@
     }
 
     .ST_Banner .caption .cap-inner p {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .find-agent .search-agent .address .input input,

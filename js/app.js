@@ -6,7 +6,9 @@ $(function () {
         // dots: false,
         autoPlay: true,
         autoplaySpeed: 500,
-        // smartSpeed: 1000
+        // smartSpeed: 1000,
+        mouseDrag: false,
+        touchDrag: false,
     });
 
     // HOMEPAGE SLIDER
