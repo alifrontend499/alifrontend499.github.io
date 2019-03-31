@@ -944,7 +944,7 @@ footer {}
                     border: none;
                     border-right: 2px solid $primary-color;
                     font-size: 21px;
-                    font-size: 24px;
+                    font-size: 24px;                    
 
                     @include min_width(992px) {
                         width: 170px;
@@ -959,6 +959,9 @@ footer {}
                         background-color: $primary-color;
                         color: #fff;
                     }
+                }
+                &:last-child >a {
+                    border-right: none;
                 }
 
             }

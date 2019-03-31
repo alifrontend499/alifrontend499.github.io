@@ -3,12 +3,15 @@ $(function () {
     $('#homepageslider').owlCarousel({
         items: 1,
         nav: false,
-        // dots: false,
-        autoPlay: true,
-        autoplaySpeed: 500,
-        // smartSpeed: 1000,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        touchDrag: false,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
         mouseDrag: false,
         touchDrag: false,
+        rewind: true
     });
 
     // HOMEPAGE SLIDER
@@ -18,8 +21,9 @@ $(function () {
         nav: true,
         dots: false,
         navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-        autoPlay: true,
-        autoPlayTimeout: 1000,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        rewind: true,
         responsive: {
             0: {
                 items: 2
@@ -27,9 +31,6 @@ $(function () {
             600: {
                 items: 3
             },
-            1000: {
-                items: 3
-            }
         }
     });
 
