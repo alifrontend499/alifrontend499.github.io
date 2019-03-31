@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brookside Reality | Find an Agent</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+        rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/animatecss/css/animate.css" />
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css" />
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.theme.default.min.css" />
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="assets/rangeSlider/css/ion.rangeSlider.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <header>
+        <div id="HD_TP">
+            <div class="container">
+                <div class="HD_TP com-pad-lr d-flex align-items-center justify-content-between">
+                    <div class="LT d-none d-md-inline-block text-center">
+                        <p>
+                            Welcome to Brookside Reality
+                        </p>
+                    </div>
+                    <div class="CT text-center">
+                        <a href="">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>(209)-123-456789</span>
+                        </a>
+                    </div>
+                    <div class="RT text-center d-flex align-items-center">
+                        <a href="" data-toggle="modal" data-target="#signin_modal">Sign in</a>
+                        /
+                        <a href="" data-toggle="modal" data-target="#signup_modal">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="HD_BM">
+            <div class="container">
+                <div class="HD_BM com-pad-lr">
+                    <nav class="navbar navbar-expand-lg navbar-light px-0">
+                        <div class="logo">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/Logo.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler primary-bg rounded-0" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="">
+                                    <a class="text-uppercase" href="index.html">Home</a>
+                                </li>
+                                <li class="active">
+                                    <a class="text-uppercase" href="sell.html">Sell</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="buy.html">buy</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="find-agent.html">find an agent</a>
+                                </li>
+                                <li class="">
+                                    <a class="text-uppercase" href="contact.html">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SIGN IN MODAL -->
+    <div class="modal fade p-0" id="signin_modal" class="ST_modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="sign-in loginregisterform">
+                        <p class="heading text-uppercase text-center text primary-color">Sign in</p>
+                        <div class="form-main">
+                            <div class="form-group st-form">
+                                <label>Email</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label>Password</label>
+                                <input type="password" class="form-control rounded-0">
+                                <span class="validation">Password must be 8 charachters long</span>
+                            </div>
+                            <div class="forgot-password d-flex">
+                                <a href="" class="ml-auto primary-color open-forgot-password-modal">Forgot
+                                    Password?</a>
+                            </div>
+                            <div class="submit-btn">
+                                <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">sign
+                                    in</button>
+                            </div>
+                            <div class="options text-center">
+                                <p class="orr text-uppercase">
+                                    or
+                                </p>
+                                <p class="head text-capitalize">continue with</p>
+                                <ul
+                                    class="list-unstyled socail-options d-flex align-items-center justify-content-center">
+                                    <li>
+                                        <a href=""
+                                            class="facebook d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="google d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="account-related text-center">
+                                <span class="d-block">Do not have an account?</span>
+                                <a href="" class="text-lowercase primary-color open-sign-up-modal">sign up</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORGOT-PASSWORD MODAL -->
+    <div class="modal fade p-0" id="forgot-password_modal" class="ST_modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="sign-in loginregisterform">
+                        <p class="heading text-uppercase text-center text primary-color">forgot password?</p>
+                        <div class="form-main">
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">enter your email</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="submit-btn">
+                                <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">continue</button>
+                            </div>
+                            <p class="account-related text-center">
+                                <span class="d-block">Do you have an account?</span>
+                                <a href="" class="text-lowercase primary-color open-sign-in-modal">sign in</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIGN UP Modal -->
+    <div class="modal fade p-0" id="signup_modal" class="ST_modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="sign-in loginregisterform">
+                        <p class="heading text-uppercase text-center text primary-color">Sign up</p>
+                        <div class="form-main">
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">Account name</label>
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">Owner</option>
+                                    <option value="">Buyer</option>
+                                </select>
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">First name</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">Last name</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">Email</label>
+                                <input type="email" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">date of month</label>
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">DD/MM/YYYY</option>
+                                </select>
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">phone</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">gender</label>
+                                <select name="" id="" class="form-control rounded-0 site-select">
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">password</label>
+                                <input type="password" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group st-form">
+                                <label class="text-capitalize">re-enter password</label>
+                                <input type="password" class="form-control rounded-0">
+                            </div>
+                            <div class="submit-btn">
+                                <button class="btn d-table mx-auto rounded-0 site-btn text-capitalize">sign
+                                    up</button>
+                            </div>
+                            <div class="options text-center">
+                                <p class="orr text-uppercase">
+                                    or
+                                </p>
+                                <p class="head text-capitalize">continue with</p>
+                                <ul
+                                    class="list-unstyled socail-options d-flex align-items-center justify-content-center">
+                                    <li>
+                                        <a href=""
+                                            class="facebook d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="google d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="account-related text-center">
+                                <span class="d-block">Do you have an account?</span>
+                                <a href="" class="text-lowercase primary-color open-sign-in-modal">sign in</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper" class="head-marg">
+        <!-- SITE BANNER -->
+        <section id="ST_Banner">
+            <div class="container-fluid px-0">
+                <div class="ST_Banner position-relative">
+                    <div class="img-sec">
+                        <img src="images/banners/contact.jpg" alt="" class="img-fluid w-100">
+                    </div>
+                    <div class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                        <div class="cap-inner">
+                            <p class="name text-white text-capitalize">sell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADVANCE SEARCH -->
+        <section id="sell-sec" class="com-mar-tb">
+            <div class="container">
+                <div class="sell-sec com-pad-lr">
+                    <div class="frac com-pad-b">
+                        <p class="site-heading small text-center text-uppercase font-weight-bold">
+                            interior information
+                        </p>
+                        <div class="form-main">
+                            <div class="d-flex-wrap">
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Rooms</option>
+                                        <option value="">Rooms</option>
+                                        <option value="">Rooms</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0"
+                                        placeholder="Master Bathroom Desription">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Other Bathroom Description</option>
+                                        <option value="">Other Bathroom Description</option>
+                                        <option value="">Other Bathroom Description</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Kitchen Description">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Laundary</option>
+                                        <option value="">Laundary</option>
+                                        <option value="">Laundary</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Cooling">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Master Bedroom Description</option>
+                                        <option value="">Master Bedroom Description</option>
+                                        <option value="">Master Bedroom Description</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Appliances">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Dining Description</option>
+                                        <option value="">Dining Description</option>
+                                        <option value="">Dining Description</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Half Bath">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Heating</option>
+                                        <option value="">Heating</option>
+                                        <option value="">Heating</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Has Fire Places">
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Number of Fire Places</option>
+                                        <option value="">Number of Fire Places</option>
+                                        <option value="">Number of Fire Places</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <input type="text" class="form-control rounded-0" placeholder="Floors">
+                                </div>
+                                <div class="form-group st-form primary-big col-12">
+                                    <textarea name="" id="" class="form-control rounded-0" rows="2"
+                                        placeholder="Additional Details"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frac com-pad-b">
+                        <p class="site-heading small text-center text-uppercase font-weight-bold">
+                            exterior information
+                        </p>
+                        <div class="form-main">
+                            <div class="d-flex-wrap">
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Style</option>
+                                        <option value="">Style</option>
+                                        <option value="">Style</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Contruction</option>
+                                        <option value="">Contruction</option>
+                                        <option value="">Contruction</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Foundation</option>
+                                        <option value="">Foundation</option>
+                                        <option value="">Foundation</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Water Sewer</option>
+                                        <option value="">Water Sewer</option>
+                                        <option value="">Water Sewer</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Utilities</option>
+                                        <option value="">Utilities</option>
+                                        <option value="">Utilities</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Has Garage?</option>
+                                        <option value="">Has Garage?</option>
+                                        <option value="">Has Garage?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Has a Pool</option>
+                                        <option value="">Has a Pool</option>
+                                        <option value="">Has a Pool</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Lot Size in sqft</option>
+                                        <option value="">Lot Size in sqft</option>
+                                        <option value="">Lot Size in sqft</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Elevation</option>
+                                        <option value="">Elevation</option>
+                                        <option value="">Elevation</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Road Description</option>
+                                        <option value="">Road Description</option>
+                                        <option value="">Road Description</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Energy Features</option>
+                                        <option value="">Energy Features</option>
+                                        <option value="">Energy Features</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Water</option>
+                                        <option value="">Water</option>
+                                        <option value="">Water</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Stories</option>
+                                        <option value="">Stories</option>
+                                        <option value="">Stories</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Land Scaping</option>
+                                        <option value="">Land Scaping</option>
+                                        <option value="">Land Scaping</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Roof</option>
+                                        <option value="">Roof</option>
+                                        <option value="">Roof</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Topography</option>
+                                        <option value="">Topography</option>
+                                        <option value="">Topography</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Parking Description</option>
+                                        <option value="">Parking Description</option>
+                                        <option value="">Parking Description</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Zoning</option>
+                                        <option value="">Zoning</option>
+                                        <option value="">Zoning</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Is a House Property</option>
+                                        <option value="">Is a House Property</option>
+                                        <option value="">Is a House Property</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Exposure Faces</option>
+                                        <option value="">Exposure Faces</option>
+                                        <option value="">Exposure Faces</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Lot Sizes in Acres</option>
+                                        <option value="">Lot Sizes in Acres</option>
+                                        <option value="">Lot Sizes in Acres</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Exterior</option>
+                                        <option value="">Exterior</option>
+                                        <option value="">Exterior</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Improvements</option>
+                                        <option value="">Improvements</option>
+                                        <option value="">Improvements</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frac com-pad-b">
+                        <p class="site-heading small text-center text-uppercase font-weight-bold">
+                            additional information
+                        </p>
+                        <div class="form-main">
+                            <div class="d-flex-wrap">
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Property Type</option>
+                                        <option value="">Property Type</option>
+                                        <option value="">Property Type</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Residential Sub Type</option>
+                                        <option value="">Residential Sub Type</option>
+                                        <option value="">Residential Sub Type</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">APN</option>
+                                        <option value="">APN</option>
+                                        <option value="">APN</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">In Short Sale</option>
+                                        <option value="">In Short Sale</option>
+                                        <option value="">In Short Sale</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Property Sub Type</option>
+                                        <option value="">Property Sub Type</option>
+                                        <option value="">Property Sub Type</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Year Build</option>
+                                        <option value="">Year Build</option>
+                                        <option value="">Year Build</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Status</option>
+                                        <option value="">Status</option>
+                                        <option value="">Status</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">HOF FEE</option>
+                                        <option value="">HOF FEE</option>
+                                        <option value="">HOF FEE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frac com-pad-b">
+                        <p class="site-heading small text-center text-uppercase font-weight-bold">
+                            school information
+                        </p>
+                        <div class="form-main">
+                            <div class="d-flex-wrap">
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">School District</option>
+                                        <option value="">School District</option>
+                                        <option value="">School District</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Elementary School</option>
+                                        <option value="">Elementary School</option>
+                                        <option value="">Elementary School</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">High School</option>
+                                        <option value="">High School</option>
+                                        <option value="">High School</option>
+                                    </select>
+                                </div>
+                                <div class="form-group primary-big st-form col-12 col-md-6">
+                                    <select name="" id="" class="form-control rounded-0 site-select">
+                                        <option value="">Jr High School</option>
+                                        <option value="">Jr High School</option>
+                                        <option value="">Jr High School</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-button">
+                        <button class="btn underline-btn primary big text-uppercase ripple d-table mx-auto">
+                            <span>search</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="ft-top">
+                <div class="container">
+                    <div class="ft-top d-flex-wrap com-pad-lr row">
+                        <div class="col-12 col-md-4 col-lg-4 one">
+                            <div class="inn">
+                                <img src="images/footer-logo.png" alt="" class="img-fluid">
+                                <p class="d-flex align-items-center">
+                                    <i class="fas fa-phone primary-color"></i>
+                                    <a href="callto:+1-234-5678901">+1-234-5678901</a>
+                                </p>
+                                <p class="d-flex align-items-center">
+                                    <i class="fas fa-envelope primary-color"></i>
+                                    <a href="emailto:brookersrealty@gmail.com">brookersrealty@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-2 two">
+                            <div class="inn">
+                                <p class="ft-head">Browse Homes</p>
+                                <ul class="list-unstyled footer-ul">
+                                    <li><a href="">California</a></li>
+                                    <li><a href="">Texas</a></li>
+                                    <li><a href="">New York</a></li>
+                                    <li><a href="">Florida</a></li>
+                                    <li><a href="">Illinois</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-3 three">
+                            <div class="inn">
+                                <p class="ft-head">Quick Links</p>
+                                <ul class="list-unstyled footer-ul">
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Submit Property</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 four">
+                            <div class="inn">
+                                <ul class="list-unstyled d-flex social-links align-items-center">
+                                    <li><a href="" class=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="" class=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="" class=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="" class=""><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                                <div class="newsletter">
+                                    <p>Subscribe to our <br>Newsletter</p>
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control rounded-0" placeholder="Email">
+                                        <button class="btn rounded-0">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ft-bottom" class="primary-bg">
+                <div class="container">
+                    <div class="ft-bottom com-pad-lr">
+                        <p class="text-center">Copyrights 2019 &copy; BrookersReality</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- JQUERY -->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <!-- POPPER -->
+    <script src="assets/bootstrap/js/popper/popper.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owlCarousel/js/owl.carousel.min.js"></script>
+    <!-- IMAGE ZOOMER -->
+    <script src="assets/image-zoomer/jquery.elevateZoom-3.0.8.min.js"></script>
+    <!-- RANGE SLIDER -->
+    <script src="assets/rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

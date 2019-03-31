@@ -252,6 +252,58 @@
             padding-left: .5em;
         }
     }
+
+    &.primary-big {
+
+        input:not([type="radio"]),
+        input:not([type="checkbox"]),
+        select {
+            height: 40px;
+        }
+
+        input:not([type="radio"]),
+        input:not([type="checkbox"]),
+        select,
+        textarea {
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+            border-color: $primary-color;
+
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #333;
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #333;
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #333;
+            }
+        }
+
+        @include min_width(992px) {
+
+            input:not([type="radio"]),
+            input:not([type="checkbox"]),
+            select {
+                height: 60px;
+            }
+
+            input:not([type="radio"]),
+            input:not([type="checkbox"]),
+            select,
+            textarea {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 .heading-linethrough {
