@@ -3,6 +3,32 @@ $(function () {
     $('#homepageslider').owlCarousel({
         items: 1,
         nav: false,
+        // dots: false,
+        autoPlay: true,
+        autoplaySpeed: 500,
+        // smartSpeed: 1000
+    });
+
+    // HOMEPAGE SLIDER
+    $('#gallery-carousel').owlCarousel({
+        items: 3,
+        // loop: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        autoPlay: true,
+        autoPlayTimeout: 1000,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
     });
 
     // HEADER MARGIN PADDING CLASSES
@@ -34,6 +60,11 @@ $(function () {
             $('#forgot-password_modal').modal("show");
         });
     })();
+
+    // FANCYBOX
+    $('[data-fancybox="gallery"]').fancybox({
+        animationEffect: 'zoom-in-out'
+    });
 });
 
 // HEADER SETTING

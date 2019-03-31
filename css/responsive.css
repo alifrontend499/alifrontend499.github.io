@@ -9,8 +9,12 @@
         padding-top: 4px;
     }
 
-    header .HD_BM .navbar-nav>li {
-        padding: 7px 10px;
+    header .HD_BM .navbar-nav>li{
+        padding: 0;
+    }
+    header .HD_BM .navbar-nav>li>a {
+        padding: 10px 10px !important;
+        display: block;
     }
 }
 
@@ -31,44 +35,44 @@
 
     }
 
-    .slider .item .caption .heading {
+    .slider .caption .heading {
         font-size: 20px;
         margin-bottom: 10px;
 
     }
 
-    .slider .item .caption .search-sec {
+    .slider .caption .search-sec {
         padding: 10px;
 
     }
 
-    .slider .item .caption .search-sec .address .input {
+    .slider .caption .search-sec .address .input {
         width: calc(100% - 100px);
     }
 
 
-    .slider .item .caption .search-sec .address .btn {
+    .slider .caption .search-sec .address .btn {
         width: 100px;
         font-size: 16px;
     }
 
-    .slider .item .caption .search-sec .address .input input {
+    .slider .caption .search-sec .address .input input {
         padding-left: 14px;
         font-size: 11px;
     }
 
-    .slider .item .caption .search-sec .address .input i {
+    .slider .caption .search-sec .address .input i {
         display: none;
     }
 
-    .slider .item .caption .search-sec .address .input input,
-    .slider .item .caption .search-sec .address .btn {
+    .slider .caption .search-sec .address .input input,
+    .slider .caption .search-sec .address .btn {
         height: 40px;
     }
 
-    .slider .item .caption .search-sec .OT_OP input:not([type="radio"]),
-    .slider .item .caption .search-sec .OT_OP input:not([type="checkbox"]),
-    .slider .item .caption .search-sec .OT_OP select {
+    .slider .caption .search-sec .OT_OP input:not([type="radio"]),
+    .slider .caption .search-sec .OT_OP input:not([type="checkbox"]),
+    .slider .caption .search-sec .OT_OP select {
         height: 35px;
         font-size: 11px;
 
@@ -78,7 +82,7 @@
         padding: 0 10px;
     }
 
-    .slider .item .caption .search-sec {
+    .slider .caption .search-sec {
         width: calc(100% - 20px);
     }
 
@@ -101,11 +105,11 @@
         line-height: 22px;
     }
 
-    .slider .item .caption .mb-3 {
+    .slider .caption .mb-3 {
         margin-bottom: 5px !important;
     }
 
-    .slider .item .caption .mr-3 {
+    .slider .caption .mr-3 {
         margin-right: 5px !important;
     }
 
@@ -204,13 +208,38 @@
     .site-heading-bold span {
         font-size: 15px;
     }
+
     .advance-search .search-form .st-form {
         padding: 0 0px 10px;
+    }
+
+    .detail-page .DP-TP .nav-tabs>li>a {
+        padding: 10px 15px 8px;
+        font-size: 17px;
+    }
+
+    .detail-page .DP-BM .inner>.LT>.heading {
+        font-size: 20px;
+
+    }
+
+    .detail-page .DP-BM .inner>.LT>.heading i {
+        padding: 5px 12px 0 0;
+        font-size: 30px;
+    }
+
+    .detail-page .DP-BM .inner>.LT .desc {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .detail-page .DP-BM .inner>.RT .pric {
+        font-size: 31px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .slider .item .caption .search-sec {
+    .slider .caption .search-sec {
         width: calc(100% - 100px);
     }
 }
@@ -225,7 +254,7 @@
         padding: 10px 19px;
     }
 
-    .slider .item .caption .heading {
+    .slider .caption .heading {
         font-size: 45px;
     }
 
@@ -266,5 +295,29 @@
 
     .ST_Banner .caption .cap-inner p {
         font-size: 30px;
+    }
+
+    .detail-page .DP-TP .nav-tabs>li>a {
+        padding: 10px 15px 8px;
+        font-size: 17px;
+    }
+
+    .detail-page .DP-BM .inner>.LT>.heading {
+        font-size: 20px;
+
+    }
+
+    .detail-page .DP-BM .inner>.LT>.heading i {
+        padding: 5px 12px 0 0;
+        font-size: 30px;
+    }
+
+    .detail-page .DP-BM .inner>.LT .desc {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .detail-page .DP-BM .inner>.RT .pric {
+        font-size: 31px;
     }
 }
