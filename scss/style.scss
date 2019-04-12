@@ -944,7 +944,7 @@ footer {}
                     border: none;
                     border-right: 2px solid $primary-color;
                     font-size: 21px;
-                    font-size: 24px;                    
+                    font-size: 24px;
 
                     @include min_width(992px) {
                         width: 170px;
@@ -960,7 +960,8 @@ footer {}
                         color: #fff;
                     }
                 }
-                &:last-child >a {
+
+                &:last-child>a {
                     border-right: none;
                 }
 
@@ -1021,6 +1022,7 @@ footer {}
     .DP-BM {
         .inner {
             >.LT {}
+
             >.RT {
                 width: 100%;
             }
@@ -1151,6 +1153,61 @@ footer {}
                 }
             }
 
+        }
+    }
+}
+
+// MORE PROPERTY DETAILS
+#more-property-details {
+    margin-top: 15px;
+}
+
+.more-property-details {
+    .big-head {
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .MPD-frac {
+        .listing {
+            >li {
+                padding: 10px 0;
+                border-bottom: 1px solid #999;
+
+                @include min_width(768px) {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    min-height: 80px;
+
+                    &:nth-child(even) {
+                        padding-left: 15px;
+                    }
+
+                    &:nth-child(odd) {
+                        border-right: 1px solid #999;
+                        padding-right: 15px;
+                    }
+                }
+
+                >span {
+                    font: bold 16px "itc-avant-book", sans-serif;
+                    color: #000;
+                }
+
+                >.head {
+
+                    &+span {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        .other-head {
+            font: bold 16px "itc-avant-book", sans-serif;
+            color: #000;
+            margin-top: 20px;
         }
     }
 }
