@@ -405,7 +405,7 @@ button.close {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ba8a4d', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
-  padding: 3px 10px;
+  padding: 11px 10px 5px;
   font: bold 23px "itc-avant-demi", sans-serif;
   margin-bottom: 15px; }
 
