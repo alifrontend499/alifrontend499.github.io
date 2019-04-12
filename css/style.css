@@ -683,6 +683,9 @@ header {
     font-size: 22px;
     padding: 13px 12px 12px; }
 
+footer {
+  border-top: 5px solid #ba8a4d; }
+
 #ft-top {
   background-color: #1a1a1a;
   padding-top: 35px;

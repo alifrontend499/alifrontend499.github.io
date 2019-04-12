@@ -464,7 +464,9 @@ header {
 }
 
 // FOOTER
-footer {}
+footer {
+    border-top: 5px solid $primary-color;
+}
 
 #ft-top {
     background-color: #1a1a1a;
