@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+html,
+body,
+.login-main {
+    height: 100%;
+}
+
+/* .login-main {
+    overflow: auto;
+} */
+
+.login-body {
+    background: #333 url('../images/background.gif') no-repeat center / 100% 100%;
+    /* background: #333; */
+}
+
+.login-box {
+    background-color: #c7c9cb;
+    border-radius: 6px;
+    padding: 20px;
+
+}
+
+@media (min-width: 600px) {
+    .login-box {
+        padding: 40px;
+        width: 400px;
+    }
+
+}
+
+.login-box .head {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.login-box .head:after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: calc(100% - 15px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -wenkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.login-box .head span {
+    background-color: #c7c9cb;
+    position: relative;
+    z-index: 1;
+    padding: 0 8px;
+}
+
+.login-box .form-out {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.login-box .form-out input {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-left: 5px solid transparent;
+    transition: .3s;
+    padding: 15px 11px 10px;
+    font-size: 17px;
+}
+
+.login-box .form-out .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -wekit-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+
+.login-box .form-out .icon {
+    cursor: pointer;
+    color: #777;
+    transition: .3s;
+
+}
+
+.login-box .form-out .icon:hover {
+    color: #333;
+}
+
+.login-box .form-out input:focus {
+    border-left-color: gray;
+    box-shadow: none;
+}
+
+.login-box .form-out>label,
+.login-box .form-out input:invalid+label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #888;
+    transition: .3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.login-box .form-out input:focus+label,
+.login-box .form-out input:valid+label {
+    top: 4px;
+    transform: none;
+}
+
+.login-box .login-btn {
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    display: table;
+    margin: 0 auto;
+    font-size: 19px;
+    padding: 11px 23px 8px;
+    border-radius: 60px;
+    background: transparent;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-box .login-btn i {
+    position: relative;
+    transition: .3s;
+    left: 0;
+}
+
+.login-box .login-btn:hover {
+    background-color: #fff;
+}
+
+.login-box .login-btn:hover i {
+    left: 5px;
+}
+
+
+.login-box .other {
+    text-align: center;
+    margin: 0;
+}
+
+.login-box .other {
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.login-box .other a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-box .other a:hover {
+    text-decoration: underline;
+}

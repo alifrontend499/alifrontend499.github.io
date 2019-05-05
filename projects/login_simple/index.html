@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="login-body">
+    <div class="login-main d-flex flex-wrap align-items-center justify-content-center">
+        <div class="inner">
+            <div class="login-box">
+                <div class="LB_inner">
+                    <p class="head">
+                        <span>Sign in</span>
+                    </p>
+
+                    <div class="form-out">
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="form-out">
+                        <input type="password" class="password" required>
+                        <label for="">Password</label>
+                        <div class="icon">
+                            <i class="far fa-eye show"></i>
+                        </div>
+                    </div>
+                    <button class="login-btn">
+                        <span>Login</span>
+                        <i class="fas fa-sign-in-alt"></i>
+                    </button>
+                    <p class="other">
+                        Don't have account? <a href="">Sign up</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var inputShow = document.querySelector('.form-out .show');
+            if (inputShow !== null) {
+                inputShow.addEventListener('click', function (ev) {
+                    var inp = document.querySelector(".password");
+                    if (inp.type === "password") {
+                        inp.type = "text";
+                    } else {
+                        inp.type = "password";
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>
