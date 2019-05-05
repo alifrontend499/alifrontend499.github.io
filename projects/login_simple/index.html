@@ -57,9 +57,13 @@
                     var inp = document.querySelector(".password");
                     if (inp.type === "password") {
                         inp.type = "text";
+                        inputShow.classList.remove("far", "fa-eye");
+                        inputShow.classList.add("fas", "fa-eye-slash");
                     } else {
                         inp.type = "password";
-                    }
+                        inputShow.classList.add("far", "fa-eye");
+                        inputShow.classList.remove("fas", "fa-eye-slash");
+                    };
                 });
             }
         })();
