@@ -16,10 +16,14 @@
 </head>
 
 <body class="login-body">
-    <div class="login-main d-flex flex-wrap align-items-center justify-content-center">
-        <div class="inner">
+    <div class="login-main">
+        <div class="inner d-flex flex-wrap align-items-center justify-content-center">
             <div class="login-box">
                 <div class="LB_inner">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="" class="img-responsive">
+                        <!-- <img src="https://www.momento360.com/wp-content/uploads/2018/04/wordpress-logo-transparent-background-10.png" alt="" class="img-responsive"> -->
+                    </div>
                     <p class="head">
                         <span>Sign in</span>
                     </p>
@@ -32,7 +36,7 @@
                         <input type="password" class="password" required>
                         <label for="">Password</label>
                         <div class="icon">
-                            <i class="far fa-eye show"></i>
+                            <i class="fas fa-eye-slash show"></i>
                         </div>
                     </div>
                     <button class="login-btn">
@@ -56,12 +60,12 @@
                     var inp = document.querySelector(".password");
                     if (inp.type === "password") {
                         inp.type = "text";
-                        inputShow.classList.remove("far", "fa-eye");
-                        inputShow.classList.add("fas", "fa-eye-slash");
+                        inputShow.classList.remove("fas", "fa-eye-slash");
+                        inputShow.classList.add("far", "fa-eye");
                     } else {
                         inp.type = "password";
-                        inputShow.classList.add("far", "fa-eye");
-                        inputShow.classList.remove("fas", "fa-eye-slash");
+                        inputShow.classList.remove("far", "fa-eye");
+                        inputShow.classList.add("fas", "fa-eye-slash");
                     };
                 });
             }
