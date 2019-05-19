@@ -47,23 +47,25 @@
         });
         // ALL CONTENT SLIDER
         $('#video-solutions-slider').owlCarousel({
-            items: 3,
+            items: 2,
             margin: 10,
             nav: false,
             autoplay: true,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 3000,
             autoplaySpeed: 1000,
-            merge: true
+            stagePadding: 35,
+            rewind: true
         });
         // STUDY-MATERIAL-SLIDER
         $('#study-material-slider').owlCarousel({
-            items: 3,
-            margin: 10,
+            items: 2,
+            margin: 8,
             nav: false,
             autoplay: true,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 2000,
             autoplaySpeed: 1000,
-            merge: true
+            stagePadding: 35,
+            rewind: true
         });
     });
 })();

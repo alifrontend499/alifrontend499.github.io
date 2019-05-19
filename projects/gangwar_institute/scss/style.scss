@@ -148,6 +148,9 @@ html,
     padding-bottom: 20px;
     .item {
         padding: 0 4px;
+        >a {
+            padding-top: 4px;
+        }
         .img-sec {
             background-color: #fff;
             height: 50px;
@@ -194,11 +197,37 @@ body.hasBMB {
         > a {
             padding: 10px 5px 9px;
         }
+        .img-sec {
+            img {
+                width: 25px;
+                &.active {
+                    display: none;
+                }
+            }
+        }
         .text-sec {
             margin-top: 10px;
             p {
                 font: 15px "nexa-regular";
                 color: #8a8a8a;
+            }
+        }
+        &:hover,
+        &.active {
+            .img-sec {
+                img {
+                    &.active {
+                        display: block;
+                    }
+                    &.main {
+                        display: none;
+                    }
+                }
+            }
+            .text-sec {
+                p {
+                    color: $secodary-color;
+                }
             }
         }
     }
@@ -211,7 +240,8 @@ body.hasBMB {
 // APP TEST SERIES
 #app-test-series {
     margin-bottom: 25px;
-    @include box-shadow(0px, 0px, 5px, 0px, #b5b5b5);
+    @include box-shadow(0px, 0px, 5px, 0px, #d6d6d6);
+    background: #fff;
     .ATS_inner {
         padding: 15px 0;
         .item {
@@ -246,27 +276,39 @@ body.hasBMB {
 
 #app-home-sliders {
     margin-bottom: 35px;
+    >.container {
+        padding-right: 0;
+    }
+    .AHS_inner {
+        padding-right: 10px;
+    }
 }
 // VIDEO SOLUTION
 .video-solutions-slider {
+    .owl-stage {
+        padding-left: 0 !important;
+    }
     .item {
         .icon {
             top: 50%;
-            left: 50px;
+            left: 50%;
             @include transform(-50%, -50%);
         }
     }
 }
 // STUDY MATERIAL SLIDER
 .study-material-slider {
+    .owl-stage {
+        padding-left: 0 !important;
+    }
     .item {
-        padding: 4px;
+        padding: 2px;
         > a {
             // border: 1px solid #000;
             background: #fff;
             width: 100%;
             padding: 8px;
-            @include box-shadow(0px, 0px, 5px, 0px, #dadada);
+            @include box-shadow(0px, 0px, 4px, 0px, #dadada);
         }
         .img-sec {
             margin: 0 auto;
