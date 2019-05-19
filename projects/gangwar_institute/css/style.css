@@ -580,7 +580,7 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .position-static { position: static; }
 
-.app-round-btn { font: 15px "nexa-bold"; min-width: 180px; padding: 13px 0 9px; height: auto; border-radius: 30px; -webkit-box-shadow: 0px 0px 5px 0px #b1b1b1; box-shadow: 0px 0px 5px 0px #b1b1b1; margin: 0 auto; }
+.app-round-btn { font: 20px "nexa-bold"; min-width: 200px; padding: 16px 10px 13px; height: auto; border-radius: 30px; -webkit-box-shadow: 0px 0px 5px 0px #b1b1b1; box-shadow: 0px 0px 5px 0px #b1b1b1; margin: 0 auto; }
 
 button.gradient, .btn.gradient { background: #63e8e4; background: -moz-linear-gradient(319deg, #63e8e4 0%, #57e473 100%); background: -webkit-linear-gradient(319deg, #63e8e4 0%, #57e473 100%); background: linear-gradient(319deg, #63e8e4 0%, #57e473 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#63e8e4",endColorstr="#57e473",GradientType=1); }
 
@@ -591,7 +591,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .app_L-main .AL_head .AL_text span { font: 16px "nexa-regular"; }
 .app_L-main .AL_head .AL_logo { top: 100%; left: 50%; -webkit-transform: translate(-50%, calc(-50% + (-18px))); transform: translate(-50%, calc(-50% + (-18px))); }
 .app_L-main .AL_head .AL_logo img { width: 140px; }
-.app_L-main .AL_login-box { margin-bottom: 40px; }
+.app_L-main .AL_login-box { margin-bottom: 30px; }
 .app_L-main .AL_login-box .form { padding: 0 10px; }
 .app_L-main .AL_login-box .form .input-field, .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 35px; }
 .app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font: 15px "nexa-bold"; color: #666; }
