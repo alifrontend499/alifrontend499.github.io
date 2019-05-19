@@ -62,7 +62,17 @@
             margin: 8,
             nav: false,
             autoplay: true,
-            autoplayTimeout: 2000,
+            autoplayTimeout: 1900,
+            autoplaySpeed: 1000,
+            stagePadding: 15,
+            rewind: true
+        });
+        $('#study-material-slider2').owlCarousel({
+            items: 2,
+            margin: 8,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2300,
             autoplaySpeed: 1000,
             stagePadding: 15,
             rewind: true
