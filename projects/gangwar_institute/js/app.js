@@ -53,7 +53,7 @@
             autoplay: true,
             autoplayTimeout: 3000,
             autoplaySpeed: 1000,
-            stagePadding: 35,
+            stagePadding: 15,
             rewind: true
         });
         // STUDY-MATERIAL-SLIDER
@@ -64,7 +64,7 @@
             autoplay: true,
             autoplayTimeout: 2000,
             autoplaySpeed: 1000,
-            stagePadding: 35,
+            stagePadding: 15,
             rewind: true
         });
     });
@@ -101,3 +101,7 @@
         });
     });
 })();
+// GO BACK
+function goBack() {
+    window.history.back();
+}

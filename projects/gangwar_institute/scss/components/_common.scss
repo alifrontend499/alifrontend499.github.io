@@ -109,3 +109,25 @@ button.gradient,
         }
     }
 }
+
+.app-notification-btn {
+    > a {
+        position: relative;
+        i {
+            color: #fff;
+            font-size: 30px;
+            border-radius: 100%;
+        }
+    }
+    &.hasNotification a:after {
+        content: "";
+        height: 9px;
+        width: 9px;
+        border-radius: 100%;
+        background: red;
+        position: absolute;
+        top: 6px;
+        right: 4px;
+        z-index: 1;
+    }
+}

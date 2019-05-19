@@ -603,7 +603,11 @@ button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gr
 .app-head-w-view .link { width: 70px; }
 .app-head-w-view .link a { display: block; font: 14px "nexa-regular"; color: #2eb96a; }
 
-body { background: #f6f6f6; }
+.app-notification-btn > a { position: relative; }
+.app-notification-btn > a i { color: #fff; font-size: 30px; border-radius: 100%; }
+.app-notification-btn.hasNotification a:after { content: ""; height: 9px; width: 9px; border-radius: 100%; background: red; position: absolute; top: 6px; right: 4px; z-index: 1; }
+
+body { background: #f6f6f6; font-family: "nexa-regular"; }
 
 html, .login-body, .app-login, .app_L-main { height: 100%; }
 
@@ -628,12 +632,11 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 
 .app-head-top { padding: 20px 0; transition: 0.4s; }
 .app-head-top .AHT_inner > .LT, .app-head-top .AHT_inner .RT { width: 40px; }
-.app-head-top .AHT_inner > .LT > a, .app-head-top .AHT_inner .RT > a { position: relative; top: 2px; border-radius: 100%; }
-.app-head-top .AHT_inner > .LT > a i, .app-head-top .AHT_inner .RT > a i { color: #fff; font-size: 30px; }
+.app-head-top .AHT_inner > .LT > a, .app-head-top .AHT_inner .RT > a { top: 2px; }
+.app-head-top .AHT_inner > .LT > a i, .app-head-top .AHT_inner .RT > a i { color: #fff; font-size: 30px; border-radius: 100%; }
 .app-head-top .AHT_inner > .CT { width: calc(100% - (40px * 2)); }
 .app-head-top .AHT_inner > .CT input { border: none; border-radius: 7px; }
 .app-head-top .AHT_inner > .CT input:focus { -webkit-box-shadow: 0px 0px 5px 0px #26a69a; box-shadow: 0px 0px 5px 0px #26a69a; }
-.app-head-top .AHT_inner > .RT.hasNotification a:after { content: ""; height: 9px; width: 9px; border-radius: 100%; background: red; position: absolute; top: 6px; right: 4px; }
 .app-head-top.fixed { position: fixed; left: 0; width: 100%; top: 0; z-index: 12; background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76",endColorstr="#42fbf6",GradientType=1); padding-top: 10px; padding-bottom: 10px; }
 
 .app-head-bottom { padding-bottom: 20px; }
@@ -682,5 +685,12 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .study-material-slider .item .img-sec img { max-height: 100%; width: auto; z-index: 1; margin: 0 auto; }
 .study-material-slider .item .text-sec { margin-top: 11px; }
 .study-material-slider .item .text-sec p { color: #333; font: 15px "nexa-bold"; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+.backBar { padding: 14px 0 13px; }
+.backBar .BB_inner > .LT { width: calc(100% - 40px); }
+.backBar .BB_inner > .LT p { color: #fff; font: 18px "nexa-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
+.backBar .BB_inner > .LT p i { border-radius: 100%; }
+.backBar .BB_inner > .LT p span { margin-left: 5px; position: relative; top: 2px; }
+.backBar .BB_inner > .RT { width: 40px; }
 
 /*# sourceMappingURL=style.css.map */

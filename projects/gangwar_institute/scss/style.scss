@@ -7,6 +7,7 @@
 
 body {
     background: #f6f6f6;
+    font-family: "nexa-regular";
 }
 // LOGIN PAGE
 html,
@@ -98,13 +99,12 @@ html,
         .RT {
             width: 40px;
             > a {
-                position: relative;
                 top: 2px;
-                border-radius: 100%;
 
                 i {
                     color: #fff;
                     font-size: 30px;
+                    border-radius: 100%;
                 }
             }
         }
@@ -118,18 +118,18 @@ html,
                 }
             }
         }
-        > .RT {
-            &.hasNotification a:after {
-                content: "";
-                height: 9px;
-                width: 9px;
-                border-radius: 100%;
-                background: red;
-                position: absolute;
-                top: 6px;
-                right: 4px;
-            }
-        }
+        // > .RT {
+        //     &.hasNotification a:after {
+        //         content: "";
+        //         height: 9px;
+        //         width: 9px;
+        //         border-radius: 100%;
+        //         background: red;
+        //         position: absolute;
+        //         top: 6px;
+        //         right: 4px;
+        //     }
+        // }
     }
     @include transition(0.4s);
     &.fixed {
@@ -148,7 +148,7 @@ html,
     padding-bottom: 20px;
     .item {
         padding: 0 4px;
-        >a {
+        > a {
             padding-top: 4px;
         }
         .img-sec {
@@ -276,7 +276,7 @@ body.hasBMB {
 
 #app-home-sliders {
     margin-bottom: 35px;
-    >.container {
+    > .container {
         padding-right: 0;
     }
     .AHS_inner {
@@ -331,6 +331,32 @@ body.hasBMB {
                 overflow: hidden;
                 white-space: nowrap;
             }
+        }
+    }
+}
+
+// BACKBAR
+.backBar {
+    padding: 14px 0 13px;
+    .BB_inner {
+        > .LT {
+            width: calc(100% - 40px);
+            p {
+                color: #fff;
+                font: 18px "nexa-bold";
+                text-shadow: 0px 1px 1px #a2a2a2;
+                i {
+                    border-radius: 100%;
+                }
+                span {
+                    margin-left: 5px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+        > .RT {
+            width: 40px;
         }
     }
 }
