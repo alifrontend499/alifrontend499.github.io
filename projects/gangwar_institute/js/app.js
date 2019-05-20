@@ -96,9 +96,9 @@
 
             // BACKBTN FIXED
             if ($(this).scrollTop() > app_bbHeight) {
-                $('.backBar').addClass('fixed');
+                $('.backBar >.BB_top').addClass('fixed');
             } else {
-                $('.backBar').removeClass('fixed');
+                $('.backBar>.BB_top').removeClass('fixed');
             }
         })();
     });

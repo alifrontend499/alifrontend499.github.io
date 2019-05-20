@@ -17,6 +17,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @font-face { font-family: "ebgaramond08-regular"; src: url("../fonts/INARI_fonts/EBGaramond08-Regular.otf") format("opentype"); }
 @font-face { font-family: "ebgaramond08-italic"; src: url("../fonts/INARI_fonts/EBGaramond08-Italic.otf") format("opentype"); }
 @font-face { font-family: "ebgaramond-"; src: url("../fonts/INARI_fonts/") format("opentype"); }
+@font-face { font-family: "nexa-book"; src: url("../fonts/INARI_fonts/NexaBook.otf") format("opentype"); }
 @font-face { font-family: "nexa-black"; src: url("../fonts/INARI_fonts/NexaBlack.otf") format("opentype"); }
 @font-face { font-family: "nexa-bold"; src: url("../fonts/INARI_fonts/NexaBold.otf") format("opentype"); }
 @font-face { font-family: "nexa-light"; src: url("../fonts/INARI_fonts/NexaLight.otf") format("opentype"); }
@@ -686,13 +687,15 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .study-material-slider .item .text-sec { margin-top: 11px; }
 .study-material-slider .item .text-sec p { color: #333; font: 15px "nexa-bold"; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 
-.backBar { padding: 16px 0 14px; }
-.backBar .BB_inner > .LT { width: calc(100% - 40px); }
-.backBar .BB_inner > .LT p { color: #fff; font: 17px "nexa-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
-.backBar .BB_inner > .LT p i { border-radius: 100%; }
-.backBar .BB_inner > .LT p span { margin-left: 10px; position: relative; top: 2px; }
-.backBar .BB_inner > .RT { width: 40px; }
-.backBar.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; }
+.backBar .BB_top { padding: 16px 0 14px; }
+.backBar .BBT_inner > .LT { width: calc(100% - 40px); }
+.backBar .BBT_inner > .LT p { color: #fff; font: 17px "nexa-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
+.backBar .BBT_inner > .LT p i { border-radius: 100%; }
+.backBar .BBT_inner > .LT p span { margin-left: 10px; position: relative; top: 2px; }
+.backBar .BBT_inner > .RT { width: 40px; }
+.backBar .BBB_inner .text { color: #fff; font: 25px "nexa-x-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
+.backBar .BBB_inner img { line-height: 0; margin-bottom: -6px; width: 200px; margin-top: 8px; }
+.backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; }
 
 .app-notifications { margin-bottom: 20px; }
 
@@ -715,5 +718,21 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .video-lessons .AV_inner > .RT .head { font: 16px "nexa-x-bold"; }
 .video-lessons .AV_inner > .RT .head > span { font: 13px "nexa-regular"; color: #2eb96a; margin-top: 4px; }
 .video-lessons .AV_inner > .RT .head > span i { font-size: 12px; margin-right: 5px; position: relative; top: -2px; }
+
+.app-contact { background-color: #fff; padding: 20px 0; -webkit-box-shadow: 0px 0px 5px 0px #d6d6d6; box-shadow: 0px 0px 5px 0px #d6d6d6; }
+.app-contact .AC_inner { padding: 0 10px; }
+.app-contact .AC_inner > p { font: 15px "nexa-book"; color: #444444; }
+.app-contact .AC_inner > p:not(:last-child) { margin-bottom: 15px; }
+.app-contact .AC_inner > p > i { font-size: 17px; margin-right: 6px; margin-top: 1px; color: #333; }
+
+.app-contact-form { margin: 30px 0; }
+.app-contact-form .ACP_inner { padding: 0 10px; }
+.app-contact-form .form input, .app-contact-form .form textarea { font: 14px "nexa-bold"; color: #666; }
+.app-contact-form .form input { height: 40px; }
+.app-contact-form .form input, .app-contact-form .form textarea { -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; border-left: none; border-right: none; border-top: none; }
+.app-contact-form .form input:focus, .app-contact-form .form textarea:focus { border-bottom-color: #636363 !important; -webkit-box-shadow: 0 1px 0 0 #636363 !important; box-shadow: 0 1px 0 0 #636363 !important; }
+.app-contact-form .form input:focus + label, .app-contact-form .form textarea:focus + label { color: #444 !important; }
+.app-contact-form .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; }
+.app-contact-form .form .app-round-btn i { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); font-size: 26px; position: relative; top: -2px; left: 1px; }
 
 /*# sourceMappingURL=style.css.map */
