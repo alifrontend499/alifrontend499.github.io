@@ -141,6 +141,7 @@ html,
         @include app-gradient;
         padding-top: 10px;
         padding-bottom: 10px;
+        @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
     }
 }
 
@@ -235,7 +236,7 @@ body.hasBMB {
 
 // SITE WRAPPER
 .wrapper {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 // APP TEST SERIES
 #app-test-series {
@@ -337,19 +338,19 @@ body.hasBMB {
 
 // BACKBAR
 .backBar {
-    padding: 14px 0 13px;
+    padding: 16px 0 14px;
     .BB_inner {
         > .LT {
             width: calc(100% - 40px);
             p {
                 color: #fff;
-                font: 18px "nexa-bold";
+                font: 17px "nexa-bold";
                 text-shadow: 0px 1px 1px #a2a2a2;
                 i {
                     border-radius: 100%;
                 }
                 span {
-                    margin-left: 5px;
+                    margin-left: 10px;
                     position: relative;
                     top: 2px;
                 }
@@ -357,6 +358,103 @@ body.hasBMB {
         }
         > .RT {
             width: 40px;
+        }
+    }
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 12;
+        @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
+    }
+}
+
+// APP NOTIFICATIONS
+.app-notifications {
+    margin-bottom: 20px;
+}
+.AN_main {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .ANM_inner {
+        background-color: #fff;
+        @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
+        padding: 15px 0 12px 35px;
+        color: #777;
+        > .LT {
+            width: calc(100% - 30px);
+            padding-right: 10px;
+            .left-icon {
+                top: 50%;
+                left: 3px;
+                @include transformy(-50%);
+                font-size: 28px;
+            }
+            .head {
+                font: 16px "nexa-bold";
+                color: #000;
+                span {
+                    font: 12px "nexa-regular";
+                    color: $secodary-color;
+                    margin-top: 3px;
+                }
+            }
+        }
+        > .RT {
+            width: 30px;
+            i {
+                font-size: 22px;
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+// VIDEO LESSONS
+.video-lessons {
+    .big-vide-sec {
+        margin: -10px -10px 10px;
+        background-color: #000;
+        padding: 5px;
+    }
+    .A-video{
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    .AV_inner {
+        background-color: #fff;
+        @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
+        > .LT {
+            width: 110px;
+            .icon {
+                top: 50%;
+                left: 50%;
+                @include transform(-50%, -50%);
+                img {
+                    width: 35px;
+                }
+            }
+        }
+        > .RT {
+            width: calc(100% - 110px);
+            padding: 10px 0 0 15px;
+            .head {
+                font: 16px "nexa-x-bold";
+                > span {
+                    font: 13px "nexa-regular";
+                    color: $secodary-color;
+                    margin-top: 4px;
+                    i {
+                        font-size: 12px;
+                        margin-right: 5px;
+                        position: relative;
+                        top: -2px;
+                    }
+                }
+            }
         }
     }
 }
