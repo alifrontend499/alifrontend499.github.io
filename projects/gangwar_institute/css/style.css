@@ -736,4 +736,16 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .app-contact-form .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; }
 .app-contact-form .form .app-round-btn i { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); font-size: 26px; position: relative; top: -2px; left: 1px; }
 
+.app-userview { padding: 15px 15px; }
+.app-userview .img-sec { height: 65px; width: 65px; border-radius: 100%; border: 5px solid #fff; }
+.app-userview .img-sec img { border-radius: 100%; max-height: 100%; }
+.app-userview .text-sec { width: calc(100% - 65px); padding-top: 10px; padding-left: 15px; }
+.app-userview .text-sec .name { font: 25px "nexa-bold"; color: #fff; text-shadow: 0px 2px 2px #929292; }
+.app-userview .text-sec .post { font: 17px "nexa-bold"; color: #333; margin-top: 5px; }
+
+.app-menu { margin-top: 20px; height: calc(100% - (95px + 21px)); overflow: auto; }
+.app-menu > li > a { font: 15px "nexa-regular"; height: auto; line-height: normal; padding: 13px 20px 10px; }
+.app-menu > li > a > img { width: 30px; margin: 0; }
+.app-menu > li > a > span { margin-left: 20px; margin-top: 3px; }
+
 /*# sourceMappingURL=style.css.map */

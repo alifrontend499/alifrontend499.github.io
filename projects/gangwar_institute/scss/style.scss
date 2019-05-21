@@ -455,7 +455,7 @@ body.hasBMB {
                 left: 50%;
                 @include transform(-50%, -50%);
                 img {
-                    width: 35px;                    
+                    width: 35px;
                 }
             }
         }
@@ -547,6 +547,58 @@ body.hasBMB {
                 position: relative;
                 top: -2px;
                 left: 1px;
+            }
+        }
+    }
+}
+
+// SIDEBAR CSS
+.app-userview {
+    padding: 15px 15px;
+    .img-sec {
+        height: 65px;
+        width: 65px;
+        border-radius: 100%;
+        border: 5px solid #fff;
+        img {
+            border-radius: 100%;
+            max-height: 100%;
+        }
+    }
+    .text-sec {
+        width: calc(100% - 65px);
+        padding-top: 10px;
+        padding-left: 15px;
+        .name {
+            font: 25px "nexa-bold";
+            color: #fff;
+            text-shadow: 0px 2px 2px #929292;
+        }
+        .post {
+            font: 17px "nexa-bold";
+            color: #333;
+            margin-top: 5px;
+        }
+    }
+}
+.app-menu {
+    margin-top: 20px;
+    height: calc(100% - (95px + 21px));
+    overflow: auto;
+
+    > li {
+        > a {
+            font: 15px "nexa-regular";
+            height: auto;
+            line-height: normal;
+            padding: 13px 20px 10px;
+            > img {
+                width: 30px;
+                margin: 0;
+            }
+            > span {
+                margin-left: 20px;
+                margin-top: 3px;
             }
         }
     }
