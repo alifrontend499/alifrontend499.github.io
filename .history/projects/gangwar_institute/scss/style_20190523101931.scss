@@ -582,7 +582,7 @@ body.hasBMB {
     }
 }
 .app-menu {
-    margin-top: 5px;
+    margin-top: 20px;
     height: calc(100% - (95px + 21px));
     overflow: auto;
 
@@ -591,7 +591,7 @@ body.hasBMB {
             font: 15px "nexa-regular";
             height: auto;
             line-height: normal;
-            padding: 13px 30px 10px;
+            padding: 13px 20px 10px;
             > img {
                 width: 30px;
                 margin: 0;
