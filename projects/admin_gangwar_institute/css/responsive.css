@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+    .admin-content-area:not(.expand) {
+        -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+        filter: blur(2px);
+    }
+    .admin-header .LT{
+        width: calc(100% - 65px);
+    }
+    .admin-header .RT{
+        width: 65px;
+    }
+    .admin-header .LT .inner > a {
+        width: 30px;
+    }
+    .admin-header .LT .inner > .form-group {
+        width: calc(100% - 30px);
+    }
+    .admin-header .RT ul li i {
+        display: none;
+    }
+    .admin-header .RT ul li{
+        font-size: 13px;
+    }
+    .admin-pagination ul li {
+        font-size: 14px;
+    }
+    .admin-pagination ul li a {
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,255 @@
+// SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e2e2e2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lighten($color: $secodary-colorB, $amount: 10%);
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $secodary-colorB, $amount: 10%);
+}
+
+// COMMON CSS
+
+.clear-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 5px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    margin: 3px 4px;
+    background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    // background: $secodary-colorB;
+}
+
+.form-control {
+    &:focus {
+        @include box-shadow(0px, 0px, 3px, 0px, rgba(0, 141, 149, 0.8));
+    }
+}
+
+.admin-default-btn {
+    background-color: $secodary-color;
+    color: #fff;
+    font: 14px "montserrat-regular", sans-serif;
+    padding: 10px 12px 10px;
+    @include transition(0.1s);
+    &:hover {
+        color: #fff;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &:active {
+        background: darken($color: $secodary-color, $amount: 8%);
+    }
+}
+
+.admin-geadient-background {
+    @include app-gradient;
+}
+
+.container,
+.container-fluid {
+    @include max_width(768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+#admin-breadcrumbs {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px 5px;
+    @include min_width(768px) {
+        padding: 15px 10px;
+    }
+    margin-bottom: 40px;
+}
+.admin-breadcrumbs {
+    .AB_LT {
+        .head {
+            font: 20px "montserrat-semibold", "sans-serif";
+            color: #333;
+        }
+    }
+    .AB_RT {
+        ul {
+            li {
+                font: 15px "montserrat-regular", "sans-serif";
+                a {
+                    color: #333;
+                    display: block;
+                    text-decoration: none;
+                    padding: 0 5px;
+                    @include transition;
+                    i {
+                        font-size: 15px;
+                        color: #777;
+                        margin-right: 5px;
+                        position: relative;
+                        top: 2px;
+                    }
+                    &:hover {
+                        color: $secodary-colorB;
+                    }
+                }
+                &:last-child {
+                    font-family: "montserrat-semibold", "sans-serif";
+                    a {
+                        padding-right: 0;
+                        pointer-events: none;
+                    }
+                }
+                &:not(:last-child) {
+                    a:after {
+                        content: "/";
+                        position: relative;
+                        right: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// STUDENT SEARCH BAR
+.std-search-bar {
+    .SSB_LT {
+        width: 170px;
+        .btn {
+            height: 50px;
+            font: 16px "montserrat-semibold", "sans-serif";
+            color: #000;
+            i {
+                border-radius: 100%;
+                border: 2px solid #000;
+                color: #000;
+                font-size: 16px;
+            }
+            span {
+                margin-left: 9px;
+            }
+        }
+    }
+    .SSB_RT {
+        width: calc(100% - 170px);
+        padding-left: 25px;
+        .form-group {
+            input {
+                height: 50px;
+                @include box-shadow(0px, 0px, 4px, 0px, rgba(0, 0, 0, 0.1));
+                font: 15px "montserrat-regular", "sans-serif";
+            }
+        }
+    }
+}
+
+// ADMIN DETAIL MAIN TABLE
+.admin-detail-main_table {
+    table {
+        width: 100%;
+        td,
+        th {
+            padding: 20px 14px;
+        }
+        thead {
+            th,
+            td {
+                font: 14px "montserrat-bold", "sans-serif";
+                color: #000;
+            }
+        }
+        tbody {
+            tr {
+                // margin-bottom: 5px;
+                &:nth-child(even) {
+                    background: #efefef;
+                }
+                &:nth-child(odd) {
+                    background: #d7f3f6;
+                }
+                &:hover {
+                    // opacity: .7;
+                }
+            }
+            td {
+                font: 14px "montserrat-semibold", "sans-serif";
+                color: #000;
+                border-bottom: 3px solid #fff;
+            }
+        }
+    }
+}
+
+.round-icon-button {
+    $color: $secodary-color;
+    background-color: $color;
+    height: 40px;
+    width: 40px;
+    text-decoration: none !important;
+    color: #333;
+    @include transition(0.2s);
+    i {
+        font-size: 20px;
+    }
+    &:hover {
+        background-color: lighten($color: $color, $amount: 5%);
+        color: #222;
+    }
+    &:active {
+        background-color: darken($color: $color, $amount: 5%);
+    }
+}
+
+.admin-pagination {
+    $color: $secodary-colorB;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+        li {
+            font: 16px "montserrat-bold", "sans-serif";
+            margin: 0 3px;
+            a {
+                height: 38px;
+                width: 38px;
+                text-decoration: none !important;
+                color: #111;
+                @include transition(0.2s);
+                i {
+                    font-size: 20px;
+                }
+                &:hover {
+                    background-color: $color;
+                    color: #fff;
+                }
+                &:active {
+                    background-color: darken($color: $color, $amount: 10%);
+                }
+            }
+            &.active {
+                a {
+                    background-color: $color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gangwar Institute | Admin Stident Aria</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- MATERIAL ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="admin-wrapper d-flex h-100">
+        <div class="admin-left-bar">
+            <div class="ALB_inner h-100 w-100">
+                <div class="logo">
+                    <img src="images/admin-logo.png" alt="" class="img-fluid d-block">
+                </div>
+                <div class="menu">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">dashboard</i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">list_alt</i>
+                                <span>Course</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">playlist_add</i>
+                                <span>Raw Data</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">person</i>
+                                <span>Admin</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">contacts</i>
+                                <span>Student</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">payment</i>
+                                <span>Fee</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">category</i>
+                                <span>Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">report</i>
+                                <span>Fee Reports</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">file_copy</i>
+                                <span>Statement</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="material-icons">lock</i>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content-area">
+            <div class="ACA_inner">
+
+                <!-- HEADER -->
+                <section id="admin-header" class="admin-geadient-background">
+                    <div class="container-fluid">
+                        <div class="admin-header d-flex align-items-center">
+                            <div class="LT">
+                                <div class="inner d-flex align-items-center">
+                                    <a href="#" class="d-block left-bar-toggle-btn">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <div class="form-group mb-0">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="RT ml-auto">
+                                <ul class="d-flex list-unstyled justify-content-end">
+                                    <li class="">
+                                        <a href="#" class="d-flex align-items-center">
+                                            <i class="material-icons">exit_to_app</i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WRAPPER -->
+                <div class="wrapper">
+
+                    <!-- BREADCRUMBS SECTION -->
+                    <section id="admin-breadcrumbs">
+                        <div class="container">
+                            <div class="admin-breadcrumbs d-flex flex-wrap">
+                                <div class="AB_LT">
+                                    <p class="head">Dashboard</p>
+                                </div>
+                                <div class="AB_RT ml-auto">
+                                    <ul class="d-flex list-unstyled">
+                                        <li>
+                                            <a href="" class="d-flex">
+                                                <i class="material-icons">home</i>
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="d-flex">
+                                                <!-- <i class="material-icons">home</i> -->
+                                                <span>Student view</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- DETAILS TABLE -->
+                    <section id="admin-details-table">
+                        <div class="container">
+                            <div class="admin-details-table">
+                                <div class="std-search-bar">
+                                    <div class="inner d-flex">
+                                        <div class="SSB_LT">
+                                            <a href=""
+                                                class="btn admin-default-btn rounded-0 text-capitalize d-flex align-items-center">
+                                                <i class="material-icons">add</i>
+                                                <span>Student add</span>
+                                            </a>
+                                        </div>
+                                        <div class="SSB_RT">
+                                            <div class="form-group mb-0">
+                                                <input type="text" class="form-control rounded-0"
+                                                    placeholder="Search by student Phone/Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="admin-detail-main_table">
+                                    <div class="table-responsive">
+                                        <table class="">
+                                            <thead>
+                                                <tr>
+                                                    <th width="6%" class="text-uppercase">s.no</th>
+                                                    <th width="12%" class="text-uppercase">name</th>
+                                                    <th width="10%" class="text-uppercase">phone</th>
+                                                    <th width="18%" class="text-uppercase">email</th>
+                                                    <th width="12%" class="text-uppercase">center</th>
+                                                    <th width="12%" class="text-uppercase">course</th>
+                                                    <th width="22%" class="text-uppercase">pay installment</th>
+                                                    <th width="8%" class="text-uppercase">edit</th>
+                                                    <th width="8%" class="text-uppercase">delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1.
+                                                    </td>
+                                                    <td>
+                                                        Rajat Goel
+                                                    </td>
+                                                    <td>
+                                                        9621377966
+                                                    </td>
+                                                    <td>
+                                                        17goel@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        Hazratganj
+                                                    </td>
+                                                    <td>
+                                                        NEET 2020
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">delete</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2.
+                                                    </td>
+                                                    <td>
+                                                        Rajat Goel
+                                                    </td>
+                                                    <td>
+                                                        9621377966
+                                                    </td>
+                                                    <td>
+                                                        17goel@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        Hazratganj
+                                                    </td>
+                                                    <td>
+                                                        NEET 2020
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">delete</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        3.
+                                                    </td>
+                                                    <td>
+                                                        Rajat Goel
+                                                    </td>
+                                                    <td>
+                                                        9621377966
+                                                    </td>
+                                                    <td>
+                                                        17goel@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        Hazratganj
+                                                    </td>
+                                                    <td>
+                                                        NEET 2020
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">delete</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        4.
+                                                    </td>
+                                                    <td>
+                                                        Rajat Goel
+                                                    </td>
+                                                    <td>
+                                                        9621377966
+                                                    </td>
+                                                    <td>
+                                                        17goel@gmail.com
+                                                    </td>
+                                                    <td>
+                                                        Hazratganj
+                                                    </td>
+                                                    <td>
+                                                        NEET 2020
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">payment</i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <a href="#"
+                                                            class="d-inline-flex align-items-center justify-content-center rounded-circle round-icon-button">
+                                                            <i class="material-icons">delete</i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="admin-pagination">
+                        <div class="AP_inner">
+                            <ul class="d-flex align-items-center justify-content-center list-unstyled">
+                                <li class="left">
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">
+                                        <i class="material-icons">keyboard_arrow_left</i>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">1</a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">2</a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">3</a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">4</a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">5</a>
+                                </li>
+                                <li class="right">
+                                    <a href="" class="d-inline-flex align-items-center justify-content-center rounded-circle">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <section id="admin-footer">
+                        <div class="container">
+                            <div class="admin-footer d-flex flex-wrap">
+                                <div class="AF_LT">
+                                    <p>
+                                        2017 Copyright © Fundamaker. All Right Reversed.
+                                    </p>
+                                </div>
+                                <div class="AF_LT ml-auto">
+                                    <p>
+                                        <a href="">Terms of Use</a>  <a href="">Privacy</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
