@@ -28,7 +28,7 @@
     clear: both;
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
+.owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 5px;
 }
 
@@ -180,6 +180,21 @@
                 font: 15px "montserrat-regular", "sans-serif";
             }
         }
+        .user-profile {
+            .img-sec {
+                width: 100px;
+                height: 100px;
+                @include min_width(768px) {
+                    width: 140px;
+                    height: 140px;
+                }
+                img {
+                    max-height: 100%;
+                    margin-left: auto;
+                    display: block;
+                }
+            }
+        }
     }
 }
 
@@ -199,7 +214,6 @@
         }
 
         thead {
-
             th,
             td {
                 font: 14px "montserrat-bold", "sans-serif";
@@ -209,7 +223,6 @@
 
         tbody {
             tr {
-
                 // margin-bottom: 5px;
                 &:nth-child(even) {
                     background: #efefef;
@@ -297,7 +310,6 @@
     }
 }
 
-
 // ADMIN FROM
 .admin-form {
     margin-top: 15px;
@@ -312,25 +324,25 @@
             margin-bottom: 30px;
         }
 
-        >label {
+        > label {
             font: 15px "montserrat-bold", "sans-serif";
             color: #000;
             margin-bottom: 10px;
         }
 
-        >input,
-        >select {
-            height: 45px;
+        > input,
+        > select {
+            height: 40px;
             @include min_width(768px) {
-                height: 55px;
+                height: 45px;
             }
         }
-        >input,
-        >select,
-        >textarea {
+        > input,
+        > select,
+        > textarea {
             font: 15px "montserrat-regular", "sans-serif";
             color: #333;
-            background: #F8F8F8;
+            background: #f8f8f8;
             border-color: #d5d5d5;
             &:hover {
                 border-color: #9b9b9b;
@@ -361,7 +373,7 @@
         $color: $secodary-colorB;
         .btn {
             font: 17px "montserrat-semibold", "sans-serif";
-            padding: 12px 25px;
+            padding: 9px 15px;
             @include min_width(768px) {
                 padding: 14px 51px;
             }
@@ -369,10 +381,54 @@
             &:hover {
                 background-color: lighten($color: $color, $amount: 5%);
             }
-        
+
             &:active {
                 background-color: darken($color: $color, $amount: 5%);
             }
+        }
+    }
+}
+
+// ADMIN CHECKBOX
+.admin-checkbox {
+    cursor: pointer;
+    .box {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #6b6b6b;
+        margin-right: 7px;
+        @include transition(0.2s);
+        &::after {
+            content: "";
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            display: block;
+            margin: 1px 0 0 1px;
+            border: 1px dotted #989898;
+            @include transition(0.2s);
+        }
+    }
+    .text {
+        font: 15px "montserrat-regular", "sans-serif";
+        color: #565656;
+        position: relative;
+        top: -0.6px;
+    }
+    &:hover,
+    & > input:checked + {
+        .box {
+            border-color: #333;
+        }
+    }
+    & > input:checked {
+        + .box {
+            &::after {
+                border-color: $secodary-color;
+                background-color: $secodary-color;
+            }
+        }
+        ~ .text {
+            color: #000;
         }
     }
 }
