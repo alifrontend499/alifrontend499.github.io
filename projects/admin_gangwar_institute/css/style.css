@@ -45,8 +45,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 @media screen and (max-width: 768px) { .container, .container-fluid { padding-left: 10px; padding-right: 10px; } }
 
-#admin-breadcrumbs { background: #fff; border-radius: 50px; padding: 10px 5px; margin-bottom: 40px; }
-@media screen and (min-width: 768px) { #admin-breadcrumbs { padding: 15px 10px; } }
+#admin-breadcrumbs { border-radius: 50px; padding: 10px 5px; margin-bottom: 15px; }
+@media screen and (min-width: 768px) { #admin-breadcrumbs { padding: 15px 10px; background: #fff; margin-bottom: 40px; } }
 
 .admin-breadcrumbs .AB_LT .head { font: 20px "montserrat-semibold", "sans-serif"; color: #333; }
 .admin-breadcrumbs .AB_RT ul li { font: 15px "montserrat-regular", "sans-serif"; }
@@ -65,7 +65,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .std-search-bar .SSB_RT .form-group input { height: 50px; -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1); font: 15px "montserrat-regular", "sans-serif"; }
 
 .admin-detail-main_table table { width: 100%; }
-.admin-detail-main_table table td, .admin-detail-main_table table th { padding: 20px 14px; }
+.admin-detail-main_table table td, .admin-detail-main_table table th { vertical-align: top; padding: 10px 10px; }
+@media screen and (min-width: 768px) { .admin-detail-main_table table td, .admin-detail-main_table table th { padding: 20px 14px; } }
 .admin-detail-main_table table thead th, .admin-detail-main_table table thead td { font: 14px "montserrat-bold", "sans-serif"; color: #000; }
 .admin-detail-main_table table tbody tr:nth-child(even) { background: #efefef; }
 .admin-detail-main_table table tbody tr:nth-child(odd) { background: #d7f3f6; }
@@ -83,6 +84,25 @@ table { border-collapse: collapse; border-spacing: 0; }
 .admin-pagination ul li a:hover { background-color: #1598ac; color: #fff; }
 .admin-pagination ul li a:active { background-color: #0f707f; }
 .admin-pagination ul li.active a { background-color: #1598ac; color: #fff; }
+
+.admin-form { margin-top: 15px; }
+@media screen and (min-width: 768px) { .admin-form { margin-top: 35px; } }
+.admin-form .form-group { width: 100%; margin-bottom: 15px; }
+@media screen and (min-width: 768px) { .admin-form .form-group { margin-bottom: 30px; } }
+.admin-form .form-group > label { font: 15px "montserrat-bold", "sans-serif"; color: #000; margin-bottom: 10px; }
+.admin-form .form-group > input, .admin-form .form-group > select { height: 45px; }
+@media screen and (min-width: 768px) { .admin-form .form-group > input, .admin-form .form-group > select { height: 55px; } }
+.admin-form .form-group > input, .admin-form .form-group > select, .admin-form .form-group > textarea { font: 15px "montserrat-regular", "sans-serif"; color: #333; background: #F8F8F8; border-color: #d5d5d5; }
+.admin-form .form-group > input:hover, .admin-form .form-group > select:hover, .admin-form .form-group > textarea:hover { border-color: #9b9b9b; }
+.admin-form .form-lt, .admin-form .form-rt { width: 50%; }
+.admin-form .form-lt { padding-right: 10px; }
+@media screen and (min-width: 768px) { .admin-form .form-lt { padding-right: 20px; } }
+.admin-form .form-rt { padding-left: 10px; }
+@media screen and (min-width: 768px) { .admin-form .form-rt { padding-left: 20px; } }
+.admin-form .submit-btn .btn { font: 17px "montserrat-semibold", "sans-serif"; padding: 12px 25px; background: #1598ac; }
+@media screen and (min-width: 768px) { .admin-form .submit-btn .btn { padding: 14px 51px; } }
+.admin-form .submit-btn .btn:hover { background-color: #18acc3; }
+.admin-form .submit-btn .btn:active { background-color: #128495; }
 
 body { font-family: "opensans-regular", sans-serif; background-color: #eaeaea; }
 
@@ -154,7 +174,8 @@ html, body, #admin-login { height: 100%; }
 @media screen and (min-width: 768px) { .admin-details-table { padding: 20px; } }
 .admin-details-table .admin-detail-main_table { margin-top: 25px; }
 
-#admin-footer { border-top: 1px solid #9a9a9a; padding: 20px 0; }
+#admin-footer { border-top: 1px solid #9a9a9a; padding: 10px 0; margin-top: 30px; }
+@media screen and (min-width: 768px) { #admin-footer { padding: 20px 0; } }
 
 .admin-footer p, .admin-footer a { font: 15px "montserrat-medium", "sans-serif"; color: #111; }
 .admin-footer a { margin-left: 5px; }

@@ -13,7 +13,7 @@ $(function () {
         // });
 
         // ONCLICK CLOSE
-        if ($(window).width() <= 767) {
+        if ($(window).width() <= 991) {
             $('.admin-left-bar').addClass('hide-bar');
             $('.admin-content-area').addClass('expand');
 
