@@ -1,0 +1,130 @@
+.navbar-light .navbar-toggler {
+    background: #fff;
+    padding: 0 4px;
+    border-radius: 0;
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+    .header_TP .LT {
+        margin-bottom: 10px;
+    }
+    .home_slider .item .caption .head {
+        font-size: 20px;
+    }
+    .home_slider .item .caption .text {
+        font-size: 15px;
+    }
+    .contact-us-strip >.d-flex> p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .st-btn {
+        font-size: 15px;
+        padding: 13px 20px 11px;
+    }
+    .header_TP > .RT .phone a {
+        font-size: 13px;
+    }
+    .header_TP > .RT .phone a > i {
+        font-size: 20px;
+    }
+    .header_TP > .RT .login a {
+        font-size: 14px;
+    }
+    .header_TP > .RT .cart a i {
+        font-size: 25px;
+    }
+    .main-heading {
+        font-size: 20px;
+    }
+    .prods-sec .prod-main .text-sec .head {
+        font-size: 22px;
+    }
+    .prods-sec .prod-main .text-sec .sm-desc {
+        font-size: 14px;
+        line-height: normal;
+    }
+    .prods-sec .prod-main .text-sec .bg-desc,
+    .prods-sec .prod-main .text-sec .features li {
+        font-size: 14px;
+    }
+    .prods-sec .prod-main .text-sec .btn {
+        padding: 10px 20px 9px;
+    }
+    .home_services .img {
+        height: 45px;
+    }
+    .home_services .text-sec .head {
+        font-size: 20px;
+    }
+    .home_services .text-sec .desc {
+        font-size: 14px;
+    }
+    #partners {
+        padding: 20px 0 10px;
+    }
+    .partners .item {
+        padding-bottom: 10px;
+    }
+    .footer-TP ul li {
+        padding: 3px 9px;
+    }
+    .product-view .LT .inner {
+        margin-bottom: 15px;
+    }
+    .product-view .RT .name {
+        font-size: 16px;
+    }
+    .product-view .RT .special:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    .product-view .RT .special {
+        font-size: 14px;
+    }
+    .product-view .RT .frac:not(:last-child) {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .product-view .RT .price {
+        margin-bottom: 10px;
+    }
+    .cart-page table th {
+        font-size: 14px;
+    }
+    .final-checkout {
+        margin-top: 15px !important;
+    }
+    .final-checkout .voucher {
+        margin-bottom: 10px;
+    }
+    .st-form input, .st-form select {
+        height: 40px;
+    }
+    .st-form input, .st-form select, .st-form textarea {
+        font-size: 13px;
+    }
+    .form-modal .head {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 7px;
+    }
+    .form-modal .head span {
+        font-size: 12px;
+    }
+    .checkout-page .RT {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .cart-page table {
+        width: 650px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .main-heading {
+        font-size: 34px;
+    }
+}
