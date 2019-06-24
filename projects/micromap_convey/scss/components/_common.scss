@@ -111,6 +111,31 @@
             padding-left: 7.5px;
         }
     }
+
+    &.validate {
+        label {
+            width: 100px;
+            margin-bottom: 0;
+            text-align: right;
+            padding-right: 15px;
+            @include min_width(768px) {
+                width: 150px;
+            }
+        }
+        .imp {
+            color: #ff0102;
+            width: 11px;
+            text-align: right;
+        }
+        input,
+        select,
+        textarea {
+            width: calc(100% - (100px + 11px));
+            @include min_width(768px) {
+                width: calc(100% - (150px + 11px));
+            }
+        }
+    }
 }
 
 .form-modal {
