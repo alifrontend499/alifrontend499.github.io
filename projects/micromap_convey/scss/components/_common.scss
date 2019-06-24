@@ -136,6 +136,48 @@
             }
         }
     }
+    &.icon {
+        input {
+            padding-left: 32px;
+        }
+        .icon {
+            top: 50%;
+            left: 10px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            line-height: 0;
+            i {
+                font-size: 18px;
+                color: gray;
+            }
+        }
+    }
+}
+.forgot-pass {
+    margin-bottom: 15px;
+    margin-top: -5px;
+    a {
+        font-family: montserrat-medium, sans-serif;
+        font-size: 14px;
+        border-bottom: 1px solid transparent;
+        text-decoration: none !important;
+        color: #333;
+        transition: 0.3s;
+        &:hover {
+            border-color: #333;
+        }
+    }
+}
+.havaaccount {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    p {
+        font-family: montserrat-regular, sans-serif;
+        a {
+            font-family: montserrat-bold, sans-serif;
+        }
+    }
 }
 
 .form-modal {

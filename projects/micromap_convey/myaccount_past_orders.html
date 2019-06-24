@@ -47,9 +47,184 @@
                                 </a>
                             </div>
                             <div class="login">
-                                <a href="" class="d-flex align-items-center">
+                                <a href="" class="d-flex align-items-center" data-toggle="modal"
+                                    data-target="#login_modal">
                                     <span>Login / Register</span>
                                 </a>
+                                <!-- LOGIN MODAL -->
+                                <div class="modal fade form-modal custom-modal" id="login_modal" tabindex="-1"
+                                    role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <i class="material-icons">cancel</i>
+                                            </button>
+                                            <div class="modal-body">
+                                                <div class="home-contact">
+                                                    <p class="head">
+                                                        Login
+                                                        <span class="d-block">Login to your account</span>
+                                                    </p>
+                                                    <div class="HC_form">
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="email" class="form-control rounded-0"
+                                                                    placeholder="Email">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">mail</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="password" class="form-control rounded-0"
+                                                                    placeholder="Password">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">lock</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="forgot-pass">
+                                                            <a href="" class="open-BP-modal"
+                                                                data-modal="#forgot_password_modal">
+                                                                Forgot password?
+                                                            </a>
+                                                        </div>
+                                                        <div class="submit-btn">
+                                                            <button
+                                                                class="btn btn-block st-btn rounded-0 text-uppercase">Login</button>
+                                                        </div>
+                                                        <div class="havaaccount">
+                                                            <p class="">Don't have an Account? <a href=""
+                                                                    class="open-BP-modal"
+                                                                    data-modal="#signup_modal">Register
+                                                                    here</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SIGNUP MODAL -->
+                                <div class="modal fade form-modal custom-modal" id="signup_modal" tabindex="-1"
+                                    role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <i class="material-icons">cancel</i>
+                                            </button>
+                                            <div class="modal-body">
+                                                <div class="home-contact">
+                                                    <p class="head">
+                                                        Signup
+                                                        <span class="d-block">Join Us. Create new account here.</span>
+                                                    </p>
+                                                    <div class="HC_form">
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="text" class="form-control rounded-0"
+                                                                    placeholder="First Name">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">person</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="text" class="form-control rounded-0"
+                                                                    placeholder="Last Name">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">person</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="email" class="form-control rounded-0"
+                                                                    placeholder="Email">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">mail</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="password" class="form-control rounded-0"
+                                                                    placeholder="Password">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">lock</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="password" class="form-control rounded-0"
+                                                                    placeholder="Confirm Password">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">lock</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="submit-btn">
+                                                            <button
+                                                                class="btn btn-block st-btn rounded-0 text-uppercase">Sign
+                                                                up</button>
+                                                        </div>
+                                                        <div class="havaaccount">
+                                                            <p class="">Already have an Account? <a href=""
+                                                                    class="open-BP-modal"
+                                                                    data-modal="#login_modal">Login
+                                                                    here</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FORGOT PASSWORD MODAL -->
+                                <div class="modal fade form-modal custom-modal" id="forgot_password_modal" tabindex="-1"
+                                    role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <i class="material-icons">cancel</i>
+                                            </button>
+                                            <div class="modal-body">
+                                                <div class="home-contact">
+                                                    <p class="head">
+                                                        Forgot Password?
+                                                        <span class="d-block">Enter your email to retrive
+                                                            password.</span>
+                                                    </p>
+                                                    <div class="HC_form">
+                                                        <div class="form-group st-form icon position-relative">
+                                                            <div class="w-100 position-relative">
+                                                                <input type="email" class="form-control rounded-0"
+                                                                    placeholder="Email">
+                                                                <span class="position-absolute icon">
+                                                                    <i class="material-icons">mail</i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="submit-btn">
+                                                            <button
+                                                                class="btn btn-block st-btn rounded-0 text-uppercase">retrive
+                                                                password</button>
+                                                        </div>
+                                                        <div class="havaaccount">
+                                                            <p class="">Already have an Account? <a href=""
+                                                                    class="open-BP-modal"
+                                                                    data-modal="#login_modal">Login
+                                                                    here</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="cart">
                                 <a href="" class="position-relative d-block">
@@ -85,6 +260,20 @@
                                     </li>
                                     <li class="">
                                         <a class="text-uppercase" href="#">Products</a>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="">C-1</a>
+                                            </li>
+                                            <li>
+                                                <a href="">C-1 Plus</a>
+                                            </li>
+                                            <li>
+                                                <a href="">C-1</a>
+                                            </li>
+                                            <li>
+                                                <a href="">C-1 Plus</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="">
                                         <a class="text-uppercase" href="#">Careers</a>
@@ -176,7 +365,8 @@
                                                     <tr>
                                                         <td>
                                                             <div class="prod-details d-flex align-items-center">
-                                                                <img src="images/product-image.png" alt="" class="img-fluid">
+                                                                <img src="images/product-image.png" alt=""
+                                                                    class="img-fluid">
                                                                 <p class="name">C1 PORTABLE RADIOS:</p>
                                                             </div>
                                                         </td>
@@ -195,7 +385,8 @@
                                                     <tr>
                                                         <td>
                                                             <div class="prod-details d-flex align-items-center">
-                                                                <img src="images/product-image.png" alt="" class="img-fluid">
+                                                                <img src="images/product-image.png" alt=""
+                                                                    class="img-fluid">
                                                                 <p class="name">C1 PORTABLE RADIOS:</p>
                                                             </div>
                                                         </td>

@@ -16,7 +16,7 @@
     .home_slider .item .caption .text {
         font-size: 15px;
     }
-    .contact-us-strip >.d-flex> p {
+    .contact-us-strip > .d-flex > p {
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -99,10 +99,13 @@
     .final-checkout .voucher {
         margin-bottom: 10px;
     }
-    .st-form input, .st-form select {
+    .st-form input,
+    .st-form select {
         height: 40px;
     }
-    .st-form input, .st-form select, .st-form textarea {
+    .st-form input,
+    .st-form select,
+    .st-form textarea {
         font-size: 13px;
     }
     .form-modal .head {
@@ -116,6 +119,13 @@
     .checkout-page .RT {
         margin-top: 20px;
     }
+    .contact-findus .item .head {
+        font-size: 19px;
+    }
+    .contact-findus .item .adsresses {
+        font-size: 13px;
+        line-height: 20px;
+    }
 }
 @media (max-width: 600px) {
     .cart-page table {
@@ -126,5 +136,12 @@
 @media (min-width: 767px) and (max-width: 991px) {
     .main-heading {
         font-size: 34px;
+    }
+    .contact-findus .item .head {
+        font-size: 19px;
+    }
+    .contact-findus .item .adsresses {
+        font-size: 13px;
+        line-height: 20px;
     }
 }
