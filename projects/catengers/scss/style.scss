@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap');
 
 body {
-    background: #f6f6f6;
+    // background: #f6f6f6;
     // font-family: "nexa-regular";
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -23,13 +23,19 @@ html,
     height: 100%;
 }
 
-.login-body {
-    background: transparent url("../images/login-bg.jpg") no-repeat center / 100% 100%;
+.login-html {
+    // background: transparent url("../images/login-bg.jpg") no-repeat center / 100% 100%;
+    @include app-gradient;
+    overflow: hidden;
 }
+.login-body {
+    overflow: auto;
+    background: transparent;
+}
+
 
 .app-login {
     background: transparent url("../images/login-logo.png") no-repeat center -20px/auto;
-
     @include max_width(400px) {
         background-size: 100% 360px;
     }
