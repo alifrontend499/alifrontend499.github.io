@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gangwar Institute | Login</title>
+    <title>Catengers</title>
     <!-- MATERIALIZE -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
@@ -21,34 +21,35 @@
 
 <body class="login-body">
     <div class="app-login">
-        <div class="app_L-main d-flex-wrap align-items-center justify-content-center">
+        <!-- <div class="app_L-main d-flex-wrap align-items-center justify-content-center"> -->
+        <div class="app_L-main d-flex-wrap justify-content-center">
             <div class="AL_head align-self-start position-relative">
                 <div class="inner">
-                    <p class="AL_text text-center text-uppercase">
-                        Login
+                    <p class="AL_text text-center">
+                        LOGIN
                         <span class="d-block">
-                            Gangwar institute
+                            Catengers
                         </span>
                     </p>
-                    <div class="AL_logo position-absolute">
+                    <!-- <div class="AL_logo position-absolute">
                         <img src="images/login-logo.png" alt="" class="responsive-img">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="AL_login-box w-100">
                 <div class="container">
                     <div class="form">
-                        <form action="@">
+                        <form action="@" autocomplete="off">
                             <div class="input-field">
-                                <input id="mobile_number" type="text" class="validate">
+                                <input id="mobile_number" type="text" class="validate" autocomplete="off" required>
                                 <label for="mobile_number">Mobile Number</label>
                                 <div class="icon position-absolute">
                                     <i class="material-icons">smartphone</i>
                                 </div>
                             </div>
                             <div class="input-field">
-                                <input id="password" type="password" class="validate">
+                                <input id="password" type="password" class="validate" autocomplete="off" required>
                                 <label for="password">Password</label>
                                 <div class="icon position-absolute">
                                     <i class="material-icons">vpn_key</i>
@@ -58,9 +59,16 @@
                                 <a href="#">Forgot Password ?</a>
                             </div>
 
-                            <button class="btn app-round-btn gradient waves-effect gradient text-capitalize d-table">
+                            <button class="btn app-round-btn waves-effect text-capitalize d-table">
                                 Login
                             </button>
+
+                            <div class="reg-skip">
+                                <div class="inner d-flex align-items-center justify-content-center">
+                                    <a href="">Register</a>
+                                    <a href="">Skip</a>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

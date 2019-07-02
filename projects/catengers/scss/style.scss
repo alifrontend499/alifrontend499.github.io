@@ -14,6 +14,7 @@ body {
     // font-family: "nexa-regular";
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 // LOGIN PAGE
 html,
 .login-body,
@@ -21,75 +22,140 @@ html,
 .app_L-main {
     height: 100%;
 }
+
 .login-body {
-    background-color: #fff;
+    background: transparent url("../images/login-bg.jpg") no-repeat center / 100% 100%;
 }
+
+.app-login {
+    background: transparent url("../images/login-logo.png") no-repeat center -20px/auto;
+
+    @include max_width(400px) {
+        background-size: 100% 360px;
+    }
+}
+
 .app_L-main {
     .AL_head {
-        background: transparent url("../images/login_bg.png") no-repeat center / 100% 100%;
+        // background: transparent url("../images/login_bg.png") no-repeat center / 100% 100%;
         width: 100%;
         // padding: 60px 15px 110px;
         padding: 40px 15px 100px;
         margin-bottom: 50px;
+
         .AL_text {
-            font: 35px "nexa-x-bold";
+            font: 25px "nexa-x-bold";
             color: #fff;
             text-shadow: 0px 2px 2px #929292;
+
             span {
-                font: 16px "nexa-regular";
+                font: 25px "nexa-regular";
             }
         }
+
         .AL_logo {
             top: 100%;
             left: 50%;
             @include transform(-50%, calc(-50% + (-18px)));
+
             img {
                 width: 140px;
             }
         }
     }
+
     .AL_login-box {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-top: 100px;
+
+
         .form {
             padding: 0 10px;
-            .input-field,
-            .forgot-pass {
+
+            .input-field {
                 margin-bottom: 35px;
             }
+
+            .input-field:nth-child(2),
+            .forgot-pass {
+                margin-bottom: 20px;
+            }
+
             label,
             input {
-                font: 15px "nexa-bold";
-                color: #666;
+                font: 16px "nexa-regular", sans-serif;
+                color: #fff;
             }
+
             .icon {
                 top: 50%;
                 right: 5px;
                 @include transformy(-50%);
+
                 i {
                     font-size: 20px;
-                    color: #636363;
+                    color: #fff;
                 }
             }
+
             input {
                 height: 40px;
                 padding-right: 30px;
+                padding-left: 10px;
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
+                background-color: transparent;
+                border-bottom-color: #fff;
+                -webkit-text-fill-color: #333;
+                -webkit-box-shadow: 0 0 0 50px transparent inset;
+
                 &:focus {
-                    border-bottom-color: #636363;
-                    @include box-shadow(0, 1px, 0, 0, #636363);
-                    & + label {
-                        color: #444;
+                    border-bottom-color: #fff;
+                    @include box-shadow(0, 1px, 0, 0, #fff);
+
+                    &+label {
+                        color: #fff;
                     }
-                    & ~ .icon i {
-                        color: #444;
+
+                    &~.icon i {
+                        color: #fff;
+                    }
+                }
+
+                &:valid {
+                    &~.icon i {
+                        color: #333;
                     }
                 }
             }
+
             .forgot-pass {
                 a {
                     font: 15px "nexa-regular";
-                    color: #777;
+                    color: #fff;
+                }
+            }
+        }
+
+        .reg-skip {
+            margin-top: 20px;
+
+            a {
+                font: 16px "nexa-bold", sans-serif;
+                padding: 0 17px;
+                color: #fff;
+                display: block;
+                position: relative;
+
+                &:not(:last-child):after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    height: calc(100% - 5px);
+                    width: 2px;
+                    background: #fff;
+                    @include transformy(-50%);
                 }
             }
         }
@@ -99,11 +165,14 @@ html,
 // HEADER
 .app-head-top {
     padding: 20px 0;
+
     .AHT_inner {
-        > .LT,
+
+        >.LT,
         .RT {
             width: 40px;
-            > a {
+
+            >a {
                 top: 2px;
 
                 i {
@@ -113,16 +182,20 @@ html,
                 }
             }
         }
-        > .CT {
+
+        >.CT {
             width: calc(100% - (40px * 2));
+
             input {
                 border: none;
                 border-radius: 7px;
+
                 &:focus {
                     @include box-shadow(0px, 0px, 5px, 0px, #26a69a);
                 }
             }
         }
+
         // > .RT {
         //     &.hasNotification a:after {
         //         content: "";
@@ -136,7 +209,9 @@ html,
         //     }
         // }
     }
+
     @include transition(0.4s);
+
     &.fixed {
         position: fixed;
         left: 0;
@@ -152,11 +227,14 @@ html,
 
 .app-head-bottom {
     padding-bottom: 20px;
+
     .item {
         padding: 0 4px;
-        > a {
+
+        >a {
             padding-top: 4px;
         }
+
         .img-sec {
             background-color: #fff;
             height: 50px;
@@ -164,14 +242,17 @@ html,
             padding: 5px;
             border-radius: 100%;
             margin: 0 auto;
+
             img {
                 max-height: 100%;
                 width: auto;
                 z-index: 1;
             }
         }
+
         .text-sec {
             margin-top: 5px;
+
             p {
                 color: #fff;
                 font: 15px "nexa-bold";
@@ -179,16 +260,19 @@ html,
             }
         }
     }
-    .owl-nav.disabled + .owl-dots {
+
+    .owl-nav.disabled+.owl-dots {
         position: absolute;
         width: 100%;
         margin-top: 0;
     }
 }
+
 // BOTTOM MENU BAR
 body.hasBMB {
     padding-bottom: calc(72px + 10px);
 }
+
 .bottom-menu-bar {
     position: fixed;
     bottom: 0px;
@@ -197,27 +281,34 @@ body.hasBMB {
     z-index: 12;
     background-color: #fff;
     @include box-shadow(0px, 0px, 4px, 0px, #848484);
+
     .item {
         -webkit-flex-basis: 100px;
         flex-basis: 100px;
-        > a {
+
+        >a {
             padding: 10px 5px 9px;
         }
+
         .img-sec {
             img {
                 width: 25px;
+
                 &.active {
                     display: none;
                 }
             }
         }
+
         .text-sec {
             margin-top: 10px;
+
             p {
                 font: 15px "nexa-regular";
                 color: #8a8a8a;
             }
         }
+
         &:hover,
         &.active {
             .img-sec {
@@ -225,11 +316,13 @@ body.hasBMB {
                     &.active {
                         display: block;
                     }
+
                     &.main {
                         display: none;
                     }
                 }
             }
+
             .text-sec {
                 p {
                     color: $secodary-color;
@@ -243,15 +336,19 @@ body.hasBMB {
 .wrapper {
     margin-top: 10px;
 }
+
 // APP TEST SERIES
 #app-test-series {
     margin-bottom: 25px;
     @include box-shadow(0px, 0px, 5px, 0px, #d6d6d6);
     background: #fff;
+
     .ATS_inner {
         padding: 15px 0;
+
         .item {
             padding: 0 4px;
+
             .img-sec {
                 height: 50px;
                 // background-color: #fff;
@@ -259,14 +356,17 @@ body.hasBMB {
                 // width: 50px;
                 padding: 5px;
                 margin: 0 auto;
+
                 img {
                     max-height: 100%;
                     width: auto;
                     z-index: 1;
                 }
             }
+
             .text-sec {
                 margin-top: 5px;
+
                 p {
                     color: #000;
                     font: 13px "nexa-regular";
@@ -282,18 +382,22 @@ body.hasBMB {
 
 #app-home-sliders {
     margin-bottom: 35px;
-    > .container {
+
+    >.container {
         padding-right: 0;
     }
+
     .AHS_inner {
         padding-right: 10px;
     }
 }
+
 // VIDEO SOLUTION
 .video-solutions-slider {
     .owl-stage {
         padding-left: 0 !important;
     }
+
     .item {
         .icon {
             top: 50%;
@@ -302,23 +406,28 @@ body.hasBMB {
         }
     }
 }
+
 // STUDY MATERIAL SLIDER
 .study-material-slider {
     .owl-stage {
         padding-left: 0 !important;
     }
+
     .item {
         padding: 2px;
-        > a {
+
+        >a {
             // border: 1px solid #000;
             background: #fff;
             width: 100%;
             padding: 8px;
             @include box-shadow(0px, 0px, 4px, 0px, #dadada);
         }
+
         .img-sec {
             margin: 0 auto;
             height: 66px;
+
             img {
                 max-height: 100%;
                 width: auto;
@@ -326,6 +435,7 @@ body.hasBMB {
                 margin: 0 auto;
             }
         }
+
         .text-sec {
             margin-top: 11px;
 
@@ -346,16 +456,20 @@ body.hasBMB {
     .BB_top {
         padding: 16px 0 14px;
     }
+
     .BBT_inner {
-        > .LT {
+        >.LT {
             width: calc(100% - 40px);
+
             p {
                 color: #fff;
                 font: 17px "nexa-bold";
                 text-shadow: 0px 1px 1px #a2a2a2;
+
                 i {
                     border-radius: 100%;
                 }
+
                 span {
                     margin-left: 10px;
                     position: relative;
@@ -363,16 +477,19 @@ body.hasBMB {
                 }
             }
         }
-        > .RT {
+
+        >.RT {
             width: 40px;
         }
     }
+
     .BBB_inner {
         .text {
             color: #fff;
             font: 25px "nexa-x-bold";
             text-shadow: 0px 1px 1px #a2a2a2;
         }
+
         img {
             line-height: 0;
             margin-bottom: -6px;
@@ -380,6 +497,7 @@ body.hasBMB {
             margin-top: 8px;
         }
     }
+
     .BB_top {
         &.fixed {
             position: fixed;
@@ -396,27 +514,33 @@ body.hasBMB {
 .app-notifications {
     margin-bottom: 20px;
 }
+
 .AN_main {
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+
     .ANM_inner {
         background-color: #fff;
         @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
         padding: 15px 0 12px 35px;
         color: #777;
-        > .LT {
+
+        >.LT {
             width: calc(100% - 30px);
             padding-right: 10px;
+
             .left-icon {
                 top: 50%;
                 left: 3px;
                 @include transformy(-50%);
                 font-size: 28px;
             }
+
             .head {
                 font: 16px "nexa-bold";
                 color: #000;
+
                 span {
                     font: 12px "nexa-regular";
                     color: $secodary-color;
@@ -424,8 +548,10 @@ body.hasBMB {
                 }
             }
         }
-        > .RT {
+
+        >.RT {
             width: 30px;
+
             i {
                 font-size: 22px;
                 margin-right: 3px;
@@ -441,38 +567,48 @@ body.hasBMB {
         background-color: #000;
         padding: 5px;
     }
+
     .all-videos {
         padding: 0 5px 10px;
     }
+
     .A-video {
         &:not(:last-child) {
             margin-bottom: 15px;
         }
     }
+
     .AV_inner {
         background-color: #fff;
         @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
-        > .LT {
+
+        >.LT {
             width: 110px;
             line-height: 0;
+
             .icon {
                 top: 50%;
                 left: 50%;
                 @include transform(-50%, -50%);
+
                 img {
                     width: 35px;
                 }
             }
         }
-        > .RT {
+
+        >.RT {
             width: calc(100% - 110px);
             padding: 10px 0 0 15px;
+
             .head {
                 font: 16px "nexa-x-bold";
-                > span {
+
+                >span {
                     font: 13px "nexa-regular";
                     color: $secodary-color;
                     margin-top: 4px;
+
                     i {
                         font-size: 12px;
                         margin-right: 5px;
@@ -490,15 +626,19 @@ body.hasBMB {
     background-color: #fff;
     padding: 20px 0;
     @include box-shadow(0px, 0px, 5px, 0px, #d6d6d6);
+
     .AC_inner {
         padding: 0 10px;
-        > p {
+
+        >p {
             &:not(:last-child) {
                 margin-bottom: 15px;
             }
+
             font: 15px "nexa-book";
             color: #444444;
-            > i {
+
+            >i {
                 font-size: 17px;
                 margin-right: 6px;
                 margin-top: 1px;
@@ -511,18 +651,23 @@ body.hasBMB {
 // CONTACT FORM SEC
 .app-contact-form {
     margin: 30px 0;
+
     .ACP_inner {
         padding: 0 10px;
     }
+
     .form {
+
         input,
         textarea {
             font: 14px "nexa-bold";
             color: #666;
         }
+
         input {
             height: 40px;
         }
+
         input,
         textarea {
             -webkit-box-sizing: border-box;
@@ -531,20 +676,24 @@ body.hasBMB {
             border-left: none;
             border-right: none;
             border-top: none;
+
             &:focus {
                 border-bottom-color: #636363 !important;
                 @include box-shadow(0, 1px, 0, 0, #636363 !important);
-                & + label {
+
+                &+label {
                     color: #444 !important;
                 }
             }
         }
+
         .app-round-btn {
             min-width: auto;
             padding: 9px 3px 0;
             height: 60px;
             width: 60px;
             margin: 10px 0 0;
+
             i {
                 -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
@@ -560,25 +709,30 @@ body.hasBMB {
 // SIDEBAR CSS
 .app-userview {
     padding: 15px 15px;
+
     .img-sec {
         height: 65px;
         width: 65px;
         border-radius: 100%;
         border: 5px solid #fff;
+
         img {
             border-radius: 100%;
             max-height: 100%;
         }
     }
+
     .text-sec {
         width: calc(100% - 65px);
         padding-top: 10px;
         padding-left: 15px;
+
         .name {
             font: 20px "nexa-bold";
             color: #fff;
             text-shadow: 0px 2px 2px #929292;
         }
+
         .post {
             font: 15px "nexa-bold";
             color: #333;
@@ -586,22 +740,25 @@ body.hasBMB {
         }
     }
 }
+
 .app-menu {
     margin-top: 5px;
     height: calc(100% - (95px + 21px));
     overflow: auto;
 
-    > li {
-        > a {
+    >li {
+        >a {
             font: 15px "nexa-regular";
             height: auto;
             line-height: normal;
             padding: 13px 30px 10px;
-            > img {
+
+            >img {
                 width: 30px;
                 margin: 0;
             }
-            > span {
+
+            >span {
                 margin-left: 20px;
                 margin-top: 3px;
             }

@@ -586,13 +586,13 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .position-static { position: static; }
 
-.app-round-btn { font: 20px "nexa-bold"; min-width: 200px; padding: 16px 10px 13px; height: auto; border-radius: 30px; -webkit-box-shadow: 1px 2px 6px 0px #b1b1b1; box-shadow: 1px 2px 6px 0px #b1b1b1; margin: 0 auto; }
+.app-round-btn { font: 20px "nexa-bold"; min-width: 200px; padding: 16px 10px 13px; height: auto; border-radius: 30px; -webkit-box-shadow: 1pxF 0px 6px 0px #272727; box-shadow: 1pxF 0px 6px 0px #272727; margin: 0 auto; background-color: #fff; color: #b11f24; }
 
-button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: -webkit-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6",endColorstr="#58ee76",GradientType=1); }
+button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: -webkit-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1); }
 
 .app-input { border: 1px solid #cecece; height: 40px; background: #fff; padding: 2px 10px; box-shadow: none; outline: none; }
 
-.app-geadient { background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76",endColorstr="#42fbf6",GradientType=1); }
+.app-geadient { background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76", endColorstr="#42fbf6", GradientType=1); }
 
 .owl-theme .owl-nav.disabled + .owl-dots { margin-top: 5px; }
 
@@ -603,7 +603,7 @@ button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gr
 .app-head-w-view { line-height: normal; margin-bottom: 10px; }
 .app-head-w-view .head { font: 19px "nexa-x-bold"; color: #000; width: calc(100% - 70px); padding-right: 5px; }
 .app-head-w-view .link { width: 70px; }
-.app-head-w-view .link a { display: block; font: 14px "nexa-regular"; color: #2eb96a; }
+.app-head-w-view .link a { display: block; font: 14px "nexa-regular"; color: #b11f24; }
 
 .app-notification-btn > a { position: relative; }
 .app-notification-btn > a i { color: #fff; font-size: 30px; border-radius: 100%; }
@@ -613,24 +613,32 @@ body { background: #f6f6f6; font-family: 'Source Sans Pro', sans-serif; }
 
 html, .login-body, .app-login, .app_L-main { height: 100%; }
 
-.login-body { background-color: #fff; }
+.login-body { background: transparent url("../images/login-bg.jpg") no-repeat center/100% 100%; }
 
-.app_L-main .AL_head { background: transparent url("../images/login_bg.png") no-repeat center/100% 100%; width: 100%; padding: 40px 15px 100px; margin-bottom: 50px; }
-.app_L-main .AL_head .AL_text { font: 35px "nexa-x-bold"; color: #fff; text-shadow: 0px 2px 2px #929292; }
-.app_L-main .AL_head .AL_text span { font: 16px "nexa-regular"; }
+.app-login { background: transparent url("../images/login-logo.png") no-repeat center -20px/auto; }
+@media screen and (max-width: 400px) { .app-login { background-size: 100% 360px; } }
+
+.app_L-main .AL_head { width: 100%; padding: 40px 15px 100px; margin-bottom: 50px; }
+.app_L-main .AL_head .AL_text { font: 25px "nexa-x-bold"; color: #fff; text-shadow: 0px 2px 2px #929292; }
+.app_L-main .AL_head .AL_text span { font: 25px "nexa-regular"; }
 .app_L-main .AL_head .AL_logo { top: 100%; left: 50%; -webkit-transform: translate(-50%, calc(-50% + (-18px))); transform: translate(-50%, calc(-50% + (-18px))); }
 .app_L-main .AL_head .AL_logo img { width: 140px; }
-.app_L-main .AL_login-box { margin-bottom: 30px; }
+.app_L-main .AL_login-box { margin-bottom: 10px; margin-top: 100px; }
 .app_L-main .AL_login-box .form { padding: 0 10px; }
-.app_L-main .AL_login-box .form .input-field, .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 35px; }
-.app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font: 15px "nexa-bold"; color: #666; }
+.app_L-main .AL_login-box .form .input-field { margin-bottom: 35px; }
+.app_L-main .AL_login-box .form .input-field:nth-child(2), .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 20px; }
+.app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font: 16px "nexa-regular", sans-serif; color: #fff; }
 .app_L-main .AL_login-box .form .icon { top: 50%; right: 5px; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
-.app_L-main .AL_login-box .form .icon i { font-size: 20px; color: #636363; }
-.app_L-main .AL_login-box .form input { height: 40px; padding-right: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.app_L-main .AL_login-box .form input:focus { border-bottom-color: #636363; -webkit-box-shadow: 0 1px 0 0 #636363; box-shadow: 0 1px 0 0 #636363; }
-.app_L-main .AL_login-box .form input:focus + label { color: #444; }
-.app_L-main .AL_login-box .form input:focus ~ .icon i { color: #444; }
-.app_L-main .AL_login-box .form .forgot-pass a { font: 15px "nexa-regular"; color: #777; }
+.app_L-main .AL_login-box .form .icon i { font-size: 20px; color: #fff; }
+.app_L-main .AL_login-box .form input { height: 40px; padding-right: 30px; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: transparent; border-bottom-color: #fff; -webkit-text-fill-color: #333; -webkit-box-shadow: 0 0 0 50px transparent inset; }
+.app_L-main .AL_login-box .form input:focus { border-bottom-color: #fff; -webkit-box-shadow: 0 1px 0 0 #fff; box-shadow: 0 1px 0 0 #fff; }
+.app_L-main .AL_login-box .form input:focus + label { color: #fff; }
+.app_L-main .AL_login-box .form input:focus ~ .icon i { color: #fff; }
+.app_L-main .AL_login-box .form input:valid ~ .icon i { color: #333; }
+.app_L-main .AL_login-box .form .forgot-pass a { font: 15px "nexa-regular"; color: #fff; }
+.app_L-main .AL_login-box .reg-skip { margin-top: 20px; }
+.app_L-main .AL_login-box .reg-skip a { font: 16px "nexa-bold", sans-serif; padding: 0 17px; color: #fff; display: block; position: relative; }
+.app_L-main .AL_login-box .reg-skip a:not(:last-child):after { content: ""; position: absolute; top: 50%; right: 0; height: calc(100% - 5px); width: 2px; background: #fff; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 
 .app-head-top { padding: 20px 0; transition: 0.4s; }
 .app-head-top .AHT_inner > .LT, .app-head-top .AHT_inner .RT { width: 40px; }
@@ -639,7 +647,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .app-head-top .AHT_inner > .CT { width: calc(100% - (40px * 2)); }
 .app-head-top .AHT_inner > .CT input { border: none; border-radius: 7px; }
 .app-head-top .AHT_inner > .CT input:focus { -webkit-box-shadow: 0px 0px 5px 0px #26a69a; box-shadow: 0px 0px 5px 0px #26a69a; }
-.app-head-top.fixed { position: fixed; left: 0; width: 100%; top: 0; z-index: 12; background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76",endColorstr="#42fbf6",GradientType=1); padding-top: 10px; padding-bottom: 10px; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; }
+.app-head-top.fixed { position: fixed; left: 0; width: 100%; top: 0; z-index: 12; background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76", endColorstr="#42fbf6", GradientType=1); padding-top: 10px; padding-bottom: 10px; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; }
 
 .app-head-bottom { padding-bottom: 20px; }
 .app-head-bottom .item { padding: 0 4px; }
@@ -661,7 +669,7 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .bottom-menu-bar .item .text-sec p { font: 15px "nexa-regular"; color: #8a8a8a; }
 .bottom-menu-bar .item:hover .img-sec img.active, .bottom-menu-bar .item.active .img-sec img.active { display: block; }
 .bottom-menu-bar .item:hover .img-sec img.main, .bottom-menu-bar .item.active .img-sec img.main { display: none; }
-.bottom-menu-bar .item:hover .text-sec p, .bottom-menu-bar .item.active .text-sec p { color: #2eb96a; }
+.bottom-menu-bar .item:hover .text-sec p, .bottom-menu-bar .item.active .text-sec p { color: #b11f24; }
 
 .wrapper { margin-top: 10px; }
 
@@ -705,7 +713,7 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .AN_main .ANM_inner > .LT { width: calc(100% - 30px); padding-right: 10px; }
 .AN_main .ANM_inner > .LT .left-icon { top: 50%; left: 3px; -webkit-transform: translatey(-50%); transform: translatey(-50%); font-size: 28px; }
 .AN_main .ANM_inner > .LT .head { font: 16px "nexa-bold"; color: #000; }
-.AN_main .ANM_inner > .LT .head span { font: 12px "nexa-regular"; color: #2eb96a; margin-top: 3px; }
+.AN_main .ANM_inner > .LT .head span { font: 12px "nexa-regular"; color: #b11f24; margin-top: 3px; }
 .AN_main .ANM_inner > .RT { width: 30px; }
 .AN_main .ANM_inner > .RT i { font-size: 22px; margin-right: 3px; }
 
@@ -718,7 +726,7 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .video-lessons .AV_inner > .LT .icon img { width: 35px; }
 .video-lessons .AV_inner > .RT { width: calc(100% - 110px); padding: 10px 0 0 15px; }
 .video-lessons .AV_inner > .RT .head { font: 16px "nexa-x-bold"; }
-.video-lessons .AV_inner > .RT .head > span { font: 13px "nexa-regular"; color: #2eb96a; margin-top: 4px; }
+.video-lessons .AV_inner > .RT .head > span { font: 13px "nexa-regular"; color: #b11f24; margin-top: 4px; }
 .video-lessons .AV_inner > .RT .head > span i { font-size: 12px; margin-right: 5px; position: relative; top: -2px; }
 
 .app-contact { background-color: #fff; padding: 20px 0; -webkit-box-shadow: 0px 0px 5px 0px #d6d6d6; box-shadow: 0px 0px 5px 0px #d6d6d6; }
