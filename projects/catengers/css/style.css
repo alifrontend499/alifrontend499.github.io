@@ -720,7 +720,7 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .bottom-menu-bar { position: fixed; bottom: 0px; left: 0; width: 100%; z-index: 12; background-color: #fff; -webkit-box-shadow: 0px 0px 4px 0px #848484; box-shadow: 0px 0px 4px 0px #848484; }
 .bottom-menu-bar .item { -webkit-flex-basis: 100px; flex-basis: 100px; }
 .bottom-menu-bar .item > a { padding: 10px 5px 9px; }
-.bottom-menu-bar .item .img-sec { width: 23px; height: 23px; margin: 0 auto; }
+.bottom-menu-bar .item .img-sec { width: 28px; height: 28px; margin: 0 auto; }
 .bottom-menu-bar .item .img-sec img { max-height: 100%; }
 .bottom-menu-bar .item .text-sec { margin-top: 5px; }
 .bottom-menu-bar .item .text-sec p { font: 600 13px "source sans pro"; color: #8a8a8a; text-transform: uppercase; }
@@ -868,9 +868,10 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 
 .app-solutions .frac { padding: 15px; background: #fff; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
 .app-solutions .frac:not(:last-child) { margin-bottom: 25px; }
-.app-solutions .A-ques .ques p { font-size: 19px; font-weight: 600; line-height: 22px; }
-.app-solutions .A-ques .ques p > span { display: block; width: calc(100% - 28px); padding-right: 8px; }
-.app-solutions .A-ques .ques p > a { width: 28px; height: 28px; background: #464646; color: #fff; position: relative; top: 7px; }
+.app-solutions .A-ques .ques > .d-flex > .main { width: calc(100% - 28px); padding-right: 8px; }
+.app-solutions .A-ques .ques > .d-flex > .main .ques-main { font-size: 19px; font-weight: 600; line-height: 22px; }
+.app-solutions .A-ques .ques > .d-flex > .main .img-sec { margin-top: 10px; }
+.app-solutions .A-ques .ques > .d-flex > a { width: 28px; height: 28px; background: #464646; color: #fff; position: relative; top: 7px; }
 .app-solutions .A-ques .ans { margin-top: 15px; display: none; }
 .app-solutions .A-ques .ans-input-bar { padding: 9px 10px; background: #fbf2d3; margin-left: -10px; width: calc(100% + 20px); margin-bottom: 15px; }
 .app-solutions .A-ques .ans-input-bar input { width: 120px; margin-bottom: 0; height: 35px; }
@@ -880,6 +881,6 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .app-solutions .A-ques .solutions .all-math .map { font-size: 17px; font-weight: 600; color: #333; line-height: 22px; }
 .app-solutions .A-ques .solutions .all-math .map sup { font-size: 13px; }
 .app-solutions .A-ques.in .ans { display: block; }
-.app-solutions .A-ques.in .ques p > a { background: #b11f24; }
+.app-solutions .A-ques.in .ques > .d-flex > a { background: #b11f24; }
 
 /*# sourceMappingURL=style.css.map */
