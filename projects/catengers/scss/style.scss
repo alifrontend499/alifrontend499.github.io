@@ -25,12 +25,13 @@ html,
 
 .login-html {
   // background: transparent url("../images/login-bg.jpg") no-repeat center / 100% 100%;
-  @include app-gradient;
+  // @include app-gradient;
   overflow: hidden;
 }
 .login-body {
   overflow: auto;
-  background: transparent;
+	background: transparent;
+	@include app-gradient;
 }
 
 .app-login {

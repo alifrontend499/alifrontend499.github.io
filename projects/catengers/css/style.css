@@ -624,9 +624,9 @@ body { font-family: "Source Sans Pro", sans-serif; }
 
 html, .login-body, .app-login, .app_L-main { height: 100%; }
 
-.login-html { background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); overflow: hidden; }
+.login-html { overflow: hidden; }
 
-.login-body { overflow: auto; background: transparent; }
+.login-body { overflow: auto; background: transparent; background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
 
 .app-login { background: transparent url("../images/login-logo.png") no-repeat center -20px/auto; }
 @media screen and (max-width: 400px) { .app-login { background-size: 100% 360px; } }
