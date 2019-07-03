@@ -425,49 +425,6 @@ body.hasBMB {
   margin-top: 10px;
 }
 
-// APP TEST SERIES
-// #app-test-series {
-//   margin-bottom: 25px;
-//   @include box-shadow(0px, 0px, 5px, 0px, #d6d6d6);
-//   background: #fff;
-
-//   .ATS_inner {
-//     padding: 15px 0;
-
-//     .item {
-//       padding: 0 4px;
-
-//       .img-sec {
-//         height: 50px;
-//         // background-color: #fff;
-//         // height: 50px;
-//         // width: 50px;
-//         padding: 5px;
-//         margin: 0 auto;
-
-//         img {
-//           max-height: 100%;
-//           width: auto;
-//           z-index: 1;
-//         }
-//       }
-
-//       .text-sec {
-//         margin-top: 5px;
-
-//         p {
-//           color: #000;
-//           font: 13px "nexa-regular";
-//           width: 100%;
-//           text-overflow: ellipsis;
-//           overflow: hidden;
-//           white-space: nowrap;
-//         }
-//       }
-//     }
-//   }
-// }
-
 #app-home-sliders {
   margin-bottom: 35px;
 
@@ -561,7 +518,7 @@ body.hasBMB {
 // BACKBAR
 .backBar {
   .BB_top {
-    padding: 16px 0 0px;
+    padding: 16px 0;
   }
 
   .BBT_inner {
@@ -570,7 +527,7 @@ body.hasBMB {
 
       p {
         color: #fff;
-        font: 600 21px "source sans pro", sans-serif;
+        font: 600 20px "source sans pro", sans-serif;
         // text-shadow: 0px 1px 1px #a2a2a2;
 
         i {
@@ -680,7 +637,12 @@ body.hasBMB {
       width: 100%;
       z-index: 12;
       @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
-      padding-top: 5px;
+      padding: 8px 0;
+      .BBT_inner {
+        > .BB_links {
+          margin-top: 7px;
+        }
+      }
     }
   }
 }
@@ -752,9 +714,34 @@ body.hasBMB {
 // VIDEO LESSONS
 .video-lessons {
   .big-vide-sec {
-    margin: -10px -10px 15px;
-    background-color: #000;
-    padding: 5px;
+    margin: -10px -10px 20px;
+    background-color: #fff;
+    padding: 15px;
+    @include box-shadow(0px, 1px, 10px, 0px, #a7a7a7);
+    .text-sec {
+      .head {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0 5px;
+      }
+      .socail {
+        a {
+          margin-left: 12px;
+          font-weight: 600;
+          font-size: 16px;
+          text-decoration: none !important;
+          color: #656565;
+          i {
+            font-size: 14px;
+            vertical-align: -2px;
+            margin-right: 2px;
+          }
+          &.likes {
+            color: $secodary-color;
+          }
+        }
+      }
+    }
   }
 
   .all-videos {
@@ -763,48 +750,36 @@ body.hasBMB {
 
   .A-video {
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 
   .AV_inner {
-    background-color: #fff;
-    @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
-
     > .LT {
       width: 110px;
       line-height: 0;
-
-      .icon {
-        top: 50%;
-        left: 50%;
-        @include transform(-50%, -50%);
-
-        img {
-          width: 35px;
-        }
-      }
     }
 
     > .RT {
       width: calc(100% - 110px);
-      padding: 10px 0 0 15px;
+      padding: 0px 5px 0 13px;
+      margin-top: -2px;
 
       .head {
-        font: 16px "nexa-x-bold";
+        font-size: 17px;
+        font-weight: 600;
 
         > span {
-          font: 13px "nexa-regular";
+          font-size: 15px;
           color: $secodary-color;
-          margin-top: 4px;
-
-          i {
-            font-size: 12px;
-            margin-right: 5px;
-            position: relative;
-            top: -2px;
-          }
+          margin-top: -1px;
         }
+      }
+      .views {
+        font-weight: 600;
+        font-size: 17px;
+        color: #6d6d6d;
+        margin-top: 2px;
       }
     }
   }
@@ -1134,5 +1109,33 @@ body.hasBMB {
         font-size: 34px;
       }
     }
+  }
+}
+
+// APP INSTRUCTIONS
+.app-instructions {
+  padding: 20px 5px;
+  .text,
+  .sub-text,
+  .head-sm {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .head-sm {
+    font-weight: 700;
+  }
+  .head {
+    font-size: 20px;
+    font-weight: 700;
+    color: $secodary-color;
+    margin-bottom: 15px;
+  }
+  .sub-text {
+    padding-left: 10px;
+  }
+  .app-table {
+    margin-bottom: 20px;
   }
 }

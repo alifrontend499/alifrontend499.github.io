@@ -1,22 +1,27 @@
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 2px;
+// }
+// @include min-width(768px) {
+//   ::-webkit-scrollbar {
+//     width: 6px;
+//   }
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: lighten($color: $secodary-color, $amount: 40px);
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $secodary-color;
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: $secodary-color;
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: lighten($color: $secodary-color, $amount: 10px);
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: lighten($color: $secodary-color, $amount: 10px);
+// }
 
 // COMMON CSS
 
@@ -60,6 +65,9 @@
   color: $secodary-color !important;
 }
 
+.pb-0 {
+  padding-bottom: 0 !important;
+}
 .w-100 {
   width: 100%;
 }
@@ -245,5 +253,61 @@ button.gradient,
   @include transition;
   &:active {
     background: lighten($color: $secodary-color, $amount: 10px);
+  }
+}
+
+.app-table {
+  overflow-x: auto;
+  table {
+    width: 100%;
+    @include max-width(400px) {
+      width: 500px;
+    }
+    td,
+    th {
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 0;
+      padding: 11px 12px;
+    }
+    th {
+      font-weight: 600;
+    }
+    thead {
+      background: $secodary-color;
+      th {
+        color: #fff;
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: #fff;
+        }
+        &:nth-child(even) {
+          background-color: lightgray;
+        }
+      }
+    }
+  }
+  .tag {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #fff;
+    color: #333;
+    &.red {
+      background-color: red;
+      color: #fff;
+    }
+    &.blue {
+      background-color: blue;
+      color: #fff
+    }
+    &.yellow {
+      background-color: yellow;      
+    }
   }
 }
