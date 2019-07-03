@@ -114,15 +114,18 @@ button.gradient,
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1);
 }
 
-.app-input {
+input[type="text"].app-input {
   border: 1px solid #cecece;
   height: 40px;
   background: #fff;
   padding: 2px 10px;
   box-shadow: none;
   outline: none;
+  box-sizing: border-box;
 
   &:focus {
+    border-bottom-color: #cecece !important;
+    box-shadow: none !important;
   }
 }
 

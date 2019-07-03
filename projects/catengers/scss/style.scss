@@ -376,8 +376,8 @@ body.hasBMB {
     }
 
     .img-sec {
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       margin: 0 auto;
       img {
         max-height: 100%;
@@ -388,10 +388,9 @@ body.hasBMB {
     }
 
     .text-sec {
-      margin-top: 10px;
-
+      margin-top: 5px;
       p {
-        font: 13px "nexa-bold";
+        font: 600 13px "source sans pro";
         color: #8a8a8a;
         text-transform: uppercase;
       }
@@ -524,6 +523,7 @@ body.hasBMB {
   .BBT_inner {
     > .LT {
       width: calc(100% - 100px);
+      padding-right: 5px;
 
       p {
         color: #fff;
@@ -1137,5 +1137,95 @@ body.hasBMB {
   }
   .app-table {
     margin-bottom: 20px;
+  }
+}
+
+// APP SOLUTIONS
+.app-solutions {
+  .frac {
+    padding: 15px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+    background: #fff;
+    @include box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 0.1));
+  }
+  .A-ques {
+    .ques {
+      p {
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 22px;
+        > span {
+          display: block;
+          width: calc(100% - 28px);
+          padding-right: 8px;
+        }
+        > a {
+          width: 28px;
+          height: 28px;
+          background: #464646;
+          color: #fff;
+          position: relative;
+          top: 7px;
+        }
+      }
+    }
+    .ans {
+      margin-top: 15px;
+      display: none;
+    }
+    .ans-input-bar {
+      padding: 9px 10px;
+      background: #fbf2d3;
+      margin-left: -10px;
+      width: calc(100% + 20px);
+      margin-bottom: 15px;
+      input {
+        width: 120px;
+        margin-bottom: 0;
+        height: 35px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 12px;
+        color: #484848;
+        position: relative;
+        top: -2px;
+      }
+    }
+    .solutions {
+      .head {
+        font-weight: 600;
+        font-size: 20px;
+        color: #0ca208;
+      }
+      .all-math {
+        margin-top: 15px;
+        .map {
+          font-size: 17px;
+          font-weight: 600;
+          color: #333;
+          line-height: 22px;
+
+          sup {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    &.in {
+      .ans {
+        display: block;
+      }
+      .ques {
+        p {
+          > a {
+            background: $secodary-color;
+          }
+        }
+      }
+    }
   }
 }

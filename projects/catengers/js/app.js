@@ -142,3 +142,15 @@ $(function () {
 function goBack() {
     window.history.back();
 }
+
+
+(function () {
+    $('.A-ques .open-answer').click(function (ev) {
+        ev.preventDefault();
+        ($('.material-icons', this).text() === 'keyboard_arrow_up') ?
+            $('.material-icons', this).text('keyboard_arrow_down') : $('.material-icons', this).text('keyboard_arrow_up');
+        $(this).closest('.ques').next().slideToggle(100, function () {
+            $(this).parent().toggleClass('in')
+        });
+    });
+})();
