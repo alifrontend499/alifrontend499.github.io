@@ -32,9 +32,9 @@
             items: 2,
             nav: false,
             dots: false,
-            // autoplay: true,
-            // autoplayTimeout: 4000,
-            // autoplaySpeed: 1000,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 1000,
             stagePadding: 30,
             margin: 15,
             responsive: {
@@ -47,49 +47,36 @@
             }
         });
         // ALL CONTENT SLIDER
-        $('#online-test-slider').owlCarousel({
-            items: 5,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplaySpeed: 1000,
-            responsive: {
-                0: {
-                    items: 5
-                },
-                1000: {
-                    items: 8
-                }
-            }
-        });
-        // ALL CONTENT SLIDER
         $('#video-solutions-slider').owlCarousel({
             items: 2,
             margin: 10,
             nav: false,
+            dots: false,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplaySpeed: 1000,
-            stagePadding: 15,
             rewind: true
         });
-        // STUDY-MATERIAL-SLIDER
-        $('#study-material-slider').owlCarousel({
+        // COURCES-LIST-SLIDER
+        $('#cources-list').owlCarousel({
             items: 2,
             margin: 8,
             nav: false,
+            dots: false,
             autoplay: true,
             autoplayTimeout: 1900,
             autoplaySpeed: 1000,
             stagePadding: 15,
             rewind: true
         });
-        $('#study-material-slider2').owlCarousel({
+        // COURCES-LIST-SLIDER
+        $('#cources-list2').owlCarousel({
             items: 2,
             margin: 8,
             nav: false,
+            dots: false,
             autoplay: true,
-            autoplayTimeout: 2300,
+            autoplayTimeout: 1900,
             autoplaySpeed: 1000,
             stagePadding: 15,
             rewind: true
