@@ -874,7 +874,10 @@ body.hasBMB {
   > .inner {
     height: 100%;
     width: 100%;
-    // background: transparent url('../images/header-bg.png') no-repeat left top;
+    background-image: url('../images/profile-effect.png');
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position: 10px 0px;
   }
 }
 .app-userview {
