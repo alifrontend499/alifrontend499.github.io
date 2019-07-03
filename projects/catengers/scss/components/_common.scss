@@ -27,6 +27,18 @@
 .text-capitalize {
   text-transform: capitalize;
 }
+.text-white {
+  color: #fff !important;
+}
+.text-black {
+  color: #000 !important;
+}
+.text-dark {
+  color: #333 !important;
+}
+.text-app-primary {
+  color: $secodary-color !important;
+}
 
 .w-100 {
   width: 100%;
@@ -68,21 +80,9 @@
 button.gradient,
 .btn.gradient {
   background: rgb(66, 251, 246);
-  background: -moz-linear-gradient(
-    34deg,
-    rgba(66, 251, 246, 1) 0%,
-    rgba(88, 238, 118, 1) 72%
-  );
-  background: -webkit-linear-gradient(
-    34deg,
-    rgba(66, 251, 246, 1) 0%,
-    rgba(88, 238, 118, 1) 72%
-  );
-  background: linear-gradient(
-    34deg,
-    rgba(66, 251, 246, 1) 0%,
-    rgba(88, 238, 118, 1) 72%
-  );
+  background: -moz-linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
+  background: -webkit-linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
+  background: linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1);
 }
 
@@ -105,21 +105,9 @@ button.gradient,
   // background: linear-gradient(90deg, rgba(88, 238, 118, 1) 0%, rgba(66, 251, 246, 1) 100%);
   // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76", endColorstr="#42fbf6", GradientType=1);
   background: rgb(212, 103, 83);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(212, 103, 83, 1) 0%,
-    rgba(193, 48, 63, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(212, 103, 83, 1) 0%,
-    rgba(193, 48, 63, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(212, 103, 83, 1) 0%,
-    rgba(193, 48, 63, 1) 100%
-  );
+  background: -moz-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1);
 }
 
@@ -142,10 +130,11 @@ button.gradient,
   margin-bottom: 10px;
 
   .head {
-    font: 19px "nexa-x-bold";
+    font: 20px "Source Sans Pro", sans-serif;
     color: #000;
     width: calc(100% - 70px);
     padding-right: 5px;
+    font-weight: 600;
   }
 
   .link {

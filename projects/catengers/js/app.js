@@ -9,23 +9,40 @@
     })();
 })();
 
+// APP HEAD SEARCH
+(function () {
+    $('.app-head-search > a').click(function (ev) {
+        ev.preventDefault();
+        $(this).next().addClass('active').find('input').focus();
+    });
+    $('.app-head-search > a,.app-head-search .search').click(function (ev) {
+        ev.stopPropagation();
+    });
+    // CLOSING SEARCH
+    $(document).click(function () {
+        $('.app-head-search .search').removeClass('active');
+    });
+})();
+
 // SLIDER
 (function () {
     $(function () {
         // ALL CONTENT SLIDER
         $('#all-content-slider').owlCarousel({
-            items: 5,
+            items: 2,
             nav: false,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplaySpeed: 1000,
+            dots: false,
+            // autoplay: true,
+            // autoplayTimeout: 4000,
+            // autoplaySpeed: 1000,
+            stagePadding: 30,
+            margin: 15,
             responsive: {
                 0: {
-                    items: 5
+                    items: 2
                 },
                 1000: {
-                    items: 8
+                    items: 5
                 }
             }
         });
