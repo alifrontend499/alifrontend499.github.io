@@ -1171,7 +1171,7 @@ body.hasBMB {
         > a {
           width: 28px;
           height: 28px;
-          background: #464646;
+          background: $secodary-color;
           color: #fff;
           position: relative;
           top: 7px;
@@ -1229,7 +1229,7 @@ body.hasBMB {
       .ques {
         > .d-flex {
           > a {
-            background: $secodary-color;
+            background: #464646;
           }
         }
       }
