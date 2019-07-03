@@ -639,6 +639,9 @@ button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gr
 .app-more-menu.active > a { background: rgba(0, 0, 0, 0.2); }
 .app-more-menu.active > ul { transition: 0.2s; -webkit-transform: scale(1); transform: scale(1); }
 
+.app-btn-outline { display: block; background: #b11f24; padding: 6px 5px; width: 100%; text-align: center; border: 1px solid #fff; color: #fff; font: 600 14px "source sans pro", sans-serif; border-radius: 5px; transition: 0.3s; }
+.app-btn-outline:active { background: #da292f; }
+
 body { background: #f6f6f6; font-family: "Source Sans Pro", sans-serif; }
 
 html, .login-body, .app-login, .app_L-main { height: 100%; }
@@ -707,7 +710,7 @@ header { background: #fff url("../images/header-bg.png") no-repeat center top/10
 .app-head-bottom .item .text-sec a { padding: 3px 0; border-top: 1px solid #efefef; margin-top: 8px; font: 15px "source sans pro"; font-weight: 700; }
 .app-head-bottom .owl-nav.disabled + .owl-dots { position: absolute; width: 100%; margin-top: 0; }
 
-body.hasBMB { padding-bottom: calc(72px + 10px); }
+body.hasBMB { padding-bottom: calc(70px + 10px); }
 
 .bottom-menu-bar { position: fixed; bottom: 0px; left: 0; width: 100%; z-index: 12; background-color: #fff; -webkit-box-shadow: 0px 0px 4px 0px #848484; box-shadow: 0px 0px 4px 0px #848484; }
 .bottom-menu-bar .item { -webkit-flex-basis: 100px; flex-basis: 100px; }
@@ -740,8 +743,9 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .backBar .BB_top { padding: 16px 0 0px; }
 .backBar .BBT_inner > .LT { width: calc(100% - 100px); }
 .backBar .BBT_inner > .LT p { color: #fff; font: 600 21px "source sans pro", sans-serif; }
-.backBar .BBT_inner > .LT p i { border-radius: 100%; }
-.backBar .BBT_inner > .LT p span { margin-left: 10px; }
+.backBar .BBT_inner > .LT p i { border-radius: 100%; width: 30px; }
+.backBar .BBT_inner > .LT p > span { margin-left: 10px; width: calc(100% - 30px); }
+.backBar .BBT_inner > .LT p > span span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .backBar .BBT_inner > .RT { width: 100px; }
 .backBar .BBT_inner > .RT .app-more-menu > a { margin-right: -5px; margin-left: 5px; }
 .backBar .BBT_inner > .BB_links { width: 100%; margin-top: 15px; }
@@ -753,6 +757,8 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .backBar .BBT_inner > .BB_links ul > li > a { padding: 0; color: #fff; display: block; border-bottom: 3px solid transparent; padding-bottom: 5px; }
 .backBar .BBT_inner > .BB_links ul > li:hover > a, .backBar .BBT_inner > .BB_links ul > li.active > a { border-color: #fff; }
 .backBar .BBT_inner > .BB_links ul::-webkit-scrollbar { display: none !important; }
+.backBar .BBT_inner > .BB_links ul.inl > li { margin-right: -4px; }
+.backBar .BBT_inner > .BB_links ul.inl.two-view > li { width: 50%; }
 .backBar .BBB_inner .text { color: #fff; font: 25px "nexa-x-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
 .backBar .BBB_inner img { line-height: 0; margin-bottom: -6px; width: 200px; margin-top: 8px; }
 .backBar .BB_top { transition: 0.3s; }
@@ -811,5 +817,39 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .app-menu > li > a { font: 18px "source sans pro", sans-serif; height: auto; line-height: normal; padding: 13px 30px 10px; color: #fff; font-weight: 500; }
 .app-menu > li > a > img { width: 15px; margin: 0; }
 .app-menu > li > a > span { margin-left: 10px; margin-top: -2px; }
+
+.app-scorecard { padding: 15px; margin-bottom: 85px; }
+.app-scorecard .frac:not(:last-child) { margin-bottom: 25px; }
+.app-scorecard .frac .inner { background: #fff; padding: 15px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+.app-scorecard .text { font: 500 20px "source sans pro", sans-serif; margin-bottom: 5px; color: #4c4c4c; line-height: 23px; }
+.app-scorecard .text.d-flex > i { height: 20px; width: 20px; font-size: 20px; position: relative; top: 4px; font-weight: bold; }
+.app-scorecard .text.d-flex > span { width: calc(100% - 20px); padding-left: 5px; }
+.app-scorecard .text.good > i { color: #36b873; }
+.app-scorecard .text.bad > i { color: #e54c3b; }
+.app-scorecard .text.not-attempt > i { border-radius: 100%; background: #4c4c4c; height: 15px; width: 15px; position: relative; left: 2.5px; }
+.app-scorecard .text.not-attempt > span { padding-left: 10px; width: calc(100% - 15px); }
+.app-scorecard .pregress-content { padding: 15px 0; }
+.app-scorecard .pregress-content .LT { width: 120px; }
+.app-scorecard .pregress-content .RT { width: calc(100% - 120px); padding-left: 10px; }
+.app-scorecard .pregress-content .progress { width: 110px; height: 110px; position: relative; margin: 0; background: transparent; }
+.app-scorecard .img-text .main-head { width: 100%; }
+.app-scorecard .img-text .LT { width: 80px; }
+.app-scorecard .img-text .LT .img-sec img { display: block; margin: 0 auto; }
+.app-scorecard .img-text .RT { width: calc(100% - 80px); padding-left: 10px; }
+.app-scorecard .main-head p { font: 700 20px "source sans pro", sans-serif; color: #000; margin-bottom: 10px; }
+.app-scorecard .percent { font: 700 25px "source sans pro", sans-serif; color: #000; margin-bottom: 5px; }
+.app-scorecard .percent span { display: block; font-weight: 600; font-size: 20px; color: #333; margin-top: -2px; }
+.app-scorecard .rank { font: 700 25px "source sans pro", sans-serif; color: #000; margin-bottom: 5px; }
+.app-scorecard .rank span { font-size: 17px; }
+
+.goto-next-quiz { position: fixed; bottom: 0; left: 0; width: 100%; background: #2b2b2b; z-index: 1; padding: 13px 25px; }
+.goto-next-quiz .LT { width: calc(100% - 50px); }
+.goto-next-quiz .LT img { width: 40px; }
+.goto-next-quiz .LT p { width: calc(100% - 40px); padding-left: 13px; color: #fff; font-family: "source sans pro", sans-serif; margin-top: 3px; }
+.goto-next-quiz .LT p .heading { font-size: 17px; margin-bottom: -2px; }
+.goto-next-quiz .LT p .quiz { font-size: 20px; font-weight: 600; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.goto-next-quiz .RT { width: 50px; text-align: right; }
+.goto-next-quiz .RT .next-btn { height: 35px; width: 35px; line-height: 0; color: #fff; position: relative; right: -8px; }
+.goto-next-quiz .RT .next-btn i { font-size: 34px; }
 
 /*# sourceMappingURL=style.css.map */

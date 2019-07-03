@@ -8,36 +8,37 @@
         });
     })();
 })();
+$(function () {
+    // APP HEAD SEARCH
+    (function () {
+        $('.app-head-search > a').click(function (ev) {
+            ev.preventDefault();
+            $(this).next().addClass('active').find('input').focus();
+        });
+        $('.app-head-search > a,.app-head-search .search').click(function (ev) {
+            ev.stopPropagation();
+        });
+        // CLOSING SEARCH
+        $(document).click(function () {
+            $('.app-head-search .search').removeClass('active');
+        });
+    })();
 
-// APP HEAD SEARCH
-(function () {
-    $('.app-head-search > a').click(function (ev) {
-        ev.preventDefault();
-        $(this).next().addClass('active').find('input').focus();
-    });
-    $('.app-head-search > a,.app-head-search .search').click(function (ev) {
-        ev.stopPropagation();
-    });
-    // CLOSING SEARCH
-    $(document).click(function () {
-        $('.app-head-search .search').removeClass('active');
-    });
-})();
-
-// APP APP MORE MENU
-(function () {
-    $('.app-more-menu > a').click(function (ev) {
-        ev.preventDefault();
-        $(this).parent().toggleClass('active');
-    });
-    $('.app-more-menu > a, .app-more-menu > ul').click(function (ev) {
-        ev.stopPropagation();
-    });
-    // CLOSING SEARCH
-    $(document).click(function () {
-        $('.app-more-menu').removeClass('active');
-    });
-})();
+    // APP APP MORE MENU
+    (function () {
+        $('.app-more-menu > a').click(function (ev) {
+            ev.preventDefault();
+            $(this).parent().toggleClass('active');
+        });
+        $('.app-more-menu > a, .app-more-menu > ul').click(function (ev) {
+            ev.stopPropagation();
+        });
+        // CLOSING SEARCH
+        $(document).click(function () {
+            $('.app-more-menu').removeClass('active');
+        });
+    })();
+});
 
 // SLIDER
 (function () {

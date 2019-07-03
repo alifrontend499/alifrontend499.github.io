@@ -232,6 +232,18 @@ button.gradient,
   }
 }
 
-// .sidenav {
-//     transform: none !important;
-// }
+.app-btn-outline {
+  display: block;
+  background: $secodary-color;
+  padding: 6px 5px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font: 600 14px "source sans pro", sans-serif;
+  border-radius: 5px;
+  @include transition;
+  &:active {
+    background: lighten($color: $secodary-color, $amount: 10px);
+  }
+}
