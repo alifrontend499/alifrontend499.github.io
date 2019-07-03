@@ -10,7 +10,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap");
 
 body {
-  // background: #f6f6f6;
+  background: #f6f6f6;
   // font-family: "nexa-regular";
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -30,8 +30,8 @@ html,
 }
 .login-body {
   overflow: auto;
-	background: transparent;
-	@include app-gradient;
+  background: transparent;
+  @include app-gradient;
 }
 
 .app-login {
@@ -561,17 +561,17 @@ body.hasBMB {
 // BACKBAR
 .backBar {
   .BB_top {
-    padding: 16px 0 14px;
+    padding: 16px 0 0px;
   }
 
   .BBT_inner {
     > .LT {
-      width: calc(100% - 50px);
+      width: calc(100% - 100px);
 
       p {
         color: #fff;
-        font: 17px "nexa-bold";
-        text-shadow: 0px 1px 1px #a2a2a2;
+        font: 600 21px "source sans pro", sans-serif;
+        // text-shadow: 0px 1px 1px #a2a2a2;
 
         i {
           border-radius: 100%;
@@ -579,14 +579,62 @@ body.hasBMB {
 
         span {
           margin-left: 10px;
-          position: relative;
-          top: 2px;
         }
       }
     }
 
     > .RT {
-      width: 40px;
+      width: 100px;
+      .app-more-menu {
+        > a {
+          margin-right: -5px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    > .BB_links {
+      width: 100%;
+      margin-top: 15px;
+      .hidden {
+        overflow: hidden;
+      }
+      ul {
+        width: 100%;
+        overflow: auto;
+        padding-bottom: 3px;
+        white-space: nowrap;
+        > li {
+          white-space: normal;
+          display: inline-block;
+          font: 600 17px "source sans pro", sans-serif;
+          padding: 0 10px;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+          > a {
+            padding: 0;
+            color: #fff;
+            display: block;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 5px;
+          }
+          &:hover,
+          &.active {
+            > a {
+              border-color: #fff;
+            }
+          }
+        }
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+          display: none !important;
+        }
+      }
     }
   }
 
@@ -606,6 +654,7 @@ body.hasBMB {
   }
 
   .BB_top {
+    @include transition;
     &.fixed {
       position: fixed;
       top: 0;
@@ -613,6 +662,7 @@ body.hasBMB {
       width: 100%;
       z-index: 12;
       @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
+      padding-top: 5px;
     }
   }
 }
@@ -620,49 +670,63 @@ body.hasBMB {
 // APP NOTIFICATIONS
 .app-notifications {
   margin-bottom: 20px;
+  margin-top: 30px;  
 }
 
 .AN_main {
+	padding: 0px 15px;
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .ANM_inner {
     background-color: #fff;
-    @include box-shadow(0px, 0px, 3px, 0px, #d6d6d6);
-    padding: 15px 0 12px 35px;
-    color: #777;
+    @include box-shadow(0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.2));
+    padding: 15px 20px 15px 15px;
+		color: #777;
+		&:active {
+			background-color: #e0e0e0;
+		}
 
     > .LT {
-      width: calc(100% - 30px);
+      width: 70px;
       padding-right: 10px;
-
-      .left-icon {
-        top: 50%;
-        left: 3px;
-        @include transformy(-50%);
-        font-size: 28px;
-      }
-
-      .head {
-        font: 16px "nexa-bold";
-        color: #000;
-
-        span {
-          font: 12px "nexa-regular";
-          color: $secodary-color;
-          margin-top: 3px;
-        }
-      }
     }
 
     > .RT {
-      width: 30px;
-
-      i {
-        font-size: 22px;
-        margin-right: 3px;
+      width: calc(100% - 70px);
+      padding-left: 10px;
+    }
+    .text-sec {
+      .head {
+        color: #333;
+        font: 700 20px "Source Sans Pro", sans-serif;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 0;
+        letter-spacing: 1px;
       }
+      .desc {
+        color: #777;
+        font: 14px "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 2px;
+      }
+    }
+    .right-arrow {
+      background: $secodary-color;
+      line-height: 0;
+      height: 26px;
+      width: 26px;
+      color: #fff;
+      padding-left: 2px;
+      right: 0;
+			top: 50%;
+			@include transform(50%, -50%);
+      z-index: 1;
     }
   }
 }
@@ -877,7 +941,7 @@ body.hasBMB {
 
       > span {
         margin-left: 10px;
-				margin-top: -2px;
+        margin-top: -2px;
       }
     }
   }

@@ -24,6 +24,21 @@
     });
 })();
 
+// APP APP MORE MENU
+(function () {
+    $('.app-more-menu > a').click(function (ev) {
+        ev.preventDefault();
+        $(this).parent().toggleClass('active');
+    });
+    $('.app-more-menu > a, .app-more-menu > ul').click(function (ev) {
+        ev.stopPropagation();
+    });
+    // CLOSING SEARCH
+    $(document).click(function () {
+        $('.app-more-menu').removeClass('active');
+    });
+})();
+
 // SLIDER
 (function () {
     $(function () {
