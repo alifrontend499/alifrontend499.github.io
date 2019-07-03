@@ -603,6 +603,8 @@ button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gr
 
 .app-geadient { background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
 
+.app-geadient-left-to-right { background: #d46753; background: -moz-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: linear-gradient(90deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
+
 .owl-theme .owl-nav.disabled + .owl-dots { margin-top: 5px; }
 
 .owl-theme .owl-dots .owl-dot span { margin: 3px 4px; background: #fff; }
@@ -765,16 +767,18 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .app-contact-form .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; }
 .app-contact-form .form .app-round-btn i { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); font-size: 26px; position: relative; top: -2px; left: 1px; }
 
-.app-userview { padding: 15px 15px; }
-.app-userview .img-sec { height: 65px; width: 65px; border-radius: 100%; border: 5px solid #fff; }
+.sidenav > .inner { height: 100%; width: 100%; }
+
+.app-userview { padding: 35px 30px; }
+.app-userview .img-sec { height: 65px; width: 65px; border-radius: 100%; border: 4px solid #fff; }
 .app-userview .img-sec img { border-radius: 100%; max-height: 100%; }
 .app-userview .text-sec { width: calc(100% - 65px); padding-top: 10px; padding-left: 15px; }
-.app-userview .text-sec .name { font: 20px "nexa-bold"; color: #fff; text-shadow: 0px 2px 2px #929292; }
-.app-userview .text-sec .post { font: 15px "nexa-bold"; color: #333; margin-top: 5px; }
+.app-userview .text-sec .name { font: 22px "source sans pro", sans-serif; color: #fff; text-shadow: 0px 2px 2px #5f5e5e; font-weight: 600; }
+.app-userview .text-sec .post { font: 16px "source sans pro", sans-serif; color: #fff; margin-top: 3px; font-weight: 500; }
 
-.app-menu { margin-top: 5px; height: calc(100% - (95px + 21px)); overflow: auto; }
-.app-menu > li > a { font: 15px "nexa-regular"; height: auto; line-height: normal; padding: 13px 30px 10px; }
-.app-menu > li > a > img { width: 30px; margin: 0; }
-.app-menu > li > a > span { margin-left: 20px; margin-top: 3px; }
+.app-menu { margin-top: 5px; height: calc(100% - (135px + 21px)); overflow: auto; }
+.app-menu > li > a { font: 18px "source sans pro", sans-serif; height: auto; line-height: normal; padding: 13px 30px 10px; color: #fff; font-weight: 500; }
+.app-menu > li > a > img { width: 15px; margin: 0; }
+.app-menu > li > a > span { margin-left: 10px; margin-top: -2px; }
 
 /*# sourceMappingURL=style.css.map */
