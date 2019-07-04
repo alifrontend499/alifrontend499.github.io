@@ -69,7 +69,7 @@
   padding-bottom: 0 !important;
 }
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .clear-parent::after {
@@ -107,11 +107,7 @@
 
 button.gradient,
 .btn.gradient {
-  background: rgb(66, 251, 246);
-  background: -moz-linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
-  background: -webkit-linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
-  background: linear-gradient(34deg, rgba(66, 251, 246, 1) 0%, rgba(88, 238, 118, 1) 72%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1);
+  @include app-gradient;
 }
 
 input[type="text"].app-input {

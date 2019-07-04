@@ -586,7 +586,7 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .pb-0 { padding-bottom: 0 !important; }
 
-.w-100 { width: 100%; }
+.w-100 { width: 100% !important; }
 
 .clear-parent::after { content: ""; display: block; clear: both; }
 
@@ -599,7 +599,7 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 .app-round-btn { font: 20px "nexa-bold"; min-width: 160px; padding: 14px 10px 11px; height: auto; border-radius: 30px; -webkit-box-shadow: 1pxf 0px 6px 0px #272727; box-shadow: 1pxf 0px 6px 0px #272727; margin: 0 auto; background-color: #fff !important; color: #b11f24; }
 .app-round-btn:hover { background-color: #fff !important; }
 
-button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: -webkit-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1); }
+button.gradient, .btn.gradient { background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
 
 input[type="text"].app-input { border: 1px solid #cecece; height: 40px; background: #fff; padding: 2px 10px; box-shadow: none; outline: none; box-sizing: border-box; }
 input[type="text"].app-input:focus { border-bottom-color: #cecece !important; box-shadow: none !important; }
@@ -795,20 +795,27 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .video-lessons .AV_inner > .RT .head > span { font-size: 15px; color: #b11f24; margin-top: -1px; }
 .video-lessons .AV_inner > .RT .views { font-weight: 600; font-size: 17px; color: #6d6d6d; margin-top: 2px; }
 
-.app-contact { background-color: #fff; padding: 20px 0; -webkit-box-shadow: 0px 0px 5px 0px #d6d6d6; box-shadow: 0px 0px 5px 0px #d6d6d6; }
-.app-contact .AC_inner { padding: 0 10px; }
-.app-contact .AC_inner > p { font: 15px "nexa-book"; color: #444444; }
-.app-contact .AC_inner > p:not(:last-child) { margin-bottom: 15px; }
-.app-contact .AC_inner > p > i { font-size: 17px; margin-right: 6px; margin-top: 1px; color: #333; }
+.app-contact { margin-top: 50px; margin-bottom: 40px; }
+.app-contact .img-sec img { display: block; margin: 0 auto; }
+.app-contact .details { margin-top: 50px; }
+.app-contact .details .frac:not(:last-child) { margin-bottom: 10px; }
+.app-contact .details .frac p { font-size: 19px; color: #222; }
+.app-contact .details .frac .LT { width: 100px; text-align: right; }
+.app-contact .details .frac .LT p { font-weight: 600; }
+.app-contact .details .frac .RT { width: calc(100% - 100px); padding-left: 13px; }
+.app-contact .details .frac .RT p { font-weight: 500; }
+
+.backBar.contact .BB_top { padding-top: 16px !important; padding-bottom: 50px !important; }
 
 .app-contact-form { margin: 30px 0; }
-.app-contact-form .ACP_inner { padding: 0 10px; }
-.app-contact-form .form input, .app-contact-form .form textarea { font: 14px "nexa-bold"; color: #666; }
+.app-contact-form .ACP_inner { padding: 5px 15px 15px; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); margin-top: -65px; background: #fff; }
+.app-contact-form .form label { font-size: 16px; font-weight: 600; color: #333; }
+.app-contact-form .form input, .app-contact-form .form textarea { font-size: 16px; color: #666; }
 .app-contact-form .form input { height: 40px; }
 .app-contact-form .form input, .app-contact-form .form textarea { -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; border-left: none; border-right: none; border-top: none; }
 .app-contact-form .form input:focus, .app-contact-form .form textarea:focus { border-bottom-color: #636363 !important; -webkit-box-shadow: 0 1px 0 0 #636363 !important; box-shadow: 0 1px 0 0 #636363 !important; }
 .app-contact-form .form input:focus + label, .app-contact-form .form textarea:focus + label { color: #444 !important; }
-.app-contact-form .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; }
+.app-contact-form .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; color: #fff; }
 .app-contact-form .form .app-round-btn i { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); font-size: 26px; position: relative; top: -2px; left: 1px; }
 
 .sidenav > .inner { height: 100%; width: 100%; background-image: url("../images/profile-effect.png"); background-repeat: no-repeat; background-size: 220px; background-position: 10px 0px; }
