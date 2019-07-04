@@ -898,6 +898,19 @@ body.hasBMB {
     }
 }
 
+.backBar.direct {
+    .LT {
+        width: 100%;
+
+        p {
+            span {
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
 .app-contact-form {
     margin: 30px 0;
 
@@ -1378,6 +1391,65 @@ body.hasBMB {
                         background: #464646;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// STUDENT TEST
+.student-test {
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .inner {
+            background: #fff;
+            padding: 4px;
+            @include box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    .TP_sec {
+        padding: 10px;
+        margin-bottom: 5px;
+
+        .icon {
+            width: 50px;
+
+        }
+
+        .text {
+            width: calc(100% - 50px);
+            padding-left: 5px;
+        }
+
+        .head {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .more {
+            font-size: 16px;
+            color: #656565;
+        }
+    }
+
+    .BM_sec {
+        >.d-flex {
+            margin: 0 -2px;
+        }
+
+        .btn-sec {
+            width: 33.3%;
+            padding: 0 1px;
+
+            .mbtn {
+                font-size: 16px;
+                padding: 8px 3px;
             }
         }
     }

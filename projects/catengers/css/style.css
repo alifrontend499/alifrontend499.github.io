@@ -604,9 +604,9 @@ button.gradient, .btn.gradient { background: #d46753; background: -moz-linear-gr
 input[type="text"].app-input { border: 1px solid #cecece; height: 40px; background: #fff; padding: 2px 10px; box-shadow: none; outline: none; box-sizing: border-box; }
 input[type="text"].app-input:focus { border-bottom-color: #cecece !important; box-shadow: none !important; }
 
-.app-geadient { background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
+.app-geadient { background: #d46753; background: -moz-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(180deg, #d46753 0%, #c1303f 100%); background: linear-gradient(180deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1); }
 
-.app-geadient-left-to-right { background: #d46753; background: -moz-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: linear-gradient(90deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753",endColorstr="#c1303f",GradientType=1); }
+.app-geadient-left-to-right { background: #d46753; background: -moz-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: -webkit-linear-gradient(90deg, #d46753 0%, #c1303f 100%); background: linear-gradient(90deg, #d46753 0%, #c1303f 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1); }
 
 .owl-theme .owl-nav.disabled + .owl-dots { margin-top: 5px; }
 
@@ -632,6 +632,9 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 
 .app-btn-outline { display: block; background: #b11f24; padding: 6px 5px; width: 100%; text-align: center; border: 1px solid #fff; color: #fff; font: 600 14px "source sans pro", sans-serif; border-radius: 5px; transition: 0.3s; }
 .app-btn-outline:active { background: #da292f; }
+
+.app-btn { border-radius: 0; width: 100%; border: 1px solid transparent; margin: 0; height: auto; line-height: normal; padding: 10px 3px; box-shadow: none; background: #b11f24; display: inline-block; text-align: center; font-size: 14px; font-weight: 600; color: #fff; }
+.app-btn.outline { background: transparent; color: #000; border: 1px solid #d2d2d2; }
 
 .app-table { overflow-x: auto; }
 .app-table table { width: 100%; }
@@ -807,6 +810,9 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 
 .backBar.contact .BB_top { padding-top: 16px !important; padding-bottom: 50px !important; }
 
+.backBar.direct .LT { width: 100%; }
+.backBar.direct .LT p span { padding-left: 0; margin-left: 0; }
+
 .app-contact-form { margin: 30px 0; }
 .app-contact-form .ACP_inner { padding: 5px 15px 15px; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); margin-top: -65px; background: #fff; }
 .app-contact-form .form label { font-size: 16px; font-weight: 600; color: #333; }
@@ -889,5 +895,16 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .app-solutions .A-ques .solutions .all-math .map sup { font-size: 13px; }
 .app-solutions .A-ques.in .ans { display: block; }
 .app-solutions .A-ques.in .ques > .d-flex > a { background: #464646; }
+
+.student-test .frac:not(:last-child) { margin-bottom: 20px; }
+.student-test .frac .inner { background: #fff; padding: 4px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+.student-test .TP_sec { padding: 10px; margin-bottom: 5px; }
+.student-test .TP_sec .icon { width: 50px; }
+.student-test .TP_sec .text { width: calc(100% - 50px); padding-left: 5px; }
+.student-test .TP_sec .head { font-size: 20px; font-weight: 600; color: #333; margin-bottom: 2px; }
+.student-test .TP_sec .more { font-size: 16px; color: #656565; }
+.student-test .BM_sec > .d-flex { margin: 0 -2px; }
+.student-test .BM_sec .btn-sec { width: 33.3%; padding: 0 1px; }
+.student-test .BM_sec .btn-sec .mbtn { font-size: 16px; padding: 8px 3px; }
 
 /*# sourceMappingURL=style.css.map */
