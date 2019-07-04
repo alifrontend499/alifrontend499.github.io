@@ -42,15 +42,15 @@
 }
 
 .text-uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 .text-lowercase {
-    text-transform: lowercase;
+    text-transform: lowercase !important;
 }
 
 .text-capitalize {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
 }
 
 .text-white {
@@ -284,6 +284,8 @@ input[type="text"].app-input {
     font-size: 14px;
     font-weight: 600;
     color: #fff;
+    outline: none;
+    text-decoration: none;
 
     &.outline {
         background: transparent;

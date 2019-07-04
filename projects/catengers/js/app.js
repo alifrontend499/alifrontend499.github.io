@@ -154,3 +154,13 @@ function goBack() {
         });
     });
 })();
+
+(function () {
+    $('.sel-ans label > input').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('active');
+        } else {
+            $(this).parent().removeClass('active')
+        }
+    });
+})();

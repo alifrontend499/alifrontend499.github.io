@@ -570,11 +570,11 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .text-bold { font-weight: bold; }
 
-.text-uppercase { text-transform: uppercase; }
+.text-uppercase { text-transform: uppercase !important; }
 
-.text-lowercase { text-transform: lowercase; }
+.text-lowercase { text-transform: lowercase !important; }
 
-.text-capitalize { text-transform: capitalize; }
+.text-capitalize { text-transform: capitalize !important; }
 
 .text-white { color: #fff !important; }
 
@@ -633,7 +633,7 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 .app-btn-outline { display: block; background: #b11f24; padding: 6px 5px; width: 100%; text-align: center; border: 1px solid #fff; color: #fff; font: 600 14px "source sans pro", sans-serif; border-radius: 5px; transition: 0.3s; }
 .app-btn-outline:active { background: #da292f; }
 
-.app-btn { border-radius: 0; width: 100%; border: 1px solid transparent; margin: 0; height: auto; line-height: normal; padding: 10px 3px; box-shadow: none; background: #b11f24; display: inline-block; text-align: center; font-size: 14px; font-weight: 600; color: #fff; }
+.app-btn { border-radius: 0; width: 100%; border: 1px solid transparent; margin: 0; height: auto; line-height: normal; padding: 10px 3px; box-shadow: none; background: #b11f24; display: inline-block; text-align: center; font-size: 14px; font-weight: 600; color: #fff; outline: none; text-decoration: none; }
 .app-btn.outline { background: transparent; color: #000; border: 1px solid #d2d2d2; }
 
 .app-table { overflow-x: auto; }
@@ -754,6 +754,9 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .backBar .BBT_inner > .LT p i { border-radius: 100%; width: 30px; }
 .backBar .BBT_inner > .LT p > span { margin-left: 10px; width: calc(100% - 30px); }
 .backBar .BBT_inner > .LT p > span span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.backBar .BBT_inner > .LT .live-test .test, .backBar .BBT_inner > .LT .live-test .time { color: #fff; font-size: 17px; font-weight: 600; }
+.backBar .BBT_inner > .LT .live-test .time { margin-left: auto; padding-left: 5px; }
+.backBar .BBT_inner > .LT .live-test .time img { width: 20px; margin-left: 10px; margin-right: 5px; }
 .backBar .BBT_inner > .RT { width: 100px; }
 .backBar .BBT_inner > .RT .app-more-menu > a { margin-right: -5px; margin-left: 5px; }
 .backBar .BBT_inner > .BB_links { width: 100%; margin-top: 15px; }
@@ -906,5 +909,27 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .student-test .BM_sec > .d-flex { margin: 0 -2px; }
 .student-test .BM_sec .btn-sec { width: 33.3%; padding: 0 1px; }
 .student-test .BM_sec .btn-sec .mbtn { font-size: 16px; padding: 8px 3px; }
+
+.app-questions { margin-bottom: 100px; }
+.app-questions .frac:not(:last-child) { margin-bottom: 20px; }
+.app-questions .frac .inner { background: #fff; padding: 4px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+.app-questions .ques-title { background: #333; color: #fff; font-size: 20px; font-weight: 600; padding: 11px 10px; }
+.app-questions .ques-title .head { width: calc(100% - 60px); padding-right: 10px; }
+.app-questions .ques-title .points { font-size: 17px; width: 70px; }
+.app-questions .ques-title .points .pos { margin-right: 10px; color: #56bf05; }
+.app-questions .ques-title .points .neg { color: #e40304; }
+.app-questions .ques-main { margin-top: 15px; padding: 0 10px; }
+.app-questions .ques-main .head { font-size: 20px; font-weight: 600; color: #000; margin-bottom: 10px; }
+.app-questions .ques-main .img-sec { margin-bottom: 10px; }
+.app-questions .sel-ans { margin-bottom: 20px; }
+.app-questions .sel-ans label { cursor: pointer; display: block; padding: 10px; background: #ffffff; border: 2px solid #a7a7a7; margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #666; }
+.app-questions .sel-ans label.active { border-color: #56bf05; color: #222; }
+.app-questions .AQ-next { position: fixed; bottom: 0; left: 0; background: #fff; padding: 14px 5px; z-index: 12; width: 100%; -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); }
+.app-questions .AQ-next .div { padding: 0 3px; }
+.app-questions .AQ-next .div .mbtn { padding: 8px 3px; font-size: 15px; font-weight: 500; }
+.app-questions .AQ-next .prev, .app-questions .AQ-next .next { width: 20%; }
+.app-questions .AQ-next .review { width: 60%; }
+.app-questions .AQ-next .review .mbtn { background-color: #56bf05; }
+.app-questions .AQ-next .next .mbtn { background-color: #333; }
 
 /*# sourceMappingURL=style.css.map */
