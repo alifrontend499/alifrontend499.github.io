@@ -143,6 +143,9 @@ html,
           color: #fff;
         }
       }
+      .app-round-btn {
+        padding: 14px 17px 11px;
+      }
     }
 
     .reg-skip {
@@ -598,10 +601,18 @@ body.hasBMB {
     > .RT {
       width: 100px;
 
-      .app-more-menu {
+      .app-more-menu,
+      .app-open-menu {
         > a {
           margin-right: -5px;
           margin-left: 5px;
+          right: 0;
+          @include transition(.6);
+          &.active {
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            right: calc(280px + 15px);
+          }
         }
       }
     }
@@ -1540,7 +1551,7 @@ body.hasBMB {
     padding: 14px 5px;
     z-index: 12;
     width: 100%;
-    @include box-shadow(0px, 0px, 14px, 0px, rgba(0,0,0,0.3));
+    @include box-shadow(0px, 0px, 14px, 0px, rgba(0, 0, 0, 0.3));
     .div {
       padding: 0 3px;
       .mbtn {
@@ -1564,6 +1575,185 @@ body.hasBMB {
     .next {
       .mbtn {
         background-color: #333;
+      }
+    }
+  }
+}
+
+// TEST-INFO-SIDEBAR
+#test-info-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  background: #1f1f1f;
+  padding: 20px 20px;
+  z-index: 123;
+  height: 100%;
+  overflow: auto;
+  color: #fff;
+  @include transition(0.5s);
+  &.active {
+    right: 0;
+  }
+  .frac {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .user {
+    background: #fff;
+    color: #333;
+    margin: -20px 0 0 -20px;
+    width: calc(100% + 40px);
+    padding: 10px 20px;
+    @include box-shadow(0px, 1px, 5px, 0px, #000);
+    z-index: 1;
+    position: relative;
+    .img-sec {
+      height: 65px;
+      width: 65px;
+      border-radius: 100%;
+      img {
+        max-height: 100%;
+        width: 100%;
+      }
+    }
+    .text-sec {
+      width: calc(100% - 55px);
+      padding-left: 10px;
+      margin-top: -2px;
+      .time {
+        font-size: 16px;
+        font-weight: 600;
+        span {
+          display: block;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      .name {
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
+  .other-details {
+    padding: 0 10px;
+    .head {
+      font-weight: 600;
+      font-size: 17px;
+      padding: 10px 30px;
+      margin-bottom: 14px;
+      margin-left: -30px;
+      width: calc(100% + 60px);
+      @include box-shadow(0px, 0px, 3px, 0px, #000);
+      span {
+        font-weight: 500;
+        display: block;
+        margin-top: 2px;
+        font-size: 15px;
+      }
+    }
+    .que-no {
+      max-height: 190px;
+      overflow-y: scroll;
+      padding: 10px 0px;
+      ul {
+        li {
+          padding: 0 15px 15px 0;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 13px;
+          a {
+            display: block;
+            padding: 14px 10px 10px;
+            background: #fff;
+            min-width: 40px;
+            min-height: 40px;
+            text-align: center;
+            color: #000;
+            border-radius: 5px;
+            @include box-shadow(2px, 2px, 6px, 0px, #000);
+            &.green {
+              background-color: green;
+              color: #fff;
+            }
+            &.red {
+              background-color: red;
+              color: #fff;
+            }
+            &.purple {
+              background-color: purple;
+              color: #fff;
+            }
+            &.yellow {
+              background-color: yellow;
+            }
+          }
+        }
+      }
+    }
+    .legends {
+      ul {
+        li {
+          width: 50%;
+          padding: 0 5px 10px 0;
+          .tag {
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 1px 0 0;
+            border-radius: 3px;
+            margin-right: 6px;
+            background-color: #fff;
+            color: #333;
+            &.green {
+              background-color: green;
+              color: #fff;
+            }
+            &.red {
+              background-color: red;
+              color: #fff;
+            }
+            &.purple {
+              background-color: purple;
+              color: #fff;
+            }
+            &.yellow {
+              background-color: yellow;
+            }
+          }
+          .work {
+            width: calc(100% - 20px);
+            font-size: 16px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .more-btns {
+      color: #fff;
+      text-decoration: none;
+      margin-left: -30px;
+      width: calc(100% + 60px);
+      padding: 4px 10px 0;
+      ul {
+        li {
+          width: 50%;
+          padding: 5px 5px;
+          a {
+            background: $secodary-color;
+            padding: 9px 7px;
+            text-align: center;
+            height: 100%;
+            color: #fff;
+            font-weight: 500;
+            font-size: 17px;
+          }
+        }
       }
     }
   }

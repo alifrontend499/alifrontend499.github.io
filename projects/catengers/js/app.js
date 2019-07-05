@@ -164,3 +164,12 @@ function goBack() {
         }
     });
 })();
+
+(function () {
+    $('.app-open-menu a').click(function () {
+        var elem = $(this).data('open');
+        $(this).toggleClass('active').find('i').text(($('i', this).text() == 'keyboard_arrow_right') ? 'keyboard_arrow_left' : 'keyboard_arrow_right');
+
+        $('#test-info-sidebar').toggleClass('active');  
+    });
+})();
