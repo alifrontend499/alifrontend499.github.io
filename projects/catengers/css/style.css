@@ -644,6 +644,8 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 .app-table .tag.blue { background-color: blue; color: #fff; }
 .app-table .tag.yellow { background-color: yellow; }
 
+@media screen and (max-width: 767px) { .fancybox-slide { padding: 10px 8px !important; }
+  .fancybox-slide--video .fancybox-content { width: 100% !important; } }
 body { background: #f6f6f6; font-family: "Source Sans Pro", sans-serif; }
 
 html, .login-body, .app-login, .app_L-main { height: 100%; }

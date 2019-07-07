@@ -1,0 +1,1464 @@
+@media(min-width: 0px) and (max-width: 767px) {
+    .fixedHeader {
+
+        position: static !important;
+        top: 0;
+        left: 0;
+
+    }
+
+    #header {
+
+        position: static;
+
+    }
+
+    .header-nav-col {
+
+        background: #e1e1e1;
+        padding: 24px 0;
+
+    }
+
+    .top-col {
+
+        display: none;
+
+    }
+
+    .header-top-col .top-col.right {
+
+        display: block;
+
+    }
+
+    .header-top-col {
+        padding: 5px 0;
+
+    }
+
+    .header-top-col .top-col.right li {
+
+        font-size: 11px;
+        text-transform: uppercase;
+
+    }
+
+    .header-search {
+        padding: 0px;
+    }
+
+    #mobileToggle {
+
+        display: table;
+        font-size: 20px;
+        position: relative;
+        top: 19px;
+        position: absolute;
+        left: 15px;
+
+    }
+
+    .header-nav-col .logo {
+
+        width: 70px;
+        min-width: 1px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .header-nav-col .logo img {
+
+        display: block;
+        width: 100%;
+
+    }
+
+    .property a {
+
+        padding: 4px 6px;
+        font-size: 11px;
+        letter-spacing: 0px;
+        background: #0d5aa8;
+
+    }
+
+    .header-nav-col .property {
+
+        margin: 0;
+
+    }
+
+    .header-nav-col .menu {
+
+        display: flex !important;
+        transition: 0.3s;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 11111111;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .menu.active {
+        left: 0px;
+    }
+
+    .site-menu li {
+
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+
+    }
+
+    .site-menu a {
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+    }
+
+    .menuClose {
+
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        font-size: 25px;
+
+    }
+
+    .menu.active .menuClose {
+        display: table;
+    }
+
+    .header-search p {
+
+        font-size: 30px;
+        margin: 0;
+
+    }
+
+    .search-group-inner {
+        margin: 0 auto 0;
+        padding: 6px;
+
+    }
+
+    .header-search ul li {
+
+        width: 33.3333%;
+
+    }
+
+    .header-search ul li select,
+    .header-search ul li input[type="text"] {
+        background-position: right 4px center !important;
+        background-size: 10px !important;
+        font-size: 12px;
+        padding: 0 4px;
+        border-right: solid 1px #acacac;
+        border-bottom: solid 2px #acacac;
+    }
+
+    .header-search ul li select,
+    .header-search ul li input,
+    .header-search ul li .btn {
+
+        height: 40px;
+
+    }
+
+    .header-search ul li:last-child {
+
+        width: 100%;
+        margin: 6px 0 0 0;
+
+    }
+
+    .header-search ul li .btn {
+        font-size: 20px;
+        padding: 0;
+
+    }
+
+    .common-heading .small {
+
+        font-size: 12px;
+
+    }
+
+    .common-heading .large {
+
+        font-size: 20px;
+
+    }
+
+    .property-col.left .property-img {
+
+        height: 343px;
+        background-size: cover !important;
+
+    }
+
+    .property-col.right {
+
+        padding: 0;
+
+    }
+
+    .property-img-col.half {
+        margin: 0;
+
+    }
+
+    .property-img {
+        padding: 0 10px 10px;
+
+    }
+
+    .property-img-col.half .prop-name {
+
+        font-size: 17px;
+        line-height: 20px;
+
+    }
+
+    .property-img-col {
+
+        margin: 0 0 8px 0 !important;
+
+    }
+
+    .property-img-col.half.left {
+
+        padding-right: 5px;
+
+    }
+
+    .property-img-col.half.right {
+
+        padding-left: 5px;
+
+    }
+
+    .property-img .prop-name {
+
+        font-size: 23px;
+
+    }
+
+    .single-property .name {
+        font-size: 14px;
+        background-size: 12px;
+        padding: 0 0 0 20px;
+
+    }
+
+    .single-property .info>p {
+
+        font-size: 16px;
+        margin: 10px 0 10px 0;
+
+    }
+
+    .info ul li {
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .single-property .btn.btn-primary {
+
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        padding: 3px 0;
+
+    }
+
+    .single-property .details {
+
+        padding: 14px 0 0;
+
+    }
+
+    .single-property .sale-tag {
+
+        top: 0;
+        background: #bf0405;
+
+    }
+
+    .buy-sell-main-col p {
+
+        font-size: 27px;
+
+    }
+
+    .buy-sell-main-col a {
+
+        padding: 10px 12px;
+        font-size: 13px;
+        letter-spacing: 0;
+        background: white;
+        color: #0e5aa7;
+
+    }
+
+    .buy-sell-main-col {
+
+        height: 170px;
+        padding: 0;
+
+    }
+
+    .buy-sell-main-col ul li {
+
+        margin: 0 0;
+
+    }
+
+    .buy-sell-main-col ul {
+
+        margin: 15px 0 0 0;
+
+    }
+
+    .single-advantage .head {
+
+        font-size: 17px;
+        line-height: 20px;
+        background: transparent;
+        padding: 0px;
+
+    }
+
+    .single-advantage .content {
+
+        font-size: 12px;
+        text-align: left;
+        line-height: 20px;
+
+    }
+
+    .single-advantage {
+
+        width: 50%;
+        margin: 12px 0 23px 0;
+
+    }
+
+    .advantages-inner-col {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .single-advantage:nth-child(2n) {
+        padding-left: 10px;
+    }
+
+    .single-advantage:nth-child(2n+1) {
+        padding-right: 10px;
+    }
+
+    .footer-col {
+
+        width: 100%;
+
+    }
+
+    .footer-top .footer-logo {
+
+        display: none;
+
+    }
+
+    .footer-top {
+
+        padding-top: 15px;
+        padding-bottom: 0;
+
+    }
+
+    .footer-top .container {
+
+        padding: 0;
+
+    }
+
+    .contact-list li {
+
+        font-size: 13px;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 32px;
+        background-size: 20px !important;
+
+    }
+
+    .contact-list {
+
+        margin: 0 !important;
+
+    }
+
+    .contact-list li.call,
+    .contact-list li.mail {
+        background: transparent;
+    }
+
+    .footer-col.f1>ul {
+
+        width: 50%;
+        float: left;
+        margin: 0;
+
+    }
+
+    .f2,
+    .f3,
+    .f4 {
+
+        width: 50%;
+
+    }
+
+    .footer-head {
+
+        font-size: 14px;
+        margin-top: 15px;
+
+    }
+
+    .footer-menu li {
+
+        font-size: 13px;
+        margin: 0 0 5px 0;
+        letter-spacing: 0px;
+
+    }
+
+    .footer-col.f4 {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .footer-col.f4 ul li {
+
+        display: inline-block;
+        padding: 0 6px;
+        border-right: solid 2px;
+        height: 10px;
+        line-height: 9px;
+
+    }
+
+    .footer-bottom {
+
+        padding: 8px 0;
+
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+
+    }
+
+    .property-listing-col {
+
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .single-property {
+
+        margin: 0 0 8% 0;
+        padding: 0;
+
+    }
+
+    .banner-main-col .banner-caption {
+
+        font-size: 30px;
+        padding-top: 0;
+
+    }
+
+    .banner-main-col .banner-caption p {
+        margin: 0px;
+    }
+
+    #banner-section {
+
+        margin: 0 0 20px 0;
+
+    }
+
+    .search-form {
+
+        display: block;
+        width: 100%;
+        margin: 30px 0 0 0;
+
+    }
+
+    .search-form .form-group {
+
+        padding: 0;
+        margin: 0 0 20px 0;
+
+    }
+
+    .form-control {
+
+        font-size: 13px;
+        height: 42px;
+        padding: 0 10px;
+
+    }
+
+    .advanced-search-main-col .btn.btn-primary {
+
+        font-size: 15px;
+        font-weight: 500;
+        padding: 6px 0;
+        width: 100%;
+
+    }
+
+    .contact-main-col .contact-text {
+
+        font-size: 15px;
+        margin: 0 0 15px 0;
+
+    }
+
+    .form-group {
+
+        margin-bottom: 20px;
+
+    }
+
+    textarea {
+
+        font-size: 13px;
+        min-height: 90px;
+        padding: 10px 10px;
+
+    }
+
+    .btn.btn-primary {
+        font-weight: 500;
+        font-size: 15px;
+        padding: 4px 26px;
+
+    }
+
+    .social-login .already {
+
+        font-size: 12px;
+        margin: 30px 0 11px 0;
+
+    }
+
+    .social-login .or {
+
+        font-size: 20px;
+
+    }
+
+    .social-login .continue {
+
+        font-size: 15px;
+        font-weight: 600;
+
+    }
+
+    .social-login ul li img {
+
+        width: 32px;
+
+    }
+
+    .social-login ul li {
+        margin: 0px;
+    }
+
+    .social-login ul {
+
+        margin: 15px 0;
+
+    }
+
+    #login-section .social-login .already {
+
+        margin: 12px 0 11px 0;
+
+    }
+
+    .login-right-inner {
+
+        font-size: 25px;
+        letter-spacing: 1px;
+        max-width: 100%;
+        padding: 40px 10px;
+        width: 100%;
+
+    }
+
+    .login-right-inner br {
+
+        display: none;
+
+    }
+
+    .login-right-col {
+
+        padding: 0;
+
+    }
+
+    #login-section .register-form-col,
+    .login-col,
+    .register-main-col {
+
+        padding: 0;
+
+    }
+
+    .login-list .remember {
+
+        position: relative;
+        top: -4px;
+
+    }
+
+    .form-head {
+
+        font-size: 20px;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+
+    }
+
+    .register-form-col {
+        max-width: 100%;
+        padding: 0;
+
+    }
+
+    .property-form .form-group {
+
+        width: 100% !important;
+        padding: 0;
+
+    }
+
+    .aboutsection-inner-col {
+
+        padding: 0px 0px 20px 0px;
+
+    }
+
+    #aboutSection .aboutsection-inner-col p {
+
+        font-size: 13px;
+        line-height: 21px;
+
+    }
+
+    .detailgallery-left {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .detail-gallery .detailgallery-inner {
+
+        padding: 0 4px;
+        margin: 8px 0 0 0;
+        width: 50%;
+
+    }
+
+    .detailgallery-right {
+
+        width: calc(100% + 8px);
+        margin: 0 0 0 -4px;
+        padding: 20px 0 0 0px;
+
+    }
+
+    .details-form {
+        margin-top: 20px;
+    }
+
+    .detail-gallery .detailgallery-inner:nth-child(3),
+    .detail-gallery .detailgallery-inner:nth-child(4) {
+
+        padding-top: 0;
+
+    }
+
+    .location-detail .name {
+
+        font-size: 14px;
+        padding: 0 0 0 22px;
+        background-size: 15px;
+
+    }
+
+    .detail-location-col {
+
+        margin: 25px 0px 0px 0px;
+
+    }
+
+    .location-detail>li.button {
+
+        float: left;
+        font-size: 25px;
+        color: #0d5aa8 !important;
+        background: transparent;
+        padding: 0;
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 0;
+
+    }
+
+    .detail-location-col .available-text {
+
+        font-size: 20px;
+        color: #333;
+        margin: 0;
+
+    }
+
+    .about-detail-section {
+
+        padding: 15px 0 0 0;
+
+    }
+
+    .aboutdetail-text {
+
+        font-size: 20px;
+        margin: 0;
+
+    }
+
+    .about-detail-section .aboutdetail-para {
+
+        font-size: 13px;
+        line-height: 22px;
+        margin-top: 0;
+
+    }
+
+    .different-features>li {
+
+        width: 50%;
+        background-size: 20px;
+        font-size: 13px;
+        padding: 4px 0 4px 30px;
+        font-weight: 600;
+        background-position: left;
+        margin: 0 0 12px 0;
+
+    }
+
+    .detail-neighbor {
+
+        margin: 15px 0 0 0;
+
+    }
+
+    .aboutdetail-text a img {
+
+        width: 22px;
+
+    }
+
+    .location-map {
+
+        padding: 0px;
+        margin: 20px 0 0 0;
+
+    }
+
+    .location-map iframe {
+        width: 100%;
+    }
+
+    .searching-ul {
+        padding: 20px 0 0 0;
+
+    }
+
+    .searching-ul li {
+
+        font-size: 17px;
+
+    }
+
+    .searching-ul li:last-child a {
+
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block !important;
+
+    }
+
+    .searching-ul li.icon img {
+
+        width: 20px;
+        margin: -4px 0 0 3px;
+
+    }
+
+    .searching-ul li.text {
+
+        background: #b70000;
+        padding: 5px 16px;
+        float: left;
+        transition: 0.3s;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 111111;
+        font-size: 15px;
+
+    }
+
+    .propertygallery-left img {
+
+        padding: 0;
+
+    }
+
+    .propertygallery-right img {
+
+        padding: 0;
+
+    }
+
+    .property-gallery .propert-name {
+
+        font-size: 14px;
+        text-align: left;
+        padding: 4px 0;
+        margin: 0 0 4px 0;
+        letter-spacing: 0;
+        font-weight: 600;
+
+    }
+
+    .property-gallery .property-type-ul {
+
+        text-align: left;
+
+    }
+
+    .property-gallery .property-type-ul li a {
+
+        font-size: 14px;
+        padding: 1px 12px;
+        border-radius: 8px;
+        margin: 0;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        font-weight: 500;
+
+    }
+
+    .proprCol {
+
+        width: 50%;
+        padding: 0 6px;
+        margin: 12px 0 6px 0;
+
+    }
+
+    .property-gallery {
+
+        padding-bottom: 20px;
+        width: calc(100% + 12px);
+        margin: 0 0 0 -6px;
+
+    }
+
+    .team-slider .item .img-sec {
+        height: 140px;
+        width: 140px;
+    }
+
+    .team-slider .item {
+        padding-bottom: 10px;
+    }
+
+    .team-slider .item .text-sec .text {
+        font-size: 13px;
+    }
+
+    .location-detail {
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .fixedHeader {
+
+        position: static !important;
+        top: 0;
+        left: 0;
+
+    }
+
+    .header-top-col {
+        padding: 9px 0;
+        font-size: 12px;
+
+    }
+
+    .header-nav-col .logo {
+
+        min-width: auto;
+
+    }
+
+    .site-menu a {
+
+        font-size: 13px;
+
+    }
+
+    .site-menu li {
+
+        margin: 0 6px 0 0;
+
+    }
+
+    .property a {
+        padding: 4px 8px;
+        font-size: 13px;
+        letter-spacing: 0px;
+
+    }
+
+    .header-nav-col .logo img {
+
+        width: 80px;
+        margin: 0 20px 0 0;
+
+    }
+
+    .header-nav-col .property {
+
+        /* margin: 18px 0 0 0; */
+
+    }
+
+    .header-nav-col {
+
+        padding: 10px 0;
+
+    }
+
+    .header-search p {
+
+        font-size: 39px;
+
+    }
+
+    .search-group-inner {
+        width: 100%;
+        margin: 0 auto 0;
+
+    }
+
+    .header-search {
+        top: 59%;
+
+    }
+
+    .header-search ul li select,
+    .header-search ul li input[type="text"] {
+        background-position: right 8px center !important;
+        background-size: 8px !important;
+        font-size: 12px;
+        padding: 0 3px;
+
+    }
+
+    .header-top-col .top-col.center a {
+        background-size: 22px;
+
+    }
+
+    .property-img {
+        padding: 0 10px 8px;
+
+    }
+
+    .property-img .prop-name {
+
+        font-size: 25px;
+
+    }
+
+    .property-img-col.half .prop-name {
+
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+
+    .single-property .name {
+        font-size: 13px;
+        background-size: 14px;
+        padding: 0 0 0 24px;
+        margin-left: 0;
+
+    }
+
+    .single-property .info>p {
+
+        font-size: 15px;
+
+    }
+
+    .info ul li {
+
+        font-size: 13px;
+
+    }
+
+    .single-property .btn.btn-primary {
+
+        font-size: 13px;
+        font-weight: 500;
+
+    }
+
+    .buy-sell-main-col {
+        height: 270px;
+
+    }
+
+    .buy-sell-main-col p {
+
+        font-size: 46px;
+
+    }
+
+    .buy-sell-main-col a {
+
+        padding: 10px 12px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: 0.2s;
+
+    }
+
+    .buy-sell-main-col ul {
+
+        margin: 15px 0 0 0;
+
+    }
+
+    .single-advantage .head {
+
+        font-size: 20px;
+        padding: 2px 0 2px 45px;
+        background-size: 32px;
+
+    }
+
+    .single-advantage .content {
+
+        font-size: 13px;
+
+    }
+
+    .footer-head {
+
+        font-size: 15px;
+
+    }
+
+    .footer-menu li {
+
+        font-size: 13px;
+        margin: 0 0 6px 0;
+
+    }
+
+    .contact-list li {
+
+        font-size: 14px;
+        margin: 0 0 16px 0;
+        padding: 0 0 0 32px;
+        background-size: 20px !important;
+        background-position: left center !important;
+
+    }
+
+    .footer-top {
+        padding-bottom: 12px;
+
+    }
+
+    .footer-bottom p {
+
+        font-size: 14px;
+
+    }
+
+    .footer-bottom {
+
+        padding: 15px 0;
+
+    }
+
+    .banner-main-col .banner-caption {
+        font-size: 42px;
+        padding-top: 16%;
+
+    }
+
+    .form-control {
+
+        font-size: 14px;
+        height: 46px;
+        padding: 0 10px;
+
+    }
+
+    .advanced-search-main-col .btn.btn-primary,
+    .btn.large {
+
+        font-size: 20px;
+        font-weight: 700;
+        padding: 6px 59px;
+
+    }
+
+    .btn.btn-primary {
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+    .login-right-inner {
+        font-size: 32px;
+
+    }
+
+    .property-gallery .propert-name {
+
+        font-size: 23px;
+        padding: 12px 0px 25px 0px;
+        letter-spacing: 1px;
+
+    }
+
+    .property-gallery .property-type-ul li a {
+
+        font-size: 20px;
+        padding: 5px 30px;
+        margin-right: 0;
+
+    }
+
+    .proprCol {
+
+        margin: 0 0 30px 0;
+
+    }
+
+    .property-gallery {
+
+        padding-bottom: 10px;
+
+    }
+
+    .location-detail .name {
+
+        font-size: 17px;
+        padding: 0 0 0 30px;
+        background-size: 18px;
+
+    }
+
+    .location-detail>li.button {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li:last-child a {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li.icon img {
+
+        width: 23px;
+
+    }
+
+    .team-slider .item .img-sec {
+        height: 160px;
+        width: 160px;
+    }
+
+    .detailgallery-left {
+        width: calc(100% - 280px);
+    }
+
+    .detailgallery-right {
+        width: 280px;
+    }
+}
+
+@media(min-width: 993px) and (max-width: 1200px) {
+    .site-menu a {
+
+        font-size: 15px;
+
+    }
+
+    .property a {
+        padding: 9px 10px;
+        font-size: 15px;
+
+    }
+
+    .header-search {
+        top: 60%;
+
+    }
+
+    .header-search p {
+
+        font-size: 46px;
+
+    }
+
+    .search-group-inner {
+        margin: 0 auto 0;
+
+    }
+
+    .header-search ul li select,
+    .header-search ul li input[type="text"] {
+        font-size: 14px;
+
+    }
+
+    .header-search ul li .btn {
+        font-size: 20px;
+
+    }
+
+    .common-heading .small {
+
+        font-size: 13px;
+
+    }
+
+    .common-heading .large {
+
+        font-size: 26px;
+
+    }
+
+    .property-img {
+        padding: 0 20px 13px;
+
+    }
+
+    .single-property .name {
+
+        font-size: 14px;
+
+    }
+
+    .single-property .info>p {
+
+        font-size: 17px;
+
+    }
+
+    .info ul li {
+
+        font-size: 12px;
+        font-weight: 500;
+
+    }
+
+    .single-property .btn.btn-primary {
+
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
+    .buy-sell-main-col {
+        height: 309px;
+
+    }
+
+    .single-advantage .head {
+
+        font-size: 25px;
+        padding: 0 0 0 46px;
+        background-size: 34px;
+
+    }
+
+    .footer-head {
+
+        font-size: 15px;
+
+    }
+
+    .footer-menu li {
+
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        letter-spacing: 1px;
+        transition: 0.2s;
+
+    }
+
+    .footer-top {
+        padding-bottom: 26px;
+
+    }
+
+    .footer-bottom {
+        padding: 15px 0;
+
+    }
+
+    .footer-bottom p {
+
+        font-size: 15px;
+
+    }
+
+    .banner-main-col .banner-caption {
+
+        font-size: 46px;
+        padding-top: 16%;
+
+    }
+
+    .form-control {
+
+        font-size: 14px;
+        height: 46px;
+        padding: 0 12px;
+
+    }
+
+    .advanced-search-main-col .btn.btn-primary,
+    .btn.large {
+
+        font-size: 20px;
+        font-weight: 500;
+        padding: 6px 80px;
+
+    }
+
+    .btn.btn-primary {
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+
+    .property-gallery .propert-name {
+
+        font-size: 23px;
+        padding: 12px 0px 25px 0px;
+        letter-spacing: 1px;
+
+    }
+
+    .property-gallery .property-type-ul li a {
+
+        font-size: 20px;
+        padding: 5px 30px;
+        margin-right: 0;
+
+    }
+
+    .proprCol {
+
+        margin: 0 0 30px 0;
+
+    }
+
+    .property-gallery {
+
+        padding-bottom: 10px;
+
+    }
+
+    .location-detail .name {
+
+        font-size: 17px;
+        padding: 0 0 0 30px;
+        background-size: 18px;
+
+    }
+
+    .location-detail>li.button {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li:last-child a {
+
+        font-size: 20px;
+
+    }
+
+    .searching-ul li.icon img {
+
+        width: 23px;
+
+    }
+
+}

@@ -26,339 +26,348 @@
 // COMMON CSS
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .text-uppercase {
-    text-transform: uppercase !important;
+  text-transform: uppercase !important;
 }
 
 .text-lowercase {
-    text-transform: lowercase !important;
+  text-transform: lowercase !important;
 }
 
 .text-capitalize {
-    text-transform: capitalize !important;
+  text-transform: capitalize !important;
 }
 
 .text-white {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .text-black {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 .text-dark {
-    color: #333 !important;
+  color: #333 !important;
 }
 
 .text-app-primary {
-    color: $secodary-color !important;
+  color: $secodary-color !important;
 }
 
 .pb-0 {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .w-100 {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .clear-parent::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .position-relative {
-    position: relative;
+  position: relative;
 }
 
 .position-absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .position-static {
-    position: static;
+  position: static;
 }
 
 .app-round-btn {
-    font: 20px "nexa-bold";
-    min-width: 160px;
-    padding: 14px 10px 11px;
-    height: auto;
-    border-radius: 30px;
-    @include box-shadow(1pxf, 0px, 6px, 0px, #272727);
-    margin: 0 auto;
-    background-color: #fff !important;
-    color: $secodary-color;
+  font: 20px "nexa-bold";
+  min-width: 160px;
+  padding: 14px 10px 11px;
+  height: auto;
+  border-radius: 30px;
+  @include box-shadow(1pxf, 0px, 6px, 0px, #272727);
+  margin: 0 auto;
+  background-color: #fff !important;
+  color: $secodary-color;
 
-    &:hover {
-        background-color: #fff !important;
-    }
+  &:hover {
+    background-color: #fff !important;
+  }
 }
 
 button.gradient,
 .btn.gradient {
-    @include app-gradient;
+  @include app-gradient;
 }
 
 input[type="text"].app-input {
-    border: 1px solid #cecece;
-    height: 40px;
-    background: #fff;
-    padding: 2px 10px;
-    box-shadow: none;
-    outline: none;
-    box-sizing: border-box;
+  border: 1px solid #cecece;
+  height: 40px;
+  background: #fff;
+  padding: 2px 10px;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
 
-    &:focus {
-        border-bottom-color: #cecece !important;
-        box-shadow: none !important;
-    }
+  &:focus {
+    border-bottom-color: #cecece !important;
+    box-shadow: none !important;
+  }
 }
 
 .app-geadient {
-    background: rgb(212, 103, 83);
-    background: -moz-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    background: linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1);
+  background: rgb(212, 103, 83);
+  background: -moz-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: linear-gradient(180deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1);
 }
 
 .app-geadient-left-to-right {
-    background: rgb(212, 103, 83);
-    background: -moz-linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    background: linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1);
+  background: rgb(212, 103, 83);
+  background: -moz-linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  background: linear-gradient(90deg, rgba(212, 103, 83, 1) 0%, rgba(193, 48, 63, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d46753", endColorstr="#c1303f", GradientType=1);
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 5px;
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 5px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    margin: 3px 4px;
-    background: #fff;
+  margin: 3px 4px;
+  background: #fff;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: $secodary-colorB;
+  background: $secodary-colorB;
 }
 
 .app-head-w-view {
-    line-height: normal;
-    margin-bottom: 10px;
+  line-height: normal;
+  margin-bottom: 10px;
 
-    .head {
-        font: 20px "Source Sans Pro", sans-serif;
-        color: #000;
-        width: calc(100% - 70px);
-        padding-right: 5px;
-        font-weight: 600;
+  .head {
+    font: 20px "Source Sans Pro", sans-serif;
+    color: #000;
+    width: calc(100% - 70px);
+    padding-right: 5px;
+    font-weight: 600;
+  }
+
+  .link {
+    width: 70px;
+
+    a {
+      display: block;
+      font: 15px "Source Sans Pro", sans-serif;
+      color: $secodary-color;
+      font-weight: 600;
     }
-
-    .link {
-        width: 70px;
-
-        a {
-            display: block;
-            font: 15px "Source Sans Pro", sans-serif;
-            color: $secodary-color;
-            font-weight: 600;
-        }
-    }
+  }
 }
 
 .app-notification-btn,
 .app-more-menu,
 .app-open-menu {
-    >a {
-        position: relative;
-        height: 33px;
-        width: 33px;
+  > a {
+    position: relative;
+    height: 33px;
+    width: 33px;
 
-        i {
-            color: #fff;
-            font-size: 25px;
-        }
+    i {
+      color: #fff;
+      font-size: 25px;
     }
+  }
 }
 
 .app-notification-btn.hasNotification a:after {
-    content: "";
-    height: 9px;
-    width: 9px;
-    border-radius: 100%;
-    background: #fff;
-    position: absolute;
-    top: 6px;
-    right: 4px;
-    z-index: 1;
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  z-index: 1;
 }
 
 .app-more-menu {
-    position: relative;
+  position: relative;
 
-    >ul {
-        position: absolute;
-        top: calc(100% + 3px);
-        right: 0;
-        width: 150px;
+  > ul {
+    position: absolute;
+    top: calc(100% + 3px);
+    right: 0;
+    width: 150px;
+    background: #fff;
+    z-index: 11;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+
+    > li {
+      > a {
         background: #fff;
-        z-index: 11;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-transform-origin: right top;
-        transform-origin: right top;
+        padding: 8px 15px;
+        display: block;
+        color: #565656;
+        font: 16px "Source Sans Pro", sans-serif;
+        font-weight: 600;
+      }
+    }
+  }
 
-        >li {
-            >a {
-                background: #fff;
-                padding: 8px 15px;
-                display: block;
-                color: #565656;
-                font: 16px "Source Sans Pro", sans-serif;
-                font-weight: 600;
-            }
-        }
+  &.active {
+    > a {
+      background: rgba(0, 0, 0, 0.2);
     }
 
-    &.active {
-        >a {
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        >ul {
-            transition: 0.2s;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
+    > ul {
+      transition: 0.2s;
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
+  }
 }
 
 .app-btn-outline {
-    display: block;
-    background: $secodary-color;
-    padding: 6px 5px;
-    width: 100%;
-    text-align: center;
-    border: 1px solid #fff;
-    color: #fff;
-    font: 600 14px "source sans pro", sans-serif;
-    border-radius: 5px;
-    @include transition;
+  display: block;
+  background: $secodary-color;
+  padding: 6px 5px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font: 600 14px "source sans pro", sans-serif;
+  border-radius: 5px;
+  @include transition;
 
-    &:active {
-        background: lighten($color: $secodary-color, $amount: 10px);
-    }
+  &:active {
+    background: lighten($color: $secodary-color, $amount: 10px);
+  }
 }
 
 .app-btn {
-    border-radius: 0;
-    width: 100%;
-    border: 1px solid transparent;
-    margin: 0;
-    height: auto;
-    line-height: normal;
-    padding: 10px 3px;
-    box-shadow: none;
-    background: #b11f24;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    outline: none;
-    text-decoration: none;
+  border-radius: 0;
+  width: 100%;
+  border: 1px solid transparent;
+  margin: 0;
+  height: auto;
+  line-height: normal;
+  padding: 10px 3px;
+  box-shadow: none;
+  background: #b11f24;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
 
-    &.outline {
-        background: transparent;
-        color: #000;
-        border: 1px solid #d2d2d2;
-    }
+  &.outline {
+    background: transparent;
+    color: #000;
+    border: 1px solid #d2d2d2;
+  }
 }
 
 .app-table {
-    overflow-x: auto;
+  overflow-x: auto;
 
-    table {
-        width: 100%;
+  table {
+    width: 100%;
 
-        @include max-width(400px) {
-            width: 500px;
-        }
-
-        td,
-        th {
-            font-size: 16px;
-            font-weight: 500;
-            border-radius: 0;
-            padding: 11px 12px;
-        }
-
-        th {
-            font-weight: 600;
-        }
-
-        thead {
-            background: $secodary-color;
-
-            th {
-                color: #fff;
-            }
-        }
-
-        tbody {
-            tr {
-                &:nth-child(odd) {
-                    background-color: #fff;
-                }
-
-                &:nth-child(even) {
-                    background-color: lightgray;
-                }
-            }
-        }
+    @include max-width(400px) {
+      width: 500px;
     }
 
-    .tag {
-        height: 30px;
-        width: 30px;
-        border: 1px solid #333;
-        border-radius: 6px;
-        font-weight: 600;
-        background: #fff;
-        color: #333;
+    td,
+    th {
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 0;
+      padding: 11px 12px;
+    }
 
-        &.red {
-            background-color: red;
-            color: #fff;
+    th {
+      font-weight: 600;
+    }
+
+    thead {
+      background: $secodary-color;
+
+      th {
+        color: #fff;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: #fff;
         }
 
-        &.blue {
-            background-color: blue;
-            color: #fff
+        &:nth-child(even) {
+          background-color: lightgray;
         }
+      }
+    }
+  }
 
-        &.yellow {
-            background-color: yellow;
-        }
+  .tag {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #fff;
+    color: #333;
+
+    &.red {
+      background-color: red;
+      color: #fff;
+    }
+
+    &.blue {
+      background-color: blue;
+      color: #fff;
+    }
+
+    &.yellow {
+      background-color: yellow;
+    }
+  }
+}
+
+@include max-width(767px) {
+    .fancybox-slide {
+      padding: 10px 8px !important;
+    }
+    .fancybox-slide--video .fancybox-content {
+      width: 100% !important;
     }
 }

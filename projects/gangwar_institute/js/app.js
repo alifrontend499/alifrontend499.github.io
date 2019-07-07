@@ -121,4 +121,34 @@
 // GO BACK
 function goBack() {
     window.history.back();
-}
+};
+
+(function () {
+    $('.sel-ans label > input').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('active');
+        } else {
+            $(this).parent().removeClass('active')
+        }
+    });
+})();
+
+(function () {
+    $('.app-open-menu a').click(function () {
+        var elem = $(this).data('open');
+        $(this).toggleClass('active').find('i').text(($('i', this).text() == 'keyboard_arrow_right') ? 'keyboard_arrow_left' : 'keyboard_arrow_right');
+
+        $('#test-info-sidebar').toggleClass('active');
+    });
+})();
+
+(function () {
+    $('.A-ques .open-answer').click(function (ev) {
+        ev.preventDefault();
+        ($('.material-icons', this).text() === 'keyboard_arrow_up') ?
+            $('.material-icons', this).text('keyboard_arrow_down') : $('.material-icons', this).text('keyboard_arrow_up');
+        $(this).closest('.ques').next().slideToggle(100, function () {
+            $(this).parent().toggleClass('in')
+        });
+    });
+})();
