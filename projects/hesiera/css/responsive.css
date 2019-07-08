@@ -717,15 +717,15 @@
 
     .location-detail .name {
 
-        font-size: 14px;
-        padding: 0 0 0 22px;
-        background-size: 15px;
+        font-size: 20px;
+        padding: 0 7px;
+        background-image: none;
 
     }
 
     .detail-location-col {
 
-        margin: 25px 0px 0px 0px;
+        margin: 5px 0px 0px 0px;
 
     }
 
@@ -785,7 +785,7 @@
 
     .detail-neighbor {
 
-        margin: 15px 0 0 0;
+        margin: 0 0 0 0;
 
     }
 
@@ -917,8 +917,74 @@
     }
 
     .location-detail {
+        margin-bottom: 10px;
+    }
+
+    .sm-details {
+        margin: 20px 0;
+    }
+
+    .sm-details .det:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .sm-details .det p {
+        font-size: 18px;
+    }
+
+    .detail-more-details {
+        margin: 20px 0;
+    }
+
+    .detail-more-details .aboutdetail-text,
+    .detail-more-details .frac .common-heading {
+        margin-bottom: 16px;
+    }
+
+    .detail-more-details .frac .common-heading .large {
+        font-size: 19px;
+
+    }
+
+    .detail-more-details .det:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    .detail-more-details .det p {
+        font-size: 15px;
+    }
+
+    .mortage-calculator {
+        margin-top: 0;
+        margin-bottom: 1px;
+    }
+
+    .mortage-calculator .LT>.inner,
+    .mortage-calculator .CT>.inner,
+    .mortage-calculator .RT>.inner {
+        padding: 10px;
+    }
+
+    .mortage-calculator .LT,
+    .mortage-calculator .CT,
+    .mortage-calculator .RT {
+        margin-bottom: 15px;
+    }
+
+    .mortage-calculator .CT .head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .mortage-calculator .CT .price {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .mortage-calculator .RT p {
+        font-size: 25px;
+    }
+
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
@@ -1198,12 +1264,49 @@
 
     }
 
+    .location-detail {
+        margin-bottom: 25px;
+    }
+
     .location-detail .name {
 
-        font-size: 17px;
+        font-size: 22px;
         padding: 0 0 0 30px;
         background-size: 18px;
 
+    }
+
+    .sm-details .det:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .sm-details .det p {
+        font-size: 17px;
+    }
+
+    .mortage-calculator {
+        margin-top: 0;
+    }
+
+
+    .mortage-calculator .LT,
+    .mortage-calculator .CT,
+    .mortage-calculator .RT {
+        margin-bottom: 15px;
+    }
+
+    .mortage-calculator .CT .head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .mortage-calculator .CT .price {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .mortage-calculator .RT p {
+        font-size: 25px;
     }
 
     .location-detail>li.button {

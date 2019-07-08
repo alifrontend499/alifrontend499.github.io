@@ -1251,7 +1251,7 @@ select {
 }
 
 .location-detail .name {
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 500;
     background: url(../images/detail-location.png) no-repeat;
     background-position: left;
@@ -1330,19 +1330,194 @@ select {
     width: 100%;
     border-radius: 0;
 }
+
 .details-form .submit-btn:hover {
     background-color: #333;
 }
+
+.sm-details {
+    padding: 0;
+    margin: 50px 0 40px;
+}
+
+.sm-details .det:not(:last-child) {
+    padding-right: 10px;
+}
+
+.sm-details .det p {
+    font-family: avant-regular, sans-serif;
+    font-size: 22px;
+    margin-bottom: 0;
+    color: #000;
+    background: transparent url(../images/penta-icom.png) no-repeat 0 3px / 20px;
+    padding-left: 30px;
+}
+
+.sm-details .det p span {
+    font-family: avant-bold, sans-serif;
+}
+
+.mortage-calculator {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.mortage-calculator .aboutdetail-text {
+    margin-bottom: 40px;
+}
+
+.mortage-calculator>.d-flex-wrap {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.mortage-calculator .LT,
+.mortage-calculator .CT,
+.mortage-calculator .RT {
+    padding: 0 5px;
+    width: 100%;
+}
+
+.mortage-calculator .LT>.inner,
+.mortage-calculator .CT>.inner,
+.mortage-calculator .RT>.inner {
+    padding: 0 5px;
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 992px) {
+
+    .mortage-calculator .LT,
+    .mortage-calculator .CT {
+        width: 30%;
+    }
+
+    .mortage-calculator .RT {
+        width: 40%;
+    }
+}
+
+.mortage-calculator .LT>.inner,
+.mortage-calculator .CT>.inner {
+    background: #f4f4f6;
+    height: 100%;
+}
+
+.mortage-calculator .LT .form-group {
+    margin-bottom: 15px;
+}
+
+.mortage-calculator .LT .form-group label {
+    font-family: avant-bold, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.mortage-calculator .LT .form-group .form-control {
+    font-size: 17px;
+    height: 45px;
+    border: solid 1px #b7b7b7;
+    border-radius: 0;
+    padding: 0 55px 0 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.mortage-calculator .ex-info-col {
+    position: relative;
+}
+
+.mortage-calculator .ex-info-col .ex-info {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.mortage-calculator>.d-flex-wrap .btn.btn-primary {
+    margin: 35px auto 0;
+    display: table;
+    border-radius: 0;
+    padding: 5px 21px;
+    box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mortage-calculator .CT .head {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 30px;
+
+}
+
+.mortage-calculator .CT .price {
+    line-height: normal;
+    font-size: 60px;
+    font-family: avant-bold, sans-serif;
+    text-align: center;
+    color: #0d5aa8;
+    margin-bottom: 30px;
+}
+
+.mortage-calculator .CT .other-details {
+    border-top: 4px solid #909090;
+    padding-top: 20px;
+}
+
+.mortage-calculator .CT .other-details>li {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.mortage-calculator .CT .other-details>li>span {
+    font-family: avant-bold, sans-serif;
+    font-size: 15px;
+}
+
+.mortage-calculator .CT .other-details>li>span:first-child {
+    text-transform: uppercase;
+    color: #0d5aa8;
+}
+
+.mortage-calculator .CT .other-details>li>span:last-child {
+    margin-left: auto;
+    padding-left: 5px;
+}
+
+.mortage-calculator .RT>.inner {
+    background: rgb(218, 218, 218) url('../images/details-mortage-right-image.jpg') no-repeat 0 0 / cover;
+    height: 100%;
+    width: 100%;
+}
+
+.mortage-calculator .RT p {
+    font-family: avant-bold, sans-serif;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
 
 /* .location-detail {
     margin: 0px;
 } */
 
 .aboutdetail-text {
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     color: #0e5aa6;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-family: avant-bold, sans-serif;
 }
 
 .about-detail-section .aboutdetail-para {
@@ -1359,7 +1534,11 @@ select {
 }
 
 .aboutdetail-text a {
-    padding-left: 10px;
+    padding-left: 0;
+    display: inline-block;
+    width: 23px;
+    vertical-align: -2px;
+    margin-left: 3px;
 }
 
 .container-label {
@@ -1477,13 +1656,62 @@ select {
 
 .location-map {
     padding: 0px;
-    margin: 75px 0px;
+    margin: 15px 15px;
 }
 
 .location-map>iframe {
     margin: auto;
     display: table;
 }
+
+.detail-more-details {
+    padding: 0;
+    margin: 40px 0;
+}
+
+.detail-more-details .aboutdetail-text,
+.detail-more-details .frac .common-heading {
+    margin-bottom: 40px;
+}
+
+.detail-more-details .frac .common-heading {
+    padding: 3px 0 3px 8px;
+}
+
+.detail-more-details .frac .common-heading .large {
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.detail-more-details .frac:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.detail-more-details .det:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.detail-more-details .det p {
+    font-family: avant-regular, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #000;
+    padding-right: 10px;
+}
+
+.detail-more-details .det p span {
+    font-family: avant-bold, sans-serif;
+    text-transform: uppercase;
+}
+
+.detail-more-details .all-details .LT {
+    padding-left: 0;
+}
+
+.detail-more-details .all-details .LT {
+    padding-right: 0;
+}
+
 
 .searching-ul li {
     font-weight: 700;
