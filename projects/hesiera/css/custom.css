@@ -304,3 +304,40 @@
 .team-slider .owl-nav>button.owl-prev {
     right: calc(30px + 10px);
 }
+
+
+/* DASHBOARD SEC */
+.dashboard-sec {
+    padding: 0;
+}
+
+.dashboard-sec>.d-left-bar {
+    width: 300px;
+}
+
+.dashboard-sec>.content-sec {
+    width: calc(100% - 300px);
+}
+
+.d-left-bar .inner {
+    background-color: #0d111a;
+}
+
+.d-left-bar .DLB_list>li {}
+
+.d-left-bar .DLB_list>li>a {
+    padding: 20px 30px;
+    align-items: center;
+    font-size: 18px;
+    font-family: avant-bold, sans-serif;
+    color: #fff;
+}
+
+.d-left-bar .DLB_list>li>a>img {
+    width: 28px;
+}
+
+.d-left-bar .DLB_list>li>a>span {
+    width: calc(100% - 28px);
+    padding-left: 15px;
+}
