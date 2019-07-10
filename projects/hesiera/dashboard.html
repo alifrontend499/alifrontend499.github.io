@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+    <!-- CHARTS (MORIS JS) -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+
+
     <link rel="stylesheet" href="assets/owl-carousel/css/animate.css">
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.theme.default.min.css">
@@ -104,31 +109,36 @@
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/new-listing-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/new-listing-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>New Listings</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/analytic-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/analytic-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>New Listings</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/activity-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/activity-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Activity Log</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/profile-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/profile-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Profile</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/contact-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/contact-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Contacts</span>
                                 </a>
                             </li>
@@ -140,34 +150,232 @@
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/social-links-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/social-links-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Social Media Links</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/financial-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/financial-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Financials</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/property-managment-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/property-managment-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Property Management</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="" class="d-flex">
-                                    <img src="images/icons/dashboard-icons/financial-ico.png" alt="" class="img-responsive">
+                                    <img src="images/icons/dashboard-icons/financial-ico.png" alt=""
+                                        class="img-responsive">
                                     <span>Logout</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-sec">
+                <div class="d_content-sec">
                     <div class="inner">
+                        <div class="main-btns">
+                            <ul class="d-flex-wrap list-unstyled">
+                                <li>
+                                    <a href="" class="align-items-center d-flex">
+                                        <div class="ico">
+                                            <img src="images/icons/dashboard-icons/property-sale-ico.png" alt=""
+                                                class="img-responsive">
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                <span>
+                                                    400
+                                                </span>
+                                                Properties <br />
+                                                for Sale
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="align-items-center d-flex">
+                                        <div class="ico">
+                                            <img src="images/icons/dashboard-icons/rent-ico.png" alt=""
+                                                class="img-responsive">
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                <span>
+                                                    $8000
+                                                </span>
+                                                Properties <br />
+                                                for Rent
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="align-items-center d-flex">
+                                        <div class="ico">
+                                            <img src="images/icons/dashboard-icons/earnings-ico.png" alt=""
+                                                class="img-responsive">
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                <span>
+                                                    400
+                                                </span>
+                                                Total <br />
+                                                Earnings
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="performance-chart">
+                            <div class="inner">
+                                <div class="PH_heading align-items-center d-flex">
+                                    <p class="head">Performance of Property Vs. Market Avg.</p>
+                                    <div class="form-group">
+                                        <select name="" id="" class="primary-black-select">
+                                            <option value="">8 months</option>
+                                            <option value="">9 months</option>
+                                            <option value="">10 months</option>
+                                            <option value="">11 months</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="performanceChart" style="height: 300px; border: 1px solid #dadada;"></div>
+                            </div>
+                        </div>
+                        <div class="property-details-btn">
+                            <ul class="d-flex-wrap list-unstyled">
+                                <li>
+                                    <div class="d-flex inner">
+                                        <div class="d-flex-wrap details">
+                                            <p class="sm-head">Sale Details Of Properties</p>
+                                            <p class="price">$7450</p>
+                                            <p class="date">(Feb 2019)</p>
+                                            <p class="align-self-end sales">(175 Sales)</p>
+                                        </div>
+                                        <div class="img-sec align-items-end d-flex dfl img-sec">
+                                            <img src="images/bar-chart-img.png" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex inner">
+                                        <div class="d-flex-wrap details">
+                                            <p class="sm-head">Rent Details Of Properties</p>
+                                            <p class="price">$7450</p>
+                                            <p class="date">(Feb 2019)</p>
+                                            <p class="align-self-end sales">(145 Sales)</p>
+                                        </div>
+                                        <div class="img-sec align-items-end d-flex dfl img-sec">
+                                            <img src="images/bar-chart-img.png" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <div class="performance-chart property-overview">
+                            <div class="inner">
+                                <div class="PH_heading align-items-center d-flex">
+                                    <p class="head w-100">Property overview</p>
+                                </div>
+                                <div class="property-overview-table">
+                                    <div class="table-responsive">
+                                        <div class="head-main">
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">Order No. </li>
+                                                <li class="customer">Customer</li>
+                                                <li class="property">Property</li>
+                                                <li class="date">Date</li>
+                                                <li class="status">Status</li>
+                                                <li class="type">Type</li>
+                                            </ul>
+                                        </div>
+                                        <div class="body-main">
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">#8053</li>
+                                                <li class="customer">John Smith</li>
+                                                <li class="property">4291, Lunetta Street,CA</li>
+                                                <li class="date">03/02/19</li>
+                                                <li class="status">
+                                                    <div class="tag paid">
+                                                        Paid
+                                                    </div>
+                                                </li>
+                                                <li class="type">
+                                                    Sold
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">#8053</li>
+                                                <li class="customer">John Smith</li>
+                                                <li class="property">4291, Lunetta Street,CA</li>
+                                                <li class="date">03/02/19</li>
+                                                <li class="status">
+                                                    <div class="tag paid">
+                                                        Paid
+                                                    </div>
+                                                </li>
+                                                <li class="type">
+                                                    Sold
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">#8053</li>
+                                                <li class="customer">John Smith</li>
+                                                <li class="property">4291, Lunetta Street,CA</li>
+                                                <li class="date">03/02/19</li>
+                                                <li class="status">
+                                                    <div class="tag fail">
+                                                        Fail
+                                                    </div>
+                                                </li>
+                                                <li class="type">
+                                                    Sold
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">#8053</li>
+                                                <li class="customer">John Smith</li>
+                                                <li class="property">4291, Lunetta Street,CA</li>
+                                                <li class="date">03/02/19</li>
+                                                <li class="status">
+                                                    <div class="tag pending">
+                                                        Pending
+                                                    </div>
+                                                </li>
+                                                <li class="type">
+                                                    Sold
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled d-flex">
+                                                <li class="order-no">#8053</li>
+                                                <li class="customer">John Smith</li>
+                                                <li class="property">4291, Lunetta Street,CA</li>
+                                                <li class="date">03/02/19</li>
+                                                <li class="status">
+                                                    <div class="tag paid">
+                                                        Paid
+                                                    </div>
+                                                </li>
+                                                <li class="type">
+                                                    Sold
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,10 +457,50 @@
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- CHARTS (MORIS JS) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/external.js"></script>
+
+    <script>
+        var day_data = [
+            { "month": 'Jan', "value": 0 },
+            { "month": 'Feb', "value": 10 },
+            { "month": 'Mar', "value": 0 },
+            { "month": 'Apr', "value": 0 },
+            { "month": 'May', "value": 0 },
+            { "month": 'Jun', "value": 0 },
+            { "month": 'Jul', "value": 0 },
+            { "month": 'Aug', "value": 0 },
+            { "month": 'Sep', "value": 0 },
+            { "month": 'Oct', "value": 0 },
+            { "month": 'Nov', "value": 0 },
+            { "month": 'Dec', "value": 20 }
+        ];
+        new Morris.Line({
+            // ID of the element in which to draw the chart.
+            element: 'performanceChart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: day_data,
+            // The name of the data record attribute that contains x-values.
+            xkey: 'month',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value'],
+            parseTime: false,
+            resize: true,
+        });
+
+
+    </script>
 </body>
 
 </html>

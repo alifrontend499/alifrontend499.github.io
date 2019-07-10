@@ -315,12 +315,13 @@
     width: 300px;
 }
 
-.dashboard-sec>.content-sec {
+.dashboard-sec>.d_content-sec {
     width: calc(100% - 300px);
 }
 
 .d-left-bar .inner {
     background-color: #0d111a;
+    height: 100%;
 }
 
 .d-left-bar .DLB_list>li {}
@@ -331,6 +332,7 @@
     font-size: 18px;
     font-family: avant-bold, sans-serif;
     color: #fff;
+    transition: .3s;
 }
 
 .d-left-bar .DLB_list>li>a>img {
@@ -340,4 +342,246 @@
 .d-left-bar .DLB_list>li>a>span {
     width: calc(100% - 28px);
     padding-left: 15px;
+}
+
+.d-left-bar .DLB_list>li>a:hover {
+    color: #0d5aa8;
+}
+
+.dashboard-sec>.d_content-sec {
+    padding: 35px;
+}
+
+.d_content-sec .main-btns>ul {
+    margin: 0 -3px 0;
+}
+
+.d_content-sec .main-btns>ul>li {
+    width: 33.3%;
+    padding: 0 3px;
+}
+
+.d_content-sec .main-btns>ul>li>a {
+    background: #0d5aa8;
+    padding: 15px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.d_content-sec .main-btns>ul>li:nth-child(even)>a {
+    background: #000;
+}
+
+.d_content-sec .main-btns .ico {
+    width: 40px;
+}
+
+.d_content-sec .main-btns .text {
+    text-align: center;
+    width: calc(100% - 40px);
+    padding: 0 10px;
+    color: #fff;
+}
+
+.d_content-sec .main-btns .text p {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.d_content-sec .main-btns .text p span {
+    display: block;
+    font-family: avant-bold;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.d_content-sec .performance-chart {
+    margin-top: 50px;
+}
+
+.d_content-sec .performance-chart>.inner {
+    padding: 5px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.primary-black-select {
+    width: 140px;
+    border: 2px solid #333;
+    height: 35px;
+    padding: 0 25px 0 10px;
+    font-family: avant-bold, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: url('../images/icons/select-black-icon.png') no-repeat calc(100% - 6px) center / 10px !important;
+}
+
+.performance-chart .PH_heading {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.performance-chart .PH_heading .head {
+    font-family: avant-bold, sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0;
+    width: calc(100% - 150px);
+    padding-right: 5px;
+    padding-left: 10px;
+
+}
+
+.performance-chart .PH_heading .form-group {
+    margin-bottom: 0;
+    width: 150px;
+    text-align: right;
+}
+
+.d_content-sec .property-details-btn {
+    margin-top: 40px;
+}
+
+.property-details-btn>ul {
+    margin: 0 -5px;
+}
+
+.property-details-btn>ul>li {
+    width: 50%;
+    padding: 5px;
+}
+
+.property-details-btn>ul>li>.inner {
+    padding: 10px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.property-details-btn>ul>li .details {
+    width: calc(100% - 120px);
+    padding-right: 10px;
+}
+
+.property-details-btn>ul>li .img-sec {
+    width: 120px;
+    height: auto;
+}
+
+.property-details-btn>ul>li .details .sm-head {
+    font: 15px avant-bold, sans-serif;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.property-details-btn>ul>li .details .price {
+    font: 23px avant-bold, sans-serif;
+    color: #0b62a4;
+    margin-bottom: 5px;
+}
+
+.property-details-btn>ul>li .details .date,
+.property-details-btn>ul>li .details .sales {
+    font: 11px avant-bold, sans-serif;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.property-details-btn>ul>li .details .sales {
+    margin-bottom: 0;
+}
+
+.property-overview-table .head-main>ul,
+.property-overview-table .body-main>ul {
+    width: 100%;
+}
+
+.property-overview-table .head-main>ul>li,
+.property-overview-table .body-main>ul>li {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.property-overview-table .head-main>ul {
+    margin-bottom: 0;
+}
+
+.property-overview-table .body-main>ul:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.property-overview-table .head-main>ul>li.order-no,
+.property-overview-table .body-main>ul>li.order-no {
+    width: 13%;
+}
+
+.property-overview-table .head-main>ul>li.customer,
+.property-overview-table .body-main>ul>li.customer {
+    width: 17%;
+}
+
+.property-overview-table .head-main>ul>li.property,
+.property-overview-table .body-main>ul>li.property {
+    width: 30%;
+}
+
+.property-overview-table .head-main>ul>li.date,
+.property-overview-table .body-main>ul>li.date {
+    width: 15%;
+}
+
+.property-overview-table .head-main>ul>li.status,
+.property-overview-table .body-main>ul>li.status {
+    width: 10%;
+}
+
+.property-overview-table .head-main>ul>li.type,
+.property-overview-table .body-main>ul>li.type {
+    width: 15%;
+}
+
+.property-overview-table .head-main {
+    margin-bottom: 10px;
+}
+
+.property-overview-table .head-main>ul>li {
+    font-family: avant-bold, sans-serif;
+}
+
+.property-overview-table .body-main>ul>li {
+    font-family: avant-regular, sans-serif;
+    padding: 15px 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.property-overview-table .body-main>ul:not(:last-child) {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.property-overview-table .body-main .tag {
+    width: 100%;
+    display: block;
+    padding: 1px 5px;
+}
+
+.property-overview-table .body-main .tag.paid {
+    background: #00a651;
+    color: #fff;
+}
+
+.property-overview-table .body-main .tag.fail {
+    background: #ed1c24;
+    color: #fff;
+}
+
+.property-overview-table .body-main .tag.pending {
+    background: #dede32;
+    color: #fff;
+}
+.property-overview-table .body-main .tag.paid {
+    background: #00a651;
+    color: #fff;
 }
