@@ -565,9 +565,10 @@ select {
     background-size: 20px;
     padding: 0 0 0 32px;
     margin-left: 12px;
-    background-position: left;
+    background-position: left 3px;
     font-family: avant-regular, sans-serif;
     display: block;
+    min-height: 44px;
 }
 
 .single-property .info>p {
@@ -585,9 +586,9 @@ select {
 }
 
 .info ul li {
-    width: calc(100% / 4);
+    /* width: calc(100% / 4); */
     font-size: 13px;
-    float: left;
+    /* float: left; */
     color: black;
     text-transform: capitalize;
     font-weight: 600;
