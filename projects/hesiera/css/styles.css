@@ -920,21 +920,21 @@ select {
     font-family: avant-bold, sans-serif;
 }
 
-@media(min-width: 1400px) {
+/* @media(min-width: 1400px) {
     body {
 
-        /* width: 1366px; */
-        /* margin: auto;
-        float: none; */
+        width: 1366px;
+        margin: auto;
+        float: none;
 
     }
 
     #header {
 
-        /* max-width: 1366px; */
+        max-width: 1366px;
 
     }
-}
+} */
 
 .form-head {
 
