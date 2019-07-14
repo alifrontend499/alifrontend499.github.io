@@ -923,15 +923,15 @@ select {
 @media(min-width: 1400px) {
     body {
 
-        width: 1366px;
-        margin: auto;
-        float: none;
+        /* width: 1366px; */
+        /* margin: auto;
+        float: none; */
 
     }
 
     #header {
 
-        max-width: 1366px;
+        /* max-width: 1366px; */
 
     }
 }
