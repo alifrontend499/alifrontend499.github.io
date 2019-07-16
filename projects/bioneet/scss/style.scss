@@ -7,11 +7,12 @@
 
 // FONTS
 // SOURCE SANS PRO --- font-family: "Source Sans Pro", sans-serif; ---
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Source+Sans+Pro:300,400,600,700,900&display=swap');
 
 body {
     background: #f6f6f6;
-    font-family: "Source Sans Pro", sans-serif;
+    // font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
@@ -52,6 +53,8 @@ header {
 
         >.LT {
             a {
+                margin-left: -4px;
+
                 i {
                     color: #000;
                     font-size: 30px;
@@ -60,6 +63,9 @@ header {
         }
 
         >.RT {
+            >.app-notification-btn {
+                margin-right: -4px;
+            }
 
             a,
             .search button {
@@ -234,7 +240,20 @@ header {
 }
 
 .app-userview {
-    padding: 35px 30px;
+    padding: 40px 15px;
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 1px;
+        width: calc(100% - 50px);
+        background: #e2af4e;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        @include transformx(-50%);
+    }
 
     .img-sec {
         height: 65px;
@@ -250,55 +269,103 @@ header {
 
     .text-sec {
         width: calc(100% - 65px);
-        padding-top: 10px;
-        padding-left: 15px;
+        padding-top: 0px;
+        padding-left: 12px;
 
         .name {
-            font: 22px "source sans pro", sans-serif;
-            color: #fff;
-            text-shadow: 0px 2px 2px #5f5e5e;
-            font-weight: 600;
+            font: 600 22px "source sans pro", sans-serif;
+            color: #000;
         }
 
         .post {
-            font: 16px "source sans pro", sans-serif;
-            color: #fff;
-            margin-top: 3px;
-            font-weight: 500;
+            font: 17px "source sans pro", sans-serif;
+            color: #000;
+            margin-top: 1px;
+        }
+
+        .links {
+            margin-top: 0;
+            margin-left: -9px;
+
+            >li {
+                line-height: normal;
+                margin-right: 2px;
+
+                >a {
+                    padding: 0;
+                    height: auto;
+                    width: auto;
+                    line-height: normal;
+                    font: 600 16px "source sans pro", sans-serif;
+
+                    i {
+                        float: none;
+                        margin: 0 6px 0 0;
+                        width: auto;
+                        font-size: 18px;
+                        color: #000;
+                        height: auto;
+                        line-height: 20px;
+                        position: relative;
+                        top: 0.5px;
+                    }
+                }
+            }
         }
     }
 }
 
 .app-menu {
     margin-top: 5px;
-    height: calc(100% - (135px + 21px));
+    height: calc(100% - (157px + 103px + 30px));
     overflow: auto;
 
     >li {
         >a {
-            font: 18px "source sans pro", sans-serif;
+            font: 600 20px "source sans pro", sans-serif;
             height: auto;
             line-height: normal;
-            padding: 13px 30px 10px;
-            color: #fff;
-            font-weight: 500;
+            padding: 7px 25px 10px;
+            color: #000;
 
-            >img {
-                width: 15px;
-                margin: 0;
-            }
+            // >img {
+            //     width: 15px;
+            //     margin: 0;
+            // }
 
-            >span {
-                margin-left: 10px;
-                margin-top: -2px;
-            }
+            // >span {
+            //     margin-left: 10px;
+            //     margin-top: -2px;
+            // }
         }
+    }
+}
+
+.logo-menu {
+    padding: 15px 25px;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 1px;
+        width: calc(100% - 50px);
+        background: #e2af4e;
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        @include transformx(-50%);
+    }
+
+    >a {
+        position: relative;
+        top: 13px;
     }
 }
 
 // BOTTOM MENU BAR
 body.hasBMB {
-    padding-bottom: calc(70px + 10px);
+    padding-bottom: calc(63px + 10px);
 }
 
 .bottom-menu-bar {
@@ -387,9 +454,9 @@ body.hasBMB {
         }
 
         .ques {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            color: #424242;
+            color: #000;
         }
 
         .sel-ans {
@@ -398,14 +465,14 @@ body.hasBMB {
             label {
                 cursor: pointer;
                 display: block;
-                padding: 10px;
+                padding: 8px 10px 11px;
                 background: #ffffff;
-                border: 1px solid #d0d0d0;
+                border: 1px solid #d6d6d6;
                 margin-bottom: 10px;
-                font-size: 17px;
-                font-weight: 600;
-                color: #666;
+                font-size: 16px;
+                color: #000;
                 @include box-shadow(1px, 1px, 4px, 0px, rgba(0, 0, 0, 0.2));
+                background-color: #fafafa;
 
                 &.active {
                     background-color: $success-color;
@@ -419,8 +486,8 @@ body.hasBMB {
             margin-top: 20px;
 
             a {
-                font-weight: 700;
-                font-size: 16px;
+                font-weight: 800;
+                font-size: 14px;
                 color: $danger-color;
             }
         }
@@ -429,6 +496,10 @@ body.hasBMB {
 
 // SUGGESTED VIDEOS
 .home-suggested-video {
+    .app-head-w-view {
+        margin-bottom: 5px;
+    }
+
     .owl-stage {
         padding-left: 10px !important;
     }
@@ -444,6 +515,10 @@ body.hasBMB {
 
         >.inner {
             background-color: #fff;
+
+            &:active {
+                background-color: #ececec;
+            }
         }
 
         .img-sec {
@@ -466,7 +541,7 @@ body.hasBMB {
                     width: calc(100% - 25px);
                     padding-left: 9px;
                     color: #fff;
-                    font-size: 17px;
+                    font-size: 16px;
                     line-height: 21px;
                 }
             }
@@ -477,16 +552,15 @@ body.hasBMB {
 
             .head {
                 font-size: 16px;
-                color: #333;
-                font-weight: 600;
+                color: #000;
                 margin-bottom: 4px;
                 line-height: normal;
             }
 
             .cat {
                 color: $danger-color;
-                font-size: 15px;
-                font-weight: 700;
+                font-size: 14px;
+                font-weight: 800;
                 margin-bottom: 6px;
                 display: block;
             }
@@ -509,6 +583,10 @@ body.hasBMB {
 
 // HOME DIAGRAM OF THE DAY
 .home-diagram-of-the-day {
+    .app-head-w-view {
+        margin-bottom: 5px;
+    }
+
     .owl-stage {
         padding-left: 10px !important;
     }
@@ -523,9 +601,14 @@ body.hasBMB {
         padding-top: 10px;
 
         >.inner {
-            min-height: 132px;
+            min-height: 120px;
             padding: 10px;
+            background-color: #fff;
             text-decoration: none;
+
+            &:active {
+                background-color: #ececec;
+            }
         }
 
         .img-sec {
@@ -544,12 +627,54 @@ body.hasBMB {
             text-align: center;
 
             .head {
-                font-weight: 700;
+                font-weight: 800;
                 color: #000;
-                font-size: 17px;
+                font-size: 14px;
                 line-height: normal;
             }
         }
 
+    }
+}
+
+// HOME BUY PRODUCTS
+.home-buy-products {
+    .HBP_Items {
+        .item {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+
+            >.inner {
+                background-color: #fff;
+                padding: 8px 50px 8px 8px;
+
+                >.img-sec {
+                    width: 50px;
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                >.text-sec {
+                    width: calc(100% - 50px);
+                    padding-left: 10px;
+
+                    p {
+                        font-weight: 800;
+                        font-size: 16px;
+                        color: #333;
+                    }
+                }
+            }
+
+            .right-icon {
+                right: 12px;
+                top: 50%;
+                @include transformy(-50%);
+            }
+        }
     }
 }
