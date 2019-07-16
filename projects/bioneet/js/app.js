@@ -142,7 +142,14 @@ $(function () {
 function goBack() {
     window.history.back();
 }
-
+(function () {
+    $(function () {
+        $('.history-go-back').click(function (ev) {
+            ev.preventDefault();
+            window.history.back();
+        });
+    });
+}());
 
 (function () {
     $('.A-ques .open-answer').click(function (ev) {
@@ -170,6 +177,6 @@ function goBack() {
         var elem = $(this).data('open');
         $(this).toggleClass('active').find('i').text(($('i', this).text() == 'keyboard_arrow_right') ? 'keyboard_arrow_left' : 'keyboard_arrow_right');
 
-        $('#test-info-sidebar').toggleClass('active');  
+        $('#test-info-sidebar').toggleClass('active');
     });
 })();
