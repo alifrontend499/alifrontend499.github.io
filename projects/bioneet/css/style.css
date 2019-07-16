@@ -582,9 +582,9 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .w-100 { width: 100% !important; }
 
-.com-mt, .com-my { margin-top: 35px; }
+.com-mt, .com-my { margin-top: 25px; }
 
-.com-mb, .com-my { margin-bottom: 35px; }
+.com-mb, .com-my { margin-bottom: 25px; }
 
 .clear-parent::after { content: ""; display: block; clear: both; }
 
@@ -744,5 +744,17 @@ body.hasBMB { padding-bottom: calc(70px + 10px); }
 .home-suggested-video .item .text-sec { padding: 5px; }
 .home-suggested-video .item .text-sec .head { font-size: 16px; color: #333; font-weight: 600; margin-bottom: 4px; line-height: normal; }
 .home-suggested-video .item .text-sec .cat { color: #ff2b40; font-size: 15px; font-weight: 700; margin-bottom: 6px; display: block; }
+
+.home-other-apps .item { padding: 0 10px; }
+.home-other-apps .item img { display: block; width: auto; margin: 0 auto; }
+
+.home-diagram-of-the-day .owl-stage { padding-left: 10px !important; }
+.home-diagram-of-the-day .HDOTD_slider { margin-left: -10px; width: calc(100% + (10px * 2)); }
+.home-diagram-of-the-day .item { padding-bottom: 15px; padding-top: 10px; }
+.home-diagram-of-the-day .item > .inner { min-height: 132px; padding: 10px; text-decoration: none; }
+.home-diagram-of-the-day .item .img-sec { height: 55px; }
+.home-diagram-of-the-day .item .img-sec img { display: block; width: auto; margin: 0 auto; max-height: 100%; }
+.home-diagram-of-the-day .item .text-sec { margin-top: 5px; text-align: center; }
+.home-diagram-of-the-day .item .text-sec .head { font-weight: 700; color: #000; font-size: 17px; line-height: normal; }
 
 /*# sourceMappingURL=style.css.map */

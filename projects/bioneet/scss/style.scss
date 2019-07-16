@@ -482,6 +482,7 @@ body.hasBMB {
                 margin-bottom: 4px;
                 line-height: normal;
             }
+
             .cat {
                 color: $danger-color;
                 font-size: 15px;
@@ -490,5 +491,65 @@ body.hasBMB {
                 display: block;
             }
         }
+    }
+}
+
+// HOME OTHER APPS
+.home-other-apps {
+    .item {
+        padding: 0 10px;
+
+        img {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+// HOME DIAGRAM OF THE DAY
+.home-diagram-of-the-day {
+    .owl-stage {
+        padding-left: 10px !important;
+    }
+
+    .HDOTD_slider {
+        margin-left: -10px;
+        width: calc(100% + (10px * 2));
+    }
+
+    .item {
+        padding-bottom: 15px;
+        padding-top: 10px;
+
+        >.inner {
+            min-height: 132px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .img-sec {
+            height: 55px;
+
+            img {
+                display: block;
+                width: auto;
+                margin: 0 auto;
+                max-height: 100%;
+            }
+        }
+
+        .text-sec {
+            margin-top: 5px;
+            text-align: center;
+
+            .head {
+                font-weight: 700;
+                color: #000;
+                font-size: 17px;
+                line-height: normal;
+            }
+        }
+
     }
 }
