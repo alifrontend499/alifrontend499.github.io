@@ -775,9 +775,9 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .home-buy-products .HBP_Items .item:not(:last-child) { margin-bottom: 8px; }
 .home-buy-products .HBP_Items .item > .inner { background-color: #fff; padding: 8px 50px 8px 8px; }
 .home-buy-products .HBP_Items .item > .inner:active { background-color: #ececec; }
-.home-buy-products .HBP_Items .item > .inner > .img-sec { width: 50px; }
+.home-buy-products .HBP_Items .item > .inner > .img-sec { width: 40px; }
 .home-buy-products .HBP_Items .item > .inner > .img-sec img { display: block; margin: 0 auto; }
-.home-buy-products .HBP_Items .item > .inner > .text-sec { width: calc(100% - 50px); padding-left: 10px; }
+.home-buy-products .HBP_Items .item > .inner > .text-sec { width: calc(100% - 40px); padding-left: 10px; }
 .home-buy-products .HBP_Items .item > .inner > .text-sec p { font-weight: 800; font-size: 16px; color: #333; }
 .home-buy-products .HBP_Items .item .right-icon { right: 12px; top: 50%; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 
