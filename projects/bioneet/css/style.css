@@ -598,7 +598,7 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .position-static { position: static; }
 
-.app-round-btn { font: 20px "nexa-bold"; min-width: 160px; padding: 14px 10px 11px; height: auto; border-radius: 30px; -webkit-box-shadow: 1pxf 0px 6px 0px #272727; box-shadow: 1pxf 0px 6px 0px #272727; margin: 0 auto; background-color: #fff !important; color: #fcb01f; }
+.app-round-btn { min-width: 160px; padding: 14px 10px 11px; height: auto; border-radius: 30px; -webkit-box-shadow: 1pxf 0px 6px 0px #272727; box-shadow: 1pxf 0px 6px 0px #272727; margin: 0 auto; background-color: #fff !important; color: #fcb01f; }
 .app-round-btn:hover { background-color: #fff !important; }
 
 button.gradient, .btn.gradient { background: #f4b407; background: -moz-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: -webkit-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: linear-gradient(0deg, #f4b407 0%, #fde006 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1); }
@@ -834,5 +834,29 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-notificatins .AN-main .other-details p { font-size: 12px; font-weight: 700; }
 .app-notificatins .AN-main .other-details p .time { color: #cb2026; margin-bottom: 3px; }
 .app-notificatins .AN-main .other-details p .date { color: #868686; }
+
+.app-contact .AC-details .item:not(:last-child) { margin-bottom: 12px; }
+.app-contact .AC-details .item > .inner { background-color: #fff; padding: 12px; text-decoration: none !important; }
+.app-contact .AC-details .item > .inner:active { background-color: #ececec; }
+.app-contact .AC-details .item .img-sec { width: 60px; overflow: hidden; }
+.app-contact .AC-details .item .img-sec img { display: block; margin: 0 auto; }
+.app-contact .AC-details .item .img-sec .name-icon { height: 100%; width: 100%; background-color: #d3d3d3; color: #000; }
+.app-contact .AC-details .item .img-sec .name-icon p { font-size: 15px; font-weight: 800; }
+.app-contact .AC-details .item .text-sec { width: calc(100% - 60px); padding-left: 10px; }
+.app-contact .AC-details .item .text-sec p { font-size: 16px; color: #000; line-height: normal; }
+.app-contact .AC-details .item .text-sec .head { font-weight: 700; margin-bottom: 4px; }
+.app-contact .AC-details .item .text-sec .det { font-size: 18px; }
+.app-contact .AC-details .item .other-details { right: 10px; top: 50%; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
+.app-contact .AC-details .item .other-details p { font-size: 12px; font-weight: 700; }
+.app-contact .AC-details .item .other-details p .time { color: #cb2026; margin-bottom: 3px; }
+.app-contact .AC-details .item .other-details p .date { color: #868686; }
+.app-contact .form label { font-size: 16px; font-weight: 600; color: #333; }
+.app-contact .form input, .app-contact .form textarea { font-size: 16px; color: #666; }
+.app-contact .form input { height: 40px; }
+.app-contact .form input, .app-contact .form textarea { -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; border-left: none; border-right: none; border-top: none; }
+.app-contact .form input:focus, .app-contact .form textarea:focus { border-bottom-color: #636363 !important; -webkit-box-shadow: 0 1px 0 0 #636363 !important; box-shadow: 0 1px 0 0 #636363 !important; }
+.app-contact .form input:focus + label, .app-contact .form textarea:focus + label { color: #444 !important; }
+.app-contact .form .app-round-btn { min-width: auto; padding: 9px 3px 0; height: 60px; width: 60px; margin: 10px 0 0; color: #000; }
+.app-contact .form .app-round-btn i { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); font-size: 30px; position: relative; top: -2px; left: 1px; }
 
 /*# sourceMappingURL=style.css.map */
