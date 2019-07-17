@@ -85,18 +85,6 @@ $(function () {
             margin: 15,
             rewind: true
         });
-        // COURCES-LIST-SLIDER
-        $('#cources-list2').owlCarousel({
-            items: 2,
-            margin: 8,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 1900,
-            autoplaySpeed: 1000,
-            stagePadding: 15,
-            rewind: true
-        });
     });
 })();
 
@@ -169,14 +157,5 @@ function goBack() {
         } else {
             $(this).parent().removeClass('active')
         }
-    });
-})();
-
-(function () {
-    $('.app-open-menu a').click(function () {
-        var elem = $(this).data('open');
-        $(this).toggleClass('active').find('i').text(($('i', this).text() == 'keyboard_arrow_right') ? 'keyboard_arrow_left' : 'keyboard_arrow_right');
-
-        $('#test-info-sidebar').toggleClass('active');
     });
 })();

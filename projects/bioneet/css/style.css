@@ -12,14 +12,6 @@ blockquote:before, blockquote:after, q:before, q:after { content: ""; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-@font-face { font-family: "nexa-book"; src: url("../fonts/INARI_fonts/NexaBook.otf") format("opentype"); }
-@font-face { font-family: "nexa-black"; src: url("../fonts/INARI_fonts/NexaBlack.otf") format("opentype"); }
-@font-face { font-family: "nexa-bold"; src: url("../fonts/INARI_fonts/NexaBold.otf") format("opentype"); }
-@font-face { font-family: "nexa-light"; src: url("../fonts/INARI_fonts/NexaLight.otf") format("opentype"); }
-@font-face { font-family: "nexa-regular"; src: url("../fonts/INARI_fonts/NexaRegular.otf") format("opentype"); }
-@font-face { font-family: "nexa-thin"; src: url("../fonts/INARI_fonts/NexaThin.otf") format("opentype"); }
-@font-face { font-family: "nexa-x-bold"; src: url("../fonts/INARI_fonts/NexaXBold.otf") format("opentype"); }
-@font-face { font-family: "nexa-x-bold-italic"; src: url("../fonts/INARI_fonts/NexaXBoldItalic.otf") format("opentype"); }
 @-ms-viewport { width: device-width; }
 html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
@@ -619,7 +611,7 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 .app-head-w-view { line-height: normal; margin-bottom: 15px; }
 .app-head-w-view .head { font-size: 19px; font-weight: 700; color: #000; width: calc(100% - 70px); padding-right: 5px; }
 .app-head-w-view .link { width: 70px; }
-.app-head-w-view .link a { display: block; font: 15px "Source Sans Pro", sans-serif; color: #fcb01f; font-weight: 600; }
+.app-head-w-view .link a { display: inline-block; font-size: 14px; color: #ff2b40; font-weight: 600; margin-right: -5px; }
 
 .app-notification-btn > a, .app-more-menu > a, .app-open-menu > a { position: relative; height: 30px; width: 30px; }
 .app-notification-btn > a i, .app-more-menu > a i, .app-open-menu > a i { color: #000; font-size: 25px; }
@@ -723,6 +715,8 @@ header { background: transparent url("../images/header-bg.png") no-repeat center
 .logo-menu { padding: 15px 25px; position: relative; }
 .logo-menu::after { content: ""; height: 1px; width: calc(100% - 50px); background: #e2af4e; display: block; position: absolute; top: 7px; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); }
 .logo-menu > a { position: relative; top: 13px; }
+.logo-menu > a img { width: 50px; }
+.logo-menu > a p { width: calc(100% - 50px); padding-left: 13px; color: red; font-size: 20px; font-weight: 600; }
 
 body.hasBMB { padding-bottom: calc(63px + 10px); }
 
@@ -780,6 +774,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 
 .home-buy-products .HBP_Items .item:not(:last-child) { margin-bottom: 8px; }
 .home-buy-products .HBP_Items .item > .inner { background-color: #fff; padding: 8px 50px 8px 8px; }
+.home-buy-products .HBP_Items .item > .inner:active { background-color: #ececec; }
 .home-buy-products .HBP_Items .item > .inner > .img-sec { width: 50px; }
 .home-buy-products .HBP_Items .item > .inner > .img-sec img { display: block; margin: 0 auto; }
 .home-buy-products .HBP_Items .item > .inner > .text-sec { width: calc(100% - 50px); padding-left: 10px; }
@@ -805,8 +800,6 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .backBar .BBT_inner > .BB_links ul::-webkit-scrollbar { display: none !important; }
 .backBar .BBT_inner > .BB_links ul.inl > li { margin-right: -4px; }
 .backBar .BBT_inner > .BB_links ul.inl.two-view > li { width: 50%; }
-.backBar .BBB_inner .text { color: #fff; font: 25px "nexa-x-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
-.backBar .BBB_inner img { line-height: 0; margin-bottom: -6px; width: 200px; margin-top: 8px; }
 .backBar .BB_top { transition: 0.3s; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; padding: 7px 0 10px; }
 .backBar .BB_top.fixed .BBT_inner > .BB_links { margin-top: 7px; }
@@ -872,11 +865,23 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-buy-products .ABP-main > .inner { background-color: #fff; padding: 15px 7px; text-decoration: none !important; }
 .app-buy-products .ABP-main > .inner:active { background-color: #ececec; }
 .app-buy-products .ABP-main .img-sec { width: 50px; }
-.app-buy-products .ABP-main .img-sec img { display: block; margin: 0 auto; }
+.app-buy-products .ABP-main .img-sec img { display: block; margin: 5px auto 0; }
 .app-buy-products .ABP-main .text-sec { width: calc(100% - 50px); padding-left: 15px; }
 .app-buy-products .ABP-main .text-sec p { font-size: 16px; color: #000; line-height: normal; }
 .app-buy-products .ABP-main .text-sec .head { font-weight: 700; margin-bottom: 4px; }
 .app-buy-products .ABP-main .text-sec .det { font-size: 14px; font-style: italic; }
 .app-buy-products .ABP-main .text-sec .price { background: #ff2b40; display: table; padding: 2px 13px; border-radius: 25px; color: #fff; margin-top: 5px; }
+
+.app-solutions .frac { padding: 15px 15px 12px; background: #fff; }
+.app-solutions .frac:not(:last-child) { margin-bottom: 25px; }
+.app-solutions .A-ques .ques > .d-flex > .main { width: calc(100% - 28px); padding-right: 8px; }
+.app-solutions .A-ques .ques > .d-flex > .main .ques-main { font-size: 17px; font-weight: 800; line-height: normal; color: #333; }
+.app-solutions .A-ques .ques > .d-flex > a { color: #000; }
+.app-solutions .A-ques .ques > .d-flex > a i { font-weight: bold; }
+.app-solutions .A-ques .ans { margin-top: 10px; display: none; }
+.app-solutions .A-ques .solutions .head { font-weight: 800; font-size: 16px; color: #ff2b40; margin-bottom: 10px; }
+.app-solutions .A-ques .solutions .det { font-size: 16px; color: #000; margin-bottom: 18px; }
+.app-solutions .A-ques.in .ans { display: block; }
+.app-solutions .A-ques.in .ques > .d-flex > a { color: #fcb01f; }
 
 /*# sourceMappingURL=style.css.map */

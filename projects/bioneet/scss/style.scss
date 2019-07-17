@@ -1,5 +1,4 @@
 @import "components/reset";
-@import "components/fonts";
 @import "components/variables";
 @import "components/mixins";
 @import "components/grid";
@@ -360,6 +359,18 @@ header {
     >a {
         position: relative;
         top: 13px;
+
+        img {
+            width: 50px;
+        }
+
+        p {
+            width: calc(100% - 50px);
+            padding-left: 13px;
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+        }
     }
 }
 
@@ -653,6 +664,10 @@ body.hasBMB {
                 background-color: #fff;
                 padding: 8px 50px 8px 8px;
 
+                &:active {
+                    background-color: $active-color;
+                }
+
                 >.img-sec {
                     width: 50px;
 
@@ -806,20 +821,20 @@ body.hasBMB {
         }
     }
 
-    .BBB_inner {
-        .text {
-            color: #fff;
-            font: 25px "nexa-x-bold";
-            text-shadow: 0px 1px 1px #a2a2a2;
-        }
+    // .BBB_inner {
+    //     .text {
+    //         color: #fff;
+    //         font: 25px "nexa-x-bold";
+    //         text-shadow: 0px 1px 1px #a2a2a2;
+    //     }
 
-        img {
-            line-height: 0;
-            margin-bottom: -6px;
-            width: 200px;
-            margin-top: 8px;
-        }
-    }
+    //     img {
+    //         line-height: 0;
+    //         margin-bottom: -6px;
+    //         width: 200px;
+    //         margin-top: 8px;
+    //     }
+    // }
 
     .BB_top {
         @include transition;
@@ -1179,7 +1194,7 @@ body.hasBMB {
 
             img {
                 display: block;
-                margin: 0 auto;
+                margin: 5px auto 0;
             }
         }
 
@@ -1210,6 +1225,110 @@ body.hasBMB {
                 border-radius: 25px;
                 color: #fff;
                 margin-top: 5px;
+            }
+        }
+    }
+}
+
+// APP SOLUTIONS
+.app-solutions {
+    .frac {
+        padding: 15px 15px 12px;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        background: #fff;
+        // @include box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 0.1));
+    }
+
+    .A-ques {
+        .ques {
+            >.d-flex {
+                >.main {
+                    width: calc(100% - 28px);
+                    padding-right: 8px;
+
+                    .ques-main {
+                        font-size: 17px;
+                        font-weight: 800;
+                        line-height: normal;
+                        color: #333;
+                    }
+
+                    // .img-sec {
+                    //     margin-top: 10px;
+                    // }
+                }
+
+                >a {
+                    color: #000;
+
+                    // position: relative;
+                    // top: 7px;
+                    i {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .ans {
+            margin-top: 10px;
+            display: none;
+        }
+
+        // .ans-input-bar {
+        //     padding: 9px 10px;
+        //     background: #fbf2d3;
+        //     margin-left: -10px;
+        //     width: calc(100% + 20px);
+        //     margin-bottom: 15px;
+
+        //     input {
+        //         width: 120px;
+        //         margin-bottom: 0;
+        //         height: 35px;
+        //     }
+
+        //     span {
+        //         font-size: 20px;
+        //         font-weight: 600;
+        //         margin-left: 12px;
+        //         color: #484848;
+        //         position: relative;
+        //         top: -2px;
+        //     }
+        // }
+
+        .solutions {
+            .head {
+                font-weight: 800;
+                font-size: 16px;
+                color: $danger-color;
+                margin-bottom: 10px;
+            }
+
+            .det {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 18px;
+            }
+        }
+
+        &.in {
+            .ans {
+                display: block;
+            }
+
+            .ques {
+                >.d-flex {
+                    >a {
+                        // background: #464646;
+                        color: $secodary-color;
+                    }
+                }
             }
         }
     }

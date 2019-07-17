@@ -192,10 +192,11 @@ input[type="text"].app-input {
         width: 70px;
 
         a {
-            display: block;
-            font: 15px "Source Sans Pro", sans-serif;
-            color: $secodary-color;
+            display: inline-block;
+            font-size: 14px;
+            color: $danger-color;
             font-weight: 600;
+            margin-right: -5px;
         }
     }
 }
