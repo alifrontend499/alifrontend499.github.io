@@ -1108,3 +1108,109 @@ body.hasBMB {
         }
     }
 }
+
+// APP DIAGRAM DAY SEC
+.app-diagram-day-sec {
+    .ADDS-main {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        >.inner {
+            background-color: #fff;
+            padding: 5px;
+            text-decoration: none !important;
+
+            &:active {
+                background-color: $active-color;
+            }
+        }
+
+        .img-sec {
+            width: 90px;
+
+            img {
+                // display: block;
+                // margin: 0 auto;
+            }
+        }
+
+        .text-sec {
+            width: calc(100% - 90px);
+            padding-left: 10px;
+
+            p {
+                font-size: 16px;
+                color: #000;
+                line-height: normal;
+            }
+
+            .head {
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+
+            .det {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// OTHER APPS
+.app-buy-products {
+    .ABP-main {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        >.inner {
+            background-color: #fff;
+            padding: 15px 7px;
+            text-decoration: none !important;
+
+            &:active {
+                background-color: $active-color;
+            }
+        }
+
+        .img-sec {
+            width: 50px;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .text-sec {
+            width: calc(100% - 50px);
+            padding-left: 15px;
+
+            p {
+                font-size: 16px;
+                color: #000;
+                line-height: normal;
+            }
+
+            .head {
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+
+            .det {
+                font-size: 14px;
+                font-style: italic;
+            }
+
+            .price {
+                background: $danger-color;
+                display: table;
+                padding: 2px 13px;
+                border-radius: 25px;
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+}
