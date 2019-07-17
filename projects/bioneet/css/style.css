@@ -659,13 +659,13 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 
 body { background: #f6f6f6; font-family: 'Lato', sans-serif; font-weight: 400; }
 
-header { background: transparent url("../images/header-bg.png") no-repeat center top/100% 155px; }
+header { background: transparent url("../images/header-bg.png") no-repeat center top/100% 145px; }
 
-.app-head-top { padding: 20px 0 0; transition: 0.4s; }
+.app-head-top { padding: 20px 0 10px; transition: 0.4s; }
 .app-head-top .AHT_inner > .LT, .app-head-top .AHT_inner .RT { width: 75px; }
 .app-head-top .AHT_inner > .LT > a, .app-head-top .AHT_inner .RT > a { top: 2px; height: 32px; width: 32px; }
 .app-head-top .AHT_inner > .CT { width: calc(100% - (75px * 2)); }
-.app-head-top .AHT_inner > .CT .app-logo a { display: table; margin: 24px auto 0; padding-top: 0; width: 115px; }
+.app-head-top .AHT_inner > .CT .app-logo a { display: table; margin: 34px auto 0; padding-top: 0; width: 80px; }
 .app-head-top .AHT_inner > .LT a { margin-left: -4px; }
 .app-head-top .AHT_inner > .LT a i { color: #000; font-size: 30px; }
 .app-head-top .AHT_inner > .RT > .app-notification-btn { margin-right: -4px; }
@@ -680,7 +680,7 @@ header { background: transparent url("../images/header-bg.png") no-repeat center
 .app-head-top.fixed .AHT_inner > .LT, .app-head-top.fixed .AHT_inner > .RT { padding-top: 5px; }
 .app-head-top.fixed .AHT_inner > .RT .search { top: 3px; }
 .app-head-top.fixed .AHT_inner > .CT .app-logo { margin-top: -10px; height: 66px; background-size: 77%; }
-.app-head-top.fixed .AHT_inner > .CT .app-logo a { width: 70px; margin-top: -12px; }
+.app-head-top.fixed .AHT_inner > .CT .app-logo a { width: 50px; margin-top: 0; position: relative; top: 8px; }
 
 .app-head-bottom { padding-bottom: 20px; }
 .app-head-bottom .app-head-w-view { margin-bottom: 15px; }
