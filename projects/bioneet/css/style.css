@@ -667,7 +667,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 
 .app-login { background: transparent url("../images/header-bg-old.png") no-repeat center -20px/auto; background-size: 100% 255px; }
 
-.app_L-main .AL_head { width: 100%; padding: 50px 15px 93px; margin-bottom: 50px; }
+.app_L-main .AL_head { width: 100%; padding: 50px 15px 97px; margin-bottom: 50px; }
 .app_L-main .AL_head .AL_text { font-size: 24px; color: #222; font-weight: 600; }
 .app_L-main .AL_head .AL_text span { font-size: 25px; }
 .app_L-main .AL_head .AL_logo { top: 100%; left: 50%; -webkit-transform: translate(-50%, calc(-50% + (-18px))); transform: translate(-50%, calc(-50% + (-18px))); }
