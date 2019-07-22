@@ -659,6 +659,39 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 
 body { background: #f6f6f6; font-family: 'Lato', sans-serif; font-weight: 400; }
 
+html, .login-body, .app-login, .app_L-main { height: 100%; }
+
+.login-html { overflow: hidden; }
+
+.login-body { overflow: auto; background: #f8f8f8; }
+
+.app-login { background: transparent url("../images/header-bg-old.png") no-repeat center -20px/auto; }
+@media screen and (max-width: 700px) { .app-login { background-size: 100% 255px; } }
+
+.app_L-main .AL_head { width: 100%; padding: 50px 15px 93px; margin-bottom: 50px; }
+.app_L-main .AL_head .AL_text { font-size: 24px; color: #222; font-weight: 600; }
+.app_L-main .AL_head .AL_text span { font-size: 25px; }
+.app_L-main .AL_head .AL_logo { top: 100%; left: 50%; -webkit-transform: translate(-50%, calc(-50% + (-18px))); transform: translate(-50%, calc(-50% + (-18px))); }
+.app_L-main .AL_head .AL_logo img { width: 120px; }
+.app_L-main .AL_login-box { margin-bottom: 10px; margin-top: 30px; }
+.app_L-main .AL_login-box .form { padding: 0 10px; }
+.app_L-main .AL_login-box .form .input-field { margin-bottom: 35px; }
+.app_L-main .AL_login-box .form .input-field:nth-child(2), .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 20px; }
+.app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font-size: 15px; color: #000; }
+.app_L-main .AL_login-box .form .icon { top: 50%; right: 5px; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
+.app_L-main .AL_login-box .form .icon i { font-size: 20px; color: #000; }
+.app_L-main .AL_login-box .form input { height: 40px; padding-right: 30px; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: transparent; border-bottom-color: #222; -webkit-text-fill-color: #333; -webkit-box-shadow: 0 0 0 50px transparent inset; }
+.app_L-main .AL_login-box .form input:focus { border-bottom-color: #333; -webkit-box-shadow: 0 1px 0 0 #333; box-shadow: 0 1px 0 0 #333; }
+.app_L-main .AL_login-box .form input:focus + label { color: #333; }
+.app_L-main .AL_login-box .form input:focus ~ .icon i { color: #333; }
+.app_L-main .AL_login-box .form input:valid ~ .icon i { color: #333; }
+.app_L-main .AL_login-box .form .forgot-pass a { font-size: 15px; color: #333; font-weight: 600; }
+.app_L-main .AL_login-box .form .app-btn { padding: 17px 17px 16px; font-size: 16px; font-weight: 600; background: #f4b407; background: -moz-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: -webkit-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: linear-gradient(0deg, #f4b407 0%, #fde006 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1); color: #000; border: none; }
+.app_L-main .AL_login-box .form .app-btn:focus { box-shadow: none !important; }
+.app_L-main .AL_login-box .reg-skip { margin-top: 20px; margin-bottom: 10px; }
+.app_L-main .AL_login-box .reg-skip a { font-size: 16px; padding: 0 17px; color: #333; display: block; position: relative; }
+.app_L-main .AL_login-box .reg-skip a:not(:last-child):after { content: ""; position: absolute; top: 50%; right: 0; height: calc(100% - 5px); width: 2px; background: #333; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
+
 header { background: transparent url("../images/header-bg.png") no-repeat center top/100% 145px; }
 
 .app-head-top { padding: 20px 0 10px; transition: 0.4s; }
@@ -690,9 +723,9 @@ header { background: transparent url("../images/header-bg.png") no-repeat center
 .app-head-bottom .item .img-sec { height: 60px; width: 60px; padding: 5px; border-radius: 100%; margin: 0 auto; }
 .app-head-bottom .item .img-sec img { max-height: 100%; width: auto; z-index: 1; }
 .app-head-bottom .item .text-sec { margin-top: 5px; }
-.app-head-bottom .item .text-sec .head { color: #333; font: 16px "source sans pro"; font-weight: 700; }
-.app-head-bottom .item .text-sec .score { color: #666; font: 15px "source sans pro"; font-weight: 500; }
-.app-head-bottom .item .text-sec a { padding: 3px 0; border-top: 1px solid #efefef; margin-top: 8px; font: 15px "source sans pro"; font-weight: 700; }
+.app-head-bottom .item .text-sec .head { color: #333; font-size: 16px; font-weight: 700; }
+.app-head-bottom .item .text-sec .score { color: #666; font-size: 15px; font-weight: 500; }
+.app-head-bottom .item .text-sec a { padding: 3px 0; border-top: 1px solid #efefef; margin-top: 8px; font-size: 15px; font-weight: 700; }
 .app-head-bottom .owl-nav.disabled + .owl-dots { position: absolute; width: 100%; margin-top: 0; }
 
 .sidenav > .inner { height: 100%; width: 100%; }
@@ -702,15 +735,15 @@ header { background: transparent url("../images/header-bg.png") no-repeat center
 .app-userview .img-sec { height: 65px; width: 65px; border-radius: 100%; border: 4px solid #fff; }
 .app-userview .img-sec img { border-radius: 100%; max-height: 100%; }
 .app-userview .text-sec { width: calc(100% - 65px); padding-top: 0px; padding-left: 12px; }
-.app-userview .text-sec .name { font: 600 22px "source sans pro", sans-serif; color: #000; }
-.app-userview .text-sec .post { font: 17px "source sans pro", sans-serif; color: #000; margin-top: 1px; }
+.app-userview .text-sec .name { font-size: 22px; font-weight: 600; color: #000; }
+.app-userview .text-sec .post { font-size: 17px; color: #000; margin-top: 1px; }
 .app-userview .text-sec .links { margin-top: 0; margin-left: -9px; }
 .app-userview .text-sec .links > li { line-height: normal; margin-right: 2px; }
-.app-userview .text-sec .links > li > a { padding: 0; height: auto; width: auto; line-height: normal; font: 600 16px "source sans pro", sans-serif; }
+.app-userview .text-sec .links > li > a { padding: 0; height: auto; width: auto; line-height: normal; font-size: 16px; font-weight: 600; }
 .app-userview .text-sec .links > li > a i { float: none; margin: 0 6px 0 0; width: auto; font-size: 18px; color: #000; height: auto; line-height: 20px; position: relative; top: 0.5px; }
 
 .app-menu { margin-top: 5px; height: calc(100% - (157px + 103px + 30px)); overflow: auto; }
-.app-menu > li > a { font: 600 20px "source sans pro", sans-serif; height: auto; line-height: normal; padding: 7px 25px 10px; color: #000; }
+.app-menu > li > a { font-size: 600 20px; font-weight: 600; height: auto; line-height: normal; padding: 7px 25px 10px; color: #000; }
 
 .logo-menu { padding: 15px 25px; position: relative; }
 .logo-menu::after { content: ""; height: 1px; width: calc(100% - 50px); background: #e2af4e; display: block; position: absolute; top: 7px; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); }
