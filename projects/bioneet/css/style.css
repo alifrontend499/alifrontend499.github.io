@@ -665,8 +665,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 
 .login-body { overflow: auto; background: #f8f8f8; }
 
-.app-login { background: transparent url("../images/header-bg-old.png") no-repeat center -20px/auto; }
-@media screen and (max-width: 700px) { .app-login { background-size: 100% 255px; } }
+.app-login { background: transparent url("../images/header-bg-old.png") no-repeat center -20px/auto; background-size: 100% 255px; }
 
 .app_L-main .AL_head { width: 100%; padding: 50px 15px 93px; margin-bottom: 50px; }
 .app_L-main .AL_head .AL_text { font-size: 24px; color: #222; font-weight: 600; }
@@ -687,7 +686,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .app_L-main .AL_login-box .form input:valid ~ .icon i { color: #333; }
 .app_L-main .AL_login-box .form .forgot-pass a { font-size: 15px; color: #333; font-weight: 600; }
 .app_L-main .AL_login-box .form .app-btn { padding: 17px 17px 16px; font-size: 16px; font-weight: 600; background: #f4b407; background: -moz-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: -webkit-linear-gradient(0deg, #f4b407 0%, #fde006 100%); background: linear-gradient(0deg, #f4b407 0%, #fde006 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1); color: #000; border: none; }
-.app_L-main .AL_login-box .form .app-btn:focus { box-shadow: none !important; }
+.app_L-main .AL_login-box .form .app-btn:focus, .app_L-main .AL_login-box .form .app-btn:hover { box-shadow: none !important; }
 .app_L-main .AL_login-box .reg-skip { margin-top: 20px; margin-bottom: 10px; }
 .app_L-main .AL_login-box .reg-skip a { font-size: 16px; padding: 0 17px; color: #333; display: block; position: relative; }
 .app_L-main .AL_login-box .reg-skip a:not(:last-child):after { content: ""; position: absolute; top: 50%; right: 0; height: calc(100% - 5px); width: 2px; background: #333; -webkit-transform: translatey(-50%); transform: translatey(-50%); }

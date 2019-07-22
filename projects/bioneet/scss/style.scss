@@ -38,9 +38,9 @@ html,
 .app-login {
     background: transparent url("../images/header-bg-old.png") no-repeat center -20px / auto;
 
-    @include max_width(700px) {
+    // @include max_width(700px) {
         background-size: 100% 255px;
-    }
+    // }
 }
 
 .app_L-main {
@@ -152,7 +152,8 @@ html,
                 color: #000;
                 border: none;
 
-                &:focus {
+                &:focus,
+                &:hover {
                     box-shadow: none !important;
                 }
             }
