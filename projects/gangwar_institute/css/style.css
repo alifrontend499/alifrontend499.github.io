@@ -587,11 +587,11 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 .app-round-btn { font: 20px "nexa-bold"; min-width: 200px; padding: 16px 10px 13px; height: auto; border-radius: 30px; -webkit-box-shadow: 1px 2px 6px 0px #b1b1b1; box-shadow: 1px 2px 6px 0px #b1b1b1; margin: 0 auto; }
 
-button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: -webkit-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6",endColorstr="#58ee76",GradientType=1); }
+button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: -webkit-linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); background: linear-gradient(34deg, #42fbf6 0%, #58ee76 72%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42fbf6", endColorstr="#58ee76", GradientType=1); }
 
 .app-input { border: 1px solid #cecece; height: 40px; background: #fff; padding: 2px 10px; box-shadow: none; outline: none; }
 
-.app-geadient { background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76",endColorstr="#42fbf6",GradientType=1); }
+.app-geadient { background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76", endColorstr="#42fbf6", GradientType=1); }
 
 .owl-theme .owl-nav.disabled + .owl-dots { margin-top: 5px; }
 
@@ -618,6 +618,7 @@ button.gradient, .btn.gradient { background: #42fbf6; background: -moz-linear-gr
 
 .app-btn { border-radius: 0; width: 100%; border: 1px solid transparent; margin: 0; height: auto; line-height: normal; padding: 10px 3px; box-shadow: none; background: #888; display: inline-block; text-align: center; font-size: 14px; font-weight: 600; color: #fff; outline: none; text-decoration: none; }
 .app-btn.outline { background: transparent; color: #000; border: 1px solid #d2d2d2; }
+.app-btn.gradient { background: #58ee76; background: -moz-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: -webkit-linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); background: linear-gradient(90deg, #58ee76 0%, #42fbf6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#58ee76", endColorstr="#42fbf6", GradientType=1); }
 
 .app-table { overflow-x: auto; }
 .app-table table { width: 100%; }
@@ -719,11 +720,11 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .study-material-slider .item .text-sec p { color: #333; font: 15px "nexa-bold"; width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 
 .backBar .BB_top { padding: 16px 0 14px; }
-.backBar.app-test-outer .BB_top { padding-bottom: 0; }
 .backBar .BBT_inner > .LT { width: calc(100% - 40px); }
 .backBar .BBT_inner > .LT p { color: #fff; font: 17px "nexa-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
-.backBar .BBT_inner > .LT p i { border-radius: 100%; }
-.backBar .BBT_inner > .LT p span { margin-left: 10px; position: relative; top: 2px; }
+.backBar .BBT_inner > .LT p > i { border-radius: 100%; width: 30px; }
+.backBar .BBT_inner > .LT p > span { margin-left: 10px; position: relative; top: 2px; width: calc(100% - 30px); }
+.backBar .BBT_inner > .LT p > span span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .backBar .BBT_inner > .RT { width: 40px; }
 .backBar .BBT_inner.app-test > .LT { width: calc(100% - 100px); padding-right: 5px; }
 .backBar .BBT_inner.app-test > .LT .live-test .test, .backBar .BBT_inner.app-test > .LT .live-test .time > span { position: relative; top: 2px; }
@@ -867,6 +868,7 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .app-instructions .head { font-size: 20px; font-weight: 700; color: #2eb96a; margin-bottom: 15px; }
 .app-instructions .sub-text { padding-left: 10px; }
 .app-instructions .app-table { margin-bottom: 20px; }
+.app-instructions .start-test { font-size: 15px; padding: 16px 0 10px; color: #fff; margin-top: 10px; }
 
 .app-solutions .frac { padding: 15px; background: #fff; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
 .app-solutions .frac:not(:last-child) { margin-bottom: 25px; }
@@ -884,5 +886,39 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .app-solutions .A-ques .solutions .all-math .map sup { font-size: 11px; }
 .app-solutions .A-ques.in .ans { display: block; }
 .app-solutions .A-ques.in .ques > .d-flex > a { background: #464646; }
+
+.app-scorecard { padding: 15px; margin-bottom: 85px; }
+.app-scorecard .frac:not(:last-child) { margin-bottom: 25px; }
+.app-scorecard .frac .inner { background: #fff; padding: 15px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+.app-scorecard .text { font: 16px "nexa-regular", sans-serif; margin-bottom: 5px; color: #4c4c4c; line-height: 23px; }
+.app-scorecard .text.d-flex > i { height: 20px; width: 20px; font-size: 20px; position: relative; top: 1px; font-weight: bold; }
+.app-scorecard .text.d-flex > span { width: calc(100% - 20px); padding-left: 5px; }
+.app-scorecard .text.good > i { color: #36b873; }
+.app-scorecard .text.bad > i { color: #e54c3b; }
+.app-scorecard .text.not-attempt > i { border-radius: 100%; background: #4c4c4c; height: 15px; width: 15px; position: relative; left: 2.5px; }
+.app-scorecard .text.not-attempt > span { padding-left: 10px; width: calc(100% - 15px); }
+.app-scorecard .pregress-content { padding: 15px 0; }
+.app-scorecard .pregress-content .LT { width: 100px; }
+.app-scorecard .pregress-content .RT { width: calc(100% - 100px); padding-left: 10px; }
+.app-scorecard .pregress-content .progress { width: 90px; height: 110px; position: relative; margin: 0; background: transparent; }
+.app-scorecard .img-text .main-head { width: 100%; }
+.app-scorecard .img-text .LT { width: 80px; }
+.app-scorecard .img-text .LT .img-sec img { display: block; margin: 0 auto; }
+.app-scorecard .img-text .RT { width: calc(100% - 80px); padding-left: 10px; }
+.app-scorecard .main-head p { font: 17px "nexa-bold", sans-serif; color: #000; margin-bottom: 10px; }
+.app-scorecard .percent { font: 22px "nexa-bold", sans-serif; color: #000; margin-bottom: 5px; }
+.app-scorecard .percent span { display: block; font-weight: 600; font-size: 17px; color: #333; margin-top: -2px; }
+.app-scorecard .rank { font-size: 25px; color: #000; margin-bottom: 5px; }
+.app-scorecard .rank span { font-size: 17px; }
+
+.goto-next-quiz { position: fixed; bottom: 0; left: 0; width: 100%; background: #2b2b2b; z-index: 1; padding: 13px 25px; }
+.goto-next-quiz .LT { width: calc(100% - 50px); }
+.goto-next-quiz .LT img { width: 40px; }
+.goto-next-quiz .LT p { width: calc(100% - 40px); padding-left: 13px; color: #fff; margin-top: 3px; }
+.goto-next-quiz .LT p .heading { font-size: 15px; margin-bottom: -2px; }
+.goto-next-quiz .LT p .quiz { font-size: 16px; font-weight: 600; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 4px; }
+.goto-next-quiz .RT { width: 50px; text-align: right; }
+.goto-next-quiz .RT .next-btn { height: 35px; width: 35px; line-height: 0; color: #fff; position: relative; right: -8px; }
+.goto-next-quiz .RT .next-btn i { font-size: 34px; }
 
 /*# sourceMappingURL=style.css.map */
