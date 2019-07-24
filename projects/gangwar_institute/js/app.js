@@ -126,9 +126,7 @@ function goBack() {
 (function () {
     $('.sel-ans label > input').change(function () {
         if ($(this).is(':checked')) {
-            $(this).parent().addClass('active');
-        } else {
-            $(this).parent().removeClass('active')
+            $(this).parent().addClass('active').siblings().removeClass('active');
         }
     });
 })();
