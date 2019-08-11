@@ -1138,6 +1138,7 @@ body.hasBMB {
             font: 17px nexa-bold, sans-serif;
             color: #000;
             margin-bottom: 10px;
+            line-height: 27px;
         }
 
         .img-sec {
@@ -1158,8 +1159,13 @@ body.hasBMB {
             font-size: 14px;
             color: #666;
 
-            &.active {
+            &.active,
+            &.correct {
                 border-color: #56bf05;
+                color: #222;
+            }
+            &.wrong {
+                border-color: #e40304;
                 color: #222;
             }
         }

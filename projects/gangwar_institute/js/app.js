@@ -124,9 +124,18 @@ function goBack() {
 };
 
 (function () {
-    $('.sel-ans label > input').change(function () {
+    // FOR RADIO
+    $('.sel-ans label.radio > input').change(function () {
         if ($(this).is(':checked')) {
             $(this).parent().addClass('active').siblings().removeClass('active');
+        }
+    });
+    // FOR CHECKBOXES
+    $('.sel-ans label.checkbox > input').change(function () {
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('active');
+        } else {
+            $(this).parent().removeClass('active');
         }
     });
 })();
