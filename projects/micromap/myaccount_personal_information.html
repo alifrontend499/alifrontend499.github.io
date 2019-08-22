@@ -299,122 +299,83 @@
     <!-- SITE WRAPPER -->
     <div id="wrapper">
         <!-- CART PAGE -->
-        <section id="cart-page">
+        <section id="myaccount">
             <div class="container">
-                <div class="cart-page">
-                    <p class="main-heading text-capitalize text-center">
-                        shopping
-                        <span>cart</span>
+                <div class="myaccount">
+                    <p class="main-heading text-center">
+                        My <span>Acoount</span>
                     </p>
-                    <div class="cart-items">
-                        <div class="table-responsive">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th width="45%">Product Description</th>
-                                        <th width="20%" class="text-center">Quantity</th>
-                                        <th width="15%" class="text-right">Price</th>
-                                        <th width="15%" class="text-right">Subtotal</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="product-details d-flex">
-                                                <div class="img">
-                                                    <img src="images/product-image.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="text">
-                                                    <p class="name">C1 PORTABLE RADIOS:</p>
-                                                    <p class="desc">VHF (136 - 174 MHZ) 16 channels, 5W, no keypad
-                                                        Two-way Radio With Battery, Antenna, Charger, and More</p>
-                                                    <div class="text-right">
-                                                        <a href="">
-                                                            <i class="material-icons">delete</i>
-                                                            <span class="text-uppercase">remove</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select name="" id="" class="form-control rounded-0">
-                                                <option value="">2</option>
-                                                <option value="">1</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <p class="price text-right">
-                                                Rs. 2500
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p class="subtotal text-right">
-                                                Rs. 5000 <span class="old-price">4000</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="product-details d-flex">
-                                                <div class="img">
-                                                    <img src="images/product-image.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="text">
-                                                    <p class="name">C1-2 PORTABLE RADIOS:</p>
-                                                    <p class="desc">VHF (136 - 174 MHZ) 16 channels, 5W, no keypad
-                                                        Two-way Radio With Battery, Antenna, Charger, and More</p>
-                                                    <div class="text-right">
-                                                        <a href="">
-                                                            <i class="material-icons">delete</i>
-                                                            <span class="text-uppercase">remove</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select name="" id="" class="form-control rounded-0">
-                                                <option value="">2</option>
-                                                <option value="">1</option>
-                                                <option value="">3</option>
-                                                <option value="">4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <p class="price text-right">
-                                                Rs. 1500
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p class="subtotal text-right">
-                                                Rs. 3000 <span class="old-price">1000</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="final-checkout">
-                            <div class="d-flex flex-wrap align-items-center">
-                                <div class="voucher-outer">
-                                    <div class="voucher d-flex align-items-center ">
-                                        <span class="">Voucher code</span>
-                                        <div class="form-group d-flex mb-0">
-                                            <input type="text" class="form-control rounded-0"
-                                                placeholder="Enter your voucher code">
-                                            <button class="btn rounded-0 text-uppercase">apply</button>
+
+                    <div class="myaccount-main">
+                        <div class="d-flex flex-wrap">
+                            <div class="AC_LT">
+                                <div class="inner">
+                                    <ul class="list-unstyled main-ul">
+                                        <li>
+                                            <a href="">
+                                                <i class="material-icons">keyboard_arrow_right</i>
+                                                <span class="text-capitalize">Account information</span>
+                                            </a>
+                                            <ul class="list-unstyled">
+                                                <li class="">
+                                                    <a href="myaccount_login_information.html">
+                                                        <i class="material-icons">arrow_right</i>
+                                                        <span class="text-capitalize">login information</span>
+                                                    </a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="myaccount_personal_information.html">
+                                                        <i class="material-icons">arrow_right</i>
+                                                        <span class="text-capitalize">personal information</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="myaccount_past_orders.html">
+                                                <i class="material-icons">keyboard_arrow_right</i>
+                                                <span class="text-capitalize">past order </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="AC_RT">
+                                <div class="inner">
+                                    <p class="head text-capitalize">
+                                        personal information
+                                    </p>
+                                    <div class="form">
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize">name:</label>
+                                            <input type="text" class="form-control">
+                                            <span class="imp">*</span>
+                                        </div>
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize">phone no:</label>
+                                            <input type="text" class="form-control">
+                                            <span class="imp">*</span>
+                                        </div>
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize">pin code:</label>
+                                            <input type="text" class="form-control">
+                                            <span class="imp">*</span>
+                                        </div>
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize align-self-start">address 1:</label>
+                                            <textarea name="" id="" rows="3"></textarea>
+                                            <span class="imp">*</span>
+                                        </div>
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize align-self-start">address 2:</label>
+                                            <textarea name="" id="" rows="3"></textarea>
+                                            <span class="imp">*</span>
+                                        </div>
+                                        <div class="form-group st-form validate d-flex align-items-center">
+                                            <label class="text-capitalize"></label>
+                                            <button class="btn st-btn rounded-0 text-capitalize">submit</button>
                                         </div>
                                     </div>
-                                    <div class="tenercentoff">
-                                        10% off right now, buy more to increase more.
-                                    </div>
-                                </div>
-                                <div class="check-btn ml-auto">
-                                    <a href="checkout.html" class="btn st-btn text-uppercase rounded-0">proceed to
-                                        checkout</a>
                                 </div>
                             </div>
                         </div>

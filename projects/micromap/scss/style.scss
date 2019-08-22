@@ -1,232 +1,128 @@
 @import "components/reset";
-@import "components/fonts";
+// @import "components/fonts";
 @import "components/variables";
 @import "components/mixins";
 @import "components/common";
 
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,400,500,600,700,800,900&display=swap');
+
 body {
-    font-family: nexa-regular, sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
-// HEADER
-.header_TP {
-    padding: 12px 0;
+// HEADER TOP
+#head_top {
+    background: $primary-color;
+    color: #fff;
+}
+
+.head_top {
+    a {
+        color: #fff;
+        text-decoration: none !important;
+        outline: none !important;
+        @include transition;
+
+        &:hover {
+            color: #d4d4d4;
+        }
+    }
 
     >.LT {
-        img.main-logo {
-            margin-right: 10px;
+        ul {
+            >li {
+                font-size: 16px;
 
-            @include min_width(992px) {
-                margin-right: 20px;
-            }
-        }
+                &.google {
+                    font-size: 15px;
+                }
 
-        img.logo-2 {
-            padding-top: 25px;
-        }
-
-        @include max_width(991px) {
-            img {
-                width: 120px;
+                &:not(:last-child) {
+                    padding-right: 20px;
+                }
             }
         }
     }
 
     >.RT {
-        font-family: montserrat-regular, sans-serif;
+        .inner {
+            >ul {
+                li {
+                    font-size: 14px;
+                    font-weight: 700;
 
-        a {
-            text-decoration: none !important;
-            color: #333;
-            @include transition;
-        }
-
-        .login,
-        .phone {
-            margin-right: 15px;
-        }
-
-        .phone {
-            a {
-                font-size: 15px;
-
-                >i {
-                    font-size: 35px;
-                    margin-right: 3px;
-                }
-
-                span:not(:last-child) {
-                    margin-bottom: 1px;
-                }
-
-                &:hover {
-                    color: #000;
-                }
-            }
-
-            @include min_width(992px) {
-                margin-right: 100px;
-            }
-        }
-
-        .login {
-            a {
-                font-family: montserrat-medium, sans-serif;
-                border-bottom: 1px solid transparent;
-
-                &:hover {
-                    color: #000;
-                    border-color: #000;
-                }
-            }
-
-            @include min_width(992px) {
-                margin-right: 30px;
-            }
-        }
-
-        .cart {
-            a {
-                color: #333;
-                line-height: normal;
-                font-family: montserrat-bold, sans-serif;
-                padding-right: 25px;
-
-                i {
-                    font-size: 35px;
-                }
-
-                span {
-                    top: calc(50% - 2px);
-                    right: 0;
-                    @include transformy(-50%);
-                    height: 27px;
-                    width: 27px;
-                    background: #dbdbdb;
-                    border-radius: 50%;
-                    font-size: 12px;
-                }
-
-                &:hover {
-                    color: #000;
-                }
-            }
-        }
-    }
-}
-
-// HEADER MENU
-#header_MENU {
-    background-color: $primary-color;
-    margin-top: 5px;
-}
-
-.header_MENU {
-    background-color: $primary-color;
-
-    .navbar {
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        @include min_width(992px) {
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-    }
-
-    .navbar-nav {
-        >li {
-            font: 16px montserrat-semibold, sans-serif;
-
-            >a {
-                padding: 10px 5px;
-
-                &:hover {
-                    color: $secodary-color;
-                }
-
-                @include min_width(992px) {
-                    padding: 5px 10px;
-                }
-            }
-
-            ul {
-                >li {
-                    position: relative;
-
-                    >a {
-                        background: #fff;
-                        padding: 9px 11px;
-
-                        &:hover {
-                            background-color: #e8e8e8;
-                        }
+                    &:not(:first-child) {
+                        padding-left: 20px;
                     }
 
                     &:not(:last-child) {
-                        border-bottom: 1px solid #efefef;
+                        padding-right: 20px;
+                        border-right: 2px solid #fff;
+                    }
+
+                    line-height: 12px;
+
+                    a {
+
+                        i {
+                            font-size: 11px;
+                            margin-right: 10px;
+                            position: relative;
+                            top: -1px;
+                            color: $secodary-color;
+                        }
+
+                        // span {
+                        //     border-bottom: 1px solid #000;
+                        // }                        
                     }
                 }
             }
 
-            ul {
-                z-index: 12;
-                top: 100%;
-                width: 100%;
+            select {
+                // width: 160px;
+                height: 45px;
+                background: $secodary-color;
+                border: none;
+                box-shadow: none !important;
+                font-size: 14px;
+                font-weight: 800;
+                color: #000;
 
                 @include min_width(768px) {
-                    position: absolute;
-                    width: 150px;
+                    margin-left: 15px;
+                    width: 140px;
                 }
 
-                display: none;
-
-                >li {
-                    >a {
-                        // background: #fff;
-                        // padding: 9px 11px;
-
-                        // &:hover {
-                        //     background-color: #e8e8e8;
-                        // }
-                    }
-
-                    // &:not(:last-child) {
-                    //     border-bottom: 1px solid #efefef;
-                    // }
-
-                    ul {
-                        padding: 10px;
-                        background: #efefef;
-
-                        @include min-width(768px) {
-                            position: absolute;
-                            top: 0;
-                            left: 100%;
-                            width: 100%;
-                            padding: 0;
-                        }
-                    }
+                @include min_width(992px) {
+                    margin-left: 45px;
+                    width: 160px;
                 }
             }
         }
+    }
+}
 
-        li {
-            position: relative;
+// HEADER MAIN
+#head_main {
+    background-color: #fff;
+}
 
-            a {
-                color: #000;
-                text-decoration: none;
-                display: block;
-                @include transition;
+.head_main {
+    >.logo {
+        a {
+            @include min_width(768px) {
+                width: 110px;
             }
 
-            &:hover {
-                >ul {
-                    display: block;
-                }
+            @include min_width(992px) {
+                width: 150px;
             }
         }
+
+        padding: 10px 0;
     }
 }
 
@@ -259,13 +155,17 @@ body {
             z-index: 1;
 
             .head {
-                font: 42px nexa-heavy, sans-serif;
-                color: #000;
+                font-size: 28px;
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
             }
 
             .text {
-                font: 26px nexa-bold, sans-serif;
-                color: #333;
+                font-size: 16px;
+                color: #e0e0e0;
+                line-height: 23px;
             }
         }
     }
