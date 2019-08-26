@@ -146,7 +146,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 @media screen and (min-width: 768px) { .services_boxes .item > .inner:hover .caption .main { bottom: 100%; }
   .services_boxes .item > .inner:hover .caption .cap-inner { top: 0; } }
 
-#home_solutions { background-color: #f5f5f5; padding: 20px 0; }
+#home_solutions { background: #ebebeb; padding: 20px 0; }
 @media screen and (min-width: 992px) { #home_solutions { padding: 60px 0; } }
 
 .home_solutions .item .inner { padding: 20px; transition: 0.3s; text-decoration: none; }
@@ -156,6 +156,11 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 .home_solutions .item .text-sec { width: calc(100% - 45px); padding-left: 25px; }
 .home_solutions .item .head { color: #1a317c; font-weight: 600; font-size: 24px; margin-bottom: 5px; }
 .home_solutions .item .desc { font-size: 15px; font-weight: 500; color: #333; }
+
+#home_all-prods-sec { background: #1a317c url("../images/home_all_prods_bg.jpg") no-repeat center/cover; padding: 70px 0; }
+
+.home_all-prods-sec .head { font-size: 38px; font-weight: 600; color: #fff; margin-bottom: 20px; }
+.home_all-prods-sec .ST_main-head { font-size: 30px; color: #fde428; margin-bottom: 0; }
 
 #prods-sec { margin-top: 20px; }
 @media screen and (min-width: 768px) { #prods-sec { margin-top: 50px; } }
@@ -197,13 +202,21 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 .home_services .text-sec .head { font: 24px nexa-bold, sans-serif; color: #000; margin-bottom: 10px; }
 .home_services .text-sec .desc { font: 16px nexa-regular, sans-serif; color: #333; }
 
-#partners { padding: 40px 0 20px; }
-#partners .head { font: 20px montserrat-bold, sans-serif; color: #000; margin-bottom: 15px; }
+#partners { padding: 20px 0; }
+@media screen and (min-width: 768px) { #partners { padding: 40px 0; } }
 
 .partners { margin-left: -10px; margin-right: -10px; }
-.partners .item { padding: 0 10px 20px; }
-.partners .item .inner { border: 1px solid #dcdcdc; padding: 10px; height: 90px; }
+.partners .item { padding: 0 10px 0; }
+.partners .item .inner { height: 90px; }
 .partners .item .inner img { max-height: 100%; }
+
+#home_companies { padding: 20px 0; }
+@media screen and (min-width: 768px) { #home_companies { padding: 40px 0; } }
+
+.home_companies { margin-left: -10px; margin-right: -10px; }
+.home_companies .item { padding: 0 10px 0; }
+.home_companies .item .inner { border: 1px solid #d0d0d0; padding: 5px; height: 90px; }
+.home_companies .item .inner img { max-height: 100%; }
 
 #footer-TP { background-color: #2c2e34; padding: 20px 0; }
 

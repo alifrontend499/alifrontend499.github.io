@@ -8,6 +8,30 @@ $(function () {
     });
     // PARTNERS SLIDER
     $('#partners-slider').owlCarousel({
+        items: 7,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+            0: {
+                items: 2
+            },
+            400: {
+                items: 3
+            },
+            768: {
+                items: 4,
+            },
+            1200: {
+                items: 6,
+            },
+            1400: {
+                items: 7,
+            }
+        }
+    });
+    // COMPANIES SLIDER
+    $('#companies-slider').owlCarousel({
         items: 6,
         dots: false,
         autoplay: true,
