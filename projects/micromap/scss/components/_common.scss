@@ -82,15 +82,19 @@
     color: #000;
     font-weight: 700;
     margin-bottom: 15px;
+
     @include min_width(768px) {
         margin-bottom: 20px;
     }
+
     @include min_width(992px) {
         margin-bottom: 35px;
     }
+
     span {
         color: $secodary-color;
     }
+
     &::after {
         content: '';
         display: block;
@@ -99,6 +103,21 @@
         background-color: $secodary-color;
         margin: 15px auto 0;
         border-radius: 20px;
+    }
+}
+
+.ST_main-head-small {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 15px;
+
+    @include min_width(768px) {
+        margin-bottom: 20px;
+    }
+
+    @include min_width(992px) {
+        margin-bottom: 30px;
     }
 }
 
@@ -111,21 +130,23 @@
     textarea {
         box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
         border: 1px solid #dcdcdc;
-        font: 400 15px inherit;
+        font-size: 14px;
+        font-weight: 400;
         color: #616161;
         border-radius: 0;
-        background-color: #f9f9f9;
+        background-color: #eaeaea;
     }
 
     input,
     select {
-        height: 43px;
+        height: 40px;
     }
 
     label {
-        font: 600 13px inherit;
+        font-size: 13px;
         color: #5d5d5d;
         margin-bottom: 5px;
+        font-weight: 600;
     }
 
     @include min_width(768px) {
@@ -377,4 +398,67 @@
 
     }
 
+}
+
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: 20px;
+
+    @include min_width(992px) {
+        margin-top: 70px;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: 20px;
+
+    @include min_width(992px) {
+        margin-bottom: 70px;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: 20px;
+
+    @include min_width(992px) {
+        padding-top: 70px;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: 20px;
+
+    @include min_width(992px) {
+        padding-bottom: 70px;
+    }
+}
+
+// SITE BANNER
+#ST_banner {
+    .caption {
+        top: 50%;
+        width: 100%;
+        @include transformy(-50%);
+
+        .img-sec {
+            width: 100%;
+        }
+
+        .head {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        .desc {
+            font-size: 16px;
+            color: #e0e0e0;
+            line-height: 23px;
+        }
+    }
 }
