@@ -316,7 +316,8 @@
                     font-size: 15px;
 
                     &:hover {
-                        background-color: $secodary-color;
+                        // background-color: $secodary-color;
+                        background-color: #fff;
                         color: #000;
                     }
 
@@ -327,7 +328,8 @@
 
                 &:hover {
                     >a {
-                        background-color: $secodary-color;
+                        // background-color: $secodary-color;
+                        background-color: #fff;
                         color: #000;
                     }
                 }
@@ -459,6 +461,43 @@
             font-size: 16px;
             color: #e0e0e0;
             line-height: 23px;
+        }
+    }
+}
+
+// BREADCRUMBS
+#ST_breadcrumbs {
+    background: #fff;
+    padding: 15px 0;
+}
+.ST_breadcrumbs {
+    >ul {
+        >li {
+            font-size: 14px;
+            font-weight: 600;
+            >a {
+                color: #333;
+                text-decoration: none;
+                i {
+                    color: $primary-color;
+                    margin-right: 5px;
+                }
+            }
+            &:not(:last-child):after {
+                content: '/';
+                margin: 0 5px 0 6px;
+            }
+            &:hover {
+                > a {
+                    color: $primary-color;
+                }
+            }
+            &.active {
+                >a {
+                    color: $primary-color;
+                    pointer-events: none !important;
+                }
+            }
         }
     }
 }
