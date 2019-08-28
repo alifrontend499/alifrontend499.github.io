@@ -7,14 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Micromap</title>
 
-    <!-- ICONS FONTS -->
+    <!-- MATERIALIZE ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
-
-
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -23,273 +27,151 @@
 <body>
 
     <header>
-        <!-- HEADER TOP SECTION -->
-        <div id="header_TP">
+        <!-- HEADER TOP -->
+        <div id="head_top">
             <div class="container">
-                <div class="header_TP row align-items-center">
-                    <div class="LT col-12 col-md-5">
-                        <div class="inner">
-                            <a href="index.html" class="d-flex align-items-center">
-                                <img src="images/logo-main.jpg" alt="" class="img-fluid main-logo">
-                                <img src="images/logo-2.png" alt="" class="img-fluid logo-2">
-                            </a>
-                        </div>
+                <div class="head_top d-flex flex-wrap align-items-center">
+                    <div class="LT">
+                        <ul class="list-unstyled d-flex">
+                            <li class="google">
+                                <a href="" title="Google Plus">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="mail" title="Mail">
+                                <a href="">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="skype" title="Skype">
+                                <a href="">
+                                    <i class="fab fa-skype"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="RT col-12 col-md-7 ml-auto">
-                        <div class="inner d-flex flex-wrap align-items-center justify-content-md-end">
-                            <div class="phone">
-                                <a href="" class="d-flex align-items-center">
-                                    <i class="material-icons">phone</i>
-                                    <div>
-                                        <span class="d-block">(0522) 4010095 </span>
-                                        <span class="d-block">+91-11-26472000</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="login">
-                                <a href="" class="d-flex align-items-center" data-toggle="modal"
-                                    data-target="#login_modal">
-                                    <span>Login / Register</span>
-                                </a>
-                                <!-- LOGIN MODAL -->
-                                <div class="modal fade form-modal custom-modal" id="login_modal" tabindex="-1"
-                                    role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <i class="material-icons">cancel</i>
-                                            </button>
-                                            <div class="modal-body">
-                                                <div class="home-contact">
-                                                    <p class="head">
-                                                        Login
-                                                        <span class="d-block">Login to your account</span>
-                                                    </p>
-                                                    <div class="HC_form">
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="email" class="form-control rounded-0"
-                                                                    placeholder="Email">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">mail</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="password" class="form-control rounded-0"
-                                                                    placeholder="Password">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">lock</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="forgot-pass">
-                                                            <a href="" class="open-BP-modal"
-                                                                data-modal="#forgot_password_modal">
-                                                                Forgot password?
-                                                            </a>
-                                                        </div>
-                                                        <div class="submit-btn">
-                                                            <button
-                                                                class="btn btn-block st-btn rounded-0 text-uppercase">Login</button>
-                                                        </div>
-                                                        <div class="havaaccount">
-                                                            <p class="">Don't have an Account? <a href=""
-                                                                    class="open-BP-modal"
-                                                                    data-modal="#signup_modal">Register
-                                                                    here</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- SIGNUP MODAL -->
-                                <div class="modal fade form-modal custom-modal" id="signup_modal" tabindex="-1"
-                                    role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <i class="material-icons">cancel</i>
-                                            </button>
-                                            <div class="modal-body">
-                                                <div class="home-contact">
-                                                    <p class="head">
-                                                        Signup
-                                                        <span class="d-block">Join Us. Create new account here.</span>
-                                                    </p>
-                                                    <div class="HC_form">
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="text" class="form-control rounded-0"
-                                                                    placeholder="First Name">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">person</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="text" class="form-control rounded-0"
-                                                                    placeholder="Last Name">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">person</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="email" class="form-control rounded-0"
-                                                                    placeholder="Email">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">mail</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="password" class="form-control rounded-0"
-                                                                    placeholder="Password">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">lock</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="password" class="form-control rounded-0"
-                                                                    placeholder="Confirm Password">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">lock</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="submit-btn">
-                                                            <button
-                                                                class="btn btn-block st-btn rounded-0 text-uppercase">Sign
-                                                                up</button>
-                                                        </div>
-                                                        <div class="havaaccount">
-                                                            <p class="">Already have an Account? <a href=""
-                                                                    class="open-BP-modal"
-                                                                    data-modal="#login_modal">Login
-                                                                    here</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FORGOT PASSWORD MODAL -->
-                                <div class="modal fade form-modal custom-modal" id="forgot_password_modal" tabindex="-1"
-                                    role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <i class="material-icons">cancel</i>
-                                            </button>
-                                            <div class="modal-body">
-                                                <div class="home-contact">
-                                                    <p class="head">
-                                                        Forgot Password?
-                                                        <span class="d-block">Enter your email to retrive
-                                                            password.</span>
-                                                    </p>
-                                                    <div class="HC_form">
-                                                        <div class="form-group st-form icon position-relative">
-                                                            <div class="w-100 position-relative">
-                                                                <input type="email" class="form-control rounded-0"
-                                                                    placeholder="Email">
-                                                                <span class="position-absolute icon">
-                                                                    <i class="material-icons">mail</i>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="submit-btn">
-                                                            <button
-                                                                class="btn btn-block st-btn rounded-0 text-uppercase">retrive
-                                                                password</button>
-                                                        </div>
-                                                        <div class="havaaccount">
-                                                            <p class="">Already have an Account? <a href=""
-                                                                    class="open-BP-modal"
-                                                                    data-modal="#login_modal">Login
-                                                                    here</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart">
-                                <a href="" class="position-relative d-block">
-                                    <i class="material-icons">shopping_cart</i>
-                                    <span
-                                        class="position-absolute d-flex align-items-center justify-content-center">0</span>
-                                </a>
-                            </div>
+                    <div class="RT ml-md-auto">
+                        <div class="inner d-flex">
+                            <ul class="list-unstyled d-flex align-items-center">
+                                <li>
+                                    <a href="" title="+91-522-4010095">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>+91-522-4010095</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="+91-6392667406">
+                                        <!-- <i class="fas fa-phone -alt"></i> -->
+                                        <span>+91-6392667406</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="+91-9415107401">
+                                        <!-- <i class="fas fa-phone-alt"></i> -->
+                                        <span>+91-9415107401</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <select name="" id="" class="form-control rounded-0">
+                                <option value="">Lucknow Contact</option>
+                                <option value="">Lucknow Contact</option>
+                                <option value="">Lucknow Contact</option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- HEADER MENU -->
-        <div id="header_MENU">
+        <!-- HEADER MAIN -->
+        <div id="head_main">
             <div class="container">
-                <div class="header_MENU row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light px-0">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav w-100 justify-content-md-between">
-                                    <li class="active">
-                                        <a class="text-uppercase" href="#">Home</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">About Us</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">Products</a>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a href="">C-1</a>
-                                            </li>
-                                            <li>
-                                                <a href="">C-1 Plus</a>
-                                            </li>
-                                            <li>
-                                                <a href="">C-1</a>
-                                            </li>
-                                            <li>
-                                                <a href="">C-1 Plus</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">Careers</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">Partners</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">Services</a>
-                                    </li>
-                                    <li class="">
-                                        <a class="text-uppercase" href="#">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                <div class="head_main d-flex flex-wrap align-items-center">
+                    <div class="logo">
+                        <a href="" class="d-table">
+                            <img src="images/logo-main.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="menu ml-auto">
+                        <!-- MOBILE MENU BTN -->
+                        <div class="mob-menu-btn d-md-none">
+                            <a href="">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <div class="mob-menu-overlay"></div>
+                        </div>
+                        <div class="inner">
+                            <ul class="st-head-menu list-unstyled d-flex flex-wrap">
+                                <li class="active">
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        about us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="products.html">
+                                        products
+                                    </a>
+                                    <ul class="list-unstyled">
+                                        <li class="active">
+                                            <a href="">
+                                                Property
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Marketing
+                                            </a>
+                                            <ul class="list-unstyled">
+                                                <li class="active">
+                                                    <a href="">
+                                                        Menu 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        Menu 2
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        Menu 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Gail
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        partners
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,115 +180,206 @@
 
     <!-- SITE WRAPPER -->
     <div id="wrapper">
-        <!-- PRODUCT VIEW -->
-        <section id="product-view">
-            <div class="container">
-                <div class="product-view row">
-                    <div class="LT col-12 col-md-4">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/product-image.png" alt="" class="img-fluid">
-                        </div>
+        <section id="ST_banner">
+            <div class="container-fluid px-0">
+                <div class="ST_banner position-relative">
+                    <div class="img-sec">
+                        <img src="images/site-banner.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="RT col-12 col-md-8">
-                        <div class="inner">
-                            <div class="frac">
-                                <p class="name">
-                                    Motorola GP328 Portable, VHF (136 - 174 MHZ) 16
-                                    channels, 5W, no keypad Two-way Radio With
-                                    Battery, Antenna, Charger, and More
-                                </p>
-                                <p class="special">
-                                    <span class="main">Brand:</span> Motorola
-                                </p>
-                                <p class="special">
-                                    <span class="main">Model:</span> AZH25KDC9AA3
-                                </p>
-                            </div>
-                            <div class="frac">
-                                <p class="price">25,000.00</p>
-                                <div class="quantity">
-                                    <div class="form-group d-flex mb-0">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                            <option value="">3</option>
-                                            <option value="">4</option>
-                                        </select>
-                                        <!-- <button class="btn st-btn rounded-0">Add to Cart</button> -->
-                                        <a href="cart.html" class="btn st-btn rounded-0">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="frac">
-                                <ul class="features">
-                                    <li>Maximum of 16 channels to organise work groups with ease & efficiency.</li>
-                                    <li>Wide range coverage within the workplace</li>
-                                    <li>Simple-to-operate two-way rad, To contact people who are mobile.</li>
-                                    <li>To make several calls to repeat the same message</li>
-                                    <li>To manage a facility or more than one building.</li>
-                                </ul>
-                            </div>
-
+                    <div class="caption position-absolute">
+                        <div class="container">
+                            <p class="head text-capitalize">Products</p>
+                            <p class="desc">India's first online Walkie Talkie store</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="product-description">
+        <!-- BREADCRUMBS -->
+        <section id="ST_breadcrumbs">
             <div class="container">
-                <div class="product-description">
-                    <p class="head">Product description</p>
-                    <p class="desc">
-                        The GP328 is the two-way radio solution for professionals who need to stay in contact but don’t
-                        require extra features. This practical radio can easily increase productivity by keeping users
-                        communicating, yet streamlines their radio use—allowing them to concentrate on the job at hand.
-                        With the GP328, communication couldn’t be easier. Easy To Use,
-                    </p>
-                    <p class="sm-head">Each Motorola GP328 radio set comes with:</p>
-                    <ul class="list list-unstyled">
-                        <li>Antenna</li>
-                        <li>Battery</li>
-                        <li>Belt-Clip</li>
-                        <li>Rapid Charger with Adaptor</li>
+                <div class="ST_breadcrumbs">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="" class="text-capitalize">
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="text-capitalize">
+                                <i></i>
+                                <span>wireless system</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="" class="text-capitalize">
+                                <i></i>
+                                <span>license free radio</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- PARTNERS -->
-        <section id="partners">
+        <!-- PRODUCTS -->
+        <section id="ST_products" class="ST_def-pad-TB">
             <div class="container">
-                <p class="head text-uppercase">our partners</p>
-                <div class="partners row">
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner1.png" alt="" class="img-fluid">
+                <div class="ST_products d-flex flex-wrap">
+                    <div class="leftbar align-self-md-baseline">
+                        <div class="inner">
+                            <ul class="list-unstyled leftbar-menu">
+                                <li>
+                                    <a href="" class="text-uppercase d-flex">
+                                        <span>convey</span>
+                                        <i class="fas fa-chevron-down ml-auto"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-uppercase d-flex">
+                                        <span>kenwood</span>
+                                        <i class="fas fa-chevron-down ml-auto"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-uppercase d-flex">
+                                        <span>hytera</span>
+                                        <i class="fas fa-chevron-down ml-auto"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner2.png" alt="" class="img-fluid">
+                    <div class="right-content">
+                        <div class="mob-filter-btn d-flex justify-content-end d-md-none">
+                            <a href="" class="d-inline-flex align-items-center">
+                                <i class="fas fa-filter"></i>
+                                <span>Filter products</span>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner3.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner4.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner5.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-2 item">
-                        <div class="inner d-flex align-items-center justify-content-center">
-                            <img src="images/our-partners/partner6.png" alt="" class="img-fluid">
+                        <div class="inner row">
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-4 col-lg-3 item">
+                                <a href="" class="item-inner d-block">
+                                    <div class="img-sec d-flex align-items-center justify-content-center">
+                                        <img src="images/product-image.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec text-center">
+                                        <p>BMC emergency response solutions</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,7 +419,7 @@
                                 <div class="item">
                                     <div class="item-inner">
                                         <p class="head">Mumbai</p>
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li><a href="">+91-22-49711222</a></li>
                                             <li><a href="">+91-22-49711222</a></li>
                                             <li><a href="">+91-22-49711222</a></li>
@@ -456,7 +429,7 @@
                                 <div class="item">
                                     <div class="item-inner">
                                         <p class="head">New Delhi</p>
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li><a href="">+91-11-26472000</a></li>
                                             <li><a href="">+91-11-26472000</a></li>
                                             <li><a href="">+91-11-26472000</a></li>
@@ -466,7 +439,7 @@
                                 <div class="item">
                                     <div class="item-inner">
                                         <p class="head">Kolkata</p>
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li><a href="">+91-33-40605663</a></li>
                                             <li><a href="">+91-33-40605663</a></li>
                                             <li><a href="">+91-33-40605663</a></li>
@@ -476,7 +449,7 @@
                                 <div class="item">
                                     <div class="item-inner">
                                         <p class="head">Lucknow</p>
-                                        <ul>
+                                        <ul class="list-unstyled">
                                             <li><a href="">+91-522-4010095</a></li>
                                             <li><a href="">+91-522-4010095</a></li>
                                             <li><a href="">+91-522-4010095</a></li>
