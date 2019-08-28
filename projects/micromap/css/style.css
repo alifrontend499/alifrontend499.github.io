@@ -128,10 +128,12 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 .head_top > .LT ul > li { font-size: 16px; }
 .head_top > .LT ul > li.google { font-size: 15px; }
 .head_top > .LT ul > li:not(:last-child) { padding-right: 20px; }
-.head_top > .RT .inner > ul li { font-size: 14px; font-weight: 700; line-height: 12px; }
-.head_top > .RT .inner > ul li:not(:first-child) { padding-left: 20px; }
-.head_top > .RT .inner > ul li:not(:last-child) { padding-right: 20px; border-right: 2px solid #fff; }
+.head_top > .RT .inner > ul li { font-size: 14px; font-weight: 700; padding: 0 5px; line-height: 12px; }
+.head_top > .RT .inner > ul li:first-child { padding-left: 0; }
+@media screen and (min-width: 767px) { .head_top > .RT .inner > ul li:not(:first-child) { padding-left: 20px; }
+  .head_top > .RT .inner > ul li:not(:last-child) { padding-right: 20px; border-right: 2px solid #fff; } }
 .head_top > .RT .inner > ul li a i { font-size: 11px; margin-right: 10px; position: relative; top: -1px; color: #fde428; }
+@media screen and (max-width: 767px) { .head_top > .RT .inner > ul li a i { display: none; } }
 .head_top > .RT .inner select { height: 45px; background: #fde428; border: none; box-shadow: none !important; font-size: 14px; font-weight: 800; color: #000; }
 @media screen and (min-width: 768px) { .head_top > .RT .inner select { margin-left: 15px; width: 140px; } }
 @media screen and (min-width: 992px) { .head_top > .RT .inner select { margin-left: 45px; width: 160px; } }
@@ -151,12 +153,13 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 #get_a_quote { background-color: #fde428; padding: 15px 0; }
 @media screen and (min-width: 768px) { #get_a_quote { padding: 20px 0; } }
 
-.get_a_quote > .d-flex > p { font-size: 24px; color: #111; font-weight: 600; }
-@media screen and (min-width: 768px) { .get_a_quote > .d-flex > p { width: calc(100% - 150px); padding-right: 10px; } }
+.get_a_quote > .d-flex > p { font-size: 24px; color: #111; font-weight: 600; padding-right: 10px; }
+@media screen and (min-width: 768px) { .get_a_quote > .d-flex > p { width: calc(100% - 150px); } }
 @media screen and (min-width: 768px) { .get_a_quote > .d-flex > .btn { width: 150px; } }
 .get_a_quote > .d-flex > .btn i { font-size: 10px; color: #fde428; position: relative; top: -1px; left: 5px; transition: 0.3s; }
 .get_a_quote > .d-flex > .btn:hover i { left: 10px; }
 
+@media screen and (max-width: 767px) { .services_boxes .item { margin-bottom: 15px; } }
 .services_boxes .item > .inner { position: relative; overflow: hidden; }
 .services_boxes .item > .inner .img-sec img { width: 100%; }
 .services_boxes .item > .inner .caption { position: absolute; top: 0; left: 0; padding: 10px; width: 100%; height: 100%; overflow: hidden; }

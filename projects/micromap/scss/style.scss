@@ -54,14 +54,19 @@ body {
                 li {
                     font-size: 14px;
                     font-weight: 700;
-
-                    &:not(:first-child) {
-                        padding-left: 20px;
+                    padding: 0 5px;
+                    &:first-child {
+                        padding-left: 0;
                     }
-
-                    &:not(:last-child) {
-                        padding-right: 20px;
-                        border-right: 2px solid #fff;
+                    @include min_width(767px) {
+                        &:not(:first-child) {
+                            padding-left: 20px;
+                        }
+    
+                        &:not(:last-child) {
+                            padding-right: 20px;
+                            border-right: 2px solid #fff;
+                        }
                     }
 
                     line-height: 12px;
@@ -74,6 +79,9 @@ body {
                             position: relative;
                             top: -1px;
                             color: $secodary-color;
+                            @include max_width(767px) {
+                                display: none;
+                            }
                         }
 
                         // span {
@@ -190,9 +198,9 @@ body {
             color: #111;
             font-weight: 600;
 
+            padding-right: 10px;
             @include min_width(768px) {
                 width: calc(100% - 150px);
-                padding-right: 10px;
             }
         }
 
@@ -227,6 +235,9 @@ body {
 .services_boxes {
 
     .item {
+        @include max_width(767px) {
+            margin-bottom: 15px;
+        }
         >.inner {
             position: relative;
             overflow: hidden;
