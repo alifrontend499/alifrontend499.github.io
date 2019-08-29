@@ -918,11 +918,12 @@ body {
         }
 
         >.inner {
-            background-color: $primary-color;
+            // background-color: $primary-color;
         }
 
         .leftbar-menu {
             padding: 11px 0 30px;
+            background-color: $primary-color;
 
             >li {
                 font-size: 13px;
@@ -951,14 +952,47 @@ body {
                 }
             }
         }
+
+        .similar-products {
+            background-color: #fff;
+            margin-top: 30px;
+            padding: 15px;
+
+            a {
+                text-decoration: none;
+            }
+
+            .img-sec {
+                img {
+                    width: 160px;
+                    margin: 0 auto;
+                }
+            }
+
+            .text-sec {
+                margin-top: 15px;
+
+                p {
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+        }
+
+        .contact-us {
+            margin-top: 30px;
+        }
     }
 
     .right-content {
-        
+
         @include min_width(768px) {
             width: calc(100% - 170px);
             padding-left: 30px;
         }
+
         @include min_width(992px) {
             width: calc(100% - 210px);
         }
@@ -1156,4 +1190,140 @@ body {
     // @include min_width(768px) {
     //     padding: 50px 0;
     // }
+}
+
+
+.product-view {
+    background-color: #fff;
+    padding: 15px;
+
+    .product-details {
+        .img-sec {
+            width: 100%;
+            @include min_width(768px) {
+                width: 200px;
+                padding-right: 20px;
+            }
+
+            @include min_width(992px) {
+                width: 280px;
+                padding-right: 30px;
+            }
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .text-sec {
+            width: 100%;
+            @include min_width(768px) {
+                border-left: 1px solid #cacaca;
+                width: calc(100% - 200px);
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            @include min_width(992px) {
+                width: calc(100% - 280px);
+                padding-left: 30px;
+
+            }
+
+            .name {
+                color: #000;
+                margin-bottom: 15px;
+                line-height: 22px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .details-list {
+                margin-bottom: 15px;
+
+                @include min_width(768px) {
+                    width: 80%;
+                }
+
+                @include min_width(992px) {
+                    width: 50%;
+                }
+
+                li {
+                    margin-bottom: 8px;
+                    font-size: 14px;
+
+                    &:not(.info) {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .st-btn {
+                background-color: $secodary-color;
+                color: #333;
+                padding: 6px 15px;
+                font-weight: 600;
+                width: 140px;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .all-details {
+        margin-top: 20px;
+
+        @include min_width(992px) {
+            margin-top: 40px;
+        }
+
+        .nav-tabs {
+            background-color: $primary-color;
+
+            .nav-item {
+                margin-bottom: 0;
+
+                .nav-link {
+                    background-color: $primary-color;
+                    border: none !important;
+                    color: #c7c7c7;
+                    padding: 14px 20px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    font-size: 15px;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    &.active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            .frac {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                .head {
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    color: $primary-color;
+                }
+                .text {
+                    font-size: 14px;
+                    color: #333;
+                }
+            }
+        }
+    }
 }

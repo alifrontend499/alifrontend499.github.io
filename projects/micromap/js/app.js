@@ -51,6 +51,13 @@ $(function () {
             }
         }
     });
+    // SIMILAR PRODUCTS SLIDER
+    $('#similar-prods-slider').owlCarousel({
+        items: 1,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000
+    });
 
     (function () {
         $('.open-BP-modal').click(function (ev) {
@@ -81,18 +88,19 @@ $(function () {
     
     // OPEN MOBILE FILTER PRODUCTS
     (function() {
-        $('.mob-filter-btn > a').click(function(ev) {
-            ev.preventDefault();
-            ev.stopPropagation();
-            $(this).toggleClass('active');
-            $('.ST_products .right-content').toggleClass('active');
-            $('.ST_products .leftbar').fadeToggle(300);
-        });
-        $('.ST_products .right-content').click(function(ev) {
-            ev.preventDefault();
-            $('.mob-filter-btn > a').removeClass('active');
-            $(this).removeClass('active');
-            $('.ST_products .leftbar').fadeOut(300);
-        });
+        if($(window).width() < 768) {
+            $('.mob-filter-btn > a').click(function(ev) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                $(this).toggleClass('active');
+                $('.ST_products .right-content').toggleClass('active');
+                $('.ST_products .leftbar').fadeToggle(300);
+            });
+            $('.ST_products .right-content').click(function() {
+                $('.mob-filter-btn > a').removeClass('active');
+                $(this).removeClass('active');
+                $('.ST_products .leftbar').fadeOut(300);
+            });
+        }
     })();
 });
