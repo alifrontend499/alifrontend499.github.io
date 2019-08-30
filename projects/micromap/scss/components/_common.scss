@@ -470,33 +470,81 @@
     background: #fff;
     padding: 15px 0;
 }
+
 .ST_breadcrumbs {
     >ul {
+        flex-wrap: wrap;
         >li {
             font-size: 14px;
             font-weight: 600;
+            position: relative;
+
             >a {
                 color: #333;
                 text-decoration: none;
+
                 i {
                     color: $primary-color;
                     margin-right: 5px;
                 }
+
+                display: flex;
+                align-items: center;
             }
-            &:not(:last-child):after {
-                content: '/';
-                margin: 0 5px 0 6px;
+
+            &:not(:last-child) {
+                padding-right: 20px;
+
+                &:after {
+                    content: '/';
+                    margin: 0 5px 0 6px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
             }
+
             &:hover {
-                > a {
+                >a {
                     color: $primary-color;
                 }
             }
+
             &.active {
                 >a {
                     color: $primary-color;
                     pointer-events: none !important;
                 }
+            }
+        }
+    }
+}
+
+.site-pagination {
+    ul {
+        li {
+            height: 40px;
+            width: 40px;
+            border: 2px solid transparent;
+            font-weight: 700;
+            @include transition;
+
+            a {
+                color: #1a317c;
+                line-height: 40px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            &.active,
+            &:hover {
+                border-color: $primary-color;
+            }
+
+            &:active {
+                background-color: transparentize($color: $primary-color, $amount: .7);
             }
         }
     }
