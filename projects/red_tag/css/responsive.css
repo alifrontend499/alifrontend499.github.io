@@ -1,0 +1,74 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .RT-header .logo img {
+        width: 180px;
+    }
+
+    .RT-header .text p {
+        font-size: 25px;
+    }
+
+    .RT-what-we-offer .item:first-child {
+        margin-bottom: 30px;
+    }
+
+    .RT-experience>.item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .all-prods>.item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .RT-details-bar .item .text-sec p>i {
+        position: static;
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .RT-details-bar .item .text-sec p {
+        font-size: 14px;
+    }
+
+    .RT-details-bar .item.phone p {
+        font-size: 20px;
+    }
+
+    .RT-details-bar.bootom_footer .item .text-sec p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .RT-header .logo img {
+        width: 200px;
+    }
+
+    .RT-header .text p {
+        font-size: 35px;
+    }
+
+    .RT-details-bar .item .text-sec p>i {
+        position: static;
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    .RT-details-bar .item .text-sec p {
+        font-size: 14px;
+    }
+
+    .RT-details-bar .item.phone p {
+        font-size: 20px;
+    }
+
+    .RT-details-bar.bootom_footer .item .text-sec p {
+        font-size: 16px;
+    }
+}
