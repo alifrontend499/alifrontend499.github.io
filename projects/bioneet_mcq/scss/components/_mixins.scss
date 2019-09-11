@@ -1,0 +1,51 @@
+@mixin transform($x, $y) {
+  -webkit-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin transformx($x) {
+  -webkit-transform: translatex($x);
+  transform: translatex($x);
+}
+
+@mixin transformy($y) {
+  -webkit-transform: translatey($y);
+  transform: translatey($y);
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin transition($time: 0.3s) {
+  transition: $time;
+}
+
+@mixin app-gradient-l-to-r {
+  background: rgb(247, 228, 58);
+  background: -moz-linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  background: linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7e43a", endColorstr="#c6b200", GradientType=1);
+}
+
+@mixin app-gradient-t-to-b {
+  background: rgb(247, 228, 58);
+  background: -moz-linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  background: -webkit-linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  background: linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7e43a", endColorstr="#c6b200", GradientType=1);
+}
+
+@mixin min_width($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin max_width($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
