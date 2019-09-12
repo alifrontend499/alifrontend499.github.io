@@ -23,19 +23,19 @@
 }
 
 @mixin app-gradient-l-to-r {
-  background: rgb(247, 228, 58);
-  background: -moz-linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  background: linear-gradient(90deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7e43a", endColorstr="#c6b200", GradientType=1);
+  background: rgb(252, 240, 100);
+  background: -moz-linear-gradient(180deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  background: linear-gradient(180deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcf064", endColorstr="#e7e737", GradientType=1);
 }
 
 @mixin app-gradient-t-to-b {
-  background: rgb(247, 228, 58);
-  background: -moz-linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  background: -webkit-linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  background: linear-gradient(176deg, rgba(247, 228, 58, 1) 0%, rgba(198, 178, 0, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7e43a", endColorstr="#c6b200", GradientType=1);
+  background: rgb(252, 240, 100);
+  background: -moz-linear-gradient(0deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  background: linear-gradient(0deg, rgba(252, 240, 100, 1) 0%, rgba(231, 231, 55, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcf064", endColorstr="#e7e737", GradientType=1);
 }
 
 @mixin min_width($width) {
