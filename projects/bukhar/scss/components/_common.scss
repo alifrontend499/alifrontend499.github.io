@@ -11,13 +11,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: lighten($color: $secodary-color, $amount: 10%);
+    background: lighten($color: $secondary-color, $amount: 10%);
     border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: darken($color: $secodary-color, $amount: 10%);
+    background: darken($color: $secondary-color, $amount: 10%);
 }
 
 // COMMON CSS
@@ -39,13 +39,13 @@
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    // background: $secodary-color;
+    // background: $secondary-color;
 }
 
 .form-control {
     &:focus {
-        @include box-shadow(0px, 0px, 3px, 0px, $primary-color);
-        border-color: $primary-color;
+        @include box-shadow(0px, 0px, 3px, 0px, $secondary-color);
+        border-color: $secondary-color;
     }
 }
 
@@ -92,7 +92,7 @@
     }
 
     span {
-        color: $secodary-color;
+        color: $secondary-color;
     }
 
     &::after {
@@ -100,7 +100,7 @@
         display: block;
         height: 7px;
         width: 75px;
-        background-color: $secodary-color;
+        background-color: $secondary-color;
         margin: 15px auto 0;
         border-radius: 20px;
     }
@@ -316,7 +316,7 @@
                     font-size: 15px;
 
                     &:hover {
-                        // background-color: $secodary-color;
+                        // background-color: $secondary-color;
                         background-color: #fff;
                         color: #000;
                     }
@@ -328,7 +328,7 @@
 
                 &:hover {
                     >a {
-                        // background-color: $secodary-color;
+                        // background-color: $secondary-color;
                         background-color: #fff;
                         color: #000;
                     }
@@ -474,6 +474,7 @@
 .ST_breadcrumbs {
     >ul {
         flex-wrap: wrap;
+
         >li {
             font-size: 14px;
             font-weight: 600;
@@ -548,4 +549,19 @@
             }
         }
     }
+}
+
+select.custom-sel {
+    position: relative;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+
+    background: transparent url(../images/icons/icon-custom-sel.png) no-repeat calc(100% - 0px) 10px !important;
+    padding-right: 24px !important;
 }
