@@ -147,6 +147,9 @@ html,
             p {
                 font: 600 19px 'Lato', sans-serif;
                 color: #000;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
 
                 span {
                     font-weight: 500;
@@ -412,6 +415,95 @@ html,
                 span {
                     font-weight: 600;
                     margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}
+
+// APP QUESTION SEC
+.app-question-sec {
+    .app-head-w-view {
+        margin-bottom: 15px;
+    }
+
+    .ques-main {
+        >.inner {
+            padding: 15px;
+            background: #fff;
+        }
+
+        .ques {
+            font: 600 17px 'Lato', sans-serif;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .sel-ans {
+            margin-top: 15px;
+
+            label {
+                cursor: pointer;
+                display: block;
+                padding: 9px 10px 11px;
+                background: #ffffff;
+                border: 1px solid #d6d6d6;
+                margin-bottom: 10px;
+                font: 600 15px 'Lato', sans-serif;
+                color: #000;
+                @include box-shadow(1px, 1px, 2px, 0px, rgba(0, 0, 0, 0.1));
+                background-color: #f3f3f3;
+
+                &.active,
+                &.ques-right {
+                    background-color: $success-color;
+                    border-color: $success-color;
+                    color: #fff;
+                }
+
+                &.ques-wrong {
+                    background-color: $danger-color;
+                    border-color: $danger-color;
+                    color: #fff;
+                }
+
+                b {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        .next-question {
+            .app-btn {
+                background-color: $primary-color !important;
+                box-shadow: none;
+                color: #000;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+
+        .viewmore {
+            margin-top: 20px;
+
+            a {
+                font-weight: 800;
+                font-size: 14px;
+                color: $danger-color;
+            }
+        }
+
+        .next-question {
+            margin-top: 15px;
+        }
+
+        .add-info {
+            margin-top: 15px;
+
+            p {
+                font: 600 15px 'Lato', sans-serif;
+                span {
+                    color: $secondary-color;
                 }
             }
         }

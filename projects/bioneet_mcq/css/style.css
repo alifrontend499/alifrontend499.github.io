@@ -666,7 +666,7 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .backBar .BBT_inner > .CT { width: calc(100% - (70px * 2)); padding: 0 5px; }
 .backBar .BBT_inner > .LT .history-go-back { background-color: transparent; color: #000; }
 .backBar .BBT_inner > .LT .history-go-back i { font-weight: bold; }
-.backBar .BBT_inner > .CT p { font: 600 19px 'Lato', sans-serif; color: #000; }
+.backBar .BBT_inner > .CT p { font: 600 19px 'Lato', sans-serif; color: #000; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .backBar .BBT_inner > .CT p span { font-weight: 500; font-size: 16px; margin-top: 2px; }
 .backBar .BBT_inner > .RT .app-more-menu > a, .backBar .BBT_inner > .RT .app-open-menu > a { margin-right: -5px; margin-left: 5px; right: 0; transition: 0.6; }
 .backBar .BBT_inner > .RT .app-more-menu > a.active, .backBar .BBT_inner > .RT .app-open-menu > a.active { background: rgba(0, 0, 0, 0.6); position: fixed; right: calc(280px + 15px); }
@@ -709,5 +709,21 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .app-contact .AC_inner .img-sec img { max-width: 100%; }
 .app-contact .AC_inner .text-sec p { font: 500 16px 'Lato', sans-serif; color: #000; }
 .app-contact .AC_inner .text-sec p span { font-weight: 600; margin-bottom: 3px; }
+
+.app-question-sec .app-head-w-view { margin-bottom: 15px; }
+.app-question-sec .ques-main > .inner { padding: 15px; background: #fff; }
+.app-question-sec .ques-main .ques { font: 600 17px 'Lato', sans-serif; font-weight: 700; color: #000; }
+.app-question-sec .ques-main .sel-ans { margin-top: 15px; }
+.app-question-sec .ques-main .sel-ans label { cursor: pointer; display: block; padding: 9px 10px 11px; background: #ffffff; border: 1px solid #d6d6d6; margin-bottom: 10px; font: 600 15px 'Lato', sans-serif; color: #000; -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1); background-color: #f3f3f3; }
+.app-question-sec .ques-main .sel-ans label.active, .app-question-sec .ques-main .sel-ans label.ques-right { background-color: #369600; border-color: #369600; color: #fff; }
+.app-question-sec .ques-main .sel-ans label.ques-wrong { background-color: #ff2b40; border-color: #ff2b40; color: #fff; }
+.app-question-sec .ques-main .sel-ans label b { color: #dd0048; }
+.app-question-sec .ques-main .next-question .app-btn { background-color: #f7e43a !important; box-shadow: none; color: #000; font-weight: 700; font-size: 16px; }
+.app-question-sec .ques-main .viewmore { margin-top: 20px; }
+.app-question-sec .ques-main .viewmore a { font-weight: 800; font-size: 14px; color: #ff2b40; }
+.app-question-sec .ques-main .next-question { margin-top: 15px; }
+.app-question-sec .ques-main .add-info { margin-top: 15px; }
+.app-question-sec .ques-main .add-info p { font: 600 15px 'Lato', sans-serif; }
+.app-question-sec .ques-main .add-info p span { color: #dd0048; }
 
 /*# sourceMappingURL=style.css.map */

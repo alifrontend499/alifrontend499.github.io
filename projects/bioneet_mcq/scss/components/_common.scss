@@ -271,13 +271,13 @@ input[type="text"].app-input {
 
     >ul {
         padding: 15px 10px;
-		width: 100%;
-		white-space: nowrap;
-		overflow: auto;
+        width: 100%;
+        white-space: nowrap;
+        overflow: auto;
         overflow: -moz-scrollbars-none;
-		-ms-overflow-style: none;
+        -ms-overflow-style: none;
 
-		
+
         >li {
             >a {
                 height: 30px;
@@ -309,6 +309,6 @@ input[type="text"].app-input {
 }
 
 .def-marg-TB {
-	margin-top: 20px;
-	margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
