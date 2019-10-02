@@ -147,7 +147,7 @@ header {
     }
 }
 
-// HOME SLIDER
+// home slider
 .home_slider {
     .inner {
         &:after {
@@ -176,17 +176,25 @@ header {
             z-index: 1;
 
             .head {
-                font-size: 28px;
-                color: #fff;
+                font-size: 42px;
                 font-weight: 600;
-                margin-bottom: 10px;
-                letter-spacing: 2px;
+                margin-bottom: 30px;
             }
-
-            .text {
-                font-size: 16px;
-                color: #e0e0e0;
-                line-height: 23px;
+            .selects {
+                select {
+                    height: 45px;
+                }
+            }
+            .submit-btn {
+                margin-top: 15px;
+                .btn {
+                    $padd: 40px;
+                    padding-left: $padd;
+                    padding-right: $padd;
+                }
+            }
+            .links {
+                margin-top: 40px;
             }
         }
     }
