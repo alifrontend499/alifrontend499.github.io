@@ -113,28 +113,77 @@
 // }
 .st-btn {
     font-size: 15px;
-    background: $primary-color;
     padding: 9px 15px 10px;
-    border-radius: 4px;
-    color: #fff;
+    border-radius: 4px;    
     @include transition;
     box-shadow: none !important;
-
-    &:hover {
-        background: darken($color: $primary-color, $amount: 3%);
-        color: #fff;
+    color: #fff;
+    &:hover {        
         box-shadow: none !important;
     }
 
     &:active {
-        background: darken($color: $primary-color, $amount: 6%);
         box-shadow: none !important;
     }
+    
+    &:not(.btn-st-outline):not(.btn-st-outline-secondary) {        
+        &:hover {        
+            box-shadow: none !important;
+            color: #fff;
+        }
+        &:not(.btn-st-secondary) {
+            background: $primary-color;
+
+            &:hover {
+                background: darken($color: $primary-color, $amount: 3%);
+                color: #fff;
+            }
+
+            &:active {
+                background: darken($color: $primary-color, $amount: 6%);
+            }
+        }
+        &.btn-st-secondary {
+            background: $secondary-color;
+    
+            &:hover {
+                background: darken($color: $secondary-color, $amount: 3%);
+            }
+    
+            &:active {
+                background: darken($color: $secondary-color, $amount: 6%);
+            }
+        }
+    }
+    &.btn-st-outline {
+        border-color: $primary-color;
+        color: $primary-color;
+        &:hover {
+            background: $primary-color;
+        }
+
+        &:active {
+            background: darken($color: $primary-color, $amount: 6%);
+        }
+    }
+    &.btn-st-outline-secondary {
+        border-color: $secondary-color;
+        color: $secondary-color;
+        &:hover {
+            background: $secondary-color;
+        }
+
+        &:active {
+            background: darken($color: $secondary-color, $amount: 6%);
+        }
+    }
+
 
     &.btn-icon {
         i {
             position: relative;
             @include transition;
+
             &.material-icons {
                 background: #289eaa;
                 border-radius: 100%;
@@ -145,6 +194,7 @@
                 padding-top: 1px;
             }
         }
+
         &:hover {
             i {
                 left: 4px;
