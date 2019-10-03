@@ -291,7 +291,7 @@ header {
         }
 
         .icon {
-            height: 55px;
+            height: 60px;
 
             img {
                 max-height: 100%;
@@ -386,9 +386,20 @@ header {
 .home-lab-test {
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: 20px;
+
+    @include min-width(768px) {
+        margin-top: 30px;
+    }
+
+    @include min-width(1200px) {
+        margin-top: 50px;
+    }
 
     >.item {
         >.inner {
+            background: #fff;
+
             border: 1px solid #dedede;
             padding: 60px 20px 28px;
             @include transition;
@@ -455,6 +466,75 @@ header {
 
         }
 
-        padding: 10px 10px 20px;
+        padding: 0 10px 15px;
+
+        @include min-max-width(576px, 767px) {
+            &:not(:nth-last-child(-n+1)) {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+// articles
+#articles {}
+
+.articles {
+    >.item {
+        >.inner {
+            border: 1px solid #dedede;
+            @include box-shadow(2px, 2px, 5px, 0px, rgba(0, 0, 0, 0.1));
+        }
+
+        .img-sec {
+            .caption {
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.4);
+
+                p {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 17px;
+                }
+            }
+
+            .date {
+                font-size: 14px;
+                padding: 8px 15px 8px;
+                @include transformy(-50%);
+                left: 15px;
+            }
+        }
+
+        .text-sec {
+            padding: 23px 15px 15px;
+
+            .art {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .name {
+                margin-top: 8px;
+                font-weight: 800;
+                font-size: 13px;
+                color: #ec5912;
+            }
+
+        }
+
+        padding: 0 20px 10px;
+
+        @include min-max-width(576px, 767px) {
+            &:not(:nth-last-child(-n+1)) {
+                padding-bottom: 20px;
+            }
+        }
+        @include min-max-width(768px, 991px) {
+            &:not(:nth-last-child(-n+1)) {
+                padding-bottom: 20px;
+            }
+        }
     }
 }
