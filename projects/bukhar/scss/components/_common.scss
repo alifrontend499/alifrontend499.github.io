@@ -157,24 +157,28 @@
     }
     &.btn-st-outline {
         border-color: $primary-color;
-        color: $primary-color;
+        color: #333;
         &:hover {
             background: $primary-color;
+            color: #fff;
         }
 
         &:active {
             background: darken($color: $primary-color, $amount: 6%);
+            color: #fff;
         }
     }
     &.btn-st-outline-secondary {
         border-color: $secondary-color;
-        color: $secondary-color;
+        color: #333;
         &:hover {
             background: $secondary-color;
+            color: #fff;
         }
 
         &:active {
             background: darken($color: $secondary-color, $amount: 6%);
+            color: #fff;
         }
     }
 

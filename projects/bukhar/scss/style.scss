@@ -357,13 +357,13 @@ header {
 
         margin-bottom: 20px;
 
-        @include min-width(576px) {
-            &:not(:nth-last-child(-n+2)) {
+        @include min-max-width(576px, 767px) {
+            &:not(:nth-last-child(-n+1)) {
                 margin-bottom: 30px;
             }
         }
 
-        @include min-width(768px) {
+        @include min-max-width(768px, 991px) {
             &:not(:nth-last-child(-n+3)) {
                 margin-bottom: 30px;
             }
@@ -384,14 +384,28 @@ header {
 }
 
 .home-lab-test {
-    .item {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    >.item {
         >.inner {
-            border: 1px solid #d8d8d8;
-            padding: 20px 20px;
+            border: 1px solid #dedede;
+            padding: 60px 20px 28px;
             @include transition;
+            @include box-shadow(2px, 2px, 5px, 0px, rgba(0, 0, 0, 0.1));
 
             &:hover {
                 border-color: $primary-color;
+            }
+
+            .off-sec {
+                top: 11px;
+                left: 0;
+                padding: 7px 26px 7px 10px;
+                font-size: 15px;
+                background: #fff url(../images/icons/icon-ribbon.png) no-repeat left top / 100% 100%;
+                font-weight: 600;
+                color: #fff;
             }
 
             .head {
@@ -419,6 +433,28 @@ header {
                     margin-bottom: 7px;
                 }
             }
+
+            .st-btn {
+                margin: 15px 0;
+                font-size: 14px;
+                padding: 5px 15px 6px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 800;
+                color: $secondary-color;
+
+                span {
+                    text-decoration: line-through;
+                    margin-right: 15px;
+                    color: #9c9c9c;
+                    font-size: 18px;
+                }
+            }
+
         }
+
+        padding: 10px 10px 20px;
     }
 }
