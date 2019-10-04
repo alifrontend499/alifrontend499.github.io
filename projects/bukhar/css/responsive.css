@@ -11,7 +11,95 @@
         max-width: 100%;
     }
 
+    .st-btn {
+        font-size: 14px;
+        padding: 5px 15px 6px;
+    }
 
+    /* HOMEPAGE */
+    /* header */
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    header .logo img {
+        width: 150px;
+    }
+
+    header .head-login {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: auto;
+    }
+
+    /* slider */
+    .home_slider .item .selects select {
+        /* height: 35px;
+        padding: 0 5px 2px;
+        font-size: 12px; */
+    }
+
+    .home_slider .item .caption .submit-btn .btn {
+        padding: 4px 15px 5px;
+        font-size: 14px;
+    }
+
+    .home_slider .item .caption {
+        padding: 15px 0 15px;
+        border-bottom: 1px solid #d8d8d8;
+        /* background: rgba(0, 0, 0, 0.4); */
+        position: relative !important;
+        text-align: center;
+        background: #f4f4f4;
+    }
+
+    .home_slider .item .caption .head {
+        font-size: 25px;
+        margin-bottom: 15px;
+        /* color: #ec5912; */
+    }
+
+    .link-with-img {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    .link-with-img:not(:last-child) {
+        margin-right: 10px !important;
+    }
+
+    .link-with-img img {
+        width: 12px !important;
+        margin-right: 5px;
+    }
+
+    /* home-health-and-fitness */
+    .home-health-and-fitness .rt {
+        display: none;
+    }
+
+    .home-health-and-fitness .lt .head {
+        font-size: 30px;
+    }
+
+    /* speciality-slider-main */
+    .speciality-slider-main .item .text p {
+        font-size: 14px;
+
+    }
+
+    /* .home-contact */
+    .home-contact .HC-rt{
+        margin-top: 20px;
+    }
+    /* download-app */
+    #download-app .ST_main-head .head{
+        font-size: 20px;
+    }
+    .download-app > ul > li > a img {
+        width: 100px;
+    }
 }
 
 @media (max-width: 600px) {}

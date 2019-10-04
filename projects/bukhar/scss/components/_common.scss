@@ -59,13 +59,18 @@
             -ms-flex-align: center !important;
             align-items: center !important;
             line-height: 0;
-            height: 35px;
-            width: 35px;
+            height: 25px;
+            width: 25px;
             border-radius: 50%;
             background-color: #d0d0d0;
             @include transition;
             color: #fff;
             outline: none !important;
+
+            @include min-width(768px) {
+                height: 35px;
+                width: 35px;
+            }
 
             &:hover {
                 background-color: $primary-color;
@@ -86,20 +91,24 @@
     }
 }
 
-.form-control {
-    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+.form-group {
+    &:not(.input-underline) {
+        .form-control {
+            -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 
-    &:focus {
-        @include box-shadow(0px, 0px, 3px, 0px, $secondary-color);
-        border-color: $secondary-color;
-    }
+            &:focus {
+                @include box-shadow(0px, 0px, 3px, 0px, $secondary-color);
+                border-color: $secondary-color;
+            }
 
-    &.def_height {
-        height: 40px;
+            &.def_height {
+                height: 40px;
 
-        @include min_width(992px) {
-            height: 48px;
+                @include min_width(992px) {
+                    height: 48px;
+                }
+            }
         }
     }
 }
@@ -242,19 +251,29 @@
 }
 
 .st-form {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     width: 100%;
 
     input,
     select,
     textarea {
-        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
-        border: 1px solid #dcdcdc;
+        border: none;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 600;
         color: #616161;
         border-radius: 0;
-        background-color: #eaeaea;
+        background-color: #fff;
+    }
+
+    &:not(.input-underline) {
+
+        input,
+        select,
+        textarea {
+            -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dcdcdc;
+        }
     }
 
     input,
@@ -331,6 +350,23 @@
                 color: gray;
             }
         }
+    }
+
+    &.input-underline {
+
+        input,
+        select,
+        textarea {
+            border-bottom: 1px solid #dcdcdc;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $secondary-color;
+            }
+        }
+
     }
 }
 
