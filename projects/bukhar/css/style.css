@@ -319,4 +319,11 @@ footer .bottom-part { margin-top: 10px; }
 footer .bottom-part p { color: #dcdcdc; font-size: 14px; line-height: 23px; }
 footer .bottom-part p a { color: #ec5913; }
 
+.st-login .login-inner { margin: 0 auto; -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); border: 1px solid #dfdfdf; }
+@media screen and (min-width: 768px) { .st-login .login-inner { width: 500px; } }
+@media screen and (min-width: 992px) { .st-login .login-inner { width: 800px; } }
+.st-login .login-inner > .lt .inner { background: transparent url("../images/login-page/left-img.jpg") no-repeat center/100% 100%; }
+.st-login .login-inner > .rt .inner { padding: 20px; }
+@media screen and (min-width: 992px) { .st-login .login-inner > .rt .inner { padding: 40px; } }
+
 /*# sourceMappingURL=style.css.map */

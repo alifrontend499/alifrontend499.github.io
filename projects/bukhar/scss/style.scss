@@ -170,6 +170,7 @@ header {
         .caption {
             width: 100%;
             z-index: 1;
+
             @include min-width(768px) {
                 top: 50%;
                 left: 50%;
@@ -285,6 +286,7 @@ header {
     .st-slider {
         margin-top: 30px;
         padding: 0 25px;
+
         @include min-width(768px) {
             margin-top: 50px;
             padding: 0 40px;
@@ -827,6 +829,44 @@ footer {
 
             a {
                 color: $primary-color;
+            }
+        }
+    }
+}
+
+// LOGIN PAGE
+// st-login
+#st-login {}
+
+.st-login {
+
+    .login-inner {
+        margin: 0 auto;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dfdfdf;
+
+        @include min-width(768px) {
+            width: 500px;
+        }
+
+        @include min-width(992px) {
+            width: 800px;
+        }
+
+        >.lt {
+            .inner {
+                background: transparent url('../images/login-page/left-img.jpg') no-repeat center / 100% 100%;
+            }
+        }
+
+        >.rt {
+            .inner {
+                // padding: 40px 40px;
+                padding: 20px;
+                @include min-width(992px) {
+                    padding: 40px;
+                }
             }
         }
     }
