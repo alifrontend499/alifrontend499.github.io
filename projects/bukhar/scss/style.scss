@@ -188,6 +188,13 @@ header {
                 }
             }
 
+            .selects {
+                select {
+                    font-size: 17px;
+                    // font-weight: 500;
+                }
+            }
+
             .submit-btn {
                 margin-top: 15px;
 
@@ -836,7 +843,20 @@ footer {
 
 // LOGIN PAGE
 // st-login
-#st-login {}
+#st-login {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include min_width(768px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @include min_width(992px) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
 
 .st-login {
 
@@ -847,7 +867,7 @@ footer {
         border: 1px solid #dfdfdf;
 
         @include min-width(768px) {
-            width: 500px;
+            width: 650px;
         }
 
         @include min-width(992px) {
@@ -864,9 +884,447 @@ footer {
             .inner {
                 // padding: 40px 40px;
                 padding: 20px;
+
                 @include min-width(992px) {
                     padding: 40px;
                 }
+            }
+
+            .head {
+                font-size: 26px;
+                margin-bottom: 10px;
+                color: #666;
+
+                @include min-width(768px) {
+                    margin-bottom: 15px;
+                }
+
+                @include min-width(992px) {
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            .st-form {
+
+                input,
+                select,
+                textarea {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+
+            .submit-btn {
+                margin-top: 15px;
+
+                @include min-width(992px) {
+                    margin-top: 30px;
+                }
+
+                .st-btn {
+                    font-weight: 600;
+                }
+            }
+
+            .add-info {
+                margin-top: 15px;
+
+                @include min-width(992px) {
+                    margin-top: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #888;
+
+                    a {
+                        color: $primary-color;
+                        text-decoration: underline;
+                        @include transition;
+
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+
+            .other-options {
+                margin-top: 20px;
+
+                @include min-width(992px) {
+                    margin-top: 60px;
+                }
+
+                >a {
+                    font-size: 15px;
+                    color: $primary-color;
+                    @include transition;
+
+                    &:hover {
+                        color: #333;
+                    }
+                }
+
+                >ul {
+                    >li {
+                        &.first {
+                            color: #888;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 8px;
+                        }
+
+                        >a {
+                            height: 25px;
+                            width: 25px;
+                            border-radius: 4px;
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 11px;
+                            @include transition;
+
+                            @include min-width(992px) {
+                                height: 30px;
+                                width: 30px;
+                                font-size: 11px;
+                                font-size: 17px;
+                            }
+                        }
+
+                        &.facebook {
+                            >a {
+                                background: #3b5998;
+
+                                &:hover {
+                                    background: darken($color: #3b5998, $amount: 5%);
+                                }
+                            }
+                        }
+
+                        &.google {
+                            >a {
+                                background: #f14335;
+
+                                &:hover {
+                                    background: darken($color: #f14335, $amount: 5%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// APPOINTMENT PAGE
+// appointment-select-type
+#appointment-select-type {
+    background-color: $secondary-color;
+}
+
+.appointment-select-type {
+    background-color: $secondary-color;
+    padding: 15px 0 5px;
+
+    .links {
+        margin: 0 auto;
+
+        @include min-width(768px) {
+            width: 500px;
+        }
+
+        @include min-width(992px) {
+            width: 600px;
+        }
+
+        >a {
+            margin: 0 5px 10px;
+
+            @include min-width(992px) {
+                padding: 8px 25px;
+            }
+        }
+    }
+}
+
+// st-appointment
+#st-appointment {
+    background: #f8f8f8;
+}
+
+.st-appointment {
+    $leftRightGap: 20px;
+    $borderColor: #d2d2d2;
+
+    .book-appointment,
+    .confirm-appointment,
+    >.rt>.inner {
+        border: 1px solid $borderColor;
+        background-color: #fff;
+    }
+
+    .book-appointment,
+    .confirm-appointment {
+        .AP-head {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+        }
+    }
+
+    // >.lt {
+    .book-appointment {
+        margin-bottom: 20px;
+
+        @include min-width(768px) {
+            margin-bottom: 35px;
+        }
+
+        .AP-head {
+            padding: 15px $leftRightGap;
+            border-bottom: 1px solid $borderColor;
+        }
+
+        .nav-tabs {
+            border-bottom: 1px solid $borderColor;
+            padding: 10px calc(#{$leftRightGap} + 5px) 0;
+
+            >li {
+                margin-bottom: 10px;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+
+                    @include min-width(992px) {
+                        margin-right: 30px;
+                    }
+                }
+
+                >a {
+                    border: none !important;
+                    border-radius: 4px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 3px 7px;
+                    color: #555;
+                    @include transition(.1s);
+                    min-width: 50px;
+
+                    .day {
+                        font-size: 14px;
+                        margin-top: 3px;
+                    }
+
+                    &.active,
+                    &:hover {
+                        background-color: lighten($color: $borderColor, $amount: 8%);
+                        color: $secondary-color;
+                    }
+
+                    &:active {
+                        background-color: lighten($color: $borderColor, $amount: 4%);
+                    }
+                }
+            }
+        }
+
+        .tab-pane {
+            padding: 20px $leftRightGap;
+
+            @include min-width(992px) {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+
+        .select-time {
+            .frac {
+                // &:not(:last-child) {
+                margin-bottom: 10px;
+
+                @include min-width(992px) {
+                    margin-bottom: 20px;
+                }
+
+                // }
+            }
+
+            ul {
+                >li {
+                    margin-bottom: 5px;
+
+                    &.head {
+                        width: 100px;
+                        padding-right: 7px;
+
+                        @include min-width(992px) {
+                            width: 120px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: #555;
+
+                            img {
+                                width: 17px;
+                                margin-right: 5px;
+
+                                @include min-width(992px) {
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:not(:last-child):not(.head) {
+                        margin-right: 10px;
+
+                        @include min-width(992px) {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // }
+
+    .confirm-appointment {
+        padding: $leftRightGap;
+
+        .AP-head {
+            margin-bottom: $leftRightGap;
+        }
+
+        .CA-form {
+            @include min_width(768px) {
+                .st-form.lt {
+                    padding-right: 10px;
+                }
+
+                .st-form.rt {
+                    padding-left: 10px;
+                }
+            }
+            @include min_width(992px) {
+                .st-form.lt {
+                    padding-right: 15px;
+                }
+
+                .st-form.rt {
+                    padding-left: 15px;
+                }
+            }
+
+            .submit-btn {
+                margin-top: 20px;
+
+                @include min-width(768px) {
+                    width: 50%;
+                }
+
+                .st-btn {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    >.rt {
+        @include min-width(992px) {
+            padding-left: 25px;
+        }
+
+        >.inner {
+            padding: 15px 15px 30px;
+
+            @include min-width(992px) {
+                padding-bottom: 50px;
+            }
+        }
+
+        .top-bar {
+            margin-bottom: 15px;
+
+            p {
+                color: #333;
+                font-size: 15px;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .bottom-bar {}
+
+        .change-time {
+            font-weight: 600;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+
+        .doc-details {
+            margin-bottom: 15px;
+            margin-top: 5px;
+
+            @include min-width(992px) {
+                margin-bottom: 30px;
+            }
+
+            .img-sec {
+                width: 65px;
+
+                @include min-width(992px) {
+                    width: 100px;
+                }
+            }
+
+            .text-sec {
+                width: calc(100% - 65px);
+                padding-left: 15px;
+
+                @include min-width(992px) {
+                    width: calc(100% - 100px);
+                    padding-left: 20px;
+                }
+
+                .name {
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    color: #333;
+                    text-transform: uppercase;
+                    font-size: 17px;
+                }
+
+                .details {
+                    font-size: 15px;
+                    color: #555;
+                }
+
+            }
+
+        }
+
+        .address-details {
+            img {
+                width: 35px;
+
+            }
+
+            p {
+                width: calc(100% - 35px);
+                padding-left: 10px;
+                font-size: 15px;
+                color: #555;
             }
         }
     }

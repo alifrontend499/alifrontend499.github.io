@@ -2,8 +2,20 @@
     .container {
         max-width: 750px;
     }
+
+    /* APPOINTMENT PAGE */
+    /* st-appointment */
+    .st-appointment .book-appointment .select-time ul>li.head p {
+        font-size: 14px;
+    }
 }
 
+
+@media (max-width: 991px) {
+    .st-btn-radio>.text {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -15,6 +27,7 @@
         font-size: 14px;
         padding: 5px 15px 6px;
     }
+
 
     /* HOMEPAGE */
     /* header */
@@ -35,9 +48,7 @@
 
     /* slider */
     .home_slider .item .selects select {
-        /* height: 35px;
-        padding: 0 5px 2px;
-        font-size: 12px; */
+        font-size: 15px;
     }
 
     .home_slider .item .caption .submit-btn .btn {
@@ -90,15 +101,32 @@
     }
 
     /* .home-contact */
-    .home-contact .HC-rt{
+    .home-contact .HC-rt {
         margin-top: 20px;
     }
+
     /* download-app */
-    #download-app .ST_main-head .head{
+    #download-app .ST_main-head .head {
         font-size: 20px;
     }
-    .download-app > ul > li > a img {
+
+    .download-app>ul>li>a img {
         width: 100px;
+    }
+
+    /* LOGIN PAGE */
+    /* st-login */
+    .st-login .login-inner>.rt .head {
+        font-size: 23px;
+    }
+
+    /* APPOINTMENT PAGE */
+    /* st-appointment */
+    .st-appointment .book-appointment .nav-tabs > li > a {
+        font-size: 14px;
+    }
+    .st-appointment .book-appointment .nav-tabs > li > a .day {
+        font-size: 12px;
     }
 }
 

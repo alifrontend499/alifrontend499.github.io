@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bukhar | Appointment</title>
+
+    <!-- MATERIALIZE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header row align-items-md-center position-relative">
+                <div class="logo col-md-3">
+                    <a href="index.html" class="d-table">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="search col-md-6">
+                    <div class="form-group d-flex flex-wrap align-items-center mb-0">
+                        <div class="head-location-selector">
+                            <select name="" id="" class="form-control custom-sel">
+                                <option value="">Lucknow</option>
+                                <option value="">Delhi</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Channai</option>
+                            </select>
+                        </div>
+                        <div class="head-search position-relative">
+                            <input type="text" class="form-control def_height"
+                                placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
+                            <i class="material-icons position-absolute">search</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-login col-md-3">
+                    <div class="inner d-table ml-auto position-relative">
+                        <a href="" class="text-uppercase d-flex align-items-center" onclick="return false;">
+                            <i class="material-icons">lock</i>
+                            <span>login</span>
+                        </a>
+                        <div class="head-dropdown-menu position-absolute">
+                            <ul class="list-unstyled">
+                                <li class="text-capitalize">
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li class="text-capitalize">
+                                    <a href="login.html">Doctor Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SITE WRAPPER -->
+    <div id="wrapper">
+
+
+        <!-- APPOINTMENT-SELECT-TYPE -->
+        <section id="appointment-select-type">
+            <div class="container">
+                <div class="appointment-select-type">
+                    <div class="links d-flex flex-wrap justify-content-center justify-content-md-between">
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="BOOK APPOINTMENT">
+                            <img src="images/icons/icon-slider-doctors.png" alt="" class="img-fluid">
+                            <span>doctors</span>
+                        </a>
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="ORDER MEDICINE NEAR BY PHARMACY">
+                            <img src="images/icons/icon-slider-pharmacy.png" alt="" class="img-fluid">
+                            <span>pharmacy</span>
+                        </a>
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="ONLINE LAB TEST FROM BEST PATHALOGIST">
+                            <img src="images/icons/icon-slider-labtest.png" alt="" class="img-fluid">
+                            <span>labtest</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ST-APPOINTMENT -->
+        <section id="st-appointment" class="ST_def-pad-TB">
+            <div class="container">
+                <div class="st-appointment row">
+                    <div class="col-md-7 lt">
+                        <div class="book-appointment">
+                            <p class="AP-head">Book Appointment</p>
+                            <div class="select-days">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center active" id="date-25-tab" data-toggle="tab"
+                                            href="#date-25" role="tab" aria-controls="date-25" aria-selected="true">
+                                            <span class="date d-block">25</span>
+                                            <span class="day d-block text-uppercase">wed</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-26-tab" data-toggle="tab"
+                                            href="#date-26" role="tab" aria-controls="date-26" aria-selected="false">
+                                            <span class="date d-block">26</span>
+                                            <span class="day d-block text-uppercase">thu</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-27-tab" data-toggle="tab"
+                                            href="#date-27" role="tab" aria-controls="date-27" aria-selected="false">
+                                            <span class="date d-block">27</span>
+                                            <span class="day d-block text-uppercase">fri</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-28-tab" data-toggle="tab"
+                                            href="#date-28" role="tab" aria-controls="date-28" aria-selected="false">
+                                            <span class="date d-block">28</span>
+                                            <span class="day d-block text-uppercase">sat</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-29-tab" data-toggle="tab"
+                                            href="#date-29" role="tab" aria-controls="date-29" aria-selected="false">
+                                            <span class="date d-block">29</span>
+                                            <span class="day d-block text-uppercase">sun</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-30-tab" data-toggle="tab"
+                                            href="#date-30" role="tab" aria-controls="date-30" aria-selected="false">
+                                            <span class="date d-block">30</span>
+                                            <span class="day d-block text-uppercase">mon</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-center" id="date-01-tab" data-toggle="tab"
+                                            href="#date-01" role="tab" aria-controls="date-01" aria-selected="false">
+                                            <span class="date d-block">31</span>
+                                            <span class="day d-block text-uppercase">tue</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="date-25" role="tabpanel"
+                                        aria-labelledby="date-25-tab">
+                                        <div class="select-time">
+                                            <div class="frac">
+                                                <ul class="list-unstyled d-flex flex-wrap align-items-center">
+                                                    <li class="head">
+                                                        <p class="d-flex align-items-center">
+                                                            <img src="images/icons/icon-morning.png" alt=""
+                                                                class="img-fluid">
+                                                            <span>Morning</span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                10:00 <span>am</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                11:00 <span>am</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                12:00 <span>am</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                13:00 <span>am</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="frac">
+                                                <ul class="list-unstyled d-flex flex-wrap align-items-center">
+                                                    <li class="head">
+                                                        <p class="d-flex align-items-center">
+                                                            <img src="images/icons/icon-afternoon.png" alt=""
+                                                                class="img-fluid">
+                                                            <span>Afternoon</span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                3:00 <span>pm</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="frac">
+                                                <ul class="list-unstyled d-flex flex-wrap align-items-center">
+                                                    <li class="head">
+                                                        <p class="d-flex align-items-center">
+                                                            <img src="images/icons/icon-evening.png" alt=""
+                                                                class="img-fluid">
+                                                            <span>Evening</span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                4:15 <span>pm</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                5:15 <span>pm</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                5:45 <span>pm</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="st-btn-radio d-block">
+                                                            <input type="radio" name="morning" style="display: none;">
+                                                            <span class="text d-block">
+                                                                6:00 <span>pm</span>
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="date-26" role="tabpanel"
+                                        aria-labelledby="date-26-tab">date-26</div>
+                                    <div class="tab-pane fade" id="date-27" role="tabpanel"
+                                        aria-labelledby="date-27-tab">date-27</div>
+                                    <div class="tab-pane fade" id="date-28" role="tabpanel"
+                                        aria-labelledby="date-28-tab">date-28</div>
+                                    <div class="tab-pane fade" id="date-29" role="tabpanel"
+                                        aria-labelledby="date-29-tab">date-29</div>
+                                    <div class="tab-pane fade" id="date-30" role="tabpanel"
+                                        aria-labelledby="date-30-tab">date-30</div>
+                                    <div class="tab-pane fade" id="date-01" role="tabpanel"
+                                        aria-labelledby="date-01-tab">date-01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="confirm-appointment">
+                            <p class="AP-head">Confirm Appointment</p>
+                            <div class="CA-form d-flex flex-wrap">
+                                <div class="form-group st-form lt">
+                                    <label>Patient/Visitor Name <span class="imp">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group st-form rt">
+                                    <label>Gender</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group st-form lt">
+                                    <label>Email <span class="imp">*</span></label>
+                                    <input type="email" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group st-form rt">
+                                    <label>Mobile <span class="imp">*</span></label>
+                                    <input type="text" class="form-control" placeholder="+91">
+                                    <span class="add-info" title="SMS with a verification code on this number">SMS with
+                                        a verification code on this number</span>
+                                </div>
+                                <div class="submit-btn">
+                                    <a href="" class="btn btn-block st-btn btn-st-secondary text-uppercase">
+                                        confirm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 rt">
+                        <div class="inner">
+                            <div class="top-bar d-flex align-items-center">
+                                <p class="date">
+                                    On
+                                    <span>Sep 26, 2019</span>
+                                </p>
+                                <p class="tim ml-auto">
+                                    At
+                                    <span>10:30 AM</span>
+                                </p>
+                            </div>
+                            <div class="bottom-bar">
+                                <a href="" class="change-time d-inline-block">Change Date & Time</a>
+                                <div class="doc-details d-flex">
+                                    <div class="img-sec">
+                                        <img src="images/user-img.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="text-sec">
+                                        <p class="name">Dr.Amit Anand</p>
+                                        <p class="details">
+                                            MDS- Conservative Dentistry & Endodontics,BDS Endodontics,
+                                            Cosmetic/Aesthetic Dentist , Implantologist
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="address-details d-flex align-items-start">
+                                    <img src="images/icons/ico-location.png" alt="" class="img-fluid">
+                                    <p>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD APP -->
+        <footer class="">
+            <div id="top-part">
+                <div class="container">
+                    <div class="top-part row">
+                        <div class="TP-lt col-md-8 col-lg-9">
+                            <div class="inner">
+                                <ul class="links d-flex flex-wrap  list-unstyled">
+                                    <li>
+                                        <a href="" class="d-block">Lab reports</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Bookmarks</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Medical Records</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Reminders</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">My Order</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Payment</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Online Doctor Appointment</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Health Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Help & Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="TP-rt col-md-4 col-lg-3">
+                            <div class="inner">
+                                <p class="head text-uppercase text-md-right">Follow Us</p>
+                                <ul class="socail-links list-unstyled d-flex flex-wrap justify-content-md-end">
+                                    <li class="facebook">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-part">
+                <div class="container">
+                    <div class="bottom-part">
+                        <p>
+                            Bukhaar is India's largest fitness discovery and booking platform. With Bukhaar, you can
+                            discover & experience various fitness forms like Gyms, Yoga, Zumba, Functional Training,
+                            Marathon training, Dance, MMA & kickboxing, Healthy Tiffins and many more by taking
+                            unlimited
+                            trials. You can also purchase fitness memberships with lowest price guarantee & best offers
+                            with
+                            online payments & EMI . Bukhaar enables fitness journeys at over 12,000+ fitness centers
+                            with
+                            15+ fitness forms across <a href="">Mumbai</a>, <a href="">Delhi</a>, <a
+                                href="">Gurgaon</a>, <a href="">Noida</a>, <a href="">Bangalore</a>, <a href="">Pune</a>
+                            , <a href="">Ahmedabad</a>
+                            , <a href="">Hyderabad</a>,
+                            <a href="">Jaipur</a>, <a href="">Chandigarh and Faridabad</a>. All features of Bukhaar can
+                            be
+                            accessed via website and
+                            application on Android & iOS devices. Call on 0XX-XXXX-XXXX to speak to us today!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- SCRIPT CUSOMT -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
