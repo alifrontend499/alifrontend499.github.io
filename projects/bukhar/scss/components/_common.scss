@@ -818,3 +818,75 @@ select.custom-sel {
         }
     }
 }
+
+// SOCAIL LINKS
+ul.socail-links {
+    >li {
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+
+        >a {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #fff;
+            font-size: 11px;
+            @include transition(.1s);
+        }
+
+        &.facebook {
+            >a {
+                background-color: #1880b1;
+                color: #fff;
+                &:hover {
+                    background-color: darken($color: #1880b1, $amount: 4%);
+                }
+                &:active {
+                    background-color: darken($color: #1880b1, $amount: 6%);
+                }
+            }
+        }
+
+        &.twitter {
+            >a {
+                background-color: #31bcc7;
+                color: #fff;
+                &:hover {
+                    background-color: darken($color: #31bcc7, $amount: 4%);
+                }
+                &:active {
+                    background-color: darken($color: #31bcc7, $amount: 6%);
+                }
+            }
+        }
+
+        &.google {
+            >a {
+                background-color: #d65a00;
+                color: #fff;
+                &:hover {
+                    background-color: darken($color: #d65a00, $amount: 4%);
+                }
+                &:active {
+                    background-color: darken($color: #d65a00, $amount: 6%);
+                }
+            }
+        }
+
+        &.linkedin {
+            >a {
+                background-color: #015ac2;
+                color: #fff;
+                &:hover {
+                    background-color: darken($color: #015ac2, $amount: 4%);
+                }
+                &:active {
+                    background-color: darken($color: #015ac2, $amount: 6%);
+                }
+            }
+        }
+    }
+}

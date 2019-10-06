@@ -15,6 +15,36 @@
     .st-btn-radio>.text {
         font-size: 14px;
     }
+
+    /* BLOG PAGE */
+    /* blog-main */
+    .blog-main .blog-head {
+        font-size: 23px;
+    }
+
+    .blog-main .share-options .date>div {
+        font-size: 13px;
+    }
+
+    .blog-main .share-options .socail p {
+        font-size: 14px;
+    }
+
+    .blog-main .blog-details p {
+        font-size: 15px;
+    }
+
+    .blog-main .book-checkup .head {
+        font-size: 16px;
+    }
+
+    .blog-main .book-checkup .desc {
+        font-size: 14px;
+    }
+
+    .blog-main .must-read .frac .text-sec p {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -122,10 +152,11 @@
 
     /* APPOINTMENT PAGE */
     /* st-appointment */
-    .st-appointment .book-appointment .nav-tabs > li > a {
+    .st-appointment .book-appointment .nav-tabs>li>a {
         font-size: 14px;
     }
-    .st-appointment .book-appointment .nav-tabs > li > a .day {
+
+    .st-appointment .book-appointment .nav-tabs>li>a .day {
         font-size: 12px;
     }
 }
