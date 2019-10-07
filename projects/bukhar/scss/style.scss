@@ -828,18 +828,65 @@ footer {
         }
 
         >.lt {
+            @include min-width(992px) {
+                min-height: 450px;
+            }
+
             .inner {
                 background: transparent url('../images/login-page/left-img.jpg') no-repeat center / 100% 100%;
             }
         }
 
         >.rt {
+
             .inner {
                 // padding: 40px 40px;
                 padding: 20px;
 
                 @include min-width(992px) {
                     padding: 40px;
+                }
+            }
+
+            .nav-tabs {
+                border-bottom: none;
+                padding: 0;
+                margin-bottom: 10px;
+
+                @include min-width(768px) {
+                    margin-bottom: 15px;
+                }
+
+                @include min-width(992px) {
+                    margin-bottom: 25px;
+                }
+
+                >li {
+                    margin-bottom: 0;
+
+                    >a {
+                        border: none !important;
+                        border-radius: 0;
+                        padding: 0;
+                        @include transition(.1s);
+                        font-size: 26px;
+                        color: #888;
+
+                        &.active,
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+
+                    &:first-child {
+                        >a {
+                            &:after {
+                                content: '/';
+                                color: #888;
+                                margin: 0 7px;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -1047,7 +1094,11 @@ footer {
 
         .nav-tabs {
             border-bottom: 1px solid $borderColor;
-            padding: 10px calc(#{$leftRightGap} + 5px) 0;
+            padding: 10px 15px 0;
+
+            @include min-width(992px) {
+                padding: 10px calc(#{$leftRightGap} + 5px) 0;
+            }
 
             >li {
                 margin-bottom: 10px;
@@ -1068,7 +1119,11 @@ footer {
                     padding: 3px 7px;
                     color: #555;
                     @include transition(.1s);
-                    min-width: 50px;
+                    min-width: 45px;
+
+                    @include min-width(768px) {
+                        min-width: 50px;
+                    }
 
                     .day {
                         font-size: 14px;
@@ -1109,32 +1164,40 @@ footer {
                 // }
             }
 
+            .head {
+                width: 100px;
+                padding-right: 7px;
+
+                @include min-width(992px) {
+                    width: 120px;
+                }
+
+                // p {
+                font-size: 16px;
+                color: #555;
+
+                img {
+                    width: 17px;
+                    margin-right: 5px;
+
+                    @include min-width(992px) {
+                        width: 25px;
+                    }
+                }
+
+                // }
+            }
+
             ul {
+                width: calc(100% - 100px);
+
+                @include min-width(992px) {
+                    width: calc(100% - 120px);
+                }
+
                 >li {
                     margin-bottom: 5px;
 
-                    &.head {
-                        width: 100px;
-                        padding-right: 7px;
-
-                        @include min-width(992px) {
-                            width: 120px;
-                        }
-
-                        p {
-                            font-size: 16px;
-                            color: #555;
-
-                            img {
-                                width: 17px;
-                                margin-right: 5px;
-
-                                @include min-width(992px) {
-                                    width: 25px;
-                                }
-                            }
-                        }
-                    }
 
                     &:not(:last-child):not(.head) {
                         margin-right: 10px;
@@ -1332,9 +1395,11 @@ footer {
 
     .blog-details {
         margin-top: 15px;
+
         @include min-width(992px) {
             margin-top: 30px;
         }
+
         p {
             font-size: 18px;
             margin-bottom: 15px;
@@ -1449,3 +1514,66 @@ footer {
         }
     }
 }
+
+// st-filterbar
+#st-filterbar {
+    background-color: $secondary-color;
+}
+
+.st-filterbar {
+    padding: 15px 0 5px;
+    @include min-width(992px) {
+        margin: 0 -10px;
+    }
+    .item {
+        margin-bottom: 10px;
+        padding: 0 5px;
+        @include min-width(992px) {
+            width: calc(100% / 5);
+            padding: 0 10px;
+        }
+
+        select,
+        .btn {
+            height: 40px;
+
+            @include min-width(992px) {
+                height: 45px;
+            }
+        }
+
+        .btn {
+            padding-top: 9px;
+            @include min-width(768px) {
+                padding-top: 8px;
+            }
+            @include min-width(992px) {
+                padding-top: 10px;
+            }
+        }
+        &.gender  {
+            select {
+                background-color: transparent;
+                color: #fff;
+                border-color: #fff;
+                option {
+                    color: #000;
+                }
+            }
+        }
+        &.popularity  {
+            select {
+                background-color: lighten($color: $secondary-color, $amount: 7%);
+                color: #fff;
+                border-color: $secondary-color;
+                option {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// docs-result
+#docs-result{}
+.docs-result{}

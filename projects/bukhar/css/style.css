@@ -157,6 +157,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 select.custom-sel { position: relative; /* for Firefox */ -moz-appearance: none; /* for Chrome */ -webkit-appearance: none; background: transparent url(../images/icons/icon-custom-sel.png) no-repeat calc(100% - 0px) 10px !important; padding-right: 24px !important; }
 select.custom-sel::-ms-expand { display: none; }
 
+select.common-sel { position: relative; /* for Firefox */ -moz-appearance: none; /* for Chrome */ -webkit-appearance: none; background-image: url(../images/icons/icon-custom-sel.png); background-repeat: no-repeat; background-position: calc(100% - 8px) 18px; padding-right: 24px !important; }
+select.common-sel::-ms-expand { display: none; }
+
 .link-with-img { border: 1px solid #d2d2d2; padding: 7px 10px; border-radius: 4px; font-size: 13px; font-weight: 600; color: #333; text-decoration: none !important; transition: 0.3s; background: #fff; }
 @media screen and (min-width: 992px) { .link-with-img { padding: 7px 15px; font-size: 15px; } }
 .link-with-img img { width: 21px !important; margin-right: 10px; }
@@ -341,9 +344,17 @@ footer .bottom-part p a { color: #ec5913; }
 .st-login .login-inner { margin: 0 auto; -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); border: 1px solid #dfdfdf; }
 @media screen and (min-width: 768px) { .st-login .login-inner { width: 650px; } }
 @media screen and (min-width: 992px) { .st-login .login-inner { width: 800px; } }
+@media screen and (min-width: 992px) { .st-login .login-inner > .lt { min-height: 450px; } }
 .st-login .login-inner > .lt .inner { background: transparent url("../images/login-page/left-img.jpg") no-repeat center/100% 100%; }
 .st-login .login-inner > .rt .inner { padding: 20px; }
 @media screen and (min-width: 992px) { .st-login .login-inner > .rt .inner { padding: 40px; } }
+.st-login .login-inner > .rt .nav-tabs { border-bottom: none; padding: 0; margin-bottom: 10px; }
+@media screen and (min-width: 768px) { .st-login .login-inner > .rt .nav-tabs { margin-bottom: 15px; } }
+@media screen and (min-width: 992px) { .st-login .login-inner > .rt .nav-tabs { margin-bottom: 25px; } }
+.st-login .login-inner > .rt .nav-tabs > li { margin-bottom: 0; }
+.st-login .login-inner > .rt .nav-tabs > li > a { border: none !important; border-radius: 0; padding: 0; transition: 0.1s; font-size: 26px; color: #888; }
+.st-login .login-inner > .rt .nav-tabs > li > a.active, .st-login .login-inner > .rt .nav-tabs > li > a:hover { color: #ec5913; }
+.st-login .login-inner > .rt .nav-tabs > li:first-child > a:after { content: '/'; color: #888; margin: 0 7px; }
 .st-login .login-inner > .rt .head { font-size: 26px; margin-bottom: 10px; color: #666; }
 @media screen and (min-width: 768px) { .st-login .login-inner > .rt .head { margin-bottom: 15px; } }
 @media screen and (min-width: 992px) { .st-login .login-inner > .rt .head { margin-bottom: 25px; } }
@@ -386,11 +397,13 @@ footer .bottom-part p a { color: #ec5913; }
 .st-appointment .book-appointment { margin-bottom: 20px; }
 @media screen and (min-width: 768px) { .st-appointment .book-appointment { margin-bottom: 35px; } }
 .st-appointment .book-appointment .AP-head { padding: 15px 20px; border-bottom: 1px solid #d2d2d2; }
-.st-appointment .book-appointment .nav-tabs { border-bottom: 1px solid #d2d2d2; padding: 10px calc(20px + 5px) 0; }
+.st-appointment .book-appointment .nav-tabs { border-bottom: 1px solid #d2d2d2; padding: 10px 15px 0; }
+@media screen and (min-width: 992px) { .st-appointment .book-appointment .nav-tabs { padding: 10px calc(20px + 5px) 0; } }
 .st-appointment .book-appointment .nav-tabs > li { margin-bottom: 10px; }
 .st-appointment .book-appointment .nav-tabs > li:not(:last-child) { margin-right: 10px; }
 @media screen and (min-width: 992px) { .st-appointment .book-appointment .nav-tabs > li:not(:last-child) { margin-right: 30px; } }
-.st-appointment .book-appointment .nav-tabs > li > a { border: none !important; border-radius: 4px; font-size: 15px; font-weight: 600; padding: 3px 7px; color: #555; transition: 0.1s; min-width: 50px; }
+.st-appointment .book-appointment .nav-tabs > li > a { border: none !important; border-radius: 4px; font-size: 15px; font-weight: 600; padding: 3px 7px; color: #555; transition: 0.1s; min-width: 45px; }
+@media screen and (min-width: 768px) { .st-appointment .book-appointment .nav-tabs > li > a { min-width: 50px; } }
 .st-appointment .book-appointment .nav-tabs > li > a .day { font-size: 14px; margin-top: 3px; }
 .st-appointment .book-appointment .nav-tabs > li > a.active, .st-appointment .book-appointment .nav-tabs > li > a:hover { background-color: #e6e6e6; color: #019faa; }
 .st-appointment .book-appointment .nav-tabs > li > a:active { background-color: gainsboro; }
@@ -398,12 +411,13 @@ footer .bottom-part p a { color: #ec5913; }
 @media screen and (min-width: 992px) { .st-appointment .book-appointment .tab-pane { padding-top: 40px; padding-bottom: 40px; } }
 .st-appointment .book-appointment .select-time .frac { margin-bottom: 10px; }
 @media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time .frac { margin-bottom: 20px; } }
+.st-appointment .book-appointment .select-time .head { width: 100px; padding-right: 7px; font-size: 16px; color: #555; }
+@media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time .head { width: 120px; } }
+.st-appointment .book-appointment .select-time .head img { width: 17px; margin-right: 5px; }
+@media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time .head img { width: 25px; } }
+.st-appointment .book-appointment .select-time ul { width: calc(100% - 100px); }
+@media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time ul { width: calc(100% - 120px); } }
 .st-appointment .book-appointment .select-time ul > li { margin-bottom: 5px; }
-.st-appointment .book-appointment .select-time ul > li.head { width: 100px; padding-right: 7px; }
-@media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time ul > li.head { width: 120px; } }
-.st-appointment .book-appointment .select-time ul > li.head p { font-size: 16px; color: #555; }
-.st-appointment .book-appointment .select-time ul > li.head p img { width: 17px; margin-right: 5px; }
-@media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time ul > li.head p img { width: 25px; } }
 .st-appointment .book-appointment .select-time ul > li:not(:last-child):not(.head) { margin-right: 10px; }
 @media screen and (min-width: 992px) { .st-appointment .book-appointment .select-time ul > li:not(:last-child):not(.head) { margin-right: 20px; } }
 .st-appointment .confirm-appointment { padding: 20px; }
@@ -462,5 +476,21 @@ footer .bottom-part p a { color: #ec5913; }
 .blog-main .must-read .frac .text-sec { width: calc(100% - 60px); padding-left: 15px; }
 @media screen and (min-width: 992px) { .blog-main .must-read .frac .text-sec { width: calc(100% - 100px); } }
 .blog-main .must-read .frac .text-sec p { font-size: 16px; color: #333; }
+
+#st-filterbar { background-color: #019faa; }
+
+.st-filterbar { padding: 15px 0 5px; }
+@media screen and (min-width: 992px) { .st-filterbar { margin: 0 -10px; } }
+.st-filterbar .item { margin-bottom: 10px; padding: 0 5px; }
+@media screen and (min-width: 992px) { .st-filterbar .item { width: calc(100% / 5); padding: 0 10px; } }
+.st-filterbar .item select, .st-filterbar .item .btn { height: 40px; }
+@media screen and (min-width: 992px) { .st-filterbar .item select, .st-filterbar .item .btn { height: 45px; } }
+.st-filterbar .item .btn { padding-top: 9px; }
+@media screen and (min-width: 768px) { .st-filterbar .item .btn { padding-top: 8px; } }
+@media screen and (min-width: 992px) { .st-filterbar .item .btn { padding-top: 10px; } }
+.st-filterbar .item.gender select { background-color: transparent; color: #fff; border-color: #fff; }
+.st-filterbar .item.gender select option { color: #000; }
+.st-filterbar .item.popularity select { background-color: #01c0cd; color: #fff; border-color: #019faa; }
+.st-filterbar .item.popularity select option { color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

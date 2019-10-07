@@ -159,6 +159,9 @@
     .st-appointment .book-appointment .nav-tabs>li>a .day {
         font-size: 12px;
     }
+    .appointment-select-type .links > a {
+        margin: 0 3px 10px !important;
+    }
 }
 
 @media (max-width: 600px) {}

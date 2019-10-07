@@ -28,5 +28,13 @@ $(function () {
         }
     });
 
+    (function() {
+        // OPEN TABS
+        $('[data-open-tab]').click(function(ev) {
+            ev.preventDefault();
+            $('#' + $(this).attr('data-open-tab')).trigger('click');
+        });
+    })();
+
     
 });
