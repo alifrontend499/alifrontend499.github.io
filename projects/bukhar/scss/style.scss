@@ -1,3 +1,4 @@
+// sass --watch scss/style.scss:css/style.css --style compact
 @import "components/reset";
 // @import "components/fonts";
 @import "components/variables";
@@ -1669,16 +1670,24 @@ footer {
         }
 
         &.hospital-types {
+
             // >.inner {
             //     padding: $leftRightPadding;
             // }
             ul.checkboxes-list {
                 padding: 0 $leftRightPadding $leftRightPadding;
+
                 .custom-checkbox {
                     .text {
                         color: #333;
                     }
                 }
+            }
+        }
+
+        &.clinic-type {
+            >.inner {
+                padding: 0 0 $leftRightPadding;
             }
         }
     }

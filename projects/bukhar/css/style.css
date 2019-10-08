@@ -191,17 +191,23 @@ ul.socail-links > li.linkedin > a:active { background-color: #014ca4; }
 .custom-checkbox .box { height: 19px; width: 19px; border: 1px solid #d8d8d8; border-radius: 4px; color: #fff; font-size: 11px; transition: 0.1s; }
 .custom-checkbox .box i { opacity: 0; transition: 0.1s; }
 .custom-checkbox.cc-secondary .box { border-color: #019faa; }
-.custom-checkbox .text { color: #d8d8d8; font-size: 15px; font-weight: 600; padding-left: 5px; transition: 0.1s; }
+.custom-checkbox .text { color: #d8d8d8; font-size: 16px; padding-left: 5px; transition: 0.1s; }
 @media screen and (min-width: 992px) { .custom-checkbox .text { padding-left: 15px; } }
 .custom-checkbox > input:checked + .box { background: #31bcc7; border-color: #31bcc7; }
 .custom-checkbox > input:checked + .box i { opacity: 1; }
 
 ul.st-left-multilevel-menu li { position: relative; }
-ul.st-left-multilevel-menu li a { text-decoration: none; padding: 10px 15px; color: #333; font-size: 16px; transition: 0.3s; position: relative; }
-ul.st-left-multilevel-menu li a:hover { background-color: #019faa; color: #fff; }
-ul.st-left-multilevel-menu li a:active { background-color: #01838c; }
-ul.st-left-multilevel-menu li a:after { content: ''; font-family: 'fontAweseom'; }
-ul.st-left-multilevel-menu ul { position: absolute; }
+ul.st-left-multilevel-menu li > a { text-decoration: none; padding: 11px 20px 13px 40px; color: #333; font-size: 16px; transition: 0.3s; position: relative; }
+ul.st-left-multilevel-menu li > a:before { content: '\f061'; font-family: 'Font Awesome 5 Free'; font-weight: 600; position: absolute; top: calc(50% + 2px); left: 20px; -webkit-transform: translatey(-50%); transform: translatey(-50%); font-size: 13px; color: #019faa; transition: 0.3s; }
+ul.st-left-multilevel-menu li:not(:last-child) > a { border-bottom: 1px solid lightgray; }
+ul.st-left-multilevel-menu > li:hover > a { background-color: #019faa; color: #fff; }
+ul.st-left-multilevel-menu > li:hover > a:before { color: #fff; }
+ul.st-left-multilevel-menu > li > a:active { background-color: #01838c; }
+ul.st-left-multilevel-menu ul { position: absolute; left: 100%; top: 0; width: 100%; z-index: 1; display: none; }
+ul.st-left-multilevel-menu ul > li > a { background-color: #019faa; color: #fff; border-color: #efefef; }
+ul.st-left-multilevel-menu ul > li > a:before { color: #fff; }
+ul.st-left-multilevel-menu ul > li:hover > a { background-color: #ec5913; }
+ul.st-left-multilevel-menu li:hover > ul { display: block; }
 
 body { font-family: 'Lato', sans-serif; font-weight: 400; }
 
@@ -527,5 +533,6 @@ footer .bottom-part p a { color: #ec5913; }
 @media screen and (min-width: 992px) { .docs-result .frac.bukhar img { margin-top: 5px; margin-bottom: 20px; } }
 .docs-result .frac.hospital-types ul.checkboxes-list { padding: 0 20px 20px; }
 .docs-result .frac.hospital-types ul.checkboxes-list .custom-checkbox .text { color: #333; }
+.docs-result .frac.clinic-type > .inner { padding: 0 0 20px; }
 
 /*# sourceMappingURL=style.css.map */
