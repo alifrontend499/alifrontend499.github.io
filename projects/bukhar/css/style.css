@@ -187,6 +187,22 @@ ul.socail-links > li.linkedin > a { background-color: #015ac2; color: #fff; }
 ul.socail-links > li.linkedin > a:hover { background-color: #0151ae; }
 ul.socail-links > li.linkedin > a:active { background-color: #014ca4; }
 
+.custom-checkbox { position: relative; font-weight: normal; cursor: pointer; }
+.custom-checkbox .box { height: 19px; width: 19px; border: 1px solid #d8d8d8; border-radius: 4px; color: #fff; font-size: 11px; transition: 0.1s; }
+.custom-checkbox .box i { opacity: 0; transition: 0.1s; }
+.custom-checkbox.cc-secondary .box { border-color: #019faa; }
+.custom-checkbox .text { color: #d8d8d8; font-size: 15px; font-weight: 600; padding-left: 5px; transition: 0.1s; }
+@media screen and (min-width: 992px) { .custom-checkbox .text { padding-left: 15px; } }
+.custom-checkbox > input:checked + .box { background: #31bcc7; border-color: #31bcc7; }
+.custom-checkbox > input:checked + .box i { opacity: 1; }
+
+ul.st-left-multilevel-menu li { position: relative; }
+ul.st-left-multilevel-menu li a { text-decoration: none; padding: 10px 15px; color: #333; font-size: 16px; transition: 0.3s; position: relative; }
+ul.st-left-multilevel-menu li a:hover { background-color: #019faa; color: #fff; }
+ul.st-left-multilevel-menu li a:active { background-color: #01838c; }
+ul.st-left-multilevel-menu li a:after { content: ''; font-family: 'fontAweseom'; }
+ul.st-left-multilevel-menu ul { position: absolute; }
+
 body { font-family: 'Lato', sans-serif; font-weight: 400; }
 
 header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); z-index: 12; position: relative; }
@@ -492,5 +508,24 @@ footer .bottom-part p a { color: #ec5913; }
 .st-filterbar .item.gender select option { color: #000; }
 .st-filterbar .item.popularity select { background-color: #01c0cd; color: #fff; border-color: #019faa; }
 .st-filterbar .item.popularity select option { color: #fff; }
+
+#docs-result .top-bar { margin-bottom: 20px; }
+#docs-result .top-bar .head { font-size: 24px; font-weight: 600; margin-bottom: 6px; color: #333; }
+#docs-result .top-bar .results { font-size: 14px; }
+#docs-result .top-bar .results p { color: #666; }
+#docs-result .top-bar .results a { text-decoration: underline; color: #ec5913; font-weight: 600; }
+
+.docs-result .left-bar .dr-rhead { background: #505050; color: #fff; font-size: 22px; padding: 11px 20px; margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .docs-result .left-bar .dr-rhead { margin-bottom: 20px; } }
+.docs-result .frac:not(:last-child) { margin-bottom: 20px; }
+.docs-result .frac > .inner { border: 1px solid #d2d2d2; }
+.docs-result .frac ul.checkboxes-list > li { margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .docs-result .frac ul.checkboxes-list > li { margin-bottom: 20px; } }
+.docs-result .frac.bukhar { background-color: #232323; }
+.docs-result .frac.bukhar > .inner { padding: 20px; }
+.docs-result .frac.bukhar img { width: 190px; margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .docs-result .frac.bukhar img { margin-top: 5px; margin-bottom: 20px; } }
+.docs-result .frac.hospital-types ul.checkboxes-list { padding: 0 20px 20px; }
+.docs-result .frac.hospital-types ul.checkboxes-list .custom-checkbox .text { color: #333; }
 
 /*# sourceMappingURL=style.css.map */

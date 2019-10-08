@@ -1515,6 +1515,7 @@ footer {
     }
 }
 
+// INNER PAGE
 // st-filterbar
 #st-filterbar {
     background-color: $secondary-color;
@@ -1522,12 +1523,15 @@ footer {
 
 .st-filterbar {
     padding: 15px 0 5px;
+
     @include min-width(992px) {
         margin: 0 -10px;
     }
+
     .item {
         margin-bottom: 10px;
         padding: 0 5px;
+
         @include min-width(992px) {
             width: calc(100% / 5);
             padding: 0 10px;
@@ -1544,28 +1548,34 @@ footer {
 
         .btn {
             padding-top: 9px;
+
             @include min-width(768px) {
                 padding-top: 8px;
             }
+
             @include min-width(992px) {
                 padding-top: 10px;
             }
         }
-        &.gender  {
+
+        &.gender {
             select {
                 background-color: transparent;
                 color: #fff;
                 border-color: #fff;
+
                 option {
                     color: #000;
                 }
             }
         }
-        &.popularity  {
+
+        &.popularity {
             select {
                 background-color: lighten($color: $secondary-color, $amount: 7%);
                 color: #fff;
                 border-color: $secondary-color;
+
                 option {
                     color: #fff;
                 }
@@ -1575,5 +1585,101 @@ footer {
 }
 
 // docs-result
-#docs-result{}
-.docs-result{}
+#docs-result {
+    .top-bar {
+        margin-bottom: 20px;
+
+        .head {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .results {
+            font-size: 14px;
+
+            p {
+                color: #666;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.docs-result {
+    $leftRightPadding: 20px;
+
+    .left-bar {
+        .dr-rhead {
+            background: #505050;
+            color: #fff;
+            font-size: 22px;
+            padding: 11px $leftRightPadding;
+            margin-bottom: 15px;
+
+            @include min-width(992px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: $leftRightPadding;
+        }
+
+        >.inner {
+            border: 1px solid #d2d2d2;
+        }
+
+        ul.checkboxes-list {
+            >li {
+                margin-bottom: 15px;
+
+                @include min-width(992px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &.bukhar {
+            background-color: #232323;
+
+            >.inner {
+                padding: $leftRightPadding;
+            }
+
+            img {
+                width: 190px;
+                margin-bottom: 15px;
+
+                @include min-width(992px) {
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            ul {}
+        }
+
+        &.hospital-types {
+            // >.inner {
+            //     padding: $leftRightPadding;
+            // }
+            ul.checkboxes-list {
+                padding: 0 $leftRightPadding $leftRightPadding;
+                .custom-checkbox {
+                    .text {
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

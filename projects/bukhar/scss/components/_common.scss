@@ -756,6 +756,7 @@ select.custom-sel {
     background: transparent url(../images/icons/icon-custom-sel.png) no-repeat calc(100% - 0px) 10px !important;
     padding-right: 24px !important;
 }
+
 select.common-sel {
     position: relative;
     /* for Firefox */
@@ -857,9 +858,11 @@ ul.socail-links {
             >a {
                 background-color: #1880b1;
                 color: #fff;
+
                 &:hover {
                     background-color: darken($color: #1880b1, $amount: 4%);
                 }
+
                 &:active {
                     background-color: darken($color: #1880b1, $amount: 6%);
                 }
@@ -870,9 +873,11 @@ ul.socail-links {
             >a {
                 background-color: #31bcc7;
                 color: #fff;
+
                 &:hover {
                     background-color: darken($color: #31bcc7, $amount: 4%);
                 }
+
                 &:active {
                     background-color: darken($color: #31bcc7, $amount: 6%);
                 }
@@ -883,9 +888,11 @@ ul.socail-links {
             >a {
                 background-color: #d65a00;
                 color: #fff;
+
                 &:hover {
                     background-color: darken($color: #d65a00, $amount: 4%);
                 }
+
                 &:active {
                     background-color: darken($color: #d65a00, $amount: 6%);
                 }
@@ -896,13 +903,102 @@ ul.socail-links {
             >a {
                 background-color: #015ac2;
                 color: #fff;
+
                 &:hover {
                     background-color: darken($color: #015ac2, $amount: 4%);
                 }
+
                 &:active {
                     background-color: darken($color: #015ac2, $amount: 6%);
                 }
             }
         }
     }
+}
+
+// CUSTOM CHECKBIXEX
+.custom-checkbox {
+    position: relative;
+    font-weight: normal;
+    cursor: pointer;
+
+    .box {
+        height: 19px;
+        width: 19px;
+        border: 1px solid #d8d8d8;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 11px;
+        @include transition(.1s);
+
+        i {
+            opacity: 0;
+            @include transition(.1s);
+        }
+    }
+
+    &.cc-secondary {
+        .box {
+            border-color: $secondary-color;
+        }
+    }
+
+    .text {
+        color: #d8d8d8;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 5px;
+        @include transition(.1s);
+
+        @include min-width(992px) {
+            padding-left: 15px;
+        }
+    }
+
+    >input:checked+ {
+        .box {
+            background: #31bcc7;
+            border-color: #31bcc7;
+
+            i {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// ST-LEFTMULTILEVEL MENU
+ul.st-left-multilevel-menu {
+    li {
+        position: relative;
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #333;
+            font-size: 16px;
+            @include transition;
+            position: relative;
+            &:hover {
+                background-color: $secondary-color;                
+                color: #fff;
+            }
+            &:active {
+                background-color: darken($color: $secondary-color, $amount: 6%);
+            }
+            &:after {
+                content: '';
+                font-family: 'fontAweseom';
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+    }
+
+    >li {
+        >a {}
+    }
+
 }
