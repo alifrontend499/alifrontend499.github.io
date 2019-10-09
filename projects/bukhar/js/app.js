@@ -36,5 +36,32 @@ $(function () {
         });
     })();
 
+
+    // MULTI LEVEL MENU LEFT
+    (function() {
+        if($(window).width() < 768) {
+            $('ul.st-left-multilevel-menu li a').each(function() {
+                var mobileBtn = '<i class="icon fas fa-plus d-flex position-absolute align-items-center justify-content-center h-100"></i>';
+                if($(this).next('ul').length) {
+                    $(this).addClass('has-multi-menu').append(mobileBtn);
+                }
+            });
+    
+            $('ul.st-left-multilevel-menu li a > .icon').click(function(ev) {
+                ev.preventDefault();
+                $(this).toggleClass('fa-plus fa-minus');
+                $(this).closest('li').toggleClass('active').find('>ul').slideToggle();
+            });
+        }
+    })();
+
+    // MOBILE FILTER BTN
+    (function() {
+        $('.docs-result > .mobile-filter-btn > .st-btn').click(function(ev) {
+            ev.preventDefault();
+            console.log("object");
+            $(this).parent().next().toggleClass('d-none');
+        });
+    })();
     
 });

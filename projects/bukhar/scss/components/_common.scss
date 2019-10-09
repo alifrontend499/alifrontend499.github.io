@@ -974,44 +974,69 @@ ul.st-left-multilevel-menu {
 
         >a {
             text-decoration: none;
-            padding: 11px 20px 13px 40px;
+            padding: 11px 15px 13px 15px;
             color: #333;
             font-size: 16px;
             @include transition;
             position: relative;
 
-            &:before {
-                content: '\f061';
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 600;
-                position: absolute;
-                top: calc(50% + 2px);
-                left: 20px;
-                @include transformy(-50%);
-                font-size: 13px;
-                color: $secondary-color;
-                @include transition;
+            @include min-width(768px) {
+                padding: 11px 20px 13px 40px;
+                &:before {
+                    content: '\f061';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 600;
+                    position: absolute;
+                    top: calc(50% + 2px);
+                    left: 20px;
+                    @include transformy(-50%);
+                    font-size: 13px;
+                    color: $secondary-color;
+                    @include transition;
+                }
+            }
+
+            &.has-multi-menu {
+                i {
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    color: $secondary-color;
+                }
             }
         }
+
         &:not(:last-child) {
-            > a {
+            >a {
                 border-bottom: 1px solid lightgray;
             }
         }
     }
 
     >li {
-        &:hover {
-            >a {
+        @include min-width(768px) {
+            &:hover,
+            &.active {
+                >a {
+                    background-color: $secondary-color;
+                    color: #fff;
+    
+                    &:before {
+                        color: #fff;
+                    }
+                }
+    
+            }            
+        }
+        &.active {
+            > a {
                 background-color: $secondary-color;
                 color: #fff;
-                &:before {
+                i {
                     color: #fff;
                 }
             }
-
         }
-
         >a {
             &:active {
                 background-color: darken($color: $secondary-color, $amount: 6%);
@@ -1019,36 +1044,61 @@ ul.st-left-multilevel-menu {
         }
     }
 
-    ul {
-        position: absolute;
-        left: 100%;
-        top: 0;
-        width: 100%;
-        z-index: 1;
+    ul {        
+        width: 100%;        
         display: none;
-
+        @include max-width(767px) {
+            padding: 5px;
+        }
+        @include min-width(768px) {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            z-index: 1;
+        }
         >li {
             >a {
                 background-color: $secondary-color;
-                color: #fff;      
-                border-color: #efefef;          
+                color: #fff;
+                border-color: #efefef;
+
                 &:before {
                     color: #fff;
                 }
+                &.has-multi-menu {
+                    i {
+                        color: #fff;
+                    }
+                }
             }
 
-            &:hover {
+            @include min-width(768px) {
+                &:hover,
+                &.active {
+                    >a {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+            &.active {
                 >a {
                     background-color: $primary-color;
+                }
+            }
+            >a {
+                &:active {
+                    background-color: darken($color: $primary-color, $amount: 6%);
                 }
             }
         }
     }
 
-    li {
-        &:hover {
-            >ul {
-                display: block;
+    @include min-width(768px) {
+        li {
+            &:hover {
+                >ul {
+                    display: block;
+                }
             }
         }
     }

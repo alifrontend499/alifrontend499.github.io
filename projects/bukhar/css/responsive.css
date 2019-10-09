@@ -45,6 +45,29 @@
     .blog-main .must-read .frac .text-sec p {
         font-size: 13px;
     }
+
+    /* INNER PAGE */
+    /* docs-result */
+    .docs-result .left-bar .dr-rhead {
+        font-size: 18px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec .post {
+        font-size: 14px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec .depr-name {
+        font-size: 15px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec .btns>.st-btn {
+        font-size: 13px;
+        padding: 9px 9px 8px;
+    }
+
+    .docs-result .right-bar .frac .RB-right {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -159,11 +182,58 @@
     .st-appointment .book-appointment .nav-tabs>li>a .day {
         font-size: 12px;
     }
-    .appointment-select-type .links > a {
+
+    .appointment-select-type .links>a {
         margin: 0 3px 10px !important;
+    }
+
+    /* INNER PAGE */
+    /* docs-result */
+    .docs-result .right-bar .frac .RB-left .img-sec {
+        width: 100px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec {
+        width: calc(100% - 100px);
+    }
+
+    .docs-result .right-bar .frac .RB-left .img-sec .best-seller {
+        padding: 6px 17px 7px 7px;
+        font-size: 10px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec .head {
+        font-size: 20px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .left-inner {
+        position: relative;
+        padding-bottom: 45px;
+    }
+
+    .docs-result .right-bar .frac .RB-left .text-sec .btns {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
     }
 }
 
 @media (max-width: 600px) {}
 
-@media (min-width: 767px) and (max-width: 991px) {}
+@media (min-width: 767px) and (max-width: 991px) {
+    /* INNER PAGE */
+    /* docs-result */
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* INNER PAGE */
+    /* docs-result */
+    .docs-result .right-bar .frac .RB-left .text-sec .btns>.st-btn {
+        padding: 8px 5px;
+        font-size: 13px;
+    }
+
+}

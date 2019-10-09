@@ -143,7 +143,13 @@
                             <a href="" class="ml-2">Show Doctors Near Me</a>
                         </div>
                     </div>
-                    <div class="left-bar col-md-4 col-lg-3">
+                    <div class="d-md-none mobile-filter-btn mb-3 px-3">
+                        <button class="btn st-btn d-flex align-items-center text-capitalize">
+                            <i class="fa-filter fas mr-1" style="font-size: 11px;"></i>
+                            <span>Filter list</span>
+                        </button>
+                    </div>
+                    <div class="left-bar col-md-4 col-lg-3 d-none d-md-block">
                         <div class="frac bukhar">
                             <div class="inner">
                                 <img src="images/logo.png" alt="" class="img-fluid">
@@ -217,10 +223,14 @@
                                 <p class="dr-rhead text-capitalize">clinic type</p>
                                 <ul class="list-unstyled st-left-multilevel-menu">
                                     <li>
-                                        <a href="" class="d-block">Allopathy</a>
+                                        <a href="" class="d-block">
+                                            <span>Allopathy</span>
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Dentist</a>
+                                        <a href="" class="d-block">
+                                            <span>Dentist</span>
+                                        </a>
                                         <ul class="list-unstyled">
                                             <li>
                                                 <a href="" class="d-block">Prosthodontis</a>
@@ -246,24 +256,22 @@
                                                     <li>
                                                         <a href="" class="d-block">Orthodontist</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="" class="d-block">Pediatric</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" class="d-block">Endodontist</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" class="d-block">Implantologist</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" class="d-block">Maxiloficial</a>
-                                                    </li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Ayurveda</a>
+                                        <a href="" class="d-block">
+                                            <span>Ayurveda</span>
+                                        </a>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="" class="d-block">Prosthodontis</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Orthodontist</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="" class="d-block">Homepathy</a>
@@ -286,15 +294,45 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-ambulance.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    Ambulance
+                                </div>
+                            </a>
+                        </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-trauma-center.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    Trauma Center
+                                </div>
+                            </a>
+                        </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-ventilator.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    OCU/ Ventilator
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="right-bar col-md-8 col-lg-9">
+                    <div class="right-bar col-md-8 col-lg-9">                        
                         <div class="frac">
                             <div class="inner d-flex flex-wrap">
-                                <div class="left">
+                                <div class="RB-left">
                                     <div class="left-inner d-flex flex-wrap">
-                                        <div class="img-sec">
+                                        <div class="img-sec position-relative">
                                             <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
-                                            <div class="best-seller">
+                                            <div class="best-seller position-absolute">
                                                 <p class="text-uppercase">best seller</p>
                                             </div>
                                         </div>
@@ -305,7 +343,7 @@
                                                 <span class="d-block">11 year Experience</span>
                                             </p>
                                             <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
-                                            <div class="btns d-flex">
+                                            <div class="btns d-flex justify-content-between">
                                                 <a href="" class="btn st-btn text-capitalize">book appointment</a>
                                                 <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
                                                     details</a>
@@ -313,22 +351,184 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="right">
-                                    <p class="reviews d-flex">
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
                                         <a href="">51 review</a>
                                         <span>4.3</span>
                                     </p>
                                     <ul class="list-unstyled">
                                         <li class="d-flex">
-                                            <i class="fas fa-calendar-alt"></i>
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
                                             <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
                                         </li>
                                         <li class="d-flex">
-                                            <i class="fas fa-rupee-sign"></i>
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
                                             <span>400</span>
                                         </li>
                                         <li class="d-flex text-uppercase">
-                                            <i class="fas fa-map-marker-alt"></i>
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
                                             <span>
                                                 MON-SUN
                                                 <span class="d-block">9:30 AM-9:00 PM</span>

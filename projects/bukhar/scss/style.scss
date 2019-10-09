@@ -1621,60 +1621,75 @@ footer {
             background: #505050;
             color: #fff;
             font-size: 22px;
-            padding: 11px $leftRightPadding;
+            padding: 9px 15px;
             margin-bottom: 15px;
 
             @include min-width(992px) {
                 margin-bottom: 20px;
+                padding: 11px $leftRightPadding;
             }
         }
+
         .frac {
             &:not(:last-child) {
-                margin-bottom: $leftRightPadding;
+                margin-bottom: 15px;
+
+                @include min-width(992px) {
+                    margin-bottom: 30px;
+                }
             }
-    
+
             >.inner {
                 border: 1px solid #d2d2d2;
             }
-    
+
             ul.checkboxes-list {
                 >li {
                     margin-bottom: 15px;
-    
+
                     @include min-width(992px) {
                         margin-bottom: 20px;
                     }
                 }
             }
-    
+
             &.bukhar {
                 background-color: #232323;
-    
+
                 >.inner {
-                    padding: $leftRightPadding;
-                }
-    
-                img {
-                    width: 190px;
-                    margin-bottom: 15px;
-    
+                    padding: 15px;
+
                     @include min-width(992px) {
+                        padding: $leftRightPadding;
+                    }
+                }
+
+                img {
+                    width: 150px;
+                    margin-bottom: 15px;
+
+                    @include min-width(992px) {
+                        width: 190px;
                         margin-top: 5px;
                         margin-bottom: 20px;
                     }
                 }
-    
+
                 ul {}
             }
-    
+
             &.hospital-types {
-    
+
                 // >.inner {
                 //     padding: $leftRightPadding;
                 // }
                 ul.checkboxes-list {
-                    padding: 0 $leftRightPadding $leftRightPadding;
-    
+                    padding: 0 15px 15px;
+
+                    @include min-width(992px) {
+                        padding: 0 $leftRightPadding $leftRightPadding;
+                    }
+
                     .custom-checkbox {
                         .text {
                             color: #333;
@@ -1682,20 +1697,188 @@ footer {
                     }
                 }
             }
-    
+
             &.clinic-type {
                 >.inner {
                     padding: 0 0 $leftRightPadding;
                 }
             }
+
+            &.other-service {
+                >.inner {
+                    padding: $leftRightPadding;
+                    background-color: #fff;
+                    text-decoration: none;
+                    @include transition;
+
+                    &:hover {
+                        background-color: #efefef;
+                    }
+                }
+
+                .icon {
+                    width: 50px;
+                }
+
+                .text {
+                    width: calc(100% - 50px);
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #333;
+                    padding-left: 15px;
+                }
+            }
         }
     }
+
     .right-bar {
-        padding-left: 30px;
+        @include min-width(992px) {
+            padding-left: 30px;
+
+        }
+
         .frac {
-            > .inner {
-                padding: 20px;
-                @include box-shadow(2px, 2px, 5px, 0px, rgba(0, 0, 0, 0.1));
+            &:not(:last-child) {
+                margin-bottom: 20px;
+                @include min-width(992px) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            >.inner {
+                padding: 15px;
+                @include box-shadow(0px, 0px, 4px, 0px, rgba(0, 0, 0, 0.2));
+
+                @include min-width(992px) {
+                    padding: 20px;
+                }
+            }
+            .RB-left,
+            .RB-right {
+                width: 100%;
+            }            
+            @include min-width(992px) {
+                .RB-left {
+                    width: 70%;
+                }
+
+                .RB-right {
+                    width: 30%;
+                    padding-left: 15px;
+                }
+            }
+            @include min-width(1200px) {
+
+                .RB-right {
+                    padding-left: 30px;
+                }
+            }
+
+            .RB-left {
+                .img-sec {
+                    width: 145px;
+
+                    @include min-width(992px) {
+                        width: 165px;
+                    }
+
+                    .best-seller {
+                        top: 11px;
+                        left: 0;
+                        padding: 9px 26px 9px 10px;
+                        font-size: 12px;
+                        background: transparent url('../images/icons/icon-ribbon-red.png') no-repeat left top / 100% 100%;
+                        color: #fff;
+                    }
+                }
+
+                .text-sec {
+                    width: calc(100% - 145px);
+                    padding-left: 15px;
+
+                    @include min-width(992px) {
+                        width: calc(100% - 165px);
+                    }
+
+                    .head {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        color: $secondary-color;
+                    }
+
+                    .post {
+                        font-size: 16px;
+                        color: #777;
+                        margin-bottom: 10px;
+
+                        span {
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .depr-name {
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 8px 5px;
+                        margin-bottom: 20px;
+                        border-top: 1px solid #444;
+                        border-bottom: 1px solid #444;
+                        color: #333;
+                    }
+
+                    .btns {
+                        >.st-btn {
+                            width: calc(50% - 8px);
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+            }
+
+            .RB-right {
+                .reviews {
+                    margin-bottom: 10px;
+
+                    a {
+                        font-size: 14px;
+                        color: #666;
+                    }
+
+                    span {
+                        padding: 5px 6px;
+                        background: #8db716;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #fff;
+                        margin-left: 10px;
+                    }
+                }
+
+                >ul {
+                    >li {
+                        &:not(:last-child) {
+                            margin-bottom: 13px;
+                        }
+
+                        >i {
+                            height: 22px;
+                            width: 22px;
+                            background-color: #969694;
+                            color: #fff;
+                            border-radius: 100%;
+                            font-size: 10px;
+                        }
+
+                        >span {
+                            font-size: 14px;
+                            padding-left: 10px;
+                            width: calc(100% - 22px);
+                            color: #2d2d2d;
+                        }
+                    }
+                }
             }
         }
     }
