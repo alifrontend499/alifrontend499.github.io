@@ -523,16 +523,18 @@ footer .bottom-part p a { color: #ec5913; }
 
 .docs-result .left-bar .dr-rhead { background: #505050; color: #fff; font-size: 22px; padding: 11px 20px; margin-bottom: 15px; }
 @media screen and (min-width: 992px) { .docs-result .left-bar .dr-rhead { margin-bottom: 20px; } }
-.docs-result .frac:not(:last-child) { margin-bottom: 20px; }
-.docs-result .frac > .inner { border: 1px solid #d2d2d2; }
-.docs-result .frac ul.checkboxes-list > li { margin-bottom: 15px; }
-@media screen and (min-width: 992px) { .docs-result .frac ul.checkboxes-list > li { margin-bottom: 20px; } }
-.docs-result .frac.bukhar { background-color: #232323; }
-.docs-result .frac.bukhar > .inner { padding: 20px; }
-.docs-result .frac.bukhar img { width: 190px; margin-bottom: 15px; }
-@media screen and (min-width: 992px) { .docs-result .frac.bukhar img { margin-top: 5px; margin-bottom: 20px; } }
-.docs-result .frac.hospital-types ul.checkboxes-list { padding: 0 20px 20px; }
-.docs-result .frac.hospital-types ul.checkboxes-list .custom-checkbox .text { color: #333; }
-.docs-result .frac.clinic-type > .inner { padding: 0 0 20px; }
+.docs-result .left-bar .frac:not(:last-child) { margin-bottom: 20px; }
+.docs-result .left-bar .frac > .inner { border: 1px solid #d2d2d2; }
+.docs-result .left-bar .frac ul.checkboxes-list > li { margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .docs-result .left-bar .frac ul.checkboxes-list > li { margin-bottom: 20px; } }
+.docs-result .left-bar .frac.bukhar { background-color: #232323; }
+.docs-result .left-bar .frac.bukhar > .inner { padding: 20px; }
+.docs-result .left-bar .frac.bukhar img { width: 190px; margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .docs-result .left-bar .frac.bukhar img { margin-top: 5px; margin-bottom: 20px; } }
+.docs-result .left-bar .frac.hospital-types ul.checkboxes-list { padding: 0 20px 20px; }
+.docs-result .left-bar .frac.hospital-types ul.checkboxes-list .custom-checkbox .text { color: #333; }
+.docs-result .left-bar .frac.clinic-type > .inner { padding: 0 0 20px; }
+.docs-result .right-bar { padding-left: 30px; }
+.docs-result .right-bar .frac > .inner { padding: 20px; -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=style.css.map */

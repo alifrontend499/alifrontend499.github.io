@@ -1628,67 +1628,76 @@ footer {
                 margin-bottom: 20px;
             }
         }
-    }
-
-    .frac {
-        &:not(:last-child) {
-            margin-bottom: $leftRightPadding;
-        }
-
-        >.inner {
-            border: 1px solid #d2d2d2;
-        }
-
-        ul.checkboxes-list {
-            >li {
-                margin-bottom: 15px;
-
-                @include min-width(992px) {
-                    margin-bottom: 20px;
-                }
+        .frac {
+            &:not(:last-child) {
+                margin-bottom: $leftRightPadding;
             }
-        }
-
-        &.bukhar {
-            background-color: #232323;
-
+    
             >.inner {
-                padding: $leftRightPadding;
+                border: 1px solid #d2d2d2;
             }
-
-            img {
-                width: 190px;
-                margin-bottom: 15px;
-
-                @include min-width(992px) {
-                    margin-top: 5px;
-                    margin-bottom: 20px;
-                }
-            }
-
-            ul {}
-        }
-
-        &.hospital-types {
-
-            // >.inner {
-            //     padding: $leftRightPadding;
-            // }
+    
             ul.checkboxes-list {
-                padding: 0 $leftRightPadding $leftRightPadding;
-
-                .custom-checkbox {
-                    .text {
-                        color: #333;
+                >li {
+                    margin-bottom: 15px;
+    
+                    @include min-width(992px) {
+                        margin-bottom: 20px;
                     }
                 }
             }
-        }
-
-        &.clinic-type {
-            >.inner {
-                padding: 0 0 $leftRightPadding;
+    
+            &.bukhar {
+                background-color: #232323;
+    
+                >.inner {
+                    padding: $leftRightPadding;
+                }
+    
+                img {
+                    width: 190px;
+                    margin-bottom: 15px;
+    
+                    @include min-width(992px) {
+                        margin-top: 5px;
+                        margin-bottom: 20px;
+                    }
+                }
+    
+                ul {}
+            }
+    
+            &.hospital-types {
+    
+                // >.inner {
+                //     padding: $leftRightPadding;
+                // }
+                ul.checkboxes-list {
+                    padding: 0 $leftRightPadding $leftRightPadding;
+    
+                    .custom-checkbox {
+                        .text {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+    
+            &.clinic-type {
+                >.inner {
+                    padding: 0 0 $leftRightPadding;
+                }
             }
         }
     }
+    .right-bar {
+        padding-left: 30px;
+        .frac {
+            > .inner {
+                padding: 20px;
+                @include box-shadow(2px, 2px, 5px, 0px, rgba(0, 0, 0, 0.1));
+            }
+        }
+    }
+
 }
