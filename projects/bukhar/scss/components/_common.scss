@@ -124,9 +124,10 @@
     font-size: 15px;
     padding: 9px 15px 10px;
     border-radius: 4px;
-    @include transition;
+    @include transition(.1s);
     box-shadow: none !important;
     color: #fff;
+    text-decoration: none !important;
 
     &:hover {
         box-shadow: none !important;
@@ -982,6 +983,7 @@ ul.st-left-multilevel-menu {
 
             @include min-width(768px) {
                 padding: 11px 20px 13px 40px;
+
                 &:before {
                     content: '\f061';
                     font-family: 'Font Awesome 5 Free';
@@ -1015,28 +1017,32 @@ ul.st-left-multilevel-menu {
 
     >li {
         @include min-width(768px) {
+
             &:hover,
             &.active {
                 >a {
                     background-color: $secondary-color;
                     color: #fff;
-    
+
                     &:before {
                         color: #fff;
                     }
                 }
-    
-            }            
+
+            }
         }
+
         &.active {
-            > a {
+            >a {
                 background-color: $secondary-color;
                 color: #fff;
+
                 i {
                     color: #fff;
                 }
             }
         }
+
         >a {
             &:active {
                 background-color: darken($color: $secondary-color, $amount: 6%);
@@ -1044,18 +1050,21 @@ ul.st-left-multilevel-menu {
         }
     }
 
-    ul {        
-        width: 100%;        
+    ul {
+        width: 100%;
         display: none;
+
         @include max-width(767px) {
             padding: 5px;
         }
+
         @include min-width(768px) {
             position: absolute;
             left: 100%;
             top: 0;
             z-index: 1;
         }
+
         >li {
             >a {
                 background-color: $secondary-color;
@@ -1065,6 +1074,7 @@ ul.st-left-multilevel-menu {
                 &:before {
                     color: #fff;
                 }
+
                 &.has-multi-menu {
                     i {
                         color: #fff;
@@ -1073,6 +1083,7 @@ ul.st-left-multilevel-menu {
             }
 
             @include min-width(768px) {
+
                 &:hover,
                 &.active {
                     >a {
@@ -1080,11 +1091,13 @@ ul.st-left-multilevel-menu {
                     }
                 }
             }
+
             &.active {
                 >a {
                     background-color: $primary-color;
                 }
             }
+
             >a {
                 &:active {
                     background-color: darken($color: $primary-color, $amount: 6%);
@@ -1103,4 +1116,94 @@ ul.st-left-multilevel-menu {
         }
     }
 
+}
+
+.best-seller-tag {
+    padding: 9px 26px 9px 10px;
+    font-size: 12px;
+    background: transparent url('../images/icons/icon-ribbon-red.png') no-repeat left top / 100% 100%;
+    color: #fff;
+}
+
+.st-arrow-ul {
+    >li {
+        font-size: 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        >a {
+            color: #333;
+            text-decoration: none;
+            position: relative;
+            padding-left: 18px;
+            @include transition(.2s);
+
+            &:before {
+                content: '\f061';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 600;
+                position: absolute;
+                top: calc(50% + 1px);
+                left: 0;
+                @include transformy(-50%);
+                font-size: 11px;
+                color: #333;
+                @include transition(.2s);
+            }
+
+            &:hover {
+                color: $primary-color;
+
+                &:before {
+                    left: 3px;
+                    color: $primary-color;
+                }
+            }
+        }
+
+
+    }
+}
+
+.star-rating-ul {
+    >li {
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
+        label {
+            font-weight: normal;
+            position: relative;
+            cursor: pointer;
+
+            >span {
+                img {
+                    width: 21px;
+
+                    &.gray {
+                        display: block;
+                    }
+
+                    &.colured {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+        &.active>label>span,
+        // &>label>input:checked+span
+        &>label:hover>span {
+            img {
+                &.gray {
+                    display: none;
+                }
+
+                &.colured {
+                    display: block;
+                }
+            }
+        }
+    }
 }

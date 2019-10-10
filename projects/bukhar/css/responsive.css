@@ -52,26 +52,25 @@
         font-size: 18px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec .post {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .post {
         font-size: 14px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec .depr-name {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .depr-name {
         font-size: 15px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec .btns>.st-btn {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .btns>.st-btn {
         font-size: 13px;
         padding: 9px 9px 8px;
     }
 
-    .docs-result .right-bar .frac .RB-right {
+    .docs-result .right-bar .frac.docs-list .RB-right {
         margin-top: 15px;
     }
 }
 
 @media (max-width: 767px) {
-
     .container {
         max-width: 100%;
     }
@@ -81,6 +80,10 @@
         padding: 5px 15px 6px;
     }
 
+    .best-seller-tag {
+        padding: 7px 18px 7px 6px;
+        font-size: 11px;
+    }
 
     /* HOMEPAGE */
     /* header */
@@ -189,29 +192,29 @@
 
     /* INNER PAGE */
     /* docs-result */
-    .docs-result .right-bar .frac .RB-left .img-sec {
+    .docs-result .right-bar .frac.docs-list .RB-left .img-sec {
         width: 100px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec {
         width: calc(100% - 100px);
     }
 
-    .docs-result .right-bar .frac .RB-left .img-sec .best-seller {
+    .docs-result .right-bar .frac.docs-list .RB-left .img-sec .best-seller {
         padding: 6px 17px 7px 7px;
         font-size: 10px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec .head {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .head {
         font-size: 20px;
     }
 
-    .docs-result .right-bar .frac .RB-left .left-inner {
+    .docs-result .right-bar .frac.docs-list .RB-left .left-inner {
         position: relative;
         padding-bottom: 45px;
     }
 
-    .docs-result .right-bar .frac .RB-left .text-sec .btns {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .btns {
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -231,7 +234,7 @@
 
     /* INNER PAGE */
     /* docs-result */
-    .docs-result .right-bar .frac .RB-left .text-sec .btns>.st-btn {
+    .docs-result .right-bar .frac.docs-list .RB-left .text-sec .btns>.st-btn {
         padding: 8px 5px;
         font-size: 13px;
     }

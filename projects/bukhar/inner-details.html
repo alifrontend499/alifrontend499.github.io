@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+    <!-- FANCYBOX -->
+    <link rel="stylesheet" href="assets/fancybox/css/jquery.fancybox.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -106,36 +108,63 @@
                     <div class="img-sec">
                         <img src="images/inner-details-banner.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="doc-details d-flex flex-wrap">
-                        <div class="DD-left-sec">
-                            <p class="name">Dr. Apoorva Kumar</p>
-                            <p class="post">MBBS, MS (General Surgeon), MCh (Neuro Surgeon)</p>
+                    <div class="captions">
+                        <div class="top-sec d-flex align-items-center position-absolute w-100">
+                            <div class="best-seller-tag position-absolute">
+                                <p class="text-uppercase">best seller</p>
+                            </div>
+                            <div class="ml-auto">
+                                <a href="">
+                                    <img src="images/logo.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
                         </div>
-                        <div class="DD-right-sec">
-                            <div class="d-flex">
-                                <p>11 year Experience</p>
-                                <a class="btn st-btn"></a>
+                        <div class="bottom-sec d-flex align-items-center position-absolute w-100">
+                            <ul class="list-unstyled d-flex align-items-center">
+                                <li>
+                                    <a href="" class="d-block" title="Call">
+                                        <img src="images/icons/icon-call.png" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="d-block" title="Share">
+                                        <img src="images/icons/icon-share.png" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ml-auto btns">
+                                <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                    <a href="">51 review</a>
+                                    <span>4.3</span>
+                                </p>
+                                <div class="btns-main d-flex">
+                                    <a href="" class="btm st-btn text-capitalize rounded-0">Ask Question</a>
+                                    <a href="" class="btm st-btn btn-st-secondary text-capitalize rounded-0">Write A
+                                        Review</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="captions">
-
+                </div>
+                <div class="doc-details d-flex flex-wrap align-items-center">
+                    <div class="DD-left-sec">
+                        <p class="name">Dr. Apoorva Kumar</p>
+                        <p class="post">MBBS, MS (General Surgeon), MCh (Neuro Surgeon)</p>
+                    </div>
+                    <div class="DD-right-sec">
+                        <div class="d-flex flex-wrap align-items-center justify-content-md-end">
+                            <p>11 year Experience</p>
+                            <a href="" class="btn st-btn">Book Appointment</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- DOCS-RESULT -->
-        <section id="docs-result" class="ST_def-mar-TB">
+        <section id="docs-result" class="inner-details">
             <div class="container">
                 <div class="docs-result row">
-                    <div class="top-bar col-md-12">
-                        <p class="head">Doctor In Lucknow</p>
-                        <div class="results d-flex flex-wrap">
-                            <p>Showing <span>831</span> results for Doctor Lucknow</p>
-                            <a href="" class="ml-2">Show Doctors Near Me</a>
-                        </div>
-                    </div>
                     <div class="d-md-none mobile-filter-btn mb-3 px-3">
                         <button class="btn st-btn d-flex align-items-center text-capitalize">
                             <i class="fa-filter fas mr-1" style="font-size: 11px;"></i>
@@ -177,112 +206,87 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="frac hospital-types">
+                        <div class="frac address-details">
                             <div class="inner">
-                                <p class="dr-rhead text-capitalize">hopital types</p>
-                                <ul class="list-unstyled checkboxes-list">
-                                    <li>
-                                        <label class="custom-checkbox d-flex cc-secondary">
-                                            <input type="radio" name="namesa" checked class="d-none">
-                                            <span class="box d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="text d-block text-capitalize">Govt. Hospital</span>
-                                        </label>
+                                <ul class="list-unstyled">
+                                    <li class="d-flex">
+                                        <i
+                                            class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                        <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
                                     </li>
-                                    <li>
-                                        <label class="custom-checkbox d-flex cc-secondary">
-                                            <input type="radio" name="namesa" class="d-none">
-                                            <span class="box d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="text d-block text-capitalize">Private Hospital</span>
-                                        </label>
+                                    <li class="d-flex">
+                                        <i
+                                            class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                        <span>400</span>
                                     </li>
-                                    <li>
-                                        <label class="custom-checkbox d-flex cc-secondary">
-                                            <input type="radio" name="namesa" class="d-none">
-                                            <span class="box d-flex align-items-center justify-content-center">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="text d-block text-capitalize">Clinic</span>
-                                        </label>
+                                    <li class="d-flex text-uppercase">
+                                        <i
+                                            class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                        <span>
+                                            <span class="">MON-SUN</span>
+                                            <span class="d-block">9:30 AM-9:00 PM</span>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="frac clinic-type">
+                        <div class="frac photos">
                             <div class="inner">
-                                <p class="dr-rhead text-capitalize">clinic type</p>
-                                <ul class="list-unstyled st-left-multilevel-menu">
+                                <p class="dr-rhead text-capitalize">photos</p>
+                                <ul class="list-unstyled d-flex flex-wrap">
                                     <li>
-                                        <a href="" class="d-block">
-                                            <span>Allopathy</span>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-one.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-one.png" alt="" class="img-fluid">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">
-                                            <span>Dentist</span>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-two.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-two.png" alt="" class="img-fluid">
                                         </a>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a href="" class="d-block">Prosthodontis</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Orthodontist</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Pediatric</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Endodontist</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Implantologist</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Maxiloficial</a>
-                                                <ul class="list-unstyled">
-                                                    <li>
-                                                        <a href="" class="d-block">Prosthodontis</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="" class="d-block">Orthodontist</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">
-                                            <span>Ayurveda</span>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-three.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-three.png" alt="" class="img-fluid">
                                         </a>
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a href="" class="d-block">Prosthodontis</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="d-block">Orthodontist</a>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Homepathy</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-four.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-four.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Unani</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-one.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-one.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Veterinariar</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-two.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-two.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Physiotherapist</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-three.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-three.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Diatecian</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-four.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-four.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-block">Yoga</a>
+                                        <a data-fancybox="gallery" href="images/gallery/img-small-three.png"
+                                            class="d-block">
+                                            <img src="images/gallery/img-small-three.png" alt="" class="img-fluid">
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -319,215 +323,225 @@
                         </div>
                     </div>
                     <div class="right-bar col-md-8 col-lg-9">
-                        <div class="frac">
-                            <div class="inner d-flex flex-wrap">
-                                <div class="RB-left">
-                                    <div class="left-inner d-flex flex-wrap">
-                                        <div class="img-sec position-relative">
-                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
-                                            <div class="best-seller position-absolute">
-                                                <p class="text-uppercase">best seller</p>
+                        <div class="frac doc-details">
+                            <div class="inner">
+                                <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                <ul class="nav nav-tabs st-dynamic-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase rounded-0 active" id="home-tab"
+                                            data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                            aria-selected="true">Info</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase rounded-0" id="profile-tab" data-toggle="tab"
+                                            href="#profile" role="tab" aria-controls="profile"
+                                            aria-selected="false">Consult Q&A</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase rounded-0" id="contact-tab" data-toggle="tab"
+                                            href="#contact" role="tab" aria-controls="contact"
+                                            aria-selected="false">Healthfeed</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase rounded-0" id="contact-tab" data-toggle="tab"
+                                            href="#contact" role="tab" aria-controls="contact"
+                                            aria-selected="false">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-uppercase rounded-0" id="contact-tab" data-toggle="tab"
+                                            href="#contact" role="tab" aria-controls="contact"
+                                            aria-selected="false">Awards</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <div class="info-sec d-flex flex-wrap">
+                                            <div class="services col-6 col-lg-4 pl-0">
+                                                <p class="head text-uppercase">services</p>
+                                                <ul class="list-unstyled st-arrow-ul">
+                                                    <li>
+                                                        <a href="">Neurosurgeon</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Spine Surgeon</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Spine And Pain Specialist</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Neuromuscular Disorders</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">CSF Rhinorr</a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="text-sec">
-                                            <p class="head">Dr. Apoorva Kumar</p>
-                                            <p class="post">
-                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
-                                                <span class="d-block">11 year Experience</span>
-                                            </p>
-                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
-                                            <div class="btns d-flex justify-content-between">
-                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
-                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
-                                                    details</a>
+                                            <div class="opening-hours col-6 col-lg-4">
+                                                <p class="head text-uppercase">services</p>
+                                                <div class="timing">
+                                                    <p class="days">MONDAY - SATURDAY</p>
+                                                    <p class="timing">
+                                                        <span>Afternoon: </span>12:00pm-13:30pm
+                                                    </p>
+                                                    <p class="timing">
+                                                        <span>Evening: </span>05:30pm-08:30pm
+                                                    </p>
+                                                </div>
                                             </div>
+                                            <div class="map col-6 col-lg-4 map">
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30703787.135696385!2d64.40575222784024!3d20.049567692328537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1570722528958!5m2!1sen!2sin"
+                                                    width="100%" height="200" frameborder="0" style="border:0;"
+                                                    allowfullscreen=""></iframe>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
-                                <div class="RB-right">
-                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
-                                        <a href="">51 review</a>
-                                        <span>4.3</span>
-                                    </p>
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
-                                        </li>
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
-                                            <span>400</span>
-                                        </li>
-                                        <li class="d-flex text-uppercase">
-                                            <i
-                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>
-                                                MON-SUN
-                                                <span class="d-block">9:30 AM-9:00 PM</span>
-                                            </span>
-                                        </li>
-                                    </ul>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">2</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel"
+                                        aria-labelledby="contact-tab">3</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel"
+                                        aria-labelledby="contact-tab">4</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel"
+                                        aria-labelledby="contact-tab">5</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="frac">
-                            <div class="inner d-flex flex-wrap">
-                                <div class="RB-left">
-                                    <div class="left-inner d-flex flex-wrap">
-                                        <div class="img-sec position-relative">
-                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
-                                            <div class="best-seller position-absolute">
-                                                <p class="text-uppercase">best seller</p>
-                                            </div>
-                                        </div>
-                                        <div class="text-sec">
-                                            <p class="head">Dr. Apoorva Kumar</p>
-                                            <p class="post">
-                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
-                                                <span class="d-block">11 year Experience</span>
-                                            </p>
-                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
-                                            <div class="btns d-flex justify-content-between">
-                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
-                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
-                                                    details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="RB-right">
-                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
-                                        <a href="">51 review</a>
-                                        <span>4.3</span>
-                                    </p>
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+
+                        <div class="frac write-review">
+                            <div class="inner">
+                                <p class="head text-uppercase"> Write A Review </p>
+                                <p class="sub-head">Rate your overall experience at Fit Food Daily</p>
+                                <div class="form">
+                                    <ul class="star-rating-ul list-unstyled d-flex flex-wrap">
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="star-rating" class="d-none">
+                                                <span class="d-block">
+                                                    <img src="images/icons/icon-star-gray.png" alt=""
+                                                        class="img-fluid gray">
+                                                    <img src="images/icons/icon-star-coloured.png" alt=""
+                                                        class="img-fluid colured">
+                                                </span>
+                                            </label>
                                         </li>
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
-                                            <span>400</span>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="star-rating" class="d-none">
+                                                <span class="d-block">
+                                                    <img src="images/icons/icon-star-gray.png" alt=""
+                                                        class="img-fluid gray">
+                                                    <img src="images/icons/icon-star-coloured.png" alt=""
+                                                        class="img-fluid colured">
+                                                </span>
+                                            </label>
                                         </li>
-                                        <li class="d-flex text-uppercase">
-                                            <i
-                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>
-                                                MON-SUN
-                                                <span class="d-block">9:30 AM-9:00 PM</span>
-                                            </span>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="star-rating" class="d-none">
+                                                <span class="d-block">
+                                                    <img src="images/icons/icon-star-gray.png" alt=""
+                                                        class="img-fluid gray">
+                                                    <img src="images/icons/icon-star-coloured.png" alt=""
+                                                        class="img-fluid colured">
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="star-rating" class="d-none">
+                                                <span class="d-block">
+                                                    <img src="images/icons/icon-star-gray.png" alt=""
+                                                        class="img-fluid gray">
+                                                    <img src="images/icons/icon-star-coloured.png" alt=""
+                                                        class="img-fluid colured">
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="radio" name="star-rating" class="d-none">
+                                                <span class="d-block">
+                                                    <img src="images/icons/icon-star-gray.png" alt=""
+                                                        class="img-fluid gray">
+                                                    <img src="images/icons/icon-star-coloured.png" alt=""
+                                                        class="img-fluid colured">
+                                                </span>
+                                            </label>
                                         </li>
                                     </ul>
+                                    <div class="form-group st-form">
+                                        <textarea name="" id="" rows="3" class="form-control"
+                                            placeholder="Help others make better choice. Write a review"></textarea>
+                                    </div>
+                                    <button class="btn st-btn text-capitalize">submit review</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="frac">
-                            <div class="inner d-flex flex-wrap">
-                                <div class="RB-left">
-                                    <div class="left-inner d-flex flex-wrap">
-                                        <div class="img-sec position-relative">
-                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
-                                            <div class="best-seller position-absolute">
-                                                <p class="text-uppercase">best seller</p>
-                                            </div>
+
+                        <div class="frac users-review">
+                            <div class="inner">
+                                <p class="head text-uppercase">Patient Experience for Ms. Simrat Kathuria</p>
+                                <div class="st-reviews">
+                                    <div class="item d-flex">
+                                        <div class="name-ident rounded-circle">
+                                            <p class="text-uppercase text-center h-100 w-100">a</p>
                                         </div>
                                         <div class="text-sec">
-                                            <p class="head">Dr. Apoorva Kumar</p>
-                                            <p class="post">
-                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
-                                                <span class="d-block">11 year Experience</span>
+                                            <p class="name position-relative">
+                                                <span>Ramanjot singh (Verified)</span>
+                                                <span class="position-absolute">3 years ago </span>
                                             </p>
-                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
-                                            <div class="btns d-flex justify-content-between">
-                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
-                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
-                                                    details</a>
-                                            </div>
+                                            <p class="recomend">
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <span>I recommend the doctor</span>
+                                            </p>
+                                            <p class="review">
+                                                Diet is must for all i lose 8 kgs in one month it is the best way to
+                                                loose weight all thanks to simrat kathuria mam
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="RB-right">
-                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
-                                        <a href="">51 review</a>
-                                        <span>4.3</span>
-                                    </p>
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
-                                        </li>
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
-                                            <span>400</span>
-                                        </li>
-                                        <li class="d-flex text-uppercase">
-                                            <i
-                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>
-                                                MON-SUN
-                                                <span class="d-block">9:30 AM-9:00 PM</span>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="frac">
-                            <div class="inner d-flex flex-wrap">
-                                <div class="RB-left">
-                                    <div class="left-inner d-flex flex-wrap">
-                                        <div class="img-sec position-relative">
-                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
-                                            <div class="best-seller position-absolute">
-                                                <p class="text-uppercase">best seller</p>
-                                            </div>
+                                    <div class="item d-flex">
+                                        <div class="name-ident rounded-circle" style="background: peachpuff; color: #333">
+                                            <p class="text-uppercase text-center h-100 w-100">R</p>
                                         </div>
                                         <div class="text-sec">
-                                            <p class="head">Dr. Apoorva Kumar</p>
-                                            <p class="post">
-                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
-                                                <span class="d-block">11 year Experience</span>
+                                            <p class="name position-relative">
+                                                <span>Ramanjot singh (Verified)</span>
+                                                <span class="position-absolute">3 years ago </span>
                                             </p>
-                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
-                                            <div class="btns d-flex justify-content-between">
-                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
-                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
-                                                    details</a>
-                                            </div>
+                                            <p class="recomend">
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <span>I recommend the doctor</span>
+                                            </p>
+                                            <p class="review">
+                                                Diet is must for all i lose 8 kgs in one month it is the best way to
+                                                loose weight all thanks to simrat kathuria mam
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="RB-right">
-                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
-                                        <a href="">51 review</a>
-                                        <span>4.3</span>
-                                    </p>
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
-                                        </li>
-                                        <li class="d-flex">
-                                            <i
-                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
-                                            <span>400</span>
-                                        </li>
-                                        <li class="d-flex text-uppercase">
-                                            <i
-                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
-                                            <span>
-                                                MON-SUN
-                                                <span class="d-block">9:30 AM-9:00 PM</span>
-                                            </span>
-                                        </li>
-                                    </ul>
+                                    <div class="item d-flex">
+                                        <div class="name-ident rounded-circle" style="background: plum; color: #333">
+                                            <p class="text-uppercase text-center h-100 w-100">j</p>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="name position-relative">
+                                                <span>Ramanjot singh (Verified)</span>
+                                                <span class="position-absolute">3 years ago </span>
+                                            </p>
+                                            <p class="recomend">
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <span>I recommend the doctor</span>
+                                            </p>
+                                            <p class="review">
+                                                Diet is must for all i lose 8 kgs in one month it is the best way to
+                                                loose weight all thanks to simrat kathuria mam
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -649,6 +663,8 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- OWL CAROUSEL -->
     <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- FANCYBOX -->
+    <script src="assets/fancybox/js/jquery.fancybox.min.js"></script>
     <!-- SCRIPT CUSOMT -->
     <script src="js/app.js"></script>
 </body>
