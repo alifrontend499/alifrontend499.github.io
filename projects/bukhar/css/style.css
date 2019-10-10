@@ -576,4 +576,8 @@ footer .bottom-part p a { color: #ec5913; }
 .docs-result .right-bar .frac .RB-right > ul > li > i { height: 22px; width: 22px; background-color: #969694; color: #fff; border-radius: 100%; font-size: 10px; }
 .docs-result .right-bar .frac .RB-right > ul > li > span { font-size: 14px; padding-left: 10px; width: calc(100% - 22px); color: #2d2d2d; }
 
+.st-details-banner .img-sec img { width: 100%; }
+.st-details-banner .doc-details .DD-left-sec .name { font-size: 22px; margin-bottom: 10px; color: #019faa; }
+.st-details-banner .doc-details .DD-left-sec .post { font-size: 16px; color: #777; margin-bottom: 10px; }
+
 /*# sourceMappingURL=style.css.map */

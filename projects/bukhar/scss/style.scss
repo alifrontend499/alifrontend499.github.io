@@ -1740,6 +1740,7 @@ footer {
         .frac {
             &:not(:last-child) {
                 margin-bottom: 20px;
+
                 @include min-width(992px) {
                     margin-bottom: 40px;
                 }
@@ -1753,10 +1754,12 @@ footer {
                     padding: 20px;
                 }
             }
+
             .RB-left,
             .RB-right {
                 width: 100%;
-            }            
+            }
+
             @include min-width(992px) {
                 .RB-left {
                     width: 70%;
@@ -1767,6 +1770,7 @@ footer {
                     padding-left: 15px;
                 }
             }
+
             @include min-width(1200px) {
 
                 .RB-right {
@@ -1883,4 +1887,32 @@ footer {
         }
     }
 
+}
+
+// INNER DETAILS PAGE
+// st-details-banner
+#st-details-banner {}
+
+.st-details-banner {
+    .img-sec {
+        img {
+            width: 100%;
+        }
+    }
+
+    .doc-details {
+        .DD-left-sec {
+            .name {
+                font-size: 22px;
+                margin-bottom: 10px;
+                color: $secondary-color;
+            }
+
+            .post {
+                font-size: 16px;
+                color: #777;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }

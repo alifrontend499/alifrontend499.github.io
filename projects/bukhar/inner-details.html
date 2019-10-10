@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bukhar</title>
+
+    <!-- MATERIALIZE ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header row align-items-md-center position-relative">
+                <div class="logo col-md-3">
+                    <a href="index.html" class="d-table">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="search col-md-6">
+                    <div class="form-group d-flex flex-wrap align-items-center mb-0">
+                        <div class="head-location-selector">
+                            <select name="" id="" class="form-control custom-sel">
+                                <option value="">Lucknow</option>
+                                <option value="">Delhi</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Channai</option>
+                            </select>
+                        </div>
+                        <div class="head-search position-relative st-form mb-0">
+                            <input type="text" class="form-control def_height"
+                                placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
+                            <i class="material-icons position-absolute">search</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-login col-md-3">
+                    <div class="inner d-table ml-auto position-relative">
+                        <a href="" class="text-uppercase d-flex align-items-center" onclick="return false;">
+                            <i class="material-icons">lock</i>
+                            <span>login</span>
+                        </a>
+                        <div class="head-dropdown-menu position-absolute">
+                            <ul class="list-unstyled">
+                                <li class="text-capitalize">
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li class="text-capitalize">
+                                    <a href="login.html">Doctor Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SITE WRAPPER -->
+    <div id="wrapper">
+        <!-- APPOINTMENT-SELECT-TYPE -->
+        <section id="appointment-select-type">
+            <div class="container">
+                <div class="appointment-select-type">
+                    <div class="links d-flex flex-wrap justify-content-center justify-content-md-between">
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="BOOK APPOINTMENT">
+                            <img src="images/icons/icon-slider-doctors.png" alt="" class="img-fluid">
+                            <span>doctors</span>
+                        </a>
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="ORDER MEDICINE NEAR BY PHARMACY">
+                            <img src="images/icons/icon-slider-pharmacy.png" alt="" class="img-fluid">
+                            <span>pharmacy</span>
+                        </a>
+                        <a href="" class="d-inline-flex align-items-center text-uppercase link-with-img"
+                            title="ONLINE LAB TEST FROM BEST PATHALOGIST">
+                            <img src="images/icons/icon-slider-labtest.png" alt="" class="img-fluid">
+                            <span>labtest</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ST-DETAILS-BANNER -->
+        <section id="st-details-banner" class="ST_def-mar-T">
+            <div class="container">
+                <div class="st-details-banner position-relative">
+                    <div class="img-sec">
+                        <img src="images/inner-details-banner.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="doc-details d-flex flex-wrap">
+                        <div class="DD-left-sec">
+                            <p class="name">Dr. Apoorva Kumar</p>
+                            <p class="post">MBBS, MS (General Surgeon), MCh (Neuro Surgeon)</p>
+                        </div>
+                        <div class="DD-right-sec">
+                            <div class="d-flex">
+                                <p>11 year Experience</p>
+                                <a class="btn st-btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="captions">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCS-RESULT -->
+        <section id="docs-result" class="ST_def-mar-TB">
+            <div class="container">
+                <div class="docs-result row">
+                    <div class="top-bar col-md-12">
+                        <p class="head">Doctor In Lucknow</p>
+                        <div class="results d-flex flex-wrap">
+                            <p>Showing <span>831</span> results for Doctor Lucknow</p>
+                            <a href="" class="ml-2">Show Doctors Near Me</a>
+                        </div>
+                    </div>
+                    <div class="d-md-none mobile-filter-btn mb-3 px-3">
+                        <button class="btn st-btn d-flex align-items-center text-capitalize">
+                            <i class="fa-filter fas mr-1" style="font-size: 11px;"></i>
+                            <span>Filter list</span>
+                        </button>
+                    </div>
+                    <div class="left-bar col-md-4 col-lg-3 d-none d-md-block">
+                        <div class="frac bukhar">
+                            <div class="inner">
+                                <img src="images/logo.png" alt="" class="img-fluid">
+                                <ul class="list-unstyled checkboxes-list">
+                                    <li>
+                                        <label class="custom-checkbox d-flex">
+                                            <input type="radio" name="namesa" checked class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">doctor</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox d-flex">
+                                            <input type="radio" name="namesa" class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">pharmacy</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox d-flex">
+                                            <input type="radio" name="namesa" class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">diagnostic</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="frac hospital-types">
+                            <div class="inner">
+                                <p class="dr-rhead text-capitalize">hopital types</p>
+                                <ul class="list-unstyled checkboxes-list">
+                                    <li>
+                                        <label class="custom-checkbox d-flex cc-secondary">
+                                            <input type="radio" name="namesa" checked class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">Govt. Hospital</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox d-flex cc-secondary">
+                                            <input type="radio" name="namesa" class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">Private Hospital</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="custom-checkbox d-flex cc-secondary">
+                                            <input type="radio" name="namesa" class="d-none">
+                                            <span class="box d-flex align-items-center justify-content-center">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text d-block text-capitalize">Clinic</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="frac clinic-type">
+                            <div class="inner">
+                                <p class="dr-rhead text-capitalize">clinic type</p>
+                                <ul class="list-unstyled st-left-multilevel-menu">
+                                    <li>
+                                        <a href="" class="d-block">
+                                            <span>Allopathy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">
+                                            <span>Dentist</span>
+                                        </a>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="" class="d-block">Prosthodontis</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Orthodontist</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Pediatric</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Endodontist</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Implantologist</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Maxiloficial</a>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="" class="d-block">Prosthodontis</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="d-block">Orthodontist</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">
+                                            <span>Ayurveda</span>
+                                        </a>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="" class="d-block">Prosthodontis</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-block">Orthodontist</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Homepathy</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Unani</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Veterinariar</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Physiotherapist</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Diatecian</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Yoga</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-ambulance.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    Ambulance
+                                </div>
+                            </a>
+                        </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-trauma-center.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    Trauma Center
+                                </div>
+                            </a>
+                        </div>
+                        <div class="frac other-service">
+                            <a href="" class="inner d-flex align-items-center">
+                                <div class="icon">
+                                    <img src="images/icons/icon-ventilator.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="text text-uppercase">
+                                    OCU/ Ventilator
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-bar col-md-8 col-lg-9">
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frac">
+                            <div class="inner d-flex flex-wrap">
+                                <div class="RB-left">
+                                    <div class="left-inner d-flex flex-wrap">
+                                        <div class="img-sec position-relative">
+                                            <img src="images/inner-left-img-temp.jpg" alt="" class="img-fluid">
+                                            <div class="best-seller position-absolute">
+                                                <p class="text-uppercase">best seller</p>
+                                            </div>
+                                        </div>
+                                        <div class="text-sec">
+                                            <p class="head">Dr. Apoorva Kumar</p>
+                                            <p class="post">
+                                                MBBS, MS (General Surgeon), MCh (Neuro Surgeon)
+                                                <span class="d-block">11 year Experience</span>
+                                            </p>
+                                            <p class="depr-name">AKSHITA MULTISPECIALITY CLINIC</p>
+                                            <div class="btns d-flex justify-content-between">
+                                                <a href="" class="btn st-btn text-capitalize">book appointment</a>
+                                                <a href="" class="btn st-btn btn-st-secondary text-capitalize">view
+                                                    details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="RB-right">
+                                    <p class="reviews d-flex justify-content-lg-end align-items-center">
+                                        <a href="">51 review</a>
+                                        <span>4.3</span>
+                                    </p>
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-map-marker-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>ED-56, Sector-Q Chauraha, Near Punjab National Bank, Lucknow</span>
+                                        </li>
+                                        <li class="d-flex">
+                                            <i
+                                                class="fas fa-rupee-sign d-flex align-items-center justify-content-center"></i>
+                                            <span>400</span>
+                                        </li>
+                                        <li class="d-flex text-uppercase">
+                                            <i
+                                                class="fas fa-calendar-alt d-flex align-items-center justify-content-center"></i>
+                                            <span>
+                                                MON-SUN
+                                                <span class="d-block">9:30 AM-9:00 PM</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="">
+            <div id="top-part">
+                <div class="container">
+                    <div class="top-part row">
+                        <div class="TP-lt col-md-8 col-lg-9">
+                            <div class="inner">
+                                <ul class="links d-flex flex-wrap  list-unstyled">
+                                    <li>
+                                        <a href="" class="d-block">Lab reports</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Bookmarks</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Medical Records</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Reminders</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">My Order</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Payment</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Online Doctor Appointment</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Health Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Help & Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-block">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="TP-rt col-md-4 col-lg-3">
+                            <div class="inner">
+                                <p class="head text-uppercase text-md-right">Follow Us</p>
+                                <ul class="socail-links list-unstyled d-flex flex-wrap justify-content-md-end">
+                                    <li class="facebook">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-part">
+                <div class="container">
+                    <div class="bottom-part">
+                        <p>
+                            Bukhaar is India's largest fitness discovery and booking platform. With Bukhaar, you can
+                            discover & experience various fitness forms like Gyms, Yoga, Zumba, Functional Training,
+                            Marathon training, Dance, MMA & kickboxing, Healthy Tiffins and many more by taking
+                            unlimited
+                            trials. You can also purchase fitness memberships with lowest price guarantee & best offers
+                            with
+                            online payments & EMI . Bukhaar enables fitness journeys at over 12,000+ fitness centers
+                            with
+                            15+ fitness forms across
+                            <a href="">Mumbai</a>, <a href="">Delhi</a>,
+                            <a href="">Gurgaon</a>, <a href="">Noida</a>, <a href="">Bangalore</a>,
+                            <a href="">Pune</a>,
+                            <a href="">Ahmedabad</a>,
+                            <a href="">Hyderabad</a>,
+                            <a href="">Jaipur</a>,
+                            <a href="">Chandigarh and Faridabad</a>.
+                            All features of Bukhaar can be accessed via website and
+                            application on Android & iOS devices. Call on 0XX-XXXX-XXXX to speak to us today!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- SCRIPT CUSOMT -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
