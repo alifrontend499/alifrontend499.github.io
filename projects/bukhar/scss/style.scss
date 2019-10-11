@@ -2417,20 +2417,24 @@ footer {
 // login-info-form
 #login-info-form {}
 
-.login-info-form {    
+.login-info-form {
     @media screen and (min-width: 768px) {
         width: 70%;
-        margin: 0 auto;    
+        margin: 0 auto;
+
         .st-form {
             margin-bottom: 30px;
         }
+
         .st-form.lt {
             padding-right: 25px;
         }
+
         .st-form.rt {
             padding-left: 25px;
-        }        
+        }
     }
+
     @media screen and (min-width: 992px) {
         .submit-btn {
             .st-btn {
@@ -2438,6 +2442,49 @@ footer {
                 padding: 13px 42px;
                 font-size: 16px;
             }
+        }
+    }
+}
+
+// 404-page
+#page-404 {
+    background-color: #f8f8f8;
+}
+
+.page-404 {
+    .img-sec {
+        margin-bottom: 15px;
+
+        @include min-width(992px) {
+            margin-bottom: 20px;
+        }
+
+        img {
+            @include min-width(768px) {
+                width: 300px;
+            }
+            @include min-width(992px) {
+                width: 400px;
+            }
+        }
+    }
+
+    .text-sec {
+        .head {
+            font-size: 32px;
+            font-weight: 600;
+            color: #f8422e;
+            margin-bottom: 15px;
+
+            @include min-width(992px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .desc {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
         }
     }
 }

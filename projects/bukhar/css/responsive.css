@@ -139,7 +139,7 @@
         padding: 12px 10px;
         font-size: 15px;
     }
-    
+
 
 
 
@@ -317,8 +317,20 @@
     }
 
     .st-account-links ul>li>a {
-        padding: 7px 11px;
-        font-size: 13px;
+        padding: 9px 8px;
+        font-size: 14px;
+    }
+
+    /* 404-page */
+    .page-404 .img-sec img {
+        max-width: 300px;
+    }
+    .page-404 .text-sec .head {
+        font-size: 25px;
+    }
+
+    .page-404 .text-sec .desc {
+        font-size: 14px;
     }
 }
 

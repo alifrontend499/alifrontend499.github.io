@@ -232,8 +232,8 @@ ul.st-left-multilevel-menu ul > li > a:active { background-color: #d04e11; }
 .star-rating-ul > li label > span img { width: 21px; }
 .star-rating-ul > li label > span img.gray { display: block; }
 .star-rating-ul > li label > span img.colured { display: none; }
-.star-rating-ul > li.active > label > span img.gray, .star-rating-ul > li > label:hover > span img.gray { display: none; }
-.star-rating-ul > li.active > label > span img.colured, .star-rating-ul > li > label:hover > span img.colured { display: block; }
+.star-rating-ul > li.active > label > span img.gray { display: none; }
+.star-rating-ul > li.active > label > span img.colured { display: block; }
 
 .st-def-table { overflow: auto; }
 .st-def-table table { width: 100%; }
@@ -704,5 +704,15 @@ footer .bottom-part p a { color: #ec5913; }
   .login-info-form .st-form.lt { padding-right: 25px; }
   .login-info-form .st-form.rt { padding-left: 25px; } }
 @media screen and (min-width: 992px) { .login-info-form .submit-btn .st-btn { font-weight: 600; padding: 13px 42px; font-size: 16px; } }
+
+#page-404 { background-color: #f8f8f8; }
+
+.page-404 .img-sec { margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .page-404 .img-sec { margin-bottom: 20px; } }
+@media screen and (min-width: 768px) { .page-404 .img-sec img { width: 300px; } }
+@media screen and (min-width: 992px) { .page-404 .img-sec img { width: 400px; } }
+.page-404 .text-sec .head { font-size: 32px; font-weight: 600; color: #f8422e; margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .page-404 .text-sec .head { margin-bottom: 20px; } }
+.page-404 .text-sec .desc { color: #333; font-size: 15px; font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

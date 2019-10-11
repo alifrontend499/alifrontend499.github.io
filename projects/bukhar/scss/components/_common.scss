@@ -1195,9 +1195,10 @@ ul.st-left-multilevel-menu {
 
         }
 
-        &.active>label>span,
+        // &.active>label>span,
         // &>label>input:checked+span
-        &>label:hover>span {
+        // &>label:hover>span {
+        &.active>label>span {
             img {
                 &.gray {
                     display: none;
@@ -1213,8 +1214,10 @@ ul.st-left-multilevel-menu {
 
 .st-def-table {
     overflow: auto;
+
     table {
         width: 100%;
+
         thead {
             tr {
                 th {
@@ -1226,14 +1229,16 @@ ul.st-left-multilevel-menu {
                 }
             }
         }
-    
+
         tbody {
             background-color: #fff;
+
             tr {
                 td {
                     padding: 13px 15px 23px;
                     font-size: 16px;
                 }
+
                 &:not(:last-child) {
                     border-bottom: 1px solid #dcdcdc;
                 }
@@ -1256,12 +1261,14 @@ ul.st-left-multilevel-menu {
         .text-sec {
             width: calc(100% - 50px);
             padding-left: 15px;
+
             p {
                 font-size: 15px;
                 color: #333;
             }
         }
     }
+
     .price {
         font-weight: 600;
         color: #333;
@@ -1269,6 +1276,6 @@ ul.st-left-multilevel-menu {
 }
 
 // my-acocount-cont
-#my-acocount-cont{
+#my-acocount-cont {
     background-color: #f8f8f8;
 }
