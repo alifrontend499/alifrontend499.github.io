@@ -260,9 +260,10 @@ header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
 .header .head-login .head-dropdown-menu::before { content: '\f0de'; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 3px; line-height: 29px; font-size: 21px; right: 15px; color: #c3c3c3; }
 .header .head-login > .inner:hover .head-dropdown-menu { display: block; }
 
+.home_slider .item { background-repeat: no-repeat; background-size: cover; }
 .home_slider .item .img-sec img { width: 100%; }
-.home_slider .item .caption { width: 100%; z-index: 1; }
-@media screen and (min-width: 768px) { .home_slider .item .caption { top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } }
+.home_slider .item .caption { width: 100%; z-index: 1; padding: 30px 0; }
+@media screen and (min-width: 992px) { .home_slider .item .caption { padding: 80px 0; } }
 .home_slider .item .caption .head { font-size: 32px; font-weight: 600; margin-bottom: 20px; }
 @media screen and (min-width: 992px) { .home_slider .item .caption .head { font-size: 42px; margin-bottom: 30px; } }
 .home_slider .item .caption .selects select { font-size: 17px; }
@@ -310,22 +311,21 @@ header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
 
 #home-lab-test { background: #f4f4f4; }
 
-.home-lab-test { margin-left: -10px; margin-right: -10px; margin-top: 20px; }
-@media screen and (min-width: 768px) { .home-lab-test { margin-top: 30px; } }
+.home-lab-test { margin-top: 20px; margin-bottom: 20px; }
+@media screen and (min-width: 768px) { .home-lab-test { margin-top: 30px; margin-bottom: 30px; } }
 @media screen and (min-width: 1200px) { .home-lab-test { margin-top: 50px; } }
-.home-lab-test > .item { padding: 0 10px 20px; }
-.home-lab-test > .item > .inner { background: #fff; border: 1px solid #dedede; padding: 60px 20px 28px; transition: 0.3s; -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); }
-.home-lab-test > .item > .inner:hover { border-color: #ec5913; }
-.home-lab-test > .item > .inner .off-sec { top: 11px; left: 0; padding: 7px 26px 7px 10px; font-size: 15px; background: #fff url(../images/icons/icon-ribbon.png) no-repeat left top/100% 100%; font-weight: 600; color: #fff; }
-.home-lab-test > .item > .inner .head { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
-@media screen and (min-width: 768px) { .home-lab-test > .item > .inner .head { margin-bottom: 20px; } }
-.home-lab-test > .item > .inner .add-info { font-size: 17px; margin-bottom: 15px; }
-.home-lab-test > .item > .inner .add-info span { font-weight: 600; }
-.home-lab-test > .item > .inner .points li { font-size: 16px; margin-bottom: 7px; }
-.home-lab-test > .item > .inner .st-btn { margin: 15px 0; font-size: 14px; padding: 5px 15px 6px; }
-.home-lab-test > .item > .inner .price { font-size: 20px; font-weight: 800; color: #019faa; }
-.home-lab-test > .item > .inner .price span { text-decoration: line-through; margin-right: 15px; color: #9c9c9c; font-size: 18px; }
-@media screen and (min-width: 992px) { .home-lab-test > .item { padding-bottom: 0; } }
+.home-lab-test .item { padding: 10px 0; }
+.home-lab-test .item > .inner { background: #fff; border: 1px solid #dedede; padding: 60px 20px 28px; transition: 0.3s; -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1); }
+.home-lab-test .item > .inner:hover { border-color: #ec5913; }
+.home-lab-test .item > .inner .off-sec { top: 11px; left: 0; padding: 7px 26px 7px 10px; font-size: 15px; background: #fff url(../images/icons/icon-ribbon.png) no-repeat left top/100% 100%; font-weight: 600; color: #fff; }
+.home-lab-test .item > .inner .head { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+@media screen and (min-width: 768px) { .home-lab-test .item > .inner .head { margin-bottom: 20px; } }
+.home-lab-test .item > .inner .add-info { font-size: 17px; margin-bottom: 15px; }
+.home-lab-test .item > .inner .add-info span { font-weight: 600; }
+.home-lab-test .item > .inner .points li { font-size: 16px; margin-bottom: 7px; }
+.home-lab-test .item > .inner .st-btn { margin: 15px 0; font-size: 14px; padding: 5px 15px 6px; }
+.home-lab-test .item > .inner .price { font-size: 20px; font-weight: 800; color: #019faa; }
+.home-lab-test .item > .inner .price span { text-decoration: line-through; margin-right: 15px; color: #9c9c9c; font-size: 18px; }
 
 .articles { border-bottom: 1px solid #e6e6e6; margin-top: 20px; }
 @media screen and (min-width: 768px) { .articles { margin-top: 30px; } }

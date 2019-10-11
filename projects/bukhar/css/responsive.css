@@ -113,16 +113,16 @@
     }
 
     .home_slider .item .caption {
-        padding: 15px 0 15px;
-        border-bottom: 1px solid #d8d8d8;
+        /* padding: 15px 0 15px; */
+        /* border-bottom: 1px solid #d8d8d8; */
         /* background: rgba(0, 0, 0, 0.4); */
         position: relative !important;
-        text-align: center;
-        background: #f4f4f4;
+        /* text-align: center; */
+        /* background: #f4f4f4; */
     }
 
     .home_slider .item .caption .head {
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 15px;
         /* color: #ec5912; */
     }

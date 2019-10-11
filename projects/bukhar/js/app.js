@@ -12,7 +12,7 @@ $(function () {
         items: 4,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 200000,
+        autoplayTimeout: 2000,
         nav: true,
         navText: ['<i class="material-icons">keyboard_arrow_left</i>', ' <i class="material-icons">keyboard_arrow_right</i>'],
         responsive: {
@@ -24,6 +24,33 @@ $(function () {
             },
             768: {
                 items: 4,
+            }
+        }
+    });
+
+    // HOME-LAB-TEST-SLIDER
+    $('#home-lab-test-slider').owlCarousel({
+        items: 4,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        nav: false,     
+        margin: 10,   
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10
+            },
+            500: {
+                items: 2,
+                margin: 15
+            },
+            992: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+                margin: 20
             }
         }
     });
