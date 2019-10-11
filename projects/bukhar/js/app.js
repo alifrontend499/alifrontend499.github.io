@@ -86,7 +86,7 @@ $(function () {
     (function () {
         $('.docs-result > .mobile-filter-btn > .st-btn').click(function (ev) {
             ev.preventDefault();
-            console.log("object");
+            // console.log("object");
             $(this).parent().next().toggleClass('d-none');
         });
     })();
@@ -96,14 +96,14 @@ $(function () {
         var navCount = 0;
         var tabContentCount = 0;
         $('.st-dynamic-tabs > li').each(function () {
-            console.log(navCount);
+            // console.log(navCount);
             $('>a', this).attr('id', 'aria-tab-' + navCount);
             $('>a', this).attr('href', '#href-' + navCount);
             $('>a', this).attr('aria-controls', 'href-' + navCount);
             navCount += 1;
         });
         $('.st-dynamic-tabs + .tab-content > .tab-pane').each(function () {
-            console.log(tabContentCount);
+            // console.log(tabContentCount);
             $(this).attr('aria-labelledby', 'aria-tab-' + tabContentCount)
             $(this).attr('id', 'href-' + tabContentCount)
             tabContentCount += 1;

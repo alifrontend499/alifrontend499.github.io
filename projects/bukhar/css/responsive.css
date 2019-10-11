@@ -68,6 +68,55 @@
     .docs-result .right-bar .frac.docs-list .RB-right {
         margin-top: 15px;
     }
+
+    /* INNER DETAILS PAGE */
+    /* st-details-banner */
+    #st-details-banner .doc-details .DD-left-sec .name {
+        font-size: 19px;
+    }
+
+    #st-details-banner .doc-details .DD-left-sec .post {
+        font-size: 14px;
+    }
+
+    #st-details-banner .doc-details .DD-right-sec p {
+        font-size: 15px;
+    }
+
+    /* docs-result */
+    .docs-result .right-bar .frac.doc-details .services,
+    .docs-result .right-bar .frac.doc-details .map {
+        padding-left: 0;
+    }
+
+    .docs-result .right-bar .frac.doc-details .map {
+        padding-right: 0;
+    }
+
+    .docs-result .right-bar .frac.doc-details .opening-hours {
+        padding-right: 0;
+    }
+
+    .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .name {
+        padding-right: 65px;
+
+    }
+
+    .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .name span:first-child {
+        font-size: 16px;
+    }
+
+    .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .name span:last-child {
+        font-size: 12px;
+    }
+
+    .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .recomend {
+        font-size: 14px;
+    }
+
+    .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .review {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -84,6 +133,15 @@
         padding: 7px 18px 7px 6px;
         font-size: 11px;
     }
+
+    .st-def-table table thead tr th,
+    .st-def-table table tbody tr td {
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+    
+
+
 
     /* HOMEPAGE */
     /* header */
@@ -220,13 +278,67 @@
         width: 100%;
         left: 0;
     }
+
+    /* INNER DETAILS PAGE */
+    /* st-details-banner */
+    .st-details-banner .captions .bottom-sec {
+        padding: 10px;
+        background: #fff;
+        position: static !important;
+        margin: 10px 0;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .st-details-banner .captions .bottom-sec .btns .btns-main .st-btn {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+
+    #st-details-banner .doc-details .DD-right-sec {
+        margin-top: 10px;
+    }
+
+    #st-details-banner .doc-details .DD-right-sec a {
+        margin-left: auto;
+    }
+
+    .docs-result .right-bar .frac.doc-details .nav-tabs>li>a.active {
+        border-color: #c1c1c1;
+    }
+
+    .docs-result .right-bar .frac.doc-details .nav-tabs {
+        padding-bottom: 10px;
+    }
+
+    /* LOGIN INFO PAGE */
+    /* st-account-links */
+    .st-account-links ul>li {
+        padding: 0 3px;
+    }
+
+    .st-account-links ul>li>a {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .st-def-table table {
+        width: 700px;
+    }
+}
 
 @media (min-width: 767px) and (max-width: 991px) {
-    /* INNER PAGE */
-    /* docs-result */
+
+    /* LOGIN INFO PAGE */
+    /* st-account-links */
+    .st-account-links ul>li {
+        padding: 0 4px;
+    }
+
+    .st-account-links ul>li>a {
+        padding: 9px 12px;
+    }
 
 }
 
