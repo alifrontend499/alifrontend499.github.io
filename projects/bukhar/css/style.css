@@ -249,6 +249,8 @@ ul.st-left-multilevel-menu ul > li > a:active { background-color: #d04e11; }
 
 #my-acocount-cont { background-color: #f8f8f8; }
 
+.custom-modal .close { position: absolute; z-index: 1; top: 10px; right: 10px; outline: none !important; }
+
 body { font-family: 'Lato', sans-serif; font-weight: 400; }
 
 header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); z-index: 12; position: relative; }
@@ -273,6 +275,43 @@ header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
 .header .head-login .head-dropdown-menu > ul > li > a:active { background-color: #d04e11; }
 .header .head-login .head-dropdown-menu::before { content: '\f0de'; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; top: 3px; line-height: 29px; font-size: 21px; right: 15px; color: #c3c3c3; }
 .header .head-login > .inner:hover .head-dropdown-menu { display: block; }
+
+@media screen and (min-width: 576px) { #login-modal .modal-dialog { max-width: 450px; } }
+
+.login-modal .login-modal-main { padding: 20px; }
+@media screen and (min-width: 992px) { .login-modal .login-modal-main { padding: 30px; } }
+.login-modal .nav-tabs { border-bottom: none; padding: 0; margin-bottom: 10px; }
+@media screen and (min-width: 768px) { .login-modal .nav-tabs { margin-bottom: 15px; } }
+@media screen and (min-width: 992px) { .login-modal .nav-tabs { margin-bottom: 25px; } }
+.login-modal .nav-tabs > li { margin-bottom: 0; }
+.login-modal .nav-tabs > li > a { border: none !important; border-radius: 0; padding: 0; transition: 0.1s; font-size: 26px; color: #888; }
+.login-modal .nav-tabs > li > a.active, .login-modal .nav-tabs > li > a:hover { color: #ec5913; }
+.login-modal .nav-tabs > li:first-child > a:after { content: '/'; color: #888; margin: 0 7px; }
+.login-modal .head { font-size: 26px; margin-bottom: 10px; color: #666; }
+@media screen and (min-width: 768px) { .login-modal .head { margin-bottom: 15px; } }
+@media screen and (min-width: 992px) { .login-modal .head { margin-bottom: 25px; } }
+.login-modal .head span { color: #ec5913; }
+.login-modal .st-form input, .login-modal .st-form select, .login-modal .st-form textarea { font-size: 15px; font-weight: 500; }
+.login-modal .submit-btn { margin-top: 15px; }
+@media screen and (min-width: 992px) { .login-modal .submit-btn { margin-top: 30px; } }
+.login-modal .submit-btn .st-btn { font-weight: 600; }
+.login-modal .add-info { margin-top: 15px; }
+@media screen and (min-width: 992px) { .login-modal .add-info { margin-top: 30px; } }
+.login-modal .add-info p { font-size: 16px; color: #888; }
+.login-modal .add-info p a { color: #ec5913; text-decoration: underline; transition: 0.3s; }
+.login-modal .add-info p a:hover { color: #333; }
+.login-modal .other-options { margin-top: 20px; }
+@media screen and (min-width: 992px) { .login-modal .other-options { margin-top: 60px; } }
+.login-modal .other-options > a { font-size: 15px; color: #ec5913; transition: 0.3s; }
+.login-modal .other-options > a:hover { color: #333; }
+.login-modal .other-options > ul > li.first { color: #888; }
+.login-modal .other-options > ul > li:not(:last-child) { margin-right: 8px; }
+.login-modal .other-options > ul > li > a { height: 25px; width: 25px; border-radius: 4px; color: #fff; text-decoration: none; font-size: 11px; transition: 0.3s; }
+@media screen and (min-width: 992px) { .login-modal .other-options > ul > li > a { height: 30px; width: 30px; font-size: 11px; font-size: 17px; } }
+.login-modal .other-options > ul > li.facebook > a { background: #3b5998; }
+.login-modal .other-options > ul > li.facebook > a:hover { background: #344e86; }
+.login-modal .other-options > ul > li.google > a { background: #f14335; }
+.login-modal .other-options > ul > li.google > a:hover { background: #ef2d1d; }
 
 .home_slider .item { background-repeat: no-repeat; background-size: cover; }
 .home_slider .item .img-sec img { width: 100%; }
@@ -714,5 +753,16 @@ footer .bottom-part p a { color: #ec5913; }
 .page-404 .text-sec .head { font-size: 32px; font-weight: 600; color: #f8422e; margin-bottom: 15px; }
 @media screen and (min-width: 992px) { .page-404 .text-sec .head { margin-bottom: 20px; } }
 .page-404 .text-sec .desc { color: #333; font-size: 15px; font-weight: 600; }
+
+#payment-final-status { background-color: #f8f8f8; }
+
+.payment-final-status .img-sec { margin-bottom: 15px; }
+@media screen and (min-width: 992px) { .payment-final-status .img-sec { margin-bottom: 20px; } }
+.payment-final-status .img-sec img { width: 150px; }
+.payment-final-status .text-sec .head { font-size: 32px; font-weight: 600; color: #44ad34; margin-bottom: 10px; }
+.payment-final-status .text-sec .head.failed { color: #e85657; }
+.payment-final-status .text-sec .desc { color: #333; font-size: 15px; font-weight: 600; }
+.payment-final-status .text-sec .desc a { color: #019faa; }
+.payment-final-status .text-sec .st-btn { font-weight: 600; font-size: 13px; padding: 8px 13px 6px; margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

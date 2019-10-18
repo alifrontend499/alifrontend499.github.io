@@ -56,6 +56,14 @@ $(function () {
     });
 
     (function () {
+        // trigger login tab on login click (LOGIN MODAL)
+        $('.head-login [data-toggle="modal"]').click(function (ev) {
+            const thisModalAttr = $(this).attr('data-target');
+            $(thisModalAttr).find('.login-modal .nav-tabs #login-tab').trigger('click');
+        });
+    })();
+
+    (function () {
         // OPEN TABS
         $('[data-open-tab]').click(function (ev) {
             ev.preventDefault();
