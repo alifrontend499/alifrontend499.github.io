@@ -136,4 +136,28 @@ $(function () {
         });
     })();
 
+    // DYNAMIC-SELECT
+    (function () {
+        $('.dynamic-select > .input-main > input').focus(function () {
+            // console.log("object");
+            // toggle icon
+            $(this).next().find('.material-icons').text('arrow_drop_up');
+            $(this).closest('.dynamic-select').find('>.options').slideDown(50);
+        });
+        $('.dynamic-select > .input-main > input').blur(function () {
+            const $this = $(this);
+            setTimeout(() => {
+                console.log("object");
+                // toggle icon
+                $this.next().find('.material-icons').text('arrow_drop_down');
+                $this.closest('.dynamic-select').find('>.options').slideUp(50);
+            }, 300);
+        });
+
+        $('.dynamic-select .label').click(function () {
+            const thisText = $('.text', this).text();
+            $(this).closest('.dynamic-select').find('> .input-main > input').val(thisText);
+        });
+    })();
+
 });

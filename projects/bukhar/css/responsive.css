@@ -117,6 +117,18 @@
     .docs-result .right-bar .frac.users-review .st-reviews .item .text-sec .review {
         font-size: 15px;
     }
+
+    .docs-result .right-bar .frac.doc-more-details .text-sec {
+        margin-top: 10px;
+    }
+    .docs-result .right-bar .frac.doc-more-details .text-sec .name {
+        font-size: 19px;
+    }
+    .docs-result .right-bar .frac.doc-more-details .text-sec .post {
+        font-size: 14px;
+    }
+    
+
 }
 
 @media (max-width: 767px) {

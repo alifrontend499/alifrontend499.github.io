@@ -389,6 +389,13 @@ header {
             }
 
             .selects {
+                @include min-width(768px) {
+                    margin-left: auto;
+                    width: 70%;
+                }
+                @include min-width(992px) {
+                    width: 75%;
+                }
                 select {
                     font-size: 17px;
                     // font-weight: 500;
@@ -1942,6 +1949,11 @@ footer {
                     }
                 }
 
+                .head {
+                    font-size: 20px;
+                    margin-bottom: 17px;
+                }
+
                 ul {
                     >li {
                         &:not(:last-child) {
@@ -2230,6 +2242,107 @@ footer {
                         font-size: 16px;
                         color: #515151;
                         margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .frac.doc-more-details {
+            >.inner {
+                padding: 15px;
+                border: 1px solid #c1c1c1;
+                background-color: #fff;
+
+                @include min-width(992px) {
+                    padding: 30px;
+                }
+            }
+
+            .img-sec {
+                width: 100%;
+
+                @include min-width(576px) {
+                    width: 100px;
+                }
+
+                @include min-width(992px) {
+                    width: 160px;
+                }
+            }
+
+            .text-sec {
+                width: 100%;
+
+                @include min-width(576px) {
+                    width: calc(100% - 100px);
+                    padding-left: 15px;
+                }
+
+                @include min-width(992px) {
+                    width: calc(100% - 160px);
+                    padding-left: 30px;
+                }
+
+                .name {
+                    font-size: 23px;
+                    margin-bottom: 5px;
+                    color: $secondary-color;
+                }
+
+                .post {
+                    font-size: 16px;
+                    color: #777;
+                }
+
+                .star-rating-show {
+                    margin: 10px 0;
+
+                    @include min-width(992px) {
+                        margin: 15px 0;
+                    }
+                }
+
+                .links {
+                    .st-btn {
+                        padding: 6px 15px 7px;
+                    }
+                }
+
+                .sm-gallery {
+                    margin-top: 10px;
+
+                    @include min-width(992px) {
+                        margin-top: 15px;
+                    }
+
+                    .head {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        color: #333;
+                    }
+
+                    >ul {
+                        >li {
+                            padding: 0 4px 8px;
+
+                            >a {
+                                img {
+                                    width: 100%;
+                                }
+
+                                @include transition(.1s);
+
+                                &:hover {
+                                    -webkit-filter: brightness(80%);
+                                    filter: brightness(80%);
+                                }
+
+                                &:active {
+                                    -webkit-filter: brightness(60%);
+                                    filter: brightness(60%);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -2712,7 +2825,7 @@ footer {
             color: #44ad34;
             margin-bottom: 10px;
 
-            &.failed {                
+            &.failed {
                 color: #e85657;
             }
         }
