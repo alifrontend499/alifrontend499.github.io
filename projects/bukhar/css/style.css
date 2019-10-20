@@ -261,7 +261,8 @@ ul.st-left-multilevel-menu ul > li > a:active { background-color: #d04e11; }
 .dynamic-select > .input-main > input:focus { background: #f1f1f1; border-color: #dcdcdc; }
 .dynamic-select > .input-main .icon { top: 50%; -webkit-transform: translatey(-50%); transform: translatey(-50%); right: 12px; font-size: 17px; color: #616161; line-height: 0; }
 .dynamic-select > .input-main .icon i { font-size: 25px; }
-.dynamic-select .options { display: none; background: #fff; border: 1px solid #dcdcdc; border-radius: 4px; max-height: 150px; overflow: auto; z-index: 1; top: 100%; left: 0; width: 100%; padding: 5px; font-size: 17px; }
+.dynamic-select .options { display: none; background: #fff; border: 1px solid #dcdcdc; border-radius: 4px; overflow: auto; z-index: 1; top: 100%; left: 0; width: 100%; padding: 5px; font-size: 17px; max-height: 120px; }
+@media screen and (min-width: 992px) { .dynamic-select .options { max-height: 150px; } }
 .dynamic-select .options .frac:not(:last-child) { border-bottom: 1px solid #cdcdcd; margin-bottom: 10px; padding-bottom: 5px; }
 .dynamic-select .options .frac .sm-head { padding: 0 10px; font-size: 13px; font-weight: 600; color: #eb530a; margin-bottom: 5px; margin-left: -5px; margin-right: -5px; }
 .dynamic-select .options .frac > ul > li { cursor: pointer; }

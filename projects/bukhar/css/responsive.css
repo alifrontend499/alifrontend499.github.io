@@ -189,6 +189,7 @@
         position: relative !important;
         /* text-align: center; */
         /* background: #f4f4f4; */
+        padding: 40px 0;
     }
 
     .home_slider .item .caption:after {
