@@ -83,106 +83,113 @@
                     <i class="material-icons">cancel</i>
                 </button>
                 <div class="modal-body login-modal p-0">
-                    <div class="inner login-modal-main">
-                        <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link text-capitalize active" id="login-tab" data-toggle="tab"
-                                    href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-capitalize" id="sign-up-tab" data-toggle="tab" href="#sign-up"
-                                    role="tab" aria-controls="sign-up" aria-selected="false">Sign up</a>
-                            </li>
-                            <li class="nav-item d-none">
-                                <a class="nav-link text-capitalize" id="forgot-password-tab" data-toggle="tab"
-                                    href="#forgot-password" role="tab" aria-controls="forgot-password"
-                                    aria-selected="false">forgot password</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="login" role="tabpanel"
-                                aria-labelledby="login-tab">
-                                <!-- <p class="head"><span>Login</span> / Sign Up</p> -->
-                                <div class="login-form">
-                                    <div class="form-group st-form input-underline">
-                                        <input type="text" class="form-control"
-                                            placeholder="Mobile Number/ Email Address">
+                    <div class="login-modal-main d-flex">
+                        <div class="col-lg-6 lt px-0 d-none d-lg-block">
+                            <div class="inner h-100"></div>
+                        </div>
+                        <div class="col-lg-6 rt px-0">
+                            <div class="inner">
+                                <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize active" id="login-tab" data-toggle="tab"
+                                            href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize" id="sign-up-tab" data-toggle="tab" href="#sign-up"
+                                            role="tab" aria-controls="sign-up" aria-selected="false">Sign up</a>
+                                    </li>
+                                    <li class="nav-item d-none">
+                                        <a class="nav-link text-capitalize" id="forgot-password-tab" data-toggle="tab"
+                                            href="#forgot-password" role="tab" aria-controls="forgot-password"
+                                            aria-selected="false">forgot password</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="login" role="tabpanel"
+                                        aria-labelledby="login-tab">
+                                        <!-- <p class="head"><span>Login</span> / Sign Up</p> -->
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Mobile Number/ Email Address">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="submit-btn">
+                                                <button class="btn st-btn btn-block rounded-0 text-uppercase">Login</button>
+                                            </div>
+                                            <div class="add-info">
+                                                <p>
+                                                    New to Bukhaar?
+                                                    <a href="" data-open-tab='sign-up-tab'>Sign up</a>
+                                                </p>
+                                            </div>
+                                            <div class="other-options d-flex align-items-center">
+                                                <a href="" data-open-tab='forgot-password-tab'>Forgot Password ?</a>
+                                                <ul class="list-unstyled d-flex align-items-center ml-auto">
+                                                    <li class="first">
+                                                        Login with
+                                                    </li>
+                                                    <li class="facebook">
+                                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="google">
+                                                        <a href="" class="d-flex align-items-center justify-content-center">
+                                                            <i class="fab fa-google-plus-g"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group st-form input-underline">
-                                        <input type="password" class="form-control" placeholder="Password">
+                                    <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Mobile Number/ Email Address">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="password" class="form-control" placeholder="Confirm Password">
+                                            </div>
+                                            <div class="submit-btn">
+                                                <button class="btn st-btn btn-block rounded-0 text-uppercase">Sign up</button>
+                                            </div>
+                                            <div class="add-info">
+                                                <p>
+                                                    Already on Bukhaar?
+                                                    <a href="" data-open-tab='login-tab'>Login</a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="submit-btn">
-                                        <button class="btn st-btn btn-block rounded-0 text-uppercase">Login</button>
-                                    </div>
-                                    <div class="add-info">
-                                        <p>
-                                            New to Bukhaar?
-                                            <a href="" data-open-tab='sign-up-tab'>Sign up</a>
-                                        </p>
-                                    </div>
-                                    <div class="other-options d-flex align-items-center">
-                                        <a href="" data-open-tab='forgot-password-tab'>Forgot Password ?</a>
-                                        <ul class="list-unstyled d-flex align-items-center ml-auto">
-                                            <li class="first">
-                                                Login with
-                                            </li>
-                                            <li class="facebook">
-                                                <a href="" class="d-flex align-items-center justify-content-center">
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </a>
-                                            </li>
-                                            <li class="google">
-                                                <a href="" class="d-flex align-items-center justify-content-center">
-                                                    <i class="fab fa-google-plus-g"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
-                                <div class="login-form">
-                                    <div class="form-group st-form input-underline">
-                                        <input type="text" class="form-control" placeholder="Full Name">
-                                    </div>
-                                    <div class="form-group st-form input-underline">
-                                        <input type="text" class="form-control"
-                                            placeholder="Mobile Number/ Email Address">
-                                    </div>
-                                    <div class="form-group st-form input-underline">
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-group st-form input-underline">
-                                        <input type="password" class="form-control" placeholder="Confirm Password">
-                                    </div>
-                                    <div class="submit-btn">
-                                        <button class="btn st-btn btn-block rounded-0 text-uppercase">Sign up</button>
-                                    </div>
-                                    <div class="add-info">
-                                        <p>
-                                            Already on Bukhaar?
-                                            <a href="" data-open-tab='login-tab'>Login</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="forgot-password" role="tabpanel"
-                                aria-labelledby="forgot-password-tab">
-                                <div class="login-form">
-                                    <div class="form-group st-form input-underline">
-                                        <input type="text" class="form-control"
-                                            placeholder="Mobile Number/ Email Address">
-                                    </div>
-                                    <div class="submit-btn">
-                                        <button class="btn st-btn btn-block rounded-0 text-uppercase">retrieve
-                                            password</button>
-                                    </div>
-                                    <div class="add-info">
-                                        <p>
-                                            Already on Bukhaar?
-                                            <a href="" data-open-tab='login-tab'>Login</a>
-                                        </p>
+                                    <div class="tab-pane fade" id="forgot-password" role="tabpanel"
+                                        aria-labelledby="forgot-password-tab">
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Mobile Number/ Email Address">
+                                            </div>
+                                            <div class="submit-btn">
+                                                <button class="btn st-btn btn-block rounded-0 text-uppercase">retrieve
+                                                    password</button>
+                                            </div>
+                                            <div class="add-info">
+                                                <p>
+                                                    Already on Bukhaar?
+                                                    <a href="" data-open-tab='login-tab'>Login</a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -224,33 +231,56 @@
                                                             <div class="frac">
                                                                 <p class="sm-head text-capitalize">popular</p>
                                                                 <ul class="list-unstyled">
-                                                                    <!-- <li>
-                                                                        <div
-                                                                            class="label text-capitalize with-img d-flex">
-                                                                            <span class="img-sec">
-                                                                                <img src="images/speciality-slider/icon-heart.png"
-                                                                                    alt="" class="img-fluid">
-                                                                            </span>
-                                                                            <span class="text">Andheri east</span>
-                                                                        </div>
-                                                                    </li> -->
                                                                     <li>
-                                                                        <div class="label text-capitalize" title="Lucknow">
+                                                                        <div class="label text-capitalize"
+                                                                            title="Lucknow">
                                                                             <span class="text">Lucknow</span>
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div class="label text-capitalize" title="Delhi">
+                                                                        <div class="label text-capitalize"
+                                                                            title="Delhi">
                                                                             <span class="text">Delhi</span>
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div class="label text-capitalize" title="Mumbai">
+                                                                        <div class="label text-capitalize"
+                                                                            title="Mumbai">
                                                                             <span class="text">Mumbai</span>
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div class="label text-capitalize" title="Channai">
+                                                                        <div class="label text-capitalize"
+                                                                            title="Channai">
+                                                                            <span class="text">Channai</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="frac">
+                                                                <p class="sm-head text-capitalize">All</p>
+                                                                <ul class="list-unstyled">
+                                                                    <li>
+                                                                        <div class="label text-capitalize"
+                                                                            title="Lucknow">
+                                                                            <span class="text">Lucknow</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="label text-capitalize"
+                                                                            title="Delhi">
+                                                                            <span class="text">Delhi</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="label text-capitalize"
+                                                                            title="Mumbai">
+                                                                            <span class="text">Mumbai</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="label text-capitalize"
+                                                                            title="Channai">
                                                                             <span class="text">Channai</span>
                                                                         </div>
                                                                     </li>
@@ -273,8 +303,8 @@
                                                                 <p class="sm-head text-capitalize">popular</p>
                                                                 <ul class="list-unstyled">
                                                                     <li>
-                                                                        <div
-                                                                            class="label text-capitalize with-img d-flex" title="Heart/Cardiologist">
+                                                                        <div class="label text-capitalize with-img d-flex"
+                                                                            title="Heart/Cardiologist">
                                                                             <span class="img-sec">
                                                                                 <img src="images/speciality-slider/icon-heart.png"
                                                                                     alt="" class="img-fluid">
@@ -283,18 +313,19 @@
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div
-                                                                            class="label text-capitalize with-img d-flex" title="Child Specialist/Paediatrician">
+                                                                        <div class="label text-capitalize with-img d-flex"
+                                                                            title="Child Specialist/Paediatrician">
                                                                             <span class="img-sec">
                                                                                 <img src="images/speciality-slider/icon-child.png"
                                                                                     alt="" class="img-fluid">
                                                                             </span>
-                                                                            <span class="text">Child Specialist/Paediatrician</span>
+                                                                            <span class="text">Child
+                                                                                Specialist/Paediatrician</span>
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div
-                                                                            class="label text-capitalize with-img d-flex" title="Gastro/Digestive">
+                                                                        <div class="label text-capitalize with-img d-flex"
+                                                                            title="Gastro/Digestive">
                                                                             <span class="img-sec">
                                                                                 <img src="images/speciality-slider/icon-digest.png"
                                                                                     alt="" class="img-fluid">
@@ -303,8 +334,8 @@
                                                                         </div>
                                                                     </li>
                                                                     <li>
-                                                                        <div
-                                                                            class="label text-capitalize with-img d-flex" title="TB & Chest Lungs">
+                                                                        <div class="label text-capitalize with-img d-flex"
+                                                                            title="TB & Chest Lungs">
                                                                             <span class="img-sec">
                                                                                 <img src="images/speciality-slider/icon-lungs.png"
                                                                                     alt="" class="img-fluid">

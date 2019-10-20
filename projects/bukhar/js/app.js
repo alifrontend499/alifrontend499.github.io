@@ -138,12 +138,14 @@ $(function () {
 
     // DYNAMIC-SELECT
     (function () {
+        // on focus showing options
         $('.dynamic-select > .input-main > input').focus(function () {
             // console.log("object");
             // toggle icon
             $(this).next().find('.material-icons').text('arrow_drop_up');
             $(this).closest('.dynamic-select').find('>.options').slideDown(50);
         });
+        // on blur hiding options
         $('.dynamic-select > .input-main > input').blur(function () {
             const $this = $(this);
             setTimeout(() => {
@@ -153,10 +155,17 @@ $(function () {
                 $this.closest('.dynamic-select').find('>.options').slideUp(50);
             }, 300);
         });
-
+        // onclick select label
         $('.dynamic-select .label').click(function () {
             const thisText = $('.text', this).text();
             $(this).closest('.dynamic-select').find('> .input-main > input').val(thisText);
+        });
+        // options search
+        $(".dynamic-select > .input-main > input").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $(this).parent().next().find('ul>li').filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
         });
     })();
 

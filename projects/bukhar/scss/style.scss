@@ -162,8 +162,12 @@ header {
 // login modal
 #login-modal {
     .modal-dialog {
-        @include min_width(576px) {
-            max-width: 450px;
+        @include min_width(768px) {
+            max-width: 400px;
+        }
+
+        @include min_width(992px) {
+            max-width: 800px;
         }
     }
 }
@@ -171,11 +175,25 @@ header {
 .login-modal {
 
     .login-modal-main {
-        // padding: 40px 40px;
-        padding: 20px;
 
-        @include min-width(992px) {
-            padding: 30px;
+        >.lt {
+            @include min-width(992px) {
+                min-height: 450px;
+            }
+
+            .inner {
+                background: transparent url('../images/login-page/left-img.jpg') no-repeat center / 100% 100%;
+            }
+        }
+
+        >.rt {
+            .inner {
+                padding: 20px;
+
+                @include min-width(992px) {
+                    padding: 30px;
+                }
+            }
         }
     }
 
@@ -288,7 +306,7 @@ header {
         margin-top: 20px;
 
         @include min-width(992px) {
-            margin-top: 60px;
+            margin-top: 70px;
         }
 
         >a {
@@ -393,9 +411,11 @@ header {
                     margin-left: auto;
                     width: 70%;
                 }
+
                 @include min-width(992px) {
                     width: 75%;
                 }
+
                 select {
                     font-size: 17px;
                     // font-weight: 500;
