@@ -123,6 +123,22 @@ html,
                     color: #777;
                 }
             }
+
+            .add-info {
+                margin-top: 25px;
+                font-size: 15px;
+                font-weight: 400;
+
+                >a {
+                    margin: 0 5px;
+                    color: #333;
+
+                    &:not(:last-child):after {
+                        content: "|";
+                        margin: 0 0 0px 10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1161,6 +1177,7 @@ body.hasBMB {
                 border-color: #56bf05;
                 color: #222;
             }
+
             &.wrong {
                 border-color: #e40304;
                 color: #222;

@@ -672,6 +672,9 @@ html, .login-body, .app-login, .app_L-main { height: 100%; }
 .app_L-main .AL_login-box .form input:focus + label { color: #444; }
 .app_L-main .AL_login-box .form input:focus ~ .icon i { color: #444; }
 .app_L-main .AL_login-box .form .forgot-pass a { font: 15px "nexa-regular"; color: #777; }
+.app_L-main .AL_login-box .form .add-info { margin-top: 25px; font-size: 15px; font-weight: 400; }
+.app_L-main .AL_login-box .form .add-info > a { margin: 0 5px; color: #333; }
+.app_L-main .AL_login-box .form .add-info > a:not(:last-child):after { content: "|"; margin: 0 0 0px 10px; }
 
 .app-head-top { padding: 20px 0; transition: 0.4s; }
 .app-head-top .AHT_inner > .LT, .app-head-top .AHT_inner .RT { width: 40px; }
@@ -759,8 +762,6 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .backBar .BBB_inner .text { color: #fff; font: 25px "nexa-x-bold"; text-shadow: 0px 1px 1px #a2a2a2; }
 .backBar .BBB_inner img { line-height: 0; margin-bottom: -6px; width: 200px; margin-top: 8px; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; }
-
-.app-notifications { margin-bottom: 20px; }
 
 .AN_main:not(:last-child) { margin-bottom: 10px; }
 .AN_main .ANM_inner { background-color: #fff; -webkit-box-shadow: 0px 0px 3px 0px #d6d6d6; box-shadow: 0px 0px 3px 0px #d6d6d6; padding: 15px 0 12px 35px; color: #777; }

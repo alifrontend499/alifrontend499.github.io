@@ -474,6 +474,7 @@
 .ST_breadcrumbs {
     >ul {
         flex-wrap: wrap;
+
         >li {
             font-size: 14px;
             font-weight: 600;
@@ -546,6 +547,97 @@
             &:active {
                 background-color: transparentize($color: $primary-color, $amount: .7);
             }
+        }
+    }
+}
+
+// st-check
+.app-checkbox {
+    cursor: pointer;
+
+    .box {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #dadada;
+        border-radius: 4px;
+        background: #fff;
+
+        i {
+            font-size: 16px;
+            color: #909090;
+        }
+    }
+
+    .text {
+        width: calc(100% - 18px);
+        padding-left: 7px;
+        padding-top: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #444;
+    }
+
+    >input {
+        &:checked+.box {
+            background-color: $primary-color;
+            border-color: $primary-color;
+
+            i {
+                color: #fff;
+            }
+        }
+
+        &:checked~.text {
+            color: #000;
+        }
+    }
+}
+
+// st-radio
+.app-radio {
+    cursor: pointer;
+
+    .round {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #dadada;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: calc(100% - 4px);
+            width: calc(100% - 4px);
+            background: transparent;
+            border-radius: 50%;
+        }
+    }
+
+    .text {
+        width: calc(100% - 18px);
+        padding-left: 7px;
+        padding-top: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #444;
+    }
+
+    >input {
+        &:checked+.round {
+            &:after {
+                background-color: $primary-color;
+            }
+
+            border-color: $primary-color;
+
+        }
+
+        &:checked~.text {
+            color: #000;
         }
     }
 }
