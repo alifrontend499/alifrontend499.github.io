@@ -84,6 +84,16 @@ $(function () {
             $('.head_main .menu').removeClass('active');
             $('.menu .mob-menu-overlay').fadeOut(100);
         });
+
+        // if ($(window).width() > 767) {
+        $('.st-head-menu > li').each(function () {
+            if ($(this).find('>.mega-menu, >ul').length) {
+                $(this).addClass('has-menu')
+            }
+        });
+        // }
+
+
     })();
 
     // OPEN MOBILE FILTER PRODUCTS

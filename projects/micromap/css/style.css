@@ -72,26 +72,35 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .custom-modal .close { position: absolute; z-index: 1; top: 10px; right: 10px; }
 
-.st-head-menu li { font-size: 17px; font-weight: 600; text-transform: capitalize; position: relative; }
-.st-head-menu li a { color: #747474; text-decoration: none !important; outline: none !important; transition: 0.3s; }
-.st-head-menu li a:hover { color: #1a317c; }
-.st-head-menu li:hover > a { color: #1a317c; }
-.st-head-menu li.active { color: #1a317c; }
-.st-head-menu > li ul { display: none; }
-@media screen and (min-width: 768px) { .st-head-menu > li ul { width: 100%; position: absolute; left: 100%; top: 0; } }
-.st-head-menu > li ul li a { display: block; padding: 9px 14px 10px; background: #1a317c; color: #fff; font-size: 15px; }
-.st-head-menu > li ul li a:hover { background-color: #fff; color: #000; }
-@media screen and (max-width: 767px) { .st-head-menu > li ul li a { padding: 9px 20px 10px 30px; } }
-.st-head-menu > li ul li:hover > a { background-color: #fff; color: #000; }
-@media screen and (min-width: 768px) { .st-head-menu > li > ul { width: 150px; top: 100%; left: initial; z-index: 12; }
-  .st-head-menu > li > ul:before { content: "\f0d8"; font-family: "Font Awesome 5 Free"; display: inline-block; position: relative; top: 9px; left: 6px; font-size: 22px; line-height: 15px; } }
-.st-head-menu li:hover > ul { display: block; }
-.st-head-menu ul li { text-transform: capitalize; font-weight: 600; }
-.st-head-menu ul li a { color: #747474; }
+.st-head-menu { position: relative; }
+.st-head-menu > li { font-size: 17px; font-weight: 600; text-transform: capitalize; }
+.st-head-menu > li > a { color: #747474; text-decoration: none !important; outline: none !important; transition: 0.3s; }
+.st-head-menu > li > a:hover { color: #1a317c; }
+.st-head-menu > li.has-menu.active > a { position: relative; }
+.st-head-menu > li.has-menu.active > a::after { content: '\f0de'; font-family: "Font Awesome 5 Free"; position: absolute; bottom: -20px; left: 50%; }
+.st-head-menu > li:hover > a { color: #1a317c; }
+.st-head-menu > li.active > a { color: #1a317c; }
 @media screen and (min-width: 768px) { .st-head-menu > li { padding: 0 10px; } }
 @media screen and (min-width: 992px) { .st-head-menu > li { padding: 0 20px; } }
 @media screen and (max-width: 767px) { .st-head-menu > li { display: block; width: 100%; }
   .st-head-menu > li > a { width: 100%; padding: 10px 20px; color: #fff !important; display: block; } }
+.st-head-menu .mega-menu { position: absolute; top: 100%; left: 50%; width: calc(100% + 80px); padding-top: 11px; z-index: 12; transform: translateX(-50%); }
+.st-head-menu .mega-menu > .inner { background-color: #fff; position: relative; border: 1px solid #d6d6d6; }
+.st-head-menu .mega-menu > .inner::after { content: ''; top: 0; height: 5px; width: 5px; }
+.st-head-menu .mega-menu .main-level > .frac { width: 20%; }
+.st-head-menu .mega-menu .main-level > .frac:nth-child(even) { background-color: #f9f9f9; }
+.st-head-menu .mega-menu .main-level > .frac:not(:last-child) { border-right: 1px solid #d6d6d6; }
+.st-head-menu .mega-menu .main-level > .frac > .frac-inner { padding: 0px 10px 0; }
+.st-head-menu .mega-menu .main-level .frac-inner .head { font-size: 15px; color: #1a317c; margin: 10px 0; }
+.st-head-menu .mega-menu .main-level .mm-menu { margin: 0 -10px; }
+.st-head-menu .mega-menu .main-level .mm-menu > li { font-size: 13px; color: #333; }
+.st-head-menu .mega-menu .main-level .mm-menu > li:not(:last-child) { margin-bottom: 5px; }
+.st-head-menu .mega-menu .main-level .mm-menu > li > a { color: #333; position: relative; text-decoration: none; display: block; width: 100%; }
+.st-head-menu .mega-menu .main-level .mm-menu > li > a > span { width: calc(100% - 30px); padding-right: 5px; padding-top: 7px; padding-bottom: 7px; padding-left: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.st-head-menu .mega-menu .main-level .mm-menu > li > a > span:hover { text-decoration: underline; }
+.st-head-menu .mega-menu .main-level .mm-menu > li > a > i { height: 33px; width: 33px; transition: 0.3s; border-left: 1px solid #d6d6d6; }
+.st-head-menu .mega-menu .main-level .mm-menu > li > a > i:hover { background-color: #1a317c; color: #fff; }
+.st-head-menu .mega-menu .main-level .mm-menu > li:hover > a, .st-head-menu .mega-menu .main-level .mm-menu > li.active > a { background: #efefef; }
 
 .ST_def-mar-T, .ST_def-mar-TB { margin-top: 20px; }
 @media screen and (min-width: 992px) { .ST_def-mar-T, .ST_def-mar-TB { margin-top: 70px; } }

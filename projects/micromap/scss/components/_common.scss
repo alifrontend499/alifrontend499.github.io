@@ -268,13 +268,14 @@
 
 
 .st-head-menu {
-    li {
+    position: relative;
+
+    >li {
         font-size: 17px;
         font-weight: 600;
         text-transform: capitalize;
-        position: relative;
 
-        a {
+        >a {
             color: #747474;
             text-decoration: none !important;
             outline: none !important;
@@ -285,6 +286,20 @@
             }
         }
 
+        &.has-menu.active {
+            >a {
+                position: relative;
+
+                &::after {
+                    content: '\f0de';
+                    font-family: "Font Awesome 5 Free";
+                    position: absolute;
+                    bottom: -20px;
+                    left: 50%;
+                }
+            }
+        }
+
         &:hover {
             >a {
                 color: $primary-color;
@@ -292,91 +307,10 @@
         }
 
         &.active {
-            color: $primary-color;
-        }
-    }
-
-    >li {
-        ul {
-            display: none;
-
-            @include min_width(768px) {
-                width: 100%;
-                position: absolute;
-                left: 100%;
-                top: 0;
-            }
-
-            li {
-                a {
-                    display: block;
-                    padding: 9px 14px 10px;
-                    background: #1a317c;
-                    color: #fff;
-                    font-size: 15px;
-
-                    &:hover {
-                        // background-color: $secodary-color;
-                        background-color: #fff;
-                        color: #000;
-                    }
-
-                    @include max_width(767px) {
-                        padding: 9px 20px 10px 30px;
-                    }
-                }
-
-                &:hover {
-                    >a {
-                        // background-color: $secodary-color;
-                        background-color: #fff;
-                        color: #000;
-                    }
-                }
+            >a {
+                color: $primary-color;
             }
         }
-
-        @include min_width(768px) {
-            >ul {
-                width: 150px;
-                top: 100%;
-                left: initial;
-                z-index: 12;
-
-                &:before {
-                    content: "\f0d8";
-                    font-family: "Font Awesome 5 Free";
-                    display: inline-block;
-                    position: relative;
-                    top: 9px;
-                    left: 6px;
-                    font-size: 22px;
-                    line-height: 15px;
-                }
-            }
-        }
-    }
-
-    li {
-        &:hover {
-            >ul {
-                display: block;
-            }
-        }
-    }
-
-    ul {
-        li {
-            text-transform: capitalize;
-            font-weight: 600;
-
-            a {
-                color: #747474;
-            }
-        }
-    }
-
-    >li {
 
         @include min_width(768px) {
             padding: 0 10px;
@@ -400,6 +334,114 @@
 
     }
 
+    .mega-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: calc(100% + 80px);
+        padding-top: 11px;
+        z-index: 12;
+        transform: translateX(-50%);
+
+        >.inner {
+            background-color: #fff;
+            position: relative;
+            border: 1px solid #d6d6d6;
+
+            &::after {
+                content: '';
+                top: 0;
+                height: 5px;
+                width: 5px;
+            }
+        }
+
+        .main-level {
+            >.frac {
+                width: 20%;
+
+                &:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                &:not(:last-child) {
+                    border-right: 1px solid #d6d6d6;
+                }
+
+                >.frac-inner {
+                    padding: 0px 10px 0;
+                }
+            }
+
+            .frac-inner {
+                .head {
+                    font-size: 15px;
+                    color: $primary-color;
+                    margin: 10px 0;
+                }
+            }
+
+            .mm-menu {
+                margin: 0 -10px;
+
+                >li {
+                    font-size: 13px;
+                    color: #333;
+
+                    &:not(:last-child) {
+                        margin-bottom: 5px;
+                    }
+
+                    >a {
+                        color: #333;
+                        position: relative;
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+
+                        >span {
+                            width: calc(100% - 30px);
+                            padding-right: 5px;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            padding-left: 10px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        >i {
+                            height: 33px;
+                            width: 33px;
+                            // position: absolute;
+                            // right: 0;
+                            // top: 0;
+                            @include transition;
+                            // background-color: #d6d6d6;
+                            border-left: 1px solid #d6d6d6;
+
+                            &:hover {
+                                background-color: $primary-color;
+                                color: #fff;
+                            }
+                        }
+
+                    }
+
+                    &:hover,
+                    &.active {
+                        >a {
+                            background: #efefef;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .ST_def-mar-T,
