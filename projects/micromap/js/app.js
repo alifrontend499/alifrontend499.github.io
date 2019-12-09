@@ -93,6 +93,72 @@ $(function () {
         });
         // }
 
+        // mega menu
+        // open mega menu
+        $('.st-head-menu > li.has-menu > a').click(function (ev) {
+            ev.preventDefault()
+            $(this).parent().toggleClass('active')
+            $(this).next('.mega-menu').toggle(200)
+        })
+        // closing mega menu on clicking outside
+        $(document).mouseup(function (e) {
+            var container = $(".mega-menu");
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+                $('.st-head-menu > li').removeClass('active')
+            }
+        });
+
+        // showing html
+        var html = '<ul class="mm-menu list-unstyled">'
+        html += '<li data-prodid="1">'
+        html += '<a href="" class="text-capitalize d-flex" title="VHF/UHF">'
+        html += '<span>VHF/UHF</span>'
+        html += '<i class="fas fa-chevron-right d-flex align-items-center justify-content-center"></i>'
+        html += '</a>'
+        html += '</li>'
+        html += '<li data-prodid="2">'
+        html += '<a href="" class="text-capitalize d-flex" title="HF">'
+        html += '<span>HF</span>'
+        html += '<i class="fas fa-chevron-right d-flex align-items-center justify-content-center"></i>'
+        html += '</a>'
+        html += '</li>'
+        html += '</ul>'
+        // open mega menu
+        $(document).on('click', '.mega-menu .mm-menu > li > a > i', function (ev) {
+            ev.preventDefault()
+            var $this = $(this)
+            var prodId = $this.closest('li').attr('data-prodid')
+
+            console.log(prodId)
+            // showing loading
+            $this.closest('.mega-menu').find('.loading').removeClass('d-none').addClass('d-flex')
+            setTimeout(function () {
+                // hiding loading
+                $this.closest('.mega-menu').find('.loading').addClass('d-none').removeClass('d-flex')
+
+                // for main category
+                if ($this.closest('.frac').hasClass('main-cat')) {
+                    $this.closest('.frac.main-cat').next().find('.frac-inner').html(html)
+                }
+
+                // for main category type
+                if ($this.closest('.frac').hasClass('cat-type')) {
+                    $this.closest('.frac.cat-type').next().find('.frac-inner').html(html)
+                }
+
+                // for main brands
+                if ($this.closest('.frac').hasClass('brands')) {
+                    $this.closest('.frac.brands').next().find('.frac-inner').html(html)
+                }
+
+                // for main brands sub category
+                if ($this.closest('.frac').hasClass('brands-sub-cat')) {
+                    $this.closest('.frac.brands-sub-cat').next().find('.frac-inner').html(html)
+                }
+            }, 1000)
+        })
 
     })();
 

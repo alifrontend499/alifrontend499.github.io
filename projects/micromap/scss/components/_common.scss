@@ -337,12 +337,18 @@
     .mega-menu {
         position: absolute;
         top: 100%;
-        left: 50%;
-        width: calc(100% + 80px);
         padding-top: 11px;
         z-index: 12;
-        transform: translateX(-50%);
-
+        display: none;
+        
+        @include min_width(768px) {
+            right: 0;
+            width: calc(100% + 80px);
+        }
+        @include min_width(1200px) {            
+            left: 50%;
+            transform: translateX(-50%);
+        }
         >.inner {
             background-color: #fff;
             position: relative;
@@ -440,6 +446,14 @@
                     }
                 }
             }
+        }
+
+        .loading {
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.1);
+            color: #1a317c;
+            font-size: 40px;
         }
     }
 }
