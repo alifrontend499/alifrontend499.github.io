@@ -97,13 +97,13 @@ $(function () {
         // open mega menu
         $('.st-head-menu > li.has-menu > a').click(function (ev) {
             ev.preventDefault()
+            ev.stopPropagation()
             $(this).parent().toggleClass('active')
-            $(this).next('.mega-menu').toggle(200)
+            $(this).next('.mega-menu').slideToggle(200)
         })
         // closing mega menu on clicking outside
         $(document).mouseup(function (e) {
             var container = $(".mega-menu");
-            // if the target of the click isn't the container nor a descendant of the container
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 container.hide();
                 $('.st-head-menu > li').removeClass('active')

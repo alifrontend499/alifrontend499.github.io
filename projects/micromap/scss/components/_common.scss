@@ -275,6 +275,10 @@
         font-weight: 600;
         text-transform: capitalize;
 
+        @include max_width(767px) {
+            position: relative;
+        }
+
         >a {
             color: #747474;
             text-decoration: none !important;
@@ -295,7 +299,12 @@
                     font-family: "Font Awesome 5 Free";
                     position: absolute;
                     bottom: -20px;
-                    left: 50%;
+                    left: 45px;
+
+                    @include min_width(768px) {
+                        left: 50%;
+                        transform: translatex(-50%);
+                    }
                 }
             }
         }
@@ -335,20 +344,32 @@
     }
 
     .mega-menu {
-        position: absolute;
         top: 100%;
         padding-top: 11px;
         z-index: 12;
         display: none;
-        
+
+        @include max_width(768px) {
+            width: calc(100% - 10px);
+            margin-left: 5px;
+
+            >.inner {
+                max-height: 250px;
+                overflow: auto;
+            }
+        }
+
         @include min_width(768px) {
             right: 0;
             width: calc(100% + 80px);
+            position: absolute;
         }
-        @include min_width(1200px) {            
+
+        @include min_width(1200px) {
             left: 50%;
             transform: translateX(-50%);
         }
+
         >.inner {
             background-color: #fff;
             position: relative;
@@ -364,7 +385,11 @@
 
         .main-level {
             >.frac {
-                width: 20%;
+                width: 100%;
+
+                @include min_width(768px) {
+                    width: 20%;
+                }
 
                 &:nth-child(even) {
                     background-color: #f9f9f9;

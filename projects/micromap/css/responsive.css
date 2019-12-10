@@ -26,6 +26,7 @@
         background: #1a317c;
         z-index: 123;
         transition: .3s;
+        overflow: auto;
     }
 
     .head_main>.menu:not(.active)>.inner {
