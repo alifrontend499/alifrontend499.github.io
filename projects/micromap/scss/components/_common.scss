@@ -635,7 +635,9 @@
 // st-check
 .app-checkbox {
     cursor: pointer;
-
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
     .box {
         height: 18px;
         width: 18px;
@@ -672,6 +674,7 @@
             color: #000;
         }
     }
+
 }
 
 // st-radio
