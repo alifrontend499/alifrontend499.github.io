@@ -2641,12 +2641,17 @@ address p {
     }
 }
 
-.we-are-team .WAT-LT {}
+.we-are-team .WAT-LT {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
 
 .we-are-team .WAT-LT .inner {
     background-color: #1b489d;
     color: #fff;
-    height: 100%;
+    /* height: 100%; */
+    width: 100%;
     text-align: center;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
