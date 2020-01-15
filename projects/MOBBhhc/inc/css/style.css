@@ -1690,9 +1690,8 @@ address p {
 
     margin-top: 15px 0 15px 0px;
     color: #fff;
-    font-size:
-
-        height:350px;
+    /* font-size: */
+    height: 350px;
 
 }
 
@@ -2605,17 +2604,25 @@ address p {
 
 
 /* new sec css */
-#we-are-team { width: 100%;}
+#we-are-team {
+    width: 100%;
+}
+#we-are-team * {
+    transition: none;
+}
 
 .we-are-team.d-flex {
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
     .we-are-team.d-flex {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
         flex-direction: column-reverse !important;
     }
@@ -2641,12 +2648,15 @@ address p {
     color: #fff;
     height: 100%;
     text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
+    -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
     padding: 15px;
@@ -2676,6 +2686,7 @@ address p {
     text-transform: capitalize;
     margin-top: 10px;
 }
+
 @media (max-width: 767px) {
 
     .we-are-team .WAT-LT .sm-text {
@@ -2685,10 +2696,10 @@ address p {
 }
 
 @media (max-width: 991px) {
-	
-	.we-are-team .WAT-LT .sm-text {
-    font-size: 12px;
-}
+
+    .we-are-team .WAT-LT .sm-text {
+        font-size: 12px;
+    }
 
     .we-are-team .WAT-LT .head {
         font-size: 21px;
@@ -2722,14 +2733,22 @@ address p {
     color: #1b489d;
     font-size: 17px;
     border-radius: 50%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+
+    -webkit-box-align: center !important;
     -ms-flex-align: center !important;
     align-items: center !important;
+
+    -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
+
     transition: .3s;
     padding-left: 4px;
 }
@@ -2756,8 +2775,11 @@ address p {
 
 .we-are-team .item>.vid-link .icon .round-icon {
     position: absolute;
+    top: -25px;
+    left: -25px;
     height: calc(100% + 50px);
     width: calc(100% + 50px);
+    -webkit-animation: rotation 20s infinite linear;
     animation: rotation 20s infinite linear
 }
 
@@ -2769,6 +2791,20 @@ address p {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
 }
 
 @keyframes rotation {
