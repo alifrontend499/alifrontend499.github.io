@@ -94,6 +94,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .st-head-menu .mega-menu > .inner { background-color: #fff; position: relative; border: 1px solid #d6d6d6; }
 .st-head-menu .mega-menu > .inner::after { content: ''; top: 0; height: 5px; width: 5px; }
 .st-head-menu .mega-menu .main-level > .frac { width: 100%; }
+.st-head-menu .mega-menu .main-level > .frac:not(.active) { display: none; }
 @media screen and (min-width: 768px) { .st-head-menu .mega-menu .main-level > .frac { width: 20%; } }
 .st-head-menu .mega-menu .main-level > .frac:nth-child(even) { background-color: #f9f9f9; }
 .st-head-menu .mega-menu .main-level > .frac:not(:last-child) { border-right: 1px solid #d6d6d6; }

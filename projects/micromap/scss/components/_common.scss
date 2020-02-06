@@ -386,7 +386,9 @@
         .main-level {
             >.frac {
                 width: 100%;
-
+                &:not(.active) {
+                    display: none;
+                }
                 @include min_width(768px) {
                     width: 20%;
                 }

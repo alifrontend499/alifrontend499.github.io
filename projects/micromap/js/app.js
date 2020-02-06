@@ -140,22 +140,42 @@ $(function () {
 
                 // for main category
                 if ($this.closest('.frac').hasClass('main-cat')) {
-                    $this.closest('.frac.main-cat').next().find('.frac-inner').html(html)
+                    $this.closest('.frac.main-cat')
+                    .next().addClass('active')
+                    .nextAll().removeClass('active')
+
+                    $this.closest('.frac.main-cat')
+                    .next().find('.frac-inner').html(html)
                 }
 
                 // for main category type
                 if ($this.closest('.frac').hasClass('cat-type')) {
-                    $this.closest('.frac.cat-type').next().find('.frac-inner').html(html)
+                    $this.closest('.frac.cat-type')
+                    .next().addClass('active')
+                    .nextAll().removeClass('active')
+
+                    $this.closest('.frac.cat-type')
+                    .next().find('.frac-inner').html(html)
                 }
 
                 // for main brands
                 if ($this.closest('.frac').hasClass('brands')) {
-                    $this.closest('.frac.brands').next().find('.frac-inner').html(html)
+                    $this.closest('.frac.brands')
+                    .next().addClass('active')
+                    .nextAll().removeClass('active')
+
+                    $this.closest('.frac.brands')
+                    .next().find('.frac-inner').html(html)
                 }
 
                 // for main brands sub category
                 if ($this.closest('.frac').hasClass('brands-sub-cat')) {
-                    $this.closest('.frac.brands-sub-cat').next().find('.frac-inner').html(html)
+                    $this.closest('.frac.brands-sub-cat')
+                    .next().addClass('active')
+                    .nextAll().removeClass('active')
+
+                    $this.closest('.frac.brands-sub-cat')
+                    .next().find('.frac-inner').html(html)
                 }
             }, 1000)
         })
