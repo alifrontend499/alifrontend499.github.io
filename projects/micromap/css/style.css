@@ -86,6 +86,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media screen and (min-width: 992px) { .st-head-menu > li { padding: 0 20px; } }
 @media screen and (max-width: 767px) { .st-head-menu > li { display: block; width: 100%; }
   .st-head-menu > li > a { width: 100%; padding: 10px 20px; color: #fff !important; display: block; } }
+.st-head-menu > li.cart { padding-right: 0; }
+.st-head-menu > li.cart > a { color: #333; }
+.st-head-menu > li.cart > a > .cart-count { top: -13px; right: -2px; min-height: 15px; min-width: 15px; background: #fde428; border-radius: 50%; font-size: 7px; font-size: 10px; color: #000; padding: 0 2px; }
 .st-head-menu .mega-menu { top: 100%; padding-top: 11px; z-index: 12; display: none; }
 @media screen and (max-width: 768px) { .st-head-menu .mega-menu { width: calc(100% - 10px); margin-left: 5px; }
   .st-head-menu .mega-menu > .inner { max-height: 250px; overflow: auto; } }
@@ -499,5 +502,7 @@ body { font-family: 'Lato', sans-serif; font-weight: 400; }
 .checkout-page .RT .inner .calc .frac { margin-bottom: 25px; font-size: 16px; font-weight: 600; }
 .checkout-page .RT .inner .calc .frac .fl { width: calc(100% - 100px); }
 .checkout-page .RT .inner .calc .frac .fr { width: 100px; font-weight: 600; }
+
+.head-404 { font-size: 32px; font-weight: 600; color: #012a68; margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */

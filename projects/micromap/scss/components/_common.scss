@@ -341,6 +341,30 @@
             }
         }
 
+        &.cart {
+            padding-right: 0;
+
+            >a {
+                color: #333;
+
+                >.cart-count {
+                    top: -13px;
+                    right: -2px;
+                    min-height: 15px;
+                    min-width: 15px;
+                    background: $secodary-color;
+                    border-radius: 50%;
+                    font-size: 7px;
+                    font-size: 10px;
+                    color: #000;
+                    padding: 0 2px;
+                }
+
+                // >.ct-sm-text {
+                //     color: $secodary-color;
+                // }
+            }
+        }
     }
 
     .mega-menu {
@@ -386,9 +410,11 @@
         .main-level {
             >.frac {
                 width: 100%;
+
                 &:not(.active) {
                     display: none;
                 }
+
                 @include min_width(768px) {
                     width: 20%;
                 }
@@ -637,9 +663,11 @@
 // st-check
 .app-checkbox {
     cursor: pointer;
+
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+
     .box {
         height: 18px;
         width: 18px;
