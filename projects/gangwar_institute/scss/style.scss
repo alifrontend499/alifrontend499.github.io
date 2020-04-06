@@ -1613,3 +1613,28 @@ body.hasBMB {
         }
     }
 }
+
+
+// POPUP STYLING FINISH TEST
+.finish-test-popup {
+
+}
+.finish-test-popup .modal-content {
+    line-height: 30px;
+    padding: 25px 15px 19px;
+    font-size: 18px;
+}
+.finish-test-popup .modal-footer {
+    height: auto;
+    padding: 0px 10px 10px;
+}
+.finish-test-popup .modal-footer .app-btn {
+    padding: 9px 5px 5px;
+    width: 85px;
+    font-size: 12px;
+}
+.finish-test-popup .modal-footer .app-btn.left{}
+.finish-test-popup .modal-footer .app-btn.right{
+    margin-left: auto;
+    background: #e40304;
+}

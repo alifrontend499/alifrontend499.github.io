@@ -42,7 +42,25 @@
                     </div>
                     <div class="RT">
                         <div class="inner d-flex justify-content-end">
-                            <a href="" class="app-btn-outline text-capitalize text-uppercase">Finish</a>
+                            <a class="app-btn-outline text-capitalize text-uppercase modal-trigger"
+                                href="#finish-test-confirm-popup">Finish</a>
+                            <!-- FINISH-TEST-CONFIRM-POPUP -->
+                            <div id="finish-test-confirm-popup" class="modal finish-test-popup">
+                                <div class="modal-content text-center">
+                                    <p>Are you sure you want to finish this test?</p>
+                                </div>
+                                <div class="modal-footer d-flex">
+                                    <a href="#!" class="modal-close waves-effect app-btn text-uppercase left">Cancel</a>
+                                    <a href="#thanks-popup" class="modal-close waves-effect app-btn text-uppercase modal-trigger right">ok</a>
+                                </div>
+                            </div>
+                            <!-- FINISH-TEST-CONFIRM-POPUP -->
+                            <div id="thanks-popup" class="modal finish-test-popup">
+                                <div class="modal-content text-center">
+                                    <p>Thanks for joining this test</p>
+                                </div>
+                            </div>
+
                             <div class="app-open-menu">
                                 <a href="#" class="d-flex align-items-center justify-content-center circle waves-effect"
                                     data-open="#test-info-sidebar">

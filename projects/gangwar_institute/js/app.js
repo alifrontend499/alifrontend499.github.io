@@ -7,6 +7,15 @@
             var instances = M.Sidenav.init(elems, {});
         });
     })();
+    // MODAL
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {
+                
+            });
+        });
+    })();
 })();
 
 // SLIDER

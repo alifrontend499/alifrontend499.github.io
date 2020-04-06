@@ -933,4 +933,12 @@ body.hasBMB { padding-bottom: calc(72px + 10px); }
 .goto-next-quiz .RT .next-btn { height: 35px; width: 35px; line-height: 0; color: #fff; position: relative; right: -8px; }
 .goto-next-quiz .RT .next-btn i { font-size: 34px; }
 
+.finish-test-popup .modal-content { line-height: 30px; padding: 25px 15px 19px; font-size: 18px; }
+
+.finish-test-popup .modal-footer { height: auto; padding: 0px 10px 10px; }
+
+.finish-test-popup .modal-footer .app-btn { padding: 9px 5px 5px; width: 85px; font-size: 12px; }
+
+.finish-test-popup .modal-footer .app-btn.right { margin-left: auto; background: #e40304; }
+
 /*# sourceMappingURL=style.css.map */
