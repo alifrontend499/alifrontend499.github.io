@@ -1,0 +1,363 @@
+// SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e2e2e2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lighten($color: $secodary-color, $amount: 10%);
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $secodary-color, $amount: 10%);
+}
+
+// COMMON CSS
+
+.clear-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 5px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 3px 4px;
+    background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    // background: $secodary-color;
+}
+
+.st-btn {
+    font-size: 14px;
+    background: #134b9a;
+    padding: 12px 20px 11px;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 800;
+    border-radius: 50px;
+    @include transition;
+    box-shadow: none !important;
+
+    &.st-sm-btn {
+        font-size: 13px;
+        padding: 6px 17px 6px;
+    }
+
+    &.st-btn-text-first {
+        background-color: transparent;
+        color: $primary-color;
+    }
+
+    &.st-btn-right-icon {
+        .icon {
+            font-size: 11px;
+            margin-left: 2px;
+        }
+    }
+
+    &:hover {
+        background: darken($color: $primary-color, $amount: 10px);
+        color: #fff;
+        box-shadow: none !important;
+
+        &.st-btn-right-icon {
+            .icon {
+                margin-left: 5px;
+                // @include transition;
+            }
+        }
+    }
+
+    &:active {
+        background: darken($color: $primary-color, $amount: 20px);
+        box-shadow: none !important;
+    }
+}
+
+.ST_main-head {
+    font-family: "styling-regular";
+    font-size: 30px;
+    color: #111;
+    margin-bottom: 15px;
+    letter-spacing: .25px;
+
+    @include min_width(768px) {
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+    @include min_width(992px) {
+        margin-bottom: 50px;
+        font-size: 38px;
+    }
+
+    &:not(.without-bottom-icon)::after {
+        content: '';
+        display: block;
+        height: 21px;
+        width: 100%;
+        background: url(../images/icons/heading-bottom-icon.png) no-repeat;
+        background-position: center;
+        background-size: 140px;
+        margin-top: 5px;
+
+        @include min_width(768px) {
+            background-size: 170px
+        }
+
+        @include min_width(992px) {
+            background-size: 220px;
+        }
+    }
+}
+
+.custom-modal {
+    .close {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+.st-head-menu {
+    position: relative;
+
+    >li {
+        font-family: "copperplate-regular", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+        @include transition(.1s);
+
+        @include max_width(767px) {
+            position: relative;
+        }
+
+        >a {
+            color: #000;
+            text-decoration: none !important;
+            outline: none !important;
+            @include transition;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+
+        &:hover {
+            >a {
+                color: $primary-color;
+            }
+        }
+
+        &.active {
+            >a {
+                color: $primary-color;
+            }
+        }
+
+        @include min_width(768px) {
+            padding: 0 10px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        @include min_width(992px) {
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        @include min_width(1200px) {
+            padding: 0 20px;
+        }
+
+        @include max_width(767px) {
+            display: block;
+            width: 100%;
+
+            >a {
+                width: 100%;
+                padding: 10px 20px;
+                color: #fff;
+                display: block;
+            }
+
+            &.active {
+                >a {
+                    color: #bbb;
+                }
+            }
+        }
+
+    }
+}
+
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: 20px;
+
+    @include min_width(768px) {
+        margin-top: 50px;
+    }
+
+    @include min_width(992px) {
+        margin-top: 70px;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: 20px;
+
+    @include min_width(768px) {
+        margin-bottom: 50px;
+    }
+
+    @include min_width(992px) {
+        margin-bottom: 70px;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: 20px;
+
+    @include min_width(768px) {
+        padding-top: 50px;
+    }
+
+    @include min_width(992px) {
+        padding-top: 70px;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: 20px;
+
+    @include min_width(768px) {
+        padding-bottom: 50px;
+    }
+
+    @include min_width(992px) {
+        padding-bottom: 70px;
+    }
+}
+
+// st-check
+.app-checkbox {
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .box {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #dadada;
+        border-radius: 4px;
+        background: #fff;
+
+        i {
+            font-size: 16px;
+            color: #909090;
+        }
+    }
+
+    .text {
+        width: calc(100% - 18px);
+        padding-left: 7px;
+        padding-top: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #444;
+    }
+
+    >input {
+        &:checked+.box {
+            background-color: $primary-color;
+            border-color: $primary-color;
+
+            i {
+                color: #fff;
+            }
+        }
+
+        &:checked~.text {
+            color: #000;
+        }
+    }
+
+}
+
+// st-radio
+.app-radio {
+    cursor: pointer;
+
+    .round {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #dadada;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: calc(100% - 4px);
+            width: calc(100% - 4px);
+            background: transparent;
+            border-radius: 50%;
+        }
+    }
+
+    .text {
+        width: calc(100% - 18px);
+        padding-left: 7px;
+        padding-top: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #444;
+    }
+
+    >input {
+        &:checked+.round {
+            &:after {
+                background-color: $primary-color;
+            }
+
+            border-color: $primary-color;
+
+        }
+
+        &:checked~.text {
+            color: #000;
+        }
+    }
+}

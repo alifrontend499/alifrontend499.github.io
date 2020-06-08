@@ -1,0 +1,155 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-about-us-detaild .nav-tabs .nav-item {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .home-about-us-detaild .tab-content .rt-content .text-sec .desc {
+        font-size: 15px;
+    }
+
+    .our-team .item .text-sec .name {
+        font-size: 18px;
+    }
+
+    .our-team .item .text-sec .post {
+        font-size: 13px;
+
+    }
+
+    .our-team .item .text-sec .details {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .stay-healthy .item .text-sec .desc {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .download-app .head {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .news-and-events .rt-sec .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    .st-btn {
+        padding: 5px 12px 7px;
+        font-size: 15px;
+    }
+
+    /* HEADER MAIN */
+    .head_main>.menu>.inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background: #1a317c;
+        z-index: 123;
+        transition: .3s;
+        overflow: auto;
+    }
+
+    .head_main>.menu:not(.active)>.inner {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .head_main>.menu .mob-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        z-index: 12;
+        display: none;
+    }
+
+    .mob-menu-btn a {
+        font-size: 25px;
+        color: #1a317c;
+        text-decoration: none;
+        z-index: 123;
+        position: relative;
+    }
+
+    .mob-menu-btn a.active {
+        color: #000;
+        position: fixed;
+        top: 5px;
+        left: 210px;
+    }
+
+    .st-head-menu {
+        margin-top: 10px;
+    }
+
+    .head_top {
+        position: relative;
+    }
+
+    /* main header */
+    header:not(.fixed) {
+        margin-top: 10px;
+    }
+
+    .head_top {
+        justify-content: center !important;
+    }
+
+    .home-about-us-detaild .tab-content .rt-content.has-img .img-sec {
+        margin-bottom: 15px;
+    }
+    .stay-healthy >.item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .download-app .item:nth-child(2) {
+        margin-top: 15px;
+    }
+    .news-and-events > .lt-sec {
+        margin-bottom: 25px;
+    }
+    #footer .footer-top .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .home-about-us .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    #footer .footer-top ul.social > li {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-page table {
+        width: 650px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+    /* HEADER */
+    .st-head-menu li {
+        font-size: 13px;
+    }
+
+    #footer .footer-top .item.fourth {
+        margin-top: 20px;
+    }
+}
