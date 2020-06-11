@@ -6,7 +6,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
-        max-width: 750px;
+        max-width: 760px;
     }
 }
 
@@ -168,7 +168,7 @@
 
     /* HEADER */
     .st-head-menu li {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #footer .footer-top .item.fourth {

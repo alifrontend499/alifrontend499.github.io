@@ -43,7 +43,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media screen and (min-width: 768px) { .ST_main-head { margin-bottom: 30px; font-size: 35px; } }
 @media screen and (min-width: 992px) { .ST_main-head { margin-bottom: 50px; font-size: 38px; } }
 .ST_main-head:not(.without-bottom-icon)::after { content: ''; display: block; height: 21px; width: 100%; background-image: url("../images/icons/heading-bottom-icon.png"); background-repeat: no-repeat; background-position: center; background-size: 140px; margin-top: 5px; }
-.ST_main-head:not(.without-bottom-icon)::after.white { background-image: url("../images/icons/heading-bottom-icon.png"); }
+.ST_main-head:not(.without-bottom-icon)::after.white { background: url("../images/icons/heading-bottom-icon-white.png"); }
 @media screen and (min-width: 768px) { .ST_main-head:not(.without-bottom-icon)::after { background-size: 170px; } }
 @media screen and (min-width: 992px) { .ST_main-head:not(.without-bottom-icon)::after { background-size: 220px; } }
 
@@ -56,7 +56,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .st-head-menu > li > a:hover { color: #134b9a; }
 .st-head-menu > li:hover > a { color: #134b9a; }
 .st-head-menu > li.active > a { color: #134b9a; }
-@media screen and (min-width: 768px) { .st-head-menu > li { padding: 0 10px; }
+@media screen and (min-width: 768px) { .st-head-menu > li { padding: 0 5px; }
   .st-head-menu > li:last-child { padding-right: 0; } }
 @media screen and (min-width: 992px) { .st-head-menu > li:last-child { padding-right: 0; } }
 @media screen and (min-width: 1200px) { .st-head-menu > li { padding: 0 20px; } }
@@ -124,10 +124,10 @@ header:not(.fixed) { margin-top: 20px; }
 @media screen and (min-width: 0px) { .head_main > .logo a img.main-logo { width: 100px; }
   .head_main > .logo a img.fixed-logo { width: 40px; } }
 @media screen and (min-width: 768px) { .head_main > .logo { margin-top: 20px; }
-  .head_main > .logo a img.main-logo { width: 180px; }
+  .head_main > .logo a img.main-logo { width: 160px; }
   .head_main > .logo a img.fixed-logo { width: 50px; } }
 @media screen and (min-width: 992px) { .head_main > .logo { margin-top: 35px; }
-  .head_main > .logo a img.main-logo { width: 300px; } }
+  .head_main > .logo a img.main-logo { width: 260px; } }
 @media screen and (min-width: 1200px) { .head_main > .logo a img.main-logo { width: 350px; } }
 
 header .head_main > .logo .fixed-logo { display: none; }
