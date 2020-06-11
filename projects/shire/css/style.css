@@ -106,7 +106,8 @@ header:not(.fixed) { margin-top: 20px; }
 .head_top .head { font-size: 15px; font-weight: 800; }
 .head_top .numbers { margin-left: 15px; }
 .head_top .numbers i { font-size: 18px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: relative; top: -2px; margin-right: 6px; }
-.head_top .numbers a { font-size: 14px; color: #333; font-weight: 600; }
+.head_top .numbers a:not(.contact-hours) { font-size: 14px; color: #333; font-weight: 600; }
+.head_top .numbers .contact-hours { padding: 3px 10px 3px; font-weight: normal; font-size: 12px; }
 
 #head_main { transition: 0.3s; }
 
@@ -124,16 +125,19 @@ header:not(.fixed) { margin-top: 20px; }
 
 header .head_main > .logo .fixed-logo { display: none; }
 header.fixed { background: #fff; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); }
-header.fixed #head_top { margin-bottom: 0; margin-top: -20px; }
+header.fixed #head_top { margin-bottom: 0; margin-top: -19px; }
+@media screen and (min-width: 768px) { header.fixed #head_top { margin-top: -26px; } }
 header.fixed .head_main { -ms-flex-align: center !important; align-items: center !important; }
 header.fixed .head_main > .logo { margin-top: 0; }
 header.fixed .head_main > .logo .main-logo { display: none; }
 header.fixed .head_main > .logo .fixed-logo { display: block; }
 
-.home_slider #home-slider { border-bottom-left-radius: 70px; overflow: hidden; }
+.home_slider #home-slider { border-bottom-left-radius: 50px; overflow: hidden; }
 @media screen and (min-width: 768px) { .home_slider #home-slider { border-bottom-left-radius: 110px; } }
 @media screen and (min-width: 992px) { .home_slider #home-slider { border-bottom-left-radius: 170px; } }
 .home_slider .item > img { width: 100%; }
+.home_slider .item .caption { left: 0; bottom: 14%; color: #fff; width: 100%; }
+.home_slider .item .caption p { font-family: "styling-regular", sans-serif; font-size: 41px; color: #fff; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
 .home_slider .owl-dots { margin-top: 0; position: absolute; bottom: 20px; width: 100%; z-index: 123; display: flex; justify-content: center; }
 .home_slider .owl-dots .owl-dot { background-color: #fff; height: 10px; width: 10px; border-radius: 50%; margin: 0 5px; outline: none !important; }
 .home_slider .owl-dots .owl-dot.active { background-color: #134b9a !important; }

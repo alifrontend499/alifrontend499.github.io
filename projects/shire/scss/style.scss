@@ -57,9 +57,17 @@ header {
         }
 
         a {
-            font-size: 14px;
-            color: #333;
-            font-weight: 600;
+            &:not(.contact-hours) {
+                font-size: 14px;
+                color: #333;
+                font-weight: 600;
+            }
+        }
+
+        .contact-hours {
+            padding: 3px 10px 3px;
+            font-weight: normal;
+            font-size: 12px;
         }
     }
 }
@@ -147,10 +155,10 @@ header {
 
         #head_top {
             margin-bottom: 0;
-            margin-top: -20px;
-
-            @include min_width(992px) {
-                // margin-top: -10px;
+            margin-top: -19px;
+            
+            @include min_width(768px) {
+                margin-top: -26px;
             }
         }
 
@@ -176,7 +184,7 @@ header {
 // HOME SLIDER
 .home_slider {
     #home-slider {
-        border-bottom-left-radius: 70px;
+        border-bottom-left-radius: 50px;
         overflow: hidden;
 
         @include min_width(768px) {
@@ -191,6 +199,20 @@ header {
     .item {
         >img {
             width: 100%;
+        }
+
+        .caption {
+            left: 0;
+            bottom: 14%;
+            color: #fff;
+            width: 100%;
+
+            p {
+                font-family: "styling-regular", sans-serif;
+                font-size: 41px;
+                color: #fff;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+            }
         }
     }
 

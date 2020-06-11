@@ -134,6 +134,12 @@
     #footer .footer-top ul.social > li {
         margin-bottom: 0;
     }
+    .home_slider .item .caption p {
+        font-size: 17px;
+    }
+    .home_slider .owl-dots {
+        bottom: 8px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -151,5 +157,8 @@
 
     #footer .footer-top .item.fourth {
         margin-top: 20px;
+    }
+    .home_slider .item .caption p {
+        font-size: 30px;
     }
 }

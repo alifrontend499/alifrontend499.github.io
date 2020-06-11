@@ -4,11 +4,12 @@ $(function () {
         items: 1,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: $('#home-slider').attr('data-autoplayTimeout') ? $('#home-slider').attr('data-autoplayTimeout') : "3000",
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
         touchDrag: false,
-        mouseDrag: false
+        mouseDrag: false,
+        loop: true
     });
     // OUR TEAM SLIDER
     $('#our-team-slider').owlCarousel({
@@ -98,9 +99,10 @@ $(function () {
             $('[href="' + currentPart + '"]').parent().addClass('active').siblings().removeClass("active")
         }
 
-        $('.st-head-menu > li > a').click(function (ev) {
+        $('.st-head-menu > li > a,.go-to-link').click(function (ev) {
             var headerHeight = $('header').innerHeight()
             var scrollPos = $(window).scrollTop();
+            $('#footer .footer-top .item.fourth > .inner > .head').removeClass('animate__headShake')
             // ev.preventDefault()
             var attr = $(this).attr('href')
             if (typeof attr !== 'undefined') {
@@ -112,7 +114,9 @@ $(function () {
                 } else {
                     $('html, body').animate({
                         scrollTop: $(attr).offset().top - (70 + 10)
-                    }, 700)
+                    }, 700, function () {
+                        $('#footer .footer-top .item.fourth > .inner > .head').addClass('animate__headShake')
+                    })
                     // $(this).parent().addClass('active').siblings().removeClass("active")
                 }
             }
@@ -165,11 +169,13 @@ $(function () {
 
     // MOBILE TABS HOME-ABOUT-US-DETAILD
     (function () {
-        $('.home-about-us-detaild .st-tabs-dy .nav-link').click(function () {
-            var headerHeight = $('header').innerHeight()
-            $('html, body').animate({
-                scrollTop: $('.tab-content').offset().top - (headerHeight + 10)
-            }, 700)
-        })
-    })()
+        if ($(window).width() < 768) {
+            $('.home-about-us-detaild .st-tabs-dy .nav-link').click(function () {
+                var headerHeight = $('header').innerHeight()
+                $('html, body').animate({
+                    scrollTop: $('.tab-content').offset().top - (headerHeight + 10)
+                }, 700)
+            })
+        }
+    })();
 });
