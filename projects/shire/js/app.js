@@ -57,6 +57,30 @@ $(function () {
         }
     });
 
+    // NEWS AND EVENTS SLIDER
+    $('#news-and-events-slider').owlCarousel({
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                margin: 10,
+                items: 2,
+            },
+            992 : {
+                margin: 15,
+                items: 3,
+            },
+            1200 : {
+                margin: 30,
+                items: 3,
+            }
+        }
+    });
+
     // HEADER FIX
     (function () {
         $(window).on("load scroll", function () {

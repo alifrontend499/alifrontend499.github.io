@@ -96,6 +96,10 @@
     margin-bottom: 15px;
     letter-spacing: .25px;
 
+    &.white {
+        color: #fff;
+    }
+
     @include min_width(768px) {
         margin-bottom: 30px;
         font-size: 35px;
@@ -111,10 +115,16 @@
         display: block;
         height: 21px;
         width: 100%;
-        background: url(../images/icons/heading-bottom-icon.png) no-repeat;
+        background-image: url("../images/icons/heading-bottom-icon.png");
+        background-repeat: no-repeat;
         background-position: center;
         background-size: 140px;
         margin-top: 5px;
+
+        &.white {
+            background-image: url("../images/icons/heading-bottom-icon.png");
+            // background: url("../images/icons/heading-bottom-icon-white.png");
+        }
 
         @include min_width(768px) {
             background-size: 170px
@@ -358,6 +368,45 @@
 
         &:checked~.text {
             color: #000;
+        }
+    }
+}
+
+.custom-modal {
+    // &.show {
+    //     display: -ms-flexbox!important;
+    //     display: flex!important;
+    // }
+
+    .close {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        outline: none !important;
+    }
+
+    .heading {
+        font-family: "styling-regular", sans-serif;
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 30px;
+        padding-right: 25px;
+        color: $primary-color;
+        letter-spacing: 1px;
+    }
+
+    .content {
+        .text {
+            font-size: 14px;
+            color: #494949;
+            font-weight: 600;
+            letter-spacing: .2px;
+            line-height: 20px;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
         }
     }
 }

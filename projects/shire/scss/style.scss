@@ -156,7 +156,7 @@ header {
         #head_top {
             margin-bottom: 0;
             margin-top: -19px;
-            
+
             @include min_width(768px) {
                 margin-top: -26px;
             }
@@ -343,8 +343,10 @@ header {
         }
 
         .nav-link {
-            border: none;
-            background-color: #c6c6c6;
+            // border: none;
+            // background-color: #c6c6c6;
+            border: 1px solid #dde2ea;
+            background-color: #e7edff;
             color: #333;
             border-radius: 0;
             padding: 15px 20px 12px;
@@ -644,13 +646,15 @@ header {
 
         .inner {
             background-color: #fff;
-            @include box-shadow(0px, 0px, 18px, 0px, rgba(0, 0, 0, .1));
+            // @include box-shadow(0px, 0px, 18px, 0px, rgba(0, 0, 0, .1));
+            border: 1px solid rgba(0, 0, 0, 0.1);
             @include transition;
             overflow: hidden;
             height: 100%;
 
             &:hover {
-                @include box-shadow(0px, 0px, 18px, 0px, rgba(0, 0, 0, .3));
+                // @include box-shadow(0px, 0px, 18px, 0px, rgba(0, 0, 0, .3));
+                border-color: rgba(0, 0, 0, 0.3);
             }
         }
 
@@ -685,6 +689,25 @@ header {
                 line-height: 20px;
             }
 
+        }
+    }
+    .owl-dots {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px !important;
+
+        .owl-dot {
+            background-color: #c3c3c3;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            outline: none !important;
+
+            &.active {
+                background-color: $primary-color !important;
+            }
         }
     }
 }
