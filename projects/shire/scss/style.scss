@@ -582,7 +582,7 @@ header {
 }
 
 #download-app {
-    background-color: #ececec;
+    // background-color: #ececec;
 }
 
 .download-app {
@@ -606,7 +606,9 @@ header {
 }
 
 // NEWS AND EVENTS
-#news-and-events {}
+#news-and-events {
+    background-color: #ececec;
+}
 
 .news-and-events {
     .lt-sec {
@@ -682,7 +684,7 @@ header {
             }
 
             .desc {
-                font-size: 16px;
+                font-size: 15px;
                 color: #4e4e4e;
                 font-weight: 400;
                 letter-spacing: .4px;
