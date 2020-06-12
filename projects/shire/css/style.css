@@ -19,10 +19,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 ::-webkit-scrollbar-track { background: #e2e2e2; }
 
 /* Handle */
-::-webkit-scrollbar-thumb { background: #fdea5b; border-radius: 15px; }
+::-webkit-scrollbar-thumb { background: #1964c8; border-radius: 15px; }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover { background: #f0d402; }
+::-webkit-scrollbar-thumb:hover { background: #0d366e; }
 
 .clear-parent::after { content: ""; display: block; clear: both; }
 
