@@ -661,7 +661,7 @@ body { background: #f6f6f6; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 html, .login-body, .app_L-main { height: 100%; }
 
-.app-login { height: 100vh; position: fixed; top: 0; left: 0; overflow: auto; }
+.app-login { height: 100%; width: 100%; position: fixed; top: 0; left: 0; overflow: auto; }
 
 .login-html { overflow: hidden; }
 
@@ -674,7 +674,7 @@ html, .login-body, .app_L-main { height: 100%; }
 .app_L-main .AL_head .AL_text span { font-size: 25px; }
 .app_L-main .AL_head .AL_logo { width: 250px; margin: 0px auto 0; }
 .app_L-main .AL_head .AL_logo img { width: 100%; }
-.app_L-main .AL_login-box { margin-bottom: 10px; margin-top: 10px; }
+.app_L-main .AL_login-box { margin-bottom: 10px; margin-top: 30px; }
 .app_L-main .AL_login-box .form { padding: 0 10px; }
 .app_L-main .AL_login-box .form .input-field { margin-bottom: 20px; }
 .app_L-main .AL_login-box .form .input-field:nth-child(2), .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 20px; }
