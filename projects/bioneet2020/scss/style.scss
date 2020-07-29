@@ -446,19 +446,18 @@ header {
 }
 
 .app-userview {
-    padding: 40px 15px;
+    padding: 30px 15px;
     position: relative;
+    background-color: $secodary-color;
 
-    &:after {
-        content: "";
-        height: 1px;
-        width: calc(100% - 50px);
-        background: #e2af4e;
-        display: block;
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        @include transformx(-50%);
+    .AU_inner {
+        padding: 5px;
+        margin: -5px;
+        border-radius: 12px;
+
+        &:active {
+            background: rgba(0, 0, 0, 0.1);
+        }
     }
 
     .img-sec {
@@ -479,15 +478,15 @@ header {
         padding-left: 12px;
 
         .name {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 600;
             color: #000;
         }
 
         .post {
-            font-size: 17px;
+            font-size: 15px;
             color: #000;
-            margin-top: 1px;
+            margin-top: 4px;
         }
 
         .links {
@@ -524,28 +523,30 @@ header {
 }
 
 .app-menu {
-    margin-top: 5px;
-    height: calc(100% - (157px + 103px + 30px));
+    margin-top: 10px;
+    height: calc(100% - (125px + 80px + 40px));
     overflow: auto;
+    padding-top: 7px;
+
 
     >li {
         >a {
-            font-size: 600 20px;
+            font-size: 15.5px;
             font-weight: 600;
             height: auto;
             line-height: normal;
-            padding: 7px 25px 10px;
+            padding: 11px 25px 10px;
             color: #000;
 
-            // >img {
-            //     width: 15px;
-            //     margin: 0;
-            // }
+            >img {
+                width: 15px;
+                margin: 0;
+            }
 
-            // >span {
-            //     margin-left: 10px;
-            //     margin-top: -2px;
-            // }
+            >span {
+                margin-left: 10px;
+                margin-top: -2px;
+            }
         }
     }
 }
@@ -557,8 +558,8 @@ header {
     &::after {
         content: "";
         height: 1px;
-        width: calc(100% - 50px);
-        background: #e2af4e;
+        width: calc(100% - 20px);
+        background: #ddd;
         display: block;
         position: absolute;
         top: 7px;
@@ -577,8 +578,8 @@ header {
         p {
             width: calc(100% - 50px);
             padding-left: 13px;
-            color: red;
-            font-size: 20px;
+            color: #333;
+            font-size: 18px;
             font-weight: 600;
         }
     }
@@ -720,9 +721,9 @@ body.hasBMB {
         }
     }
 
-    .al-ques-home {}
+    .al-ques-home-other {}
 
-    .al-ques-home-inner {
+    .al-ques-home-other-inner {
         padding: 10px 10px;
         overflow: hidden;
 
@@ -761,6 +762,45 @@ body.hasBMB {
                 font-size: 12px;
                 font-weight: 900;
                 color: #000;
+            }
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    .al-ques-home {}
+
+    .al-ques-home-inner {
+        padding: 10px 10px 10px 15px;
+        overflow: hidden;
+        background: rgb(0, 0, 0);
+        background: -moz-linear-gradient(312deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
+        background: -webkit-linear-gradient(312deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
+        background: linear-gradient(312deg, rgba(0, 0, 0, 1) 0%, rgba(66, 66, 66, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#424242", GradientType=1);
+
+        .img-sec {
+            width: 80px;
+        }
+
+        .text-sec {
+            width: calc(100% - 80px);
+            padding-right: 15px;
+
+            p.text {
+                text-transform: capitalize;
+                font-size: 21px;
+                color: #fff;
+                font-family: 'styling', sans-serif;
+                letter-spacing: .5px;
+                margin-bottom: 5px;
+            }
+
+            p.text-sm {
+                font-size: 14px;
+                color: #dcdcdc;
             }
         }
 

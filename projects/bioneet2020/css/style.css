@@ -743,26 +743,29 @@ header { background: transparent; }
 
 .sidenav > .inner { height: 100%; width: 100%; }
 
-.app-userview { padding: 40px 15px; position: relative; }
-.app-userview:after { content: ""; height: 1px; width: calc(100% - 50px); background: #e2af4e; display: block; position: absolute; bottom: 10px; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); }
+.app-userview { padding: 30px 15px; position: relative; background-color: #fcb01f; }
+.app-userview .AU_inner { padding: 5px; margin: -5px; border-radius: 12px; }
+.app-userview .AU_inner:active { background: rgba(0, 0, 0, 0.1); }
 .app-userview .img-sec { height: 65px; width: 65px; border-radius: 100%; border: 4px solid #fff; }
 .app-userview .img-sec img { border-radius: 100%; max-height: 100%; }
 .app-userview .text-sec { width: calc(100% - 65px); padding-top: 0px; padding-left: 12px; }
-.app-userview .text-sec .name { font-size: 22px; font-weight: 600; color: #000; }
-.app-userview .text-sec .post { font-size: 17px; color: #000; margin-top: 1px; }
+.app-userview .text-sec .name { font-size: 21px; font-weight: 600; color: #000; }
+.app-userview .text-sec .post { font-size: 15px; color: #000; margin-top: 4px; }
 .app-userview .text-sec .links { margin-top: 0; margin-left: -9px; }
 .app-userview .text-sec .links > li { line-height: normal; margin-right: 2px; }
 .app-userview .text-sec .links > li > a { padding: 0; height: auto; width: auto; line-height: normal; font-size: 16px; font-weight: 600; }
 .app-userview .text-sec .links > li > a i { float: none; margin: 0 6px 0 0; width: auto; font-size: 18px; color: #000; height: auto; line-height: 20px; position: relative; top: 0.5px; }
 
-.app-menu { margin-top: 5px; height: calc(100% - (157px + 103px + 30px)); overflow: auto; }
-.app-menu > li > a { font-size: 600 20px; font-weight: 600; height: auto; line-height: normal; padding: 7px 25px 10px; color: #000; }
+.app-menu { margin-top: 10px; height: calc(100% - (125px + 80px + 40px)); overflow: auto; padding-top: 7px; }
+.app-menu > li > a { font-size: 15.5px; font-weight: 600; height: auto; line-height: normal; padding: 11px 25px 10px; color: #000; }
+.app-menu > li > a > img { width: 15px; margin: 0; }
+.app-menu > li > a > span { margin-left: 10px; margin-top: -2px; }
 
 .logo-menu { padding: 15px 25px; position: relative; }
-.logo-menu::after { content: ""; height: 1px; width: calc(100% - 50px); background: #e2af4e; display: block; position: absolute; top: 7px; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); }
+.logo-menu::after { content: ""; height: 1px; width: calc(100% - 20px); background: #ddd; display: block; position: absolute; top: 7px; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); }
 .logo-menu > a { position: relative; top: 13px; }
 .logo-menu > a img { width: 50px; }
-.logo-menu > a p { width: calc(100% - 50px); padding-left: 13px; color: red; font-size: 20px; font-weight: 600; }
+.logo-menu > a p { width: calc(100% - 50px); padding-left: 13px; color: #333; font-size: 18px; font-weight: 600; }
 
 body.hasBMB { padding-bottom: calc(63px + 10px); }
 
@@ -789,12 +792,18 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .ques-main .viewmore { margin-top: 20px; }
 .app-question-sec .ques-main .viewmore a { font-weight: 800; font-size: 14px; color: #ff2b40; }
 .app-question-sec .ques-main .next-question { margin-top: 15px; }
-.app-question-sec .al-ques-home-inner { padding: 10px 10px; overflow: hidden; }
-.app-question-sec .al-ques-home-inner .img-sec { width: 65px; }
-.app-question-sec .al-ques-home-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
-.app-question-sec .al-ques-home-inner .text-sec p { font-weight: 800; text-transform: capitalize; font-size: 20px; color: #111; font-family: 'styling', sans-serif; letter-spacing: .5px; }
-.app-question-sec .al-ques-home-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
-.app-question-sec .al-ques-home-inner .free-label p { text-transform: uppercase; font-size: 12px; font-weight: 900; color: #000; }
+.app-question-sec .al-ques-home-other-inner { padding: 10px 10px; overflow: hidden; }
+.app-question-sec .al-ques-home-other-inner .img-sec { width: 65px; }
+.app-question-sec .al-ques-home-other-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
+.app-question-sec .al-ques-home-other-inner .text-sec p { font-weight: 800; text-transform: capitalize; font-size: 20px; color: #111; font-family: 'styling', sans-serif; letter-spacing: .5px; }
+.app-question-sec .al-ques-home-other-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
+.app-question-sec .al-ques-home-other-inner .free-label p { text-transform: uppercase; font-size: 12px; font-weight: 900; color: #000; }
+.app-question-sec .al-ques-home-other-inner:active { opacity: 0.8; }
+.app-question-sec .al-ques-home-inner { padding: 10px 10px 10px 15px; overflow: hidden; background: black; background: -moz-linear-gradient(312deg, black 0%, #424242 100%); background: -webkit-linear-gradient(312deg, black 0%, #424242 100%); background: linear-gradient(312deg, black 0%, #424242 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#424242", GradientType=1); }
+.app-question-sec .al-ques-home-inner .img-sec { width: 80px; }
+.app-question-sec .al-ques-home-inner .text-sec { width: calc(100% - 80px); padding-right: 15px; }
+.app-question-sec .al-ques-home-inner .text-sec p.text { text-transform: capitalize; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; margin-bottom: 5px; }
+.app-question-sec .al-ques-home-inner .text-sec p.text-sm { font-size: 14px; color: #dcdcdc; }
 .app-question-sec .al-ques-home-inner:active { opacity: 0.8; }
 
 .home-suggested-video .app-head-w-view { margin-bottom: 5px; }

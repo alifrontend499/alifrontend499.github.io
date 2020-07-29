@@ -159,3 +159,14 @@ function goBack() {
         }
     });
 })();
+
+(function () {
+    setInterval(function () {
+        // console.log('object')
+        if ($('.blink-bulb-img > img.on').hasClass('d-none')) {
+            $('.blink-bulb-img > img').removeClass('d-none').next().addClass('d-none')
+        } else {
+            $('.blink-bulb-img > img').removeClass('d-none').prev().addClass('d-none')
+        }
+    }, 1000);
+})();
