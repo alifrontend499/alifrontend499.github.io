@@ -726,6 +726,7 @@ body.hasBMB {
     .al-ques-home-other-inner {
         padding: 10px 10px;
         overflow: hidden;
+        box-shadow: 0px 2px 5px 0px #fcd905;
 
         .img-sec {
             width: 65px;
@@ -826,8 +827,8 @@ body.hasBMB {
     }
 
     .item {
-        // padding-bottom: 15px;
         padding-top: 10px;
+        padding-bottom: 10px;
 
         >.inner {
             background-color: #fff;
