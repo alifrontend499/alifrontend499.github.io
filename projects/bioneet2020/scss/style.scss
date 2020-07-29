@@ -256,7 +256,7 @@ header {
 
                 i {
                     color: #000;
-                    font-size: 27px;
+                    font-size: 29px;
                 }
             }
         }
@@ -275,7 +275,7 @@ header {
 
                 i {
                     color: #000;
-                    font-size: 20px;
+                    font-size: 22px;
                     font-weight: bold;
                 }
 
@@ -448,7 +448,7 @@ header {
 .app-userview {
     padding: 30px 15px;
     position: relative;
-    background-color: $secodary-color;
+    background-color: $secodary-color-light;
 
     .AU_inner {
         padding: 5px;
@@ -539,7 +539,7 @@ header {
             color: #000;
 
             >img {
-                width: 15px;
+                width: 16px;
                 margin: 0;
             }
 
@@ -799,7 +799,7 @@ body.hasBMB {
             }
 
             p.text-sm {
-                font-size: 14px;
+                font-size: 15px;
                 color: #dcdcdc;
             }
         }
@@ -847,12 +847,12 @@ body.hasBMB {
             .time {
                 bottom: 0;
                 left: 0;
-                padding: 5px 6px 4px;
-                background: rgba(0, 0, 0, 0.2);
+                padding: 6px 8px 4px;
+                background: rgba(0, 0, 0, 0.3);
 
                 img {
                     // width: 25px;
-                    width: 16px;
+                    width: 15px;
                     align-self: center;
                 }
 
@@ -862,11 +862,16 @@ body.hasBMB {
                     // color: #fff;
                     // font-size: 16px;
                     // line-height: 21px;
-                    width: calc(100% - 25px);
+                    width: calc(100% - 15px);
                     padding-left: 5px;
                     color: #fff;
-                    font-size: 13px;
+                    font-size: 14px;
                     line-height: normal;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    position: relative;
+                    top: -2px;
                 }
             }
         }
@@ -923,6 +928,7 @@ body.hasBMB {
     .item {
         // padding-bottom: 15px;
         padding-top: 10px;
+        padding-bottom: 10px;
 
         >.inner {
             min-height: 120px;
@@ -953,7 +959,7 @@ body.hasBMB {
             .head {
                 font-weight: 800;
                 color: #000;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
 
@@ -979,7 +985,7 @@ body.hasBMB {
                 }
 
                 >.img-sec {
-                    width: 45px;
+                    width: 50px;
 
                     img {
                         display: block;
@@ -988,18 +994,18 @@ body.hasBMB {
                 }
 
                 >.text-sec {
-                    width: calc(100% - 45px);
+                    width: calc(100% - 50px);
                     padding-left: 10px;
 
                     .head {
                         font-weight: 800;
-                        font-size: 16px;
+                        font-size: 18px;
                         color: #333;
                         margin-bottom: 5px;
                     }
 
                     .desc {
-                        font-size: 13px;
+                        font-size: 15px;
                         color: #666;
                     }
                 }

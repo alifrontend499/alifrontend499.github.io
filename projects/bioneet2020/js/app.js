@@ -64,7 +64,7 @@ $(function () {
         });
         // ALL OTHER APPS
         $('#HOA_slider').owlCarousel({
-            items: 5,
+            items: 4,
             nav: false,
             dots: false,
             autoplay: true,
