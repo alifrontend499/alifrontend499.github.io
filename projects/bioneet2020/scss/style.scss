@@ -1,3 +1,4 @@
+@import "components/fonts";
 @import "components/reset";
 @import "components/variables";
 @import "components/mixins";
@@ -9,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Source+Sans+Pro:300,400,600,700,900&display=swap');
 
 body {
-    background: #f6f6f6;
+    background: #f3f3f3;
     // font-family: "Source Sans Pro", sans-serif;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -99,7 +100,7 @@ html,
 
             label,
             input {
-                font-size: 14px;
+                font-size: 15px;
                 color: #000;
                 font-weight: 600;
             }
@@ -123,7 +124,7 @@ html,
                 box-sizing: border-box;
                 background-color: transparent;
                 border-bottom-color: #222;
-                -webkit-text-fill-color: #333;
+                -webkit-text-fill-color: #111;
                 -webkit-box-shadow: 0 0 0 50px transparent inset;
 
                 &:focus {
@@ -255,7 +256,7 @@ header {
 
                 i {
                     color: #000;
-                    font-size: 30px;
+                    font-size: 27px;
                 }
             }
         }
@@ -274,7 +275,7 @@ header {
 
                 i {
                     color: #000;
-                    font-size: 23px;
+                    font-size: 20px;
                     font-weight: bold;
                 }
 
@@ -325,9 +326,10 @@ header {
         width: 100%;
         top: 0;
         z-index: 12;
-        @include app-gradient;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        // @include app-gradient;
+        // padding-top: 7px;
+        // padding-bottom: 7px;
+        background-color: #fff;
         @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
 
         .AHT_inner {
@@ -594,7 +596,9 @@ body.hasBMB {
     width: 100%;
     z-index: 12;
     background-color: #fff;
-    @include box-shadow(0px, 0px, 4px, 0px, #848484);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    @include box-shadow(0px, 0px, 2px, 0px, rgba(0, 0, 0, 0.1));
 
     .item {
         -webkit-flex-basis: 100px;
@@ -605,9 +609,9 @@ body.hasBMB {
         }
 
         .img-sec {
-            width: 25px;
-            height: 25px;
-            margin: 0 auto;
+            width: 17px;
+            height: 17px;
+            margin: 0 auto 6px;
 
             img {
                 max-height: 100%;
@@ -624,7 +628,7 @@ body.hasBMB {
             margin-top: 5px;
 
             p {
-                font-size: 13px;
+                font-size: 11px;
                 color: #4d4d4d;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -715,6 +719,55 @@ body.hasBMB {
             margin-top: 15px;
         }
     }
+
+    .al-ques-home {}
+
+    .al-ques-home-inner {
+        padding: 10px 10px;
+        overflow: hidden;
+
+        .img-sec {
+            width: 65px;
+        }
+
+        .text-sec {
+            width: calc(100% - 65px);
+            padding-left: 15px;
+
+            p {
+                font-weight: 800;
+                text-transform: capitalize;
+                font-size: 20px;
+                color: #111;
+                font-family: 'styling', sans-serif;
+                letter-spacing: .5px;
+            }
+        }
+
+        .free-label {
+            background: $secodary-color-light;
+            padding: 4px 0 0;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: absolute;
+            right: -24px;
+            bottom: -10px;
+            height: 40px;
+            width: 70px;
+            text-align: center;
+
+            p {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 900;
+                color: #000;
+            }
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
 }
 
 // SUGGESTED VIDEOS
@@ -733,11 +786,12 @@ body.hasBMB {
     }
 
     .item {
-        padding-bottom: 15px;
+        // padding-bottom: 15px;
         padding-top: 10px;
 
         >.inner {
             background-color: #fff;
+            overflow: hidden;
 
             &:active {
                 background-color: $active-color;
@@ -757,15 +811,22 @@ body.hasBMB {
                 background: rgba(0, 0, 0, 0.2);
 
                 img {
-                    width: 25px;
+                    // width: 25px;
+                    width: 16px;
+                    align-self: center;
                 }
 
                 span {
+                    // width: calc(100% - 25px);
+                    // padding-left: 9px;
+                    // color: #fff;
+                    // font-size: 16px;
+                    // line-height: 21px;
                     width: calc(100% - 25px);
-                    padding-left: 9px;
+                    padding-left: 5px;
                     color: #fff;
-                    font-size: 16px;
-                    line-height: 21px;
+                    font-size: 13px;
+                    line-height: normal;
                 }
             }
         }
@@ -820,7 +881,7 @@ body.hasBMB {
     }
 
     .item {
-        padding-bottom: 15px;
+        // padding-bottom: 15px;
         padding-top: 10px;
 
         >.inner {
@@ -846,14 +907,13 @@ body.hasBMB {
         }
 
         .text-sec {
-            margin-top: 5px;
+            margin-top: 10px;
             text-align: center;
 
             .head {
                 font-weight: 800;
                 color: #000;
-                font-size: 14px;
-                line-height: normal;
+                font-size: 13px;
             }
         }
 
@@ -863,21 +923,23 @@ body.hasBMB {
 // HOME BUY PRODUCTS
 .home-buy-products {
     .HBP_Items {
+        margin: -8px -8px 0;
+
         .item {
             &:not(:last-child) {
                 margin-bottom: 8px;
             }
 
             >.inner {
-                background-color: #fff;
-                padding: 10px 50px 10px 8px;
+                // background-color: green;
+                padding: 8px 8px;
 
                 &:active {
                     background-color: $active-color;
                 }
 
                 >.img-sec {
-                    width: 35px;
+                    width: 45px;
 
                     img {
                         display: block;
@@ -886,13 +948,19 @@ body.hasBMB {
                 }
 
                 >.text-sec {
-                    width: calc(100% - 35px);
+                    width: calc(100% - 45px);
                     padding-left: 10px;
 
-                    p {
+                    .head {
                         font-weight: 800;
                         font-size: 16px;
                         color: #333;
+                        margin-bottom: 5px;
+                    }
+
+                    .desc {
+                        font-size: 13px;
+                        color: #666;
                     }
                 }
             }
