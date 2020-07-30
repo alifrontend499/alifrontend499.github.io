@@ -45,22 +45,22 @@ $(function () {
     $(function () {
         // SUGGESTED VIDEOS SLIDER
         $('#HSV_slider').owlCarousel({
-            items: 2,
+            items: 1,
             nav: false,
             dots: false,
             autoplay: true,
             autoplayTimeout: 4000,
             autoplaySpeed: 1000,
-            stagePadding: 30,
+            stagePadding: 70,
             margin: 15,
-            responsive: {
-                0: {
-                    items: 2
-                },
-                1000: {
-                    items: 5
-                }
-            }
+            // responsive: {
+            //     0: {
+            //         items: 2
+            //     },
+            //     1000: {
+            //         items: 5
+            //     }
+            // }
         });
         // ALL OTHER APPS
         $('#HOA_slider').owlCarousel({
@@ -74,14 +74,14 @@ $(function () {
         });
         // COURCES-LIST-SLIDER
         $('#HDOTD_slider').owlCarousel({
-            items: 2,
+            items: 1,
             margin: 10,
             nav: false,
             dots: false,
             autoplay: false,
             autoplayTimeout: 1900,
             autoplaySpeed: 1000,
-            stagePadding: 50,
+            stagePadding: 70,
             margin: 15,
             rewind: true
         });

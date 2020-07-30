@@ -531,21 +531,21 @@ header {
 
     >li {
         >a {
-            font-size: 15.5px;
+            font-size: 16px;
             font-weight: 600;
             height: auto;
             line-height: normal;
-            padding: 11px 25px 10px;
+            padding: 13px 25px 12px;
             color: #000;
 
             >img {
-                width: 16px;
+                width: 17px;
                 margin: 0;
             }
 
             >span {
                 margin-left: 10px;
-                margin-top: -2px;
+                margin-top: -3px;
             }
         }
     }
@@ -610,8 +610,8 @@ body.hasBMB {
         }
 
         .img-sec {
-            width: 17px;
-            height: 17px;
+            width: 18px;
+            height: 18px;
             margin: 0 auto 6px;
 
             img {
@@ -629,7 +629,7 @@ body.hasBMB {
             margin-top: 5px;
 
             p {
-                font-size: 11px;
+                font-size: 13px;
                 color: #4d4d4d;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -853,7 +853,7 @@ body.hasBMB {
 
                 img {
                     // width: 25px;
-                    width: 15px;
+                    width: 20px;
                     align-self: center;
                 }
 
@@ -863,14 +863,11 @@ body.hasBMB {
                     // color: #fff;
                     // font-size: 16px;
                     // line-height: 21px;
-                    width: calc(100% - 15px);
-                    padding-left: 5px;
+                    width: calc(100% - 20px);
+                    padding-left: 10px;
                     color: #fff;
-                    font-size: 14px;
+                    font-size: 15px;
                     line-height: normal;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
                     position: relative;
                     top: -2px;
                 }
