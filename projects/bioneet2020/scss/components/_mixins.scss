@@ -35,6 +35,14 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1);
 }
 
+@mixin app-gradient-green {
+    background: rgb(177, 228, 106);
+    background: -moz-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
+    background: linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1);
+}
+
 @mixin min_width($width) {
     @media screen and (min-width: $width) {
         @content;

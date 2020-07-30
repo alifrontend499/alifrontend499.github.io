@@ -43,7 +43,16 @@ $(function () {
 // SLIDER
 (function () {
     $(function () {
-        // SUGGESTED VIDEOS SLIDER
+        // BIONEET VIDEOS SLIDER
+        $('#home_top_slider').owlCarousel({
+            items: 1,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplaySpeed: 1000,
+        });
+        // BIONEET VIDEOS SLIDER
         $('#HSV_slider').owlCarousel({
             items: 1,
             nav: false,
@@ -53,14 +62,6 @@ $(function () {
             autoplaySpeed: 1000,
             stagePadding: 70,
             margin: 15,
-            // responsive: {
-            //     0: {
-            //         items: 2
-            //     },
-            //     1000: {
-            //         items: 5
-            //     }
-            // }
         });
         // ALL OTHER APPS
         $('#HOA_slider').owlCarousel({
@@ -74,14 +75,14 @@ $(function () {
         });
         // COURCES-LIST-SLIDER
         $('#HDOTD_slider').owlCarousel({
-            items: 1,
+            items: 2,
             margin: 10,
             nav: false,
             dots: false,
             autoplay: false,
             autoplayTimeout: 1900,
             autoplaySpeed: 1000,
-            stagePadding: 70,
+            stagePadding: 40,
             margin: 15,
             rewind: true
         });

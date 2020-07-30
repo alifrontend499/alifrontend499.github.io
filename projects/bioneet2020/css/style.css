@@ -609,13 +609,15 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 
 .app-geadient { background: #fcd905; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1); }
 
+.app-gradient-green { background: #b1e46a; background: -moz-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%); background: -webkit-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%); background: linear-gradient(180deg, #b1e46a 0%, #94d33a 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1); }
+
 .app-geadient-left-to-right { background: #f4b407; background: -moz-linear-gradient(90deg, #f4b407 0%, #fde006 100%); background: -webkit-linear-gradient(90deg, #f4b407 0%, #fde006 100%); background: linear-gradient(90deg, #f4b407 0%, #fde006 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1); }
 
 .owl-theme .owl-nav.disabled + .owl-dots { margin-top: 5px; }
 
-.owl-theme .owl-dots .owl-dot span { margin: 3px 4px; background: #fff; }
+.owl-theme .owl-dots .owl-dot span { margin: 3px 4px; background: #ddd; }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span { background: #798e98; }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span { background: #fbd502; }
 
 .app-head-w-view { line-height: normal; margin-bottom: 15px; }
 .app-head-w-view .head { font-family: 'styling', sans-serif; font-size: 20px; font-weight: 700; color: #111; width: calc(100% - 80px); padding-right: 5px; text-transform: uppercase; letter-spacing: 1px; }
@@ -759,8 +761,8 @@ header { background: transparent; }
 .app-userview .text-sec .links > li > a i { float: none; margin: 0 6px 0 0; width: auto; font-size: 18px; color: #000; height: auto; line-height: 20px; position: relative; top: 0.5px; }
 
 .app-menu { margin-top: 10px; height: calc(100% - (125px + 80px + 40px)); overflow: auto; padding-top: 7px; }
-.app-menu > li > a { font-size: 16px; font-weight: 600; height: auto; line-height: normal; padding: 13px 25px 12px; color: #000; }
-.app-menu > li > a > img { width: 17px; margin: 0; }
+.app-menu > li > a { font-size: 17px; font-weight: 600; height: auto; line-height: normal; padding: 16px 25px 14px; color: #000; }
+.app-menu > li > a > img { width: 18px; margin: 0; }
 .app-menu > li > a > span { margin-left: 10px; margin-top: -3px; }
 
 .logo-menu { padding: 15px 25px; position: relative; }
@@ -794,10 +796,13 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .ques-main .viewmore { margin-top: 20px; }
 .app-question-sec .ques-main .viewmore a { font-weight: 800; font-size: 14px; color: #ff2b40; }
 .app-question-sec .ques-main .next-question { margin-top: 15px; }
-.app-question-sec .al-ques-home-other-inner { padding: 10px 10px; overflow: hidden; box-shadow: 0px 2px 5px 0px #fcd905; }
+.app-question-sec .al-ques-home-other .item { padding: 0 5px; }
+.app-question-sec .al-ques-home-other .owl-dots { position: absolute; bottom: -25px; width: 100%; }
+.app-question-sec .al-ques-home-other-inner { padding: 10px 15px; overflow: hidden; }
 .app-question-sec .al-ques-home-other-inner .img-sec { width: 65px; }
 .app-question-sec .al-ques-home-other-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
 .app-question-sec .al-ques-home-other-inner .text-sec p { font-weight: 800; text-transform: capitalize; font-size: 20px; color: #111; font-family: 'styling', sans-serif; letter-spacing: .5px; }
+.app-question-sec .al-ques-home-other-inner .text-sec p span { font-weight: normal; font-size: 15px; }
 .app-question-sec .al-ques-home-other-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
 .app-question-sec .al-ques-home-other-inner .free-label p { text-transform: uppercase; font-size: 12px; font-weight: 900; color: #000; }
 .app-question-sec .al-ques-home-other-inner:active { opacity: 0.8; }

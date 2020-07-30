@@ -172,6 +172,9 @@ input[type="text"].app-input {
 .app-geadient {
     @include app-gradient;
 }
+.app-gradient-green {
+    @include app-gradient-green;
+}
 
 .app-geadient-left-to-right {
     background: rgb(244, 180, 7);
@@ -187,12 +190,12 @@ input[type="text"].app-input {
 
 .owl-theme .owl-dots .owl-dot span {
     margin: 3px 4px;
-    background: #fff;
+    background: #ddd;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: $secodary-colorB;
+    background: $secodary-color-light;
 }
 
 .app-head-w-view {
