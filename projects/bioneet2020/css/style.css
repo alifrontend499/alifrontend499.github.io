@@ -802,7 +802,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .al-ques-home-other-inner .img-sec { width: 65px; }
 .app-question-sec .al-ques-home-other-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
 .app-question-sec .al-ques-home-other-inner .text-sec p { font-weight: 800; text-transform: capitalize; font-size: 20px; color: #111; font-family: 'styling', sans-serif; letter-spacing: .5px; }
-.app-question-sec .al-ques-home-other-inner .text-sec p span { font-weight: normal; font-size: 15px; }
+.app-question-sec .al-ques-home-other-inner .text-sec p span { font-weight: normal; font-size: 15px; text-transform: lowercase; }
+.app-question-sec .al-ques-home-other-inner .text-sec p.two { font-size: 18px; margin-bottom: 3px; }
 .app-question-sec .al-ques-home-other-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
 .app-question-sec .al-ques-home-other-inner .free-label p { text-transform: uppercase; font-size: 12px; font-weight: 900; color: #000; }
 .app-question-sec .al-ques-home-other-inner:active { opacity: 0.8; }

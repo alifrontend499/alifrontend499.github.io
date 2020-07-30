@@ -726,6 +726,7 @@ body.hasBMB {
             padding: 0 5px;
             // margin: 0 -5px;
         }
+
         .owl-dots {
             position: absolute;
             bottom: -25px;
@@ -752,9 +753,16 @@ body.hasBMB {
                 color: #111;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
+
                 span {
                     font-weight: normal;
                     font-size: 15px;
+                    text-transform: lowercase;
+                }
+
+                &.two {
+                    font-size: 18px;
+                    margin-bottom: 3px;
                 }
             }
         }
