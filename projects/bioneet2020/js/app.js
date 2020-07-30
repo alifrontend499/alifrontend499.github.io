@@ -48,6 +48,7 @@ $(function () {
             items: 1,
             nav: false,
             dots: true,
+            loop: true,
             autoplay: true,
             autoplayTimeout: 4000,
             autoplaySpeed: 1000,
@@ -57,9 +58,7 @@ $(function () {
             items: 1,
             nav: false,
             dots: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplaySpeed: 1000,
+            autoplay: false,
             stagePadding: 70,
             margin: 15,
         });

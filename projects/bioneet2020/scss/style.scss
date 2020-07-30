@@ -476,17 +476,24 @@ header {
         width: calc(100% - 65px);
         padding-top: 0px;
         padding-left: 12px;
+        padding-right: 25px;
 
         .name {
             font-size: 21px;
             font-weight: 600;
             color: #000;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .post {
             font-size: 15px;
             color: #000;
             margin-top: 4px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .links {
@@ -520,6 +527,15 @@ header {
             }
         }
     }
+
+    .right-icon {
+        right: 5px;
+        height: 18px;
+        width: 18px;
+        top: 20px;
+        background: #fff;
+        border-radius: 50%;
+    }
 }
 
 .app-menu {
@@ -544,7 +560,7 @@ header {
             }
 
             >span {
-                margin-left: 10px;
+                margin-left: 15px;
                 margin-top: -3px;
             }
         }
@@ -606,7 +622,7 @@ body.hasBMB {
         flex-basis: 100px;
 
         >a {
-            padding: 9px 5px 7px;
+            padding: 11px 5px 9px;
         }
 
         .img-sec {
@@ -748,8 +764,8 @@ body.hasBMB {
 
             p {
                 font-weight: 800;
-                text-transform: capitalize;
-                font-size: 20px;
+                text-transform: uppercase;
+                font-size: 21px;
                 color: #111;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
@@ -955,9 +971,9 @@ body.hasBMB {
             background-color: #fff;
             text-decoration: none;
 
-            &:active {
-                background-color: $active-color;
-            }
+            // &:active {
+            //     background-color: $active-color;
+            // }
         }
 
         .img-sec {
