@@ -694,7 +694,7 @@ html, .login-body, .app_L-main { height: 100%; }
 .app_L-main .AL_login-box .form .input-field { margin-bottom: 20px; }
 .app_L-main .AL_login-box .form .input-field:nth-child(2), .app_L-main .AL_login-box .form .forgot-pass { margin-bottom: 20px; }
 .app_L-main .AL_login-box .form .forgot-pass { margin-top: -10px; }
-.app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font-size: 15px; color: #000; font-weight: 600; }
+.app_L-main .AL_login-box .form label, .app_L-main .AL_login-box .form input { font-size: 16px; color: #000; font-weight: 600; }
 .app_L-main .AL_login-box .form .icon { top: 50%; right: 5px; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 .app_L-main .AL_login-box .form .icon i { font-size: 18px; color: #000; }
 .app_L-main .AL_login-box .form input { height: 40px; padding-right: 30px; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: transparent; border-bottom-color: #222; -webkit-text-fill-color: #111; -webkit-box-shadow: 0 0 0 50px transparent inset; }
@@ -702,12 +702,12 @@ html, .login-body, .app_L-main { height: 100%; }
 .app_L-main .AL_login-box .form input:focus + label { color: #333; }
 .app_L-main .AL_login-box .form input:focus ~ .icon i { color: #333; }
 .app_L-main .AL_login-box .form input:valid ~ .icon i { color: #333; }
-.app_L-main .AL_login-box .form .forgot-pass a { font-size: 14px; color: #000; font-weight: 600; }
-.app_L-main .AL_login-box .form .app-btn { padding: 17px 20px 16px; font-weight: 600; color: #fff; border: none; background-color: #000; }
+.app_L-main .AL_login-box .form .forgot-pass a { font-size: 16px; color: #000; font-weight: 600; }
+.app_L-main .AL_login-box .form .app-btn { padding: 17px 20px 16px; font-size: 17px; font-weight: 600; color: #fff; border: none; background-color: #000; }
 .app_L-main .AL_login-box .form .app-btn:focus, .app_L-main .AL_login-box .form .app-btn:hover { box-shadow: none !important; }
 .app_L-main .AL_login-box .form .app-btn i { top: 5px; right: 5px; background: #fcb01f; height: calc(100% - 10px); width: 42px; border-radius: 50%; font-size: 30px; color: #000; }
 .app_L-main .AL_login-box .reg-skip { margin-top: 20px; margin-bottom: 10px; }
-.app_L-main .AL_login-box .reg-skip a { font-size: 14px; padding: 0 12px; color: #111; display: block; position: relative; font-weight: 600; }
+.app_L-main .AL_login-box .reg-skip a { font-size: 16px; padding: 0 12px; color: #111; display: block; position: relative; font-weight: 600; }
 .app_L-main .AL_login-box .reg-skip a:not(:last-child):after { content: ""; position: absolute; top: 58%; right: 0; height: calc(100% - 6px); width: 2px; background: #333; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 
 header { background: transparent; }
