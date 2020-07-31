@@ -170,3 +170,18 @@ function goBack() {
         }
     }, 1000);
 })();
+
+(function () {
+    $('.edit-profile-button').click(function(ev) {
+        ev.preventDefault()
+        if($('i', this).text() == 'check') {
+            $('i', this).text('edit')
+            $('.prof-edit-content .input').addClass('non-editable')
+            $('.frac.confirm-password').addClass('d-none')
+        } else {
+            $('i', this).text('check')
+            $('.prof-edit-content .input').removeClass('non-editable')
+            $('.frac.confirm-password').removeClass('d-none')
+        }
+    })
+})();

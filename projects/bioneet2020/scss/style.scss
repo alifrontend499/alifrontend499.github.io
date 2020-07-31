@@ -1063,6 +1063,12 @@ body.hasBMB {
         background-color: #fff;
     }
 
+    &.contact {
+        .BB_top {
+            padding-bottom: 100px !important;
+        }
+    }
+
     .BBT_inner {
 
         >.LT,
@@ -1346,101 +1352,32 @@ body.hasBMB {
     }
 }
 
-// CONTACT PAGE
-.app-contact {
+// CONTACT PAGE FORM
+.app-contact-form {
+    margin: 30px 0 40px;
 
-    .AC-details {
-        .item {
-            &:not(:last-child) {
-                margin-bottom: 12px;
-            }
-
-            >.inner {
-                background-color: #fff;
-                padding: 12px;
-                text-decoration: none !important;
-
-                &:active {
-                    background-color: $active-color;
-                }
-            }
-
-            .img-sec {
-                width: 60px;
-                overflow: hidden;
-
-                img {
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                .name-icon {
-                    height: 100%;
-                    width: 100%;
-                    background-color: #d3d3d3;
-                    color: #000;
-
-                    p {
-                        font-size: 15px;
-                        font-weight: 800;
-                    }
-                }
-            }
-
-            .text-sec {
-                width: calc(100% - 60px);
-                padding-left: 10px;
-
-                p {
-                    font-size: 16px;
-                    color: #000;
-                    line-height: normal;
-                }
-
-                .head {
-                    font-weight: 700;
-                    margin-bottom: 4px;
-                }
-
-                .det {
-                    font-size: 18px;
-                }
-            }
-
-            .other-details {
-                right: 10px;
-                top: 50%;
-                @include transformy(-50%);
-
-                p {
-                    font-size: 12px;
-                    font-weight: 700;
-
-                    .time {
-                        color: #cb2026;
-                        margin-bottom: 3px;
-                    }
-
-                    .date {
-                        color: #868686;
-                    }
-                }
-            }
-        }
-
+    .ACP_inner {
+        padding: 10px 20px 25px;
+        background: #fff;
+        margin-top: -90px;
+        position: relative;
+        z-index: 123;
+        border-radius: 25px;
+        @include box-shadow(0px, 0px, 20px, 0px, rgba(0, 0, 0, 0.2));
     }
 
     .form {
         label {
-            font-size: 16px;
-            font-weight: 600;
             color: #333;
+            font-weight: 600;
+            font-size: 15px;
         }
 
         input,
         textarea {
+            font-weight: 500;
             font-size: 16px;
-            color: #666;
+            color: #333;
         }
 
         input {
@@ -1466,21 +1403,44 @@ body.hasBMB {
             }
         }
 
-        .app-round-btn {
-            min-width: auto;
-            padding: 9px 3px 0;
-            height: 60px;
-            width: 60px;
-            margin: 10px 0 0;
-            color: #000;
+        .app-btn {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 12px 15px 13px;
+        }
+    }
+}
 
-            i {
-                -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-                font-size: 30px;
-                position: relative;
-                top: -2px;
-                left: 1px;
+.app-contact {
+
+    .AC_inner {
+        >.item {
+            width: 50%;
+            padding: 0 10px;
+        }
+
+        .img-sec {
+            height: 45px;
+            margin-bottom: 15px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .text-sec {
+            p {
+                font-weight: 500;
+                font-size: 17px;
+                color: #555;
+
+                span {
+                    font-weight: 600;
+                    margin-bottom: 3px;
+                    color: #000;
+                }
             }
         }
     }
@@ -1495,15 +1455,15 @@ body.hasBMB {
     }
 
     .app-diagram-day-sec-lt {
-        padding-right: 12.5px;
+        padding-right: 15px;
     }
 
     .app-diagram-day-sec-rt {
-        padding-left: 12.5px;
+        padding-left: 15px;
     }
 
     .ADDS-main {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         // &:not(:last-child) {
         // }
 
@@ -1700,6 +1660,148 @@ body.hasBMB {
                     }
                 }
             }
+        }
+    }
+}
+
+// user profile
+#user-profile-sec {}
+
+.user-profile-sec {
+    .prof-top {
+        border-bottom: 1px solid #ddd;
+
+        .img-sec {
+            height: 100px;
+            width: 100px;
+            background: #fff;
+            border-radius: 50%;
+            padding: 5px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                margin: 0 auto;
+                display: block;
+                border-radius: 50%;
+            }
+
+            .icon {
+                top: 5px;
+                right: -4px;
+                background: $secodary-color;
+                height: 25px;
+                width: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+
+                i {
+                    font-size: 14px;
+
+                }
+            }
+        }
+
+        .text-sec {
+            margin-top: 11px;
+
+            .name {
+                font-size: 19px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                color: #111;
+            }
+        }
+
+    }
+
+    .prof-edit {
+        .app-head-w-view {
+            margin-bottom: 30px;
+
+            .head {
+                font-size: 18px;
+            }
+
+            .link {
+                a {
+                    color: #000;
+                    background: $secodary-color;
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: auto;
+
+                    i {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .prof-edit-content {
+        .frac {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 18px;
+            position: relative;
+        }
+
+        .frac-inner {
+            .icon {
+                width: 30px;
+
+                i {
+                    font-size: 17px;
+                    color: #444;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+            .input {
+                width: calc(100% - 30px);
+
+                input {
+                    font-size: 15px;
+                    height: 30px;
+                    padding: 0 5px;
+                    margin: 0 -5px;
+                    background: #fff;
+                    width: 100%;
+                    border-radius: 6px;
+                    border: none !important;
+                    color: #000;
+                }
+
+                &.non-editable {
+                    input {
+                        background: transparent;
+                        pointer-events: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                p.text {
+                    font-size: 10px;
+                    position: absolute;
+                    top: -14px;
+                    font-weight: 900;
+                    color: #666;
+                }
+            }
+
         }
     }
 }

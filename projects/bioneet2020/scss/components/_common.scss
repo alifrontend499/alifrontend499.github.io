@@ -177,12 +177,15 @@ input[type="text"].app-input {
 .app-gradient-green {
     @include app-gradient-green;
 }
+.app-gradient-red {
+    @include app-gradient-red;
+}
 
 .app-geadient-left-to-right {
-    background: rgb(244, 180, 7);
-    background: -moz-linear-gradient(90deg, rgba(244, 180, 7, 1) 0%, rgba(253, 224, 6, 1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(244, 180, 7, 1) 0%, rgba(253, 224, 6, 1) 100%);
-    background: linear-gradient(90deg, rgba(244, 180, 7, 1) 0%, rgba(253, 224, 6, 1) 100%);
+    background: rgb(252, 217, 5);
+    background: -moz-linear-gradient(90deg, rgba(250, 190, 7, 1) 0%, rgba(252, 217, 5, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(250, 190, 7, 1) 0%, rgba(252, 217, 5, 1) 100%);
+    background: linear-gradient(90deg, rgba(250, 190, 7, 1) 0%, rgba(252, 217, 5, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1);
 }
 
