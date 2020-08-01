@@ -1726,15 +1726,16 @@ body.hasBMB {
             margin-bottom: 30px;
 
             .head {
-                font-size: 18px;
+                font-size: 19px;
             }
+
 
             .link {
                 a {
                     color: #000;
                     background: $secodary-color;
-                    height: 22px;
-                    width: 22px;
+                    height: 25px;
+                    width: 25px;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -1742,7 +1743,12 @@ body.hasBMB {
                     margin-left: auto;
 
                     i {
-                        font-size: 13px;
+                        font-size: 14px;
+                        font-weight: bold;
+
+                        &.check {
+                            font-size: 17px;
+                        }
                     }
                 }
             }
@@ -1752,25 +1758,33 @@ body.hasBMB {
     .prof-edit-content {
         .frac {
             border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 18px;
+            // padding-bottom: 5px;
+            // margin-bottom: 18px;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
             position: relative;
         }
 
         .frac-inner {
             .icon {
-                width: 30px;
+                // width: 30px;
+                width: 35px;
 
                 i {
-                    font-size: 17px;
+                    // font-size: 17px;
+                    // color: #444;
+                    // position: relative;
+                    // top: 1px;
+                    font-size: 19px;
                     color: #444;
                     position: relative;
-                    top: 1px;
+                    top: 2px;
                 }
             }
 
             .input {
-                width: calc(100% - 30px);
+                // width: calc(100% - 30px);
+                width: calc(100% - 35px);
 
                 input {
                     font-size: 15px;

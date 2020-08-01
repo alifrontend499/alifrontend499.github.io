@@ -172,15 +172,19 @@ function goBack() {
 })();
 
 (function () {
-    $('.edit-profile-button').click(function(ev) {
+    $('.edit-profile-button').click(function (ev) {
         ev.preventDefault()
-        if($('i', this).text() == 'check') {
-            $('i', this).text('edit')
+        if ($('i', this).text() == 'check') {
+            $('i', this).text('edit').removeClass('check').addClass('edit')
+            $('.prof-edit-content .input > .text').addClass('d-none')
             $('.prof-edit-content .input').addClass('non-editable')
+            $('.prof-edit-content .input > input').blur()
             $('.frac.confirm-password').addClass('d-none')
         } else {
-            $('i', this).text('check')
+            $('i', this).text('check').removeClass('edit').addClass('check')
+            $('.prof-edit-content .input > .text').removeClass('d-none')
             $('.prof-edit-content .input').removeClass('non-editable')
+            $('.prof-edit-content .input > input[tabindex="1"]').focus()
             $('.frac.confirm-password').removeClass('d-none')
         }
     })

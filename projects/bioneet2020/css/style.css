@@ -958,13 +958,14 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .user-profile-sec .prof-top .text-sec { margin-top: 11px; }
 .user-profile-sec .prof-top .text-sec .name { font-size: 19px; font-weight: 800; letter-spacing: 1px; color: #111; }
 .user-profile-sec .prof-edit .app-head-w-view { margin-bottom: 30px; }
-.user-profile-sec .prof-edit .app-head-w-view .head { font-size: 18px; }
-.user-profile-sec .prof-edit .app-head-w-view .link a { color: #000; background: #fcb01f; height: 22px; width: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: auto; }
-.user-profile-sec .prof-edit .app-head-w-view .link a i { font-size: 13px; }
-.user-profile-sec .prof-edit-content .frac { border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 18px; position: relative; }
-.user-profile-sec .prof-edit-content .frac-inner .icon { width: 30px; }
-.user-profile-sec .prof-edit-content .frac-inner .icon i { font-size: 17px; color: #444; position: relative; top: 1px; }
-.user-profile-sec .prof-edit-content .frac-inner .input { width: calc(100% - 30px); }
+.user-profile-sec .prof-edit .app-head-w-view .head { font-size: 19px; }
+.user-profile-sec .prof-edit .app-head-w-view .link a { color: #000; background: #fcb01f; height: 25px; width: 25px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: auto; }
+.user-profile-sec .prof-edit .app-head-w-view .link a i { font-size: 14px; font-weight: bold; }
+.user-profile-sec .prof-edit .app-head-w-view .link a i.check { font-size: 17px; }
+.user-profile-sec .prof-edit-content .frac { border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px; position: relative; }
+.user-profile-sec .prof-edit-content .frac-inner .icon { width: 35px; }
+.user-profile-sec .prof-edit-content .frac-inner .icon i { font-size: 19px; color: #444; position: relative; top: 2px; }
+.user-profile-sec .prof-edit-content .frac-inner .input { width: calc(100% - 35px); }
 .user-profile-sec .prof-edit-content .frac-inner .input input { font-size: 15px; height: 30px; padding: 0 5px; margin: 0 -5px; background: #fff; width: 100%; border-radius: 6px; border: none !important; color: #000; }
 .user-profile-sec .prof-edit-content .frac-inner .input.non-editable input { background: transparent; pointer-events: none; padding: 0; margin: 0; }
 .user-profile-sec .prof-edit-content .frac-inner .input p.text { font-size: 10px; position: absolute; top: -14px; font-weight: 900; color: #666; }
