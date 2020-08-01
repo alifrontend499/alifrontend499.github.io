@@ -36,19 +36,19 @@
 }
 
 @mixin app-gradient-green {
-    background: rgb(177, 228, 106);
-    background: -moz-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
-    background: linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1);
+    background: rgb(177, 228, 106) !important;
+    background: -moz-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%) !important;
+    background: -webkit-linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%) !important;
+    background: linear-gradient(180deg, rgba(177, 228, 106, 1) 0%, rgba(148, 211, 58, 1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1) !important;
 }
 
 @mixin app-gradient-red {
-    background: rgb(250, 128, 61);
-    background: -moz-linear-gradient(180deg, rgba(250, 128, 61, 1) 0%, rgba(249, 80, 11, 1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(250, 128, 61, 1) 0%, rgba(249, 80, 11, 1) 100%);
-    background: linear-gradient(180deg, rgba(250, 128, 61, 1) 0%, rgba(249, 80, 11, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fa803d", endColorstr="#f9500b", GradientType=1);
+    background: rgb(255, 116, 46);
+    background: -moz-linear-gradient(180deg, rgba(255, 116, 46, 1) 0%, rgba(255, 114, 46, 1) 45%, rgba(255, 93, 27, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 116, 46, 1) 0%, rgba(255, 114, 46, 1) 45%, rgba(255, 93, 27, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 116, 46, 1) 0%, rgba(255, 114, 46, 1) 45%, rgba(255, 93, 27, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1);
 }
 
 @mixin min_width($width) {
