@@ -966,7 +966,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .user-profile-sec .prof-edit-content .frac-inner .icon { width: 35px; }
 .user-profile-sec .prof-edit-content .frac-inner .icon i { font-size: 20px; color: #444; position: relative; top: 2px; }
 .user-profile-sec .prof-edit-content .frac-inner .input { width: calc(100% - 35px); }
-.user-profile-sec .prof-edit-content .frac-inner .input input { font-size: 16px; height: 32px; padding: 0 5px 2px; margin: 0 -5px; background: #fff; width: 100%; border-radius: 6px; border: none !important; color: #000; line-height: normal; }
+.user-profile-sec .prof-edit-content .frac-inner .input input { font-size: 16px; height: 32px; padding: 0 5px 0; margin: 0 -5px; background: #fff; width: 100%; border-radius: 6px; border: none !important; color: #000; line-height: normal; }
 .user-profile-sec .prof-edit-content .frac-inner .input.non-editable input { background: transparent; pointer-events: none; padding: 0; margin: 0; }
 .user-profile-sec .prof-edit-content .frac-inner p.text { width: 100%; font-size: 12px; top: -14px; font-weight: 900; color: #666; margin-bottom: 5px; padding-left: 35px; }
 
