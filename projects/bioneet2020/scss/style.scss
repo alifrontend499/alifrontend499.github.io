@@ -1726,7 +1726,7 @@ body.hasBMB {
             margin-bottom: 30px;
 
             .head {
-                font-size: 19px;
+                font-size: 20px;
             }
 
 
@@ -1760,8 +1760,9 @@ body.hasBMB {
             border-bottom: 1px solid #ddd;
             // padding-bottom: 5px;
             // margin-bottom: 18px;
-            padding-bottom: 15px;
-            margin-bottom: 15px;
+            padding-bottom: 17px;
+            margin-bottom: 13px;
+            position: relative;
             position: relative;
         }
 
@@ -1771,11 +1772,11 @@ body.hasBMB {
                 width: 35px;
 
                 i {
-                    // font-size: 17px;
+                    // font-size: 19px;
                     // color: #444;
                     // position: relative;
-                    // top: 1px;
-                    font-size: 19px;
+                    // top: 2px;
+                    font-size: 20px;
                     color: #444;
                     position: relative;
                     top: 2px;
@@ -1787,15 +1788,25 @@ body.hasBMB {
                 width: calc(100% - 35px);
 
                 input {
-                    font-size: 15px;
-                    height: 30px;
-                    padding: 0 5px;
+                    // font-size: 16px;
+                    // height: 30px;
+                    // padding: 0 5px;
+                    // margin: 0 -5px;
+                    // background: #fff;
+                    // width: 100%;
+                    // border-radius: 6px;
+                    // border: none !important;
+                    // color: #000;
+                    font-size: 16px;
+                    height: 32px;
+                    padding: 0 5px 2px;
                     margin: 0 -5px;
                     background: #fff;
                     width: 100%;
                     border-radius: 6px;
                     border: none !important;
                     color: #000;
+                    line-height: normal;
                 }
 
                 &.non-editable {
@@ -1806,16 +1817,17 @@ body.hasBMB {
                         margin: 0;
                     }
                 }
-
-                p.text {
-                    font-size: 10px;
-                    position: absolute;
-                    top: -14px;
-                    font-weight: 900;
-                    color: #666;
-                }
             }
 
+            p.text {
+                width: 100%;
+                font-size: 12px;
+                top: -14px;
+                font-weight: 900;
+                color: #666;
+                margin-bottom: 5px;
+                padding-left: 35px;
+            }
         }
     }
 }
