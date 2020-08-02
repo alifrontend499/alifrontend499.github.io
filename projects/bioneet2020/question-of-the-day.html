@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
 
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+
+
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.theme.default.min.css">
@@ -86,46 +90,30 @@
             </div>
         </div>
     </div>
+
     <!-- BACKBAR -->
-    <section class="backBar app-geadient">
-        <div class="BB_top app-geadient">
+    <section class="backBar">
+        <div class="BB_top">
             <div class="container">
                 <div class="BBT_inner d-flex-wrap align-items-center">
                     <div class="LT">
                         <a href=""
                             class="history-go-back app-icon-btn waves-effect circle d-flex align-items-center justify-content-center">
-                            <i class="material-icons">arrow_back</i>
+                            <i class="feather-arrow-left"></i>
                         </a>
                     </div>
                     <div class="CT">
                         <p class="text-center">
-                            <span class="text-capitalize">question of the day</span>
+                            <span class="text-uppercase">question 1/10</span>
                         </p>
                     </div>
                     <div class="RT">
                         <div class="inner d-flex justify-content-end">
-                            <div class="hasNotification app-notification-btn">
-                                <a href="notifications.html"
-                                    class="d-flex align-items-center justify-content-center circle waves-effect">
-                                    <i class="material-icons">notifications_none</i>
-                                </a>
-                            </div>
                             <div class="app-more-menu">
                                 <a href="#"
                                     class="d-flex align-items-center justify-content-center circle waves-effect">
-                                    <i class="material-icons">more_vert</i>
+                                    <i class="feather-bookmark"></i>
                                 </a>
-                                <ul class="">
-                                    <li>
-                                        <a href="" class="text-capitalize waves-effect">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="text-capitalize waves-effect">view</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="text-capitalize waves-effect">more +</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -134,58 +122,6 @@
         </div>
     </section>
 
-    <!-- BOTTOM MENU BAR -->
-    <div class="bottom-menu-bar">
-        <div class="BMB_inner">
-            <div class="BMB d-flex">
-                <div class="item flex-grow-1 active">
-                    <a href="#" class="d-block text-center w-100 waves-effect">
-                        <div class="img-sec d-flex align-items-center justify-content-center">
-                            <img src="images/icons/bottom-menu/home.png" alt="" class="resposnive-img main">
-                            <img src="images/icons/bottom-menu/home-hover.png" alt="" class="resposnive-img active">
-                        </div>
-                        <div class="text-sec">
-                            <p>Home</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item flex-grow-1">
-                    <a href="#" class="d-block text-center w-100 waves-effect">
-                        <div class="img-sec d-flex align-items-center justify-content-center">
-                            <img src="images/icons/bottom-menu/note.png" alt="" class="resposnive-img main">
-                            <img src="images/icons/bottom-menu/note-hover.png" alt="" class="resposnive-img active">
-                        </div>
-                        <div class="text-sec">
-                            <p>Exam</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item flex-grow-1">
-                    <a href="#" class="d-block text-center w-100 waves-effect">
-                        <div class="img-sec d-flex align-items-center justify-content-center">
-                            <img src="images/icons/bottom-menu/updates.png" alt="" class="resposnive-img main">
-                            <img src="images/icons/bottom-menu/updates-hover.png" alt="" class="resposnive-img active">
-                        </div>
-                        <div class="text-sec">
-                            <p>Updates</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="item flex-grow-1">
-                    <a href="contact.html" class="d-block text-center w-100 waves-effect">
-                        <div class="img-sec d-flex align-items-center justify-content-center">
-                            <img src="images/icons/bottom-menu/contact.png" alt="" class="resposnive-img main">
-                            <img src="images/icons/bottom-menu/contact-hover.png" alt="" class="resposnive-img active">
-                        </div>
-                        <div class="text-sec">
-                            <p>Contact</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="wrapper">
         <!-- QUESTIONS-DAY -->
         <section id="app-question-sec" class="com-sm-my">
@@ -193,31 +129,62 @@
                 <div class="app-question-sec">
                     <div class="all-ques">
                         <div class="ques-main">
-                            <div class="inner box-box-shadow">
-                                <p class="ques">
-                                    Shoulder joint is formed by the articulation
-                                    of head of humers to the...
-                                </p>
+                            <div class="inner">
+                                <div class="top-sec">
+                                    <p class="ques">
+                                        Consider the figure shown. What type of Qyadrilatrel can it be?
+                                    </p>
+                                    <div class="ques-img-sec">
+                                        <img src="images/diagram-of-the-day/img1.jpg" alt="" class="responsive-img">
+                                    </div>
+                                </div>
                                 <div class="sel-ans">
-                                    <label class="waves-effect">
-                                        <input type="checkbox" style="display: false;">
-                                        Spine of the scapula
+                                    <label class="waves-effect d-flex default-border-radius">
+                                        <input type="checkbox" style="display: none;">
+                                        <!-- <span class="ques-icon d-flex align-items-center justify-content-center lever">
+                                            <span class="feather-x"></span>
+                                        </span> -->
+                                        <span class="ques-text lever">Simple option</span>
                                     </label>
-                                    <label class="waves-effect">
-                                        <input type="checkbox" style="display: false;">
-                                        Glenoid cavity of the scapula
+                                    <label class="waves-effect d-flex default-border-radius ques-right">
+                                        <input type="checkbox" style="display: none;">
+                                        <span class="ques-icon d-flex align-items-center justify-content-center lever">
+                                            <span class="feather-check"></span>
+                                        </span>
+                                        <span class="ques-text lever">option with success</span>
                                     </label>
-                                    <label class="waves-effect">
-                                        <input type="checkbox" style="display: false;">
-                                        Acromiom process of the scapula
+                                    <label class="waves-effect d-flex default-border-radius ques-wrong">
+                                        <input type="checkbox" style="display: none;">
+                                        <span class="ques-icon d-flex align-items-center justify-content-center lever">
+                                            <span class="feather-x"></span>
+                                        </span>
+                                        <span class="ques-text lever">option with error</span>
                                     </label>
-                                    <label class="waves-effect">
-                                        <input type="checkbox" style="display: false;">
-                                        Head of the humerous
+                                    <label class="waves-effect d-flex default-border-radius ques-wrong">
+                                        <input type="checkbox" style="display: none;">
+                                        <span class="ques-icon d-flex align-items-center justify-content-center lever">
+                                            <span class="feather-x"></span>
+                                        </span>
+                                        <span class="ques-text lever">option with error</span>
                                     </label>
                                 </div>
+                                <div class="get-solution">
+                                    <p>Having trouble finding the solution? </p>
+                                    <a href="#solution-modal" class="text-capitalize modal-trigger">find solution</a>
+
+                                    <!-- Modal Structure -->
+                                    <div id="solution-modal" class="modal app-modal">
+                                        <div class="modal-content app-modal-content">
+                                            <h4 class="text-center text-bold">The solution is Option 1</h4>
+                                            <p style="color: #666; margin-top: 10px;" class="text-center">
+                                                Next time try to do it by yourself!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="next-question text-center">
-                                    <a href="" class="app-btn text-capitalize waves-effect">Next Question</a>
+                                    <a href="" class="app-btn text-capitalize waves-effect app-gradient-black">Next
+                                        Question</a>
                                 </div>
                             </div>
                         </div>

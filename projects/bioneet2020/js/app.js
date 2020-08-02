@@ -124,6 +124,8 @@ $(function () {
         $('[data-fancybox]').fancybox({
             animationEffect: "zoom-in-out"
         });
+        // MODAL
+        $('.modal').modal();
     });
 })();
 // GO BACK

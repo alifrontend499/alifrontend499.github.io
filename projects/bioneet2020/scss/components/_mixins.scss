@@ -54,6 +54,14 @@
     // background: linear-gradient(NaNdeg, rgba(251, 83, 5, 1) 0%, rgba(255, 142, 80, 1) 100%);
 }
 
+@mixin app-gradient-black {
+    background: rgb(50, 50, 50) !important;
+    background: -moz-linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
+    background: -webkit-linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
+    background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1);
+}
+
 @mixin min_width($width) {
     @media screen and (min-width: $width) {
         @content;

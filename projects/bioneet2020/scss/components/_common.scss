@@ -180,6 +180,9 @@ input[type="text"].app-input {
 .app-gradient-red {
     @include app-gradient-red;
 }
+.app-gradient-black {
+    @include app-gradient-black;
+}
 
 .app-geadient-left-to-right {
     background: rgb(252, 217, 5);
@@ -264,7 +267,7 @@ input[type="text"].app-input {
     height: 9px;
     width: 9px;
     border-radius: 100%;
-    background: $danger-color;
+    background: $danger-color-light;
     position: absolute;
     top: 6px;
     right: 4px;
@@ -478,4 +481,13 @@ input[type="text"].app-input {
 
 .def-border-bottom {
     border-bottom: 1px solid #ddd;
+}
+
+.app-modal {
+    background-color: transparent;
+}
+.app-modal-content {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
 }

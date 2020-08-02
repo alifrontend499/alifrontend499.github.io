@@ -639,6 +639,7 @@ body.hasBMB {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     @include box-shadow(0px, 0px, 2px, 0px, rgba(0, 0, 0, 0.1));
+    overflow: hidden;
 
     .item {
         -webkit-flex-basis: 100px;
@@ -727,14 +728,20 @@ body.hasBMB {
 
     .ques-main {
         >.inner {
-            padding: 15px;
-            background: #fff;
+            // padding: 15px;
+            // background: #fff;
         }
 
         .ques {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 17px;
+            font-weight: 600;
             color: #000;
+        }
+
+        .ques-img-sec {
+            margin-top: 10px;
+
+            img {}
         }
 
         .sel-ans {
@@ -743,19 +750,67 @@ body.hasBMB {
             label {
                 cursor: pointer;
                 display: block;
-                padding: 8px 10px 11px;
+                padding: 8px;
                 background: #ffffff;
-                border: 1px solid #d6d6d6;
+                border: 2px solid #d6d6d6;
                 margin-bottom: 10px;
                 font-size: 16px;
                 color: #000;
-                @include box-shadow(1px, 1px, 4px, 0px, rgba(0, 0, 0, 0.2));
                 background-color: #fafafa;
+                // border-radius: 60px;
 
-                &.active {
-                    background-color: $success-color;
-                    border-color: #56bf05;
-                    color: #222;
+                .ques-icon {
+                    height: 24px;
+                    width: 24px;
+                    border: 2px solid #999;
+                    margin-right: 15px;
+                    border-radius: 50%;
+
+                    >span {
+                        color: #fff;
+                        font-size: 17px;
+                        position: relative;
+                    }
+                }
+
+                .ques-text {
+                    flex: 1;
+                    position: relative;
+                    top: -1px;
+
+                    &::first-letter {
+                        text-transform: uppercase;
+                    }
+                }
+
+                &.ques-right,
+                &.ques-wrong {
+                    .ques-text {
+                        top: 1px;
+                    }
+                }
+
+                &.ques-right {
+                    border-color: $success-color;
+
+                    .ques-icon {
+                        border-color: $success-color;
+                        background-color: $success-color;
+                    }
+                }
+
+                &.ques-wrong {
+                    border-color: $danger-color;
+
+                    .ques-icon {
+
+                        // border-color: $danger-color;
+                        // background-color: $danger-color;
+                        >span {
+                            top: -1px;
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -772,6 +827,36 @@ body.hasBMB {
 
         .next-question {
             margin-top: 15px;
+
+            .app-btn {
+                @include app-gradient-black;
+                border: none;
+                border: none;
+                width: auto;
+                padding: 12px 20px 13px;
+                font-size: 17px;
+                margin-top: 20px;
+            }
+        }
+
+
+        .get-solution {
+            margin-top: 15px;
+
+            p,
+            a {
+                font-size: 16px;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+
+            a {
+                color: $success-color;
+                font-weight: 600;
+                border-bottom: 1px solid $success-color;
+            }
         }
     }
 
@@ -801,10 +886,10 @@ body.hasBMB {
             padding-left: 15px;
 
             p {
-                font-weight: 800;
+                // font-weight: 800;
                 text-transform: uppercase;
                 font-size: 21px;
-                color: #111;
+                color: #fff;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
 
@@ -836,8 +921,8 @@ body.hasBMB {
             p {
                 text-transform: uppercase;
                 font-size: 12px;
-                font-weight: 900;
-                color: #000;
+                // font-weight: 900;
+                color: #fff;
             }
         }
 
@@ -866,7 +951,7 @@ body.hasBMB {
             padding-right: 15px;
 
             p.text {
-                text-transform: capitalize;
+                text-transform: uppercase;
                 font-size: 21px;
                 color: #fff;
                 font-family: 'styling', sans-serif;
@@ -1126,10 +1211,12 @@ body.hasBMB {
         }
 
         >.LT {
+            margin-left: -6px;
+
             .history-go-back {
                 background-color: transparent;
                 color: #000;
-                margin-left: -6px;
+                // margin-left: -6px;
 
                 i {
                     // font-weight: bold;
@@ -1152,11 +1239,13 @@ body.hasBMB {
         }
 
         >.RT {
+            >.inner {
+                margin-right: -6px;
+            }
 
             .app-more-menu,
             .app-open-menu {
                 >a {
-                    margin-right: -5px;
                     margin-left: 5px;
                     right: 0;
                     @include transition(.6);
@@ -1466,6 +1555,14 @@ body.hasBMB {
             font-weight: 600;
             font-size: 15px;
             padding: 12px 15px 13px;
+            box-shadow: none !important;
+            border: none;
+
+            &:hover,
+            &:active,
+            &:focus {
+                @include app-gradient-black
+            }
         }
     }
 }
@@ -1479,11 +1576,14 @@ body.hasBMB {
         }
 
         .img-sec {
-            height: 45px;
+            height: 50px;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 50px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
 
             img {
                 max-width: 100%;
@@ -1491,11 +1591,11 @@ body.hasBMB {
             }
 
             i {
-                font-size: 45px;
-                color: #333;
+                font-size: 30px;
+                color: #fff;
 
                 &.feather-phone-call {
-                    font-size: 40px;
+                    font-size: 28px;
                 }
             }
         }
@@ -1782,9 +1882,10 @@ body.hasBMB {
 
             .name {
                 font-size: 19px;
-                font-weight: 800;
-                letter-spacing: 1px;
+                /* font-weight: 800; */
+                letter-spacing: .8px;
                 color: #111;
+                font-family: 'styling', sans-serif;
             }
         }
 
