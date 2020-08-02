@@ -49,6 +49,9 @@
     background: -webkit-linear-gradient(180deg, rgba(255, 116, 46, 1) 0%, rgba(255, 114, 46, 1) 45%, rgba(255, 93, 27, 1) 100%);
     background: linear-gradient(180deg, rgba(255, 116, 46, 1) 0%, rgba(255, 114, 46, 1) 45%, rgba(255, 93, 27, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1);
+
+    // background: rgb(251, 83, 5);
+    // background: linear-gradient(NaNdeg, rgba(251, 83, 5, 1) 0%, rgba(255, 142, 80, 1) 100%);
 }
 
 @mixin min_width($width) {

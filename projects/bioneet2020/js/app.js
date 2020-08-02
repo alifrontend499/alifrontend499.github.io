@@ -104,9 +104,9 @@ $(function () {
 
             // BACKBTN FIXED
             if ($(this).scrollTop() > app_bbHeight) {
-                $('.backBar >.BB_top').addClass('fixed');
+                $('.backBar:not(.contact) > .BB_top').addClass('fixed');
             } else {
-                $('.backBar>.BB_top').removeClass('fixed');
+                $('.backBar:not(.contact) > .BB_top').removeClass('fixed');
             }
         })();
     });
@@ -171,19 +171,39 @@ function goBack() {
     }, 1000);
 })();
 
+// (function () {
+//     $('.edit-profile-button').click(function (ev) {
+//         ev.preventDefault()
+//         if ($('i', this).text() == 'check') {
+//             $(this).removeClass("app-gradient-green")
+//             $('i', this).text('edit').removeClass('check').addClass('edit')
+//             $('.prof-edit-content .frac-inner > .text').addClass('d-none')
+//             $('.prof-edit-content .input').addClass('non-editable')
+//             $('.prof-edit-content .input > input').blur()
+//             $('.frac.confirm-password').addClass('d-none')
+//         } else {
+//             $(this).addClass("app-gradient-green")
+//             $('i', this).text('check').removeClass('edit').addClass('check')
+//             $('.prof-edit-content .frac-inner > .text').removeClass('d-none')
+//             $('.prof-edit-content .input').removeClass('non-editable')
+//             $('.prof-edit-content .input > input[tabindex="1"]').focus()
+//             $('.frac.confirm-password').removeClass('d-none')
+//         }
+//     })
+// })();
 (function () {
     $('.edit-profile-button').click(function (ev) {
         ev.preventDefault()
-        if ($('i', this).text() == 'check') {
+        if ($('i', this).hasClass('feather-check')) {
             $(this).removeClass("app-gradient-green")
-            $('i', this).text('edit').removeClass('check').addClass('edit')
+            $('i', this).removeClass('feather-check').addClass('feather-edit-2')
             $('.prof-edit-content .frac-inner > .text').addClass('d-none')
             $('.prof-edit-content .input').addClass('non-editable')
             $('.prof-edit-content .input > input').blur()
             $('.frac.confirm-password').addClass('d-none')
         } else {
             $(this).addClass("app-gradient-green")
-            $('i', this).text('check').removeClass('edit').addClass('check')
+            $('i', this).removeClass('feather-edit-2').addClass('feather-check')
             $('.prof-edit-content .frac-inner > .text').removeClass('d-none')
             $('.prof-edit-content .input').removeClass('non-editable')
             $('.prof-edit-content .input > input[tabindex="1"]').focus()
