@@ -812,7 +812,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .ques-main .sel-ans label.ques-right { border-color: #34af5c; }
 .app-question-sec .ques-main .sel-ans label.ques-right .ques-icon { border-color: #34af5c; background-color: #34af5c; }
 .app-question-sec .ques-main .sel-ans label.ques-wrong { border-color: #96282c; }
-.app-question-sec .ques-main .sel-ans label.ques-wrong .ques-icon > span { top: -1px; display: none; }
+.app-question-sec .ques-main .sel-ans label.ques-wrong .ques-icon { border-color: #96282c; background-color: #96282c; }
+.app-question-sec .ques-main .sel-ans label.ques-wrong .ques-icon > span { top: -1px; }
 .app-question-sec .ques-main .viewmore { margin-top: 20px; }
 .app-question-sec .ques-main .viewmore a { font-weight: 800; font-size: 14px; color: #96282c; }
 .app-question-sec .ques-main .next-question { margin-top: 15px; }
@@ -826,16 +827,16 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .al-ques-home-other-inner { padding: 10px 15px; overflow: hidden; }
 .app-question-sec .al-ques-home-other-inner .img-sec { width: 65px; }
 .app-question-sec .al-ques-home-other-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
-.app-question-sec .al-ques-home-other-inner .text-sec p { text-transform: uppercase; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; }
+.app-question-sec .al-ques-home-other-inner .text-sec p { text-transform: uppercase; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2); }
 .app-question-sec .al-ques-home-other-inner .text-sec p span { font-weight: normal; font-size: 15px; text-transform: lowercase; }
 .app-question-sec .al-ques-home-other-inner .text-sec p.two { font-size: 18px; margin-bottom: 3px; }
 .app-question-sec .al-ques-home-other-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
-.app-question-sec .al-ques-home-other-inner .free-label p { text-transform: uppercase; font-size: 12px; color: #fff; }
+.app-question-sec .al-ques-home-other-inner .free-label p { text-transform: uppercase; font-size: 12px; color: #000; }
 .app-question-sec .al-ques-home-other-inner:active { opacity: 0.8; }
 .app-question-sec .al-ques-home-inner { padding: 10px 10px 10px 15px; overflow: hidden; background: black; background: -moz-linear-gradient(312deg, black 0%, #424242 100%); background: -webkit-linear-gradient(312deg, black 0%, #424242 100%); background: linear-gradient(312deg, black 0%, #424242 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#424242", GradientType=1); }
 .app-question-sec .al-ques-home-inner .img-sec { width: 80px; }
 .app-question-sec .al-ques-home-inner .text-sec { width: calc(100% - 80px); padding-right: 15px; }
-.app-question-sec .al-ques-home-inner .text-sec p.text { text-transform: uppercase; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; margin-bottom: 5px; }
+.app-question-sec .al-ques-home-inner .text-sec p.text { text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; margin-bottom: 5px; }
 .app-question-sec .al-ques-home-inner .text-sec p.text-sm { font-size: 15px; color: #dcdcdc; }
 .app-question-sec .al-ques-home-inner:active { opacity: 0.8; }
 
@@ -940,10 +941,10 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-contact-form .form .app-btn:hover, .app-contact-form .form .app-btn:active, .app-contact-form .form .app-btn:focus { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1); }
 
 .app-contact .AC_inner > .item { width: 50%; padding: 0 10px; }
-.app-contact .AC_inner .img-sec { height: 50px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; width: 50px; border-radius: 50%; margin: 0 auto 15px; }
+.app-contact .AC_inner .img-sec { height: 55px; display: flex; align-items: center; justify-content: center; }
 .app-contact .AC_inner .img-sec img { max-width: 100%; max-height: 100%; }
-.app-contact .AC_inner .img-sec i { font-size: 30px; color: #fff; }
-.app-contact .AC_inner .img-sec i.feather-phone-call { font-size: 28px; }
+.app-contact .AC_inner .img-sec i { font-size: 37px; color: #000; }
+.app-contact .AC_inner .img-sec i.feather-phone-call { font-size: 33px; }
 .app-contact .AC_inner .text-sec p { font-weight: 500; font-size: 17px; color: #555; }
 .app-contact .AC_inner .text-sec p span { font-weight: 600; margin-bottom: 3px; color: #000; }
 

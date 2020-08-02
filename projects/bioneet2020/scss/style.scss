@@ -803,12 +803,11 @@ body.hasBMB {
                     border-color: $danger-color;
 
                     .ques-icon {
-
-                        // border-color: $danger-color;
-                        // background-color: $danger-color;
+                        border-color: $danger-color;
+                        background-color: $danger-color;
                         >span {
                             top: -1px;
-                            display: none;
+                            // display: none;
                         }
                     }
                 }
@@ -892,6 +891,7 @@ body.hasBMB {
                 color: #fff;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
+                text-shadow: 1px 2px 1px rgba(0,0,0,0.2);
 
                 span {
                     font-weight: normal;
@@ -922,7 +922,7 @@ body.hasBMB {
                 text-transform: uppercase;
                 font-size: 12px;
                 // font-weight: 900;
-                color: #fff;
+                color: #000;
             }
         }
 
@@ -952,7 +952,7 @@ body.hasBMB {
 
             p.text {
                 text-transform: uppercase;
-                font-size: 21px;
+                font-size: 20px;
                 color: #fff;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
@@ -1576,14 +1576,15 @@ body.hasBMB {
         }
 
         .img-sec {
-            height: 50px;
-            margin-bottom: 15px;
+            // height: 50px;
+            height: 55px;
+            // margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            border-radius: 50%;
-            margin: 0 auto 15px;
+            // width: 50px;
+            // border-radius: 50%;
+            // margin: 0 auto 15px;
 
             img {
                 max-width: 100%;
@@ -1591,11 +1592,11 @@ body.hasBMB {
             }
 
             i {
-                font-size: 30px;
-                color: #fff;
+                font-size: 37px;
+                color: #000;
 
                 &.feather-phone-call {
-                    font-size: 28px;
+                    font-size: 33px;
                 }
             }
         }
