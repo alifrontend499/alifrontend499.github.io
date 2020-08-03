@@ -827,7 +827,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .al-ques-home-other-inner { padding: 10px 15px; overflow: hidden; }
 .app-question-sec .al-ques-home-other-inner .img-sec { width: 65px; }
 .app-question-sec .al-ques-home-other-inner .text-sec { width: calc(100% - 65px); padding-left: 15px; }
-.app-question-sec .al-ques-home-other-inner .text-sec p { text-transform: uppercase; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2); }
+.app-question-sec .al-ques-home-other-inner .text-sec p { text-transform: uppercase; font-size: 21px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3); }
 .app-question-sec .al-ques-home-other-inner .text-sec p span { font-weight: normal; font-size: 15px; text-transform: lowercase; }
 .app-question-sec .al-ques-home-other-inner .text-sec p.two { font-size: 18px; margin-bottom: 3px; }
 .app-question-sec .al-ques-home-other-inner .free-label { background: #fbd502; padding: 4px 0 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); position: absolute; right: -24px; bottom: -10px; height: 40px; width: 70px; text-align: center; }
@@ -871,7 +871,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .home-buy-products .HBP_Items .item:not(:last-child) { margin-bottom: 8px; }
 .home-buy-products .HBP_Items .item > .inner { padding: 8px 8px; }
 .home-buy-products .HBP_Items .item > .inner:active { background-color: #ececec; }
-.home-buy-products .HBP_Items .item > .inner > .img-sec { width: 50px; }
+.home-buy-products .HBP_Items .item > .inner > .img-sec { width: 50px; position: relative; top: 2px; }
 .home-buy-products .HBP_Items .item > .inner > .img-sec img { display: block; margin: 0 auto; }
 .home-buy-products .HBP_Items .item > .inner > .text-sec { flex: 1; padding-left: 10px; }
 .home-buy-products .HBP_Items .item > .inner > .text-sec .head { font-weight: 600; font-size: 18px; color: #333; margin-bottom: 5px; }
@@ -967,6 +967,12 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-buy-products .ABP-main .text-sec .det { margin-top: 9px; color: #444; text-transform: capitalize; font-size: 14px; }
 .app-buy-products .ABP-main .text-sec .det i { position: relative; top: 2px; }
 .app-buy-products .ABP-main .text-sec .price { display: inline-block; padding: 3px 10px; border-radius: 25px; color: #fff; }
+.app-buy-products .ABP-main .text-sec.main-details-start { border-bottom: 1px solid #ddd; padding-bottom: 15px; }
+.app-buy-products .ABP-main .text-sec.main-details-end { padding-top: 15px; }
+.app-buy-products .ABP-main .text-sec.main-details-end .det { margin-top: 0 !important; font-size: 15px; }
+.app-buy-products .ABP-main .button-sec { margin-top: 15px; }
+.app-buy-products .ABP-main .button-sec .app-btn { border: none !important; font-size: 15px; }
+.app-buy-products .ABP-main .button-sec .app-btn > i { font-size: 16px; margin-right: 6px; }
 
 .app-solutions .frac { padding: 15px 15px 12px; background: #fff; }
 .app-solutions .frac:not(:last-child) { margin-bottom: 25px; }
