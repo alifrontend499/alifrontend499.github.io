@@ -805,6 +805,7 @@ body.hasBMB {
                     .ques-icon {
                         border-color: $danger-color;
                         background-color: $danger-color;
+
                         >span {
                             top: -1px;
                             // display: none;
@@ -891,7 +892,7 @@ body.hasBMB {
                 color: #fff;
                 font-family: 'styling', sans-serif;
                 letter-spacing: .5px;
-                text-shadow: 1px 2px 1px rgba(0,0,0,0.2);
+                text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
 
                 span {
                     font-weight: normal;
@@ -1154,7 +1155,8 @@ body.hasBMB {
                 }
 
                 >.text-sec {
-                    width: calc(100% - 50px);
+                    // width: calc(100% - 50px);
+                    flex: 1;
                     padding-left: 10px;
 
                     .head {
@@ -1189,7 +1191,7 @@ body.hasBMB {
     .BB_top {
         // padding: 10px 0 10px;
         padding: 13px 0 13px;
-        background-color: #fff;
+        // background-color: #fff;
     }
 
     &.contact {
@@ -1258,88 +1260,7 @@ body.hasBMB {
                 }
             }
         }
-
-        >.BB_links {
-            width: 100%;
-            margin-top: 15px;
-
-            .hidden {
-                overflow: hidden;
-            }
-
-            ul {
-                width: 100%;
-                overflow: auto;
-                padding-bottom: 0;
-                white-space: nowrap;
-
-                >li {
-                    white-space: normal;
-                    display: inline-block;
-                    font-size: 15px;
-                    padding: 0 10px;
-                    font-weight: 600;
-
-                    &:first-child {
-                        padding-left: 0;
-                    }
-
-                    &:last-child {
-                        padding-right: 0;
-                    }
-
-                    >a {
-                        padding: 0;
-                        color: #000;
-                        display: block;
-                        border-bottom: 3px solid transparent;
-                        padding-bottom: 6px;
-                    }
-
-                    &:hover,
-                    &.active {
-                        >a {
-                            border-color: $danger-color;
-                        }
-                    }
-                }
-
-                overflow: -moz-scrollbars-none;
-                -ms-overflow-style: none;
-
-                &::-webkit-scrollbar {
-                    display: none !important;
-                }
-
-                &.inl {
-                    >li {
-                        margin-right: -4px;
-                    }
-
-                    &.two-view {
-                        >li {
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
     }
-
-    // .BBB_inner {
-    //     .text {
-    //         color: #fff;
-    //         font-size: 25px;
-    //         text-shadow: 0px 1px 1px #a2a2a2;
-    //     }
-
-    //     img {
-    //         line-height: 0;
-    //         margin-bottom: -6px;
-    //         width: 200px;
-    //         margin-top: 8px;
-    //     }
-    // }
 
     .BB_top {
         @include transition;
@@ -1351,13 +1272,7 @@ body.hasBMB {
             width: 100%;
             z-index: 12;
             @include box-shadow(0px, 0px, 5px, 0px, #a7a7a7);
-            // padding: 7px 0 10px;
-
-            // .BBT_inner {
-            //     >.BB_links {
-            //         margin-top: 7px;
-            //     }
-            // }
+            background-color: #fff;
         }
     }
 }
@@ -1644,7 +1559,7 @@ body.hasBMB {
             // text-decoration: none !important;
             text-decoration: none !important;
             // min-height: 120px;
-            padding: 15px 10px;
+            padding: 15px;
             background-color: #fff;
 
             // &:active {
@@ -1672,6 +1587,84 @@ body.hasBMB {
 }
 
 // OTHER APPS
+#app-buy-products {
+    .BB_links {
+        width: 100%;
+
+        ul {
+            width: 100%;
+            overflow: auto;
+            padding-bottom: 0;
+            white-space: nowrap;
+
+            >li {
+                // white-space: normal;
+                // display: inline-block;
+                // font-size: 15px;
+                // padding: 0 10px;
+                // font-weight: 600;
+                white-space: normal;
+                display: inline-block;
+                letter-spacing: 0.5px;
+                padding: 0 10px;
+                font-family: 'styling', sans-serif;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                >a {
+                    font-size: 20px;
+                    padding: 0;
+                    color: #b6b6b6;
+                    display: block;
+                    // border-bottom: 3px solid transparent;
+                    // padding-bottom: 6px;
+                }
+
+                &:hover,
+                &.active {
+                    >a {
+                        color: $secodary-color;
+                        // border-color: $danger-color;
+                    }
+                }
+            }
+
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+
+            &::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            &.inl {
+                >li {
+                    margin-right: -4px;
+                }
+
+                &.two-view {
+                    >li {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .bb_image-sec {
+        img {
+            max-width: 155px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
 .app-buy-products {
     .ABP-main {
         &:not(:last-child) {
@@ -1680,50 +1673,57 @@ body.hasBMB {
 
         >.inner {
             background-color: #fff;
-            padding: 15px 7px;
+            padding: 15px;
             text-decoration: none !important;
 
-            &:active {
-                background-color: $active-color;
-            }
-        }
-
-        .img-sec {
-            width: 50px;
-
-            img {
-                display: block;
-                margin: 5px auto 0;
-            }
+            // &:active {
+            //     background-color: $active-color;
+            // }
         }
 
         .text-sec {
-            width: calc(100% - 50px);
-            padding-left: 15px;
+
+            // width: calc(100% - 50px);
+            // padding-left: 15px;
+            .lt-sec {
+                flex: 1;
+            }
+
+            .rt-sec {
+                width: 110px;
+            }
 
             p {
-                font-size: 16px;
-                color: #000;
+                font-size: 15px;
+                color: #333;
                 line-height: normal;
             }
 
             .head {
-                font-weight: 700;
-                margin-bottom: 4px;
+                font-family: 'styling', sans-serif;
+                font-size: 20px;
+                color: #333;
+                padding-top: 2px;
             }
 
             .det {
+                margin-top: 9px;
+                color: #444;
+                text-transform: capitalize;
                 font-size: 14px;
-                font-style: italic;
+
+                i {
+                    // margin-left: 3px;
+                    position: relative;
+                    top: 2px;
+                }
             }
 
             .price {
-                background: $danger-color;
-                display: table;
-                padding: 2px 13px;
+                display: inline-block;
+                padding: 3px 10px;
                 border-radius: 25px;
                 color: #fff;
-                margin-top: 5px;
             }
         }
     }
