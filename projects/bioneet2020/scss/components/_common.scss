@@ -177,9 +177,11 @@ input[type="text"].app-input {
 .app-gradient-green {
     @include app-gradient-green;
 }
+
 .app-gradient-red {
     @include app-gradient-red;
 }
+
 .app-gradient-black {
     @include app-gradient-black;
 }
@@ -486,8 +488,57 @@ input[type="text"].app-input {
 .app-modal {
     background-color: transparent;
 }
+
 .app-modal-content {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
+}
+
+.round-pagi {
+
+    >ul {
+        padding: 15px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+
+
+        >li {
+            >a {
+                height: 30px;
+                width: 30px;
+                padding-bottom: 1px;
+                border-radius: 7px;
+                border: 1px solid #ababab;
+                color: #ababab;
+                font-size: 16px;
+
+                &:focus {
+                    background-color: $secodary-color;
+                    border-color: $secodary-color;
+                    color: #000;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+
+            &.active {
+                a {
+                    background-color: $secodary-color;
+                    border-color: $secodary-color;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    &.white-bg {
+        background-color: #fff;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
 }

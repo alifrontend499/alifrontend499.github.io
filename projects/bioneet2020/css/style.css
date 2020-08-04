@@ -680,6 +680,13 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 
 .app-modal-content { background-color: #fff; border-radius: 12px; overflow: hidden; }
 
+.round-pagi > ul { padding: 15px; width: 100%; white-space: nowrap; overflow: auto; overflow: -moz-scrollbars-none; -ms-overflow-style: none; }
+.round-pagi > ul > li > a { height: 30px; width: 30px; padding-bottom: 1px; border-radius: 7px; border: 1px solid #ababab; color: #ababab; font-size: 16px; }
+.round-pagi > ul > li > a:focus { background-color: #fcb01f; border-color: #fcb01f; color: #000; }
+.round-pagi > ul > li:not(:last-child) { margin-right: 12px; }
+.round-pagi > ul > li.active a { background-color: #fcb01f; border-color: #fcb01f; color: #000; }
+.round-pagi.white-bg { background-color: #fff; box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); }
+
 body { background: #f3f3f3; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 html, .login-body, .app_L-main { height: 100%; }
@@ -892,15 +899,6 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .backBar .BB_top { transition: 0.3s; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; background-color: #fff; }
 
-.other-apps .OA-main:not(:last-child) { margin-bottom: 20px; }
-.other-apps .OA-main > .inner { background-color: #fff; padding: 15px 7px; text-decoration: none !important; }
-.other-apps .OA-main > .inner:active { background-color: #ececec; }
-.other-apps .OA-main .img-sec { width: 50px; }
-.other-apps .OA-main .img-sec img { display: block; margin: 0 auto; }
-.other-apps .OA-main .text-sec { width: calc(100% - 50px); padding-left: 10px; }
-.other-apps .OA-main .text-sec p { font-size: 16px; color: #000; line-height: normal; }
-.other-apps .OA-main .text-sec .head { font-weight: 700; margin-bottom: 4px; }
-
 .app-notificatins .AN-main:not(:last-child) { margin-bottom: 12px; }
 .app-notificatins .AN-main > .inner { background-color: #fff; padding: 15px 70px 15px 7px; text-decoration: none !important; }
 .app-notificatins .AN-main > .inner:active { background-color: #ececec; }
@@ -948,10 +946,10 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 
 #app-buy-products .BB_links { width: 100%; }
 #app-buy-products .BB_links ul { width: 100%; overflow: auto; padding-bottom: 0; white-space: nowrap; overflow: -moz-scrollbars-none; -ms-overflow-style: none; }
-#app-buy-products .BB_links ul > li { white-space: normal; display: inline-block; letter-spacing: 0.5px; padding: 0 10px; font-family: 'styling', sans-serif; }
+#app-buy-products .BB_links ul > li { white-space: normal; display: inline-block; letter-spacing: 0.5px; padding: 0 7px; font-family: 'styling', sans-serif; text-transform: capitalize !important; }
 #app-buy-products .BB_links ul > li:first-child { padding-left: 0; }
 #app-buy-products .BB_links ul > li:last-child { padding-right: 0; }
-#app-buy-products .BB_links ul > li > a { font-size: 20px; padding: 0; color: #b6b6b6; display: block; }
+#app-buy-products .BB_links ul > li > a { font-size: 24px; padding: 0; color: #b6b6b6; display: block; }
 #app-buy-products .BB_links ul > li:hover > a, #app-buy-products .BB_links ul > li.active > a { color: #fcb01f; }
 #app-buy-products .BB_links ul::-webkit-scrollbar { display: none !important; }
 #app-buy-products .BB_links ul.inl > li { margin-right: -4px; }
@@ -1005,5 +1003,20 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .user-profile-sec .prof-edit-content .frac-inner .input input { font-size: 16px; height: 32px; padding: 0 5px 0; margin: 0 -5px; background: #fff; width: 100%; border-radius: 6px; border: none !important; color: #000; line-height: normal; }
 .user-profile-sec .prof-edit-content .frac-inner .input.non-editable input { background: transparent; pointer-events: none; padding: 0; margin: 0; }
 .user-profile-sec .prof-edit-content .frac-inner p.text { width: 100%; font-size: 12px; top: -14px; font-weight: 900; color: #666; margin-bottom: 5px; padding-left: 35px; }
+
+.app-all-vidoes .item:not(:last-child) { margin-bottom: 30px; }
+.app-all-vidoes .item > .inner { overflow: hidden; }
+.app-all-vidoes .item > .inner > .img-sec { width: 100px; overflow: hidden; background: #efefef; }
+.app-all-vidoes .item > .inner > .img-sec img { display: block; margin: 0 auto; }
+.app-all-vidoes .item > .inner > .text-sec { flex: 1; padding-left: 15px; }
+.app-all-vidoes .item > .inner > .text-sec .head { font-size: 16px; color: #000; margin-bottom: 5px; font-weight: 600; }
+.app-all-vidoes .item > .inner > .text-sec .desc { font-size: 14px; color: #666; }
+
+#app-notes .round-pagi { margin-bottom: 15px; }
+
+.app-notes .big-heading { font-family: 'styling', sans-serif; font-size: 20px; color: #000; margin-bottom: 15px; }
+.app-notes .text { font-size: 15px; color: #333; margin-bottom: 10px; }
+.app-notes .medium-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 18px; }
+.app-notes .small-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

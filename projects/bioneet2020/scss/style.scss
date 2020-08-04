@@ -1279,52 +1279,6 @@ body.hasBMB {
     }
 }
 
-// OTHER APPS
-.other-apps {
-    .OA-main {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
-
-        >.inner {
-            background-color: #fff;
-            padding: 15px 7px;
-            text-decoration: none !important;
-
-            &:active {
-                background-color: $active-color;
-            }
-        }
-
-        .img-sec {
-            width: 50px;
-
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
-
-        .text-sec {
-            width: calc(100% - 50px);
-            padding-left: 10px;
-
-            p {
-                font-size: 16px;
-                color: #000;
-                line-height: normal;
-            }
-
-            .head {
-                font-weight: 700;
-                margin-bottom: 4px;
-            }
-
-            .det {}
-        }
-    }
-}
-
 // APP NOTIFICATINS
 .app-notificatins {
     .AN-main {
@@ -1608,8 +1562,9 @@ body.hasBMB {
                 white-space: normal;
                 display: inline-block;
                 letter-spacing: 0.5px;
-                padding: 0 10px;
+                padding: 0 7px;
                 font-family: 'styling', sans-serif;
+                text-transform: capitalize !important;
 
                 &:first-child {
                     padding-left: 0;
@@ -1620,7 +1575,7 @@ body.hasBMB {
                 }
 
                 >a {
-                    font-size: 20px;
+                    font-size: 24px;
                     padding: 0;
                     color: #b6b6b6;
                     display: block;
@@ -2042,5 +1997,85 @@ body.hasBMB {
                 padding-left: 35px;
             }
         }
+    }
+}
+
+// APP ALL VIDEOS
+#app-all-vidoes {}
+
+.app-all-vidoes {
+    .item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        >.inner {
+            overflow: hidden;
+
+            >.img-sec {
+                width: 100px;
+                overflow: hidden;
+                background: #efefef;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            >.text-sec {
+                // width: calc(100% - 50px);
+                flex: 1;
+                padding-left: 15px;
+
+                .head {
+                    font-size: 16px;
+                    color: #000;
+                    margin-bottom: 5px;
+                    font-weight: 600;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+// APP NOTES
+#app-notes {
+    .round-pagi {
+        margin-bottom: 15px;
+    }
+}
+
+.app-notes {
+    .big-heading {
+        font-family: 'styling', sans-serif;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .medium-heading {
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .small-heading {
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 10px;
+        font-size: 18px;
     }
 }
