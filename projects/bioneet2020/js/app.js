@@ -189,12 +189,13 @@ function goBack() {
             $('i', this).removeClass('feather-edit-2').addClass('feather-check')
             $('.prof-edit-content .frac-inner > .text').removeClass('d-none')
             $('.prof-edit-content .input').removeClass('non-editable')
-            $('.prof-edit-content .input > input[tabindex="1"]').focus()
             $('.frac.confirm-password').removeClass('d-none')
 
-            // $('html, body').animate({
-            //     scrollTop: $('.prof-edit .app-head-w-view> .head').offset().top - 56
-            // }, 500)
+            $('html, body').animate({
+                scrollTop: $('.prof-edit .app-head-w-view> .head').offset().top - (56 + 10)
+            }, 500, function () {
+                $('.prof-edit-content .input > input[tabindex="1"]').focus()
+            })
         }
     })
 })();
