@@ -1281,13 +1281,27 @@ body.hasBMB {
 
 // APP NOTIFICATINS
 .app-notificatins {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .app-head-w-view {
+        margin-bottom: 5px;
+
+        .link {
+            i {
+                font-size: 19px;
+                color: #000;
+            }
+        }
+    }
+
     .AN-main {
         &:not(:last-child) {
             margin-bottom: 10px;
         }
 
         >.line-left-sec {
-            padding: 15px 0 15px 10px;
+            padding: 16px 0 15px 10px;
 
             .ln-inner {
                 height: 100%;
@@ -1305,7 +1319,7 @@ body.hasBMB {
             }
 
             .round {
-                background-color: transparent;
+                background-color: $secodary-color;
                 height: 13px;
                 width: 13px;
                 border-radius: 50%;
@@ -1314,12 +1328,12 @@ body.hasBMB {
                 &:after {
                     content: '';
                     position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    // height: calc(100% + 8px);
-                    // width: calc(100% + 8px);
-                    // top: -4px;
-                    // left: -4px;
+                    // height: 100%;
+                    // width: 100%;
+                    height: calc(100% + 8px);
+                    width: calc(100% + 8px);
+                    top: -4px;
+                    left: -4px;
                     z-index: -1;
                     border-radius: 100%;
                     border: 2px solid $secodary-color;
@@ -1348,8 +1362,10 @@ body.hasBMB {
             padding: 15px;
             width: calc(100% - 40px);
             margin-left: auto;
+
             &:active,
-            &:focus, {
+            &:focus,
+                {
                 background-color: $secodary-color;
             }
         }
@@ -1364,9 +1380,9 @@ body.hasBMB {
             .name {
                 font-size: 16px;
                 font-weight: 700;
-                margin-bottom: 10px;
+                margin-bottom: 3px;
                 position: relative;
-                top: -6px;
+                top: -4px;
             }
 
             .det {
@@ -1383,7 +1399,7 @@ body.hasBMB {
                 font-size: 15px;
                 text-align: right;
                 position: relative;
-                top: 5px;
+                top: 7px;
                 color: #000;
             }
         }
@@ -1987,8 +2003,8 @@ body.hasBMB {
     }
 
     .text {
-        // font-size: 15px;
-        font-size: 16px;
+        font-size: 15px;
+        // font-size: 16px;
         color: #333;
         margin-bottom: 10px;
     }

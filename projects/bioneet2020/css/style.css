@@ -899,19 +899,22 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .backBar .BB_top { transition: 0.3s; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; background-color: #fff; }
 
+.app-notificatins:not(:last-child) { margin-bottom: 10px; }
+.app-notificatins .app-head-w-view { margin-bottom: 5px; }
+.app-notificatins .app-head-w-view .link i { font-size: 19px; color: #000; }
 .app-notificatins .AN-main:not(:last-child) { margin-bottom: 10px; }
-.app-notificatins .AN-main > .line-left-sec { padding: 15px 0 15px 10px; }
+.app-notificatins .AN-main > .line-left-sec { padding: 16px 0 15px 10px; }
 .app-notificatins .AN-main > .line-left-sec .ln-inner { height: 100%; }
 .app-notificatins .AN-main > .line-left-sec .ln-inner:after { height: calc(100% + 10px); width: 2px; position: absolute; top: calc(13px + 8px); left: 50%; z-index: -1; background-color: #fcb01f; transform: translateX(-50%); }
-.app-notificatins .AN-main > .line-left-sec .round { background-color: transparent; height: 13px; width: 13px; border-radius: 50%; }
-.app-notificatins .AN-main > .line-left-sec .round:after { content: ''; position: absolute; height: 100%; width: 100%; z-index: -1; border-radius: 100%; border: 2px solid #fcb01f; transition: 0.3s; }
+.app-notificatins .AN-main > .line-left-sec .round { background-color: #fcb01f; height: 13px; width: 13px; border-radius: 50%; }
+.app-notificatins .AN-main > .line-left-sec .round:after { content: ''; position: absolute; height: calc(100% + 8px); width: calc(100% + 8px); top: -4px; left: -4px; z-index: -1; border-radius: 100%; border: 2px solid #fcb01f; transition: 0.3s; }
 .app-notificatins .AN-main:not(:last-child) > .line-left-sec .ln-inner:after { content: ''; }
 .app-notificatins .AN-main > .inner { transition: 0.3s; text-decoration: none !important; padding: 15px; width: calc(100% - 40px); margin-left: auto; }
 .app-notificatins .AN-main > .inner:active, .app-notificatins .AN-main > .inner:focus { background-color: #fcb01f; }
 .app-notificatins .AN-main .text-sec p { color: #000; line-height: normal; }
-.app-notificatins .AN-main .text-sec .name { font-size: 16px; font-weight: 700; margin-bottom: 10px; position: relative; top: -6px; }
+.app-notificatins .AN-main .text-sec .name { font-size: 16px; font-weight: 700; margin-bottom: 3px; position: relative; top: -4px; }
 .app-notificatins .AN-main .text-sec .det { font-size: 15px; }
-.app-notificatins .AN-main .other-details p { font-size: 15px; text-align: right; position: relative; top: 5px; color: #000; }
+.app-notificatins .AN-main .other-details p { font-size: 15px; text-align: right; position: relative; top: 7px; color: #000; }
 
 .app-contact-form { margin: 30px 0 40px; }
 .app-contact-form .ACP_inner { padding: 10px 20px 25px; background: #fff; margin-top: -90px; position: relative; z-index: 123; border-radius: 25px; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); }
@@ -1002,7 +1005,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 #app-notes .round-pagi { margin-bottom: 15px; }
 
 .app-notes .big-heading { font-family: 'styling', sans-serif; font-size: 22px; color: #000; margin-bottom: 15px; }
-.app-notes .text { font-size: 16px; color: #333; margin-bottom: 10px; }
+.app-notes .text { font-size: 15px; color: #333; margin-bottom: 10px; }
 .app-notes .medium-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 20px; }
 .app-notes .small-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 20px; }
 
