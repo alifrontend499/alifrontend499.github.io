@@ -899,8 +899,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .backBar .BB_top { transition: 0.3s; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; background-color: #fff; }
 
-.app-notificatins:not(:last-child) { margin-bottom: 10px; }
-.app-notificatins .app-head-w-view { margin-bottom: 5px; }
+.app-notificatins:not(:last-child) { margin-bottom: 15px; }
+.app-notificatins .app-head-w-view { margin-bottom: 10px; }
 .app-notificatins .app-head-w-view .link i { font-size: 19px; color: #000; }
 .app-notificatins .AN-main:not(:last-child) { margin-bottom: 10px; }
 .app-notificatins .AN-main > .line-left-sec { padding: 16px 0 15px 10px; }
