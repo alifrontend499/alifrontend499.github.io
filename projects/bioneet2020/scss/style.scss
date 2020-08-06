@@ -1284,6 +1284,7 @@ body.hasBMB {
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+
     .app-head-w-view {
         margin-bottom: 5px;
 
@@ -1364,8 +1365,7 @@ body.hasBMB {
             margin-left: auto;
 
             &:active,
-            &:focus,
-                {
+            &:focus {
                 background-color: $secodary-color;
             }
         }
@@ -2013,14 +2013,14 @@ body.hasBMB {
         font-weight: 600;
         color: #000;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .small-heading {
         font-weight: 600;
         color: #000;
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

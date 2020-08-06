@@ -1006,8 +1006,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 
 .app-notes .big-heading { font-family: 'styling', sans-serif; font-size: 22px; color: #000; margin-bottom: 15px; }
 .app-notes .text { font-size: 15px; color: #333; margin-bottom: 10px; }
-.app-notes .medium-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 20px; }
-.app-notes .small-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 20px; }
+.app-notes .medium-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 18px; }
+.app-notes .small-heading { font-weight: 600; color: #000; margin-bottom: 10px; font-size: 18px; }
 
 .no-internet { height: 100vh; }
 .no-internet > .inner { width: 100%; padding: 0 20px; }
