@@ -907,7 +907,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-notificatins .AN-main > .line-left-sec .round:after { content: ''; position: absolute; height: 100%; width: 100%; z-index: -1; border-radius: 100%; border: 2px solid #fcb01f; transition: 0.3s; }
 .app-notificatins .AN-main:not(:last-child) > .line-left-sec .ln-inner:after { content: ''; }
 .app-notificatins .AN-main > .inner { transition: 0.3s; text-decoration: none !important; padding: 15px; width: calc(100% - 40px); margin-left: auto; }
-.app-notificatins .AN-main > .inner:active { background-color: #fcb01f; }
+.app-notificatins .AN-main > .inner:active, .app-notificatins .AN-main > .inner:focus { background-color: #fcb01f; }
 .app-notificatins .AN-main .text-sec p { color: #000; line-height: normal; }
 .app-notificatins .AN-main .text-sec .name { font-size: 16px; font-weight: 700; margin-bottom: 10px; position: relative; top: -6px; }
 .app-notificatins .AN-main .text-sec .det { font-size: 15px; }
