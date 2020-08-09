@@ -549,6 +549,8 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
   .align-self-xl-center { -ms-flex-item-align: center !important; align-self: center !important; }
   .align-self-xl-baseline { -ms-flex-item-align: baseline !important; align-self: baseline !important; }
   .align-self-xl-stretch { -ms-flex-item-align: stretch !important; align-self: stretch !important; } }
+.paragraph-font { font-size: 16px; }
+
 .text-left { text-align: left; }
 
 .text-center { text-align: center; }
@@ -574,6 +576,8 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 .pb-0 { padding-bottom: 0 !important; }
 
 .w-100 { width: 100% !important; }
+
+.w-50 { width: 50% !important; }
 
 .com-mt, .com-my { margin-top: 30px; }
 
@@ -602,18 +606,20 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 .app-round-btn { min-width: 160px; padding: 14px 10px 11px; height: auto; border-radius: 30px; -webkit-box-shadow: 1pxf 0px 6px 0px #272727; box-shadow: 1pxf 0px 6px 0px #272727; margin: 0 auto; background-color: #fff !important; color: #fcb01f; }
 .app-round-btn:hover { background-color: #fff !important; }
 
-button.gradient, .btn.gradient { background: #fcd905; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1); }
+button.gradient, .btn.gradient { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
 
 input[type="text"].app-input { border: 1px solid #cecece; height: 40px; background: #fff; padding: 2px 10px; box-shadow: none; outline: none; box-sizing: border-box; }
 input[type="text"].app-input:focus { border-bottom-color: #cecece !important; box-shadow: none !important; }
 
-.app-geadient { background: #fcd905; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1); }
+.app-geadient { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
 
 .app-gradient-green { background: #b1e46a !important; background: -moz-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: -webkit-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1) !important; }
 
-.app-gradient-red { background: #ff742e; background: -moz-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%); background: -webkit-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%); background: linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1); }
+.app-gradient-red { background: #ff742e !important; background: -moz-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: -webkit-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1) !important; }
 
-.app-gradient-black { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1); }
+.app-gradient-black { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1) !important; }
+
+.app-gradient-purple { background: #9b27b0 !important; background: -moz-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: -webkit-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b27b0",endColorstr="#8e26a1",GradientType=1) !important; }
 
 .app-geadient-left-to-right { background: #fcd905; background: -moz-linear-gradient(90deg, #fabe07 0%, #fcd905 100%); background: -webkit-linear-gradient(90deg, #fabe07 0%, #fcd905 100%); background: linear-gradient(90deg, #fabe07 0%, #fcd905 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4b407", endColorstr="#fde006", GradientType=1); }
 
@@ -697,7 +703,7 @@ html, .login-body, .app_L-main { height: 100%; }
 
 .login-body { overflow: auto; background: #f8f8f8; }
 
-.app-login { background: #fcd905; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%); background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1); }
+.app-login { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
 
 .app_L-main .AL_head { width: 100%; padding: 0px 15px 0; margin-bottom: 0; }
 .app_L-main .AL_head .AL_text { font-size: 24px; color: #222; font-weight: 600; }
@@ -824,7 +830,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .ques-main .viewmore { margin-top: 20px; }
 .app-question-sec .ques-main .viewmore a { font-weight: 800; font-size: 14px; color: #96282c; }
 .app-question-sec .ques-main .next-question { margin-top: 15px; }
-.app-question-sec .ques-main .next-question .app-btn { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1); border: none; border: none; width: auto; padding: 12px 20px 13px; font-size: 17px; margin-top: 20px; }
+.app-question-sec .ques-main .next-question .app-btn { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1) !important; border: none; border: none; width: auto; padding: 12px 20px 13px; font-size: 17px; margin-top: 20px; }
 .app-question-sec .ques-main .get-solution { margin-top: 15px; }
 .app-question-sec .ques-main .get-solution p, .app-question-sec .ques-main .get-solution a { font-size: 16px; }
 .app-question-sec .ques-main .get-solution p { margin-bottom: 5px; }
@@ -846,6 +852,23 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .al-ques-home-inner .text-sec p.text { text-transform: uppercase; font-size: 20px; color: #fff; font-family: 'styling', sans-serif; letter-spacing: .5px; margin-bottom: 5px; }
 .app-question-sec .al-ques-home-inner .text-sec p.text-sm { font-size: 15px; color: #dcdcdc; }
 .app-question-sec .al-ques-home-inner:active { opacity: 0.8; }
+.app-question-sec.live-test { padding-bottom: 70px; }
+.app-question-sec .live-test-timing .lt, .app-question-sec .live-test-timing .rt { width: 90px; }
+.app-question-sec .live-test-timing .ct { flex-grow: 1; padding: 0 5px; }
+.app-question-sec .live-test-timing .ct p { font-family: 'styling', sans-serif; font-size: 20px; letter-spacing: 1px; color: #111; }
+.app-question-sec .live-test-timing .rt .app-btn { padding: 2px 8px; width: auto; margin-left: auto; display: block; background-color: #2c9647; }
+.app-question-sec .AQ-next { position: fixed; bottom: 0; left: 0; background: #fff; padding: 8px 5px; z-index: 12; width: 100%; -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); border-top-left-radius: 33px; border-top-right-radius: 33px; }
+.app-question-sec .AQ-next .div { padding: 0 1.5px; }
+.app-question-sec .AQ-next .div .mbtn { padding: 13px 3px; font-size: 15px; font-weight: 500; }
+.app-question-sec .AQ-next .prev, .app-question-sec .AQ-next .next { width: 20%; }
+.app-question-sec .AQ-next .prev .mbtn, .app-question-sec .AQ-next .next .mbtn { background-color: #454545; }
+.app-question-sec .AQ-next .prev .mbtn i, .app-question-sec .AQ-next .next .mbtn i { position: relative; top: 0.5px; }
+.app-question-sec .AQ-next .prev .mbtn { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.app-question-sec .AQ-next .prev .mbtn i { margin-right: 1px; }
+.app-question-sec .AQ-next .center { width: 60%; }
+.app-question-sec .AQ-next .center .mbtn { border-radius: 0; background-color: #2c9647; }
+.app-question-sec .AQ-next .next .mbtn { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.app-question-sec .AQ-next .next .mbtn i { margin-left: 1px; }
 
 .home-suggested-video .app-head-w-view { margin-bottom: 5px; }
 .home-suggested-video .owl-stage { padding-left: 10px !important; }
@@ -894,8 +917,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .backBar .BBT_inner > .LT .history-go-back i { font-size: 25px; }
 .backBar .BBT_inner > .CT p { font-family: 'styling', sans-serif; font-size: 20px; letter-spacing: 1px; color: #111; position: relative; top: 1px; }
 .backBar .BBT_inner > .RT > .inner { margin-right: -6px; }
-.backBar .BBT_inner > .RT .app-more-menu > a, .backBar .BBT_inner > .RT .app-open-menu > a { margin-left: 5px; right: 0; transition: 0.6; }
-.backBar .BBT_inner > .RT .app-more-menu > a.active, .backBar .BBT_inner > .RT .app-open-menu > a.active { background: rgba(0, 0, 0, 0.6); position: fixed; right: calc(280px + 15px); }
+.backBar .BBT_inner > .RT .app-more-menu > a, .backBar .BBT_inner > .RT .app-open-menu > a { margin-left: 5px; right: 0; transition: 0.6s; }
 .backBar .BB_top { transition: 0.3s; }
 .backBar .BB_top.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 12; -webkit-box-shadow: 0px 0px 5px 0px #a7a7a7; box-shadow: 0px 0px 5px 0px #a7a7a7; background-color: #fff; }
 
@@ -927,7 +949,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-contact-form .form .icon { top: 50%; right: 5px; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 .app-contact-form .form .icon i { font-size: 16px; color: #444; }
 .app-contact-form .form .app-btn { margin-top: 10px; font-weight: 600; font-size: 15px; padding: 12px 15px 13px; box-shadow: none !important; border: none; }
-.app-contact-form .form .app-btn:hover, .app-contact-form .form .app-btn:active, .app-contact-form .form .app-btn:focus { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1); }
+.app-contact-form .form .app-btn:hover, .app-contact-form .form .app-btn:active, .app-contact-form .form .app-btn:focus { background: #323232 !important; background: -moz-linear-gradient(180deg, #323232 0%, black 100%) !important; background: -webkit-linear-gradient(180deg, #323232 0%, black 100%) !important; background: linear-gradient(180deg, #323232 0%, black 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#000000", GradientType=1) !important; }
 
 .app-contact .AC_inner > .item { width: 50%; padding: 0 10px; }
 .app-contact .AC_inner .img-sec { height: 55px; display: flex; align-items: center; justify-content: center; }
@@ -1015,5 +1037,44 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .no-internet p.main-head { font-weight: 600; font-size: 19px; margin-bottom: 10px; color: #000; }
 .no-internet p.sm-head { font-size: 16px; color: #444; margin-bottom: 15px; }
 .no-internet .app-btn { font-size: 15px; margin-top: 80px; border: none; width: 80%; margin-left: auto; margin-right: auto; padding: 11px 10px; }
+
+#test-info-sidebar { position: fixed; top: 0; right: -100%; width: 280px; background-color: transparent; height: 100%; overflow: hidden; z-index: 99; transition: 0.5s; }
+#test-info-sidebar::before { content: ''; background: transparent; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; z-index: -9999; transition: 0.5s; }
+#test-info-sidebar .TIB-inner { height: 100%; position: relative; z-index: 9; background: #fff; overflow: auto; }
+#test-info-sidebar.active { right: 0; }
+#test-info-sidebar.active::before { background: rgba(0, 0, 0, 0.5); position: fixed; z-index: initial; opacity: 1; }
+#test-info-sidebar .frac.skills { background: #f3f3f3; margin: 0 -15px; padding: 0 15px; }
+#test-info-sidebar .user { background: #f9c707; color: #333; padding: 13px 15px 10px; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); z-index: 1; position: relative; }
+#test-info-sidebar .user .img-sec { height: 70px; width: 70px; border-radius: 100%; border: 6px solid #fff; overflow: hidden; }
+#test-info-sidebar .user .img-sec img { max-height: 100%; width: 100%; }
+#test-info-sidebar .user .text-sec { padding-left: 15px; margin-top: -2px; flex-grow: 1; }
+#test-info-sidebar .user .text-sec .name { font-size: 16px; font-weight: 600; margin-bottom: 5px; color: #000; }
+#test-info-sidebar .user .text-sec .time-left { font-size: 16px; margin-bottom: 5px; color: #000; }
+#test-info-sidebar .user .text-sec .time-left span { font-weight: 600; }
+#test-info-sidebar .user .text-sec .app-btn { text-align: left; width: auto; padding: 1px 3px 3px; background: transparent; font-size: 16px; margin-left: -3px; color: #000; margin-top: 1px; }
+#test-info-sidebar .user .text-sec .app-btn i { margin-right: 5px; font-size: 20px; font-weight: 600; }
+#test-info-sidebar .other-details { padding: 0 15px; }
+#test-info-sidebar .other-details .head { font-size: 20px; padding: 25px 0px 15px; width: 100%; font-family: 'styling', sans-serif; color: #000; text-transform: uppercase; letter-spacing: 0.5px; }
+#test-info-sidebar .other-details .head span { display: block; margin-top: 4px; font-size: 16px; font-family: 'Lato', sans-serif; text-transform: initial; color: #333; }
+#test-info-sidebar .other-details .que-no { max-height: 190px; overflow-y: scroll; padding: 10px 10px; margin: 0 -10px; }
+#test-info-sidebar .other-details .que-no ul li { padding: 0 15px 15px 0; font-size: 16px; }
+#test-info-sidebar .other-details .que-no ul li a { display: block; padding: 8px 5px 0; background: #fff; min-width: 35px; min-height: 35px; text-align: center; color: #000; border-radius: 10px; -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2); font-weight: 600; }
+#test-info-sidebar .other-details .que-no ul li a.green { background: #b1e46a !important; background: -moz-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: -webkit-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .que-no ul li a.red { background: #ff742e !important; background: -moz-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: -webkit-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .que-no ul li a.purple { background: #9b27b0 !important; background: -moz-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: -webkit-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b27b0",endColorstr="#8e26a1",GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .que-no ul li a.yellow { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
+#test-info-sidebar .other-details .legends ul li { width: 100%; padding: 0 5px 10px 0; }
+#test-info-sidebar .other-details .legends ul li .tag { height: 25px; width: 25px; text-align: center; font-weight: 600; font-size: 14px; padding: 4px 0 0; border-radius: 3px; background-color: #fff; color: #333; border-radius: 50%; -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2); }
+#test-info-sidebar .other-details .legends ul li .tag.green { background: #b1e46a !important; background: -moz-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: -webkit-linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; background: linear-gradient(180deg, #b1e46a 0%, #94d33a 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b1e46a", endColorstr="#94d33a", GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .legends ul li .tag.red { background: #ff742e !important; background: -moz-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: -webkit-linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; background: linear-gradient(180deg, #ff742e 0%, #ff722e 45%, #ff5d1b 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff742e", endColorstr="#ff5d1b", GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .legends ul li .tag.purple { background: #9b27b0 !important; background: -moz-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: -webkit-linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; background: linear-gradient(180deg, #9b27b0 0%, #8e26a1 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b27b0",endColorstr="#8e26a1",GradientType=1) !important; color: #fff; }
+#test-info-sidebar .other-details .legends ul li .tag.yellow { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
+#test-info-sidebar .other-details .legends ul li .work { flex: 1; flex-grow: 1; font-size: 16px; line-height: 18px; padding-top: 2px; padding-left: 10px; color: #333; }
+#test-info-sidebar .other-details .more-btns { margin-top: 20px; margin-bottom: 15px; }
+#test-info-sidebar .other-details .more-btns .btn-container { margin-bottom: 15px; }
+#test-info-sidebar .other-details .more-btns .btn-container.left { padding-right: 2px; }
+#test-info-sidebar .other-details .more-btns .btn-container.right { padding-left: 2px; }
+#test-info-sidebar .other-details .more-btns .btn-container .app-btn { font-size: 16px; padding: 8px 10px 10px; }
+#test-info-sidebar .other-details .more-btns .btn-container .app-btn.app-gradient-green, #test-info-sidebar .other-details .more-btns .btn-container .app-btn.app-geadient { color: #000; }
 
 /*# sourceMappingURL=style.css.map */

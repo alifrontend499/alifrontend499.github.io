@@ -188,3 +188,19 @@ function goBack() {
         }
     })
 })();
+
+(function () {
+    $('.app-open-menu a').click(function () {
+        // var elem = $(this).data('open');
+        $(this).addClass('active')
+        $('#test-info-sidebar').addClass('active');
+    });
+    $('#test-info-sidebar').click(function () {
+        // var elem = $(this).data('open');
+        $(this).removeClass('active')
+        $('#test-info-sidebar').removeClass('active');
+    });
+    $('#test-info-sidebar >.TIB-inner').click(function (ev) {
+        ev.stopPropagation()
+    });
+})();

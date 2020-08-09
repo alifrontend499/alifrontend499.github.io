@@ -24,6 +24,9 @@
 // }
 
 // COMMON CSS
+.paragraph-font {
+    font-size: 16px
+}
 
 .text-left {
     text-align: left;
@@ -75,6 +78,9 @@
 
 .w-100 {
     width: 100% !important;
+}
+.w-50 {
+    width: 50% !important;
 }
 
 .com-mt,
@@ -184,6 +190,9 @@ input[type="text"].app-input {
 
 .app-gradient-black {
     @include app-gradient-black;
+}
+.app-gradient-purple {
+    @include app-gradient-purple;
 }
 
 .app-geadient-left-to-right {
