@@ -233,7 +233,9 @@ input[type="text"].app-input {
         font-size: 20px;
         // font-weight: 700;
         color: #111;
-        width: calc(100% - 80px);
+        // width: calc(100% - 80px);
+        flex: 1;
+        flex-grow: 1;
         padding-right: 5px;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -249,7 +251,7 @@ input[type="text"].app-input {
             // font-weight: 600;
             // margin-right: -5px;
             display: inline-block;
-            font-size: 13px;
+            font-size: 14px;
             color: #dc0117;
             font-weight: 600;
             // margin-right: -5px;
@@ -403,7 +405,7 @@ input[type="text"].app-input {
             /* font-weight: 500; */
             border-radius: 0;
             padding: 15px 20px;
-            vertical-align: top;;
+            // vertical-align: top;;
         }
 
         th {
@@ -532,20 +534,13 @@ input[type="text"].app-input {
 
         >li {
             >a {
-                // height: 30px;
-                // width: 30px;
-                // padding-bottom: 1px;
-                // border-radius: 7px;
-                // border: 1px solid #ababab;
-                // color: #ababab;
-                // font-size: 16px;
                 height: 33px;
                 width: 33px;
                 padding-bottom: 1px;
                 border-radius: 9px;
                 border: 1px solid #ababab;
                 color: #ababab;
-                font-size: 17px;
+                font-size: 18px;
 
                 &:focus {
                     background-color: $secodary-color;

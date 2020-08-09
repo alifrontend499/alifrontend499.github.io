@@ -157,7 +157,7 @@ html,
 
             .app-btn {
                 padding: 17px 20px 16px;
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: 600;
                 // @include app-gradient;
                 color: #fff;
@@ -733,7 +733,7 @@ body.hasBMB {
         }
 
         .ques {
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
             color: #000;
         }
@@ -1006,8 +1006,9 @@ body.hasBMB {
                 padding: 2px 8px;
                 width: auto;
                 margin-left: auto;
-                display: block;
-                background-color: $success-color-dark;
+                display: table;
+                // background-color: $success-color-dark;
+                color: #000
             }
         }
     }
@@ -1138,7 +1139,7 @@ body.hasBMB {
                     width: calc(100% - 20px);
                     padding-left: 10px;
                     color: #fff;
-                    font-size: 15px;
+                    font-size: 16px;
                     line-height: normal;
                     position: relative;
                     top: -2px;
@@ -1231,7 +1232,7 @@ body.hasBMB {
                 // color: #000;
                 // font-size: 15px;
                 color: #333;
-                font-size: 15px;
+                font-size: 16px;
             }
         }
 
@@ -1270,21 +1271,18 @@ body.hasBMB {
                 >.text-sec {
                     // width: calc(100% - 50px);
                     flex: 1;
-                    padding-left: 10px;
+                    padding-left: 15px;
 
                     .head {
-                        // font-weight: 800;
-                        // font-size: 18px;
-                        // color: #333;
-                        // margin-bottom: 5px;
-                        font-weight: 600;
-                        font-size: 18px;
+                        font-size: 20px;
                         color: #333;
                         margin-bottom: 5px;
+                        font-family: 'styling', sans-serif;
+                        letter-spacing: 0.5px;
                     }
 
                     .desc {
-                        font-size: 15px;
+                        font-size: 16px;
                         color: #666;
                     }
                 }
@@ -1471,7 +1469,7 @@ body.hasBMB {
 
             &:active,
             &:focus {
-                background-color: $secodary-color;
+                @include app-gradient;
             }
         }
 
@@ -1483,7 +1481,8 @@ body.hasBMB {
             }
 
             .name {
-                font-size: 16px;
+                // font-size: 16px;
+                font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 3px;
                 position: relative;
@@ -1491,7 +1490,7 @@ body.hasBMB {
             }
 
             .det {
-                font-size: 15px;
+                font-size: 16px;
             }
         }
 
@@ -1626,7 +1625,7 @@ body.hasBMB {
         .text-sec {
             p {
                 font-weight: 500;
-                font-size: 17px;
+                font-size: 16px;
                 color: #555;
 
                 span {
@@ -1687,7 +1686,7 @@ body.hasBMB {
 
             p {
                 color: #333;
-                font-size: 15px;
+                font-size: 16px;
             }
         }
     }
@@ -1844,7 +1843,7 @@ body.hasBMB {
 
                 .det {
                     margin-top: 0 !important;
-                    font-size: 15px;
+                    font-size: 16px;
                 }
             }
 
@@ -1915,7 +1914,7 @@ body.hasBMB {
             margin-top: 11px;
 
             .name {
-                font-size: 19px;
+                font-size: 20px;
                 /* font-weight: 800; */
                 letter-spacing: .8px;
                 color: #111;
@@ -2076,10 +2075,10 @@ body.hasBMB {
                 padding-left: 15px;
 
                 .head {
-                    font-size: 16px;
+                    font-size: 18px;
                     color: #000;
                     margin-bottom: 5px;
-                    font-weight: 600;
+                    font-family: 'styling', sans-serif;
                 }
 
                 .desc {
@@ -2108,7 +2107,7 @@ body.hasBMB {
     }
 
     .text {
-        font-size: 15px;
+        font-size: 16px;
         // font-size: 16px;
         color: #333;
         margin-bottom: 10px;
@@ -2149,7 +2148,7 @@ body.hasBMB {
     p {
         &.main-head {
             font-weight: 600;
-            font-size: 19px;
+            font-size: 18px;
             margin-bottom: 10px;
             color: #000;
         }
@@ -2162,7 +2161,7 @@ body.hasBMB {
     }
 
     .app-btn {
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 80px;
         border: none;
         width: 80%;
@@ -2502,10 +2501,18 @@ body.hasBMB {
     .app-table {
         margin-bottom: 20px;
         border-radius: 12px;
+        @include box-shadow(1px, 2px, 2px, 0px, rgba(0, 0, 0, 0.1));
 
         tr {
             td {
                 background-color: #fff;
+
+                &:last-child {
+                    p {
+                        position: relative;
+                        top: -6px
+                    }
+                }
             }
         }
     }
@@ -2561,14 +2568,14 @@ body.hasBMB {
             padding-bottom: 20px;
         }
 
-        .inner {
-        }
+        .inner {}
     }
 
     .text {
         color: #000;
         line-height: 23px;
         font-size: 16px;
+        margin-bottom: 4px;
 
         &.d-flex {
             >i {
