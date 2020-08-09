@@ -2205,6 +2205,7 @@ body.hasBMB {
 
     &.active {
         right: 0;
+
         &::before {
             background: rgba(0, 0, 0, 0.5);
             position: fixed;
@@ -2433,6 +2434,96 @@ body.hasBMB {
                     }
                 }
             }
+        }
+    }
+}
+
+// APP INSTRUCTIONS
+.app-instructions {
+    // padding: 20px 5px;
+
+    .text,
+    .sub-text,
+    .head-sm {
+        // font-size: 17px;
+        // font-weight: 600;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .head-sm {
+        font-weight: 700;
+
+        .app-instructions {
+            padding: 20px 5px;
+
+            .text,
+            .sub-text,
+            .head-sm {
+                font-size: 17px;
+                font-weight: 600;
+                color: #000;
+                margin-bottom: 15px;
+            }
+
+            .head-sm {
+                font-weight: 700;
+            }
+
+            .head {
+                font-size: 20px;
+                font-weight: 700;
+                color: $secodary-color;
+                margin-bottom: 15px;
+            }
+
+            .sub-text {
+                padding-left: 10px;
+            }
+
+            .app-table {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .head {
+        // font-size: 20px;
+        // font-weight: 700;
+        // color: $secodary-color;
+        // margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .sub-text {
+        padding-left: 10px;
+    }
+
+    .app-table {
+        margin-bottom: 20px;
+        border-radius: 12px;
+
+        tr {
+            td {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .start-quiz {
+        margin-top: 45px;
+
+        .app-btn {
+            font-size: 16px;
+            text-transform: capitalize;
+            width: 170px;
+            padding: 14px 20px 16px;
+            margin: 0 auto;
+            display: block;
+            border: none;
         }
     }
 }
