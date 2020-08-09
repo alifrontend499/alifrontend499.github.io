@@ -1066,6 +1066,7 @@ body.hasBMB {
             .mbtn {
                 border-radius: 0;
                 background-color: $success-color-dark;
+                color: #000;
             }
         }
 
@@ -2488,10 +2489,6 @@ body.hasBMB {
     }
 
     .head {
-        // font-size: 20px;
-        // font-weight: 700;
-        // color: $secodary-color;
-        // margin-bottom: 15px;
         font-size: 16px;
         font-weight: 700;
         color: #000;
@@ -2524,6 +2521,236 @@ body.hasBMB {
             margin: 0 auto;
             display: block;
             border: none;
+        }
+    }
+}
+
+// APP SCORECARD
+.app-scorecard {
+    margin-bottom: 120px;
+
+    .scroecard-top-links {
+        padding: 0 15px;
+        margin-bottom: 30px;
+
+        >a {
+            font-size: 22px;
+            font-family: 'styling', sans-serif;
+            text-align: center;
+            padding: 10px 10px;
+            color: #b8b8b8;
+            border-radius: 5px;
+
+            &.active {
+                color: $secodary-color;
+            }
+        }
+    }
+
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &:first-child {
+            margin-bottom: 45px;
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .inner {
+        }
+    }
+
+    .text {
+        color: #000;
+        line-height: 23px;
+        font-size: 16px;
+
+        &.d-flex {
+            >i {
+                height: 20px;
+                width: 20px;
+                font-size: 20px;
+                position: relative;
+                top: 4px;
+                font-weight: bold;
+            }
+
+            >span {
+                flex: 1;
+                flex-grow: 1;
+                padding-left: 5px;
+            }
+        }
+
+        &.good {
+            >i {
+                color: #36b873;
+            }
+        }
+
+        &.bad {
+            >i {
+                color: #e54c3b;
+            }
+        }
+
+        &.not-attempt {
+            >i {
+                border-radius: 100%;
+                background: #4c4c4c;
+                height: 15px;
+                width: 15px;
+                position: relative;
+                left: 2.5px;
+            }
+
+            >span {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .pregress-content {
+
+        .LT {
+            width: 100px;
+        }
+
+        .RT {
+            padding-left: 15px;
+            flex: 1;
+            flex-grow: 1;
+        }
+
+        .progress {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 0;
+            background: transparent;
+        }
+    }
+
+    .all-courses-btn {
+        margin-top: 25px;
+        padding: 0 10px;
+
+        .app-btn {
+            border: none;
+            padding: 11px 10px 14px;
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+    }
+
+    .img-text {
+        flex-direction: row-reverse;
+
+        .main-head {
+            width: 100%;
+        }
+
+        .LT {
+            width: 80px;
+
+            .img-sec {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .RT {
+            padding-right: 15px;
+            flex: 1;
+            flex-grow: 1;
+        }
+    }
+
+    .main-head {
+        p {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 10px;
+            font-family: 'styling', sans-serif;
+        }
+    }
+
+    .percent {
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 5px;
+        font-family: 'styling', sans-serif;
+
+        span {
+            font-size: 18px;
+            margin-left: 10px;
+
+        }
+    }
+}
+
+.goto-next-quiz {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #2b2b2b;
+    z-index: 1;
+    padding: 15px 15px;
+
+    .LT {
+        flex: 1;
+        flex-grow: 1;
+
+        img {
+            width: 32px;
+        }
+
+        p {
+            flex: 1;
+            flex-grow: 1;
+            padding-left: 15px;
+            color: #fff;
+            margin-top: 3px;
+
+            .heading {
+                font-size: 16px;
+                margin-bottom: 2px;
+            }
+
+            .quiz {
+                font-size: 18px;
+                font-weight: 600;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .RT {
+        width: 50px;
+        text-align: right;
+
+        .next-btn {
+            height: 35px;
+            width: 35px;
+            line-height: 0;
+            color: #fff;
+            position: relative;
+            right: -8px;
+
+            i {
+                font-size: 25px;
+            }
         }
     }
 }
