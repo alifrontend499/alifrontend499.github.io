@@ -191,16 +191,23 @@ function goBack() {
 
 (function () {
     $('.app-open-menu a').click(function () {
-        // var elem = $(this).data('open');
+        $('#test-info-sidebar').prepend('<div class="overlay"></div>');
         $(this).addClass('active')
         $('#test-info-sidebar').addClass('active');
     });
-    $('#test-info-sidebar').click(function () {
-        // var elem = $(this).data('open');
-        $(this).removeClass('active')
+    $(document).on('click', '#test-info-sidebar >.overlay', function () {
+        $(this).fadeOut(200)
+        $('.app-open-menu a').removeClass('active')
         $('#test-info-sidebar').removeClass('active');
     });
-    $('#test-info-sidebar >.TIB-inner').click(function (ev) {
-        ev.stopPropagation()
+})();
+
+(function () {
+    $('.A-ques .open-answer').click(function (ev) {
+        ev.preventDefault();
+        $('>i', this).toggleClass('feather-chevron-up feather-chevron-down')
+        $(this).closest('.ques').next().slideToggle(100, function () {
+            $(this).parent().toggleClass('in')
+        });
     });
 })();

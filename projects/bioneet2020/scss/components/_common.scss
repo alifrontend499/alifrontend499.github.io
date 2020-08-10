@@ -568,3 +568,16 @@ input[type="text"].app-input {
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     }
 }
+
+.two-btns-modal {
+    >.app-btn {
+        padding: 7px 6px 9px;
+        margin: 0 5px;
+        border: none;
+
+        &.no {
+            background: #ddd;
+            color: #000;
+        }
+    }
+}

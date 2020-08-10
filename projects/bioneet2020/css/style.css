@@ -693,6 +693,9 @@ input[type="text"].app-input:focus { border-bottom-color: #cecece !important; bo
 .round-pagi > ul > li.active a { background-color: #fcb01f; border-color: #fcb01f; color: #000; }
 .round-pagi.white-bg { background-color: #fff; box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); }
 
+.two-btns-modal > .app-btn { padding: 7px 6px 9px; margin: 0 5px; border: none; }
+.two-btns-modal > .app-btn.no { background: #ddd; color: #000; }
+
 body { background: #f3f3f3; font-family: 'Lato', sans-serif; font-weight: 400; }
 
 html, .login-body, .app_L-main { height: 100%; }
@@ -856,7 +859,7 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-question-sec .live-test-timing .lt, .app-question-sec .live-test-timing .rt { width: 90px; }
 .app-question-sec .live-test-timing .ct { flex-grow: 1; padding: 0 5px; }
 .app-question-sec .live-test-timing .ct p { font-family: 'styling', sans-serif; font-size: 20px; letter-spacing: 1px; color: #111; }
-.app-question-sec .live-test-timing .rt .app-btn { padding: 2px 8px; width: auto; margin-left: auto; display: table; color: #000; }
+.app-question-sec .live-test-timing .rt > .app-btn { padding: 2px 8px; width: auto; margin-left: auto; display: table; color: #000; }
 .app-question-sec .AQ-next { position: fixed; bottom: 0; left: 0; background: #fff; padding: 8px 5px; z-index: 12; width: 100%; -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.3); border-top-left-radius: 33px; border-top-right-radius: 33px; }
 .app-question-sec .AQ-next .div { padding: 0 1.5px; }
 .app-question-sec .AQ-next .div .mbtn { padding: 13px 3px; font-size: 15px; font-weight: 500; }
@@ -1039,10 +1042,9 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .no-internet .app-btn { font-size: 16px; margin-top: 80px; border: none; width: 80%; margin-left: auto; margin-right: auto; padding: 11px 10px; }
 
 #test-info-sidebar { position: fixed; top: 0; right: -100%; width: 280px; background-color: transparent; height: 100%; overflow: hidden; z-index: 99; transition: 0.5s; }
-#test-info-sidebar::before { content: ''; background: transparent; top: 0; left: 0; height: 100%; width: 100%; opacity: 0; z-index: -9999; transition: 0.5s; }
+#test-info-sidebar .overlay { background: transparent; top: 0; left: 0; height: 100%; width: 100%; transition: 0.5s; background: rgba(0, 0, 0, 0.5); position: fixed; }
 #test-info-sidebar .TIB-inner { height: 100%; position: relative; z-index: 9; background: #fff; overflow: auto; }
 #test-info-sidebar.active { right: 0; }
-#test-info-sidebar.active::before { background: rgba(0, 0, 0, 0.5); position: fixed; z-index: initial; opacity: 1; }
 #test-info-sidebar .frac.skills { background: #f3f3f3; margin: 0 -15px; padding: 0 15px; }
 #test-info-sidebar .user { background: #f9c707; color: #333; padding: 13px 15px 10px; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3); z-index: 1; position: relative; }
 #test-info-sidebar .user .img-sec { height: 70px; width: 70px; border-radius: 100%; border: 6px solid #fff; overflow: hidden; }
@@ -1051,8 +1053,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 #test-info-sidebar .user .text-sec .name { font-size: 16px; font-weight: 600; margin-bottom: 5px; color: #000; }
 #test-info-sidebar .user .text-sec .time-left { font-size: 16px; margin-bottom: 5px; color: #000; }
 #test-info-sidebar .user .text-sec .time-left span { font-weight: 600; }
-#test-info-sidebar .user .text-sec .app-btn { text-align: left; width: auto; padding: 1px 3px 3px; background: transparent; font-size: 16px; margin-left: -3px; color: #000; margin-top: 1px; }
-#test-info-sidebar .user .text-sec .app-btn i { margin-right: 5px; font-size: 20px; font-weight: 600; }
+#test-info-sidebar .user .text-sec > .app-btn { text-align: left; width: auto; padding: 1px 3px 3px; background: transparent; font-size: 16px; margin-left: -3px; color: #000; margin-top: 1px; }
+#test-info-sidebar .user .text-sec > .app-btn i { margin-right: 5px; font-size: 20px; font-weight: 600; }
 #test-info-sidebar .other-details { padding: 0 15px; }
 #test-info-sidebar .other-details .head { font-size: 20px; padding: 25px 0px 15px; width: 100%; font-family: 'styling', sans-serif; color: #000; text-transform: uppercase; letter-spacing: 0.5px; }
 #test-info-sidebar .other-details .head span { display: block; margin-top: 4px; font-size: 16px; font-family: 'Lato', sans-serif; text-transform: initial; color: #333; }
@@ -1093,10 +1095,11 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .app-instructions .start-quiz { margin-top: 45px; }
 .app-instructions .start-quiz .app-btn { font-size: 16px; text-transform: capitalize; width: 170px; padding: 14px 20px 16px; margin: 0 auto; display: block; border: none; }
 
+.scroecard-top-links { padding: 0 15px; margin-bottom: 30px; }
+.scroecard-top-links > a { font-size: 22px; font-family: 'styling', sans-serif; text-align: center; padding: 10px 10px; color: #b8b8b8; border-radius: 5px; }
+.scroecard-top-links > a.active { color: #fcb01f; }
+
 .app-scorecard { margin-bottom: 120px; }
-.app-scorecard .scroecard-top-links { padding: 0 15px; margin-bottom: 30px; }
-.app-scorecard .scroecard-top-links > a { font-size: 22px; font-family: 'styling', sans-serif; text-align: center; padding: 10px 10px; color: #b8b8b8; border-radius: 5px; }
-.app-scorecard .scroecard-top-links > a.active { color: #fcb01f; }
 .app-scorecard .frac:not(:last-child) { margin-bottom: 20px; }
 .app-scorecard .frac:first-child { margin-bottom: 45px; }
 .app-scorecard .frac:not(:first-child):not(:last-child) { border-bottom: 1px solid #ddd; padding-bottom: 20px; }
@@ -1130,5 +1133,34 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .goto-next-quiz .RT { width: 50px; text-align: right; }
 .goto-next-quiz .RT .next-btn { height: 35px; width: 35px; line-height: 0; color: #fff; position: relative; right: -8px; }
 .goto-next-quiz .RT .next-btn i { font-size: 25px; }
+
+.app-solutions { padding-bottom: 20px; }
+.app-solutions .frac { margin-bottom: 20px; }
+.app-solutions .frac:not(:last-child) { border-bottom: 1px solid #cecece; padding-bottom: 20px; }
+.app-solutions .A-ques .ques > .d-flex > .main { padding-right: 8px; flex: 1; flex-grow: 1; }
+.app-solutions .A-ques .ques > .d-flex > .main .ques-main { font-size: 18px; font-weight: 600; color: #000; }
+.app-solutions .A-ques .ques > .d-flex > .main .img-sec { margin-top: 10px; }
+.app-solutions .A-ques .ques > .d-flex > a { width: 28px; height: 28px; background: #fcb01f; color: #fff; position: relative; top: 2px; font-size: 18px; padding-bottom: 1px; }
+.app-solutions .A-ques .ans { margin-top: 15px; display: none; }
+.app-solutions .A-ques .ans-input-bar { padding: 11px 15px; background: #fff; margin-bottom: 15px; border-radius: 40px; }
+.app-solutions .A-ques .ans-input-bar input { width: 120px; margin-bottom: 0; height: 35px; }
+.app-solutions .A-ques .ans-input-bar span { font-size: 16px; color: #0ca208; font-weight: 600; }
+.app-solutions .A-ques .solutions .head { font-weight: 600; font-size: 18px; color: #000; }
+.app-solutions .A-ques .solutions .all-math { margin-top: 15px; }
+.app-solutions .A-ques .solutions .all-math .map { font-size: 16px; color: #333; line-height: 22px; }
+.app-solutions .A-ques .solutions .all-math .map sup { font-size: 14px; }
+.app-solutions .A-ques.in .ans { display: block; }
+.app-solutions .A-ques.in .ques > .d-flex > a { background: #464646; }
+
+.recomended-test .top-img-sec img { max-width: 155px; margin: 0 auto; display: block; }
+.recomended-test .frac:not(:last-child) { margin-bottom: 30px; }
+.recomended-test .frac .inner { background: #fff; border-radius: 20px; overflow: hidden; }
+.recomended-test .TP_sec { padding: 15px; }
+.recomended-test .TP_sec .head { font-family: 'styling', sans-serif; font-size: 20px; color: #000; margin-bottom: 5px; }
+.recomended-test .TP_sec .more { font-size: 16px; color: #656565; }
+.recomended-test .BM_sec { border-top: 1px solid #efefef; }
+.recomended-test .BM_sec > .d-flex { margin: 0 -2px; }
+.recomended-test .BM_sec .btn-sec { width: 33.3%; }
+.recomended-test .BM_sec .btn-sec .mbtn { font-size: 15px; padding: 10px 7px 11px; border-radius: 0; border: none; color: #333; font-weight: 600; border-right: 1px solid #efefef; background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */

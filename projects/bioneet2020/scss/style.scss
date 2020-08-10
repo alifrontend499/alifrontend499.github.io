@@ -1002,7 +1002,7 @@ body.hasBMB {
         }
 
         .rt {
-            .app-btn {
+            >.app-btn {
                 padding: 2px 8px;
                 width: auto;
                 margin-left: auto;
@@ -2183,17 +2183,28 @@ body.hasBMB {
     z-index: 99;
     @include transition(0.5s);
 
-    &::before {
-        content: '';
+    .overlay {
         background: transparent;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        opacity: 0;
-        z-index: -9999;
-        @include transition(0.5s);
+        transition: 0.5s;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
     }
+
+    // &::before {
+    //     content: '';
+    //     background: transparent;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     opacity: 0;
+    //     z-index: -9999;
+    //     @include transition(0.5s);
+    // }
 
     .TIB-inner {
         height: 100%;
@@ -2206,12 +2217,12 @@ body.hasBMB {
     &.active {
         right: 0;
 
-        &::before {
-            background: rgba(0, 0, 0, 0.5);
-            position: fixed;
-            z-index: initial;
-            opacity: 1;
-        }
+        // &::before {
+        //     background: rgba(0, 0, 0, 0.5);
+        //     position: fixed;
+        //     z-index: initial;
+        //     opacity: 1;
+        // }
     }
 
     .frac {
@@ -2266,7 +2277,7 @@ body.hasBMB {
                 color: #000;
             }
 
-            .app-btn {
+            >.app-btn {
                 text-align: left;
                 width: auto;
                 padding: 1px 3px 3px;
@@ -2532,27 +2543,28 @@ body.hasBMB {
     }
 }
 
+.scroecard-top-links {
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    >a {
+        font-size: 22px;
+        font-family: 'styling', sans-serif;
+        text-align: center;
+        padding: 10px 10px;
+        color: #b8b8b8;
+        border-radius: 5px;
+
+        &.active {
+            color: $secodary-color;
+        }
+    }
+}
+
 // APP SCORECARD
 .app-scorecard {
     margin-bottom: 120px;
 
-    .scroecard-top-links {
-        padding: 0 15px;
-        margin-bottom: 30px;
-
-        >a {
-            font-size: 22px;
-            font-family: 'styling', sans-serif;
-            text-align: center;
-            padding: 10px 10px;
-            color: #b8b8b8;
-            border-radius: 5px;
-
-            &.active {
-                color: $secodary-color;
-            }
-        }
-    }
 
     .frac {
         &:not(:last-child) {
@@ -2757,6 +2769,181 @@ body.hasBMB {
 
             i {
                 font-size: 25px;
+            }
+        }
+    }
+}
+
+// APP SOLUTIONS
+.app-solutions {
+    padding-bottom: 20px;
+
+    .frac {
+        // padding: 15px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #cecece;
+            padding-bottom: 20px;
+        }
+
+        margin-bottom: 20px;
+    }
+
+    .A-ques {
+        .ques {
+            >.d-flex {
+                >.main {
+                    padding-right: 8px;
+                    flex: 1;
+                    flex-grow: 1;
+
+                    .ques-main {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #000;
+                    }
+
+                    .img-sec {
+                        margin-top: 10px;
+                    }
+                }
+
+                >a {
+                    width: 28px;
+                    height: 28px;
+                    background: $secodary-color;
+                    color: #fff;
+                    position: relative;
+                    top: 2px;
+                    font-size: 18px;
+                    padding-bottom: 1px;
+                }
+            }
+        }
+
+        .ans {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .ans-input-bar {
+            padding: 11px 15px;
+            background: #fff;
+            margin-bottom: 15px;
+            border-radius: 40px;
+
+            input {
+                width: 120px;
+                margin-bottom: 0;
+                height: 35px;
+            }
+
+            span {
+                font-size: 16px;
+                color: #0ca208;
+                font-weight: 600;
+            }
+        }
+
+        .solutions {
+            .head {
+                font-weight: 600;
+                font-size: 18px;
+                color: #000;
+            }
+
+            .all-math {
+                margin-top: 15px;
+
+                .map {
+                    font-size: 16px;
+                    color: #333;
+                    line-height: 22px;
+
+                    sup {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &.in {
+            .ans {
+                display: block;
+            }
+
+            .ques {
+                >.d-flex {
+                    >a {
+                        background: #464646;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RECOMENDED TEST
+.recomended-test {
+    .top-img-sec {
+        img {
+            max-width: 155px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .inner {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+
+    .TP_sec {
+        padding: 15px;
+        // margin-bottom: 5px;
+
+        .head {
+            font-family: 'styling', sans-serif;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .more {
+            font-size: 16px;
+            color: #656565;
+        }
+    }
+
+    .BM_sec {
+        border-top: 1px solid #efefef;
+
+        >.d-flex {
+            margin: 0 -2px;
+        }
+
+        .btn-sec {
+            width: 33.3%;
+            // padding: 0 1px;
+
+            .mbtn {
+                // font-size: 16px;
+                // padding: 8px 3px;
+                font-size: 15px;
+                padding: 10px 7px 11px;
+                border-radius: 0;
+                border: none;
+                color: #333;
+                font-weight: 600;
+                border-right: 1px solid #efefef;
+                background-color: transparent;
             }
         }
     }

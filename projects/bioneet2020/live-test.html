@@ -138,10 +138,22 @@
                         <span>Time Left:</span>
                         02:18:50
                     </p>
-                    <button class="app-btn d-flex align-items-center justify-content-center waves-effect">
+                    <a href="#confirm-modal-pause"
+                        class="app-btn d-inline-flex align-items-center justify-content-center waves-effect modal-trigger">
                         <i class="feather-pause-circle"></i>
                         <span>Pause Test</span>
-                    </button>
+                    </a>
+
+                    <!-- Modal Structure -->
+                    <div id="confirm-modal-pause" class="modal app-modal">
+                        <div class="modal-content app-modal-content">
+                            <h4 class="text-center text-bold">Do you really want to pause the test?</h4>
+                            <div class="two-btns-modal d-flex align-items-center justify-content-center com-sm-mt">
+                                <a href="index.html" class="app-btn yes">Yes</a>
+                                <a href="#" class="app-btn modal-close no">No</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="other-details">
@@ -253,9 +265,22 @@
                                 </p>
                             </div>
                             <div class="rt">
-                                <a href="scorecard.html" class="app-btn text-uppercase waves-effect app-gradient-green">
+                                <a href="#confirm-modal"
+                                    class="app-btn text-capitalize waves-effect app-gradient-green modal-trigger">
                                     <span>finish</span>
                                 </a>
+
+                                <!-- Modal Structure -->
+                                <div id="confirm-modal" class="modal app-modal">
+                                    <div class="modal-content app-modal-content">
+                                        <h4 class="text-center text-bold">Do you really want to finish the test?</h4>
+                                        <div
+                                            class="two-btns-modal d-flex align-items-center justify-content-center com-sm-mt">
+                                            <a href="scorecard.html" class="app-btn yes">Yes</a>
+                                            <a href="#" class="app-btn modal-close no">No</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
