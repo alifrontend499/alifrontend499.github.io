@@ -708,7 +708,7 @@ html, .login-body, .app_L-main { height: 100%; }
 
 .app-login { background: #fcd905 !important; background: -moz-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: -webkit-linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; background: linear-gradient(180deg, #fcd905 0%, #fabe07 100%) !important; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcd905", endColorstr="#fabe07", GradientType=1) !important; }
 
-.app_L-main .AL_head { width: 100%; padding: 0px 15px 0; margin-bottom: 0; }
+.app_L-main .AL_head { width: 100%; padding: 20px 15px 10px; margin-bottom: 0; }
 .app_L-main .AL_head .AL_text { font-size: 24px; color: #222; font-weight: 600; }
 .app_L-main .AL_head .AL_text span { font-size: 25px; }
 .app_L-main .AL_head .AL_logo { width: 270px; margin: 0px auto 0; }
@@ -730,7 +730,7 @@ html, .login-body, .app_L-main { height: 100%; }
 .app_L-main .AL_login-box .form .app-btn { padding: 17px 20px 16px; font-size: 16px; font-weight: 600; color: #fff; border: none; background-color: #000; }
 .app_L-main .AL_login-box .form .app-btn:focus, .app_L-main .AL_login-box .form .app-btn:hover { box-shadow: none !important; }
 .app_L-main .AL_login-box .form .app-btn i { top: 5px; right: 5px; background: #fcb01f; height: calc(100% - 10px); width: 42px; border-radius: 50%; font-size: 30px; color: #000; }
-.app_L-main .AL_login-box .reg-skip { margin-top: 20px; margin-bottom: 10px; }
+.app_L-main .AL_login-box .reg-skip { margin-bottom: 30px; margin-top: 30px; }
 .app_L-main .AL_login-box .reg-skip a { font-size: 16px; padding: 0 12px; color: #111; display: block; position: relative; font-weight: 600; }
 .app_L-main .AL_login-box .reg-skip a:not(:last-child):after { content: ""; position: absolute; top: 58%; right: 0; height: calc(100% - 6px); width: 2px; background: #333; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 
@@ -913,8 +913,8 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 
 .backBar .BB_top { padding: 13px 0 13px; }
 .backBar.contact .BB_top { padding-bottom: 100px !important; }
-.backBar .BBT_inner > .LT, .backBar .BBT_inner > .RT { width: 70px; }
-.backBar .BBT_inner > .CT { width: calc(100% - (70px * 2)); padding: 0 5px; }
+.backBar .BBT_inner > .LT, .backBar .BBT_inner > .RT { width: 65px; }
+.backBar .BBT_inner > .CT { flex: 1; flex-grow: 1; padding: 0 5px; }
 .backBar .BBT_inner > .LT { margin-left: -6px; }
 .backBar .BBT_inner > .LT .history-go-back { background-color: transparent; color: #000; }
 .backBar .BBT_inner > .LT .history-go-back i { font-size: 25px; }
@@ -1162,5 +1162,14 @@ body.hasBMB { padding-bottom: calc(63px + 10px); }
 .recomended-test .BM_sec > .d-flex { margin: 0 -2px; }
 .recomended-test .BM_sec .btn-sec { width: 33.3%; }
 .recomended-test .BM_sec .btn-sec .mbtn { font-size: 15px; padding: 10px 7px 11px; border-radius: 0; border: none; color: #333; font-weight: 600; border-right: 1px solid #efefef; background-color: transparent; }
+
+.practice-test .top-img-sec img { max-width: 155px; margin: 0 auto; display: block; }
+.practice-test .frac:not(:last-child) { margin-bottom: 30px; }
+.practice-test .frac .inner { background: #fff; border-radius: 70px; overflow: hidden; }
+.practice-test .frac .inner:active { background: #f3f3f3; }
+.practice-test .TP_sec { padding: 8px; }
+.practice-test .TP_sec .head { font-family: 'styling', sans-serif; font-size: 20px; color: #000; position: relative; top: 1px; flex: 1; flex-grow: 1; padding: 0 15px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.practice-test .TP_sec .count { font-size: 16px; height: 36px; width: 36px; border-radius: 50%; font-family: 'styling', sans-serif; padding-top: 2px; color: #fff; }
+.practice-test .TP_sec .icon-download { font-size: 24px; margin-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */

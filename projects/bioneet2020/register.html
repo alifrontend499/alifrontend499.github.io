@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bioneet | Login</title>
+    <title>Bioneet | Register</title>
     <!-- MATERIALIZE -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
@@ -45,6 +45,14 @@
                         <form action="@" autocomplete="off">
                             <div class="input-field">
                                 <input id="mobile_number" type="text" class="validate" autocomplete="off" required>
+                                <label for="mobile_number">Email</label>
+                                <div class="icon position-absolute">
+                                    <!-- <i class="material-icons">smartphone</i> -->
+                                    <i class="feather-mail"></i>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <input id="mobile_number" type="text" class="validate" autocomplete="off" required>
                                 <label for="mobile_number">Mobile Number</label>
                                 <div class="icon position-absolute">
                                     <!-- <i class="material-icons">smartphone</i> -->
@@ -59,23 +67,31 @@
                                     <i class="feather-lock"></i>
                                 </div>
                             </div>
-                            <div class="forgot-pass text-right">
-                                <a href="forgot-password.html">Forgot Password ?</a>
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate" autocomplete="off" required>
+                                <label for="password">Confirm Password</label>
+                                <div class="icon position-absolute">
+                                    <!-- <i class="material-icons">vpn_key</i> -->
+                                    <i class="feather-lock"></i>
+                                </div>
                             </div>
+                            <!-- <div class="forgot-pass text-right">
+                                <a href="#">Forgot Password ?</a>
+                            </div> -->
 
                             <!-- <button class="btn app-round-btn waves-effect text-capitalize d-table">
                                         Login
                                     </button> -->
                             <a href="index.html"
                                 class="btn app-btn text-uppercase waves-effect d-flex align-items-center position-relative">
-                                <span>Login</span>
+                                <span>Register</span>
                                 <i
                                     class="material-icons ml-auto position-absolute d-flex align-items-center justify-content-center">keyboard_arrow_right</i>
                             </a>
 
                             <div class="reg-skip">
                                 <div class="inner d-flex align-items-center justify-content-center">
-                                    <a href="register.html" class="">Register</a>
+                                    <a href="login.html" class="">Login</a>
                                     <a href="index.html" class="">Skip</a>
                                 </div>
                             </div>

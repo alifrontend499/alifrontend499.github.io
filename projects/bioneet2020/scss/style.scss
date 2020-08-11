@@ -54,7 +54,7 @@ html,
     .AL_head {
         // background: transparent url("../images/login_bg.png") no-repeat center / 100% 100%;
         width: 100%;
-        padding: 0px 15px 0;
+        padding: 20px 15px 10px;
         margin-bottom: 0;
 
         .AL_text {
@@ -183,8 +183,10 @@ html,
         }
 
         .reg-skip {
-            margin-top: 20px;
-            margin-bottom: 10px;
+            // margin-top: 20px;
+            // margin-bottom: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
 
             a {
                 font-size: 16px;
@@ -1315,11 +1317,14 @@ body.hasBMB {
 
         >.LT,
         >.RT {
-            width: 70px;
+            // width: 70px;
+            width: 65px;
         }
 
         >.CT {
-            width: calc(100% - (70px * 2));
+            // width: calc(100% - (70px * 2));
+            flex: 1;
+            flex-grow: 1;
             padding: 0 5px;
         }
 
@@ -2945,6 +2950,66 @@ body.hasBMB {
                 border-right: 1px solid #efefef;
                 background-color: transparent;
             }
+        }
+    }
+}
+
+// PRACTICE TEST
+.practice-test {
+    .top-img-sec {
+        img {
+            max-width: 155px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .inner {
+            background: #fff;
+            border-radius: 70px;
+            overflow: hidden;
+            &:active {
+                background: #f3f3f3;
+            }
+        }
+    }
+
+    .TP_sec {
+        padding: 8px;
+        // margin-bottom: 5px;
+
+        .head {
+            font-family: 'styling', sans-serif;
+            font-size: 20px;
+            color: #000;
+            position: relative;
+            top: 1px;
+            flex: 1;
+            flex-grow: 1;
+            padding: 0 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .count {
+            font-size: 16px;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            font-family: 'styling', sans-serif;
+            padding-top: 2px;
+            color: #fff;
+        }
+
+        .icon-download {
+            font-size: 24px;
+            margin-right: 5px;
         }
     }
 }
