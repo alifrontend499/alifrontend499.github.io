@@ -30,6 +30,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .owl-theme .owl-dots .owl-dot span { margin: 3px 4px; background: #fff; }
 
+.color-secondary { color: #019faa; }
+
+.color-primary { color: #ec5913; }
+
 .owl-carousel.vertical-buttons .owl-nav > button { position: absolute; top: 50%; -webkit-transform: translatey(-50%); transform: translatey(-50%); display: -ms-flexbox !important; display: flex !important; -ms-flex-pack: center !important; justify-content: center !important; -ms-flex-align: center !important; align-items: center !important; line-height: 0; height: 25px; width: 25px; border-radius: 50%; background-color: #d0d0d0; transition: 0.3s; color: #fff; outline: none !important; }
 @media screen and (min-width: 768px) { .owl-carousel.vertical-buttons .owl-nav > button { height: 35px; width: 35px; } }
 .owl-carousel.vertical-buttons .owl-nav > button:hover { background-color: #ec5913; }
@@ -94,8 +98,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .havaaccount { margin-top: 15px; text-align: center; font-size: 14px; }
 .havaaccount p a { font-weight: 600; }
 
-.form-modal .head { font: 600 30px inherit; margin-bottom: 20px; margin-top: 12px; }
-.form-modal .head span { font: 500 13px inherit; margin-top: 2px; color: #797979; }
+.form-modal .head { font-size: 30px; font-weight: 600; margin-bottom: 20px; margin-top: 12px; }
+.form-modal .head span { font-size: 13px; font-weight: 500; margin-top: 2px; color: #797979; }
 
 .custom-modal .close { position: absolute; z-index: 1; top: 10px; right: 10px; }
 
@@ -371,11 +375,12 @@ header { padding: 15px 0; -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
 .speciality-slider-main .st-slider { margin-top: 30px; padding: 0 25px; }
 @media screen and (min-width: 768px) { .speciality-slider-main .st-slider { margin-top: 50px; padding: 0 40px; } }
 @media screen and (min-width: 1200px) { .speciality-slider-main .st-slider { margin-top: 70px; } }
-.speciality-slider-main .item .inner { padding: 0 5px; }
+.speciality-slider-main .item .inner { padding: 0 5px; text-decoration: none !important; }
 .speciality-slider-main .item .icon { height: 60px; }
 .speciality-slider-main .item .icon img { max-height: 100%; }
 .speciality-slider-main .item .text { margin-top: 10px; }
 .speciality-slider-main .item .text p { color: #000; font-weight: 600; font-size: 16px; }
+.speciality-slider-main .item .inner:hover .text p { color: #ec5913; }
 
 .home-medicine { margin-top: 20px; }
 @media screen and (min-width: 768px) { .home-medicine { margin-top: 30px; } }

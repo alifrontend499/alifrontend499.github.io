@@ -301,8 +301,11 @@ header {
                 @include transition;
 
                 &.active {
-                    width: 100%;
+                    // width: 100%;
+                    // opacity: 1;
+                    width: calc(100% + 3px);
                     opacity: 1;
+                    margin-right: -2px;
                 }
 
                 input {
@@ -1846,6 +1849,14 @@ body.hasBMB {
             &.main-details-end {
                 padding-top: 15px;
 
+                .img-sec {
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 100%
+                    }
+                }
+
                 .det {
                     margin-top: 0 !important;
                     font-size: 16px;
@@ -2973,6 +2984,7 @@ body.hasBMB {
             background: #fff;
             border-radius: 70px;
             overflow: hidden;
+
             &:active {
                 background: #f3f3f3;
             }

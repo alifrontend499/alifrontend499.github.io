@@ -534,6 +534,7 @@ header {
     .item {
         .inner {
             padding: 0 5px;
+            text-decoration: none !important;
         }
 
         .icon {
@@ -551,6 +552,16 @@ header {
                 color: #000;
                 font-weight: 600;
                 font-size: 16px;
+            }
+        }
+
+        .inner {
+            &:hover {
+                .text {
+                    p {
+                        color: $primary-color;
+                    }
+                }
             }
         }
     }

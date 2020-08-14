@@ -46,6 +46,14 @@
     // background: $secondary-color;
 }
 
+.color-secondary {
+    color: $secondary-color;
+}
+
+.color-primary {
+    color: $primary-color;
+}
+
 .owl-carousel.vertical-buttons {
     .owl-nav {
         >button {
@@ -437,12 +445,14 @@
 
 .form-modal {
     .head {
-        font: 600 30px inherit;
+        font-size: 30px;
+        font-weight: 600;
         margin-bottom: 20px;
         margin-top: 12px;
 
         span {
-            font: 500 13px inherit;
+            font-size: 13px;
+            font-weight: 500;
             margin-top: 2px;
             color: #797979;
         }
@@ -1344,7 +1354,7 @@ ul.st-left-multilevel-menu {
         display: none;
         background: #fff;
         border: 1px solid #dcdcdc;
-        border-radius: 4px;        
+        border-radius: 4px;
         overflow: auto;
         z-index: 1;
         top: 100%;
@@ -1353,6 +1363,7 @@ ul.st-left-multilevel-menu {
         padding: 5px;
         font-size: 17px;
         max-height: 120px;
+
         @include min-width(992px) {
             max-height: 150px;
         }

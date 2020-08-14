@@ -273,7 +273,8 @@
                                     <span>4.3</span>
                                 </p>
                                 <div class="btns-main d-flex">
-                                    <a href="" class="btm st-btn text-capitalize rounded-0">Ask Question</a>
+                                    <a href="#" data-toggle="modal" data-target="#ask-question-modal"
+                                        class="btm st-btn text-capitalize rounded-0">Ask Question</a>
                                     <a href="" class="btm st-btn btn-st-secondary text-capitalize rounded-0">Write A
                                         Review</a>
                                 </div>
@@ -295,6 +296,35 @@
                 </div>
             </div>
         </section>
+
+        <!-- ASK QUESTION -->
+        <div class="modal fade custom-modal" id="ask-question-modal" tabindex="-1" role="dialog"
+            aria-labelledby="ask-question-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons">cancel</i>
+                    </button>
+                    <div class="modal-body form-modal">
+                        <p class="head">Ask a question</p>
+                        <div class="contact-us-form">
+                            <div class="form-group st-form input-underline">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group st-form input-underline">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group st-form input-underline">
+                                <textarea name="" id="" rows="3" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button class="btn st-btn btn-block rounded-0 text-uppercase">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- DOCS-RESULT -->
         <section id="docs-result" class="inner-details">
