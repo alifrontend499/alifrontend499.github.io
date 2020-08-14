@@ -120,10 +120,6 @@ $(function () {
         } else {
             $('body').removeClass('hasBMB');
         };
-        // FANCYBOX
-        $('[data-fancybox]').fancybox({
-            animationEffect: "zoom-in-out"
-        });
         // MODAL
         $('.modal').modal();
     });
