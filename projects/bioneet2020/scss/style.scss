@@ -324,6 +324,11 @@ header {
                     right: 5px;
                     @include transformy(-50%);
                     border: none;
+
+                    &:active,
+                    &:focus {
+                        background: #efefef;
+                    }
                 }
             }
         }
@@ -3022,6 +3027,51 @@ body.hasBMB {
         .icon-download {
             font-size: 24px;
             margin-right: 5px;
+        }
+    }
+}
+
+// APP SEARCH RESULTS
+#app-search-results {}
+
+.app-search-results {
+    .head {
+        font-family: 'styling', sans-serif;
+        font-size: 22px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    .results-container {
+        .frac {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+                border-bottom: 1px solid#ddd;
+                padding-bottom: 25px;
+            }
+
+            .sm-head {
+                font-family: 'styling', sans-serif;
+                font-size: 19px;
+                color: #111;
+                margin-bottom: 5px;
+
+                span {
+                    background-color: $secodary-color-light;
+                    padding: 1px 3px;
+                }
+            }
+
+            .desc {
+                font-size: 16px;
+                color: #555;
+                line-height: 23px;
+
+                span {
+                    background-color: $secodary-color-light;
+                    padding: 0 1px 0.5px;
+                }
+            }
         }
     }
 }
