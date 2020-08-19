@@ -1,0 +1,156 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+body {
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 16px;
+}
+
+// HOMEPAGE CSS
+
+// header
+#header {}
+
+// HEADER TOP SEC
+#header-top {
+    background-color: #000;
+    color: #fff;
+    height: 38px;
+}
+
+.header-top {
+    .ht-lt {
+        a {
+            color: #fff;
+            font-size: 12px;
+            font-family: 'poppins-medium', sans-serif;
+            letter-spacing: 1px;
+
+            &:not(:last-child) {
+                margin-right: $defaultGap;
+            }
+
+            i {
+                font-size: 13.5px;
+                margin-right: 10px;
+            }
+
+            span {
+                @include transition;
+                border-bottom: 1px solid transparent;
+            }
+
+            &:hover {
+                span {
+                    border-color: $light-white;
+                }
+            }
+        }
+    }
+
+    .ht-rt {
+        li {
+            &:not(:last-child) {
+                margin-right: $defaultGap;
+            }
+
+            a {
+                color: #fff;
+                @include transition;
+
+                i {
+                    font-size: 13.5px;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+// home slider
+.home_slider {
+    .item {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .img-sec {
+            img {
+                width: 100%;
+            }
+        }
+
+        .caption {
+            width: 100%;
+            z-index: 1;
+
+            padding: 30px 0;
+
+            @include min-width(992px) {
+                // top: 50%;
+                // left: 50%;
+                // @include transform(-50%, -50%);
+                padding: 80px 0;
+            }
+
+            .head {
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 20px;
+
+                @include min-width(992px) {
+                    font-size: 42px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .selects {
+                @include min-width(768px) {
+                    margin-left: auto;
+                    width: 70%;
+                }
+
+                @include min-width(992px) {
+                    width: 75%;
+                }
+
+                select {
+                    font-size: 17px;
+                    // font-weight: 500;
+                }
+            }
+
+            .submit-btn {
+                margin-top: 15px;
+
+                .btn {
+                    padding: 8px 20px;
+
+                    @include min-width(992px) {
+                        padding: 12px 40px;
+                    }
+                }
+            }
+
+            .links {
+                margin-top: 15px;
+
+                @include min-width(992px) {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
