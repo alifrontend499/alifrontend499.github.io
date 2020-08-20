@@ -27,30 +27,59 @@ body {
 }
 
 .header-top {
+    .ht-sm-head {
+        font-family: 'poppins-medium', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+
     .ht-lt {
-        a {
-            color: #fff;
-            font-size: 12px;
-            font-family: 'poppins-medium', sans-serif;
-            letter-spacing: 1px;
+        .ht-sm-head {
+            margin-top: 1px;
+            margin-right: 15px;
+        }
 
-            &:not(:last-child) {
-                margin-right: $defaultGap;
+        .dynamic-select {
+            width: 135px;
+
+            .input-main {
+                >input {
+                    height: 27px;
+                    padding-top: 7px;
+                    font-family: 'poppins-medium', sans-serif;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    padding-right: 25px;
+
+                }
+
+                .icon {
+                    right: 5px;
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
             }
 
-            i {
-                font-size: 13.5px;
-                margin-right: 10px;
-            }
+            .options {
+                .frac {
+                    .sm-head {
+                        font-family: 'poppins-bold', sans-serif;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                    }
 
-            span {
-                @include transition;
-                border-bottom: 1px solid transparent;
-            }
-
-            &:hover {
-                span {
-                    border-color: $light-white;
+                    >ul {
+                        >li {
+                            .label {
+                                font-family: 'poppins-medium', sans-serif;
+                                font-size: 12px;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -60,6 +89,12 @@ body {
         li {
             &:not(:last-child) {
                 margin-right: $defaultGap;
+            }
+
+            &.heading {
+                .ht-sm-head {
+                    margin-top: 1px;
+                }
             }
 
             a {
@@ -78,7 +113,56 @@ body {
     }
 }
 
+// HEADER MAIN SEC
+#header-main {}
 
+.header-main {
+    padding: 15px 0;
+
+    .hm-rt {
+        .frac {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            p,
+            a {
+                font-size: 16.5px;
+                font-family: 'poppins-medium', sans-serif;
+            }
+
+            .head {
+                color: $primary-color;
+                min-width: 65px;
+
+                i {
+                    font-size: 20px;
+                    position: relative;
+                    top: 3px;
+                    margin-right: 5px;
+                }
+            }
+
+            .content {
+                color: #000;
+                font-family: 'poppins-bold', sans-serif;
+                @include min-width(768px) {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+// HEADER MENU
+#header-menu {
+    background-color: $secondary-color;
+}
+
+.header-menu {
+    padding: 13px 0;
+}
 
 // home slider
 .home_slider {

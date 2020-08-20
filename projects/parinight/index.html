@@ -27,40 +27,91 @@
         <!-- HEADER TOP BAR -->
         <div id="header-top">
             <div class="container h-100">
-                <div class="header-top h-100 row align-items-center">
-                    <!-- left sec -->
-                    <div class="ht-lt d-flex align-items-center justify-content-center">
-                        <a href="mailto:info@parinight.com" title="Mail To: info@parinight.com"
-                            class="d-flex align-items-center text-decoration-none">
-                            <i class="feather-mail"></i>
-                            <span>info@parinight.com</span>
-                        </a>
-                        <a href="tel:+91-8875918096" title="Call To: +91-8875918096"
-                            class="d-flex align-items-center text-decoration-none">
-                            <i class="feather-phone"></i>
-                            <span>+91-8875918096</span>
-                        </a>
-                    </div>
+                <div class="header-top h-100 row">
+                    <div class="col-12 header-top-col h-100 d-flex flex-wrap align-items-center">
+                        <!-- left sec -->
+                        <div class="ht-lt d-flex align-items-center">
+                            <p class="ht-sm-head text-uppercase d-none d-sm-block">select city:</p>
+                            <p class="ht-sm-head text-uppercase d-sm-none">city:</p>
+                            <!-- CITY SELECT BOX -->
+                            <div class="form-group mb-0">
+                                <div class="dynamic-select position-relative">
+                                    <div class="input-main position-relative st-form">
+                                        <input type="text" class="form-control border-0" placeholder="Pick a city"
+                                            value="Phagwara" autocomplete="off">
+                                        <span class="icon position-absolute">
+                                            <i class="feather-chevron-down"></i>
+                                        </span>
+                                    </div>
+                                    <div class="options position-absolute">
+                                        <div class="frac">
+                                            <p class="sm-head text-capitalize">all cities</p>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <div class="label text-capitalize" title="Lucknow">
+                                                        <span class="text">Jalandhar</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Lucknow">
+                                                        <span class="text">Phagwara</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Lucknow">
+                                                        <span class="text">Ludhiana</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Lucknow">
+                                                        <span class="text">Lucknow</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Delhi">
+                                                        <span class="text">Delhi</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Mumbai">
+                                                        <span class="text">Mumbai</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label text-capitalize" title="Channai">
+                                                        <span class="text">Channai</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- right sec -->
-                    <div class="ht-rt ml-auto">
-                        <ul class="list-unstyled d-flex align-items-center">
-                            <li>
-                                <a href="#" title="Facebook" class="text-decoration-none">
-                                    <i class="feather-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Twitter" class="text-decoration-none">
-                                    <i class="feather-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="Instagram" class="text-decoration-none">
-                                    <i class="feather-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <!-- right sec -->
+                        <div class="ht-rt ml-auto">
+                            <ul class="list-unstyled d-flex align-items-center">
+                                <li class="heading">
+                                    <p class="ht-sm-head text-uppercase d-none d-sm-block">lets meet:</p>
+                                </li>
+                                <li>
+                                    <a href="#" title="Facebook" class="text-decoration-none">
+                                        <i class="feather-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" class="text-decoration-none">
+                                        <i class="feather-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" class="text-decoration-none">
+                                        <i class="feather-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,8 +119,82 @@
         <!-- HEADER MAIN -->
         <div id="header-main">
             <div class="container">
-                <div class="header-main">
+                <div class="header-main row">
+                    <div class="col-12 col-sm-4 col-md-3 hm-lt">
+                        <div class="inner">
+                            <a href="index.html" class="st-logo d-inline-block text-capitalize text-decoration-none">
+                                parinight
+                                <span class="d-block position-relative text-lowercase text-right">.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-9 hm-rt d-flex flex-wrap justify-content-sm-end">
+                        <div class="inner d-flex flex-wrap">
+                            <div class="frac">
+                                <!-- CALL NUMBER -->
+                                <div class="inner">
+                                    <p class="head">
+                                        <i class="feather-phone d-none d-md-inline-block"></i>
+                                        <span>Call:</span>
+                                    </p>
+                                    <a href="tel:+91-8875918096" title="Call To: +91-8875918096" class="content">+91-8875918096</a>
+                                </div>
+                            </div>
 
+                            <!-- EMAIL ADDRESS -->
+                            <div class="frac">
+                                <div class="inner">
+                                    <p class="head">
+                                        <i class="feather-mail d-none d-md-inline-block"></i>
+                                        <span>Email:</span>
+                                    </p>
+                                    <a href="mailto:info@parinight.com" title="Mail To: mailto:info@parinight.com" class="content">info@parinight.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-menu">
+            <div class="container">
+                <div class="header-menu row">
+                    <div class="col-12 header-menu-col">
+                        <div class="menu ml-auto">
+                            <!-- MOBILE MENU BTN -->
+                            <div class="mob-menu-btn d-md-none">
+                                <a href="">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                                <div class="mob-menu-overlay"></div>
+                            </div>
+                            <div class="inner">
+                                <ul class="st-head-menu list-unstyled d-flex flex-wrap align-items-center">
+                                    <li class="active">
+                                        <a href="index.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html">
+                                            about us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            gallery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            contact us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

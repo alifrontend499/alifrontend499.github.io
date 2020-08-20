@@ -1,3 +1,33 @@
+// LOGO DESIGN
+.st-logo {
+    font-family: 'poppins-extrabold', sans-serif;
+    font-size: 32px;
+    height: 50px;
+    line-height: 33px;
+    color: $primary-color;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    span {
+        font-family: 'poppins-medium', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        left: 0px;
+        top: -1px;
+        color: #333;
+    }
+
+    &:hover {
+        color: darken($color: $primary-color, $amount: 5);
+    }
+
+    &:active {
+        color: darken($color: $primary-color, $amount: 12);
+    }
+}
+
+
 // SCROLLBAR
 /* width */
 ::-webkit-scrollbar {
@@ -101,161 +131,7 @@
 
 .form-group {
     &:not(.input-underline) {
-        .form-control {
-            // -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-            // box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-
-            // &:focus {
-            //     @include box-shadow(0px, 0px, 3px, 0px, $secondary-color);
-            //     border-color: $secondary-color;
-            // }
-
-            // &.def_height {
-            //     height: 40px;
-
-            //     @include min_width(992px) {
-            //         height: 48px;
-            //     }
-            // }
-        }
-    }
-}
-
-// .container,
-// .container-fluid {
-//     @include max_width(768px) {
-//         padding-left: 10px;
-//         padding-right: 10px;
-//     }
-// }
-.st-btn {
-    font-size: 15px;
-    padding: 9px 15px 10px;
-    border-radius: 4px;
-    @include transition(.1s);
-    box-shadow: none !important;
-    color: #fff;
-    text-decoration: none !important;
-
-    &:hover {
-        box-shadow: none !important;
-    }
-
-    &:active {
-        box-shadow: none !important;
-    }
-
-    &:not(.btn-st-outline):not(.btn-st-outline-secondary) {
-        &:hover {
-            box-shadow: none !important;
-            color: #fff;
-        }
-
-        &:not(.btn-st-secondary) {
-            background: $primary-color;
-
-            &:hover {
-                background: darken($color: $primary-color, $amount: 3%);
-                color: #fff;
-            }
-
-            &:active {
-                background: darken($color: $primary-color, $amount: 6%);
-            }
-        }
-
-        &.btn-st-secondary {
-            background: $secondary-color;
-
-            &:hover {
-                background: darken($color: $secondary-color, $amount: 3%);
-            }
-
-            &:active {
-                background: darken($color: $secondary-color, $amount: 6%);
-            }
-        }
-    }
-
-    &.btn-st-outline {
-        border-color: $primary-color;
-        color: #333;
-
-        &:hover {
-            background: $primary-color;
-            color: #fff;
-        }
-
-        &:active {
-            background: darken($color: $primary-color, $amount: 6%);
-            color: #fff;
-        }
-    }
-
-    &.btn-st-outline-secondary {
-        border-color: $secondary-color;
-        color: #333;
-
-        &:hover {
-            background: $secondary-color;
-            color: #fff;
-        }
-
-        &:active {
-            background: darken($color: $secondary-color, $amount: 6%);
-            color: #fff;
-        }
-    }
-
-
-    &.btn-icon {
-        i {
-            position: relative;
-            @include transition;
-
-            &.material-icons {
-                background: #fff;
-                border-radius: 100%;
-                height: 18px;
-                width: 18px;
-                font-size: 16px;
-                color: $primary-color;
-                margin-left: 7px;
-                padding-top: 1px;
-            }
-        }
-
-        &:hover {
-            i {
-                left: 4px;
-            }
-        }
-    }
-}
-
-.ST_main-head {
-    color: #333;
-    margin-bottom: 20px;
-
-    .head {
-        font-size: 30px;
-        font-weight: 600;
-        margin-bottom: 5px;
-
-        @include min_width(992px) {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-    }
-
-    .text {
-        font-size: 15px;
-        font-weight: 400;
-        color: #555;
-
-        @include min_width(992px) {
-            font-size: 17px;
-        }
+        .form-control {}
     }
 }
 
@@ -414,70 +290,15 @@
     }
 }
 
-.forgot-pass {
-    margin-bottom: 15px;
-    margin-top: -5px;
-
-    a {
-        font-size: 14px;
-        border-bottom: 1px solid transparent;
-        text-decoration: none !important;
-        color: #333;
-        transition: 0.3s;
-
-        &:hover {
-            border-color: #333;
-        }
-    }
-}
-
-.havaaccount {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 14px;
-
-    p {
-        a {
-            font-weight: 600;
-        }
-    }
-}
-
-.form-modal {
-    .head {
-        font-size: 30px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        margin-top: 12px;
-
-        span {
-            font-size: 13px;
-            font-weight: 500;
-            margin-top: 2px;
-            color: #797979;
-        }
-    }
-}
-
-.custom-modal {
-    .close {
-        position: absolute;
-        z-index: 1;
-        top: 10px;
-        right: 10px;
-    }
-}
-
-
 .st-head-menu {
     li {
-        font-size: 17px;
-        font-weight: 600;
-        text-transform: capitalize;
+        font-size: 16px;
+        text-transform: uppercase;
         position: relative;
+        font-family: 'poppins-medium', sans-serif;
 
         a {
-            color: #747474;
+            color: #fff;
             text-decoration: none !important;
             outline: none !important;
             @include transition;
@@ -487,14 +308,10 @@
             }
         }
 
-        &:hover {
+        &.active {
             >a {
                 color: $primary-color;
             }
-        }
-
-        &.active {
-            color: $primary-color;
         }
     }
 
@@ -513,7 +330,7 @@
                 a {
                     display: block;
                     padding: 9px 14px 10px;
-                    background: #1a317c;
+                    background: $secondary-color;
                     color: #fff;
                     font-size: 15px;
 
@@ -545,16 +362,16 @@
                 left: initial;
                 z-index: 12;
 
-                &:before {
-                    content: "\f0d8";
-                    font-family: "Font Awesome 5 Free";
-                    display: inline-block;
-                    position: relative;
-                    top: 9px;
-                    left: 6px;
-                    font-size: 22px;
-                    line-height: 15px;
-                }
+                // &:before {
+                //     content: "\f0d8";
+                //     font-family: "Font Awesome 5 Free";
+                //     display: inline-block;
+                //     position: relative;
+                //     top: 9px;
+                //     left: 6px;
+                //     font-size: 22px;
+                //     line-height: 15px;
+                // }
             }
         }
     }
@@ -579,14 +396,18 @@
     }
 
     >li {
-
         @include min_width(768px) {
-            padding: 0 10px;
+            &:not(:last-child) {
+                padding-right: 10px;
+            }
         }
 
         @include min_width(992px) {
-            padding: 0 20px;
+            &:not(:last-child) {
+                padding-right: 30px;
+            }
         }
+
 
         @include max_width(767px) {
             display: block;
@@ -604,68 +425,45 @@
 
 }
 
+$DEFlgScreensMargin: 70px;
+$DEFsmScreensMargin: 20px;
+
 .ST_def-mar-T,
 .ST_def-mar-TB {
-    margin-top: 20px;
+    margin-top: $DEFsmScreensMargin;
 
     @include min_width(992px) {
-        margin-top: 70px;
+        margin-top: $DEFlgScreensMargin;
     }
 }
 
 .ST_def-mar-B,
 .ST_def-mar-TB {
-    margin-bottom: 20px;
+    margin-bottom: $DEFsmScreensMargin;
 
     @include min_width(992px) {
-        margin-bottom: 70px;
+        margin-bottom: $DEFlgScreensMargin;
     }
 }
 
 .ST_def-pad-T,
 .ST_def-pad-TB {
-    padding-top: 20px;
+    padding-top: $DEFsmScreensMargin;
 
     @include min_width(992px) {
-        padding-top: 70px;
+        padding-top: $DEFlgScreensMargin;
     }
 }
 
 .ST_def-pad-B,
 .ST_def-pad-TB {
-    padding-bottom: 20px;
+    padding-bottom: $DEFsmScreensMargin;
 
     @include min_width(992px) {
-        padding-bottom: 70px;
+        padding-bottom: $DEFlgScreensMargin;
     }
 }
 
-// SITE BANNER
-#ST_banner {
-    .caption {
-        top: 50%;
-        width: 100%;
-        @include transformy(-50%);
-
-        .img-sec {
-            width: 100%;
-        }
-
-        .head {
-            font-size: 28px;
-            color: #fff;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: 2px;
-        }
-
-        .desc {
-            font-size: 16px;
-            color: #e0e0e0;
-            line-height: 23px;
-        }
-    }
-}
 
 // BREADCRUMBS
 #ST_breadcrumbs {
@@ -723,175 +521,6 @@
     }
 }
 
-.site-pagination {
-    ul {
-        li {
-            height: 40px;
-            width: 40px;
-            border: 2px solid transparent;
-            font-weight: 700;
-            @include transition;
-
-            a {
-                color: #1a317c;
-                line-height: 40px;
-            }
-
-            &:not(:last-child) {
-                margin-right: 10px;
-            }
-
-            &.active,
-            &:hover {
-                border-color: $primary-color;
-            }
-
-            &:active {
-                background-color: transparentize($color: $primary-color, $amount: .7);
-            }
-        }
-    }
-}
-
-select.custom-sel {
-    position: relative;
-    /* for Firefox */
-    -moz-appearance: none;
-    /* for Chrome */
-    -webkit-appearance: none;
-
-    &::-ms-expand {
-        display: none;
-    }
-
-    background: transparent url(../images/icons/icon-custom-sel.png) no-repeat calc(100% - 0px) 10px !important;
-    padding-right: 24px !important;
-}
-
-select.common-sel {
-    position: relative;
-    /* for Firefox */
-    -moz-appearance: none;
-    /* for Chrome */
-    -webkit-appearance: none;
-
-    &::-ms-expand {
-        display: none;
-    }
-
-    background-image: url(../images/icons/icon-custom-sel.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 8px) 18px;
-    padding-right: 24px !important;
-}
-
-.st-btn-radio {
-    cursor: pointer;
-    display: block;
-    font-weight: normal;
-    font-size: 16px;
-
-    >.text {
-        border: 1px solid #c0c0c0;
-        border-radius: 4px;
-        padding: 6px 10px 7px;
-        font-size: 15px;
-        color: $secondary-color;
-        @include transition;
-
-        @include min-width(992px) {
-            padding: 8px 14px 9px;
-        }
-    }
-
-    >input {
-        &:checked+.text {
-            border-color: $secondary-color;
-            background-color: $secondary-color;
-            color: #fff;
-        }
-    }
-}
-
-// SOCAIL LINKS
-ul.socail-links {
-    >li {
-
-        &:not(:last-child) {
-            margin-right: 4px;
-        }
-
-        >a {
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            text-decoration: none;
-            color: #fff;
-            font-size: 11px;
-            @include transition(.1s);
-        }
-
-        &.facebook {
-            >a {
-                background-color: #1880b1;
-                color: #fff;
-
-                &:hover {
-                    background-color: darken($color: #1880b1, $amount: 4%);
-                }
-
-                &:active {
-                    background-color: darken($color: #1880b1, $amount: 6%);
-                }
-            }
-        }
-
-        &.twitter {
-            >a {
-                background-color: #31bcc7;
-                color: #fff;
-
-                &:hover {
-                    background-color: darken($color: #31bcc7, $amount: 4%);
-                }
-
-                &:active {
-                    background-color: darken($color: #31bcc7, $amount: 6%);
-                }
-            }
-        }
-
-        &.google {
-            >a {
-                background-color: #d65a00;
-                color: #fff;
-
-                &:hover {
-                    background-color: darken($color: #d65a00, $amount: 4%);
-                }
-
-                &:active {
-                    background-color: darken($color: #d65a00, $amount: 6%);
-                }
-            }
-        }
-
-        &.linkedin {
-            >a {
-                background-color: #015ac2;
-                color: #fff;
-
-                &:hover {
-                    background-color: darken($color: #015ac2, $amount: 4%);
-                }
-
-                &:active {
-                    background-color: darken($color: #015ac2, $amount: 6%);
-                }
-            }
-        }
-    }
-}
 
 // CUSTOM CHECKBIXEX
 .custom-checkbox {
@@ -1094,200 +723,6 @@ ul.st-left-multilevel-menu {
 
 }
 
-.best-seller-tag {
-    padding: 9px 26px 9px 10px;
-    font-size: 12px;
-    background: transparent url('../images/icons/icon-ribbon-red.png') no-repeat left top / 100% 100%;
-    color: #fff;
-}
-
-.st-arrow-ul {
-    >li {
-        font-size: 15px;
-
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-
-        >a {
-            color: #333;
-            text-decoration: none;
-            position: relative;
-            padding-left: 18px;
-            display: block;
-            @include transition(.2s);
-
-            &:before {
-                content: '\f061';
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 600;
-                position: absolute;
-                top: calc(50% + 1px);
-                left: 0;
-                @include transformy(-50%);
-                font-size: 11px;
-                color: #333;
-                @include transition(.2s);
-            }
-
-            &:hover {
-                color: $primary-color;
-
-                &:before {
-                    left: 3px;
-                    color: $primary-color;
-                }
-            }
-        }
-
-
-    }
-}
-
-.star-rating-ul {
-    >li {
-        &:not(:last-child) {
-            margin-right: 2px;
-        }
-
-        label {
-            font-weight: normal;
-            position: relative;
-            cursor: pointer;
-
-            >span {
-                img {
-                    width: 21px;
-
-                    &.gray {
-                        display: block;
-                    }
-
-                    &.colured {
-                        display: none;
-                    }
-                }
-            }
-
-        }
-
-        // &.active>label>span,
-        // &>label>input:checked+span
-        // &>label:hover>span {
-        &.active>label>span {
-            img {
-                &.gray {
-                    display: none;
-                }
-
-                &.colured {
-                    display: block;
-                }
-            }
-        }
-    }
-}
-
-.st-def-table {
-    overflow: auto;
-
-    table {
-        width: 100%;
-
-        thead {
-            tr {
-                th {
-                    padding: 13px 15px;
-                    background: #f7d9ce;
-                    font-weight: 700;
-                    font-size: 16px;
-                    color: #000;
-                }
-            }
-        }
-
-        tbody {
-            background-color: #fff;
-
-            tr {
-                td {
-                    padding: 13px 15px 23px;
-                    font-size: 16px;
-                }
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid #dcdcdc;
-                }
-            }
-        }
-    }
-
-    .prod-details {
-        .img-sec {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #dcdcdc;
-            padding: 5px;
-
-            img {
-                max-height: 100%;
-            }
-        }
-
-        .text-sec {
-            width: calc(100% - 50px);
-            padding-left: 15px;
-
-            p {
-                font-size: 15px;
-                color: #333;
-            }
-        }
-    }
-
-    .price {
-        font-weight: 600;
-        color: #333;
-    }
-}
-
-// my-acocount-cont
-#my-acocount-cont {
-    background-color: #f8f8f8;
-}
-
-.custom-modal {
-    .close {
-        position: absolute;
-        z-index: 1;
-        top: 10px;
-        right: 10px;
-        outline: none !important;
-    }
-}
-
-.star-rating-show {
-    >li {
-        font-size: 12px;
-
-        &:not(.count):not(.no-rate) {
-            color: #f6bb09;
-        }
-
-        &.no-rate {
-            color: lightgray;
-        }
-
-        &:not(:last-child) {
-            margin-right: 5px;
-        }
-
-        &.no-rate {
-            font-weight: bold;
-        }
-    }
-}
-
 .dynamic-select {
     >.input-main {
         >input {
@@ -1345,7 +780,7 @@ ul.st-left-multilevel-menu {
                 padding: 0 10px;
                 font-size: 13px;
                 font-weight: 600;
-                color: #eb530a;
+                color: $primary-color;
                 margin-bottom: 5px;
                 margin-left: -5px;
                 margin-right: -5px;
@@ -1365,11 +800,11 @@ ul.st-left-multilevel-menu {
 
                         &:hover {
                             color: #333;
-                            background-color: lighten($color: $secondary-color, $amount: 60%);
+                            background-color: lighten($color: $primary-color, $amount: 40%);
                         }
 
                         &:active {
-                            background-color: lighten($color: $secondary-color, $amount: 55%);
+                            background-color: lighten($color: $primary-color, $amount: 40%);
                         }
 
                         .text {
@@ -1377,22 +812,6 @@ ul.st-left-multilevel-menu {
                             white-space: nowrap;
                             overflow: hidden;
                             display: block;
-                        }
-
-                        &.with-img {
-                            .img-sec {
-                                width: 15px;
-                                height: 15px;
-
-                                img {
-                                    max-height: 100%;
-                                }
-                            }
-
-                            .text {
-                                width: calc(100% - 15px);
-                                padding-left: 5px;
-                            }
                         }
                     }
                 }
