@@ -821,12 +821,23 @@ ul.st-left-multilevel-menu {
     }
 }
 
+.st-head-top {
+    font-size: 25px;
+    font-family: styling, sans-serif;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
 .st-head {
     font-size: 28px;
     font-family: styling, sans-serif;
     color: #000;
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
+
+    &.big {
+        font-size: 35px;
+    }
 }
 
 .st-head-sm {
@@ -835,4 +846,13 @@ ul.st-left-multilevel-menu {
     color: #000;
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
+}
+.st-desc {
+    font-size: 15px;
+    line-height: 23px;
+
+    @include min-width($lg-main) {
+        font-size: 16px;
+        line-height: 24px;    
+    }
 }

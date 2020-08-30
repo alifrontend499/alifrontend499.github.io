@@ -215,3 +215,38 @@ body {
         }
     }
 }
+
+// HOME ABOUT
+#home-about {}
+
+.home-about {
+    .img-sec {
+        @include min-width($md-main) {
+            width: 300px;
+        }
+        @include min-width($lg-main) {
+            width: 350px;
+        }
+    }
+
+    .text-sec {
+        @include min-width($md-main) {
+            padding-left: 25px;
+        }
+        @include min-width($lg-main) {
+            padding-left: 40px;
+        }
+
+        .st-desc {
+            @include min-width($lg-main) {
+                font-size: 17px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+                @include min-width($md-main) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
