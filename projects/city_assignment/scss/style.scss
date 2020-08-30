@@ -1,0 +1,217 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+
+// font-family: 'carmen-sans-regular', sans-serif;
+// font-family: 'styling', sans-serif;
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+// HOMEPAGE CSS
+
+// header
+#header {}
+
+// HEADER TOP SEC
+#header-top {
+    background-color: $st-less-dark;
+    color: #fff;
+    padding: 5px 0;
+
+    @include min-width($md-main) {
+        height: 40px;
+    }
+}
+
+.header-top {
+    p {
+        letter-spacing: 0.2px;
+    }
+}
+
+// HEADER MAIN SEC
+#header-main {}
+
+.header-main {
+    padding: 20px 0;
+
+    .st-logo {
+        @include min-width($md-main) {
+            width: 210px
+        }
+
+        @include min-width($lg-main) {
+            width: 280px
+        }
+    }
+
+    .hm-rt {
+        .frac {
+            &:not(:last-child) {
+                margin-right: 10px;
+
+                @include min-width($lg-main) {
+                    margin-right: 60px;
+                }
+            }
+
+            .head {
+                color: #111;
+                font-family: 'carmen-sans-bold', sans-serif;
+                margin-bottom: 5px;
+
+                i {
+                    font-size: 20px;
+                    position: relative;
+                    top: 3px;
+                    margin-right: 5px;
+                }
+            }
+
+            .content {
+                color: $secondary-color;
+                font-size: 18px;
+
+                @include min-width($md-main) {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+// HEADER MENU
+#header-menu {
+    background-color: $primary-color;
+}
+
+.header-menu {
+
+    // padding: 13px 0;
+    @include min-width($md-main) {
+        .get-a-quote-btn {
+            .st-btn {
+                width: 160px;
+            }
+        }
+    }
+}
+
+// home slider
+.home_slider {
+    background-color: $slider-bg;
+
+    .item {
+        padding: 30px 0;
+
+        .item-lt {
+            .st-head {
+                font-size: 30px;
+                margin-bottom: 8px;
+            }
+
+            .text {
+                font-size: 18px;
+                color: #000;
+                margin-top: 10px;
+
+                @include min-width($lg-main) {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        .item-rt {
+            @include min-width($md-main) {
+                width: 350px;
+            }
+
+            @include min-width($lg-main) {
+                width: 450px;
+            }
+
+            >.inner {
+                background-color: #fff;
+                padding: $defaultGap;
+
+                @include min-width($md-main) {
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+// HOME BLOCK TWO
+#home-block-two {}
+
+.home-block-two {
+    .home-block-two-col {
+        background: $primary-color url('../images/home-second-block/background-img.png') no-repeat center / cover;
+        border-radius: 20px;
+        padding: 25px 15px 5px;
+
+        @include min-width($md-main) {
+            padding: 50px 15px 25px;
+        }
+
+        @include min-width($lg-main) {
+            padding: 70px 30px 25px;
+        }
+    }
+
+    .item {
+
+        // width: 100%;
+        @include max-width($md-less-one) {
+            margin-bottom: $defaultGap;
+        }
+
+        padding-left: $defaultGap;
+        padding-right: $defaultGap;
+
+        @include min-width($md-main) {
+            width: 220px;
+        }
+
+        @include min-width($lg-main) {
+            width: 280px;
+        }
+
+        .img-sec {
+            height: 75px;
+            margin-bottom: $defaultGap;
+
+            img {
+                max-height: 100%;
+            }
+        }
+
+        .text-sec {
+            .head {
+                font-size: 40px;
+                color: #fff;
+                margin-bottom: 5px;
+                letter-spacing: .5px;
+            }
+
+            .desc {
+                font-size: 19px;
+                color: #fff;
+            }
+        }
+    }
+}

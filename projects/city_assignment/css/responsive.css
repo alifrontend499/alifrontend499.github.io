@@ -1,0 +1,67 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .header-menu-col>.menu>.inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background: #124b98;
+        z-index: 123;
+        transition: .3s;
+        overflow: auto;
+    }
+
+    .header-menu-col>.menu:not(.active)>.inner {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .header-menu-col>.menu .mob-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        z-index: 12;
+        display: none;
+    }
+
+    .mob-menu-btn a {
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        z-index: 123;
+        position: relative;
+    }
+
+    .mob-menu-btn a.active {
+        color: #000;
+        position: fixed;
+        top: 5px;
+        left: 210px;
+    }
+
+    .st-head-menu {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {}
+
+@media (min-width: 767px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}
