@@ -84,6 +84,13 @@
     color: $primary-color !important;
 }
 
+.color-black {
+    color: #000 !important;
+}
+.color-less-black {
+    color: #333 !important;
+}
+
 
 .font-weight-100 {
     font-weight: 100;
@@ -362,7 +369,7 @@
             padding-right: 20px;
         }
 
-        @include min_width($xs-main) {
+        @include min_width($xl-main) {
             padding-right: 35px;
         }
 
@@ -819,6 +826,10 @@ ul.st-left-multilevel-menu {
             background-color: darken($color: $primary-color, $amount: 10);
         }
     }
+    &.btn-lg {
+        padding: 11px 30px 13px;
+        font-size: 16px;
+    }
 }
 
 .st-head-top {
@@ -855,4 +866,22 @@ ul.st-left-multilevel-menu {
         font-size: 16px;
         line-height: 24px;    
     }
+}
+
+.st-main-head {
+    margin-bottom: 20px;
+    @include min-width($lg-main) {
+        margin-bottom: 50px;
+    }
+    .st-head {
+        margin-bottom: 5px;
+    }
+    .st-desc {
+        font-size: 17px;
+        letter-spacing: .5px;
+        color: #333;    
+        &+.st-head {
+            margin-top: 10px;
+        }
+    }    
 }

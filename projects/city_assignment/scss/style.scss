@@ -131,6 +131,17 @@ body {
                     max-width: 80%;
                 }
             }
+
+            .slider-girl-img {
+                @include min-width($lg-main) {
+                    margin-bottom: -100px;
+                    width: 240px;
+                }
+                @include min-width($xl-main) {
+                    margin-bottom: -30px;
+                    width: 300px;
+                }
+            }
         }
 
         .item-rt {
@@ -138,8 +149,8 @@ body {
                 width: 350px;
             }
 
-            @include min-width($lg-main) {
-                width: 450px;
+            @include min-width($xl-main) {
+                width: 370px;
             }
 
             >.inner {
@@ -224,6 +235,7 @@ body {
         @include min-width($md-main) {
             width: 300px;
         }
+
         @include min-width($lg-main) {
             width: 350px;
         }
@@ -233,6 +245,7 @@ body {
         @include min-width($md-main) {
             padding-left: 25px;
         }
+
         @include min-width($lg-main) {
             padding-left: 40px;
         }
@@ -241,8 +254,10 @@ body {
             @include min-width($lg-main) {
                 font-size: 17px;
             }
+
             &:not(:last-child) {
                 margin-bottom: 10px;
+
                 @include min-width($md-main) {
                     margin-bottom: 25px;
                 }
@@ -250,3 +265,164 @@ body {
         }
     }
 }
+
+// HOME OUR FEATURES
+#our-features {}
+
+.our-features {
+    .lt {
+
+        @include min-width($md-main) {
+            width: 250px;
+            padding-right: 20px;
+        }
+
+        @include min-width($lg-main) {
+            width: 410px;
+            padding-right: 60px;
+        }
+
+        @include min-width($xl-main) {
+            width: 460px;
+            padding-right: 100px;
+        }
+
+        .st-btn {
+            margin-top: 30px;
+        }
+    }
+
+    .rt {
+        .seprator {
+            width: 100%;
+
+            @include min-width($sm-main) {
+                width: 50%;
+            }
+        }
+
+        .frac {
+            padding: 10px 0;
+
+            @include min-width($sm-main) {
+                padding: 15px;
+            }
+        }
+
+        .frac-inner {
+            background: #fff;
+            padding: 15px;
+            border-radius: 20px;
+            @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.2));
+
+            @include min-width($lg-main) {
+                padding: 20px 20px;
+            }
+
+            .head {
+                font-size: 25px;
+                margin-bottom: 4px;
+            }
+
+            .frac-lt {
+                width: calc(100% - 40px);
+
+                @include min-width($xl-main) {
+                    width: calc(100% - 90px);
+                }
+            }
+
+            .frac-rt {
+                height: 40px;
+                width: 40px;
+
+                @include min-width($xl-main) {
+                    height: 90px;
+                    width: 90px;
+                }
+
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// HOME OUR FEATURES
+#our-services {
+    background: #f3f3f3 url('../images/map.png') no-repeat center / auto;
+}
+
+.our-services {
+
+    .item {
+        .item-inner {
+            background-color: #fff;
+            padding: 25px 20px;
+            margin-bottom: 30px;
+            @include transition;
+
+        }
+
+        .img-sec {
+            // height: 30px;
+            width: 35px;
+
+            img {
+                max-height: 100%;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                width: 10px;
+                display: block;
+                background-color: $secondary-color;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:before {
+                bottom: 100%;
+            }
+
+            &:after {
+                top: 100%;
+            }
+
+            .img-inner {
+                height: 35px;
+                width: 35px;
+                @include transition;
+            }
+        }
+
+        .item-inner {
+            &:hover {
+                @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.2));
+                // .img-inner {
+                //     top: calc(50% - (35px / 2));
+                //     @include transition;
+                //     // transform: translateY(-50%);
+                // }
+            }
+        }
+
+        .text-sec {
+            padding-left: $defaultGap;
+
+            .head {
+                font-size: 21px;
+                margin-bottom: 5px;
+            }
+
+            .desc {}
+        }
+    }
+}
+
+// testimonials
+#testimonials{}
+.testimonials{}
