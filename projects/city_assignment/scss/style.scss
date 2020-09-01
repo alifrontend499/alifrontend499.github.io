@@ -428,12 +428,11 @@ body {
 #testimonials {}
 
 .testimonials {
-    .testimonials-container {
-        // padding-right: 15px;
-        // padding-left: 15px;
-    }
+    .testimonials-container {}
 
     .item {
+        opacity: 0.6;
+
         .text-sec {
             .inner {
                 @include transition(.4s);
@@ -494,7 +493,10 @@ body {
     }
 
     .owl-item.center,
+    .owl-item.center>.item,
     .item:hover {
+        opacity: 1;
+
         .text-sec {
             .inner {
                 border-color: $primary-color;
@@ -517,23 +519,29 @@ body {
 
 // FOOTER
 footer {
-    border-top: 5px solid $primary-color;
+
+    .st-text,
+    .ft-link {
+        color: $footer-text-color;
+        font-size: 15px;
+        line-height: 23px;
+
+        &.mb {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
 }
 
 #ft-top {
-    background-color: #1a1a1a;
-    padding-top: 35px;
-    padding-bottom: 35px;
-
-    @include min_width(992px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+    background: $footer-bg-color url("../images/map.png") no-repeat center/auto;
 }
 
 .ft-top {
     .ft-head {
-        font-size: 18px;
+        font-family: styling, sans-serif;
+        font-size: 24px;
         margin-bottom: 20px;
         color: #fff;
     }
@@ -545,14 +553,11 @@ footer {
             }
 
             >a {
-                color: #d4d4d4;
-                text-decoration: none;
-                font-weight: 100;
-                font-size: 14px;
+                color: $footer-text-color;
+                font-size: 15px;
                 @include transition;
 
                 &:hover {
-                    text-decoration: underline;
                     margin-left: 3px;
                 }
             }
@@ -561,36 +566,23 @@ footer {
 
     .one {
         img {
-            width: 70px;
+            width: 200px;
             margin-bottom: 20px;
 
-            @include min_width(992px) {
-                width: 130px;
-            }
         }
 
-        p.d-flex {
-            color: #d4d4d4;
-            font-size: 15px;
+        .st-text {
+            margin-bottom: 20px;
+        }
 
+    }
+
+    .two {
+        .ft-link {}
+
+        .st-text {
             &:not(:last-child) {
-                margin-bottom: 10px;
-            }
-
-            @include min_width(992px) {
-                &:not(:last-child) {
-                    margin-bottom: 20px;
-                }
-            }
-
-            i {
-                font-size: 25px;
-                margin-right: 15px;
-            }
-
-            a {
-                color: #d4d4d4;
-                text-decoration: none;
+                margin-bottom: 5px;
             }
         }
     }
@@ -598,67 +590,58 @@ footer {
     .social-links {
         >li {
             &:not(:last-child) {
-                padding-right: 21px;
+                padding-right: 20px;
             }
 
             >a {
-                color: $primary-color;
-                font-size: 30px;
-
-                i {
-                    @include transition(.1s);
-                }
+                background: #bbbbbb;
+                color: #161616;
+                font-size: 15px;
+                height: 30px;
+                width: 30px;
+                border-radius: 100%;
+                @include transition(.1s);
 
                 &:hover {
-                    i {
-                        transform: scale(1.1);
-                    }
+                    transform: scale(1.1);
                 }
             }
         }
     }
 
     .newsletter {
-        >p {
-            font-size: 16px;
-            color: #fff;
-            margin: 14px 0;
-        }
 
-        >.d-flex {
+        >.form {
 
             input,
-            .btn {
-                height: 45px;
-            }
+            .btn {}
 
             input {
-                width: calc(100% - 50px);
+                height: 50px;
+                border-radius: 5px;
                 border: 1px solid $primary-color;
-                font: 18px "itc-avant-demi", sans-serif;
+                font-size: 15px;
+
                 color: #000;
+                letter-spacing: 0.7px;
             }
 
-            .btn {
-                width: 50px;
-                background-color: $primary-color;
-                border: 1px solid $primary-color;
-                color: #fff;
-                @include transition;
-
-                &:hover {
-                    background-color: #000; // color: #000;
-                }
+            .st-btn {
+                font-family: styling, sans-serif;
+                padding: 11px 30px 10px;
+                font-size: 18px;
+                letter-spacing: 1px;
             }
         }
     }
 }
 
-.ft-bottom {
-    padding: 10px 0;
+#ft-bottom {
+    background-color: #000;
+}
 
-    p {
-        font-size: 21px;
-        color: #000;
-    }
+.ft-bottom {
+    padding: 11px 0 10px;
+
+    p {}
 }
