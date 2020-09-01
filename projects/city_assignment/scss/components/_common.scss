@@ -87,6 +87,7 @@
 .color-black {
     color: #000 !important;
 }
+
 .color-less-black {
     color: #333 !important;
 }
@@ -826,6 +827,7 @@ ul.st-left-multilevel-menu {
             background-color: darken($color: $primary-color, $amount: 10);
         }
     }
+
     &.btn-lg {
         padding: 11px 30px 13px;
         font-size: 16px;
@@ -858,30 +860,53 @@ ul.st-left-multilevel-menu {
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
 }
+
 .st-desc {
     font-size: 15px;
     line-height: 23px;
 
     @include min-width($lg-main) {
         font-size: 16px;
-        line-height: 24px;    
+        line-height: 24px;
     }
 }
 
 .st-main-head {
     margin-bottom: 20px;
+
     @include min-width($lg-main) {
         margin-bottom: 50px;
     }
+
     .st-head {
         margin-bottom: 5px;
     }
+
     .st-desc {
         font-size: 17px;
         letter-spacing: .5px;
-        color: #333;    
+        color: #333;
+
         &+.st-head {
             margin-top: 10px;
         }
-    }    
+    }
+}
+
+.star-rating-show {
+    >li {
+        font-size: 15px;
+
+        &:not(.count):not(.no-rate) {
+            color: $star-color;
+        }
+
+        &.no-rate {
+            color: $light-white;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
 }

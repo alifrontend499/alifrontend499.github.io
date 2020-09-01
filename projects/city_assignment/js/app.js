@@ -9,49 +9,25 @@ $(function () {
     });
 
     // PARTNERS SLIDER
-    $('#speciality-slider').owlCarousel({
-        items: 4,
+    $('#testimonials-slider').owlCarousel({
+        items: 3,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2000,
-        nav: true,
-        navText: ['<i class="material-icons">keyboard_arrow_left</i>', ' <i class="material-icons">keyboard_arrow_right</i>'],
+        center: true,
+        loop: true,
+        margin: 15,
+        // nav: true,
+        // navText: ['<i class="feather-chevron-left"></i>', ' <i class="feather-chevron-right"></i>'],
         responsive: {
             0: {
+                items: 1
+            },
+            600: {
                 items: 2
-            },
-            400: {
-                items: 3
-            },
-            768: {
-                items: 4,
-            }
-        }
-    });
-
-    // HOME-LAB-TEST-SLIDER
-    $('#home-lab-test-slider').owlCarousel({
-        items: 4,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        nav: false,
-        margin: 10,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 10
-            },
-            500: {
-                items: 2,
-                margin: 15
             },
             992: {
                 items: 3,
-            },
-            1200: {
-                items: 4,
-                margin: 20
             }
         }
     });
