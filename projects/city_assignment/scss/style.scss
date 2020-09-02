@@ -14,8 +14,12 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
+
+    @include min-width($md-main) {
+        font-size: 16px;
+    }
 }
 
 // HOMEPAGE CSS
@@ -116,12 +120,20 @@ body {
     background-color: $slider-bg;
 
     .item {
-        padding: 30px 0;
+        padding: 15px 0;
+
+        @include min-width($md-main) {
+            padding: 30px 0;
+        }
 
         .item-lt {
             .st-head {
-                font-size: 30px;
+                font-size: 25px;
                 margin-bottom: 8px;
+
+                @include min-width($md-main) {
+                    font-size: 28px;
+                }
             }
 
             .text {
@@ -189,7 +201,7 @@ body {
     .home-block-two-col {
         background: $primary-color url('../images/home-second-block/background-img.png') no-repeat center / cover;
         border-radius: 20px;
-        padding: 25px 15px 5px;
+        padding: 20px 15px 5px;
 
         @include min-width($md-main) {
             padding: 30px 15px;
@@ -219,8 +231,12 @@ body {
         }
 
         .img-sec {
-            height: 75px;
+            height: 65px;
             margin-bottom: $defaultGap;
+
+            @include min-width($lg-main) {
+                height: 75px;
+            }
 
             img {
                 max-height: 100%;
@@ -229,15 +245,23 @@ body {
 
         .text-sec {
             .head {
-                font-size: 40px;
+                font-size: 30px;
                 color: #fff;
                 margin-bottom: 5px;
                 letter-spacing: .5px;
+
+                @include min-width($lg-main) {
+                    font-size: 40px;
+                }
             }
 
             .desc {
-                font-size: 19px;
+                font-size: 17px;
                 color: #fff;
+
+                @include min-width($lg-main) {
+                    font-size: 19px;
+                }
             }
         }
     }
@@ -304,23 +328,29 @@ body {
         }
 
         .st-btn {
-            margin-top: 30px;
+            margin-top: 20px;
+            @include max-width($md-less-one) {
+                margin-bottom: 15px;
+            }
+            @include min-width($md-main) {
+                margin-top: 30px;
+            }
         }
     }
 
     .rt {
         .seprator {
             width: 100%;
+            width: 50%;
 
-            @include min-width($sm-main) {
-                width: 50%;
-            }
+            // @include min-width($sm-main) {
+            // }
         }
 
         .frac {
-            padding: 10px 0;
+            padding: 10px;
 
-            @include min-width($sm-main) {
+            @include min-width($md-main) {
                 padding: 15px;
             }
         }
@@ -336,8 +366,12 @@ body {
             }
 
             .head {
-                font-size: 25px;
+                font-size: 20px;
                 margin-bottom: 4px;
+
+                @include min-width($lg-main) {
+                    font-size: 25px;
+                }
             }
 
             .frac-lt {
@@ -373,7 +407,11 @@ body {
 .our-services {
 
     .item {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        
+        @include min-width($md-main) {
+            margin-bottom: 30px;
+        }
 
         .item-inner {
             background-color: #fff;
@@ -468,6 +506,7 @@ body {
                 border-radius: 10px;
                 padding: 30px;
                 border: 1px solid $light-white;
+                border-top: 5px solid $light-white;
                 margin-bottom: 40px;
 
                 &:after {
@@ -528,7 +567,7 @@ body {
         .text-sec {
             .inner {
                 border-color: $primary-color;
-                border-top: 5px solid $secondary-color;
+                border-top-color: $secondary-color;
                 background-color: $primary-color;
 
                 &:after {
@@ -556,7 +595,11 @@ footer {
 
         &.mb {
             &:not(:last-child) {
-                margin-bottom: 25px;
+                margin-bottom: 15px;
+
+                @include min-width($lg-main) {
+                    margin-bottom: 25px;
+                }
             }
         }
     }
@@ -647,7 +690,7 @@ footer {
             input {
                 height: 50px;
                 border-radius: 5px;
-                border: 1px solid $primary-color;
+                border: 1px solid #bbbbbb;
                 font-size: 15px;
 
                 color: #000;

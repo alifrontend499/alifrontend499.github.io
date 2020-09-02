@@ -341,7 +341,7 @@
         }
 
         >a {
-            font-size: 16px;
+            font-size: 15px;
             color: #fff;
             text-decoration: none !important;
             outline: none !important;
@@ -349,6 +349,9 @@
             @include transition;
             letter-spacing: 0.5px;
 
+            @include min_width($xl-main) {
+                font-size: 16px;
+            }
             @include min_width($lg-main) {
                 border-bottom: 4px solid transparent;
                 border-top: 4px solid transparent;
@@ -394,13 +397,16 @@
     }
 }
 
+$DEFScreensMargin: 15px;
 $DEFlgScreensMargin: 70px;
-$DEFsmScreensMargin: 40px;
+$DEFmdScreensMargin: 40px;
 
 .ST_def-mar-T,
 .ST_def-mar-TB {
-    margin-top: $DEFsmScreensMargin;
-
+    margin-top: $DEFScreensMargin;
+    @include min_width($md-main) {
+        margin-top: $DEFmdScreensMargin;
+    }
     @include min_width($lg-main) {
         margin-top: $DEFlgScreensMargin;
     }
@@ -408,8 +414,10 @@ $DEFsmScreensMargin: 40px;
 
 .ST_def-mar-B,
 .ST_def-mar-TB {
-    margin-bottom: $DEFsmScreensMargin;
-
+    margin-bottom: $DEFScreensMargin;
+    @include min_width($md-main) {
+        margin-bottom: $DEFmdScreensMargin;
+    }
     @include min_width($lg-main) {
         margin-bottom: $DEFlgScreensMargin;
     }
@@ -417,8 +425,10 @@ $DEFsmScreensMargin: 40px;
 
 .ST_def-pad-T,
 .ST_def-pad-TB {
-    padding-top: $DEFsmScreensMargin;
-
+    padding-top: $DEFScreensMargin;
+    @include min_width($md-main) {
+        padding-top: $DEFmdScreensMargin;
+    }
     @include min_width($lg-main) {
         padding-top: $DEFlgScreensMargin;
     }
@@ -426,8 +436,10 @@ $DEFsmScreensMargin: 40px;
 
 .ST_def-pad-B,
 .ST_def-pad-TB {
-    padding-bottom: $DEFsmScreensMargin;
-
+    padding-bottom: $DEFScreensMargin;
+    @include min_width($md-main) {
+        padding-bottom: $DEFmdScreensMargin;
+    }
     @include min_width($lg-main) {
         padding-bottom: $DEFlgScreensMargin;
     }
@@ -835,36 +847,56 @@ ul.st-left-multilevel-menu {
     }
 
     &.btn-lg {
-        padding: 11px 30px 13px;
+        padding: 8px 20px 11px;
         font-size: 16px;
+        @include min-width($md-main) {
+            padding: 11px 30px 13px;        
+        }
     }
 }
 
 .st-head-top {
-    font-size: 25px;
+    font-size: 20px;
     font-family: styling, sans-serif;
     margin-bottom: 2px;
     letter-spacing: 1px;
+    @include min-width($md-main) {
+        font-size: 25px;
+    }
 }
 
 .st-head {
-    font-size: 28px;
+    font-size: 25px;
     font-family: styling, sans-serif;
     color: #000;
-    margin-bottom: $defaultGap;
+    margin-bottom: 10px;
     letter-spacing: .5px;
+    @include min-width($md-main) {
+        font-size: 28px;
+        margin-bottom: $defaultGap;
+    }
 
     &.big {
-        font-size: 40px;
+        font-size: 27px;
+        
+        @include min-width($md-main) {
+            font-size: 35px;
+        }
+        @include min-width($lg-main) {
+            font-size: 40px;
+        }
     }
 }
 
 .st-head-sm {
-    font-size: 24px;
+    font-size: 20px;
     font-family: styling, sans-serif;
     color: #000;
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
+    @include min-width($md-main) {
+        font-size: 24px;
+    }
 }
 
 .st-desc {
@@ -878,7 +910,7 @@ ul.st-left-multilevel-menu {
 }
 
 .st-main-head {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @include min-width($lg-main) {
         margin-bottom: 50px;
@@ -889,12 +921,15 @@ ul.st-left-multilevel-menu {
     }
 
     .st-desc {
-        font-size: 17px;
+        font-size: 16px;
         letter-spacing: .5px;
         color: #333;
 
         &+.st-head {
             margin-top: 10px;
+        }
+        @include min-width($lg-main) {
+            font-size: 17px;
         }
     }
 }
