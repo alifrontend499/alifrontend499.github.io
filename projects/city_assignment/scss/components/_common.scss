@@ -341,7 +341,7 @@
         }
 
         >a {
-            font-size: 14px;
+            font-size: 16px;
             color: #fff;
             text-decoration: none !important;
             outline: none !important;
@@ -855,7 +855,7 @@ ul.st-left-multilevel-menu {
     letter-spacing: .5px;
 
     &.big {
-        font-size: 35px;
+        font-size: 40px;
     }
 }
 
@@ -901,7 +901,7 @@ ul.st-left-multilevel-menu {
 
 .star-rating-show {
     >li {
-        font-size: 15px;
+        font-size: 13px;
 
         &:not(.count):not(.no-rate) {
             color: $star-color;

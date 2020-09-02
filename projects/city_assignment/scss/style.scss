@@ -82,6 +82,8 @@ body {
             .content {
                 color: $secondary-color;
                 font-size: 18px;
+                --animate-duration: 4s;
+                animation-timing-function: linear;
 
                 @include min-width($md-main) {
                     padding-left: 30px;
@@ -134,12 +136,12 @@ body {
 
             .slider-girl-img {
                 @include min-width($lg-main) {
-                    margin-bottom: -100px;
+                    margin-bottom: -114px;
                     width: 240px;
                 }
 
                 @include min-width($xl-main) {
-                    margin-bottom: -30px;
+                    margin-bottom: -62px;
                     width: 300px;
                 }
             }
@@ -166,6 +168,19 @@ body {
     }
 }
 
+// CSS FOR FIREFOX ONLY
+@-moz-document url-prefix() {
+    .home_slider .item .item-lt .slider-girl-img {
+        @include min-width($lg-main) {
+            margin-bottom: -126px;
+        }
+
+        @include min-width($xl-main) {
+            margin-bottom: -65px;
+        }
+    }
+}
+
 
 // HOME BLOCK TWO
 #home-block-two {}
@@ -177,11 +192,11 @@ body {
         padding: 25px 15px 5px;
 
         @include min-width($md-main) {
-            padding: 50px 15px 25px;
+            padding: 30px 15px;
         }
 
         @include min-width($lg-main) {
-            padding: 70px 30px 25px;
+            padding: 50px 30px;
         }
     }
 
@@ -314,7 +329,7 @@ body {
             background: #fff;
             padding: 15px;
             border-radius: 20px;
-            @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.2));
+            @include box-shadow(0px, 0px, 20px, 0, rgba(0, 0, 0, 0.2));
 
             @include min-width($lg-main) {
                 padding: 20px 20px;
@@ -358,12 +373,13 @@ body {
 .our-services {
 
     .item {
+        margin-bottom: 30px;
+
         .item-inner {
             background-color: #fff;
             padding: 25px 20px;
-            margin-bottom: 30px;
             @include transition;
-
+            height: 100%;
         }
 
         .img-sec {
@@ -377,37 +393,49 @@ body {
             &:before,
             &:after {
                 content: '';
-                width: 10px;
+                width: 5px;
                 display: block;
                 background-color: $secondary-color;
                 position: absolute;
                 left: 50%;
+                @include transition(.1s);
+                transition-delay: .2s;
                 transform: translateX(-50%);
+                height: 0;
             }
 
             &:before {
-                bottom: 100%;
+                bottom: calc(50% + 60px / 2);
             }
 
             &:after {
-                top: 100%;
+                top: calc(50% + 60px / 2);
             }
 
             .img-inner {
                 height: 60px;
                 width: 60px;
-                @include transition;
+                @include transition(.2s);
+                top: 0;
             }
         }
 
         .item-inner {
             &:hover {
                 @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.2));
-                // .img-inner {
-                //     top: calc(50% - (60px / 2));
-                //     @include transition;
-                //     // transform: translateY(-50%);
-                // }
+
+                .img-inner {
+                    top: 50%;
+                    @include transformy(-50%);
+                }
+
+                .img-sec {
+
+                    &:before,
+                    &:after {
+                        height: calc(50% - 60px / 2);
+                    }
+                }
             }
         }
 
@@ -644,4 +672,23 @@ footer {
     padding: 11px 0 10px;
 
     p {}
+}
+
+// MODAL FORM FOR SSUBMIT ASSIGNMENT
+.assignment-submitted-success {
+    padding: 15px;
+
+    img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #000;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
 }
