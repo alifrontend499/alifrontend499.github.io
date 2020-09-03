@@ -837,3 +837,33 @@ footer {
         }
     }
 }
+
+// CONTACT MAIN
+#contact-main {}
+
+.contact-main {
+    .contact-main-col {
+
+        >.lt {
+            width: 400px;
+            padding-right: 15px;
+        }
+    }
+
+    .contact-details {
+        .frac {
+            margin-bottom: 35px;
+        }
+
+        .icon-sec {
+            width: 27px;
+            padding-top: 5px;
+        }
+
+        .text-sec {
+            .head {
+                color: $primary-color;
+            }
+        }
+    }
+}

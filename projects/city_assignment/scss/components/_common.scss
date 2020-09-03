@@ -352,6 +352,7 @@
             @include min_width($xl-main) {
                 font-size: 16px;
             }
+
             @include min_width($lg-main) {
                 border-bottom: 4px solid transparent;
                 border-top: 4px solid transparent;
@@ -404,9 +405,11 @@ $DEFmdScreensMargin: 40px;
 .ST_def-mar-T,
 .ST_def-mar-TB {
     margin-top: $DEFScreensMargin;
+
     @include min_width($md-main) {
         margin-top: $DEFmdScreensMargin;
     }
+
     @include min_width($lg-main) {
         margin-top: $DEFlgScreensMargin;
     }
@@ -415,9 +418,11 @@ $DEFmdScreensMargin: 40px;
 .ST_def-mar-B,
 .ST_def-mar-TB {
     margin-bottom: $DEFScreensMargin;
+
     @include min_width($md-main) {
         margin-bottom: $DEFmdScreensMargin;
     }
+
     @include min_width($lg-main) {
         margin-bottom: $DEFlgScreensMargin;
     }
@@ -426,9 +431,11 @@ $DEFmdScreensMargin: 40px;
 .ST_def-pad-T,
 .ST_def-pad-TB {
     padding-top: $DEFScreensMargin;
+
     @include min_width($md-main) {
         padding-top: $DEFmdScreensMargin;
     }
+
     @include min_width($lg-main) {
         padding-top: $DEFlgScreensMargin;
     }
@@ -437,32 +444,58 @@ $DEFmdScreensMargin: 40px;
 .ST_def-pad-B,
 .ST_def-pad-TB {
     padding-bottom: $DEFScreensMargin;
+
     @include min_width($md-main) {
         padding-bottom: $DEFmdScreensMargin;
     }
+
     @include min_width($lg-main) {
         padding-bottom: $DEFlgScreensMargin;
     }
 }
 
+// SITE BANNER
+#ST_banner {
+    .caption {
+        top: 50%;
+        width: 100%;
+        @include transformy(-50%);
+
+        .img-sec {
+            width: 100%;
+        }
+
+        .st-head {
+            color: #fff;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .desc {
+            font-size: 16px;
+            color: #e0e0e0;
+            line-height: 23px;
+        }
+    }
+}
 
 // BREADCRUMBS
-#ST_breadcrumbs {
-    background: #fff;
-    padding: 15px 0;
-}
+// #ST_breadcrumbs {
+//     background: #fff;
+//     padding: 15px 0;
+// }
 
 .ST_breadcrumbs {
     >ul {
         flex-wrap: wrap;
 
         >li {
-            font-size: 14px;
             position: relative;
 
             >a {
-                color: #333;
+                color: #ebebeb;
                 text-decoration: none;
+                @include transition;
 
                 i {
                     color: $primary-color;
@@ -474,26 +507,32 @@ $DEFmdScreensMargin: 40px;
             }
 
             &:not(:last-child) {
-                padding-right: 20px;
+                padding-right: 30px;
 
                 &:after {
                     content: '/';
-                    margin: 0 5px 0 6px;
                     position: absolute;
-                    right: 0;
+                    right: 11px;
                     top: 0;
+                    color: #fff;
                 }
             }
 
-            &:hover {
+            &:not(:last-child):hover {
                 >a {
-                    color: $primary-color;
+                    color: $secondary-color;
                 }
             }
 
             &.active {
                 >a {
-                    color: $primary-color;
+                    color: $secondary-color;
+                    // pointer-events: none !important;
+                }
+            }
+
+            &:last-child {
+                >a {
                     pointer-events: none !important;
                 }
             }
@@ -849,8 +888,9 @@ ul.st-left-multilevel-menu {
     &.btn-lg {
         padding: 8px 20px 11px;
         font-size: 16px;
+
         @include min-width($md-main) {
-            padding: 11px 30px 13px;        
+            padding: 11px 30px 13px;
         }
     }
 }
@@ -860,6 +900,7 @@ ul.st-left-multilevel-menu {
     font-family: styling, sans-serif;
     margin-bottom: 2px;
     letter-spacing: 1px;
+
     @include min-width($md-main) {
         font-size: 25px;
     }
@@ -871,6 +912,7 @@ ul.st-left-multilevel-menu {
     color: #000;
     margin-bottom: 10px;
     letter-spacing: .5px;
+
     @include min-width($md-main) {
         font-size: 28px;
         margin-bottom: $defaultGap;
@@ -878,10 +920,11 @@ ul.st-left-multilevel-menu {
 
     &.big {
         font-size: 27px;
-        
+
         @include min-width($md-main) {
             font-size: 35px;
         }
+
         @include min-width($lg-main) {
             font-size: 40px;
         }
@@ -894,6 +937,7 @@ ul.st-left-multilevel-menu {
     color: #000;
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
+
     @include min-width($md-main) {
         font-size: 24px;
     }
@@ -928,6 +972,7 @@ ul.st-left-multilevel-menu {
         &+.st-head {
             margin-top: 10px;
         }
+
         @include min-width($lg-main) {
             font-size: 17px;
         }

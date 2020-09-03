@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>City Assignment</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
     <!-- FONTAWSOME ICONS -->
     <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
 
@@ -93,7 +95,7 @@
                         <div class="menu">
                             <!-- MOBILE MENU BTN -->
                             <div class="mob-menu-btn d-lg-none">
-                                <a href="">
+                                <a href="#">
                                     <i class="feather-menu icon"></i>
                                 </a>
                                 <div class="mob-menu-overlay"></div>
@@ -101,7 +103,7 @@
                             <div class="inner">
                                 <ul class="st-head-menu list-unstyled d-lg-flex flex-lg-wrap align-lg-items-center">
                                     <li class="active">
-                                        <a href="#" class="text-uppercase font-weight-600 d-block">
+                                        <a href="index.html" class="text-uppercase font-weight-600 d-block">
                                             Home
                                         </a>
                                     </li>
@@ -126,7 +128,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-uppercase font-weight-600 d-block">
+                                        <a href="contact.html" class="text-uppercase font-weight-600 d-block">
                                             Contact us
                                         </a>
                                     </li>
@@ -138,51 +140,47 @@
                             <button class="btn st-btn text-capitalize st-btn-secondary" data-toggle="modal"
                                 data-target="#getAQuoteModal">get a quote</button>
                         </div>
-
-                        <div class="modal fade form-modal custom-modal" id="getAQuoteModal" tabindex="-1" role="dialog"
-                            aria-labelledby="getAQuoteModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <i class="fa fa-times-circle"></i>
-                                    </button>
-                                    <div class="modal-body">
-                                        <div class="home-contact">
-                                            <p class="st-head">Get a quote</p>
-                                            <div class="HC_form">
-                                                <form action="#" id="st-get-a-auote-form">
-                                                    <div class="form-group st-form">
-                                                        <input type="text" class="form-control rounded-0 lightgray"
-                                                            placeholder="Name">
-                                                    </div>
-                                                    <div class="form-group st-form">
-                                                        <input type="email" class="form-control rounded-0 lightgray"
-                                                            placeholder="Email">
-                                                    </div>
-                                                    <div class="form-group st-form">
-                                                        <input type="text" class="form-control rounded-0 lightgray"
-                                                            placeholder="Phone">
-                                                    </div>
-                                                    <div class="form-group st-form">
-                                                        <textarea rows="5" class="form-control rounded-0 lightgray"
-                                                            placeholder="Message"></textarea>
-                                                    </div>
-                                                    <div class="submit-btn">
-                                                        <button
-                                                            class="btn btn-block st-btn rounded-0 text-uppercase">submit</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="modal fade form-modal custom-modal" id="getAQuoteModal" tabindex="-1" role="dialog"
+        aria-labelledby="getAQuoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="home-contact">
+                        <p class="st-head">Get a quote</p>
+                        <div class="HC_form">
+                            <form action="#" id="st-get-a-auote-form">
+                                <div class="form-group st-form">
+                                    <input type="text" class="form-control rounded-0 lightgray" placeholder="Name">
+                                </div>
+                                <div class="form-group st-form">
+                                    <input type="email" class="form-control rounded-0 lightgray" placeholder="Email">
+                                </div>
+                                <div class="form-group st-form">
+                                    <input type="text" class="form-control rounded-0 lightgray" placeholder="Phone">
+                                </div>
+                                <div class="form-group st-form">
+                                    <textarea rows="5" class="form-control rounded-0 lightgray"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button class="btn btn-block st-btn rounded-0 text-uppercase">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SITE WRAPPER -->
     <div id="wrapper" class="header-like-margin-top">
@@ -979,7 +977,7 @@
                                     <!-- <li><a href="#">Sample Assignment</a></li> -->
                                     <li><a href="#">About us</a></li>
                                     <li><a href="#">Review</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
