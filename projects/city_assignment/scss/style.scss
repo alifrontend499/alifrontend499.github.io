@@ -62,8 +62,19 @@ body {
 
     .hm-rt {
         .frac {
+            width: 100%;
+            text-align: center;
+            @include min-width($md-main) {
+                width: auto;
+                text-align: left;
+            }
             &:not(:last-child) {
-                margin-right: 10px;
+                margin-bottom: 5px;
+
+                @include min-width($md-main) {
+                    margin-bottom: 0;
+                    margin-right: 10px;
+                }
 
                 @include min-width($lg-main) {
                     margin-right: 60px;
@@ -329,9 +340,11 @@ body {
 
         .st-btn {
             margin-top: 20px;
+
             @include max-width($md-less-one) {
                 margin-bottom: 15px;
             }
+
             @include min-width($md-main) {
                 margin-top: 30px;
             }
@@ -408,7 +421,7 @@ body {
 
     .item {
         margin-bottom: 20px;
-        
+
         @include min-width($md-main) {
             margin-bottom: 30px;
         }

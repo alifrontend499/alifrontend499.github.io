@@ -227,7 +227,10 @@ body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 .header-main { padding: 20px 0; }
 @media screen and (min-width: 768px) { .header-main .st-logo { width: 210px; } }
 @media screen and (min-width: 992px) { .header-main .st-logo { width: 280px; } }
-.header-main .hm-rt .frac:not(:last-child) { margin-right: 10px; }
+.header-main .hm-rt .frac { width: 100%; text-align: center; }
+@media screen and (min-width: 768px) { .header-main .hm-rt .frac { width: auto; text-align: left; } }
+.header-main .hm-rt .frac:not(:last-child) { margin-bottom: 5px; }
+@media screen and (min-width: 768px) { .header-main .hm-rt .frac:not(:last-child) { margin-bottom: 0; margin-right: 10px; } }
 @media screen and (min-width: 992px) { .header-main .hm-rt .frac:not(:last-child) { margin-right: 60px; } }
 .header-main .hm-rt .frac .head { color: #111; font-family: 'carmen-sans-bold', sans-serif; margin-bottom: 5px; }
 .header-main .hm-rt .frac .head i { font-size: 20px; position: relative; top: 3px; margin-right: 5px; }
