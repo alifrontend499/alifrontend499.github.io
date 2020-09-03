@@ -219,7 +219,9 @@ ul.st-left-multilevel-menu ul > li > a:active { background-color: #0f3e7d; }
 body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 @media screen and (min-width: 768px) { body { font-size: 16px; } }
 
-#header-top { background-color: #2a2a2a; color: #fff; padding: 5px 0; }
+#header { background: #fff; top: 0; left: 0; width: 100%; position: fixed; z-index: 99; }
+
+#header-top { background-color: #2a2a2a; color: #fff; padding: 5px 0; transition: 0.3s; }
 @media screen and (min-width: 768px) { #header-top { height: 40px; } }
 
 .header-top p { letter-spacing: 0.2px; }
@@ -227,12 +229,13 @@ body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 .header-main { padding: 20px 0; }
 @media screen and (min-width: 768px) { .header-main .st-logo { width: 210px; } }
 @media screen and (min-width: 992px) { .header-main .st-logo { width: 280px; } }
+.header-main .hm-lt, .header-main .hm-rt { transition: 0.3s; }
 .header-main .hm-rt .frac { width: 100%; text-align: center; }
 @media screen and (min-width: 768px) { .header-main .hm-rt .frac { width: auto; text-align: left; } }
 .header-main .hm-rt .frac:not(:last-child) { margin-bottom: 5px; }
 @media screen and (min-width: 768px) { .header-main .hm-rt .frac:not(:last-child) { margin-bottom: 0; margin-right: 10px; } }
 @media screen and (min-width: 992px) { .header-main .hm-rt .frac:not(:last-child) { margin-right: 60px; } }
-.header-main .hm-rt .frac .head { color: #111; font-family: 'carmen-sans-bold', sans-serif; margin-bottom: 5px; }
+.header-main .hm-rt .frac .head { color: #111; font-family: 'carmen-sans-bold', sans-serif; margin-bottom: 5px; transition: 0.3s; }
 .header-main .hm-rt .frac .head i { font-size: 20px; position: relative; top: 3px; margin-right: 5px; }
 .header-main .hm-rt .frac .content { color: #d20423; font-size: 18px; --animate-duration: 4s; animation-timing-function: linear; }
 @media screen and (min-width: 768px) { .header-main .hm-rt .frac .content { padding-left: 30px; } }
@@ -240,6 +243,21 @@ body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 #header-menu { background-color: #124b98; }
 
 @media screen and (min-width: 768px) { .header-menu .get-a-quote-btn .st-btn { width: 160px; } }
+
+#header.active #header-top { margin-top: -46px; }
+@media screen and (min-width: 768px) { #header.active #header-top { margin-top: -40px; }
+  #header.active .header-main { padding: 10px 0; }
+  #header.active .header-main .hm-rt { padding-top: 0 !important; }
+  #header.active .header-main .hm-rt .frac .head { font-size: 14px; }
+  #header.active .header-main .hm-rt .frac .content { font-size: 17px; } }
+@media screen and (min-width: 992px) { #header.active .header-main { padding: 10px 0; }
+  #header.active .header-main .st-logo { width: 220px; transition: 0.3s; }
+  #header.active .header-main .hm-rt { padding-top: 0 !important; }
+  #header.active .header-main .hm-rt .frac .head { font-size: 14px; }
+  #header.active .header-main .hm-rt .frac .content { font-size: 17px; } }
+@media screen and (min-width: 1200px) { #header.active .header-like-margin-top { margin-top: 213px; }
+  #header.active .header-like-padding-top { padding-top: 213px; }
+  #header.active .st-head-menu > li > a { font-size: 14px; padding-top: 12px; padding-bottom: 12px; } }
 
 .home_slider { background-color: #c7e2f3; }
 .home_slider .item { padding: 15px 0; }

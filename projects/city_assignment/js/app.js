@@ -94,5 +94,34 @@ $(function () {
     //     })
     // })();
 
+    // HEADER FIX
+    (function () {
+        $(window).on("onreadystatechange load scroll", function () {
+            var app_headHeight = $('header').innerHeight();
+            (function () {
+                // HEADER FIXED
+                if ($(this).scrollTop() > app_headHeight) {
+                    $('header').addClass('active');
+
+                    $('.header-like-margin-top').css({
+                        marginTop: app_headHeight
+                    });
+                    $('.header-like-padding-top').css({
+                        paddingTop: app_headHeight
+                    });
+                } else {
+                    $('header').removeClass('active');
+
+                    $('.header-like-margin-top').css({
+                        marginTop: app_headHeight
+                    });
+                    $('.header-like-padding-top').css({
+                        paddingTop: app_headHeight
+                    });
+                }
+            })();
+        });
+    })();
+
 
 });

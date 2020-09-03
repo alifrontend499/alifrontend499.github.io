@@ -89,7 +89,7 @@
     }
 
     .header-main-col>.hm-lt {
-        width: 230px;
+        width: 260px;
         margin: 0 auto 13px;
     }
 
@@ -104,6 +104,34 @@
 
     .header-main .hm-rt .frac .content {
         font-size: 17px;
+    }
+
+    #header-top {
+        min-height: 46px;
+
+        display: -ms-flexbox !important;
+        display: flex !important;
+
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .get-a-quote-btn .st-btn {
+        font-size: 14px;
+        padding: 6px 14px 8px;
+    }
+
+    #header.active .header-main-col>.hm-lt {
+        width: 220px;
+        margin: 5px auto 5px;
+    }
+
+    #header.active .header-main-col>.hm-rt {
+        /* height: 0;
+        overflow: hidden; */
     }
 }
 

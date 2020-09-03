@@ -25,13 +25,21 @@ body {
 // HOMEPAGE CSS
 
 // header
-#header {}
+#header {
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
 
 // HEADER TOP SEC
 #header-top {
     background-color: $st-less-dark;
     color: #fff;
     padding: 5px 0;
+    @include transition;
 
     @include min-width($md-main) {
         height: 40px;
@@ -60,14 +68,22 @@ body {
         }
     }
 
+    .hm-lt,
     .hm-rt {
+        @include transition;
+    }
+
+    .hm-rt {
+
         .frac {
             width: 100%;
             text-align: center;
+
             @include min-width($md-main) {
                 width: auto;
                 text-align: left;
             }
+
             &:not(:last-child) {
                 margin-bottom: 5px;
 
@@ -85,6 +101,7 @@ body {
                 color: #111;
                 font-family: 'carmen-sans-bold', sans-serif;
                 margin-bottom: 5px;
+                @include transition;
 
                 i {
                     font-size: 20px;
@@ -122,6 +139,78 @@ body {
             .st-btn {
                 width: 160px;
             }
+        }
+    }
+}
+
+// WHEN HEADER FIXED
+#header.active {
+    #header-top {
+        margin-top: -46px;
+    }
+
+    @include min-width($md-main) {
+        #header-top {
+            margin-top: -40px;
+        }
+
+        .header-main {
+            padding: 10px 0;
+
+            .hm-rt {
+                padding-top: 0 !important;
+
+                .frac {
+                    .head {
+                        font-size: 14px;
+                    }
+
+                    .content {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include min-width($lg-main) {
+        .header-main {
+            padding: 10px 0;
+
+            .st-logo {
+                width: 220px;
+                @include transition;
+            }
+
+            .hm-rt {
+                padding-top: 0 !important;
+
+                .frac {
+                    .head {
+                        font-size: 14px;
+                    }
+
+                    .content {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include min-width($xl-main) {
+        .header-like-margin-top {
+            margin-top: 213px;
+        }
+
+        .header-like-padding-top {
+            padding-top: 213px;
+        }
+
+        .st-head-menu>li>a {
+            font-size: 14px;
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
     }
 }
