@@ -844,25 +844,240 @@ footer {
 .contact-main {
     .contact-main-col {
 
+        .st-head {
+            margin-bottom: 15px;
+
+            @include min-width($md-main) {
+                margin-bottom: 25px;
+            }
+
+            @include min-width($lg-main) {
+                margin-bottom: 30px;
+                font-size: 35px;
+                color: #222;
+            }
+        }
+
         >.lt {
-            width: 400px;
             padding-right: 15px;
+            width: 100%;
+
+            @include min-width($md-main) {
+                width: 300px;
+            }
+
+            @include min-width($lg-main) {
+                width: 360px;
+            }
+
+            @include min-width($xl-main) {
+                width: 400px;
+            }
         }
     }
 
     .contact-details {
         .frac {
-            margin-bottom: 35px;
+            margin-bottom: 20px;
+
+            @include min-width($md-main) {
+                margin-bottom: 35px;
+            }
         }
 
         .icon-sec {
-            width: 27px;
-            padding-top: 5px;
+            width: 30px;
+            padding-top: 1px;
+
+            i {
+                font-size: 19px;
+            }
         }
 
         .text-sec {
             .head {
                 color: $primary-color;
+                font-size: 17px;
+                margin-bottom: 6px;
+            }
+
+            .desc {
+                // font-size: 17px;
+                color: #444;
+            }
+        }
+    }
+
+    .contact-form {
+        .st-form {
+            @include min_width($lg-main) {
+
+                &.lt,
+                &.rt {
+                    margin-bottom: calc(15px * 2);
+                }
+
+                &.lt {
+                    padding-right: 15px;
+                }
+
+                &.rt {
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        .st-btn {
+            background-color: $sucess-color;
+
+            &:hover {
+                background-color: darken($color: $sucess-color, $amount: 5);
+                color: #fff;
+            }
+
+            &:active {
+                background-color: darken($color: $sucess-color, $amount: 10);
+            }
+
+            @include min-width($lg-main) {
+                width: 150px;
+            }
+        }
+
+        .sub-btn {
+            @include min-width($md-main) {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+// REVIEWS-MAIN
+.reviews-main {
+    .item {
+        .item-inner {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            @include transition;
+
+            @include min-width($md-main) {
+                margin-bottom: 30px;
+                padding: 30px 25px;
+            }
+
+            &:hover {
+                border-color: lighten($color: $primary-color, $amount: .4);
+                @include box-shadow(0px, 0px, 20px, 0, transparentize($color: $primary-color, $amount: .4));
+            }
+
+
+        }
+
+        .top-sec {
+            .img {
+                height: 50px;
+                width: 50px;
+
+                img {
+                    max-height: 100%;
+                }
+            }
+
+            .text {
+                .user {
+                    color: #000;
+                    font-size: 17px;
+                    margin-bottom: 7px;
+                }
+
+                .date {
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+        }
+
+        .bottom-sec {
+            .user-review {
+                color: #333;
+            }
+        }
+    }
+}
+
+// ABOUT US BLOCK ONE
+#about-us-block-one {
+    background-color: #e3e3e3;
+}
+
+.about-us-block-one {
+    .item {
+        p {}
+
+        .count {
+            font-family: 'styling', sans-serif;
+            font-size: 95px;
+            line-height: 75px;
+            color: #fff;
+            margin-bottom: 13px;
+            margin-left: -2px;
+        }
+
+        .head {
+            font-family: 'styling', sans-serif;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-family: lato;
+            line-height: 23px;
+            font-weight: 600;
+            color: #4d4d4d;
+            letter-spacing: .5px;
+            padding-right: 60px;
+        }
+    }
+}
+
+// ABOUT US BLOCK TWO
+#about-us-block-two {}
+
+.about-us-block-two {
+    .frac {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @include min-width($lg-main) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .st-head {
+        font-size: 35px;
+    }
+
+    .st-desc {
+        &:not(:last-child):not(li) {
+            margin-bottom: 15px;
+
+            @include min-width($lg-main) {
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+
+
+    ul {
+        padding-left: 25px;
+
+        li.st-desc {
+            &:not(:last-child) {
+                margin-bottom: 10px;
             }
         }
     }

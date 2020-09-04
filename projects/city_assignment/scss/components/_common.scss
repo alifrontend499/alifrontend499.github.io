@@ -185,7 +185,7 @@
     select,
     textarea {
         border: none;
-        font-size: 14px;
+        font-size: 15px;
         color: #616161;
         border-radius: 0;
         background-color: #fff;
@@ -398,7 +398,7 @@
     }
 }
 
-$DEFScreensMargin: 15px;
+$DEFScreensMargin: 25px;
 $DEFlgScreensMargin: 70px;
 $DEFmdScreensMargin: 40px;
 
@@ -944,11 +944,11 @@ ul.st-left-multilevel-menu {
 }
 
 .st-desc {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 23px;
 
     @include min-width($lg-main) {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 24px;
     }
 }
