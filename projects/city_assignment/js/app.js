@@ -96,28 +96,30 @@ $(function () {
 
     // HEADER FIX
     (function () {
-        $(window).on("onreadystatechange load scroll", function () {
-            var app_headHeight = $('header').innerHeight();
+        $(window).on("onreadystatechange contentLoaded load scroll", function () {
+            // var app_headHeight = $('header').innerHeight();
+            // var app_headHeight = $('.header-main').innerHeight();
+            var app_headHeight;
+            if ($(window).width() < 768) {
+                app_headHeight = 190
+            } else {
+                app_headHeight = 100
+            }
             (function () {
+                // PADDING AND MARGIN CLASSES
+                // $('.header-like-margin-top').css({
+                //     marginTop: app_headHeight
+                // });
+                // $('.header-like-padding-top').css({
+                //     paddingTop: app_headHeight
+                // });
+
                 // HEADER FIXED
                 if ($(this).scrollTop() > app_headHeight) {
                     $('header').addClass('active');
 
-                    $('.header-like-margin-top').css({
-                        marginTop: app_headHeight
-                    });
-                    $('.header-like-padding-top').css({
-                        paddingTop: app_headHeight
-                    });
                 } else {
                     $('header').removeClass('active');
-
-                    $('.header-like-margin-top').css({
-                        marginTop: app_headHeight
-                    });
-                    $('.header-like-padding-top').css({
-                        paddingTop: app_headHeight
-                    });
                 }
             })();
         });

@@ -364,6 +364,8 @@
         }
 
         @include min_width($lg-main) {
+
+            &:hover,
             &.active {
                 >a {
                     border-bottom-color: $secondary-color;
@@ -393,6 +395,44 @@
                 padding: 10px 20px;
                 color: #fff !important;
                 display: block;
+            }
+        }
+
+        >ul {
+            background: #fff;
+            width: 170px;
+            left: 0;
+            top: -10%;
+            @include transition;
+            visibility: hidden;
+            opacity: 0;
+
+            >li {
+                >a {
+                    padding: 13px 15px;
+                    border-bottom: 1px solid #ddd;
+                    color: #333;
+                    @include transition;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                        color: #fff;
+                    }
+                }
+
+                &:last-child {
+                    >a {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            >ul {
+                opacity: 1;
+                visibility: visible;
+                top: 100%;
             }
         }
     }
@@ -863,12 +903,12 @@ ul.st-left-multilevel-menu {
         background-color: $secondary-color;
 
         &:hover {
-            background-color: darken($color: $secondary-color, $amount: 5);
+            background-color: lighten($color: $secondary-color, $amount: 10);
             color: #fff;
         }
 
         &:active {
-            background-color: darken($color: $secondary-color, $amount: 10);
+            background-color: darken($color: $secondary-color, $amount: 3);
         }
     }
 
@@ -914,7 +954,7 @@ ul.st-left-multilevel-menu {
     letter-spacing: .5px;
 
     @include min-width($md-main) {
-        font-size: 28px;
+        font-size: 30px;
         margin-bottom: $defaultGap;
     }
 

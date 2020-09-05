@@ -124,14 +124,23 @@
         padding: 6px 14px 8px;
     }
 
-    #header.active .header-main-col>.hm-lt {
+    /* #header.active .header-main-col>.hm-lt {
         width: 220px;
         margin: 5px auto 5px;
     }
 
     #header.active .header-main-col>.hm-rt {
-        /* height: 0;
-        overflow: hidden; */
+    } */
+    #header.active #header-main {
+        margin-top: -162px;
+    }
+
+    .header-like-margin-top {
+        margin-top: 255px;
+    }
+
+    .header-like-padding-top {
+        padding-top: 255px;
     }
 }
 
