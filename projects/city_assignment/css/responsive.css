@@ -107,7 +107,7 @@
     }
 
     #header-top {
-        min-height: 46px;
+        min-height: 40px;
 
         display: -ms-flexbox !important;
         display: flex !important;
@@ -118,10 +118,17 @@
         -ms-flex-align: center !important;
         align-items: center !important;
     }
+    .header-top p {
+        font-size: 14px;
+    }
 
     .get-a-quote-btn .st-btn {
         font-size: 14px;
         padding: 6px 14px 8px;
+    }
+    .home_slider .item .item-lt >.inner,
+    .home_slider .item .item-rt .st-head {
+        text-align: center;
     }
 
     /* #header.active .header-main-col>.hm-lt {
@@ -132,15 +139,16 @@
     #header.active .header-main-col>.hm-rt {
     } */
     #header.active #header-main {
-        margin-top: -162px;
+        /* margin-top: -162px; */
+        margin-top: -164px;
     }
 
     .header-like-margin-top {
-        margin-top: 255px;
+        margin-top: 249px;
     }
 
     .header-like-padding-top {
-        padding-top: 255px;
+        padding-top: 249px;
     }
 }
 

@@ -258,7 +258,7 @@ body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 
 @media screen and (min-width: 768px) { .header-menu .get-a-quote-btn .st-btn { width: 160px; } }
 
-#header.active #header-top { margin-top: -46px; }
+#header.active #header-top { margin-top: -40px; }
 @media screen and (min-width: 768px) { #header.active #header-top { margin-top: -40px; }
   #header.active #header-main { margin-top: -98px; } }
 @media screen and (min-width: 992px) { #header.active #header-main { margin-top: -117px; } }

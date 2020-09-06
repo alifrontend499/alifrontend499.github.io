@@ -152,7 +152,7 @@ body {
 // WHEN HEADER FIXED
 #header.active {
     #header-top {
-        margin-top: -46px;
+        margin-top: -40px;
     }
 
     @include min-width($md-main) {
