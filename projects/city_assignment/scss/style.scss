@@ -332,7 +332,7 @@ body {
     .home-block-two-col {
         background: $primary-color url('../images/home-second-block/background-img.png') no-repeat center / cover;
         border-radius: 20px;
-        padding: 20px 15px 0px;
+        padding: 20px 5px 20px;
 
         @include min-width($sm-main) {
             padding: 20px 10px;
@@ -351,9 +351,9 @@ body {
         width: 100%;
 
         @include max-width($sm-less-one) {
-            margin-bottom: 20px;
-            // &:not(:last-child) {
-            // }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
         }
 
         padding-left: $defaultGap;

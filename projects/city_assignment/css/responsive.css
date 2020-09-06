@@ -144,6 +144,9 @@
         /* margin-top: -162px; */
         margin-top: -131px;
     }
+    #header.active #header-menu {
+        margin-top: -3px;
+    }
 
     .header-like-margin-top {
         margin-top: 218px;
