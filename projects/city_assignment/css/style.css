@@ -367,7 +367,8 @@ footer .st-text.mb:not(:last-child), footer .ft-link.mb:not(:last-child) { margi
 
 #ft-top { background: #161616 url("../images/map.png") no-repeat center/auto; }
 
-.ft-top .ft-head { font-family: styling, sans-serif; font-size: 24px; margin-bottom: 20px; color: #fff; }
+.ft-top .ft-head { font-family: styling, sans-serif; font-size: 24px; margin-bottom: 15px; color: #fff; }
+@media screen and (min-width: 768px) { .ft-top .ft-head { margin-bottom: 20px; } }
 .ft-top .footer-ul > li:not(:last-child) { margin-bottom: 10px; }
 .ft-top .footer-ul > li > a { color: #a7a7a7; font-size: 15px; transition: 0.3s; }
 .ft-top .footer-ul > li > a:hover { margin-left: 3px; }
@@ -377,8 +378,13 @@ footer .st-text.mb:not(:last-child), footer .ft-link.mb:not(:last-child) { margi
 .ft-top .social-links > li:not(:last-child) { padding-right: 20px; }
 .ft-top .social-links > li > a { background: #bbbbbb; color: #161616; font-size: 15px; height: 30px; width: 30px; border-radius: 100%; transition: 0.1s; }
 .ft-top .social-links > li > a:hover { transform: scale(1.1); }
+.ft-top .newsletter > .form { position: relative; }
 .ft-top .newsletter > .form input { height: 50px; border-radius: 5px; border: 1px solid #bbbbbb; font-size: 15px; color: #000; letter-spacing: 0.7px; }
 .ft-top .newsletter > .form .st-btn { font-family: styling, sans-serif; padding: 11px 30px 10px; font-size: 18px; letter-spacing: 1px; }
+@media screen and (max-width: 767px) { .ft-top .newsletter > .form > input { padding-right: 50px; }
+  .ft-top .newsletter > .form button.mobile { border: none !important; outline: none !important; box-shadow: none !important; position: absolute; top: 5px; right: 5px; height: calc(100% - 10px); width: 40px; background: #d20423; font-size: 20px; color: #fff; padding: 0; border-radius: 5px; }
+  .ft-top .newsletter > .form button.mobile:hover { background-color: #fa0f32; color: #fff; }
+  .ft-top .newsletter > .form button.mobile:active { background-color: #c30420; } }
 
 #ft-bottom { background-color: #000; }
 

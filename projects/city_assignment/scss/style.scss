@@ -374,10 +374,11 @@ body {
 
         .img-sec {
             height: 65px;
-            
+
             @include min-width($sm-main) {
                 margin-bottom: $defaultGap;
             }
+
             @include min-width($lg-main) {
                 height: 75px;
             }
@@ -768,8 +769,11 @@ footer {
     .ft-head {
         font-family: styling, sans-serif;
         font-size: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         color: #fff;
+        @include min-width($md-main) {
+            margin-bottom: 20px;
+        }
     }
 
     .footer-ul {
@@ -838,6 +842,7 @@ footer {
     .newsletter {
 
         >.form {
+            position: relative;
 
             input,
             .btn {}
@@ -857,6 +862,37 @@ footer {
                 padding: 11px 30px 10px;
                 font-size: 18px;
                 letter-spacing: 1px;
+            }
+
+            @include max-width($md-less-one) {
+                >input {
+                    padding-right: 50px;
+                }
+
+                button.mobile {
+                    border: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    height: calc(100% - 10px);
+                    width: 40px;
+                    background: $secondary-color;
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 0;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: lighten($color: $secondary-color, $amount: 10);
+                        color: #fff;
+                    }
+
+                    &:active {
+                        background-color: darken($color: $secondary-color, $amount: 3);
+                    }
+                }
             }
         }
     }

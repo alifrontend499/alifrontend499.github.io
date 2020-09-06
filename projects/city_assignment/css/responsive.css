@@ -67,7 +67,7 @@
     .ft-top .one,
     .ft-top .two,
     .ft-top .three {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 }
 
@@ -154,6 +154,9 @@
 
     .header-like-padding-top {
         padding-top: 218px;
+    }
+    #ST_banner .caption .st-head{
+        font-size: 25px;
     }
 }
 
