@@ -402,7 +402,7 @@
             background: #fff;
             width: 100%;
             left: 0;
-            top: -10%;
+            top: 85%;
             @include transition;
 
             @include max-width($lg-less-one) {
@@ -988,14 +988,14 @@ ul.st-left-multilevel-menu {
 }
 
 .st-head-sm {
-    font-size: 20px;
+    font-size: 22px;
     font-family: styling, sans-serif;
     color: #000;
     margin-bottom: $defaultGap;
     letter-spacing: .5px;
 
     @include min-width($md-main) {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
@@ -1030,7 +1030,7 @@ ul.st-left-multilevel-menu {
         }
 
         @include min-width($lg-main) {
-            font-size: 17px;
+            font-size: 18px;
         }
     }
 }
