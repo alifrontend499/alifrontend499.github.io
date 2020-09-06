@@ -101,7 +101,7 @@ $(function () {
             // var app_headHeight = $('.header-main').innerHeight();
             var app_headHeight;
             if ($(window).width() < 768) {
-                app_headHeight = 190
+                app_headHeight = 150
             } else {
                 app_headHeight = 100
             }

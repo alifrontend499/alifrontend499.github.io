@@ -16,7 +16,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    
+
     @include min-width($md-main) {
         font-size: 16px;
     }
@@ -332,7 +332,11 @@ body {
     .home-block-two-col {
         background: $primary-color url('../images/home-second-block/background-img.png') no-repeat center / cover;
         border-radius: 20px;
-        padding: 20px 15px 5px;
+        padding: 20px 15px 0px;
+
+        @include min-width($sm-main) {
+            padding: 20px 10px;
+        }
 
         @include min-width($md-main) {
             padding: 30px 15px;
@@ -344,14 +348,21 @@ body {
     }
 
     .item {
+        width: 100%;
 
-        // width: 100%;
-        @include max-width($md-less-one) {
-            margin-bottom: $defaultGap;
+        @include max-width($sm-less-one) {
+            margin-bottom: 20px;
+            // &:not(:last-child) {
+            // }
         }
 
         padding-left: $defaultGap;
         padding-right: $defaultGap;
+
+        @include min-width($sm-main) {
+            width: 33.3%;
+            padding: 0 4px;
+        }
 
         @include min-width($md-main) {
             width: 220px;
@@ -363,8 +374,10 @@ body {
 
         .img-sec {
             height: 65px;
-            margin-bottom: $defaultGap;
-
+            
+            @include min-width($sm-main) {
+                margin-bottom: $defaultGap;
+            }
             @include min-width($lg-main) {
                 height: 75px;
             }

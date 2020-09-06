@@ -283,14 +283,17 @@ body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 
 @-moz-document url-prefix() { @media screen and (min-width: 992px) { .home_slider .item .item-lt .slider-girl-img { margin-bottom: -126px; } }
   @media screen and (min-width: 1200px) { .home_slider .item .item-lt .slider-girl-img { margin-bottom: -65px; } } }
-.home-block-two .home-block-two-col { background: #124b98 url("../images/home-second-block/background-img.png") no-repeat center/cover; border-radius: 20px; padding: 20px 15px 5px; }
+.home-block-two .home-block-two-col { background: #124b98 url("../images/home-second-block/background-img.png") no-repeat center/cover; border-radius: 20px; padding: 20px 15px 0px; }
+@media screen and (min-width: 576px) { .home-block-two .home-block-two-col { padding: 20px 10px; } }
 @media screen and (min-width: 768px) { .home-block-two .home-block-two-col { padding: 30px 15px; } }
 @media screen and (min-width: 992px) { .home-block-two .home-block-two-col { padding: 50px 30px; } }
-.home-block-two .item { padding-left: 15px; padding-right: 15px; }
-@media screen and (max-width: 767px) { .home-block-two .item { margin-bottom: 15px; } }
+.home-block-two .item { width: 100%; padding-left: 15px; padding-right: 15px; }
+@media screen and (max-width: 575px) { .home-block-two .item { margin-bottom: 20px; } }
+@media screen and (min-width: 576px) { .home-block-two .item { width: 33.3%; padding: 0 4px; } }
 @media screen and (min-width: 768px) { .home-block-two .item { width: 220px; } }
 @media screen and (min-width: 992px) { .home-block-two .item { width: 280px; } }
-.home-block-two .item .img-sec { height: 65px; margin-bottom: 15px; }
+.home-block-two .item .img-sec { height: 65px; }
+@media screen and (min-width: 576px) { .home-block-two .item .img-sec { margin-bottom: 15px; } }
 @media screen and (min-width: 992px) { .home-block-two .item .img-sec { height: 75px; } }
 .home-block-two .item .img-sec img { max-height: 100%; }
 .home-block-two .item .text-sec .head { font-size: 30px; color: #fff; margin-bottom: 5px; letter-spacing: .5px; }
