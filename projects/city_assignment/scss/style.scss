@@ -14,12 +14,12 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    // font-size: 15px;
     font-weight: 400;
 
-    @include min-width($md-main) {
-        font-size: 16px;
-    }
+    // @include min-width($md-main) {
+    // }
 }
 
 // HOMEPAGE CSS
@@ -118,8 +118,10 @@ body {
             .content {
                 color: $secondary-color;
                 font-size: 18px;
-                --animate-duration: 4s;
-                animation-timing-function: linear;
+                // --animate-duration: 4s;
+                // animation-timing-function: linear;
+                --animate-duration: 10s;
+                animation-timing-function: ease;
 
                 @include min-width($md-main) {
                     padding-left: 30px;
@@ -511,6 +513,7 @@ body {
                 @include min-width($md-main) {
                     width: calc(100% - 40px);
                 }
+
                 @include min-width($xl-main) {
                     width: calc(100% - 90px);
                 }
@@ -524,6 +527,7 @@ body {
                     height: 40px;
                     width: 40px;
                 }
+
                 @include min-width($xl-main) {
                     height: 90px;
                     width: 90px;
@@ -1119,4 +1123,37 @@ footer {
             }
         }
     }
+}
+
+.whatsapp_fixed {
+    position: fixed;
+    bottom: 5%;
+    left: 20px;
+    z-index: 99;
+
+    @include min-width($md-main) {
+        bottom: 10%;
+        left: 50px;
+    }
+
+    >a {
+        height: 65px;
+        width: 65px;
+
+        @include min-width($md-main) {
+            height: 80px;
+            width: 80px;
+        }
+
+        img {
+            max-height: 100%;
+        }
+
+        &:hover {
+            @include min-width($md-main) {
+                animation-play-state: paused;
+            }
+        }
+    }
+
 }

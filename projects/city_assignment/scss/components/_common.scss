@@ -400,12 +400,21 @@
 
         >ul {
             background: #fff;
-            width: 170px;
+            width: 100%;
             left: 0;
             top: -10%;
             @include transition;
-            visibility: hidden;
-            opacity: 0;
+
+            @include max-width($lg-less-one) {
+                display: none;
+            }
+
+            @include min-width($lg-main) {
+                width: 170px;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+            }
 
             >li {
                 >a {
@@ -430,9 +439,16 @@
 
         &:hover {
             >ul {
-                opacity: 1;
-                visibility: visible;
-                top: 100%;
+
+                @include max-width($lg-less-one) {
+                    display: block;
+                }
+
+                @include min-width($lg-main) {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
             }
         }
     }
