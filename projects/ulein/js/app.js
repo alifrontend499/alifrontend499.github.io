@@ -8,6 +8,19 @@ $(function () {
         mouseDrag: false
     });
 
+    // OUR FEATURES SLIDER
+    $('#our-features-slider').owlCarousel({
+        items: 1,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        nav: true,
+        navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
+        loop: false,
+        mouseDrag: false,
+        animateOut: 'fadeOut'
+    });
+
     // PARTNERS SLIDER
     $('#testimonials-slider').owlCarousel({
         items: 3,

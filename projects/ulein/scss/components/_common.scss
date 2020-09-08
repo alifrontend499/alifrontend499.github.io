@@ -935,18 +935,6 @@ ul.st-left-multilevel-menu {
         box-shadow: none !important;
     }
 
-    // &.st-btn-secondary {
-    //     background-color: $secondary-color;
-
-    //     &:hover {
-    //         background-color: lighten($color: $secondary-color, $amount: 10);
-    //         color: #fff;
-    //     }
-
-    //     &:active {
-    //         background-color: darken($color: $secondary-color, $amount: 3);
-    //     }
-    // }
     .icon {
         font-size: 19px;
         position: relative;
@@ -963,13 +951,21 @@ ul.st-left-multilevel-menu {
     }
 
     &.st-btn-primary {
-        @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange)
+        @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+
+        .icon {
+            color: #fff;
+        }
     }
 
     &.st-btn-transparent {
-        color: #000;
+        color: $primary-color;
         background-color: transparent;
         border-color: $primary-color;
+
+        .icon {
+            color: $primary-color;
+        }
 
         &:hover {
             @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
@@ -1004,15 +1000,42 @@ ul.st-left-multilevel-menu {
         color: $primary-color;
         letter-spacing: .5px;
 
+        margin-bottom: 15px;
+
         @include min-width($md-main) {
             font-size: 40px;
+            margin-bottom: 35px;
         }
     }
 
-    margin-bottom: 15px;
+    .st-head-two {
+        font-size: 20px;
+        font-family: 'carmen-sans-bold', sans-serif;
+        color: #333;
+        letter-spacing: .5px;
+        margin-bottom: 5px;
 
-    @include min-width($md-main) {
-        margin-bottom: 35px;
+        @include min-width($md-main) {
+            font-size: 40px;
+        }
+
+        margin-bottom: 15px;
+
+        @include min-width($md-main) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .st-head-bottom {
+        font-size: 20px;
+        font-family: 'jasmina', sans-serif;
+        color: $primary-color;
+        letter-spacing: .5px;
+        margin-bottom: 10px;
+
+        @include min-width($md-main) {
+            font-size: 30px;
+        }
     }
 
 }
@@ -1023,33 +1046,7 @@ ul.st-left-multilevel-menu {
 
     @include min-width($lg-main) {
         font-size: 17px;
-        line-height: 24px;
-    }
-}
-
-.st-main-head {
-    margin-bottom: 30px;
-
-    @include min-width($lg-main) {
-        margin-bottom: 50px;
-    }
-
-    .st-head {
-        margin-bottom: 5px;
-    }
-
-    .st-desc {
-        font-size: 16px;
-        letter-spacing: .5px;
-        color: #333;
-
-        &+.st-head {
-            margin-top: 10px;
-        }
-
-        @include min-width($lg-main) {
-            font-size: 18px;
-        }
+        line-height: 25px;
     }
 }
 
@@ -1269,4 +1266,57 @@ ul.st-left-multilevel-menu {
         }
     }
 
+}
+
+// header-search
+.header-search {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    padding: 35px 20px;
+    .close-search {
+        top: 5px;
+        right: 18px;
+        cursor: pointer;
+        color: #000;
+        font-size: 19px;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    input {
+        height: 55px;
+        font-family: 'carmen-sans-regular', sans-serif;
+        letter-spacing: .5px;
+        font-size: 20px;
+        padding: 5px 60px 5px 20px;
+        line-height: normal;
+        &:focus {
+            box-shadow: none !important;
+            border-color: #777;
+        }
+    }
+
+    .icon-inside-search {
+        font-size: 27px;
+        color: #555;
+        @include transition;
+        cursor: pointer;
+        top: 50%;
+        @include transformy(-50%);
+        right: 11px;
+        height: calc(100% - 15px);
+        width: 40px;
+        // background: $light-white;
+        &:hover {
+            // background: darken($color: $light-white, $amount: 10);
+            color: $primary-color;
+        }
+    }
 }

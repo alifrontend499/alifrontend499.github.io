@@ -154,7 +154,7 @@ body {
                 font-size: 23px;
                 color: #000;
                 @include transition;
-
+                cursor: pointer;
                 &:not(:last-child) {
                     margin-right: 15px;
                 }
@@ -358,6 +358,7 @@ body {
 
             >.nav-item {
                 margin: 0 20px;
+
                 >.nav-link {
                     border-radius: 0;
                     padding: 0;
@@ -367,6 +368,7 @@ body {
                     border-bottom: 2px solid transparent;
                     padding-bottom: 6px;
                     @include transition;
+
                     &.active,
                     &:hover {
                         color: #000;
@@ -379,7 +381,67 @@ body {
     }
 }
 
-// testimonials
+// OUR FEATURES
+#home-our-features {
+    background-color: $our-features-bg-color;
+}
+
+.home-our-features {
+    .item {
+        .st-head-two {
+            margin-bottom: 5px;
+        }
+
+        .st-desc {
+
+            @include min-width($md-main) {
+                line-height: 35px;
+                max-width: 80%;
+            }
+        }
+
+        .buy-now-btn {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .price {
+            font-family: 'carmen-sans-bold', sans-serif;
+            font-size: 35px;
+
+            span {
+                font-size: 30px;
+                font-family: 'jasmina', sans-serif;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    #our-features-slider {
+        .owl-nav {
+            margin-top: -20px;
+            z-index: 1;
+            position: relative;
+            >button {
+                background: darken($color: $our-features-bg-color, $amount: 10);
+                height: 40px;
+                width: 35px;
+                font-size: 29px;
+                @include transition;
+                outline: none !important;
+                &.owl-prev{
+                    margin-right: 10px;
+                }
+                &.owl-next{}
+                &:hover {
+                    background: darken($color: $our-features-bg-color, $amount: 20);
+                }
+            }
+        }
+    }
+}
+
+// TESTIMONIALS
 #testimonials {}
 
 .testimonials {
