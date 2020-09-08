@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ulein</title>
+    <!-- favicon -->
+    <!-- <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16"> -->
+
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/animate/animate.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+
+    <!-- FLAGS CSS -->
+    <link rel="stylesheet" href="assets/flags-css/flags.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <!-- HEADER TOP BAR -->
+        <div id="header-top">
+            <div class="container h-100">
+                <div class="header-top h-100 row align-items-center">
+                    <div class="col-12 col-md-6 lt">
+                        <p class="text-uppercase">FREE SHIPPING OVER €200 FOR SELECTED COUNTIRES +DETAILS</p>
+                    </div>
+                    <div class="col-12 col-md-6 rt d-flex justify-content-end">
+                        <div class="inner d-inline-flex align-items-center">
+                            <div class="select-country">
+                                <div class="dynamic-select position-relative">
+                                    <div class="input-main position-relative st-form">
+                                        <span class="flag flag-us position-absolute"></span>
+                                        <input type="text" class="form-control" placeholder="Pick a location"
+                                            value="English">
+                                        <span class="icon position-absolute">
+                                            <i class="sel-icon feather-chevron-down"></i>
+                                        </span>
+                                    </div>
+                                    <div class="options position-absolute">
+                                        <div class="frac">
+                                            <p class="sm-head text-capitalize">Select Language</p>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <div class="label d-flex text-capitalize" title="English">
+                                                        <span class="flag flag-us"></span>
+                                                        <span class="text">English</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label d-flex text-capitalize" title="Español">
+                                                        <span class="flag flag-es"></span>
+                                                        <span class="text">Español</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-flex align-items-center login-menu">
+                                <li>
+                                    <a href="#" class="text-uppercase text-decoration-none" title="Login">
+                                        <i class="feather-user"></i>
+                                        <span>login</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-uppercase text-decoration-none" title="Register">
+                                        <i class="feather-user-plus"></i>
+                                        <span>register</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER MAIN -->
+        <div id="header-main">
+            <div class="container">
+                <div class="header-main row">
+                    <div class="header-main-col col-12 d-flex align-items-center">
+                        <!-- LEFT SEC -->
+                        <div class="hm-lt">
+                            <a href="">
+                                <img src="images/logo.png" alt="logo" class="img-fluid max-height-resize">
+                            </a>
+                        </div>
+
+                        <!-- RIGHT SEC -->
+                        <div class="hm-rt full-width-col">
+                            <div class="inner d-flex align-items-center justify-content-end">
+                                <div class="menu">
+                                    <!-- MOBILE MENU BTN -->
+                                    <div class="mob-menu-btn d-lg-none">
+                                        <a href="#">
+                                            <i class="feather-menu icon"></i>
+                                        </a>
+                                        <div class="mob-menu-overlay"></div>
+                                    </div>
+                                    <div class="inner">
+                                        <ul
+                                            class="st-head-menu list-unstyled d-lg-flex flex-lg-wrap align-lg-items-center">
+                                            <li class="active">
+                                                <a href="index.html" class="text-capitalize d-block">
+                                                    about
+                                                </a>
+                                            </li>
+                                            <li class="position-relative">
+                                                <a href="#" class="text-capitalize d-block">
+                                                    galleries
+                                                </a>
+                                                <!-- <ul class="list-unstyled">
+                                                    <li class="">
+                                                        <a href="#"
+                                                            class="text-capitalize d-block text-decoration-none">
+                                                            Graphic Designing
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            class="text-capitalize d-block text-decoration-none">
+                                                            UX/UI Designing
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            class="text-capitalize d-block text-decoration-none">
+                                                            Web Development
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            class="text-capitalize d-block text-decoration-none">
+                                                            App Development
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#"
+                                                            class="text-capitalize d-block text-decoration-none">
+                                                            SEO
+                                                        </a>
+                                                    </li>
+                                                </ul> -->
+                                            </li>
+                                            <li>
+                                                <a href="about.html" class="text-capitalize d-block">
+                                                    everything about flights
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="student-reviews.html" class="text-capitalize d-block">
+                                                    adventures
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="text-capitalize d-block">
+                                                    Contact
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cart-menu">
+                                    <div class="inner d-flex align-items-center">
+                                        <a href="#" class="icon icon-search text-decoration-none" title="Search">
+                                            <i class="feather-search"></i>
+                                        </a>
+
+                                        <a href="#" class="icon icon-cart text-decoration-none position-relative"
+                                            title="Cart">
+                                            <i class="feather-shopping-cart"></i>
+                                            <span class="count d-inline-block position-relative">12</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SITE WRAPPER -->
+    <!-- <div id="wrapper" class="header-like-margin-top"> -->
+    <div id="wrapper">
+        <!-- HOME SLIDER -->
+        <section id="home_slider">
+            <div class="container-fluid px-0">
+                <div class="home_slider">
+                    <div class="owl-carousel" id="home-slider">
+                        <div class="item">
+                            <div class="inner position-relative">
+                                <!-- <div class="container"> -->
+                                <div class="img-sec">
+                                    <img src="images/slider-img.jpg" alt="" class="img-fluid w-100">
+                                </div>
+                                <div
+                                    class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                    <div class="caption-inner text-center">
+                                        <p class="head text-capitalize">The Best Ulein Baloon Boutique</p>
+                                        <div class="btn-sec">
+                                            <a href="#" class="btn st-btn st-btn-primary border-0 text-uppercase">shop
+                                                now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR CATEGORIES -->
+        <section id="our-categories" class="ST_def-pad-TB">
+            <div class="container">
+                <div class="our-categories row">
+                    <div class="col-12 section-heading">
+                        <img src="images/icons/header-top-icon.png" alt="our-categories-heading"
+                            class="img-fluid st-header-top-img d-block mx-auto">
+                        <p class="st-head text-capitalize text-center">our categories</p>
+                    </div>
+                    <!-- ITEM MAIN -->
+                    <div class="col-12 col-md-4 item-main row lt">
+                        <!-- item -->
+                        <div class="col-12 item h-100">
+                            <div class="inner position-relative">
+                                <img src="images/our-categories/img-1.jpg" alt="" class="img-fluid w-100">
+                                <div
+                                    class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                    <div class="caption-inner">
+                                        <a href="#" class="btn st-btn st-btn-white border-0 text-uppercase">
+                                            body & t-shirt
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ITEM MAIN -->
+                    <div class="col-12 col-md-8 item-main row rt">
+                        <div class="col-12 col-md-6 item h-50">
+                            <div class="inner position-relative">
+                                <img src="images/our-categories/img-2.jpg" alt="" class="img-fluid w-100">
+                                <div
+                                    class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                    <div class="caption-inner">
+                                        <a href="#" class="btn st-btn st-btn-white border-0 text-uppercase">
+                                            MUGS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-6 item h-50">
+                            <div class="inner position-relative">
+                                <img src="images/our-categories/img-3.jpg" alt="" class="img-fluid w-100">
+                                <div
+                                    class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                    <div class="caption-inner">
+                                        <a href="#" class="btn st-btn st-btn-white border-0 text-uppercase">
+                                            EARRINGS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-12 col-md-12 item h-50">
+                            <div class="inner position-relative">
+                                <img src="images/our-categories/img-4.jpg" alt="" class="img-fluid w-100">
+                                <div
+                                    class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-center">
+                                    <div class="caption-inner">
+                                        <a href="#" class="btn st-btn st-btn-white border-0 text-uppercase">
+                                            Practical Bag
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOP SEC -->
+        <section id="home-shop" class="ST_def-pad-B">
+            <div class="container">
+                <div class="home-shop row">
+                    <div class="col-12 section-heading">
+                        <p class="st-head text-capitalize text-center">shop</p>
+                    </div>
+                    <div class="col-12 tabs-sec">
+                        <ul class="nav nav-pills st-dynamic-tabs justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" role="tab" aria-selected="true">Top 10
+                                    Sellers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">Special
+                                    Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false">New
+                                    Arrivals</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" role="tabpanel">
+                                <div class="st-products-container">
+                                    <div class="st-products-container-inner d-flex flex-wrap">
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- tag new -->
+                                                <div class="product-tag position-absolute new">
+                                                    <p class="text-capitalize">new</p>
+                                                </div>
+
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_1.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Hand Made Dresses for Girls</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_2.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Stylish Cap Designs</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_3.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Style with cool earrings</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- tag new -->
+                                                <div class="product-tag position-absolute new">
+                                                    <p class="text-capitalize">new</p>
+                                                </div>
+
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_4.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Mug with Airballoon</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 view-more-btn-container text-center">
+                                            <a href="#"
+                                                class="buy-now-btn btn st-btn st-btn-primary st-btn-light text-capitalize">
+                                                view all
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel">
+                                <div class="st-products-container">
+                                    <div class="st-products-container-inner d-flex flex-wrap">
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- tag new -->
+                                                <div class="product-tag position-absolute new">
+                                                    <p class="text-capitalize">new</p>
+                                                </div>
+
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_1.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Hand Made Dresses for Girls</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_2.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Stylish Cap Designs</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_3.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Style with cool earrings</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel">
+                                <div class="st-products-container">
+                                    <div class="st-products-container-inner d-flex flex-wrap">
+
+                                        <!-- PRODUCT ITEM -->
+                                        <div class="col-12 col-md-3 st-product-item">
+                                            <div class="st-product-item-inner position-relative">
+                                                <!-- tag new -->
+                                                <div class="product-tag position-absolute new">
+                                                    <p class="text-capitalize">new</p>
+                                                </div>
+
+                                                <!-- IMG SEC -->
+                                                <div class="img-sec d-flex align-items-center justify-content-center">
+                                                    <img src="images/product/product_1.jpg" alt="product image"
+                                                        class="img-fluid max-height-resize st-product-img">
+                                                </div>
+
+                                                <!-- TEXT SEC -->
+                                                <div class="text-sec text-center">
+                                                    <p class="st-product-name">Hand Made Dresses for Girls</p>
+                                                    <p class="st-product-price">
+                                                        <span class="">65&euro;</span> 45&euro;
+                                                    </p>
+                                                    <a href="#"
+                                                        class="buy-now-btn btn st-btn st-btn-transparent st-btn-light text-capitalize">
+                                                        <i class="icon feather-shopping-cart"></i>
+                                                        <span>buy it now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer row">
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- SCRIPT CUSOMT -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
