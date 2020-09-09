@@ -107,37 +107,6 @@ $(function () {
     //     })
     // })();
 
-    // HEADER FIX
-    (function () {
-        $(window).on("onreadystatechange contentLoaded load scroll", function () {
-            // var app_headHeight = $('header').innerHeight();
-            // var app_headHeight = $('.header-main').innerHeight();
-            var app_headHeight;
-            if ($(window).width() < 768) {
-                app_headHeight = 150
-            } else {
-                app_headHeight = 100
-            }
-            (function () {
-                // PADDING AND MARGIN CLASSES
-                // $('.header-like-margin-top').css({
-                //     marginTop: app_headHeight
-                // });
-                // $('.header-like-padding-top').css({
-                //     paddingTop: app_headHeight
-                // });
-
-                // HEADER FIXED
-                if ($(this).scrollTop() > app_headHeight) {
-                    $('header').addClass('active');
-
-                } else {
-                    $('header').removeClass('active');
-                }
-            })();
-        });
-    })();
-
     // DYNAMIC-SELECT
     (function () {
         // on focus showing options
@@ -176,4 +145,54 @@ $(function () {
         });
     })();
 
+    (function () {
+        // header search
+        $('.cart-menu .icon-search').click(function (ev) {
+            ev.stopPropagation()
+            $(this).addClass('active').next().slideDown(200).find('.header-search-inner > input').focus()
+        })
+        // header search
+        $('.header-search .close-search').click(function () {
+            $(this).parent().slideUp(200).prev().removeClass('active')
+        })
+
+        $('.header-search').click(function (ev) {
+            ev.stopPropagation()
+        })
+        $(document).click(function () {
+            $('.header-search .close-search').parent().slideUp(200).prev().removeClass('active')
+        })
+    })();
+
 });
+
+// HEADER FIX
+(function () {
+    $(window).on("onreadystatechange contentLoaded load scroll", function () {
+        var app_headHeight = $('header').innerHeight();
+        // var app_headHeight = $('.header-main').innerHeight();
+        var app_headHeight;
+        if ($(window).width() < 768) {
+            app_headHeight = 150
+        } else {
+            app_headHeight = app_headHeight
+        }
+        (function () {
+            // PADDING AND MARGIN CLASSES
+            // $('.header-like-margin-top').css({
+            //     marginTop: app_headHeight
+            // });
+            // $('.header-like-padding-top').css({
+            //     paddingTop: app_headHeight
+            // });
+
+            // HEADER FIXED
+            if ($(this).scrollTop() > app_headHeight) {
+                $('header').addClass('active');
+
+            } else {
+                $('header').removeClass('active');
+            }
+        })();
+    });
+})();

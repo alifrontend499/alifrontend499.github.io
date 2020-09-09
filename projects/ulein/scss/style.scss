@@ -155,6 +155,7 @@ body {
                 color: #000;
                 @include transition;
                 cursor: pointer;
+
                 &:not(:last-child) {
                     margin-right: 15px;
                 }
@@ -422,6 +423,7 @@ body {
             margin-top: -20px;
             z-index: 1;
             position: relative;
+
             >button {
                 background: darken($color: $our-features-bg-color, $amount: 10);
                 height: 40px;
@@ -429,10 +431,13 @@ body {
                 font-size: 29px;
                 @include transition;
                 outline: none !important;
-                &.owl-prev{
+
+                &.owl-prev {
                     margin-right: 10px;
                 }
-                &.owl-next{}
+
+                &.owl-next {}
+
                 &:hover {
                     background: darken($color: $our-features-bg-color, $amount: 20);
                 }
@@ -440,6 +445,98 @@ body {
         }
     }
 }
+
+
+// OUR FEATURES
+#about-boutique {
+}
+
+.about-boutique {
+    background: url('../images/about-boutique/bg-dotted.png') no-repeat 0 center / 55%;
+    padding: 20px 0;
+    @include min-width($lg-main) {
+        padding: 50px 0;
+    }
+
+    .lt {
+        .round-gray-img {
+            height: 380px;
+            width: 380px;
+            background: #f5f5f5;
+            padding: 15px 10px 0;
+
+            img {
+                z-index: 1;
+            }
+        }
+
+        .gradient-round-small {
+            height: 50px;
+            width: 50px;
+            top: 7%;
+            left: 23%;
+            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+        }
+
+        .gradient-round-big {
+            height: 150px;
+            width: 150px;
+            top: 16%;
+            left: -30px;
+            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+        }
+    }
+
+    .rt {
+        @include min-width($lg-main) {
+            padding-left: 20px;
+        }
+        .st-desc {
+            @include min-width($lg-main) {
+                line-height: 35px;
+            }
+        }
+        .st-btn {
+            margin-top: 25px;
+            @include min-width($lg-main) {
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TESTIMONIALS
 #testimonials {}

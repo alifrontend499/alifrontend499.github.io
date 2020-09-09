@@ -347,6 +347,17 @@ body { font-family: 'carmen-sans-regular', sans-serif; font-size: 15px; font-wei
 .home-our-features #our-features-slider .owl-nav > button.owl-prev { margin-right: 10px; }
 .home-our-features #our-features-slider .owl-nav > button:hover { background: #a3d5d5; }
 
+.about-boutique { background: url("../images/about-boutique/bg-dotted.png") no-repeat 0 center/55%; padding: 20px 0; }
+@media screen and (min-width: 992px) { .about-boutique { padding: 50px 0; } }
+.about-boutique .lt .round-gray-img { height: 380px; width: 380px; background: #f5f5f5; padding: 15px 10px 0; }
+.about-boutique .lt .round-gray-img img { z-index: 1; }
+.about-boutique .lt .gradient-round-small { height: 50px; width: 50px; top: 7%; left: 23%; background: #ff7600 !important; background: linear-gradient(90deg, #ff7600 0%, #ff1700 100%) !important; }
+.about-boutique .lt .gradient-round-big { height: 150px; width: 150px; top: 16%; left: -30px; background: #ff7600 !important; background: linear-gradient(90deg, #ff7600 0%, #ff1700 100%) !important; }
+@media screen and (min-width: 992px) { .about-boutique .rt { padding-left: 20px; } }
+@media screen and (min-width: 992px) { .about-boutique .rt .st-desc { line-height: 35px; } }
+.about-boutique .rt .st-btn { margin-top: 25px; }
+@media screen and (min-width: 992px) { .about-boutique .rt .st-btn { padding-left: 40px; padding-right: 40px; margin-top: 40px; } }
+
 .testimonials .item { opacity: 0.6; }
 .testimonials .item .text-sec .inner { transition: 0.4s; background-color: #fff; border-radius: 10px; padding: 30px; border: 1px solid #efefef; border-top: 5px solid #efefef; margin-bottom: 40px; }
 .testimonials .item .text-sec .inner:after { content: ''; display: block; position: absolute; bottom: 0; left: 29px; -webkit-transform: translatey(100%); transform: translatey(100%); border-style: solid; border-width: 24px; border-color: transparent; border-top-color: #ff7600; opacity: 0; transition: 0.4s; }
