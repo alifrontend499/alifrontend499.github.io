@@ -471,8 +471,8 @@
 }
 
 $DEFScreensMargin: 25px;
-$DEFlgScreensMargin: 70px;
 $DEFmdScreensMargin: 40px;
+$DEFlgScreensMargin: 70px;
 
 .ST_def-mar-T,
 .ST_def-mar-TB {
@@ -1013,15 +1013,10 @@ ul.st-left-multilevel-menu {
         font-family: 'carmen-sans-bold', sans-serif;
         color: #333;
         letter-spacing: .5px;
-        margin-bottom: 5px;
-
-        @include min-width($md-main) {
-            font-size: 40px;
-        }
-
         margin-bottom: 15px;
 
         @include min-width($md-main) {
+            font-size: 40px;
             margin-bottom: 25px;
         }
     }
@@ -1279,12 +1274,14 @@ ul.st-left-multilevel-menu {
     z-index: 2;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
     padding: 35px 20px;
+
     .close-search {
         top: 5px;
         right: 18px;
         cursor: pointer;
         color: #000;
         font-size: 19px;
+
         &:hover {
             color: $primary-color;
         }
@@ -1297,6 +1294,7 @@ ul.st-left-multilevel-menu {
         font-size: 20px;
         padding: 5px 60px 5px 20px;
         line-height: normal;
+
         &:focus {
             box-shadow: none !important;
             border-color: #777;
@@ -1313,6 +1311,7 @@ ul.st-left-multilevel-menu {
         right: 11px;
         height: calc(100% - 15px);
         width: 40px;
+
         // background: $light-white;
         &:hover {
             // background: darken($color: $light-white, $amount: 10);

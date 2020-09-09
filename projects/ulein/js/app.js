@@ -13,12 +13,14 @@ $(function () {
         items: 1,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
         nav: true,
         navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
-        loop: false,
+        loop: true,
         mouseDrag: false,
-        animateOut: 'fadeOut'
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
     });
 
     // PARTNERS SLIDER
@@ -29,7 +31,6 @@ $(function () {
         autoplayTimeout: 3000,
         center: true,
         loop: true,
-        margin: 15,
         autoplayHoverPause: true,
         // nav: true,
         // navText: ['<i class="feather-chevron-left"></i>', ' <i class="feather-chevron-right"></i>'],
@@ -38,10 +39,12 @@ $(function () {
                 items: 1
             },
             600: {
-                items: 2
+                items: 2,
+                margin: 15,
             },
             992: {
                 items: 3,
+                margin: 30,
             }
         }
     });
