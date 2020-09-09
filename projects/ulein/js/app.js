@@ -102,13 +102,11 @@ $(function () {
     })();
 
     // FOR INPUTS - IF ctrl+a NOT WORKING
-    // (function () {
-    //     $('.input-ctrlA-issue').keydown(function (e) {
-    //         if (e.keyCode == 65 && e.ctrlKey) {
-    //             e.target.select()
-    //         }
-    //     })
-    // })();
+    (function () {
+        $('[data-fancybox-video]').fancybox({
+            animationEffect: "zoom-in-out"
+        });
+    })();
 
     // DYNAMIC-SELECT
     (function () {

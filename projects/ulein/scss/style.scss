@@ -519,6 +519,11 @@ body {
 .home-video {
     .img-sec {
         margin-bottom: 20px;
+        @include transition;
+
+        &:hover {
+            transform: scale(1.1)
+        }
     }
 }
 
