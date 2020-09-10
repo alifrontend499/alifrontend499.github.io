@@ -7,6 +7,10 @@
     -webkit-transform: translatex($x);
     transform: translatex($x);
 }
+@mixin translateX($x) {
+    -webkit-transform: translatex($x);
+    transform: translatex($x);
+}
 
 @mixin transformy($y) {
     -webkit-transform: translatey($y);

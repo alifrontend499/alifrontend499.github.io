@@ -1,7 +1,7 @@
 // SCROLLBAR
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
 
 /* Track */
@@ -11,13 +11,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $secondary-color;
+    background: $primary-color;
     border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: darken($color: $secondary-color, $amount: 8%);
+    background: darken($color: $primary-color, $amount: 8%);
 }
 
 // THEME RELATED
@@ -77,39 +77,39 @@
 
 
 .font-weight-100 {
-    font-weight: 100;
+    font-weight: 100 !important;
 }
 
 .font-weight-200 {
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 
 .font-weight-300 {
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 
 .font-weight-400 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .font-weight-500 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .font-weight-600 {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .font-weight-700 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .font-weight-800 {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 .font-weight-900 {
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .max-height-resize {
@@ -376,7 +376,7 @@
         }
 
         >a {
-            font-family: carmen-sans-bold, sans-serif;
+            font-weight: 600;
             font-size: 15px;
             color: #333;
             text-decoration: none !important;
@@ -384,7 +384,7 @@
             @include transition;
 
             @include min_width($xl-main) {
-                font-size: 17px;
+                font-size: 18px;
             }
 
             @include min_width($lg-main) {
@@ -399,7 +399,7 @@
         }
 
         @include min_width($xl-main) {
-            padding-right: 35px;
+            padding-right: 30px;
         }
 
         @include max_width($lg-less-one) {
@@ -910,14 +910,13 @@ ul.st-left-multilevel-menu {
 }
 
 .st-btn {
-    font-family: 'carmen-sans-bold', sans-serif;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 600;
     color: #fff;
     letter-spacing: 0.5px;
 
     background-color: #333;
-    padding: 12px 35px 14px;
+    padding: 15px 30px 12px;
     border-radius: 45px;
     box-shadow: none;
     @include transition;
@@ -944,10 +943,14 @@ ul.st-left-multilevel-menu {
     }
 
     &.st-btn-light {
-        font-family: 'carmen-sans-regular', sans-serif;
         font-size: 15px;
-        padding: 9px 20px 11px;
+        // padding: 9px 20px 11px;
+        padding: 11px 20px 9px;
         border-radius: 45px;
+
+        &.with-icon {
+            padding: 9px 20px 10px
+        }
     }
 
     &.st-btn-primary {
@@ -1012,13 +1015,13 @@ ul.st-left-multilevel-menu {
 
     .st-head-two {
         font-size: 20px;
-        font-family: 'carmen-sans-bold', sans-serif;
+        font-weight: 700;
         color: #333;
         letter-spacing: .5px;
         margin-bottom: 15px;
 
         @include min-width($md-main) {
-            font-size: 40px;
+            font-size: 39px;
             margin-bottom: 25px;
         }
     }
@@ -1213,8 +1216,8 @@ ul.st-left-multilevel-menu {
             margin-top: 15px;
 
             .st-product-name {
-                font-family: 'carmen-sans-medium', sans-serif;
                 font-size: 16px;
+                font-weight: 600;
                 color: #333;
                 overflow: hidden;
                 white-space: nowrap;
@@ -1222,8 +1225,8 @@ ul.st-left-multilevel-menu {
             }
 
             .st-product-price {
-                font-family: 'carmen-sans-bold', sans-serif;
                 font-size: 25px;
+                font-weight: 700;
                 margin-bottom: 10px;
 
                 span {
@@ -1263,6 +1266,40 @@ ul.st-left-multilevel-menu {
         }
     }
 
+    .product-add-to-favourite {
+        right: 15px;
+        top: 15px;
+
+        >label {
+            cursor: pointer;
+            font-weight: normal;
+
+            span {
+                font-size: 19px;
+            }
+
+            .icon-not-selected {
+                display: inline-block;
+                color: "#888";
+            }
+
+            .icon-selected {
+                display: none;
+                color: #f81b1b;
+            }
+            >input {
+                &:checked {
+                    &~.icon-not-selected {
+                        display: none;
+                    } 
+                    &~.icon-selected {
+                        display: inline-block;
+                    } 
+                }
+            }
+        }
+    }
+
 }
 
 // header-search
@@ -1291,11 +1328,10 @@ ul.st-left-multilevel-menu {
 
     input {
         height: 55px;
-        font-family: 'carmen-sans-regular', sans-serif;
         letter-spacing: .5px;
         font-size: 20px;
         padding: 5px 60px 5px 20px;
-        line-height: normal;
+        font-weight: 500;
 
         &:focus {
             box-shadow: none !important;

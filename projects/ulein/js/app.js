@@ -106,8 +106,16 @@ $(function () {
         $('[data-fancybox-video]').fancybox({
             animationEffect: "zoom-in-out"
         });
+        // tooltips
+        $('[data-toggle="tooltip"]').tooltip({})
     })();
 
+    
+    // TOOLTIPS
+    (function () {
+        $('[data-toggle="tooltip"]').tooltip({})
+    })();
+    
     // DYNAMIC-SELECT
     (function () {
         // on focus showing options

@@ -1,6 +1,5 @@
 // sass --watch scss/style.scss:css/style.css --style compact
 
-// font-family: 'carmen-sans-regular', sans-serif;
 // font-family: 'jasmina', sans-serif;
 @import "components/reset";
 @import "components/fonts";
@@ -9,11 +8,13 @@
 @import "components/common";
 
 // GOOGLE FONTS
+// font-family: 'Montserrat', sans-serif;
 // font-family: 'Open Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 body {
-    font-family: 'carmen-sans-regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: 400;
 
@@ -177,7 +178,7 @@ body {
                     padding-top: 5px;
                     color: #fff;
                     @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
-                    top: 3px;
+                    top: 0;
                     right: 0;
 
                     &:after {
@@ -229,7 +230,7 @@ body {
 
     @include min-width($xl-main) {
         .st-head-menu>li>a {
-            font-size: 15px;
+            font-size: 16px;
             padding-top: 12px;
             padding-bottom: 12px;
         }
@@ -277,8 +278,8 @@ body {
             }
 
             .head {
-                font-family: 'carmen-sans-extra-bold', sans-serif;
                 font-size: 30px;
+                font-weight: 700;
                 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 color: #fff;
 
@@ -368,7 +369,7 @@ body {
                 >.nav-link {
                     border-radius: 0;
                     padding: 0;
-                    font-family: 'carmen-sans-bold', sans-serif;
+                    font-weight: 600;
                     font-size: 26px;
                     color: #666;
                     border-bottom: 2px solid transparent;
@@ -400,6 +401,16 @@ body {
     >.home-our-features-inner {
         background-color: $our-features-bg-color;
     }
+
+    >.top-icon {
+        top: 0;
+        left: 50%;
+        @include translateX(-50%);
+
+        >img {
+            width: 65px;
+        }
+    }
 }
 
 .home-our-features {
@@ -422,13 +433,14 @@ body {
         }
 
         .price {
-            font-family: 'carmen-sans-bold', sans-serif;
             font-size: 35px;
+            font-weight: 700;
 
             span {
                 font-size: 30px;
                 font-family: 'jasmina', sans-serif;
                 margin-right: 5px;
+                font-weight: normal;
             }
         }
     }
@@ -512,8 +524,8 @@ body {
             margin-top: 25px;
 
             @include min-width($lg-main) {
-                padding-left: 40px;
-                padding-right: 40px;
+                padding-left: 30px;
+                padding-right: 30px;
                 margin-top: 40px;
             }
         }
@@ -567,18 +579,18 @@ body {
 #testimonials {
     >.testimonials-inner {
         border-bottom: 1px solid #bbb;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        // padding-top: 30px;
+        // padding-bottom: 30px;
 
-        @include min-width($sm-main) {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
+        // @include min-width($sm-main) {
+        //     padding-top: 80px;
+        //     padding-bottom: 80px;
+        // }
 
-        @include min-width($lg-main) {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
+        // @include min-width($lg-main) {
+        //     padding-top: 100px;
+        //     padding-bottom: 100px;
+        // }
     }
 }
 
@@ -635,8 +647,8 @@ body {
                 margin-top: 20px;
 
                 .user-name {
-                    font-family: 'carmen-sans-extra-bold', sans-serif;
                     font-size: 17px;
+                    font-weight: 700;
                     margin-bottom: 10px;
                     color: #000;
                 }
@@ -657,8 +669,13 @@ body {
 
 .our-speciality {
     .item {
-        .img-sec {
-            width: 70px;
+        .icon-sec {
+            width: 55px;
+
+            i {
+                color: $primary-color;
+                font-size: 40px;
+            }
         }
 
         .text-sec {
@@ -736,6 +753,7 @@ footer {
 
     .st-desc {
         font-size: 16px;
+        font-weight: 600;
 
         @include min-width($md-main) {
             margin-bottom: 30px;
