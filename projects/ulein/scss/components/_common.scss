@@ -22,7 +22,7 @@
 
 // THEME RELATED
 .gradient-primary {
-    @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange)
+    @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme)
 }
 
 // COMMON CSS
@@ -472,7 +472,8 @@
 
 $DEFScreensMargin: 25px;
 $DEFmdScreensMargin: 40px;
-$DEFlgScreensMargin: 70px;
+$DEFlgScreensMargin: 55px;
+$DEFxlScreensMargin: 70px;
 
 .ST_def-mar-T,
 .ST_def-mar-TB {
@@ -482,8 +483,12 @@ $DEFlgScreensMargin: 70px;
         margin-top: $DEFmdScreensMargin;
     }
 
-    @include min_width($lg-main) {
-        margin-top: $DEFlgScreensMargin;
+    // @include min_width($lg-main) {
+    //     margin-top: $DEFlgScreensMargin;
+    // }
+
+    @include min_width($xl-main) {
+        margin-top: $DEFxlScreensMargin;
     }
 }
 
@@ -495,8 +500,12 @@ $DEFlgScreensMargin: 70px;
         margin-bottom: $DEFmdScreensMargin;
     }
 
-    @include min_width($lg-main) {
-        margin-bottom: $DEFlgScreensMargin;
+    // @include min_width($lg-main) {
+    //     margin-bottom: $DEFlgScreensMargin;
+    // }
+
+    @include min_width($xl-main) {
+        margin-bottom: $DEFxlScreensMargin;
     }
 }
 
@@ -508,8 +517,12 @@ $DEFlgScreensMargin: 70px;
         padding-top: $DEFmdScreensMargin;
     }
 
-    @include min_width($lg-main) {
-        padding-top: $DEFlgScreensMargin;
+    // @include min_width($lg-main) {
+    //     padding-top: $DEFlgScreensMargin;
+    // }
+
+    @include min_width($xl-main) {
+        padding-top: $DEFxlScreensMargin;
     }
 }
 
@@ -521,8 +534,12 @@ $DEFlgScreensMargin: 70px;
         padding-bottom: $DEFmdScreensMargin;
     }
 
-    @include min_width($lg-main) {
-        padding-bottom: $DEFlgScreensMargin;
+    // @include min_width($lg-main) {
+    //     padding-bottom: $DEFlgScreensMargin;
+    // }
+
+    @include min_width($xl-main) {
+        padding-bottom: $DEFxlScreensMargin;
     }
 }
 
@@ -910,16 +927,20 @@ ul.st-left-multilevel-menu {
 }
 
 .st-btn {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     letter-spacing: 0.5px;
 
     background-color: #333;
-    padding: 15px 30px 12px;
+    padding: 12px 20px 10px;
     border-radius: 45px;
     box-shadow: none;
     @include transition;
+    @include min-width($lg-main) {
+        font-size: 16px;
+        padding: 15px 30px 12px;
+    }
 
     &:hover {
         background-color: darken($color: #333, $amount: 5);
@@ -944,7 +965,6 @@ ul.st-left-multilevel-menu {
 
     &.st-btn-light {
         font-size: 15px;
-        // padding: 9px 20px 11px;
         padding: 11px 20px 9px;
         border-radius: 45px;
 
@@ -954,7 +974,7 @@ ul.st-left-multilevel-menu {
     }
 
     &.st-btn-primary {
-        @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+        @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
 
         .icon {
             color: #fff;
@@ -972,7 +992,7 @@ ul.st-left-multilevel-menu {
 
         &.active,
         &:hover {
-            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+            @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
             color: #fff;
 
             .icon {
@@ -987,7 +1007,7 @@ ul.st-left-multilevel-menu {
 
         &.active,
         &:hover {
-            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+            @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
             color: #fff;
         }
     }
@@ -1021,7 +1041,10 @@ ul.st-left-multilevel-menu {
         margin-bottom: 15px;
 
         @include min-width($md-main) {
-            font-size: 39px;
+            font-size: 30px;
+        }
+        @include min-width($lg-main) {
+            font-size: 36px;
             margin-bottom: 25px;
         }
     }
@@ -1042,11 +1065,10 @@ ul.st-left-multilevel-menu {
 
 .st-desc {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 28px;
 
     @include min-width($lg-main) {
         font-size: 17px;
-        line-height: 25px;
     }
 }
 
@@ -1226,14 +1248,16 @@ ul.st-left-multilevel-menu {
 
             .st-product-price {
                 font-size: 25px;
-                font-weight: 700;
+                font-weight: 600;
+                margin-top: 10px;
                 margin-bottom: 10px;
 
                 span {
                     font-size: 20px;
                     text-decoration: line-through;
-                    color: #888;
+                    color: #b7b7b7;
                     margin-right: 3px;
+                    font-weight: 500;
                 }
             }
 
@@ -1287,14 +1311,16 @@ ul.st-left-multilevel-menu {
                 display: none;
                 color: #f81b1b;
             }
+
             >input {
                 &:checked {
                     &~.icon-not-selected {
                         display: none;
-                    } 
+                    }
+
                     &~.icon-selected {
                         display: inline-block;
-                    } 
+                    }
                 }
             }
         }
@@ -1310,7 +1336,7 @@ ul.st-left-multilevel-menu {
     left: 0;
     width: 100%;
     background: #fff;
-    z-index: 2;
+    z-index: 234;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
     padding: 35px 20px;
 
@@ -1358,14 +1384,29 @@ ul.st-left-multilevel-menu {
     }
 }
 
-$angleHeight:100px;
+$defAngleHeight:100px;
+$mdAngleHeight:60px;
+$lgAngleHeight:80px;
+$xlAngleHeight:100px;
 
 .add-angle-to-top-right {
     position: relative;
     z-index: 2;
 
     &.aattr-margin {
-        margin-top: -$angleHeight;
+        margin-top: -$defAngleHeight;
+
+        @include min-width($md-main) {
+            margin-top: -$mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            margin-top: -$lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            margin-top: -$xlAngleHeight;
+        }
     }
 
     &::before {
@@ -1376,7 +1417,19 @@ $angleHeight:100px;
         border-bottom-color: #fff;
         border-width: 0;
         border-left-width: 99vw;
-        border-bottom-width: $angleHeight;
+        border-bottom-width: $defAngleHeight;
+
+        @include min-width($md-main) {
+            border-bottom-width: $mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            border-bottom-width: $lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            border-bottom-width: $xlAngleHeight;
+        }
     }
 }
 
@@ -1385,7 +1438,19 @@ $angleHeight:100px;
     z-index: 2;
 
     &.aattl-margin {
-        margin-top: -$angleHeight;
+        margin-top: -$defAngleHeight;
+
+        @include min-width($md-main) {
+            margin-top: -$mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            margin-top: -$lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            margin-top: -$xlAngleHeight;
+        }
     }
 
     &::before {
@@ -1396,7 +1461,19 @@ $angleHeight:100px;
         border-bottom-color: #fff;
         border-width: 0;
         border-right-width: 99vw;
-        border-bottom-width: $angleHeight;
+        border-bottom-width: $defAngleHeight;
+
+        @include min-width($md-main) {
+            border-bottom-width: $mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            border-bottom-width: $lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            border-bottom-width: $xlAngleHeight;
+        }
     }
 }
 
@@ -1405,7 +1482,19 @@ $angleHeight:100px;
     z-index: 2;
 
     &.aatbl-margin {
-        margin-bottom: -$angleHeight;
+        margin-bottom: -$defAngleHeight;
+
+        @include min-width($md-main) {
+            margin-bottom: -$mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            margin-bottom: -$lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            margin-bottom: -$xlAngleHeight;
+        }
     }
 
     &::after {
@@ -1417,7 +1506,19 @@ $angleHeight:100px;
 
         border-top-color: #fff;
         border-right-width: 99vw;
-        border-top-width: $angleHeight;
+        border-top-width: $defAngleHeight;
+
+        @include min-width($md-main) {
+            border-top-width: $mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            border-top-width: $lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            border-top-width: $xlAngleHeight;
+        }
     }
 }
 
@@ -1426,7 +1527,19 @@ $angleHeight:100px;
     z-index: 2;
 
     &.aatbr-margin {
-        margin-bottom: -$angleHeight;
+        margin-bottom: -$defAngleHeight;
+
+        @include min-width($md-main) {
+            margin-bottom: -$mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            margin-bottom: -$lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            margin-bottom: -$xlAngleHeight;
+        }
     }
 
     &::after {
@@ -1438,6 +1551,18 @@ $angleHeight:100px;
 
         border-top-color: #fff;
         border-left-width: 99vw;
-        border-top-width: $angleHeight;
+        border-top-width: $defAngleHeight;
+
+        @include min-width($md-main) {
+            border-top-width: $mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            border-top-width: $lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            border-top-width: $xlAngleHeight;
+        }
     }
 }

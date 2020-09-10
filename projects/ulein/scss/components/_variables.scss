@@ -3,11 +3,20 @@
 $primary-color: #ff7600;
 $secondary-color: #d20423;
 
+// GRADIENT THEME COLORS
+// $defaultColorOrange:rgb(255, 118, 0);
+// $gradColor1Orange:rgba(255, 118, 0, 1);
+// $gradColor2Orange:rgba(255, 23, 0, 1);
+
+// GRADIENT THEME COLORS
+$defaultColorTheme:rgb(255, 118, 0);
+$gradColor1Theme:rgba(255, 118, 0, 1);
+$gradColor2Theme:rgba(255, 23, 0, 1);
+
 // other colors
 $st-less-dark: #2a2a2a;
 $light-white: #efefef;
 $medium-white: #ededed;
-
 
 $slider-bg: #c7e2f3;
 $star-color: #f6bb09;
@@ -34,8 +43,3 @@ $lg-less-one: 991px;
 
 $xl-main: 1200px;
 $xl-less-one: 1199px;
-
-// GRADIENT THEME COLORS
-$defaultColorOrange:rgb(255, 118, 0);
-$gradColor1Orange:rgba(255, 118, 0, 1);
-$gradColor2Orange:rgba(255, 23, 0, 1);

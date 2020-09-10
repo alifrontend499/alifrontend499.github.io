@@ -5,6 +5,8 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplayTimeout: 2000,
+        loop: true,
+        autoplayHoverPause: true,
         mouseDrag: false
     });
 
@@ -29,7 +31,7 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplayTimeout: 3000,
-        center: true,
+        // center: true,
         loop: true,
         autoplayHoverPause: true,
         // nav: true,

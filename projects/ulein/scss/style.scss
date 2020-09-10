@@ -54,8 +54,12 @@ body {
         p {
             font-family: 'Open Sans', sans-serif;
             color: #333;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
+
+            @include min-width($lg-main) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -76,8 +80,8 @@ body {
 
         .dynamic-select>.input-main .flag {
             top: 50%;
-            @include transformy(-50%);
             left: 7px;
+            top: 10px;
         }
 
         .dynamic-select>.input-main .icon {
@@ -91,15 +95,19 @@ body {
         .dynamic-select .options {}
 
         .dynamic-select .options .frac>ul>li .label .flag {
-            margin: 6px 7px 0 0;
+            margin: 3px 7px 0 0;
         }
 
         .login-menu {
             >li {
                 font-family: 'Open Sans', sans-serif;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 400;
                 margin-left: 15px;
+
+                @include min-width($lg-main) {
+                    font-size: 14px;
+                }
 
                 >a {
                     color: #333;
@@ -142,7 +150,15 @@ body {
     }
 
     .hm-lt {
+        width: 150px;
+
+        // @include min-width($sm-main) {
+        // }
         @include min-width($lg-main) {
+            width: 230px;
+        }
+
+        @include min-width($xl-main) {
             width: 259px;
         }
     }
@@ -157,8 +173,14 @@ body {
                 @include transition;
                 cursor: pointer;
 
-                &:not(:last-child) {
-                    margin-right: 15px;
+                @include max-width($lg-less-one) {
+                    margin-left: 15px;
+                }
+
+                @include min-width($lg-main) {
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
                 }
 
                 &:hover {
@@ -177,7 +199,7 @@ body {
                     text-align: center;
                     padding-top: 5px;
                     color: #fff;
-                    @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+                    @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
                     top: 0;
                     right: 0;
 
@@ -212,17 +234,9 @@ body {
         #header-top {
             margin-top: -40px;
         }
-
-        // #header-main {
-        //     margin-top: -98px;
-        // }
     }
 
     @include min-width($lg-main) {
-
-        // #header-main {
-        //     margin-top: -117px;
-        // }
         .header-main .hm-lt {
             width: 215px;
         }
@@ -239,21 +253,31 @@ body {
 
 @include min-width($md-main) {
     .header-like-margin-top {
-        margin-top: 190px;
+        margin-top: 124px;
     }
 
     .header-like-padding-top {
-        padding-top: 190px;
+        padding-top: 124px;
     }
 }
 
 @include min-width($lg-main) {
     .header-like-margin-top {
-        margin-top: 159px;
+        margin-top: 148px;
     }
 
     .header-like-padding-top {
-        padding-top: 159px;
+        padding-top: 148px;
+    }
+}
+
+@include min-width($xl-main) {
+    .header-like-margin-top {
+        margin-top: 157px;
+    }
+
+    .header-like-padding-top {
+        padding-top: 157px;
     }
 }
 
@@ -283,7 +307,15 @@ body {
                 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 color: #fff;
 
+                @include min-width($md-main) {
+                    font-size: 35px;
+                }
+
                 @include min-width($lg-main) {
+                    font-size: 48px;
+                }
+
+                @include min-width($xl-main) {
                     font-size: 58px;
                 }
             }
@@ -304,7 +336,15 @@ body {
 
 .our-categories {
     .item-main {
-        height: 500px;
+        height: 300px;
+
+        @include min-width($lg-main) {
+            height: 415px;
+        }
+
+        @include min-width($xl-main) {
+            height: 500px;
+        }
     }
 
     .item {
@@ -364,17 +404,25 @@ body {
             margin-bottom: 30px;
 
             >.nav-item {
-                margin: 0 20px;
+                margin: 0 15px;
+
+                @include min-width($lg-main) {
+                    margin: 0 20px;
+                }
 
                 >.nav-link {
                     border-radius: 0;
                     padding: 0;
                     font-weight: 600;
-                    font-size: 26px;
-                    color: #666;
+                    font-size: 23px;
+                    color: #b7b7b7;
                     border-bottom: 2px solid transparent;
                     padding-bottom: 6px;
                     @include transition;
+
+                    @include min-width($lg-main) {
+                        font-size: 26px;
+                    }
 
                     &.active,
                     &:hover {
@@ -421,7 +469,7 @@ body {
 
         .st-desc {
 
-            @include min-width($md-main) {
+            @include min-width($lg-main) {
                 line-height: 35px;
                 max-width: 80%;
             }
@@ -434,9 +482,11 @@ body {
 
         .price {
             font-size: 35px;
-            font-weight: 700;
+            font-weight: 600;
 
             span {
+                position: relative;
+                top: -5px;
                 font-size: 30px;
                 font-family: 'jasmina', sans-serif;
                 margin-right: 5px;
@@ -447,9 +497,16 @@ body {
 
     #our-features-slider {
         .owl-nav {
-            margin-top: -20px;
             z-index: 1;
             position: relative;
+
+            @include min-width($md-less-one) {
+                margin-top: 15px;
+            }
+
+            @include min-width($xl-main) {
+                margin-top: -20px;
+            }
 
             >button {
                 background: darken($color: $our-features-bg-color, $amount: 10);
@@ -482,10 +539,19 @@ body {
 
     .lt {
         .round-gray-img {
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 300px;
             background: #f5f5f5;
             padding: 15px 10px 0;
+
+            @include max-width($lg-less-one) {
+                margin: 0 auto;
+            }
+
+            @include min-width($lg-main) {
+                height: 400px;
+                width: 400px;
+            }
 
             img {
                 z-index: 1;
@@ -497,15 +563,22 @@ body {
             width: 50px;
             top: 7%;
             left: 23%;
-            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+            @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
         }
 
         .gradient-round-big {
-            height: 150px;
-            width: 150px;
-            top: 16%;
-            left: -30px;
-            @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+            height: 120px;
+            width: 120px;
+            top: 20%;
+            left: -16px;
+            @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
+
+            @include min-width($lg-main) {
+                height: 150px;
+                width: 150px;
+                top: 16%;
+                left: -30px;
+            }
         }
     }
 
@@ -544,7 +617,7 @@ body {
         left: 0;
         height: 100%;
         width: 100%;
-        @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+        @include gradient-primary($defaultColorTheme, $gradColor1Theme, $gradColor2Theme);
         opacity: .8;
     }
 
@@ -557,6 +630,11 @@ body {
     }
 
     @include min-width($lg-main) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include min-width($xl-main) {
         padding-top: 160px;
         padding-bottom: 160px;
     }
@@ -596,7 +674,6 @@ body {
 
 .testimonials {
     .section-heading .st-head-two {
-        font-size: 30px;
         color: #000;
 
         @include min-width($lg-main) {
@@ -680,16 +757,16 @@ body {
 
         .text-sec {
             .head {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 700;
+                // font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
                 color: #000;
                 font-size: 17px;
                 margin-bottom: 5px;
             }
 
             .desc {
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 600;
+                // font-family: 'Open Sans', sans-serif;
+                font-weight: 500;
                 color: #888;
             }
         }
@@ -722,6 +799,9 @@ footer {
 }
 
 #ft-newsletter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     @include min-width($sm-main) {}
 
     @include min-width($lg-main) {
@@ -753,9 +833,9 @@ footer {
 
     .st-desc {
         font-size: 16px;
-        font-weight: 600;
+        margin-bottom: 20px;
 
-        @include min-width($md-main) {
+        @include min-width($lg-main) {
             margin-bottom: 30px;
             max-width: 65%;
             margin-left: auto;
