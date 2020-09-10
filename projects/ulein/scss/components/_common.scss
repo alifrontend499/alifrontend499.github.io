@@ -967,6 +967,7 @@ ul.st-left-multilevel-menu {
             color: $primary-color;
         }
 
+        &.active,
         &:hover {
             @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
             color: #fff;
@@ -981,6 +982,7 @@ ul.st-left-multilevel-menu {
         color: #333;
         background-color: #fff;
 
+        &.active,
         &:hover {
             @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
             color: #fff;
@@ -1317,5 +1319,89 @@ ul.st-left-multilevel-menu {
             // background: darken($color: $light-white, $amount: 10);
             color: $primary-color;
         }
+    }
+}
+
+$angleHeight:100px;
+
+.add-angle-to-top-right {
+    position: relative;
+    z-index: 2;
+
+    &.aattr-margin {
+        margin-top: -$angleHeight;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: #fff;
+        border-width: 0;
+        border-left-width: 99vw;
+        border-bottom-width: $angleHeight;
+    }
+}
+
+.add-angle-to-top-left {
+    position: relative;
+    z-index: 2;
+
+    &.aattl-margin {
+        margin-top: -$angleHeight;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: #fff;
+        border-width: 0;
+        border-right-width: 99vw;
+        border-bottom-width: $angleHeight;
+    }
+}
+
+.add-angle-to-bottom-left {
+    position: relative;
+    z-index: 2;
+
+    &.aatbl-margin {
+        margin-bottom: -$angleHeight;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 0;
+
+        border-top-color: #fff;
+        border-right-width: 99vw;
+        border-top-width: $angleHeight;
+    }
+}
+
+.add-angle-to-bottom-right {
+    position: relative;
+    z-index: 2;
+
+    &.aatbr-margin {
+        margin-bottom: -$angleHeight;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 0;
+
+        border-top-color: #fff;
+        border-left-width: 99vw;
+        border-top-width: $angleHeight;
     }
 }

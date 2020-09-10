@@ -389,7 +389,17 @@ body {
 
 // OUR FEATURES
 #home-our-features {
-    background-color: $our-features-bg-color;
+    &::before {
+        border-bottom-color: $our-features-bg-color;
+    }
+
+    &::after {
+        border-top-color: $our-features-bg-color;
+    }
+
+    >.home-our-features-inner {
+        background-color: $our-features-bg-color;
+    }
 }
 
 .home-our-features {
@@ -457,11 +467,6 @@ body {
 
 .about-boutique {
     background: url('../images/about-boutique/bg-dotted.png') no-repeat 0 center / 55%;
-    padding: 20px 0;
-
-    @include min-width($lg-main) {
-        padding: 50px 0;
-    }
 
     .lt {
         .round-gray-img {
@@ -519,9 +524,35 @@ body {
 // home video
 #home-video {
     background: url('../images/home-video/home-bg-img.jpg') no-repeat center / cover;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        @include gradient-primary($defaultColorOrange, $gradColor1Orange, $gradColor2Orange);
+        opacity: .8;
+    }
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include min-width($sm-main) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include min-width($lg-main) {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
 }
 
 .home-video {
+    z-index: 1;
+
     .img-sec {
         margin-bottom: 20px;
         @include transition;
@@ -534,18 +565,20 @@ body {
 
 // TESTIMONIALS
 #testimonials {
-    border-bottom: 1px solid #bbb;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    >.testimonials-inner {
+        border-bottom: 1px solid #bbb;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-    @include min-width($sm-main) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+        @include min-width($sm-main) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
 
-    @include min-width($lg-main) {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        @include min-width($lg-main) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
     }
 }
 

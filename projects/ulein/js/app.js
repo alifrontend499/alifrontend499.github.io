@@ -146,8 +146,8 @@ $(function () {
         });
     })();
 
+    // header search
     (function () {
-        // header search
         $('.cart-menu .icon-search').click(function (ev) {
             ev.stopPropagation()
             $(this).addClass('active').next().slideDown(200).find('.header-search-inner > input').focus()
@@ -163,6 +163,23 @@ $(function () {
         $(document).click(function () {
             $('.header-search .close-search').parent().slideUp(200).prev().removeClass('active')
         })
+    })();
+
+    // ADD ACTIVE CLASS ON HOVER FOR BUTTONS
+    (function () {
+        if ($(window).width() > 991) {
+            $('.our-categories .item > .inner').hover(function (ev) {
+                $('.caption-inner .st-btn', this).addClass('active')
+            }, function () {
+                $('.caption-inner .st-btn', this).removeClass('active')
+            })
+
+            $('.st-products-container .st-product-item-inner').hover(function (ev) {
+                $('.buy-now-btn', this).addClass('active')
+            }, function () {
+                $('.buy-now-btn', this).removeClass('active')
+            })
+        }
     })();
 
 });
