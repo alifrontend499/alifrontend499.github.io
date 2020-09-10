@@ -344,11 +344,11 @@ body { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 400;
 
 #header-main { transition: 0.3s; }
 
-.header-main { padding: 20px 0; }
+.header-main { padding: 20px 0; transition: 0.3s; }
 .header-main .hm-lt, .header-main .hm-rt { transition: 0.3s; }
 .header-main .hm-lt { width: 150px; }
 @media screen and (min-width: 992px) { .header-main .hm-lt { width: 230px; } }
-@media screen and (min-width: 1200px) { .header-main .hm-lt { width: 259px; } }
+@media screen and (min-width: 1200px) { .header-main .hm-lt { width: 250px; } }
 .header-main .hm-rt { padding-left: 15px; }
 .header-main .hm-rt .cart-menu .icon { font-size: 23px; color: #000; transition: 0.3s; cursor: pointer; }
 @media screen and (max-width: 991px) { .header-main .hm-rt .cart-menu .icon { margin-left: 15px; } }
@@ -358,6 +358,7 @@ body { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 400;
 .header-main .hm-rt .cart-menu .icon-cart .count:after { content: ''; position: absolute; left: -12px; top: 50%; display: block; border-style: solid; border-width: 7px; border-color: transparent; border-right-color: #ff7600; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 
 #header.active { -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); }
+#header.active .header-main { padding: 13px 0; }
 #header.active #header-top { margin-top: -40px; }
 @media screen and (min-width: 768px) { #header.active #header-top { margin-top: -40px; } }
 @media screen and (min-width: 992px) { #header.active .header-main .hm-lt { width: 215px; } }

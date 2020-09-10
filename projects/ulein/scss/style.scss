@@ -143,6 +143,7 @@ body {
 
 .header-main {
     padding: 20px 0;
+    @include transition;
 
     .hm-lt,
     .hm-rt {
@@ -159,7 +160,7 @@ body {
         }
 
         @include min-width($xl-main) {
-            width: 259px;
+            width: 250px;
         }
     }
 
@@ -225,6 +226,10 @@ body {
 // WHEN HEADER FIXED
 #header.active {
     @include box-shadow(0, 0, 5px, 0, rgba(0, 0, 0, 0.3));
+
+    .header-main {
+        padding: 13px 0;
+    }
 
     #header-top {
         margin-top: -40px;
