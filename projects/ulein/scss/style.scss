@@ -178,6 +178,10 @@ body {
                     margin-left: 15px;
                 }
 
+                @include max-width($md-less-one) {
+                    margin-left: 10px;
+                }
+
                 @include min-width($lg-main) {
                     &:not(:last-child) {
                         margin-right: 15px;
@@ -229,10 +233,6 @@ body {
 
     .header-main {
         padding: 13px 0;
-    }
-
-    #header-top {
-        margin-top: -40px;
     }
 
     @include min-width($md-main) {
@@ -306,27 +306,16 @@ body {
                 padding: 0 $defaultGap;
             }
 
-            .head {
-                font-size: 30px;
-                font-weight: 700;
+            .st-head-two {
                 text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-                color: #fff;
-
-                @include min-width($md-main) {
-                    font-size: 35px;
-                }
-
-                @include min-width($lg-main) {
-                    font-size: 48px;
-                }
-
-                @include min-width($xl-main) {
-                    font-size: 58px;
-                }
             }
 
             .btn-sec {
-                margin-top: 15px;
+                margin-top: 5px;
+
+                @include min-width($md-main) {
+                    margin-top: 15px;
+                }
 
                 @include min-width($lg-main) {
                     margin-top: 25px;
@@ -406,7 +395,11 @@ body {
 .home-shop {
     .tabs-sec {
         .nav {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+
+            @include min-width($md-main) {
+                margin-bottom: 30px;
+            }
 
             >.nav-item {
                 margin: 0 15px;
@@ -461,7 +454,11 @@ body {
         @include translateX(-50%);
 
         >img {
-            width: 65px;
+            width: 25px;
+
+            @include min-width($md-main) {
+                width: 65px;
+            }
         }
     }
 }
@@ -481,8 +478,13 @@ body {
         }
 
         .buy-now-btn {
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+
+            @include min-width($md-main) {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
         }
 
         .price {
@@ -699,7 +701,11 @@ body {
         .text-sec {
             .inner {
                 @include transition(.4s);
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+
+                @include min-width($md-main) {
+                    margin-bottom: 50px;
+                }
             }
 
             p {
@@ -752,8 +758,10 @@ body {
 .our-speciality {
     .item {
         .icon-sec {
-            width: 55px;
-
+            width: 100%;
+            @include min-width($md-main) {
+                width: 55px;
+            }
             i {
                 color: $primary-color;
                 font-size: 40px;
@@ -780,7 +788,9 @@ body {
 
 // FOOTER
 footer {
-    background: $footer-bg-color url("../images/fotter-bg.png") no-repeat center bottom/100% 77%;
+    @include min-width($lg-main) {
+        background: $footer-bg-color url("../images/fotter-bg.png") no-repeat center bottom/100% 77%;
+    }
 
     .st-text,
     .ft-link {
@@ -804,10 +814,13 @@ footer {
 }
 
 #ft-newsletter {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-    @include min-width($sm-main) {}
+    @include min-width($md-main) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
     @include min-width($lg-main) {
         padding-top: 30px;
@@ -816,7 +829,7 @@ footer {
 }
 
 .ft-newsletter {
-    @include min-width($sm-main) {
+    @include min-width($lg-main) {
         padding-bottom: 100px;
     }
 
@@ -826,8 +839,12 @@ footer {
 
     .section-heading {
         img {
-            width: 65px;
+            width: 35px;
             margin-bottom: 15px;
+
+            @include min-width($md-main) {
+                width: 65px;
+            }
         }
 
         .st-head-two {
@@ -895,7 +912,11 @@ footer {
         color: #fff;
         font-weight: 600;
 
-        @include min-width($md-main) {
+        margin-bottom: 15px;
+
+        // @include min-width($md-main) {
+        // }
+        @include min-width($lg-main) {
             margin-bottom: 27px;
         }
     }
@@ -924,11 +945,17 @@ footer {
             // width: 200px;
             margin-bottom: 20px;
 
+            @include min-width($lg-main) {
+                width: 260px;
+            }
+
         }
 
         .st-text {
-            margin-bottom: 15px;
-
+            margin-bottom: 10px;
+            @include min-width($md-main) {
+                margin-bottom: 15px;
+            }
             >i {
                 width: 30px;
                 font-size: 15px;
@@ -1030,6 +1057,10 @@ footer {
 }
 
 .ft-bottom {
-    padding: 15px 0 25px;
+    padding: 15px 0 15px;
     border-top: 1px solid #313131;
+
+    @include min-width($lg-main) {
+        padding: 15px 0 25px;
+    }
 }

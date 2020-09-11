@@ -467,6 +467,11 @@
                 }
             }
         }
+        &.active {
+            >a {
+                color: $primary-color;
+            }
+        }
     }
 }
 
@@ -933,10 +938,15 @@ ul.st-left-multilevel-menu {
     letter-spacing: 0.5px;
 
     background-color: #333;
-    padding: 12px 20px 10px;
+    padding: 10px 16px 8px;
     border-radius: 45px;
     box-shadow: none;
     @include transition;
+
+    @include min-width($md-main) {
+        padding: 15px 30px 12px;
+    }
+
     @include min-width($lg-main) {
         font-size: 16px;
         padding: 15px 30px 12px;
@@ -965,11 +975,17 @@ ul.st-left-multilevel-menu {
 
     &.st-btn-light {
         font-size: 15px;
-        padding: 11px 20px 9px;
+        padding: 9px 16px 8px;
         border-radius: 45px;
+        @include min-width($md-main) {
+            padding: 11px 20px 9px;
+        }
 
         &.with-icon {
-            padding: 9px 20px 10px
+            padding: 7px 16px 8px;
+            @include min-width($md-main) {
+                padding: 9px 20px 10px;
+            }
         }
     }
 
@@ -1020,7 +1036,7 @@ ul.st-left-multilevel-menu {
     }
 
     .st-head {
-        font-size: 25px;
+        font-size: 35px;
         font-family: 'jasmina', sans-serif;
         color: $primary-color;
         letter-spacing: .5px;
@@ -1034,7 +1050,7 @@ ul.st-left-multilevel-menu {
     }
 
     .st-head-two {
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 700;
         color: #333;
         letter-spacing: .5px;
@@ -1043,6 +1059,7 @@ ul.st-left-multilevel-menu {
         @include min-width($md-main) {
             font-size: 30px;
         }
+
         @include min-width($lg-main) {
             font-size: 36px;
             margin-bottom: 25px;
@@ -1268,11 +1285,18 @@ ul.st-left-multilevel-menu {
     }
 
     .view-more-btn-container {
-        padding: 30px 10px 0;
+        padding: 10px 10px 0;
+        @include min-width($md-main) {
+            padding: 30px 10px 0;
+        }
 
         .st-btn {
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+            @include min-width($md-main) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
         }
     }
 
@@ -1384,7 +1408,7 @@ ul.st-left-multilevel-menu {
     }
 }
 
-$defAngleHeight:100px;
+$defAngleHeight:20px;
 $mdAngleHeight:60px;
 $lgAngleHeight:80px;
 $xlAngleHeight:100px;

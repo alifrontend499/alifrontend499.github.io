@@ -1,6 +1,4 @@
-@media (min-width: 768px) {
-    
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
@@ -15,7 +13,7 @@
         left: 0;
         height: 100%;
         width: 200px;
-        background: #124b98;
+        background: #333;
         z-index: 123;
         transition: .3s;
         overflow: auto;
@@ -66,12 +64,64 @@
     #header-menu {
         padding: 7px 0;
     }
-
+    .header-main-col>.hm-rt {
+        width: 100%;
+        position: relative;
+        top: 3px;
+    }
     .ft-top .one,
     .ft-top .two,
     .ft-top .three {
         margin-bottom: 20px;
     }
+
+    #ft-newsletter {
+        border-top: 1px solid #bbb;
+    }
+
+    #ft-top {
+        background: #333;
+        padding-top: 35px;
+    }
+
+    .ft-bottom {
+        border-top-color: #9e9e9e;
+    }
+
+    .ft-top .one {
+        margin-bottom: 30px;
+    }
+
+    .ft-top div>.inner {
+        text-align: center;
+    }
+
+    .ft-top .one>.inner>img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ft-top .one>.inner .st-text {
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    .ft-top .social-links {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    footer .st-text>i,
+    footer .ft-link>i {
+        position: relative;
+        top: 3px;
+        margin-right: 4px;
+    }
+
+    .ft-top .one .st-text>i {
+        position: static !important;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -92,8 +142,12 @@
     }
 
     .header-main-col>.hm-lt {
-        width: 260px;
-        margin: 0 auto 13px;
+        width: 180px;
+        margin: 0 auto 0;
+    }
+
+    #header.active .header-main-col>.hm-lt {
+        width: 140px;
     }
 
     .header-main-col>.hm-lt>.inner,
@@ -122,6 +176,10 @@
         align-items: center !important;
     }
 
+    #header.active #header-top {
+        margin-top: -78px;
+    }
+
     .header-top p {
         font-size: 14px;
     }
@@ -136,32 +194,113 @@
         text-align: center;
     }
 
-    /* #header.active .header-main-col>.hm-lt {
-        width: 220px;
-        margin: 5px auto 5px;
-    }
-
-    #header.active .header-main-col>.hm-rt {
-    } */
-    #header.active #header-main {
-        /* margin-top: -162px; */
-        margin-top: -131px;
-    }
-
-    #header.active #header-menu {
-        margin-top: -3px;
-    }
-
     .header-like-margin-top {
-        margin-top: 218px;
+        margin-top: 151px;
     }
 
     .header-like-padding-top {
-        padding-top: 218px;
+        padding-top: 151px;
     }
 
     #ST_banner .caption .st-head {
         font-size: 25px;
+    }
+
+    .header-top>.lt {
+        background: #333;
+        margin-top: -5px;
+    }
+
+    .header-top .lt p {
+        padding: 5px 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .header-top .rt {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .header-top .rt>.inner {
+        width: 100%;
+        top: 3px;
+        position: relative;
+    }
+
+    .header-top .login-menu {
+        margin-left: auto;
+    }
+
+
+    .our-categories .item-main {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .our-categories .item {
+        padding-bottom: 20px;
+        height: auto !important;
+    }
+
+    .home-shop .tabs-sec .nav {
+        margin-bottom: 0px;
+    }
+
+    .home-shop .tabs-sec .nav>.nav-item {
+        margin: 0 10px;
+    }
+
+    .home-shop .tabs-sec .nav>.nav-item>.nav-link {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    .home-our-features .item .img-sec {
+        display: none;
+    }
+
+    .home-our-features #our-features-slider .owl-nav {
+        margin-top: 10px;
+    }
+
+    .about-boutique .lt {
+        display: none;
+    }
+
+    .testimonials .section-heading .st-head-two img {
+        width: 50px;
+        left: -10px;
+        top: -9px;
+    }
+
+    #our-speciality .item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    #our-speciality .item>.inner {
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        text-align: center;
+    }
+
+    .our-speciality .item .icon-sec {
+        margin-bottom: 10px;
+    }
+
+
+    .ft-top .one>.inner>img {
+        width: 200px;
+    }
+
+    .ft-top .one {
+        margin-bottom: 20px;
+    }
+
+    .ft-bottom {
+        padding: 10px 0 10px;
     }
 }
 
