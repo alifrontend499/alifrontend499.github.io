@@ -488,9 +488,11 @@ body {
         }
 
         .price {
-            font-size: 35px;
+            font-size: 30px;
             font-weight: 600;
-
+            @include min-width($md-main) {
+                font-size: 35px;
+            }
             span {
                 position: relative;
                 top: -5px;

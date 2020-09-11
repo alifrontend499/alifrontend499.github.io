@@ -416,7 +416,8 @@ body { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 400;
 @media screen and (min-width: 992px) { .home-our-features .item .st-desc { line-height: 35px; max-width: 80%; } }
 .home-our-features .item .buy-now-btn { margin-top: 15px; margin-bottom: 10px; }
 @media screen and (min-width: 768px) { .home-our-features .item .buy-now-btn { margin-top: 25px; margin-bottom: 25px; } }
-.home-our-features .item .price { font-size: 35px; font-weight: 600; }
+.home-our-features .item .price { font-size: 30px; font-weight: 600; }
+@media screen and (min-width: 768px) { .home-our-features .item .price { font-size: 35px; } }
 .home-our-features .item .price span { position: relative; top: -5px; font-size: 30px; font-family: 'jasmina', sans-serif; margin-right: 5px; font-weight: normal; }
 .home-our-features #our-features-slider .owl-nav { z-index: 1; position: relative; }
 @media screen and (min-width: 767px) { .home-our-features #our-features-slider .owl-nav { margin-top: 15px; } }

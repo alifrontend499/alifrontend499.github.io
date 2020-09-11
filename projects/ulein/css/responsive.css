@@ -13,10 +13,14 @@
         left: 0;
         height: 100%;
         width: 200px;
-        background: #333;
+        background: #fff;
         z-index: 123;
         transition: .3s;
         overflow: auto;
+    }
+
+    .st-head-menu>li>a {
+        color: #000 !important;
     }
 
     .header-main-col .menu:not(.active)>.inner {
@@ -64,11 +68,13 @@
     #header-menu {
         padding: 7px 0;
     }
+
     .header-main-col>.hm-rt {
         width: 100%;
         position: relative;
         top: 3px;
     }
+
     .ft-top .one,
     .ft-top .two,
     .ft-top .three {
@@ -258,16 +264,59 @@
     }
 
 
+    .home-our-features .item>.inner {
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important;
+        text-align: center;
+    }
+
+    .home-our-features .item .buy-now-btn {
+        margin-bottom: 15px;
+    }
+
     .home-our-features .item .img-sec {
-        display: none;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    .home-our-features #our-features-slider .owl-nav {
+        text-align: center;
     }
 
     .home-our-features #our-features-slider .owl-nav {
         margin-top: 10px;
     }
 
+    .about-boutique {
+        text-align: center;
+    }
+
     .about-boutique .lt {
-        display: none;
+        margin-bottom: 20px;
+    }
+
+    .about-boutique .lt>.inner {
+        display: -ms-inline-flexbox !important;
+        display: inline-flex !important;
+    }
+
+    .about-boutique .lt .round-gray-img {
+        height: 280px;
+        width: 280px;
+    }
+
+    .about-boutique .lt .gradient-round-big {
+        height: 100px;
+        width: 100px;
+        top: 21%;
+        left: -30px;
+    }
+
+    .about-boutique .lt .gradient-round-small {
+        height: 45px;
+        width: 45px;
+        top: 7%;
+        left: 20%;
     }
 
     .testimonials .section-heading .st-head-two img {
@@ -302,6 +351,16 @@
     .ft-bottom {
         padding: 10px 0 10px;
     }
+
+    .home_slider .item .caption .st-head-two {
+        text-transform: capitalize !important;
+        margin-bottom: 8px;
+    }
+
+    .home_slider .item .caption {
+        top: -7px;
+    }
+
 }
 
 @media (max-width: 575px) {
