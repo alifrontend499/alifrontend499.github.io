@@ -21,6 +21,12 @@
 
     .st-head-menu>li>a {
         color: #000 !important;
+        border-bottom: 1px solid #efefef;
+        padding: 15px 20px;
+    }
+
+    .st-head-menu>li>a:focus {
+        background-color: #efefef;
     }
 
     .header-main-col .menu:not(.active)>.inner {
@@ -255,7 +261,8 @@
     }
 
     .home-shop .tabs-sec .nav>.nav-item {
-        margin: 0 10px;
+        /* margin: 0 10px; */
+        margin: 0 20px;
     }
 
     .home-shop .tabs-sec .nav>.nav-item>.nav-link {
