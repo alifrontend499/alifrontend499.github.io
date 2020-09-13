@@ -6,6 +6,7 @@ $(function () {
         autoplay: true,
         autoplayTimeout: 3000,
         autoplaySpeed: 1000,
+        navSpeed: 1000,
         loop: true,
         autoplayHoverPause: true,
         nav: true,

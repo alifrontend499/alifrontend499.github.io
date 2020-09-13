@@ -290,6 +290,7 @@ body {
 // home slider
 .home_slider {
     background-color: $slider-bg;
+    position: relative;
 
     .item {
         .img-main {
@@ -321,6 +322,34 @@ body {
                 @include min-width($lg-main) {
                     margin-top: 25px;
                 }
+            }
+        }
+    }
+
+    .owl-nav {
+
+        >button {
+            position: absolute;
+            top: calc(50% - 7px);
+            @include transformy(-50%);
+            outline: none !important;
+            @include min-width($md-main) {
+                top: calc(50% - 20px);
+            }
+            i {
+                font-size: 25px;
+                @include min-width($md-main) {
+                    font-size: 50px;
+                }
+                color: #fff;
+            }
+
+            &.owl-next {
+                right: 10px;
+            }
+            
+            &.owl-prev {
+                left: 10px;
             }
         }
     }
@@ -491,9 +520,11 @@ body {
         .price {
             font-size: 30px;
             font-weight: 600;
+
             @include min-width($md-main) {
                 font-size: 35px;
             }
+
             span {
                 position: relative;
                 top: -5px;
@@ -548,6 +579,7 @@ body {
     @include min-width($md-main) {
         background: url('../images/about-boutique/bg-dotted.png') no-repeat 0 center / 55%;
     }
+
     .lt {
         .round-gray-img {
             height: 300px;
@@ -762,9 +794,11 @@ body {
     .item {
         .icon-sec {
             width: 100%;
+
             @include min-width($md-main) {
                 width: 55px;
             }
+
             i {
                 color: $primary-color;
                 font-size: 40px;
@@ -956,9 +990,11 @@ footer {
 
         .st-text {
             margin-bottom: 10px;
+
             @include min-width($md-main) {
                 margin-bottom: 15px;
             }
+
             >i {
                 width: 30px;
                 font-size: 15px;
