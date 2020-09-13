@@ -423,7 +423,10 @@
     }
 
     .home_slider .item .caption {
-        top: -7px;
+        /* top: -7px; */
+    }
+    .home_slider .item .caption .st-head-two{
+        margin-top: -7px;
     }
 
 }

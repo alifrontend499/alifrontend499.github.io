@@ -387,10 +387,13 @@
                 font-size: 18px;
             }
 
-            @include min_width($lg-main) {
-                &:hover {
-                    color: $primary-color;
-                }
+            // @include min_width($lg-main) {
+
+            // }
+            &:hover,
+            &:focus,
+            &:active {
+                color: $primary-color !important;
             }
         }
 
@@ -1628,6 +1631,7 @@ $xlAngleHeight:100px;
         max-height: 250px;
         overflow: auto;
     }
+
     .cart-item {}
 
     .cart-item-inner {
@@ -1677,6 +1681,7 @@ $xlAngleHeight:100px;
     .header-cart-items-btn {
         border-top: 1px solid #ddd;
         padding-top: 7.5px;
+
         .st-btn {
             font-size: 14px;
             width: 100%;
