@@ -183,11 +183,12 @@ body {
                 }
 
                 @include min-width($lg-main) {
-                    &:not(:last-child) {
+                    &:not(.icon-cart) {
                         margin-right: 15px;
                     }
                 }
 
+                &.active,
                 &:hover {
                     color: $primary-color;
                 }
@@ -544,8 +545,9 @@ body {
 #about-boutique {}
 
 .about-boutique {
-    background: url('../images/about-boutique/bg-dotted.png') no-repeat 0 center / 55%;
-
+    @include min-width($md-main) {
+        background: url('../images/about-boutique/bg-dotted.png') no-repeat 0 center / 55%;
+    }
     .lt {
         .round-gray-img {
             height: 300px;
@@ -711,7 +713,6 @@ body {
             }
 
             p {
-                font-family: 'Open Sans', sans-serif;
                 font-size: 15px;
                 line-height: 28px;
                 letter-spacing: .6px;

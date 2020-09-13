@@ -4,10 +4,12 @@ $(function () {
         items: 1,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
         loop: true,
         autoplayHoverPause: true,
-        mouseDrag: false
+        nav: true,
+        navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
     });
 
     // OUR FEATURES SLIDER
@@ -172,6 +174,21 @@ $(function () {
         })
         $(document).click(function () {
             $('.header-search .close-search').parent().slideUp(200).prev().removeClass('active')
+        })
+    })();
+
+    // HEADER ICON
+    (function () {
+        $('.cart-menu .icon-cart').click(function (ev) {
+            ev.stopPropagation()
+            $(this).toggleClass('active').next().slideToggle(200)
+        })
+
+        $('.header-cart-items').click(function (ev) {
+            ev.stopPropagation()
+        })
+        $(document).click(function () {
+            $('.cart-menu .icon-cart').removeClass('active').next().slideUp(200)
         })
     })();
 

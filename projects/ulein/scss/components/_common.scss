@@ -467,6 +467,7 @@
                 }
             }
         }
+
         &.active {
             >a {
                 color: $primary-color;
@@ -977,12 +978,14 @@ ul.st-left-multilevel-menu {
         font-size: 15px;
         padding: 9px 16px 8px;
         border-radius: 45px;
+
         @include min-width($md-main) {
             padding: 11px 20px 9px;
         }
 
         &.with-icon {
             padding: 7px 16px 8px;
+
             @include min-width($md-main) {
                 padding: 9px 20px 10px;
             }
@@ -1243,7 +1246,7 @@ ul.st-left-multilevel-menu {
 
         .st-product-item-inner {
             border: 1px solid #c0c0c0;
-            padding: 20px;
+            padding: 25px;
         }
 
         .img-sec {
@@ -1286,6 +1289,7 @@ ul.st-left-multilevel-menu {
 
     .view-more-btn-container {
         padding: 10px 10px 0;
+
         @include min-width($md-main) {
             padding: 30px 10px 0;
         }
@@ -1293,6 +1297,7 @@ ul.st-left-multilevel-menu {
         .st-btn {
             padding-left: 25px;
             padding-right: 25px;
+
             @include min-width($md-main) {
                 padding-left: 30px;
                 padding-right: 30px;
@@ -1363,9 +1368,11 @@ ul.st-left-multilevel-menu {
     z-index: 234;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
     padding: 35px 20px 20px;
+
     @include min-width($lg-main) {
         padding: 35px 20px;
     }
+
     .close-search {
         top: 5px;
         right: 18px;
@@ -1389,6 +1396,7 @@ ul.st-left-multilevel-menu {
             box-shadow: none !important;
             border-color: #777;
         }
+
         @include min-width($lg-main) {
             font-size: 20px;
             height: 55px;
@@ -1412,6 +1420,7 @@ ul.st-left-multilevel-menu {
             // background: darken($color: $light-white, $amount: 10);
             color: $primary-color;
         }
+
         @include min-width($lg-main) {
             font-size: 27px;
             right: 11px;
@@ -1598,6 +1607,79 @@ $xlAngleHeight:100px;
 
         @include min-width($xl-main) {
             border-top-width: $xlAngleHeight;
+        }
+    }
+}
+
+
+.header-cart-items {
+    display: none;
+    width: 250px;
+    right: 0;
+    top: calc(100% + 10px);
+    background: #fff;
+    z-index: 9;
+    @include box-shadow(1px, 1px, 4px, 0, rgba(0, 0, 0, 0.4));
+    padding: 7.5px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    .header-cart-items-inner {
+        max-height: 250px;
+        overflow: auto;
+    }
+    .cart-item {}
+
+    .cart-item-inner {
+        padding: 7.5px 15px;
+
+        .img-sec {
+            width: 55px;
+            height: 55px;
+            border: 1px solid #ddd;
+            padding: 3px;
+        }
+
+        .text-sec {
+            width: calc(100% - 55px);
+
+            .content {
+                width: calc(100% - 30px);
+
+                .name {
+                    font-weight: 600;
+                    color: #333;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    margin-bottom: 3px;
+                }
+
+                .p-and-q {
+                    font-weight: 500;
+                    font-size: 15px;
+
+                    .price {
+                        font-weight: 600;
+                        margin-left: 4px;
+                    }
+                }
+            }
+
+            .actions {
+                width: 30px;
+                padding-top: 2px;
+            }
+        }
+    }
+
+    .header-cart-items-btn {
+        border-top: 1px solid #ddd;
+        padding-top: 7.5px;
+        .st-btn {
+            font-size: 14px;
+            width: 100%;
         }
     }
 }
