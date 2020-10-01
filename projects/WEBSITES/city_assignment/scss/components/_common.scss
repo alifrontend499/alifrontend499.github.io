@@ -379,11 +379,11 @@
         // }
 
         @include min_width($lg-main) {
-            padding-right: 20px;
+            margin-right: 20px;
         }
 
         @include min_width($xl-main) {
-            padding-right: 35px;
+            margin-right: 35px;
         }
 
         @include max_width($lg-less-one) {
@@ -403,6 +403,7 @@
             width: 100%;
             left: 0;
             top: 85%;
+            @include box-shadow(0px, 0px, 5px, 0, rgba(0, 0, 0, 0.2));
             @include transition;
 
             @include max-width($lg-less-one) {
@@ -410,17 +411,24 @@
             }
 
             @include min-width($lg-main) {
-                width: 170px;
+                width: 180px;
                 position: absolute;
                 visibility: hidden;
                 opacity: 0;
+                border-radius: 4px;
+                overflow: hidden;
+
             }
 
             >li {
                 >a {
-                    padding: 13px 15px;
+                    // padding: 13px 15px;
+                    // border-bottom: 1px solid #ddd;
+                    // color: #333;
+                    padding: 8px 15px;
                     border-bottom: 1px solid #ddd;
                     color: #333;
+                    line-height: 23px;
                     @include transition;
 
                     &:hover {

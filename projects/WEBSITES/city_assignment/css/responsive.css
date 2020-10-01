@@ -141,19 +141,21 @@
     #header.active .header-main-col>.hm-rt {
     } */
     #header.active #header-main {
-        /* margin-top: -162px; */
-        margin-top: -131px;
+        margin-top: -162px;
+        /* margin-top: -131px; */
     }
     #header.active #header-menu {
         margin-top: -3px;
     }
 
     .header-like-margin-top {
-        margin-top: 218px;
+        /* margin-top: 218px; */
+        margin-top: 253px;
     }
 
     .header-like-padding-top {
-        padding-top: 218px;
+        /* padding-top: 218px; */
+        padding-top: 253px;
     }
     #ST_banner .caption .st-head{
         font-size: 25px;

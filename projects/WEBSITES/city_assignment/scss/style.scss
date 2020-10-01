@@ -582,6 +582,7 @@ body {
 
             img {
                 max-height: 100%;
+                background-color: #fff;
             }
 
             &:before,
@@ -596,6 +597,14 @@ body {
                 transition-delay: .2s;
                 transform: translateX(-50%);
                 height: 0;
+            }
+
+            .icon-main {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 21px;
+                color: $primary-color;
             }
 
             &:before {
