@@ -1223,3 +1223,95 @@ footer {
     border-radius: 3px;
     color: #fff;
 }
+
+// OUR SERVICES
+#our-services-designing-services-block-one {}
+
+.our-services-designing-services-block-one {
+    >.rt {
+        >.inner {
+            padding: 20px 0;
+
+            @include min-width($md-main) {
+                padding: 40px 0;
+            }
+
+            @include min-width($lg-main) {}
+
+        }
+
+        .list-arrow {
+            margin-top: 15px;
+
+            @include min-width($lg-main) {
+                margin-top: 30px;
+            }
+        }
+
+        .discover-more-btn-container {
+            margin-top: 20px;
+
+            @include min-width($md-main) {
+                margin-top: 30px;
+            }
+
+            @include min-width($lg-main) {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+.designing-services-block-two-container {
+    @include min-width($md-main) {
+        margin: 0 -12px;
+    }
+    >.item {
+        width: 100%;
+        padding: 0 12px;
+
+        @include min-width($md-main) {
+            width: 33.3%;
+        }
+
+        @include min-width($lg-main) {}
+
+        >.inner {
+            background-color: #fff;
+            padding: 15px 15px;
+            border-radius: 5px;
+            top: 0px;
+            @include transition;
+            @include min-width($md-main) {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            @include min-width($lg-main) {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            &:hover {
+                top: -15px;
+                @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
+            }
+        }
+    }
+
+    .img-sec {
+        height: 90px;
+        width: 90px;
+        margin-bottom: 15px;
+    }
+
+    .text-sec {
+        .st-head {
+            font-size: 25px;
+        }
+
+        .st-desc {
+            font-size: 16px;
+        }
+    }
+}

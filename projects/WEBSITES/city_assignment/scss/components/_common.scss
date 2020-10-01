@@ -1,33 +1,3 @@
-// LOGO DESIGN
-// .st-logo {
-//     font-family: 'poppins-extrabold', sans-serif;
-//     font-size: 32px;
-//     height: 50px;
-//     line-height: 33px;
-//     color: $primary-color;
-//     -webkit-user-select: none;
-//     -ms-user-select: none;
-//     user-select: none;
-
-//     span {
-//         font-family: 'poppins-medium', sans-serif;
-//         font-size: 15px;
-//         line-height: 20px;
-//         left: 0px;
-//         top: -1px;
-//         color: #333;
-//     }
-
-//     &:hover {
-//         color: darken($color: $primary-color, $amount: 5);
-//     }
-
-//     &:active {
-//         color: darken($color: $primary-color, $amount: 12);
-//     }
-// }
-
-
 // SCROLLBAR
 /* width */
 ::-webkit-scrollbar {
@@ -51,7 +21,9 @@
 }
 
 // COMMON CSS
-
+.img-fluid-height {
+    max-height: 100%;
+}
 .clear-parent::after {
     content: "";
     display: block;
@@ -440,6 +412,13 @@
                 &:last-child {
                     >a {
                         border-bottom: none;
+                    }
+                }
+
+                &.active {
+                    >a {
+                        background-color: $secondary-color;
+                        color: #fff;
                     }
                 }
             }
@@ -905,7 +884,7 @@ ul.st-left-multilevel-menu {
     font-family: 'carmen-sans-regular', sans-serif;
     background-color: #333;
     font-size: 15px;
-    padding: 9px 15px 9px;
+    padding: 9px 15px 10px;
     border-radius: 5px;
     color: #fff;
     box-shadow: none;
@@ -991,6 +970,7 @@ ul.st-left-multilevel-menu {
 
         @include min-width($lg-main) {
             font-size: 40px;
+            margin-bottom: 30x;
         }
     }
 }
@@ -1014,6 +994,16 @@ ul.st-left-multilevel-menu {
     @include min-width($lg-main) {
         font-size: 17px;
         line-height: 24px;
+    }
+
+    &.has-margin {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+
+            @include min-width($md-main) {
+                margin-bottom: 15px;
+            }
+        }
     }
 }
 
@@ -1039,6 +1029,9 @@ ul.st-left-multilevel-menu {
 
         @include min-width($lg-main) {
             font-size: 18px;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -1068,4 +1061,35 @@ ul.st-left-multilevel-menu {
         top: 10px;
         right: 10px;
     }
+}
+
+.list-arrow {
+    >li {
+        font-size: 16px;
+        line-height: 23px;
+
+        &:before {
+            content: '\f30b';
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            font-size: 13px;
+            color: $secondary-color;
+
+        }
+
+        &.has-margin {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.st-link {
+
 }
