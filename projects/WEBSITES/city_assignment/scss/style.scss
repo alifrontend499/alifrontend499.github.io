@@ -1225,6 +1225,7 @@ footer {
 }
 
 // OUR SERVICES
+// designing
 #our-services-designing-services-block-one {}
 
 .our-services-designing-services-block-one {
@@ -1266,9 +1267,10 @@ footer {
     @include min-width($md-main) {
         margin: 0 -12px;
     }
+
     >.item {
         width: 100%;
-        padding: 0 12px;
+        padding: 0 12px 24px;
 
         @include min-width($md-main) {
             width: 33.3%;
@@ -1277,24 +1279,23 @@ footer {
         @include min-width($lg-main) {}
 
         >.inner {
-            background-color: #fff;
-            padding: 15px 15px;
-            border-radius: 5px;
+            // background-color: #fff;
+            // padding: 15px 15px;
+            // border-radius: 5px;
             top: 0px;
-            @include transition;
-            @include min-width($md-main) {
-                padding-top: 25px;
-                padding-bottom: 25px;
-            }
+            // @include transition;
+            // @include min-width($md-main) {
+            //     padding-top: 25px;
+            //     padding-bottom: 25px;
+            // }
 
-            @include min-width($lg-main) {
-                padding-top: 30px;
-                padding-bottom: 30px;
-            }
+            // @include min-width($lg-main) {
+            //     padding-top: 30px;
+            //     padding-bottom: 30px;
+            // }
 
             &:hover {
                 top: -15px;
-                @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
             }
         }
     }
@@ -1312,6 +1313,61 @@ footer {
 
         .st-desc {
             font-size: 16px;
+        }
+    }
+}
+
+// development
+#our-services-development-services-block-one {}
+
+.our-services-development-services-block-one {
+    >.item {
+        margin-bottom: 30px;
+
+        >.inner {}
+
+        .icon-sec {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: $primary-color;
+            height: 50px;
+        }
+    }
+}
+
+// seo
+#our-services-seo-services {
+    background: transparent url('../images/it-services/seo/seo-curve.png') no-repeat left center / auto;
+    >.our-services-seo-services-inner {}
+}
+
+// seo block one
+#seo-services-block-one {}
+
+.seo-services-block-one {
+    background: transparent url('../images/it-services/seo/seo-curve-line.png') no-repeat left center / auto;
+    padding-bottom: 15px;
+
+    >.item {        
+        &.one,
+        &.three {
+            top: 15px;
+        }
+        >.inner {
+            background: transparent url('../images/it-services/seo/seo-polygon.png') no-repeat center / auto;
+            transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+            padding: 65px 0;
+            width: 250px;            
+        }
+
+        .icon-sec {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: $primary-color;
+            height: 50px;
+        }
+        .st-head {
+            font-size: 22px;
         }
     }
 }

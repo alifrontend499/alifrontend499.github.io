@@ -24,6 +24,7 @@
 .img-fluid-height {
     max-height: 100%;
 }
+
 .clear-parent::after {
     content: "";
     display: block;
@@ -499,6 +500,11 @@ $DEFmdScreensMargin: 40px;
 
 // SITE BANNER
 #ST_banner {
+    .img-sec {
+        img {
+            width: 100%;
+        }
+    }
     .caption {
         top: 50%;
         width: 100%;
@@ -970,7 +976,7 @@ ul.st-left-multilevel-menu {
 
         @include min-width($lg-main) {
             font-size: 40px;
-            margin-bottom: 30x;
+            margin-bottom: 30px;
         }
     }
 }
@@ -1015,7 +1021,8 @@ ul.st-left-multilevel-menu {
     }
 
     .st-head {
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .st-desc {
@@ -1090,6 +1097,153 @@ ul.st-left-multilevel-menu {
         }
     }
 }
-.st-link {
 
+.st-link {}
+
+
+.section-bg-triangle {
+    $defAngleHeight: 20px;
+    $mdAngleHeight: 60px;
+    $lgAngleHeight: 80px;
+    $xlAngleHeight: 120px;
+    $bgColor: lighten($color: $secondary-color, $amount: 55%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $bgColor;
+    height: 70%;
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-color: transparent;
+        border-width: 0;
+
+        border-bottom-color: $bgColor;
+        border-left-width: 98.8vw;
+        border-bottom-width: $defAngleHeight;
+        margin-top: -$defAngleHeight;
+
+        @include min-width($md-main) {
+            border-bottom-width: $mdAngleHeight;
+            margin-top: -$mdAngleHeight;
+        }
+
+        @include min-width($lg-main) {
+            border-bottom-width: $lgAngleHeight;
+            margin-top: -$lgAngleHeight;
+        }
+
+        @include min-width($xl-main) {
+            border-bottom-width: $xlAngleHeight;
+            margin-top: -$xlAngleHeight;
+        }
+    }
+}
+
+.item-box-shadow {
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+    @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
+
+    @include min-width($md-main) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    @include min-width($lg-main) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.item-box-shadow-hover {
+    @include transition;
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+
+    @include min-width($md-main) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    @include min-width($lg-main) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &:hover {
+        @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
+    }
+}
+
+.widget-left-icon-with-text {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    >.inner {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .item {
+        padding: 0 10px 30px;
+        width: 50%;
+
+        >.inner {}
+
+        i {
+            font-size: 25px;
+            width: 45px;
+            color: $primary-color;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 17px;
+            color: $primary-color;
+        }
+    }
+}
+
+.widget-left-count-with-text {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    >.inner {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .item {
+        padding: 0 10px 30px;
+        width: 50%;
+
+        >.inner {
+            background: lighten($color: $secondary-color, $amount: 56%);
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .count {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: lighten($color: $secondary-color, $amount: 30%);
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .text {
+            font-size: 18px;
+            font-weight: 700;
+            color: $primary-color;
+            padding-left: 20px;
+            line-height: 26px;
+        }
+    }
 }
