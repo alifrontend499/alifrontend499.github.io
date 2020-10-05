@@ -266,6 +266,16 @@ ul.st-left-multilevel-menu ul > li > a:active { background-color: #0f3e7d; }
 .widget-left-count-with-text .item .count { height: 40px; width: 40px; border-radius: 50%; background: #fc7387; font-size: 18px; color: #fff; }
 .widget-left-count-with-text .item .text { font-size: 18px; font-weight: 700; color: #124b98; padding-left: 20px; line-height: 26px; }
 
+.widget-plus-left-container > .widget-plus-left-block:not(:last-child) { margin-bottom: 30px; }
+.widget-plus-left-container > .widget-plus-left-block > .inner { background-color: #fff; -webkit-box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1); padding: 25px 25px; border-radius: 5px; }
+.widget-plus-left-container > .widget-plus-left-block .icon-sec { height: 45px; width: 45px; background: #fc7387; color: #fff; font-size: 15px; border-radius: 50%; }
+.widget-plus-left-container > .widget-plus-left-block .text-sec .st-head { font-size: 28px; margin-bottom: 10px; }
+
+.widget-content-with-icon > .item { margin-bottom: 30px; }
+.widget-content-with-icon > .item > .inner { padding: 15px 15px; border-radius: 5px; }
+.widget-content-with-icon > .item .icon-sec { font-size: 34px; margin-bottom: 15px; color: #124b98; height: 40px; }
+.widget-content-with-icon > .item .text-sec .st-head { font-size: 25px; margin-bottom: 15px; }
+
 body { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; }
 @media screen and (min-width: 768px) { body { font-size: 16px; } }
 

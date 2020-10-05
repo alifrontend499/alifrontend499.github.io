@@ -505,6 +505,7 @@ $DEFmdScreensMargin: 40px;
             width: 100%;
         }
     }
+
     .caption {
         top: 50%;
         width: 100%;
@@ -1244,6 +1245,72 @@ ul.st-left-multilevel-menu {
             color: $primary-color;
             padding-left: 20px;
             line-height: 26px;
+        }
+    }
+}
+
+.widget-plus-left-container {
+    >.widget-plus-left-block {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        >.inner {
+            background-color: #fff;
+            @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
+            padding: 25px 25px;
+            border-radius: 5px;
+        }
+
+        .icon-sec {
+            height: 45px;
+            width: 45px;
+            background: lighten($color: $secondary-color, $amount: 30%);
+            color: #fff;
+            font-size: 15px;
+            border-radius: 50%;
+        }
+
+        .text-sec {
+            .st-head {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.widget-content-with-icon {
+    >.item {
+        margin-bottom: 30px;
+
+        >.inner {
+            padding: 15px 15px;
+            border-radius: 5px;
+
+            @include min-width($md-main) {
+                // padding-top: 25px;
+                // padding-bottom: 25px;
+            }
+
+            @include min-width($lg-main) {
+                // padding-top: 30px;
+                // padding-bottom: 30px;
+            }
+        }
+
+        .icon-sec {
+            font-size: 34px;
+            margin-bottom: 15px;
+            color: $primary-color;
+            height: 40px;
+        }
+
+        .text-sec {
+            .st-head {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
         }
     }
 }

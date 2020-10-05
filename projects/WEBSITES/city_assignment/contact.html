@@ -150,7 +150,7 @@
                                                 </a>
                                             </li>
                                             <li class="">
-                                                <a href="coming-soon.html"
+                                                <a href="services-social-media-marketing.html"
                                                     class="text-capitalize d-block text-decoration-none">
                                                     Social Media Marketing
                                                 </a>
@@ -435,6 +435,41 @@
     <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
     <!-- SCRIPT CUSOMT -->
     <script src="js/app.js"></script>
+
+    <script>
+        // SENDING MAIL TO THE ADMIN
+        $(function () {
+            $("#contact-us-form").submit(function (ev) {
+                ev.preventDefault()
+                var firstName = $("[name='firstName']").val();
+                var lastName = $("[name='lastName']").val();
+                var email = $("[name='email']").val();
+                var phone = $("[name='phone']").val();
+                var city = $("[name='city']").val();
+                var subject = $("[name='subject']").val();
+                var comment = $("[name='comment']").val();
+
+                $.post("mail.php", {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    phone: phone,
+                    city: city,
+                    subject: subject,
+                    comment: comment,
+                }, function (result) {
+                    if (result) {
+                        $('.form-msg').fadeIn(100).find('>p').text("Thank you for contacting us! We'll call you soon")
+
+                        $('html, body').animate({ scrollTop: $('.form-msg').offset().top - 60 }, 500)
+                        setTimeout(() => {
+                            $('.form-msg').fadeOut(100).find('>p').text("")
+                        }, 4000);
+                    }
+                });
+            });
+        })
+    </script>
 </body>
 
 </html>
