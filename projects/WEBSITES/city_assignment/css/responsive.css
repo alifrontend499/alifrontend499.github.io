@@ -160,6 +160,10 @@
     #ST_banner .caption .st-head{
         font-size: 25px;
     }
+
+    .widget-left-icon-with-text .item p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 575px) {

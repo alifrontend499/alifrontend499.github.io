@@ -198,21 +198,25 @@
                         <p class="st-head">Get a quote</p>
                         <div class="HC_form">
                             <form action="#" id="st-get-a-auote-form">
-                                <div class="form-group st-form">
-                                    <input type="text" class="form-control rounded-0 lightgray" placeholder="Name">
+                                <div class="form-msg get-a-quote-form-msg w-100" style="display: none;">
+                                    <p></p>
                                 </div>
                                 <div class="form-group st-form">
-                                    <input type="email" class="form-control rounded-0 lightgray" placeholder="Email">
+                                    <input type="text" name="fullName" class="form-control rounded-0 lightgray" placeholder="Full Name"
+                                        required>
                                 </div>
                                 <div class="form-group st-form">
-                                    <input type="text" class="form-control rounded-0 lightgray" placeholder="Phone">
+                                    <input type="email" name="email" class="form-control rounded-0 lightgray" placeholder="Email" required>
                                 </div>
                                 <div class="form-group st-form">
-                                    <textarea rows="5" class="form-control rounded-0 lightgray"
-                                        placeholder="Message"></textarea>
+                                    <input type="text" name="phone" class="form-control rounded-0 lightgray" placeholder="Phone">
+                                </div>
+                                <div class="form-group st-form">
+                                    <textarea rows="5" name="comment" class="form-control rounded-0 lightgray" placeholder="Message"
+                                        required></textarea>
                                 </div>
                                 <div class="submit-btn">
-                                    <button class="btn btn-block st-btn rounded-0 text-uppercase">submit</button>
+                                    <button type="submit" class="btn btn-block st-btn rounded-0 text-uppercase">submit</button>
                                 </div>
                             </form>
                         </div>
@@ -373,10 +377,10 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 mt-3 mt-md-4 text-center view-all-btn-container">
+                    <!-- <div class="col-12 mt-3 mt-md-4 text-center view-all-btn-container">
                         <a href="our-services.html" class="btn st-btn text-capitalize st-btn-secondary">view all
                             services</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -436,7 +440,7 @@
                                 <ul class="list-unstyled footer-ul">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="our-services.html">Assignment Services</a></li>
-                                    <li><a href="coming-soon.html">IT Services</a></li>
+                                    <li><a href="our-services.html">IT Services</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="student-reviews.html">Review</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
@@ -479,8 +483,62 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- OWL CAROUSEL -->
     <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f54d0244704467e89ec8d20/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
     <!-- SCRIPT CUSOMT -->
     <script src="js/app.js"></script>
+    
+    <script>
+        // SENDING MAIL TO THE ADMIN get a quote popup
+        $(function () {
+            $("#st-get-a-auote-form").submit(function (ev) {
+                ev.preventDefault()
+                $('#st-get-a-auote-form').find('[type="submit"]').attr('disabled', true);
+
+                var fullName = $("[name='fullName']").val();
+                var email = $("[name='email']").val();
+                var phone = $("[name='phone']").val();
+                var comment = $("[name='comment']").val();
+
+                $.post("mail-get-a-quote.php", {
+                    fullName: fullName,
+                    email: email,
+                    phone: phone,
+                    comment: comment,
+                }, function (res) {
+                    const response = JSON.parse(res)
+                    if (response.type) {
+                        $('#st-get-a-auote-form').find('[type="submit"]').attr('disabled', false);
+
+                        $('#st-get-a-auote-form').find("input[type=text], textarea").val("");
+
+                        $('.form-msg.get-a-quote-form-msg').fadeIn(100).find('>p').text("Thank you for contacting us! We'll call you soon");
+
+                        setTimeout(() => {
+                            $('.form-msg.get-a-quote-form-msg').fadeOut(100).find('>p').text("")
+                            $('#getAQuoteModal').modal("hide")
+                        }, 4000);
+
+                    } else {
+                        console.log(response.data)
+                    }
+                });
+            });
+        })
+    </script>
 </body>
 
 </html>

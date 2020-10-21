@@ -75,14 +75,14 @@ $(function () {
             console.log(ev)
         });
 
-        $('#st-assignment-help-form').submit(function (ev) {
-            ev.preventDefault();
-            $('#assignmentSubmitModal').modal('show')
+        // $('#st-assignment-help-form').submit(function (ev) {
+        //     ev.preventDefault();
+        //     $('#assignmentSubmitModal').modal('show')
 
-            setTimeout(() => {
-                $('#assignmentSubmitModal').modal('hide')
-            }, 4000);
-        });
+        //     setTimeout(() => {
+        //         $('#assignmentSubmitModal').modal('hide')
+        //     }, 4000);
+        // });
     })();
 
     // FOR INPUTS - IF ctrl+a NOT WORKING

@@ -963,7 +963,7 @@ ul.st-left-multilevel-menu {
     margin-bottom: 10px;
     letter-spacing: .5px;
 
-    @include min-width($md-main) {
+    @include min-width($lg-main) {
         font-size: 30px;
         margin-bottom: $defaultGap;
     }
@@ -1167,10 +1167,10 @@ ul.st-left-multilevel-menu {
     padding: 15px 15px;
     border-radius: 5px;
 
-    @include min-width($md-main) {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+    // @include min-width($md-main) {
+    //     padding-top: 25px;
+    //     padding-bottom: 25px;
+    // }
 
     @include min-width($lg-main) {
         padding-top: 30px;
@@ -1192,21 +1192,40 @@ ul.st-left-multilevel-menu {
     }
 
     .item {
-        padding: 0 10px 30px;
+        padding: 0 10px 20px;
         width: 50%;
+
+        @include min-width($md-main) {
+            padding-bottom: 30px;
+        }
+
+        // &:nth-last-child(1),
+        // &:nth-last-child(2) {
+        //     padding-bottom: 0;
+        // }
 
         >.inner {}
 
         i {
-            font-size: 25px;
-            width: 45px;
+            font-size: 16px;
+            width: 35px;
+
             color: $primary-color;
+
+            @include min-width($lg-main) {
+                font-size: 25px;
+                width: 45px;
+            }
         }
 
         p {
             font-weight: 700;
-            font-size: 17px;
+            font-size: 16px;
             color: $primary-color;
+
+            @include min-width($lg-main) {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -1221,30 +1240,46 @@ ul.st-left-multilevel-menu {
     }
 
     .item {
-        padding: 0 10px 30px;
+        padding: 0 10px 20px;
         width: 50%;
 
         >.inner {
             background: lighten($color: $secondary-color, $amount: 56%);
-            padding: 25px;
+            padding: 10px;
             border-radius: 5px;
+
+            @include min-width($lg-main) {
+                padding: 25px;
+            }
         }
 
         .count {
-            height: 40px;
-            width: 40px;
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
             background: lighten($color: $secondary-color, $amount: 30%);
             font-size: 18px;
             color: #fff;
+
+            @include min-width($lg-main) {
+                height: 40px;
+                width: 40px;
+            }
         }
 
         .text {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             color: $primary-color;
-            padding-left: 20px;
-            line-height: 26px;
+            padding-left: 10px;
+            line-height: 22px;
+
+            @include min-width($lg-main) {
+                font-size: 18px;
+                font-weight: 700;
+                padding-left: 20px;
+                line-height: 26px;
+            }
         }
     }
 }
@@ -1252,29 +1287,44 @@ ul.st-left-multilevel-menu {
 .widget-plus-left-container {
     >.widget-plus-left-block {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            @include min-width($lg-main) {
+                margin-bottom: 30px;
+            }
         }
 
         >.inner {
             background-color: #fff;
             @include box-shadow(0px, 0px, 10px, 0, rgba(0, 0, 0, 0.1));
-            padding: 25px 25px;
+            padding: 20px 15px;
             border-radius: 5px;
+
+            @include min-width($lg-main) {
+                padding: 25px 25px;
+            }
         }
 
         .icon-sec {
-            height: 45px;
-            width: 45px;
+            height: 35px;
+            width: 35px;
             background: lighten($color: $secondary-color, $amount: 30%);
             color: #fff;
-            font-size: 15px;
+            font-size: 13px;
             border-radius: 50%;
+
+            @include min-width($lg-main) {
+                height: 45px;
+                width: 45px;
+                font-size: 15px;
+            }
         }
 
         .text-sec {
             .st-head {
-                font-size: 28px;
-                margin-bottom: 10px;
+                @include min-width($md-main) {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }

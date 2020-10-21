@@ -422,7 +422,7 @@ body {
         }
 
         @include min-width($lg-main) {
-            width: 350px;
+            width: 450px;
         }
     }
 
@@ -1233,9 +1233,9 @@ footer {
         >.inner {
             padding: 20px 0;
 
-            @include min-width($md-main) {
-                padding: 40px 0;
-            }
+            // @include min-width($md-main) {
+            //     padding: 40px 0;
+            // }
 
             @include min-width($lg-main) {}
 
@@ -1322,15 +1322,28 @@ footer {
 
 .our-services-development-services-block-one {
     >.item {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+
+        @include min-width($md-main) {
+            margin-bottom: 15px;
+        }
+
+        @include min-width($lg-main) {
+            margin-bottom: 30px;
+        }
 
         >.inner {}
 
         .icon-sec {
-            font-size: 40px;
+            font-size: 30px;
             margin-bottom: 15px;
             color: $primary-color;
-            height: 50px;
+            height: 40px;
+
+            @include min-width($lg-main) {
+                height: 50px;
+                font-size: 40px;
+            }
         }
     }
 }
@@ -1338,6 +1351,7 @@ footer {
 // seo
 #our-services-seo-services {
     background: transparent url('../images/it-services/seo/seo-curve.png') no-repeat left center / auto;
+
     >.our-services-seo-services-inner {}
 }
 
@@ -1345,29 +1359,51 @@ footer {
 #seo-services-block-one {}
 
 .seo-services-block-one {
-    background: transparent url('../images/it-services/seo/seo-curve-line.png') no-repeat left center / auto;
-    padding-bottom: 15px;
+    @include min-width($md-main) {
+        background: transparent url('../images/it-services/seo/seo-curve-line.png') no-repeat left center / 100% auto;
+        padding-bottom: 15px;
+    }
 
-    >.item {        
+    >.item {
+
         &.one,
         &.three {
-            top: 15px;
+            @include min-width($lg-main) {
+                top: 15px;
+            }
         }
+
         >.inner {
-            background: transparent url('../images/it-services/seo/seo-polygon.png') no-repeat center / auto;
+            background: transparent url('../images/it-services/seo/seo-polygon.png') no-repeat center / 180px;
             transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-            padding: 65px 0;
-            width: 250px;            
+            padding: 45px 0;
+
+            @include min-width($lg-main) {
+                padding: 65px 0;
+                background-size: auto;
+                width: 250px;
+            }
         }
 
         .icon-sec {
-            font-size: 40px;
-            margin-bottom: 15px;
+            font-size: 35px;
+            margin-bottom: 5px;
             color: $primary-color;
-            height: 50px;
+            height: 45px;
+
+            @include min-width($lg-main) {
+                font-size: 40px;
+                margin-bottom: 15px;
+                height: 50px;
+            }
         }
+
         .st-head {
-            font-size: 22px;
+            font-size: 16px;
+            padding: 0 20px;
+            @include min-width($lg-main) {
+                font-size: 22px;
+            }
         }
     }
 }

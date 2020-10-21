@@ -1,0 +1,160 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* .container {
+        max-width: 750px;
+    } */
+}
+
+
+@media (max-width: 991px) {
+    .header-menu-col>.menu>.inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background: #124b98;
+        z-index: 123;
+        transition: .3s;
+        overflow: auto;
+    }
+
+    .header-menu-col>.menu:not(.active)>.inner {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .header-menu-col>.menu .mob-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        z-index: 12;
+        display: none;
+    }
+
+    .mob-menu-btn a {
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        z-index: 123;
+        position: relative;
+    }
+
+    .mob-menu-btn a.active {
+        /* color: #000; */
+        position: fixed;
+        top: 5px;
+        left: 210px;
+    }
+
+    .mob-menu-btn a.active>i {
+        color: #d20423;
+        background: #fff;
+        border-radius: 4px;
+        font-weight: 700;
+    }
+
+    .st-head-menu {
+        margin-top: 10px;
+    }
+
+    #header-menu {
+        padding: 7px 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header-main {
+        padding: 10px 0;
+    }
+
+    .header-main-col>.hm-rt {
+        width: 100%;
+    }
+
+    .header-main-col>.hm-lt {
+        width: 260px;
+        margin: 0 auto 13px;
+    }
+
+    .header-main-col>.hm-lt>.inner,
+    .header-main-col>.hm-rt>.inner {
+        width: 100%;
+    }
+
+    .header-main .hm-rt .frac .head i {
+        font-size: 17px;
+    }
+
+    .header-main .hm-rt .frac .content {
+        font-size: 17px;
+    }
+
+    #header-top {
+        min-height: 40px;
+
+        display: -ms-flexbox !important;
+        display: flex !important;
+
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+
+    .header-top p {
+        font-size: 14px;
+    }
+
+    #header.active #header-main {
+        margin-top: -162px;
+    }
+
+    #header.active #header-menu {
+        margin-top: -3px;
+    }
+
+    .header-like-margin-top {
+        margin-top: 253px;
+    }
+
+    .header-like-padding-top {
+        padding-top: 253px;
+    }
+
+}
+
+@media (max-width: 575px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}
