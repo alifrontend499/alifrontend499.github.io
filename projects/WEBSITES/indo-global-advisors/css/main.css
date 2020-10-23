@@ -106,6 +106,7 @@ iframe {
 
 p {
     margin: 0 0 15px;
+    color: #333;
 }
 
 *::-moz-selection {
@@ -616,6 +617,9 @@ img {
 
 .spacing-4 {
     padding: 65px 25px 55px 60px;
+}
+.spacing-4-less {
+    padding: 15px 25px 20px 45px;
 }
 
 .spacing-5 {
@@ -2537,7 +2541,8 @@ ul.social-icons {
 .footer {
     position: relative;
     z-index: 1;
-    background-color: #1f2437;
+    /* background-color: #1f2437; */
+    background-color: #1f1f1f;
     background-image: url(../images/footer-bg.png);
     background-position: center center;
     background-attachment: scroll;
@@ -2725,16 +2730,21 @@ ul.widget_contact_wrapper li i {
 }
 
 .bottom-footer-text {
-    border-top: 1px dashed rgba(255, 255, 255, .06);
-    padding-top: 53px;
-    margin-top: -50px;
+    /* border-top: 1px dashed rgba(255, 255, 255, .06); */
+    /* padding-top: 53px;
+    margin-top: -50px; */
+    padding-top: 0;
+    margin-top: 0;
+    background-color: #131313;
 }
 
 
 /** copyright **/
 .copyright {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    /* padding-top: 23px;
+    padding-bottom: 23px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 13px;
     line-height: 24px;
 }
@@ -3569,4 +3579,54 @@ article.cmt-blog-classic .cmt-box-post-date .cmt-entry-date {
     font-style: normal;
     color: #000;
     font-weight: 500;
+}
+
+#totop.top-visible,
+.footer .widget .widget-title:before {
+    background-color: #ce8d0e !important;
+}
+footer .cmt-textcolor-skincolor,
+.social-icons.circle li>a,
+.social-icons.circle li>a >i {
+    color: #ce8d0e !important;
+}
+.footer .social-icons li>a {
+    border-color: #ce8d0e !important;
+}
+.social-icons.circle li>a:hover {
+    background-color: #ce8d0e;
+    color: #fff !important;
+}
+.social-icons.circle li>a:hover>i {
+    color: #fff !important;
+}
+
+.st-head {
+    font-size: 43px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.st-text {
+    color: #000;
+    font-size: 16px;
+}
+.st-text:not(:last-child) {
+    margin-bottom: 15px
+}
+.heading-right-desc {
+    font-size: 17px;
+    color: #444;
+    font-weight: 500;
+    line-height: 28px;
+}
+.img-fluid-height {
+    max-height: 100%;
+}
+.featured-icon-box.icon-align-top-content.style1 a.di_link:hover > i {
+    color: #fff 
+}
+
+.home-contact {
+    background: #333 url('../images/home-contact-bg') no-repeat center / cover
 }
