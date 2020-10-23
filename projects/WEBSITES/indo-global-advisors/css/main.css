@@ -3543,6 +3543,9 @@ article.cmt-blog-classic .cmt-box-post-date .cmt-entry-date {
 .box-shadow-none {
     box-shadow: none !important;
 }
+.transparent-hover-border:hover {
+    border-color: transparent !important;
+}
 
 .btn-home-serv {
     margin-bottom: -60px;
@@ -3550,6 +3553,20 @@ article.cmt-blog-classic .cmt-box-post-date .cmt-entry-date {
 .serv-item-inner {
     padding-bottom: 30px;
 }
-.transparent-hover-border:hover {
-    border-color: transparent !important;
+
+.serv-item-inner .featured-content {
+    padding: 20px 15px;
+}
+.serv-item-inner .featured-title h5 {
+    margin-bottom: 15px !important;
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+}
+
+.serv-item-inner .team-position {
+        font-size: 14px;
+    font-style: normal;
+    color: #000;
+    font-weight: 500;
 }
