@@ -338,11 +338,12 @@
     margin-bottom: 0; */
     font-weight: 500;
     text-transform: capitalize;
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 42px;
     margin-bottom: 6px;
     color: #333;
 }
+
 .section-title h2.title2 {
     font-weight: 700;
     text-transform: capitalize;
@@ -352,6 +353,17 @@
     color: #333;
     margin-top: 10px;
 }
+
+.section-title h2.title3 {
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 6px;
+    color: #333;
+    margin-top: 10px;
+}
+
 .section-title.title-style-center_text {
     text-align: center;
     margin-bottom: 22px;
@@ -1111,6 +1123,7 @@ i.fa-play {
     color: #666;
     letter-spacing: 1px;
 }
+
 .featured-title h5 {
     /* font-size: 19px; */
     font-size: 21px;
