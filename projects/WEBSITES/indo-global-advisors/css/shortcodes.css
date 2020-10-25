@@ -102,7 +102,7 @@
 }
 
 .cmt-row.conatact-section {
-    padding: 0 0 80px;
+    /* padding: 0 0 80px; */
 }
 
 .cmt-row.grid-section {
@@ -271,6 +271,7 @@
 .col-bg-img-one.cmt-col-bgimage-yes>.cmt-col-wrapper-bg-layer {
     background-image: url(../images/bg-image/col-bgimage-1.png);
     background-position: right center;
+    background-color: #000;
 }
 
 .col-bg-img-two.cmt-col-bgimage-yes>.cmt-col-wrapper-bg-layer {

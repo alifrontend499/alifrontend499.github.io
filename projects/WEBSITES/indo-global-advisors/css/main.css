@@ -1,64 +1,7 @@
-/**
-  * Name: Tripzia
-  * Version: 1.0
-  * Author: CymolThemes
-  * Author URI: http://www.CymolThemes.com
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap');
 
-/**
 
-  1. General
-     - Variables
-     - Extra-outer
-
-  2. Spacing
-
-  3. Color
-     - Skin-color, Skin-bg-color, Skin-border-color
-     - darkGrey-color, darkGrey-bg-color
-     - white-color, white-bg-color, white-border-color
-     - Grey-color, Grey-bg-color, grey-border-color
-
-  4. Pre-loader
-
-  5. SocialIcon / TooltipTop
-
-  6. Slick_dots/arrows
-
-  7. TopBar
-
-  8. Header
-     - SiteBrand(logo)
-     - SiteNavigation(Menu)
-     - side-menu
-
-  9. Footer
-     - FirstFooter
-     - SecondFooter
- 
-  10. GoTop BUtton
-  
-  11. Page-Title-Row
-
-  12. Inner-Pages
-      - single-pages-content
-      - Classic_Blog
-      - Single_Blog
-      - Contact_page
-      - Error_page
-      - Map
-
-**/
-
-
-/* ===============================================
-    General
-------------------------*/
-
-/** Variables **/
 article,
 aside,
 details,
@@ -2274,19 +2217,6 @@ ul.social-icons {
     background-color: #fff;
 }
 
-.top_bar nav.main-menu ul.menu>li>a {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 14px;
-    line-height: 14px;
-}
-
-.top_bar nav.main-menu ul.menu>li>a.active,
-.top_bar nav.main-menu ul.menu>li>a:hover {
-    background-color: #000 !important;
-    color: #fff;
-}
-
 .color-secondary {
     color: #232323 !important;
 }
@@ -2340,6 +2270,12 @@ ul.social-icons {
 }
 
 @media screen and (min-width: 992px) {
+    .site-branding img {
+        max-height: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .site-branding img {
         max-height: 78px;
     }
@@ -3740,7 +3676,7 @@ footer .cmt-textcolor-skincolor,
 }
 
 .testi-slider-cstm .user-img {
-    width: 300px;
+    width: 100%;
 }
 
 .testi-slider-cstm .user-img .comment-icon {
@@ -3755,8 +3691,13 @@ footer .cmt-textcolor-skincolor,
     right: 10px;
 }
 
-.testi-slider-cstm .text-sec {
-    padding-left: 50px;
+.testi-slider-cstm .user-img {
+    width: 300px;
+}
+@media (min-width: 768px) {
+    .testi-slider-cstm .text-sec {
+        padding-left: 50px;
+    }
 }
 
 
@@ -3778,4 +3719,56 @@ footer .cmt-textcolor-skincolor,
     color: #666;
     position: relative;
     top: -2px;
+}
+
+.top-bar-count-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.top-bar-count-list>li {
+    position: relative;
+    display: inline-block;
+}
+
+.top-bar-count-list>li>a {
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.top-bar-count-list>li>a.active,
+.top-bar-count-list>li>a:hover {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.top_bar nav.main-menu ul.menu>li>a {}
+
+.mobile-mobile-no {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+
+.mobile-mobile-no>.inner {
+    font-size: 17px;
+}
+
+.mobile-mobile-no .head {}
+
+.testi-imgg-sec {
+    height: 250px;
+    width: 250px;
 }
