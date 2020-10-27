@@ -1,0 +1,403 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+
+// font-family: 'jasmina', sans-serif;
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    @include min-width($md-main) {
+        font-size: 16px;
+    }
+}
+
+// HOMEPAGE CSS
+
+// header
+#header {
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    @include box-shadow(0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.1));
+}
+
+.header {
+    padding: 10px 0;
+
+    .logo {
+        width: 125px;
+    }
+
+}
+
+// home main sec
+#home-main-sec {
+    .right-bar {
+        width: 50%;
+        height: 200px;
+        background: $light-white;
+        top: -20px;
+        right: -30%;
+        @include transition(1s)
+    }
+
+    &.active {
+        .right-bar {
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.home-main-sec {
+    $leftRightGap: 80px;
+    z-index: 1;
+
+    .item.lt,
+    .item.rt {
+        width: 100%;
+
+        @include min-width($lg-main) {
+            width: 340px;
+        }
+    }
+
+    .item.lt {
+
+        @include min-width($lg-main) {
+            padding-top: 50px;
+            padding-right: $leftRightGap;
+        }
+
+        .frac {
+            &:first-child {
+                border-bottom: 2px solid #555;
+
+                @include min-width($lg-main) {
+                    padding-bottom: 20px;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+
+    .item.rt {
+        @include min-width($lg-main) {
+            padding-top: 200px;
+            padding-left: $leftRightGap;
+        }
+    }
+
+    .item.ct {
+        >.inner {
+            img {
+                @include transition(1s);
+            }
+        }
+    }
+}
+
+#home-main-sec {
+    &:hover {
+        .item.ct {
+            >.inner {
+                img {
+                    transform: scale(1.1) rotate(-1deg);
+                }
+            }
+        }
+    }
+}
+
+// our details
+#our-details {}
+
+.count-sec {
+    .item {
+        .count {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.about-main {
+    @include min-width($lg-main) {
+        padding: 0 50px;
+        padding-top: 30px;
+    }
+
+    .frac {
+        .text-sec {
+            background: $light-white;
+            padding: 0 15px;
+
+            @include min-width($lg-main) {
+                width: 300px;
+            }
+
+            .page-heading {
+                @include rotate(-90deg)
+            }
+        }
+
+        .inner {
+            &:not(.reverse) {
+                .image-sec {
+                    @include min-width($lg-main) {
+                        padding-left: 60px;
+                    }
+                }
+            }
+
+            &.reverse {
+                .image-sec {
+                    @include min-width($lg-main) {
+                        padding-right: 60px;
+                    }
+                }
+            }
+
+            .image-sec {
+                img {
+                    @include transition(1s);
+                }
+            }
+
+            &:hover {
+                .image-sec {
+                    img {
+                        transform: scale(1.1) rotate(-1deg);
+                    }
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            @include min-width($lg-main) {
+                margin-bottom: 50px;
+            }
+        }
+
+        .other-details-sec {
+            @include min-width($lg-main) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.our-details {
+    .count-sec {
+        margin-bottom: 20px;
+    }
+}
+
+// manu details sec
+#manu-details-sec {
+    background: $light-white;
+
+    &:hover {
+        .line {
+            width: 150px;
+        }
+    }
+}
+
+.manu-details-sec {
+    @include min-width($lg-main) {
+        width: 60%;
+    }
+
+    .page-heading {
+        @include min-width($lg-main) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+// our process
+#our-process {
+    &:hover {
+        .line {
+            width: 150px;
+        }
+    }
+}
+
+.our-process {
+    .sec-heading {
+        @include min-width($lg-main) {
+            margin-bottom: 35px;
+        }
+    }
+
+    @include min-width($lg-main) {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .item {
+        @include min-width($lg-main) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .img-sec {
+            img {
+                @include transition(1s);
+                filter: grayscale(1);
+            }
+        }
+
+        .text-sec {
+            padding: 0 10px;
+
+            @include min-width($lg-main) {
+                margin-top: 30px;
+                padding: 0 20px;
+            }
+
+            .page-heading {
+                margin-bottom: 5px;
+
+                &::after {
+                    content: "";
+                    background: #333;
+                    width: 3px;
+                    height: 0;
+                    display: block;
+                    position: absolute;
+                    bottom: 33px;
+                    left: 6px;
+                    @include transition(.5s);
+                }
+            }
+
+            .page-description {
+                font-size: 15px;
+            }
+        }
+
+        >.inner {
+            @include transition(.5s);
+
+            &:hover {
+                @include min-width($lg-main) {
+                    margin-top: 30px;
+                }
+
+                .img-sec {
+                    img {
+                        filter: grayscale(0);
+                    }
+                }
+
+                .text-sec {
+                    .page-heading {
+                        &::after {
+                            height: 75px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// 7347553006
+// footer
+footer {
+    .ft-links {
+        >li {
+            @include min-width($lg-main) {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+
+            >a {
+                font-size: 14px;
+                color: #444;
+                @include transition;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+// NEWSLETTER
+#ft-newsltter {
+    background: $light-white;
+}
+
+.ft-newsltter {
+    @include min-width($lg-main) {
+        padding: 0 50px;
+    }
+
+    .text-sec {
+        width: 100%;
+
+        @include min-width($lg-main) {
+            width: 300px;
+        }
+    }
+
+    .form-sec {
+        // width: 100%;
+
+        @include min-width($lg-main) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+    }
+}
+
+// FT OUR LINKS
+#ft-our-links {
+    padding: 30px 0;
+}
+
+.ft-our-links {
+    .frac {
+        &:not(:last-child) {
+            margin-right: 50px;
+
+            @include min-width($lg-main) {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+// FT COPYRIGHT
+#ft-copyright {
+    background: $primary-color;
+    padding: 12px 0 10px;
+}
+
+.ft-copyright {
+    p {
+        font-size: 14px;
+    }
+}
