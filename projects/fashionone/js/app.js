@@ -1,24 +1,24 @@
 // // HEADER FIX
-$(window).on("onreadystatechange contentLoaded load scroll", function () {
-    var app_headHeight = $('header').innerHeight()
+$(window).on("onreadystatechange contentLoaded scroll", function () {
+    var app_headHeight = $('header').innerHeight();
 
-        (function () {
-            // PADDING AND MARGIN CLASSES
-            $('.header-like-margin-top').css({
-                marginTop: app_headHeight
-            })
-            $('.header-like-padding-top').css({
-                paddingTop: app_headHeight
-            })
+    (function () {
+        // PADDING AND MARGIN CLASSES
+        $('.header-like-margin-top').css({
+            marginTop: app_headHeight
+        })
+        $('.header-like-padding-top').css({
+            paddingTop: app_headHeight
+        })
 
-            // HEADER FIXED
-            if ($(this).scrollTop() > app_headHeight) {
-                $('header').addClass('active');
+        // HEADER FIXED
+        if ($(this).scrollTop() > app_headHeight) {
+            $('header').addClass('active');
 
-            } else {
-                $('header').removeClass('active');
-            }
-        })();
+        } else {
+            $('header').removeClass('active');
+        }
+    })();
 })
 
 $(function () {
@@ -41,7 +41,7 @@ $(function () {
 
         // HEADER HIDINIG
         var interval
-        var intervalTime = 3000
+        var intervalTime = 1000
         if ($(window).width() >= 1200 && !$('header').is(':hover')) {
             interval = setInterval(() => {
                 $('header > .header-inner').addClass('slide-up')
@@ -52,11 +52,9 @@ $(function () {
             }, intervalTime)
         }
         $('header').hover(function () {
-            console.log("gofh")
             clearInterval(interval)
             $('>.header-inner', this).removeClass('slide-up')
         }, function () {
-            console.log("nothovers")
             interval = setInterval(() => {
                 $('header > .header-inner').addClass('slide-up')
                 $('.drop-hidden-menu').slideUp(300, function () {

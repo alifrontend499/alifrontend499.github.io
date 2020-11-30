@@ -23,6 +23,14 @@
         max-width: 100%;
     }
 
+    /* header */
+    .header .logo {
+        width: 170px;
+    }
+    .st-menu-container {
+        display: none !important;
+    }
+
     /* footer */
     footer .social-links-outer .head {
         text-align: left !important;
@@ -35,6 +43,11 @@
 
     .footer .privacy>.inner {
         text-align: left !important;
+    }
+
+    /* main sec */
+    .banner-type-sec {
+        margin-top: 85px;
     }
 
 }

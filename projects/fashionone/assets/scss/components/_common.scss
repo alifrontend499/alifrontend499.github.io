@@ -11,13 +11,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $primary-color;
+    background: #333;
     border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: darken($color: $primary-color, $amount: 8%);
+    background: darken($color: #333, $amount: 8%);
 }
 
 // COMMON CSS
@@ -232,7 +232,7 @@
 
     input,
     select {
-        height: 42px;
+        height: 40px;
         padding-top: 5px;
     }
 
@@ -268,17 +268,6 @@
             }
         }
 
-    }
-
-    .add-info {
-        position: absolute;
-        top: calc(100% + 3px);
-        font-size: 12px;
-        color: #666;
-        width: 100%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
     }
 }
 
@@ -340,6 +329,7 @@ $DEFxlScreensMargin: 50px;
 }
 
 .st-btn {
+    font-family: 'futura-medium-bt', sans-serif;
     font-size: 15px;
     color: #fff;
     letter-spacing: 0.5px;
@@ -381,6 +371,13 @@ $DEFxlScreensMargin: 50px;
             color: #fff;
         }
     }
+    &.st-btn-outlined {
+        border: 2px solid #808080;
+        background-color: #323232 !important;
+        &:hover {
+            background-color: #000 !important;
+        }
+    }
 }
 
 .cstm-animation-delay-point-2s {
@@ -420,7 +417,8 @@ $DEFxlScreensMargin: 50px;
                 padding: 15px;
                 @include transition;
 
-                &:hover {
+                &:hover,
+                &.active {
                     color: $primary-color;
                 }
 
@@ -441,7 +439,8 @@ $DEFxlScreensMargin: 50px;
             top: -1px;
             @include transition;
 
-            &:hover {
+            &:hover,
+            &.active {
                 color: $primary-color;
             }
 
@@ -487,9 +486,11 @@ $DEFxlScreensMargin: 50px;
                         padding: 15px;
                         @include transition;
 
-                        &:hover {
+                        &:hover,
+                        &.active {
                             color: $primary-color;
                         }
+
                         @include min-width($lg-main) {
                             font-size: 22px;
                             padding: $com-pad;
@@ -537,8 +538,122 @@ $DEFxlScreensMargin: 50px;
         font-size: 25px;
         font-family: 'futura-medium-bt', sans-serif;
         letter-spacing: 3px;
+
+        &.head-small {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
         @include min-width($lg-main) {
             font-size: 32px;
+
+            &.head-small {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
         }
+    }
+
+    .desc {
+
+        font-size: 17px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// PROGRAM ITEM
+.prog-item {
+    .prog-item-inner {}
+
+    .img-sec {
+        overflow: hidden;
+
+        @include min-width($lg-main) {
+            height: 220px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            @include transition;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.001) 0, #000 100%);
+            background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, .8) 100%);
+            background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0.001) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, .8) 100%);
+            background: -o-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, .8) 100%);
+            background: -ms-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, .8) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(0, 0, 0, .8) 100%);
+        }
+
+        &:hover {
+            &::after {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 42%, rgba(0, 0, 0, 0.9) 100%);
+                background: -moz-linear-gradient(top, rgba(245, 251, 145, 1) 60%, rgba(0, 0, 0, 1) 100%);
+                background: -webkit-linear-gradient(top, rgba(245, 251, 145, 1) 60%, rgba(0, 0, 0, 1) 100%);
+                background: linear-gradient(to bottom, rgba(245, 251, 145, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fb91', endColorstr='#000000', GradientType=0);
+            }
+        }
+    }
+
+    .caption {
+        bottom: 0;
+        left: 0;
+        padding: 12px 15px;
+        z-index: 2;
+
+        @include max-width($md-less-one) {
+            position: static !important;
+        }
+
+        @include min-width($lg-main) {
+            padding: 12px 20px;
+        }
+
+        .name {
+            font-size: 19px;
+            color: #fff;
+            font-family: 'futura-medium-bt', sans-serif;
+            @include transition;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            @include min-width($lg-main) {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// st-radio-selector
+.st-radio-selector {
+    font-weight: normal;
+    padding: 0 10px 10px 0;
+
+    .radio-container {
+        font-size: 13px;
+        font-family: 'futura-medium-bt', sans-serif;
+        background-color: #fff;
+        padding: 8px 12px;
+        border-radius: 120px;
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            background-color: #bbbbbb;
+        }
+    }
+
+    >input:checked+.radio-container {
+        background-color: $primary-color;
     }
 }
