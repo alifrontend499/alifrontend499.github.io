@@ -414,7 +414,7 @@ $DEFxlScreensMargin: 50px;
     .st-menu {
         >li {
             >a {
-                font-family: 'futura-medium-bt';
+                font-family: 'futura-medium-bt', sans-serif;
                 font-size: 16px;
                 color: #fff;
                 padding: 15px;
@@ -481,7 +481,7 @@ $DEFxlScreensMargin: 50px;
             >ul {
                 >li {
                     >a {
-                        font-family: 'futura-medium-bt';
+                        font-family: 'futura-medium-bt', sans-serif;
                         font-size: 19px;
                         color: #fff;
                         padding: 15px;
@@ -535,7 +535,7 @@ $DEFxlScreensMargin: 50px;
 
     .head {
         font-size: 25px;
-        font-family: 'futura-medium-bt';
+        font-family: 'futura-medium-bt', sans-serif;
         letter-spacing: 3px;
         @include min-width($lg-main) {
             font-size: 32px;

@@ -7,13 +7,13 @@
 @import "components/common";
 
 // FONTS
-// font-family: 'futura-light-bt';
-// font-family: 'futura-medium-bt';
-// font-family: 'futura-bold';
-// font-family: 'futura-book';
+// font-family: 'futura-light-bt', sans-serif;
+// font-family: 'futura-medium-bt', sans-serif;
+// font-family: 'futura-bold', sans-serif;
+// font-family: 'futura-book', sans-serif;
 
 body {
-    font-family: 'futura-light-bt';
+    font-family: 'futura-light-bt', sans-serif;
     font-size: 15px;
     background-color: #000;
 
@@ -65,7 +65,7 @@ body {
         .desc {
             font-size: 15px;
             color: #fff;
-            font-family: 'futura-medium-bt';
+            font-family: 'futura-medium-bt', sans-serif;
             line-height: 23px;
         }
 
@@ -82,6 +82,12 @@ body {
         }
 
         @include min-width($lg-main) {
+            .desc {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        @include min-width($xl-main) {
             padding: 16px;
             width: 80%;
 
@@ -168,7 +174,7 @@ body {
             .name {
                 font-size: 19px;
                 color: #fff;
-                font-family: 'futura-medium-bt';
+                font-family: 'futura-medium-bt', sans-serif;
                 @include transition;
 
                 &:hover {
@@ -228,13 +234,13 @@ body {
     .footer-text {
         color: #fff;
         font-size: 13px;
-        font-family: 'futura-medium-bt';
+        font-family: 'futura-medium-bt', sans-serif;
     }
 
     .footer-link {
         color: $primary-color;
         font-size: 13px;
-        font-family: 'futura-medium-bt';
+        font-family: 'futura-medium-bt', sans-serif;
         text-decoration: underline;
 
         &:hover {
