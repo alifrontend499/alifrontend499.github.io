@@ -96,4 +96,30 @@ $(function () {
         });
     })();
 
+    // sliders
+    (function () {
+        $('.multi-video-sec .video-list-container .item').click(function (ev) {
+            ev.preventDefault()
+            var dataLink = $(this).data('link')
+            $('.multi-video-sec .video-container iframe').attr('src', dataLink)
+            $(this).addClass('active').siblings().removeClass('active')
+
+            if ($(window).width() < 768) {
+                $('html, body').animate({
+                    scrollTop: $('.multi-video-sec .video-container').offset().top - $('header').innerHeight()
+                }, 'slow')
+            }
+        })
+    })();
+
+});
+
+$(window).scroll(function () {
+    $('img').each(function () {
+        if ($(this).attr('data-src') && $(this).offset().top < ($(window).scrollTop() + $(window).height()) + 50) {
+            var dataAttr = $(this).data('src');
+            $(this).attr('src', dataAttr);
+            $(this).removeAttr('data-src');
+        }
+    });
 });

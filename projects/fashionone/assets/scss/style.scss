@@ -166,6 +166,7 @@ $headerHeight: 85px;
         .page-banner-heading {
             font-size: 50px;
             font-family: 'futura-medium-bt', sans-serif;
+            text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.1);
 
             @include min-width($md-main) {
                 font-size: 60px;
