@@ -1,0 +1,28 @@
+/* SCROLLBAR */
+/* WIDTH */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* TRACK */
+::-webkit-scrollbar-track {
+    background: #d1d1d1;
+}
+
+/* HANDLE */
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 15px;
+}
+
+/* HANDLE ON HOVER */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: #333, $amount: 8%);
+}
+
+/* COMMON CSS */
+.clear-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}

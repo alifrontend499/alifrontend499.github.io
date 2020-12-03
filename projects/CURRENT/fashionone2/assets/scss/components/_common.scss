@@ -1,0 +1,130 @@
+/* SCROLLBAR */
+@import 'styles/scrollbar';
+
+/* COLORS STYLES */
+@import 'styles/colors';
+
+/* BUTTONS STYLES */
+@import 'styles/buttons';
+
+/* TEXT STYLES */
+@import 'styles/text';
+
+/* HEADING STYLES */
+@import 'styles/headings';
+
+/* COMMON CSS */
+.outline-none {
+    outline: none !important;
+}
+
+$DEFScreensMargin: 20px;
+$DEFmdScreensMargin: 30px;
+$DEFlgScreensMargin: 40px;
+$DEFxlScreensMargin: 50px;
+
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: $DEFScreensMargin;
+
+    @include min_width($md-main) {
+        margin-top: $DEFmdScreensMargin;
+    }
+
+    @include min_width($xl-main) {
+        margin-top: $DEFxlScreensMargin;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: $DEFScreensMargin;
+
+    @include min_width($md-main) {
+        margin-bottom: $DEFmdScreensMargin;
+    }
+
+    @include min_width($xl-main) {
+        margin-bottom: $DEFxlScreensMargin;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: $DEFScreensMargin;
+
+    @include min_width($md-main) {
+        padding-top: $DEFmdScreensMargin;
+    }
+
+    @include min_width($xl-main) {
+        padding-top: $DEFxlScreensMargin;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: $DEFScreensMargin;
+
+    @include min_width($md-main) {
+        padding-bottom: $DEFmdScreensMargin;
+    }
+
+    @include min_width($xl-main) {
+        padding-bottom: $DEFxlScreensMargin;
+    }
+}
+
+.st-ul-styled {
+    padding-left: 17px;
+}
+
+/* SOCIAL LINKS */
+.social-links-container {
+    .social-links {
+        >li {
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+
+            >a {
+                height: 30px;
+                width: 30px;
+                @include transition;
+                @include filter_grayscale(100%);
+
+                &:hover {
+                    @include filter_grayscale(0)
+                }
+
+                &.facebook {
+                    background-image: url('../../images/FACEBOOK-GOLD.png');
+                }
+
+                &.youtube {
+                    background-image: url('../../images/YOUTUBE-GOLD.png');
+                }
+
+                &.instagram {
+                    background-image: url('../../images/INSTAGRAM-GOLD.png');
+                }
+
+                &.twitter {
+                    background-image: url('../../images/TWITTER-GOLD.png');
+                }
+
+                &.rss {
+                    background-image: url('../../images/RSS-GOLD.png');
+                }
+
+                &.googleplus {
+                    background-image: url('../../images/GOOGLE-PLUS-GOLD.png');
+                }
+
+                &.pinterest {
+                    background-image: url('../../images/PINTEREST-GOLD.png');
+                }
+            }
+        }
+    }
+}

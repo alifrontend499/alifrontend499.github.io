@@ -1,0 +1,37 @@
+button.no-style {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+}
+
+.st-btn {
+    background-color: #666;
+    padding: 11px 10px 9px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    outline: none !important;
+    box-shadow: none !important;
+    &.st-btn-primary {
+        background-color: $primary-color;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 5%);
+            color: #fff;
+        }
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 8%);
+        }
+    }
+
+    &.st-btn-secondary {
+        background-color: $secondary-color;
+        &:hover {
+            background-color: darken($color: $secondary-color, $amount: 5%);
+        }
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 8%);
+        }
+    }
+}

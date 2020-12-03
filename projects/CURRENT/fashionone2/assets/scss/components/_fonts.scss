@@ -1,0 +1,32 @@
+/* FUTURA FONTS */
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/Helvetica-Font/Helvetica.ttf');
+}
+
+/* CENTURY GOTHIC */
+@font-face {
+    font-family: 'century-gothic-regular';
+    src: url('../fonts/century-gothic/century-gothic-regular.ttf');
+}
+
+@font-face {
+    font-family: 'century-gothic-bold';
+    src: url('../fonts/century-gothic/century-gothic-bold.ttf');
+}
+
+.font-family-helvetica {
+    font-family: 'helvetica', sans-serif;
+}
+
+.font-family-arial {
+    font-family: 'arial', sans-serif;
+}
+
+.font-family-century-gothic-regular {
+    font-family: 'century-gothic-regular', sans-serif;
+}
+
+.font-family-century-gothic-bold {
+    font-family: 'century-gothic-bold', sans-serif;
+}

@@ -1,0 +1,14 @@
+/* HEADING STYLES */
+.st-img-heading {
+    margin-bottom: 20px;
+}
+
+.st-text {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    &.st-text-sm {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
