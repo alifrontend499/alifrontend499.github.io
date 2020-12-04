@@ -1,0 +1,289 @@
+// sass --watch scss/style.scss:css/style.css --style expanded
+
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+/* FONTS */
+/* font-family: 'Arial', sans-serif; */
+/* font-family: 'helvetica', sans-serif; */
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    // background-color: $secondary-color;
+}
+
+/* HOMEPAGE CSS */
+
+/* HEADER */
+#header {
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99; */
+    background-color: $secondary-dark-color;
+}
+
+
+/* HEADER SEARCH */
+.header-search {
+    .search {
+        @include min-width($md-main) {
+            width: 180px;
+        }
+
+        input {
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 13px;
+            padding: 1px 33px 0 7px;
+            font-family: 'helvetica', sans-serif;
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-color: #b7b7b7;
+            }
+        }
+
+        .search-btn {
+            background: url('../images/header_search_btn.png') no-repeat center / auto;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            right: 3px;
+            @include transform_translatey(-50%);
+        }
+    }
+
+}
+
+.header {
+    padding: 10px 0;
+
+    .logo {
+        width: 160px;
+    }
+}
+
+// MAIN HEADER
+#main-header {
+    border-bottom: 1px solid darken($color: $secondary-color, $amount: 10%);
+}
+
+// MENU
+#menu {
+    background-color: #fff;
+    border-top: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    padding: 2px 0;
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+            >.nav-link {
+                font-family: helvetica, sans-serif;
+                font-size: 14px;
+                padding: 9px 10px 8px;
+                color: #404040;
+                border: 1px solid transparent;
+
+                &:hover,
+                &.active {
+                    color: $primary-text-color;
+                    background-color: $secondary-color;
+                    border-color: darken($color: $secondary-color, $amount: 2%);
+                }
+
+                &.important {
+                    color: red;
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: $primary-text-color;
+                    background-color: $secondary-color;
+                    border-color: darken($color: $secondary-color, $amount: 2%);
+                }
+            }
+
+            &.dropdown {
+                .dropdown-menu {
+                    // display: block !important;
+                    margin: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    background-color: $secondary-color;
+                    border: none;
+
+                    @include min-width($md-main) {
+                        min-width: 200px;
+
+                        &.mega-menu {
+                            min-width: 360px;
+                        }
+                    }
+
+                    .dropdown-item {
+                        font-family: helvetica, sans-serif;
+                        font-size: 13px;
+                        padding: 10px;
+                        color: #404040;
+                        border-radius: 0;
+                        border: 1px solid transparent;
+                        border-bottom: 1px dotted #aaa;
+                        border-radius: 0;
+                        color: $primary-text-color;
+                        white-space: normal;
+
+                        &:hover {
+                            background-color: darken($color: $secondary-color, $amount: 10%);
+                        }
+                    }
+
+                    .menu-sec {
+                        >ul {
+                            >li {
+
+                                &:nth-child(odd) {
+                                    .dropdown-item {
+                                        text-align: right;
+                                    }
+                                }
+
+                                // .dropdown-item {
+                                //     height: 100%;
+                                // }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-menu {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* TRADMARK */
+#trademark {
+    background: url('../images/trademarkBG.png') no-repeat center / auto;
+
+    .info-sec {
+        border: 2px solid #000;
+
+        .inner {
+            padding: 10px 10px;
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #eaeaea;
+    padding: 20px 0;
+
+    .footer-heading {
+        margin-bottom: 10px;
+        font-size: 17px;
+        color: #000;
+    }
+
+    .footer-ul {
+        >li {
+            padding: 5px 0;
+
+            >a {
+                font-size: 14px;
+                color: #333;
+                @include transition;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .footer-big-links {
+        >a {
+            line-height: 14px;
+            height: 14px;
+            @include transition;
+
+            &:not(:last-child) {
+                border-right: 2px solid #000;
+                margin-right: 5px;
+                padding-right: 8px;
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-bottom: 30px;
+}
+
+// PROGRAMS CONTAINER
+#programs-container {}
+
+.programs-container {
+    >.item {
+        padding: 0 1px 15px;
+
+        @include min-width($sm-main) {
+            padding-bottom: 25px;
+
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+                padding-bottom: 0;
+            }
+        }
+
+        @include min-width($lg-main) {
+            padding-bottom: 40px;
+            &:nth-last-child(1),
+            &:nth-last-child(2),
+            &:nth-last-child(3) {
+                padding-bottom: 0;
+            }
+        }
+
+        .text-sec {
+            padding: 0 10px;
+
+            .head {
+                color: #666;
+                font-size: 14px;
+                @include transition;
+
+                &:hover {
+                    color: #444;
+                }
+            }
+
+            .text {
+                font-size: 12px;
+            }
+        }
+    }
+}
