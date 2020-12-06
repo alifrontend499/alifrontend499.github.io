@@ -88,10 +88,16 @@ $DEFxlScreensMargin: 50px;
             }
 
             >a {
-                height: 30px;
-                width: 30px;
+                height: 20px;
+                width: 20px;
                 @include transition;
                 @include filter_grayscale(100%);
+                background-size: cover;
+
+                @include min_width($md-main) {
+                    height: 30px;
+                    width: 30px;
+                }
 
                 &:hover {
                     @include filter_grayscale(0)
@@ -123,6 +129,60 @@ $DEFxlScreensMargin: 50px;
 
                 &.pinterest {
                     background-image: url('../images/PINTEREST-GOLD.png');
+                }
+            }
+        }
+    }
+}
+
+/* SOCIAL LINKS 2 */
+.social-links-container2 {
+    .social-links2 {
+        >li {
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+
+            >a {
+                height: 44px;
+                width: 44px;
+                background: url('../images/ev_socials_16.png');
+                @include transition;
+                background-size: 320px;
+
+                &:hover {
+                    @include filter_grayscale(0)
+                }
+
+                &.facebook {
+                    background-position: -162px -13px;
+                    &:hover {
+                        background-position: -162px -64px;
+
+                    }
+                }
+
+                &.instagram {
+                    background-position: -5px -13px;
+                    &:hover {
+                        background-position: -5px -65px;                    
+                    }
+                }
+
+                &.googleplus {
+                    background-position: -55px -13px;
+                    &:hover {
+                        background-position: -55px -64px;
+                        
+                    }
+                }
+
+                &.pinterest {
+                    background-position: -107px -13px;
+                    &:hover {
+                        background-position: -107px -64px;
+                        
+                    }
                 }
             }
         }

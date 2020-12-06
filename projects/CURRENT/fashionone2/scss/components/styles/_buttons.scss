@@ -13,6 +13,8 @@ button.no-style {
     color: #fff;
     outline: none !important;
     box-shadow: none !important;
+
+    /* primary btn */
     &.st-btn-primary {
         background-color: $primary-color;
 
@@ -20,18 +22,44 @@ button.no-style {
             background-color: darken($color: $primary-color, $amount: 5%);
             color: #fff;
         }
+
         &:active {
             background-color: darken($color: $primary-color, $amount: 8%);
         }
     }
 
+    /* secondary btn */
     &.st-btn-secondary {
         background-color: $secondary-color;
+
         &:hover {
             background-color: darken($color: $secondary-color, $amount: 5%);
         }
+
         &:active {
             background-color: darken($color: $secondary-color, $amount: 8%);
+        }
+    }
+
+    /* facebook btn */
+    &.st-btn-facebook {
+        background-color: #5c7cad;
+        padding: 8px 10px 7px;
+        font-size: 15px;
+        color: #fff;
+
+        @include min_width($lg-main) {
+            font-size: 20px;
+        }
+
+        &:hover {
+            background-color: darken($color: #5c7cad, $amount: 5%);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: #5c7cad, $amount: 8%);
+            color: #fff;
         }
     }
 }

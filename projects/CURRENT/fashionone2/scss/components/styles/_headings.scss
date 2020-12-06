@@ -22,3 +22,60 @@
     font-size: 20px;
     padding: 4px;
 }
+
+.st-heading-underline {
+    font-size: 30px;
+    border-bottom: 4px solid #000;
+    color: #000;
+    margin-bottom: 15px;
+
+    @include min-width($lg-main) {
+        font-size: 40px;
+    }
+
+    &.with-logo-img {
+        font-size: 28px;
+        border-bottom-width: 2px;
+
+        @include min-width($md-main) {
+            padding-left: 60px;
+
+            &:after {
+                content: '';
+                width: 51px;
+                height: 24px;
+                display: block;
+                background-image: url('../images/f1_logo_s.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0 0;
+                position: absolute;
+                top: 7px;
+                left: 0;
+            }
+
+            &:hover {
+                color: $primary-color;
+                border-color: $primary-color;
+
+                &::after {
+                    background-position: 0 -24px;
+                }
+            }
+        }
+
+        @include min-width($lg-main) {
+            font-size: 32px;
+        }
+
+
+    }
+}
+
+.st-heading-open-sans {
+    font-size: 30px;
+    margin-bottom: 10px;
+    &.st-small {
+        font-size: 25px;
+    }
+}

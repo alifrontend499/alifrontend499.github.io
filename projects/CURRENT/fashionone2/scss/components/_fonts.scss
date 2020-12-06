@@ -1,4 +1,4 @@
-/* FUTURA FONTS */
+/* HELVETICA FONTS */
 @font-face {
     font-family: 'helvetica';
     src: url('../fonts/Helvetica-Font/Helvetica.ttf');
@@ -15,6 +15,17 @@
     src: url('../fonts/century-gothic/century-gothic-bold.ttf');
 }
 
+/* OPEN SANS */
+@font-face {
+    font-family: 'open-sans-light';
+    src: url('../fonts/open-sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+
 .font-family-helvetica {
     font-family: 'helvetica', sans-serif;
 }
@@ -29,4 +40,12 @@
 
 .font-family-century-gothic-bold {
     font-family: 'century-gothic-bold', sans-serif;
+}
+
+.font-family-open-sans-light {
+    font-family: 'open-sans-light', sans-serif;
+}
+
+.font-family-open-sans-regular {
+    font-family: 'open-sans-regular', sans-serif;
 }
