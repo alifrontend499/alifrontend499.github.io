@@ -14,7 +14,7 @@ button.no-style {
     outline: none !important;
     box-shadow: none !important;
 
-    /* primary btn */
+    /* PRIMARY BTN */
     &.st-btn-primary {
         background-color: $primary-color;
 
@@ -28,7 +28,7 @@ button.no-style {
         }
     }
 
-    /* secondary btn */
+    /* SECONDARY BTN */
     &.st-btn-secondary {
         background-color: $secondary-color;
 
@@ -41,7 +41,7 @@ button.no-style {
         }
     }
 
-    /* facebook btn */
+    /* FACEBOOK BTN */
     &.st-btn-facebook {
         background-color: #5c7cad;
         padding: 8px 10px 7px;
@@ -60,6 +60,23 @@ button.no-style {
         &:active {
             background-color: darken($color: #5c7cad, $amount: 8%);
             color: #fff;
+        }
+    }
+
+    /* ST BTN OUTLINE */
+    &.st-btn-outline {
+        border: 1px solid #d8d8d8;
+        background: transparent;
+        color: #333;
+        box-shadow: inset 0px 0 6px rgba(0, 0, 0, 0.2) !important;
+        padding: 4px 10px 3px;
+        border-radius: 4px !important;
+        &:hover {
+            background-color: #efefef;
+        }
+
+        &:active {
+            background-color: #efefef;
         }
     }
 }

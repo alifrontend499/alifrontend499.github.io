@@ -26,6 +26,11 @@
     src: url('../fonts/open-sans/OpenSans-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.ttf');
+}
+
 .font-family-helvetica {
     font-family: 'helvetica', sans-serif;
 }
@@ -48,4 +53,12 @@
 
 .font-family-open-sans-regular {
     font-family: 'open-sans-regular', sans-serif;
+}
+
+.font-family-open-sans-bold {
+    font-family: 'open-sans-bold', sans-serif;
+}
+
+.font-family-times-new-roman {
+    font-family: 'times new roman', sans-serif;
 }

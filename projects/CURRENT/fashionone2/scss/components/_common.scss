@@ -140,12 +140,12 @@ $DEFxlScreensMargin: 50px;
     .social-links2 {
         >li {
             &:not(:last-child) {
-                margin-right: 5px;
+                margin-right: 4px;
             }
 
             >a {
-                height: 44px;
-                width: 44px;
+                height: 42px;
+                width: 42px;
                 background: url('../images/ev_socials_16.png');
                 @include transition;
                 background-size: 320px;
@@ -155,35 +155,78 @@ $DEFxlScreensMargin: 50px;
                 }
 
                 &.facebook {
-                    background-position: -162px -13px;
+                    background-position: -216px -14px;
+
                     &:hover {
-                        background-position: -162px -64px;
+                        background-position: -216px -66px;
 
                     }
                 }
 
                 &.instagram {
-                    background-position: -5px -13px;
+                    background-position: -5px -15px;
+
                     &:hover {
-                        background-position: -5px -65px;                    
+                        background-position: -5px -66px;
                     }
                 }
 
                 &.googleplus {
-                    background-position: -55px -13px;
+                    background-position: -57px -14px;
+
                     &:hover {
-                        background-position: -55px -64px;
-                        
+                        background-position: -57px -64px;
+
                     }
                 }
 
                 &.pinterest {
-                    background-position: -107px -13px;
+                    background-position: -108px -14px;
+
                     &:hover {
-                        background-position: -107px -64px;
-                        
+                        background-position: -108px -66px;
+
                     }
                 }
+
+                &.youtube {
+                    background-position: -163px -14px;
+
+                    &:hover {
+                        background-position: -164px -66px;
+
+                    }
+                }
+
+                &.twitter {
+                    background-position: -270px -14px;
+
+                    &:hover {
+                        background-position: -270px -66px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DYNAMIC TABS */
+.st-dynamic-tabs {
+    border-bottom: none;
+
+    >.nav-item {
+        margin-bottom: 0;
+
+        >.nav-link {
+            color: #333;
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+
+            &:hover,
+            &.active {
+                background-color: #ccc;
             }
         }
     }

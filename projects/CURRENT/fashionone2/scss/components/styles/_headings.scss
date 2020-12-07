@@ -30,7 +30,9 @@
     margin-bottom: 15px;
 
     @include min-width($lg-main) {
-        font-size: 40px;
+        &:not(.st-heading-sm) {
+            font-size: 40px;
+        }
     }
 
     &.with-logo-img {
@@ -70,11 +72,29 @@
 
 
     }
+
+    &.st-heading-sm {
+        padding-bottom: 4px;
+    }
+
+    &.st-border-primary {
+        border-bottom-color: darken($color: $primary-color, $amount: 10%);
+    }
+
+    &.st-border-secondary {
+        border-bottom-color: $secondary-color;
+    }
+
+    &.st-heading-xs {
+        font-size: 27px;
+        padding-bottom: 4px;
+    }
 }
 
 .st-heading-open-sans {
     font-size: 30px;
     margin-bottom: 10px;
+
     &.st-small {
         font-size: 25px;
     }
