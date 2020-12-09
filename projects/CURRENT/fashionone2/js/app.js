@@ -81,7 +81,57 @@ $(function () {
             smartSpeed: 1000,
             animateIn: 'fadeIn',
             animateOut: 'fadeOut',
+        })
 
+        // RECENT VIDEO SLIDER
+        $('#brand-zone-slider').owlCarousel({
+            loop: true,
+            items: 5,
+            margin: 8,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 4
+                },
+                992: {
+                    items: 5,
+                }
+            },
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            smartSpeed: 1000,
+        })
+
+        // ORIGINAL SERIES AND SPECIALS SLIDER
+        $('#original-series-and-specials-slider').owlCarousel({
+            items: 3,
+            loop: true,
+            center: true,
+            margin: 5,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            smartSpeed: 1200,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+            },
         })
     })();
 

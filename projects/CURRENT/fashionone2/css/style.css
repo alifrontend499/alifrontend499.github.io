@@ -1029,41 +1029,141 @@ footer .footer-big-links > a:hover {
   padding: 0 4px 8px;
 }
 
-/* ORIGINAL SERIES AND SPECIALS PAGE */
-#original-series-and-specials-container {
-  background-image: url("../images/beach-houses.png"), url("../images/original-series-and-specials-bg1.jpg");
+/* ORIGINAL SERIES AND SPECIALS FASHION */
+#original-series-and-specials-slider .owl-item .item {
+  opacity: 0.6;
+  z-index: 9;
+  position: relative;
+  transition: 1s;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  padding: 25px 0;
+}
+#original-series-and-specials-slider .owl-item .item .text-sec {
+  transition: 0.3s;
+  opacity: 0;
+}
+#original-series-and-specials-slider .owl-item .item .text-sec .heading {
+  font-size: 23px;
+  margin: 0px auto 10px;
+  color: #222;
+  display: table;
+  border-bottom: 1px solid #222;
+  line-height: 30px;
+}
+#original-series-and-specials-slider .owl-item .item .text-sec .desc {
+  color: #696969;
+  line-height: 14px;
+}
+#original-series-and-specials-slider .owl-item.active.center .item {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+#original-series-and-specials-slider .owl-item.active.center .item .text-sec {
+  opacity: 1;
+}
+#original-series-and-specials-slider .owl-nav {
+  opacity: 1;
+  transition: 0.3s;
+}
+#original-series-and-specials-slider .owl-nav button[type="button"] {
+  background-color: #d8d8d8;
+  position: absolute;
+  bottom: 190px;
+  height: 45px;
+  width: 45px;
+  font-size: 18px;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0.6;
+  transition: 0.1s;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 768px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"] {
+    bottom: 50px;
+  }
+}
+#original-series-and-specials-slider .owl-nav button[type="button"] span {
+  display: none !important;
+}
+#original-series-and-specials-slider .owl-nav button[type="button"]:hover {
+  opacity: 1;
+}
+#original-series-and-specials-slider .owl-nav button[type="button"].owl-prev {
+  left: 0px;
+}
+@media screen and (min-width: 768px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-prev {
+    left: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-prev {
+    left: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-prev {
+    left: 240px;
+  }
+}
+#original-series-and-specials-slider .owl-nav button[type="button"].owl-next {
+  right: 0px;
+}
+@media screen and (min-width: 768px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-next {
+    right: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-next {
+    right: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #original-series-and-specials-slider .owl-nav button[type="button"].owl-next {
+    right: 240px;
+  }
+}
+
+/* ORIGINAL SERIES AND SPECIALS FASHION FILMMAKER PAGE */
+#os-fashion-filmmaker {
+  background-image: url("../images/beach-houses.png"), url("../images/os-fashion-filmmaker-bg1.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: auto, 100% 80%;
   background-position: 100% 100px, 0 0;
   background-color: #f9efde;
 }
 
-.original-series-and-specials-menu {
+.os-fashion-filmmaker-menu {
   background-color: #222;
 }
-.original-series-and-specials-menu .item > a {
+.os-fashion-filmmaker-menu .item > a {
   font-size: 15px;
   transition: 0.3s;
   padding: 10px 5px;
 }
 @media screen and (min-width: 992px) {
-  .original-series-and-specials-menu .item > a {
+  .os-fashion-filmmaker-menu .item > a {
     font-size: 20px;
   }
 }
-.original-series-and-specials-menu .item > a:hover {
+.os-fashion-filmmaker-menu .item > a:hover {
   opacity: 0.8;
 }
 
-.original-series-and-specials-members {
+.os-fashion-filmmaker-menu-members {
   padding: 20px 20px 40px;
 }
 @media screen and (min-width: 992px) {
-  .original-series-and-specials-members .left > .inner {
+  .os-fashion-filmmaker-menu-members .left > .inner {
     padding-right: 70px;
   }
 }
-.original-series-and-specials-members .members-list .head {
+.os-fashion-filmmaker-menu-members .members-list .head {
   padding: 0 5px;
   left: 0;
   bottom: 13px;
@@ -1215,6 +1315,48 @@ footer .footer-big-links > a:hover {
 .bordered-image-block a {
   bottom: 10px;
   right: 20px;
+}
+
+/* FASHION STREAM CONTAINER */
+.fashion-stream-container > .item .heading {
+  background: #d9d9d9;
+  background: linear-gradient(0deg, #d9d9d9 53%, #fafafa 100%);
+  font-size: 17px;
+  color: #333;
+  letter-spacing: -1px;
+  padding: 10px 10px 9px;
+  border: 1px solid #d0d0d0;
+  border-right: 3px solid #6f6f6f;
+  -webkit-box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.fashion-stream-container > .item .content {
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .fashion-stream-container > .item .content {
+    height: 300px;
+  }
+}
+.fashion-stream-container > .item .content .content-inner {
+  padding: 10px 0;
+}
+.fashion-stream-container > .item.popular-now .content ul li a {
+  padding: 13px 0;
+  border-bottom: 1px dotted #cecece;
+  transition: 0.3s;
+}
+.fashion-stream-container > .item.popular-now .content ul li a::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 50px;
+  background: #bf9138;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+.fashion-stream-container > .item.popular-now .content ul li a:hover::after {
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
