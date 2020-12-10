@@ -13,6 +13,14 @@ button.no-style {
     color: #fff;
     outline: none !important;
     box-shadow: none !important;
+    cursor: pointer;
+    /* BTN LG */
+    &.st-btn-lg {
+        @include min-width($md-main) {
+            padding: 15px 20px 12px;
+            font-size: 14px;
+        }
+    }
 
     /* PRIMARY BTN */
     &.st-btn-primary {
@@ -38,6 +46,22 @@ button.no-style {
 
         &:active {
             background-color: darken($color: $secondary-color, $amount: 8%);
+        }
+    }
+
+    /* DARK GRAY BTN */
+    &.st-btn-dark-gray {
+        background-color: #414141;
+        color: $primary-color !important;
+
+        &:hover {
+            background-color: darken($color: #414141, $amount: 5%);
+            color: $primary-color !important;
+        }
+
+        &:active {
+            background-color: darken($color: #414141, $amount: 8%);
+            color: $primary-color !important;
         }
     }
 
@@ -71,6 +95,7 @@ button.no-style {
         box-shadow: inset 0px 0 6px rgba(0, 0, 0, 0.2) !important;
         padding: 4px 10px 3px;
         border-radius: 4px !important;
+
         &:hover {
             background-color: #efefef;
         }

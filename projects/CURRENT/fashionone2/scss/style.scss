@@ -807,6 +807,10 @@ footer {
             &.heading-red {
                 background-color: red;
             }
+
+            &.heading-black {
+                background-color: #000;
+            }
         }
     }
 }
@@ -884,5 +888,210 @@ footer {
                 }
             }
         }
+    }
+}
+
+/* FASHION-CALENDAR-CONTAINER */
+.common-container-with-right-bar {
+    &.fashion-calendar-container {
+        .common-container-left-sec {
+            @include min-width($lg-main) {
+                width: calc(100% - 350px);
+            }
+        }
+
+        .common-container-right-sec {
+            @include min-width($lg-main) {
+                width: 350px;
+            }
+        }
+    }
+}
+
+/* FASHION CALENDAR EVENTS CONTAINER */
+.fashion-calendar-events-container {
+    .no-events {
+        p {
+            color: red
+        }
+    }
+}
+
+/* ORIGINAL SERIES AND WEBSITES CONTAINER */
+#original-series-websites-container {}
+
+.original-series-websites-container {}
+
+
+/* OSWC-HEADER-LOGO-LEFT-MENU-RIGHT */
+#oswc-header-logo-left-menu-right {}
+
+.oswc-header-logo-left-menu-right {
+    .navbar {
+        padding: 0;
+
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                padding: 7px 0 0;
+                font-size: 21px;
+                border: 1px solid $primary-color;
+                color: $primary-color;
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            >.nav-link {
+                font-family: helvetica, sans-serif;
+                font-size: 14px;
+                padding: 9px 0px 8px;
+                color: #fff;
+                @include transition;
+
+                @include max-width($md-less-one) {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                &:hover,
+                &.active {
+                    color: $primary-text-color;
+                }
+
+                &.important {
+                    color: red;
+                }
+
+                &.dropdown-toggle::after {
+                    margin-top: 6px;
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: $primary-text-color;
+                }
+            }
+
+            &.dropdown {
+                .dropdown-menu {
+                    // display: block !important;
+                    margin: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    border: none;
+                    padding: 10px 15px;
+                    width: 100%;
+
+                    @include min-width($lg-main) {
+                        min-width: 160px;
+                    }
+
+                    .dropdown-item {
+                        font-family: helvetica, sans-serif;
+                        font-size: 13px;
+                        padding: 10px 0;
+                        border-radius: 0;
+                        color: #fff;
+                        background-color: transparent;
+                        @include transition;
+                        position: relative;
+
+                        &:hover,
+                        &.active {
+                            color: $primary-text-color;
+                        }
+
+                        &.dropdown-toggle::after {
+                            position: absolute;
+                            right: 0;
+                            top: 15px;
+                            @include transform_rotate(-90deg);
+                        }
+                    }
+
+                    li {
+                        .dropdown-menu {
+                            @include min-width($md-main) {
+                                position: absolute;
+                                top: 0;
+                                left: 100%;
+                            }
+                        }
+
+                        &:hover,
+                        &.active {
+                            >a {
+                                color: $primary-text-color;
+                            }
+                        }
+
+                        &:hover {
+                            >.dropdown-menu {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    >.dropdown-menu {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* AGENCIES-HEADER */
+.agencies-header {
+    background-color: rgba(49, 2, 1, 1);
+    padding: 6px 0 3px;
+    top: 0px;
+    z-index: 1;
+    @include transition;
+
+    .navbar-brand {
+        >img {
+            width: 200px;
+
+            @include min-width($md-main) {
+                width: 300px;
+            }
+        }
+    }
+}
+
+/* AGENCIES HOME BANNER */
+#agencies-home-banner {}
+
+.agencies-home-banner {
+    .caption {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* AGENCIES HOME DETAILS SECTION */
+#agencies-home-details-section {}
+
+.agencies-home-details-section {}
+
+/* IMG CONTAINER WITH TEXT AT BOTTOM */
+.img-container-with-text-at-bottom {
+    .img-container-with-text-at-bottom-inner {
+        @include box-shadow(0px, 0px, 5px, 3px,#cccccc)
     }
 }

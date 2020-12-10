@@ -240,10 +240,19 @@ button.no-style {
   color: #fff;
   outline: none !important;
   box-shadow: none !important;
+  cursor: pointer;
+  /* BTN LG */
   /* PRIMARY BTN */
   /* SECONDARY BTN */
+  /* DARK GRAY BTN */
   /* FACEBOOK BTN */
   /* ST BTN OUTLINE */
+}
+@media screen and (min-width: 768px) {
+  .st-btn.st-btn-lg {
+    padding: 15px 20px 12px;
+    font-size: 14px;
+  }
 }
 .st-btn.st-btn-primary {
   background-color: #c99d48;
@@ -263,6 +272,18 @@ button.no-style {
 }
 .st-btn.st-btn-secondary:active {
   background-color: #e3e3e3;
+}
+.st-btn.st-btn-dark-gray {
+  background-color: #414141;
+  color: #c99d48 !important;
+}
+.st-btn.st-btn-dark-gray:hover {
+  background-color: #343434;
+  color: #c99d48 !important;
+}
+.st-btn.st-btn-dark-gray:active {
+  background-color: #2d2d2d;
+  color: #c99d48 !important;
 }
 .st-btn.st-btn-facebook {
   background-color: #5c7cad;
@@ -341,11 +362,11 @@ button.no-style {
 }
 
 .st-text-primary {
-  color: #c99d48;
+  color: #c99d48 !important;
 }
 
 .st-text-secondary {
-  color: #f7f7f7;
+  color: #f7f7f7 !important;
 }
 
 a.st-text-primary:hover {
@@ -376,12 +397,20 @@ a.st-text-secondary:hover {
   font-size: 14px;
 }
 
+.font-size-15 {
+  font-size: 15px;
+}
+
 .font-size-16 {
   font-size: 16px;
 }
 
 .text-black {
   color: #000 !important;
+}
+
+.st-desc:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 /* HEADING STYLES */
@@ -1303,6 +1332,9 @@ footer .footer-big-links > a:hover {
 .now-playing-container .frac .heading.heading-red {
   background-color: red;
 }
+.now-playing-container .frac .heading.heading-black {
+  background-color: #000;
+}
 
 .st-line {
   background-color: #aaa;
@@ -1357,6 +1389,146 @@ footer .footer-big-links > a:hover {
 }
 .fashion-stream-container > .item.popular-now .content ul li a:hover::after {
   width: 80px;
+}
+
+/* FASHION-CALENDAR-CONTAINER */
+@media screen and (min-width: 992px) {
+  .common-container-with-right-bar.fashion-calendar-container .common-container-left-sec {
+    width: calc(100% - 350px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .common-container-with-right-bar.fashion-calendar-container .common-container-right-sec {
+    width: 350px;
+  }
+}
+
+/* FASHION CALENDAR EVENTS CONTAINER */
+.fashion-calendar-events-container .no-events p {
+  color: red;
+}
+
+/* ORIGINAL SERIES AND WEBSITES CONTAINER */
+/* OSWC-HEADER-LOGO-LEFT-MENU-RIGHT */
+.oswc-header-logo-left-menu-right .navbar {
+  padding: 0;
+}
+.oswc-header-logo-left-menu-right .navbar .navbar-toggler .navbar-toggler-icon {
+  padding: 7px 0 0;
+  font-size: 21px;
+  border: 1px solid #c99d48;
+  color: #c99d48;
+  width: 36px;
+  height: 36px;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  padding: 9px 0px 8px;
+  color: #fff;
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link:hover, .oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link.active {
+  color: #866c44;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link.important {
+  color: red;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item > .nav-link.dropdown-toggle::after {
+  margin-top: 6px;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item:hover > a, .oswc-header-logo-left-menu-right .navbar-nav > .nav-item.active > a {
+  color: #866c44;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu {
+    min-width: 160px;
+  }
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu .dropdown-item {
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  padding: 10px 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: transparent;
+  transition: 0.3s;
+  position: relative;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu .dropdown-item:hover, .oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu .dropdown-item.active {
+  color: #866c44;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu .dropdown-item.dropdown-toggle::after {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+@media screen and (min-width: 768px) {
+  .oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu li .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu li:hover > a, .oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu li.active > a {
+  color: #866c44;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown .dropdown-menu li:hover > .dropdown-menu {
+  display: block !important;
+}
+.oswc-header-logo-left-menu-right .navbar-nav > .nav-item.dropdown:hover > .dropdown-menu {
+  display: block !important;
+}
+
+/* AGENCIES-HEADER */
+.agencies-header {
+  background-color: #310201;
+  padding: 6px 0 3px;
+  top: 0px;
+  z-index: 1;
+  transition: 0.3s;
+}
+.agencies-header .navbar-brand > img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .agencies-header .navbar-brand > img {
+    width: 300px;
+  }
+}
+
+/* AGENCIES HOME BANNER */
+.agencies-home-banner .caption {
+  top: 0;
+  left: 0;
+}
+
+/* AGENCIES HOME DETAILS SECTION */
+/* IMG CONTAINER WITH TEXT AT BOTTOM */
+.img-container-with-text-at-bottom .img-container-with-text-at-bottom-inner {
+  -webkit-box-shadow: 0px 0px 5px 3px #cccccc;
+  box-shadow: 0px 0px 5px 3px #cccccc;
 }
 
 /*# sourceMappingURL=style.css.map */

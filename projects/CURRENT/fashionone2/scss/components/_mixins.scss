@@ -23,7 +23,7 @@
     box-shadow: $x $y $blur $spread $color;
 }
 
-@mixin rotate($val) {
+@mixin transform_rotate($val) {
     -webkit-transform: rotate($val);
     transform: rotate($val);
 }
