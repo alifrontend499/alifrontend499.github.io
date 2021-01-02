@@ -403,7 +403,9 @@ footer {
     }
 }
 
-#recent-videos-slider {
+#recent-videos-slider,
+#modal-workout-videos-slider,
+#modal-workout-download-slider {
     .item {}
 
     .owl-nav {
@@ -1060,7 +1062,7 @@ footer {
     background-color: rgba(49, 2, 1, 1);
     padding: 6px 0 3px;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     @include transition;
 
     .navbar-brand {
@@ -1075,9 +1077,9 @@ footer {
 }
 
 /* AGENCIES HOME BANNER */
-#agencies-home-banner {}
+#agencies-banner {}
 
-.agencies-home-banner {
+.agencies-banner {
     .caption {
         top: 0;
         left: 0;
@@ -1085,13 +1087,577 @@ footer {
 }
 
 /* AGENCIES HOME DETAILS SECTION */
-#agencies-home-details-section {}
+#agencies-details-section {}
 
-.agencies-home-details-section {}
+.agencies-details-section {}
 
 /* IMG CONTAINER WITH TEXT AT BOTTOM */
 .img-container-with-text-at-bottom {
     .img-container-with-text-at-bottom-inner {
-        @include box-shadow(0px, 0px, 5px, 3px,#cccccc)
+        @include box-shadow(0px, 0px, 5px, 3px, #cccccc)
+    }
+}
+
+.img-container-with-text-at-bottom-container {
+    &.img-container-lg {
+        @include min-width($md-main) {
+            .name {
+                font-size: 20px;
+            }
+        }
+
+        .img-sec {
+            img {
+                @include transition(.5s);
+                @include transform_scale(1)
+            }
+        }
+
+        .img-container-with-text-at-bottom-inner {
+            &:hover {
+                .img-sec {
+                    img {
+                        @include transform_scale(1.2)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* AGENCIES PLAYER SECTION */
+#agencies-player-section {}
+
+.agencies-player-section {}
+
+/* AGENCIES PHOTOS SECTION */
+#agencies-coloured-section {
+    background: $primary-color;
+    background: -webkit-linear-gradient($primary-color, #fff);
+    background: -o-linear-gradient($primary-color, #fff);
+    background: -moz-linear-gradient($primary-color, #fff);
+    background: linear-gradient($primary-color, #fff);
+}
+
+.agencies-coloured-section {
+    >.st-heading-underline {
+        background-color: #eadfc2;
+    }
+}
+
+.agencies-photos-container {
+    background: #eadfc2;
+    background: -webkit-linear-gradient(#eadfc2, #fff);
+    background: -o-linear-gradient(#eadfc2, #fff);
+    background: -moz-linear-gradient(#eadfc2, #fff);
+    background: linear-gradient(#eadfc2, #fff);
+    padding: 20px;
+}
+
+/* AGENCIES BLOGS CONTAINER */
+#agencies-blogs-container {}
+
+.agencies-blogs-container {
+    background: #eadfc2;
+    background: -webkit-linear-gradient(#eadfc2, #fff);
+    background: -o-linear-gradient(#eadfc2, #fff);
+    background: -moz-linear-gradient(#eadfc2, #fff);
+    background: linear-gradient(#eadfc2, #fff);
+    padding: 20px;
+
+    .img-sec {
+        width: 100px;
+
+        @include min-width($md-main) {
+            width: 280px;
+        }
+    }
+
+    .text-sec {
+        -ms-flex: 0 0 calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+
+        @include min-width($md-main) {
+            -ms-flex: 0 0 calc(100% - 280px);
+            flex: 0 0 calc(100% - 280px);
+        }
+
+        .name {
+            font-size: 17px;
+        }
+
+        .name,
+        .st-desc {
+            color: #4a4843;
+        }
+
+        a {
+            color: darken($color: $primary-color, $amount: 10%) !important;
+        }
+    }
+}
+
+/* WEBSITE MODAL WORKOUT */
+.agencies-header.header-modal-workout,
+.agencies-header.header-yoga-workout,
+.agencies-header.header-yoga-workout2 {
+    background-color: transparent;
+
+    .oswc-header-logo-left-menu-right {
+        background-color: #D82E1E;
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+            &:not(:last-child) {
+                margin-right: 22px;
+            }
+
+            >.nav-link {
+
+                &:hover,
+                &.active {
+                    text-decoration: underline !important;
+                    color: #fff;
+                }
+
+                &.important {
+                    border-color: #fff;
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.agencies-header.header-yoga-workout {
+    .oswc-header-logo-left-menu-right {
+        background-color: #2db8d2;
+    }
+}
+
+.agencies-header.header-yoga-workout2 {
+    background-color: #18a423;
+
+    .oswc-header-logo-left-menu-right {
+        background-color: transparent;
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            >.nav-link {
+                padding-top: 20px;
+                padding-bottom: 13px;
+                border-bottom: 6px solid transparent;
+
+                &:hover,
+                &.active {
+                    text-decoration: none !important;
+                    color: #fff;
+                    border-bottom-color: #298436;
+                }
+
+                &.important {
+                    color: yellow;
+                    border-bottom-color: transparent;
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#modal-workout-videos-slider {
+    .item {}
+
+    .owl-nav {
+        position: static;
+
+        button[type="button"] {
+            position: absolute;
+            top: 70px;
+            opacity: 0.8;
+
+            &.owl-prev {
+                background-image: url('../images/prev.png');
+                left: -15px;
+            }
+
+            &.owl-next {
+                background-image: url('../images/next.png');
+                right: -15px;
+            }
+        }
+    }
+}
+
+#modal-workout-download-slider {
+    .item {
+        padding: 1px;
+        @include transition(.5s);
+        transform-origin: top;
+        @include transform_scale(.9);
+        opacity: .8;
+
+        .inner {
+            border: 1px solid #666;
+            padding: 10px;
+        }
+
+        .img-sec {
+            border: 1px solid #666;
+        }
+    }
+
+    .owl-item.active.center {
+        >.item {
+            opacity: 1;
+            @include transform_scale(1);
+        }
+    }
+
+    .owl-nav {
+        position: static;
+
+        button[type="button"] {
+            position: absolute;
+            top: 50%;
+            @include transform_translatey(-50%);
+            opacity: 0.9;
+            height: 40px;
+            width: 40px;
+
+            @include min-width($lg-main) {
+                height: 60px;
+                width: 60px;
+            }
+
+            &.owl-prev {
+                background-image: url('../images/modal-workout-download-slider-arrow-left.png');
+                left: -10px;
+
+                @include min-width($lg-main) {
+                    left: -35px;
+                }
+            }
+
+            &.owl-next {
+                background-image: url('../images/modal-workout-download-slider-arrow-right.png');
+                right: -10px;
+
+                @include min-width($lg-main) {
+                    right: -35px;
+                }
+            }
+        }
+    }
+}
+
+
+.yoga-season-2 {
+    background-color: #fff;
+}
+
+#agencies-banner {
+    &.modal-yoga-season2 {
+        .schedule {
+
+
+            >.rt {
+                .inner {
+                    background: rgba(50, 50, 50, .6);
+
+                }
+            }
+        }
+    }
+}
+
+.container-low {
+    @include min-width($lg-main) {
+        max-width: 900px !important;
+    }
+}
+
+/* ECO FASHION SEASON1 */
+#original-series-websites-container.eco-fashion-page {
+    background-color: #000;
+}
+
+#agencies-banner {
+    z-index: 12;
+    position: relative;
+
+    &.banner-eco-fashion {
+        .agencies-banner {
+            background-repeat: no-repeat;
+            background-position: right 0px;
+            height: 129px;
+
+            @include min-width($md-main) {
+                height: 185px;
+            }
+            a {
+                width: 250px;
+                @include min-width($md-main) {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+#oswc-header-logo-left-menu-right.header-eco-fashion {
+    background-color: #000;
+    margin-top: -9px;
+
+    @include min-width($lg-main) {
+        margin-top: -20px;
+    }
+
+    .navbar {
+        @include min-width($md-main) {
+            padding-left: 320px !important;
+        }
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+
+            >.nav-link {
+                font-size: 18px;
+                font-family: 'century-gothic-regular', sans-serif;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    border-width: 6px;
+                    border-color: transparent;
+                    border-style: solid;
+                    position: absolute;
+                    bottom: -3px;
+                    left: 50%;
+                    @include transition;
+                    @include transform_translatex(-50%)
+                }
+
+                &:hover,
+                &.active {
+                    &::after {
+                        border-top-color: #fff;
+                    }
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#agencies-details-section.details-eco-fashion {
+    .details-eco-fashion-content {
+
+        .col-left,
+        .col-right {
+            @include transition(.4s);
+
+            @include min-width($md-main) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+            }
+        }
+
+        .col-left {
+            background: transparent url('../images/eco-fashion-content-left.png') no-repeat 0 0 / cover;
+
+            @include min-width($lg-main) {
+                width: 190px;
+            }
+
+            @include min-width($xl-main) {
+                width: 240px;
+            }
+        }
+
+        .col-right {
+            background: #fff;
+            padding: 10px;
+            left: initial;
+            right: 0;
+
+            @include min-width($md-main) {
+                background: transparent url('../images/eco-fashion-content-right.png') repeat-y 0 0 / cover;
+                width: 500px;
+                padding-left: 170px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+            }
+
+            @include min-width($lg-main) {
+                width: 600px;
+                padding-left: 240px;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+            }
+
+            @include min-width($xl-main) {
+                padding-top: 60px;
+                width: 650px;
+            }
+        }
+
+        .video-container {
+            @include min-width($md-main) {
+                padding-right: 10px;
+            }
+
+            >a {
+                border: 1px solid #CFCFCF;
+                padding: 5px;
+                @include box-shadow(5px, 5px, 5px, 0px, #666666)
+            }
+
+            .heading {
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    width: 100%;
+                    background: #999933;
+                    margin-top: 5px;
+
+                    @include min-width($lg-main) {
+                        margin-left: -15px;
+                        margin-top: 15px;
+                    }
+                }
+
+                margin-top: 15px;
+
+                @include min-width($lg-main) {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .other-details {
+            p {
+                font-size: 12px;
+            }
+
+            a {
+                font-size: 13px;
+            }
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            @include min-width($md-main) {
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                @include min-width($xl-main) {
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            @include min-width($lg-main) {
+                p {
+                    font-size: 13px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            >.inner {
+                background: transparent url('../images/eco-fashion-season-other-details-img.png') no-repeat;
+                padding-left: 110px;
+                background-size: 100px;
+
+                @include min-width($md-main) {
+                    background-size: auto;
+                    padding-left: 170px;
+                    margin-left: -80px;
+                }
+            }
+        }
+
+        .eco-logo-sec {
+            background: url('../images/ico-fashion-season-logo-bg.png') no-repeat center/cover;
+            width: 100%;
+            text-align: center;
+            padding: 15px 15px;
+
+            @include min-width($md-main) {
+                background-size: 100% 100%;
+                position: absolute;
+                left: 0px;
+                bottom: 15px;
+            }
+
+            @include min-width($lg-main) {
+                bottom: 40px;
+                padding: 22px 80px;
+            }
+
+            @include min-width($xl-main) {
+                bottom: 80px;
+            }
+
+            img {
+                width: 150px;
+
+                @include min-width($lg-main) {
+                    width: 268px;
+                }
+            }
+        }
+
+        &:hover {}
+    }
+
+    .owl-carousel:hover+.details-eco-fashion-content {
+        @include min-width($lg-main) {
+            .col-left {
+                @include transform_translatex(-40%)
+            }
+
+            .col-right {
+                @include transform_translatex(40%)
+            }
+        }
     }
 }

@@ -144,6 +144,59 @@ $(function () {
             },
         })
 
+        // MODAL WORKOUT VIDEOS SLIDER
+        $('#modal-workout-videos-slider').owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 5,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            autoplay: false,
+            smartSpeed: 1200,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                768: {
+                    items: 4
+                }
+            },
+        })
+
+        // MODAL WORKOUT DOWNLOAD SLIDER
+        $('#modal-workout-download-slider').owlCarousel({
+            items: 3,
+            center: true,
+            startPosition: 1,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            smartSpeed: 1200,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                400: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                }
+            },
+        })
+
         // ST TEXT SLIDER
         $('.st-text-slider').owlCarousel({
             items: 1,
@@ -159,6 +212,23 @@ $(function () {
             animateIn: "animate__backInDown",
             animateOut: "animate__fadeOut",
         })
+
+        // HEADLINE SLIDER
+        $('#eco-fashion-seasno1-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: false,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 2000,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
+        })
+
     })();
 
     // DYNAMIC TABS

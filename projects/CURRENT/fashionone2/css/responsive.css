@@ -30,6 +30,10 @@
         top: -2px;
     }
 
+    .modal-workout-videos-slider-container .heading-section .select-inline {
+        position: static !important;
+    }
+
 }
 
 @media (max-width: 575px) {}

@@ -231,3 +231,30 @@ $DEFxlScreensMargin: 50px;
         }
     }
 }
+
+// PROGRESS STEPS
+.progress-steps {
+    .progress {
+        height: 24px;
+        border-width: 2px !important;
+        border-color: #000 !important;
+
+        .progress-bar {
+            background-color: #60503a;
+        }
+    }
+
+    .frac {
+        .inner {
+            .progress {
+                width: calc(100% - 70px);
+            }
+
+            .r-text {
+                width: 70px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+}
