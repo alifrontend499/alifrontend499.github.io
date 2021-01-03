@@ -1415,8 +1415,10 @@ footer {
             @include min-width($md-main) {
                 height: 185px;
             }
+
             a {
                 width: 250px;
+
                 @include min-width($md-main) {
                     width: auto;
                 }
@@ -1658,6 +1660,144 @@ footer {
             .col-right {
                 @include transform_translatex(40%)
             }
+        }
+    }
+}
+
+/* SUPER DOOPER MODAL PAGE */
+#original-series-websites-container.super-dooper-models-page {
+    background: #000 url('../images/super-dooper-modal-main-bg.gif') no-repeat center bottom / auto;
+}
+
+// HEADER 
+#original-series-websites-container.super-dooper-models-page {
+    .header-super-dooper-models {
+        background-color: inherit;
+    }
+
+    .navbar-brand {
+        z-index: 11;
+        margin-bottom: -20px;
+
+        @include min-width($lg-main) {
+
+            img {
+                width: 480px;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        margin-bottom: 20px;
+    }
+    .navbar-collapse {
+        margin: 20px 0;
+    }
+
+    .navbar-nav {
+
+        >.nav-item {
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            >.nav-link {
+
+                // font-family: Arial, Helvetica, sans-serif;
+                @include min-width($md-main) {
+                    font-weight: 900;
+                    font-size: 23px;
+
+                    >span {
+                        text-align: right;
+                        display: block;
+
+                        font-weight: 500;
+                        font-size: 13px;
+                        position: relative;
+                        top: 5px;
+                    }
+                }
+
+                color: #565656;
+
+                &:hover,
+                &.active {
+                    color: #a9a9a9;
+                }
+            }
+
+            &:hover,
+            &.active {
+                >a {
+                    color: #a9a9a9;
+                }
+            }
+        }
+    }
+}
+
+
+// DETAILS SECTION
+#agencies-details-section.details-super-dooper-modal {
+    .wire-bg {
+        background: transparent url(../images/super-dooper-model-wire-bg.png) no-repeat center;
+        height: 30px;
+        margin: -33px auto 0;
+        top: 20px;
+        left: 50%;
+        @include transform_translatex(-50%);
+        width: calc(100% - 35px);
+        z-index: 1;
+    }
+
+    .agencies-details-section {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: calc(100%);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        >.inner {
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1;
+        }
+    }
+
+    .agencies-details-section-inner {
+        // background-color: #000;
+        margin-top: 15px;
+    }
+
+    .video-container {
+        iframe {
+            width: 100%;
+            margin-bottom: -3px;
+            height: 300px;
+
+            // @include min-width($lg-main) {
+            //     height: 500px;
+            // }
+            @include min-width($lg-main) {
+                height: 500px;
+            }
+        }
+    }
+
+    .all-details-section {
+        .head {
+            background-color: #A9A9A9;
+            line-height: 18px;
+            font-size: 19px;
+        }
+
+        .img-sec {
+            height: 150px;
         }
     }
 }

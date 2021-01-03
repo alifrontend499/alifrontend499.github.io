@@ -2047,4 +2047,101 @@ footer .footer-big-links > a:hover {
   }
 }
 
+/* SUPER DOOPER MODAL PAGE */
+#original-series-websites-container.super-dooper-models-page {
+  background: #000 url("../images/super-dooper-modal-main-bg.gif") no-repeat center bottom/auto;
+}
+
+#original-series-websites-container.super-dooper-models-page .header-super-dooper-models {
+  background-color: inherit;
+}
+#original-series-websites-container.super-dooper-models-page .navbar-brand {
+  z-index: 11;
+  margin-bottom: -20px;
+}
+@media screen and (min-width: 992px) {
+  #original-series-websites-container.super-dooper-models-page .navbar-brand img {
+    width: 480px;
+  }
+}
+#original-series-websites-container.super-dooper-models-page .navbar-toggler {
+  margin-bottom: 20px;
+}
+#original-series-websites-container.super-dooper-models-page .navbar-collapse {
+  margin: 20px 0;
+}
+#original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item:not(:last-child) {
+  margin-right: 25px;
+}
+#original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item > .nav-link {
+  color: #565656;
+}
+@media screen and (min-width: 768px) {
+  #original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item > .nav-link {
+    font-weight: 900;
+    font-size: 23px;
+  }
+  #original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item > .nav-link > span {
+    text-align: right;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    position: relative;
+    top: 5px;
+  }
+}
+#original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item > .nav-link:hover, #original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item > .nav-link.active {
+  color: #a9a9a9;
+}
+#original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item:hover > a, #original-series-websites-container.super-dooper-models-page .navbar-nav > .nav-item.active > a {
+  color: #a9a9a9;
+}
+
+#agencies-details-section.details-super-dooper-modal .wire-bg {
+  background: transparent url(../images/super-dooper-model-wire-bg.png) no-repeat center;
+  height: 30px;
+  margin: -33px auto 0;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+  width: calc(100% - 35px);
+  z-index: 1;
+}
+#agencies-details-section.details-super-dooper-modal .agencies-details-section::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: calc(100%);
+  background: rgba(0, 0, 0, 0.5);
+}
+#agencies-details-section.details-super-dooper-modal .agencies-details-section > .inner {
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1;
+}
+#agencies-details-section.details-super-dooper-modal .agencies-details-section-inner {
+  margin-top: 15px;
+}
+#agencies-details-section.details-super-dooper-modal .video-container iframe {
+  width: 100%;
+  margin-bottom: -3px;
+  height: 300px;
+}
+@media screen and (min-width: 992px) {
+  #agencies-details-section.details-super-dooper-modal .video-container iframe {
+    height: 500px;
+  }
+}
+#agencies-details-section.details-super-dooper-modal .all-details-section .head {
+  background-color: #A9A9A9;
+  line-height: 18px;
+  font-size: 19px;
+}
+#agencies-details-section.details-super-dooper-modal .all-details-section .img-sec {
+  height: 150px;
+}
+
 /*# sourceMappingURL=style.css.map */
