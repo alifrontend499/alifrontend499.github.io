@@ -229,6 +229,33 @@ $(function () {
             animateOut: 'fadeOut',
         })
 
+        // STEFSTYLEDIARIES SLIDER
+        $('#stefstylediaries-slider').owlCarousel({
+            items: 4,
+            loop: true,
+            center: true,
+            margin: 2,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            smartSpeed: 1200,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                768: {
+                    items: 4
+                }
+            },
+        })
+
     })();
 
     // DYNAMIC TABS

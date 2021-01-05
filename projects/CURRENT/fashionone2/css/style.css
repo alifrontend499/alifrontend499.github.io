@@ -2144,4 +2144,167 @@ footer .footer-big-links > a:hover {
   height: 150px;
 }
 
+/* stefstylediaries page */
+#original-series-websites-container.stefstylediaries-page {
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 992px) {
+  #original-series-websites-container.stefstylediaries-page .container {
+    max-width: 800px;
+  }
+}
+
+#oswc-header-logo-left-menu-right.header-stefstylediaries {
+  background-color: transparent;
+}
+#oswc-header-logo-left-menu-right.header-stefstylediaries .oswc-header-logo-left-menu-right {
+  border-radius: 7px 7px 0px 0;
+}
+#oswc-header-logo-left-menu-right.header-stefstylediaries .navbar-nav > .nav-item:not(:last-child) {
+  margin-right: 15px;
+}
+#oswc-header-logo-left-menu-right.header-stefstylediaries .navbar-nav > .nav-item > .nav-link {
+  font-size: 13px;
+  font-family: 'century-gothic-regular', sans-serif;
+  color: #000;
+  position: relative;
+}
+#oswc-header-logo-left-menu-right.header-stefstylediaries .navbar-nav > .nav-item > .nav-link:hover, #oswc-header-logo-left-menu-right.header-stefstylediaries .navbar-nav > .nav-item > .nav-link.active {
+  font-family: 'century-gothic-bold', sans-serif;
+}
+@media screen and (min-width: 992px) {
+  #oswc-header-logo-left-menu-right.header-stefstylediaries .navbar-nav > .nav-item:not(:last-child) > .nav-link::after {
+    content: '';
+    height: 11px;
+    width: 1px;
+    background: #333;
+    position: absolute;
+    top: 12px;
+    right: -7px;
+  }
+}
+
+#agencies-details-section.details-stefstylediaries .video-container .caption {
+  bottom: 20px;
+  left: 0;
+}
+#agencies-details-section.details-stefstylediaries .video-container .caption .head {
+  font-size: 25px;
+}
+@media screen and (min-width: 992px) {
+  #agencies-details-section.details-stefstylediaries .video-container .caption .head {
+    font-size: 50px;
+    padding-left: 50px;
+    color: #000;
+  }
+}
+#agencies-details-section.details-stefstylediaries .slider-container .heading::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .heading > span {
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  #agencies-details-section.details-stefstylediaries .slider-container .slider {
+    padding: 0 60px;
+  }
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-item .item {
+  opacity: 0.6;
+  z-index: 9;
+  position: relative;
+  transition: 1s;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  padding: 50px 0 40px;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-item.active.center .item {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-item.active.center .item .text-sec {
+  opacity: 1;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav {
+  opacity: 1;
+  transition: 0.3s;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"] {
+  position: absolute;
+  top: 50%;
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+  border-radius: 50%;
+  outline: none;
+  opacity: 0.6;
+  transition: 0.1s;
+  -webkit-transform: translatey(-50%);
+  transform: translatey(-50%);
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"] span {
+  display: none !important;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"]:hover {
+  opacity: 1;
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"].owl-prev {
+  left: 0px;
+}
+@media screen and (min-width: 992px) {
+  #agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"].owl-prev {
+    left: -55px;
+  }
+}
+#agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"].owl-next {
+  right: 0px;
+}
+@media screen and (min-width: 992px) {
+  #agencies-details-section.details-stefstylediaries .slider-container .owl-nav button[type="button"].owl-next {
+    right: -55px;
+  }
+}
+#agencies-details-section.details-stefstylediaries .social-container {
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item {
+  padding: 0 5px;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item .scroll-box {
+  max-height: 245px;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.about .heading {
+  background: #616ba6;
+  color: #fff;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.about .caption {
+  width: calc(100% - 40px);
+  left: 20px;
+  bottom: -100%;
+  opacity: 0.8;
+  transition: 0.7s;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.about .caption a {
+  color: #386790;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.about:hover .caption {
+  bottom: 20px;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.instagram .heading {
+  background: #446a91;
+  color: #fff;
+}
+#agencies-details-section.details-stefstylediaries .social-container .item.twitter .heading {
+  background: #57879d;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
