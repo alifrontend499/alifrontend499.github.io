@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hozpito | Authentication</title>
+
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- header top part -->
+        <div id="header-top">
+            <div class="container">
+                <div class="header-top d-flex flex-wrap align-items-md-center position-relative">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html" class="d-table">
+                            <img src="images/logo.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap ml-auto align-items-center">
+                        <!-- search -->
+                        <div class="header-search pl-3 pr-4 ml-auto">
+                            <div class="inner d-flex align-items-center">
+                                <div class="btns mr-2">
+                                    <button class="btn st-btn st-btn-white font-size-17 font-weight-600 d-flex">
+                                        <!-- <i class="feather-map-pin mr-2 mt-1"></i> -->
+                                        <i class="feather-crosshair mr-2 mt-1"></i>
+                                        <span>Location</span>
+                                    </button>
+                                </div>
+                                <div class="form-group st-form with-icon position-relative mb-0">
+                                    <input type="text" class="form-control"
+                                        placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
+                                    <button class="icon position-absolute no-browser-style"><i
+                                            class="feather-search"></i></button>
+                                </div>
+                                <!-- <div class="btns">
+                                    <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600">Upload
+                                        Prescription</button>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- header right -->
+                        <div class="header-right pl-3 ml-auto">
+                            <div class="inner d-flex align-items-center">
+                                <a href="#"
+                                    class="lock-a st-round-icon-btn st-round-icon-btn-primary align-items-center d-flex justify-content-center rounded-circle text-decoration-none">
+                                    <i class="feather-lock"></i>
+                                </a>
+                                <ul class="list-unstyled d-flex align-items-center mx-3">
+                                    <li class="pr-2">
+                                        <a href="authentication.html" class="text-white font-size-15"
+                                            title="Login">Login</a>
+                                    </li>
+                                    <li class="pl-2">
+                                        <a href="authentication.html" class="text-white font-size-15"
+                                            title="Sign Up">Sign Up</a>
+                                    </li>
+                                </ul>
+                                <!-- favorite -->
+                                <a href="#"
+                                    class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                    title="Favorite">
+                                    <i class="feather-heart"></i>
+                                </a>
+                                <!-- cart -->
+                                <a href="#"
+                                    class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                    title="Cart">
+                                    <i class="feather-shopping-cart"></i>
+                                    <span
+                                        class="app-badge app-badge-secondary align-items-center d-flex font-size-11 justify-content-center overflow-hidden position-absolute rounded-circle">
+                                        1
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header menu -->
+        <div id="header-menu">
+            <div class="container">
+                <div class="header-menu">
+                    <nav class="navbar navbar-expand-lg px-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stMenuBar"
+                            aria-controls="stMenuBar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="stMenuBar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16 active" href="#">
+                                        <span>All Medicines</span>
+                                        <i class="feather-chevron-down ml-1 mt-1"></i>
+                                    </a>
+                                    <ul class="dropdown-menu overflow-hidden py-0 m-0">
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu one</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu three</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu four</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>COVID Test & Prevention</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Featured</span>
+                                        <i class="feather-chevron-down ml-1 mt-1"></i>
+                                    </a>
+                                    <ul class="dropdown-menu overflow-hidden py-0 m-0">
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu one</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu three</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu four</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Fitness & Supplements</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Homeopathy</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Diabetes</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Healthcare Devices</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Personal Care</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SITE WRAPPER -->
+    <div id="wrapper">
+
+        <!-- ST LOGIN -->
+        <section id="st-authentication">
+            <div class="container">
+                <div class="st-authentication">
+                    <div class="login-inner d-flex flex-wrap">
+                        <div class="col-md-6 lt px-0 d-none d-md-block">
+                            <div class="inner h-100"></div>
+                        </div>
+                        <div class="col-md-6 rt px-0">
+                            <div class="inner bg-white h-100">
+                                <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                <ul class="nav nav-tabs st-dynamic-tabs" id="loginTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize active" id="login-tab" data-toggle="tab"
+                                            href="#login" role="tab" aria-controls="login"
+                                            aria-selected="true">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize" id="sign-up-tab" data-toggle="tab"
+                                            href="#sign-up" role="tab" aria-controls="sign-up"
+                                            aria-selected="false">Sign up</a>
+                                    </li>
+                                    <li class="nav-item d-none">
+                                        <a class="nav-link text-capitalize" id="forgot-password-tab" data-toggle="tab"
+                                            href="#forgot-password" role="tab" aria-controls="forgot-password"
+                                            aria-selected="false">forgot password</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="loginTabContent">
+                                    <!-- login tab -->
+                                    <div class="tab-pane fade show active" id="login" role="tabpanel"
+                                        aria-labelledby="login-tab">
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control" placeholder="Mobile Number">
+                                            </div>
+                                            <div class="form-group st-form input-underline login-password-field">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="form-group st-form input-underline login-otp-field d-none">
+                                                <input type="password" class="form-control" placeholder="Enter OTP">
+                                            </div>
+                                            <div class="btns open-password-field">
+                                                <button
+                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
+                                            </div>
+                                            <div class="or-text position-relative">
+                                                <span class="d-table mx-auto position-relative">OR</span>
+                                            </div>
+                                            <div class="btns open-otp-field">
+                                                <button
+                                                    class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">Use
+                                                    OTP</button>
+                                            </div>
+                                            <div class="other-options d-flex align-items-center">
+                                                <a href="" data-open-tab='aria-tab-2'
+                                                    class="font-size-16 st-text-primary">Forgot Password ?</a>
+                                                <ul class="list-unstyled d-flex align-items-center ml-auto">
+                                                    <li class="first font-size-16">
+                                                        Login with
+                                                    </li>
+                                                    <li class="facebook">
+                                                        <a href=""
+                                                            class="d-flex align-items-center justify-content-center">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="google">
+                                                        <a href=""
+                                                            class="d-flex align-items-center justify-content-center">
+                                                            <i class="fab fa-google-plus-g"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- sign up tab -->
+                                    <div class="tab-pane fade" id="sign-up" role="tabpanel"
+                                        aria-labelledby="sign-up-tab">
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control" placeholder="Mobile Number">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="form-group st-form input-underline">
+                                                <input type="password" class="form-control"
+                                                    placeholder="Confirm Password">
+                                            </div>
+                                            <div class="btns open-password-field">
+                                                <button
+                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
+                                                    up</button>
+                                            </div>
+                                            <div class="add-info">
+                                                <p class="font-size-16">
+                                                    Already have an account?
+                                                    <a href="" data-open-tab='aria-tab-0'
+                                                        class="st-text-primary">Login</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- forgot password tab -->
+                                    <div class="tab-pane fade" id="forgot-password" role="tabpanel"
+                                        aria-labelledby="forgot-password-tab">
+                                        <div class="login-form">
+                                            <div class="form-group st-form input-underline">
+                                                <input type="text" class="form-control"
+                                                    placeholder="Mobile Number/ Email Address">
+                                            </div>
+                                            <div class="btns open-password-field">
+                                                <button
+                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
+                                                    password</button>
+                                            </div>
+                                            <div class="add-info">
+                                                <p class="font-size-16">
+                                                    Already have an account?
+                                                    <a href="" data-open-tab='aria-tab-0'
+                                                        class="st-text-primary">Login</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer>
+            <!-- top sec -->
+            <div id="footer-top-sec">
+                <div class="container">
+                    <div class="footer-top-sec d-flex align-items-center">
+                        <div class="img-sec">
+                            <a href="index.html" class="d-block text-decoration-none">
+                                <img src="images/logo-footer.png" alt="logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-sec">
+                            <p class="font-size-16">
+                                Lucknow Ki Pharmacy, is brought to you by the Company – one of India’s most trusted
+                                pharmacies, with over 100 years’
+                                experience in dispensing quality medicines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main sec -->
+            <div id="footer-main">
+                <div class="container">
+                    <div class="footer-main row">
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">COMPANY</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">About Hozpito</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Customers Speak</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">In the News</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Terms and
+                                            Conditions</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Privacy Policy</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">SHOPPING</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Browse by
+                                            Manufacturers</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Health Articles</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Offers / Coupons</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">CATEGORIES</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Ayush</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Devices</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Family Care</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Fitness</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Lifestyle</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Personal care</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Treatments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">SOCIAL</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Patients Alike</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Facebook</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Twitter</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">LinkedIn</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Youtube</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">Download App</p>
+                                <a href="#" class="d-table mb-3">
+                                    <img src="images/download-app-ios.jpg" alt="" class="img-fluid">
+                                </a>
+                                <a href="#" class="d-table">
+                                    <img src="images/download-app-android.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom sec -->
+            <div id="footer-bottom-sec">
+                <div class="container">
+                    <div class="footer-bottom-sec">
+                        <div class="text-sec">
+                            <p class="font-size-15 text-center text-white">
+                                Copyright &copy; 2021 Hozpito. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- SCRIPT CUSOMT -->
+    <script src="js/app.js"></script>
+
+    <script>
+        $(function () {
+            $('.btns.open-otp-field > .btn').click(function (ev) {
+                ev.preventDefault()
+                if ($('.login-otp-field').hasClass('d-none')) {
+                    $(this).text('use password')
+                    $('.login-password-field').addClass('d-none')
+                    $('.login-otp-field').removeClass('d-none')
+                } else if ($('.login-password-field').hasClass('d-none')) {
+                    $(this).text('use OTP')
+                    $('.login-otp-field').addClass('d-none')
+                    $('.login-password-field').removeClass('d-none')
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/* HEADING STYLES */
+.st-main-heading {
+    .st-heading {
+        font-size: 20px;
+        color: #333;
+        @include min-width($md-min) {
+            font-size: 23px;
+        }
+    }
+
+    // medium heading
+    &.st-heading-md {
+        .st-heading {
+            @include min-width($md-min) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    // large heading
+    &.st-heading-lg {
+        .st-heading {
+            font-size: 25px;
+            @include min-width($md-min) {
+                font-size: 35px;
+            }
+        }
+    }
+}

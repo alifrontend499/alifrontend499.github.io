@@ -1,0 +1,119 @@
+/* SCROLLBAR */
+@import 'styles/scrollbar';
+
+/* COLORS STYLES */
+@import 'styles/colors';
+
+/* BUTTONS STYLES */
+@import 'styles/buttons';
+
+/* TEXT STYLES */
+@import 'styles/text';
+
+/* HEADING STYLES */
+@import 'styles/headings';
+
+/* FORMS STYLES */
+@import 'styles/form';
+
+// common margin and padding
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: 20px;
+
+    @include min_width(992px) {
+        margin-top: 50px;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: 20px;
+
+    @include min_width(992px) {
+        margin-bottom: 50px;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: 20px;
+
+    @include min_width(992px) {
+        padding-top: 50px;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: 20px;
+
+    @include min_width(992px) {
+        padding-bottom: 50px;
+    }
+}
+
+
+// APP BADGE
+.app-badge {
+    background: #333;
+    padding: 2px;
+    height: 22px;
+    width: 22px;
+    top: 0;
+    right: -5px;
+    color: #fff;
+
+    &.app-badge-primary {
+        background-color: $primary-color;
+    }
+
+    &.app-badge-secondary {
+        background-color: $secondary-color;
+    }
+}
+
+// img classes
+.img-fluid-height {
+    max-height: 100%;
+}
+
+// common slider classes
+.st-common-slider-item {
+    .st-common-slider-item-inner {}
+}
+
+.st-common-slider-img-sec {
+    height: 150px;
+
+    >img {
+        width: auto !important;
+    }
+}
+
+// app-devider
+.app-devider {
+    height: 1px;
+    width: 100%;
+    background-color: $app-border-color;
+}
+
+// or text
+.or-text {
+    &::after {
+        content: '';
+        background-color: $app-border-color;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include transformy(-50%)
+    }
+    span {
+        z-index: 1;
+        background-color: #fff;
+        padding: 0 5px;
+        color: $app-border-color;
+    }
+}
