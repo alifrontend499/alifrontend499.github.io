@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hozpito | Authentication</title>
+    <title>Hozpito | Product</title>
 
     <!-- FONTAWSOME ICONS -->
     <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="assets/ion.rangeSlider/css/ion.rangeSlider.min.css">
+    <!-- FANCY BOX -->
+    <link rel="stylesheet" href="assets/fancybox/css/jquery.fancybox.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -193,143 +197,119 @@
 
     <!-- SITE WRAPPER -->
     <div id="wrapper">
-
-        <!-- ST LOGIN -->
-        <section id="st-authentication">
+        <!-- site breadcrumbs -->
+        <section id="st-breadcrumbs">
             <div class="container">
-                <div class="st-authentication">
-                    <div class="login-inner d-flex flex-wrap">
-                        <div class="col-md-6 lt px-0 d-none d-md-block">
-                            <div class="inner h-100"></div>
-                        </div>
-                        <div class="col-md-6 rt px-0">
-                            <div class="inner bg-white h-100">
-                                <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
-                                <ul class="nav nav-tabs st-dynamic-tabs" id="loginTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-capitalize active" id="login-tab" data-toggle="tab"
-                                            href="#login" role="tab" aria-controls="login"
-                                            aria-selected="true">Login</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-capitalize" id="sign-up-tab" data-toggle="tab"
-                                            href="#sign-up" role="tab" aria-controls="sign-up"
-                                            aria-selected="false">Sign up</a>
-                                    </li>
-                                    <li class="nav-item d-none">
-                                        <a class="nav-link text-capitalize" id="forgot-password-tab" data-toggle="tab"
-                                            href="#forgot-password" role="tab" aria-controls="forgot-password"
-                                            aria-selected="false">forgot password</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="loginTabContent">
-                                    <!-- login tab -->
-                                    <div class="tab-pane fade show active" id="login" role="tabpanel"
-                                        aria-labelledby="login-tab">
-                                        <div class="login-form">
-                                            <div class="form-group st-form input-underline">
-                                                <input type="text" class="form-control" placeholder="Mobile Number">
-                                            </div>
-                                            <div class="form-group st-form input-underline login-password-field">
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                            <div class="form-group st-form input-underline login-otp-field d-none">
-                                                <input type="password" class="form-control" placeholder="Enter OTP">
-                                            </div>
-                                            <div class="btns open-password-field">
-                                                <button
-                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
-                                            </div>
-                                            <div class="or-text position-relative">
-                                                <span class="d-table mx-auto position-relative">OR</span>
-                                            </div>
-                                            <div class="btns open-otp-field">
-                                                <button
-                                                    class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">Use
-                                                    OTP</button>
-                                            </div>
-                                            <div class="other-options d-flex align-items-center">
-                                                <a href="" data-open-tab='aria-tab-2'
-                                                    class="font-size-16 st-text-primary">Forgot Password ?</a>
-                                                <ul class="list-unstyled d-flex align-items-center ml-auto">
-                                                    <li class="first font-size-16">
-                                                        Login with
-                                                    </li>
-                                                    <li class="facebook">
-                                                        <a href=""
-                                                            class="d-flex align-items-center justify-content-center">
-                                                            <i class="fab fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="google">
-                                                        <a href=""
-                                                            class="d-flex align-items-center justify-content-center">
-                                                            <i class="fab fa-google-plus-g"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="st-breadcrumbs">
+                    <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="font-weight-600">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="font-weight-600">
+                            <a href="#">Fitness</a>
+                        </li>
+                        <li class="font-weight-600">
+                            <a href="#">Covid-19 Immunity + Anti Inflammatory Booster Pack (Curcumin Strips + Vitamin C
+                                Strips + Vitamin D Strips) 210's</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                                    <!-- sign up tab -->
-                                    <div class="tab-pane fade" id="sign-up" role="tabpanel"
-                                        aria-labelledby="sign-up-tab">
-                                        <div class="login-form">
-                                            <div class="form-group st-form input-underline">
-                                                <input type="text" class="form-control" placeholder="Full Name">
-                                            </div>
-                                            <div class="form-group st-form input-underline">
-                                                <input type="text" class="form-control" placeholder="Mobile Number">
-                                            </div>
-                                            <div class="form-group st-form input-underline">
-                                                <input type="password" class="form-control" placeholder="Password">
-                                            </div>
-                                            <div class="form-group st-form input-underline">
-                                                <input type="password" class="form-control"
-                                                    placeholder="Confirm Password">
-                                            </div>
-                                            <div class="btns open-password-field">
-                                                <button
-                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
-                                                    up</button>
-                                            </div>
-                                            <div class="add-info">
-                                                <p class="font-size-16">
-                                                    Already have an account?
-                                                    <a href="" data-open-tab='aria-tab-0'
-                                                        class="st-text-primary">Login</a>
-                                                </p>
-                                            </div>
-                                        </div>
+        <!-- PRODUCTS DETAILS -->
+        <section id="st-product-detail" class="ST_def-mar-B">
+            <div class="container">
+                <div class="st-product-detail d-flex flex-wrap p-3 bg-white">
+                    <!-- PRODUCT IMAGES -->
+                    <div class="product-images">
+                        <div class="inner">
+                            <a data-fancybox href="images/product-details/big-img1.jpg"
+                                class="big-img d-flex align-items-center justify-content-center p-3">
+                                <img src="images/product-details/big-img1.jpg" alt=""
+                                    class="img-fluid img-fluid-height">
+                            </a>
+                            <div class="thumbnails mt-3">
+                                <div class="owl-carousel" id="product-details-thumbnail-slider">
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/product-details/big-img1.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
                                     </div>
-
-                                    <!-- forgot password tab -->
-                                    <div class="tab-pane fade" id="forgot-password" role="tabpanel"
-                                        aria-labelledby="forgot-password-tab">
-                                        <div class="login-form">
-                                            <div class="form-group st-form input-underline">
-                                                <input type="text" class="form-control"
-                                                    placeholder="Mobile Number">
-                                            </div>
-                                            <div class="btns open-password-field">
-                                                <button
-                                                    class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
-                                                    password</button>
-                                            </div>
-                                            <div class="add-info">
-                                                <p class="font-size-16">
-                                                    Already have an account?
-                                                    <a href="" data-open-tab='aria-tab-0'
-                                                        class="st-text-primary">Login</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img6.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img2.jpg" alt="" class="img-fluid img-fluid-height">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- PRODUCT DETAILS -->
+                    <div class="product-details">
+                        <div class="inner">
+                            <p class="product-heading font-size-20 font-weight-600 mb-3 mb-md-4">
+                                Covid-19 Immunity + Anti Inflammatory Booster Pack (Curcumin Strips + Vitamin C Strips +
+                                Vitamin D Strips) 210's
+                            </p>
+
+                            <div class="other-details d-flex mb-3 mb-md-4">
+                                <div class="w-50 item pr-1">
+                                    <p class="head text-uppercase font-weight-600 font-size-15 mb-2">Salt Composition
+                                    </p>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Insulin
+                                        Lispro (100IU),</a>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Amitriptyline
+                                        (12.5mg),</a>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Chlordiazepoxide
+                                        (5mg)</a>
+                                </div>
+                                <div class="w-50 item pl-1">
+                                    <p class="head text-uppercase font-weight-600 font-size-15 mb-2">MANUFACTURER</p>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-primary font-size-15 text-decoration-underline mb-1">Hozpito
+                                        Pharmaceuticals Ltd</a>
+                                </div>
+                            </div>
+
+                            <p class="price font-size-20 font-weight-600">
+                                <span class="actual-price">₹ 1,610.00</span>
+                                <span class="cut-price ml-2 st-text-light font-size-15 text-decoration-line-through">Rs.
+                                    2065 </span>
+                                <span class="off ml-2 font-size-15 st-text-secondary">(20% OFF)</span>
+                            </p>
+                            <p class="add-text font-weight-600 st-text-primary">inclusive of all taxes</p>
+
+                            <!-- app devider -->
+                            <div class="app-devider-outer my-3 my-md-4">
+                                <div class="app-devider"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -459,21 +439,22 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- OWL CAROUSEL -->
     <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- RANGE SLIDER -->
+    <script src="assets/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- FANCY BOX -->
+    <script src="assets/fancybox/js/jquery.fancybox.min.js"></script>
     <!-- SCRIPT CUSOMT -->
     <script src="js/app.js"></script>
 
     <script>
         $(function () {
-            $('.btns.open-otp-field > .btn').click(function (ev) {
-                ev.preventDefault()
-                if ($('.login-otp-field').hasClass('d-none')) {
-                    $(this).text('use password')
-                    $('.login-password-field').addClass('d-none')
-                    $('.login-otp-field').removeClass('d-none')
-                } else if ($('.login-password-field').hasClass('d-none')) {
-                    $(this).text('use OTP')
-                    $('.login-otp-field').addClass('d-none')
-                    $('.login-password-field').removeClass('d-none')
+            $('.product-images .thumbnails .item > a').click(function (ev) {
+                ev.preventDefault();
+                var imgPath = $('>img', this).attr('src')
+                console.log(imgPath)
+                if (imgPath) {
+                    $('.product-images .big-img').closest('.big-img').attr('href', imgPath)
+                    $('.product-images .big-img > img').closest('.big-img').find('>img').attr('src', imgPath)
                 }
             });
         });

@@ -93,6 +93,29 @@ $(function () {
         }
     });
 
+    // PRODUCT DETAILS THUMBNAIL SLIDER
+    $('#product-details-thumbnail-slider').owlCarousel({
+        items: 3,
+        loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 1000,
+        autoplayTimeout: 2500,
+        margin: 5,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            }
+        }
+    });
+
 
     // ST-DYNAMIC-TABS
     (function () {

@@ -110,10 +110,102 @@
         left: 0;
         @include transformy(-50%)
     }
+
     span {
         z-index: 1;
         background-color: #fff;
         padding: 0 5px;
         color: $app-border-color;
     }
+}
+
+// SITE BREADCRUMBS
+#st-breadcrumbs {
+    margin: 20px 0;
+}
+
+.st-breadcrumbs {
+    ul {
+        li {
+            &:not(:last-child) {
+                &::after {
+                    content: '>';
+                    margin: 0 8px 0 5px;
+                }
+            }
+
+            a {
+                color: $primary-color;
+            }
+
+            &:last-child {
+                a {
+                    color: $dark-text-color;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+// ST-RADIO
+.st-radio {
+    font-weight: normal;
+    cursor: pointer;
+
+    .round {
+        height: 16px;
+        width: 16px;
+        padding: 2px;
+        border: 2px solid $primary-color;
+        margin-top: 3px;
+
+        .round-inner {
+            background-color: $primary-color;
+            opacity: 0;
+            @include transition(.2s);
+        }
+    }
+
+    .text {
+        @include transition(.2s);
+
+        &:hover {
+            color: #111 !important;
+        }
+    }
+
+    >input:checked {
+        &+.round {
+            .round-inner {
+                opacity: 1;
+            }
+        }
+
+        &~.text {
+            color: #111 !important;
+        }
+    }
+}
+
+// range slider css
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single {
+    font-size: 11px;
+    background-color: $dark-text-color;
+}
+.irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+    border-top-color: $dark-text-color;
+}
+.irs--round .irs-bar {
+    background-color: $dark-text-color;
+}
+
+.irs--round .irs-handle {
+    top: 28px;
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-color: $dark-text-color;
 }

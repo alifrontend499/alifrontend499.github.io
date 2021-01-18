@@ -1,3 +1,11 @@
+// STYLES
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+}
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
 /* FONT WEIGHT CLASSES */
 .font-weight-100 {
     font-weight: 100 !important;
@@ -100,28 +108,28 @@
 
 a.st-text-primary {
     &:hover {
-        color: darken($color: $primary-color, $amount: 10);
+        color: darken($color: $primary-color, $amount: 10) !important;
     }
 }
 
 a.st-text-secondary {
     &:hover {
-        color: darken($color: $secondary-color, $amount: 10);
+        color: darken($color: $secondary-color, $amount: 10) !important;
     }
 }
 
 .st-text-light {
-    color: $light-text-color;
+    color: $light-text-color !important;
 }
 
 a.st-text-light:hover {
-    color: darken($color: $light-text-color, $amount: 10);
+    color: darken($color: $light-text-color, $amount: 10) !important;
 }
 
 .st-text-dark {
-    color: $dark-text-color;
+    color: $dark-text-color !important;
 }
 
 a.st-text-dark:hover {
-    color: darken($color: $dark-text-color, $amount: 10);
+    color: darken($color: $dark-text-color, $amount: 10) !important;
 }
