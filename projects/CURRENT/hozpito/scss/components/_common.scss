@@ -195,9 +195,13 @@
     font-size: 11px;
     background-color: $dark-text-color;
 }
-.irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before {
     border-top-color: $dark-text-color;
 }
+
 .irs--round .irs-bar {
     background-color: $dark-text-color;
 }
@@ -208,4 +212,92 @@
     height: 20px;
     border-width: 2px;
     border-color: $dark-text-color;
+}
+
+// QUANTITY-SELECT-CONTROLS
+.quantity-select-controls {
+
+    >button,
+    >input {
+        height: 35px;
+        border: 1px solid $app-border-color;
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $app-border-color;
+        }
+    }
+
+    >button {
+        width: 35px;
+        padding: 0;
+
+        &.minus {
+            margin-right: -1px;
+        }
+
+        &.plus {
+            margin-left: -1px;
+        }
+    }
+
+    >input {
+        width: 50px;
+        box-shadow: none !important;
+        padding: 0 5px;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none
+        }
+    }
+}
+
+// ST RATINGS COUNT
+.st-ratings-count {
+    .lt-sec {
+        width: 135px;
+        .head {
+            font-size: 45px;
+            line-height: 45px;
+        }
+    }
+    .rt-sec {
+        width: calc(100% - 135px);
+        border-left: 1px solid $app-border-color;
+        padding-left: 30px;
+        @include min-width($md-min) {
+            width: 250px;
+        }
+        .frac {
+            .progress {
+                height: 5px;
+                .progress-bar {
+                    background-color: $light-text-color;
+                }
+            }
+            &.five-star,
+            &.four-star,
+            &.three-star {
+                .progress-bar {
+                    background-color: $primary-color;
+                }
+            }
+            &.three-star {
+                .progress-bar {
+                    opacity: 0.5;
+                }
+            }
+            &.two-star {
+                .progress-bar {
+                    background-color: #fcb301;
+                }
+            }
+            &.one-star {
+                .progress-bar {
+                    background-color: #f16565;
+                }
+            }
+        }
+    }
 }

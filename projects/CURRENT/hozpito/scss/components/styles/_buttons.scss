@@ -182,6 +182,22 @@ button.no-browser-style {
         }
     }
 
+    // btn outlined black
+    &.st-btn-outlined-black {
+        background-color: transparent;
+        border: 1px solid $dark-text-color;
+        color: $dark-text-color;
+        &:hover {
+            background-color: $dark-text-color;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $dark-text-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
     // btn white
     &.st-btn-white {
         background-color: #fff;

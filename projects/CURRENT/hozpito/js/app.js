@@ -8,7 +8,7 @@ $(function () {
         navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
         autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 1500,
+        smartSpeed: 700,
         autoplayTimeout: 3000,
     });
 
@@ -19,7 +19,7 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 1500,
+        smartSpeed: 700,
         autoplayTimeout: 3200,
         margin: 15,
         responsive: {
@@ -38,6 +38,34 @@ $(function () {
         }
     });
 
+    // RELATED PRODUCTS SLIDER
+    $('#related-products-slider').owlCarousel({
+        items: 6,
+        // loop: true,
+        nav: true,
+        navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        autoplayTimeout: 2800,
+        margin: 15,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 4,
+            },
+            992: {
+                items: 5,
+            },
+        }
+    });
+
     // OUR PRODUCTS SLIDER
     $('#our-products-slider').owlCarousel({
         items: 6,
@@ -45,7 +73,7 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 1500,
+        smartSpeed: 700,
         autoplayTimeout: 2800,
         margin: 15,
         responsive: {
@@ -71,7 +99,7 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 1500,
+        smartSpeed: 700,
         autoplayTimeout: 3400,
         margin: 15,
         responsive: {
@@ -96,21 +124,15 @@ $(function () {
     // PRODUCT DETAILS THUMBNAIL SLIDER
     $('#product-details-thumbnail-slider').owlCarousel({
         items: 3,
-        loop: true,
         dots: false,
-        autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 1000,
-        autoplayTimeout: 2500,
+        smartSpeed: 700,
         margin: 5,
         responsive: {
             0: {
-                items: 1,
-            },
-            576: {
                 items: 2,
             },
-            768: {
+            576: {
                 items: 3,
             }
         }
@@ -122,14 +144,12 @@ $(function () {
         var navCount = 0;
         var tabContentCount = 0;
         $('.st-dynamic-tabs > li').each(function () {
-            // console.log(navCount);
             $('>a', this).attr('id', 'aria-tab-' + navCount);
             $('>a', this).attr('href', '#href-' + navCount);
             $('>a', this).attr('aria-controls', 'href-' + navCount);
             navCount += 1;
         });
         $('.st-dynamic-tabs + .tab-content > .tab-pane').each(function () {
-            // console.log(tabContentCount);
             $(this).attr('aria-labelledby', 'aria-tab-' + tabContentCount)
             $(this).attr('id', 'href-' + tabContentCount)
             tabContentCount += 1;
@@ -141,6 +161,27 @@ $(function () {
         $('[data-open-tab]').click(function (ev) {
             ev.preventDefault();
             $('#' + $(this).attr('data-open-tab')).trigger('click');
+        });
+    })();
+
+    // QUANTITY INCREASE DECREASE CONTROLS
+    (function () {
+        $('.quantity-select-controls > button').click(function (ev) {
+            ev.preventDefault();
+            var currentVal = parseInt($(this).parent().find('>input').val())
+            if ($(this).hasClass('plus')) {
+                if (currentVal >= 1) {
+                    $(this).parent().find('>input').val(currentVal + 1)
+                } else {
+                    return false
+                }
+            } else {
+                if (currentVal > 1) {
+                    $(this).parent().find('>input').val(currentVal - 1)
+                } else {
+                    return false
+                }
+            }
         });
     })();
 

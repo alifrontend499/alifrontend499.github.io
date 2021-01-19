@@ -914,7 +914,9 @@ footer {
             >a {
                 border: 1px solid $app-border-color;
                 height: 100px;
-
+                &.active {
+                    border-color: $primary-color;
+                }
                 img {
                     width: auto
                 }
@@ -933,6 +935,77 @@ footer {
 
         @include min-width($md-min) {
             padding-left: 40px;
+        }
+    }
+}
+
+// MORE PRODUCTS DETAILS TAB
+#st-more-product-detail {}
+
+.st-more-product-detail {
+    .nav-tabs {
+        >.nav-item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            >.nav-link {
+                background-color: darken($color: #fff, $amount: 15);
+                padding: 15px;
+                color: $light-text-color;
+                @include transition;
+
+                &:hover,
+                &.active {
+                    background-color: #fff;
+                    color: $dark-text-color;
+                }
+            }
+        }
+
+    }
+
+    .tab-pane {
+        padding: 15px;
+
+        @include min-width($sm-min) {
+            padding: 30px 30px;
+        }
+    }
+}
+
+#related-products-slider-main {}
+
+.related-products-slider-main {
+    .owl-nav {
+        position: absolute;
+        top: -47px;
+        right: 0;
+
+        .owl-prev,
+        .owl-next {
+            outline: none !important;
+            box-shadow: none !important;
+            opacity: 0.6;
+            i {
+                font-size: 30px;
+            }
+
+            &:hover {
+                opacity: 1;
+                i {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .owl-prev {
+            margin-right: 3px;
+
+        }
+
+        .owl-next {
+            margin-left: 3px;
         }
     }
 }
