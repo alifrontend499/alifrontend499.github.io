@@ -460,4 +460,14 @@ footer { background-color: #384651; }
 .cart-product .product-name .img-sec { height: 65px; width: 65px; }
 .cart-product .product-name .text-sec { -ms-flex: 1; flex: 1; }
 
+.st-info-links .all-info-links { width: 230px; }
+.st-info-links .all-info-links .a-link { background-color: #fff; color: #3d3d3d; padding: 23px 20px; transition: 0.1s; pointer-events: none; }
+.st-info-links .all-info-links .a-link::after { content: ''; position: absolute; right: 0; top: 50%; transform: translate(100%, -50%); border-width: 13px; border-style: solid; border-color: transparent; border-left-color: transparent; }
+.st-info-links .all-info-links .a-link.active, .st-info-links .all-info-links .a-link:hover { background-color: #06a0a8; color: #fff; }
+.st-info-links .all-info-links .a-link.active { background-color: #06a0a8; color: #fff; width: calc(100% + (15px + 1px)); }
+.st-info-links .all-info-links .a-link.active::after { border-left-color: #06a0a8; }
+.st-info-links .info-sec { width: calc(100% - 230px); padding-left: 15px; }
+.st-info-links .info-sec > .inner { padding: 25px; }
+@media screen and (min-width: 576px) { .st-info-links .two-col-info, .st-info-links .two-col-info + .app-devider-outer { width: 70%; } }
+
 /*# sourceMappingURL=style.css.map */
