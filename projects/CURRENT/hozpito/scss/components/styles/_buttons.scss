@@ -135,6 +135,22 @@ button.no-browser-style {
         }
     }
 
+    // btn secondary light
+    &.st-btn-secondary-light {
+        background-color: lighten($color: $secondary-color, $amount: 35%);
+        color: $secondary-color;
+
+        &:hover {
+            background-color: darken($color: $secondary-color, $amount: 0);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
     // btn outlined secnodary
     &.st-btn-outlined-secondary {
         background-color: transparent;
@@ -162,6 +178,22 @@ button.no-browser-style {
 
         &:active {
             background-color: darken($color: $primary-color, $amount: 10);
+            color: #fff;
+        }
+    }
+
+    // btn primary light
+    &.st-btn-primary-light {
+        background-color: lighten($color: $primary-color, $amount: 50%);
+        color: $primary-color;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 0);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 5);
             color: #fff;
         }
     }
@@ -195,6 +227,22 @@ button.no-browser-style {
         &:active {
             background-color: darken($color: $dark-text-color, $amount: 5);
             color: #fff;
+        }
+    }
+
+    // btn outlined white
+    &.st-btn-outlined-white {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: $secondary-color;
+        }
+
+        &:active {
+            background-color: darken($color: #fff, $amount: 5);
+            color: $secondary-color;
         }
     }
 

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hozpito | Details</title>
+
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="assets/ion.rangeSlider/css/ion.rangeSlider.min.css">
+    <!-- FANCY BOX -->
+    <link rel="stylesheet" href="assets/fancybox/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- header top part -->
+        <div id="header-top">
+            <div class="container">
+                <div class="header-top d-flex flex-wrap align-items-md-center position-relative">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html" class="d-table">
+                            <img src="images/logo.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap ml-auto align-items-center">
+                        <!-- search -->
+                        <div class="header-search pl-3 pr-4 ml-auto">
+                            <div class="inner d-flex align-items-center">
+                                <div class="btns mr-2">
+                                    <button class="btn st-btn st-btn-white font-size-17 font-weight-600 d-flex">
+                                        <!-- <i class="feather-map-pin mr-2 mt-1"></i> -->
+                                        <i class="feather-crosshair mr-2 mt-1"></i>
+                                        <span>Location</span>
+                                    </button>
+                                </div>
+                                <div class="form-group st-form with-icon position-relative mb-0">
+                                    <input type="text" class="form-control"
+                                        placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
+                                    <button class="icon position-absolute no-browser-style"><i
+                                            class="feather-search"></i></button>
+                                </div>
+                                <!-- <div class="btns">
+                                    <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600">Upload
+                                        Prescription</button>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- header right -->
+                        <div class="header-right pl-3 ml-auto">
+                            <div class="inner d-flex align-items-center">
+                                <a href="#"
+                                    class="lock-a st-round-icon-btn st-round-icon-btn-primary align-items-center d-flex justify-content-center rounded-circle text-decoration-none">
+                                    <i class="feather-lock"></i>
+                                </a>
+                                <ul class="list-unstyled d-flex align-items-center mx-3">
+                                    <li class="pr-2">
+                                        <a href="authentication.html" class="text-white font-size-15"
+                                            title="Login">Login</a>
+                                    </li>
+                                    <li class="pl-2">
+                                        <a href="authentication.html" class="text-white font-size-15"
+                                            title="Sign Up">Sign Up</a>
+                                    </li>
+                                </ul>
+                                <!-- favorite -->
+                                <a href="#"
+                                    class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                    title="Favorite">
+                                    <i class="feather-heart"></i>
+                                </a>
+                                <!-- cart -->
+                                <a href="#"
+                                    class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                    title="Cart">
+                                    <i class="feather-shopping-cart"></i>
+                                    <span
+                                        class="app-badge app-badge-secondary align-items-center d-flex font-size-11 justify-content-center overflow-hidden position-absolute rounded-circle">
+                                        1
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header menu -->
+        <div id="header-menu">
+            <div class="container">
+                <div class="header-menu">
+                    <nav class="navbar navbar-expand-lg px-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stMenuBar"
+                            aria-controls="stMenuBar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="stMenuBar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16 active" href="#">
+                                        <span>All Medicines</span>
+                                        <i class="feather-chevron-down ml-1 mt-1"></i>
+                                    </a>
+                                    <ul class="dropdown-menu overflow-hidden py-0 m-0">
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu one</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu three</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu four</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>COVID Test & Prevention</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Featured</span>
+                                        <i class="feather-chevron-down ml-1 mt-1"></i>
+                                    </a>
+                                    <ul class="dropdown-menu overflow-hidden py-0 m-0">
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu one</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu two</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu three</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-decoration-none font-size-16">menu four</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Fitness & Supplements</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Homeopathy</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Diabetes</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Healthcare Devices</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex font-weight-700 font-size-16" href="#">
+                                        <span>Personal Care</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SITE WRAPPER -->
+    <div id="wrapper">
+        <!-- site breadcrumbs -->
+        <section id="st-breadcrumbs">
+            <div class="container">
+                <div class="st-breadcrumbs">
+                    <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="font-weight-600">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="font-weight-600">
+                            <a href="#">Drugs By Ailments</a>
+                        </li>
+                        <li class="font-weight-600">
+                            <a href="#">Diabetes</a>
+                        </li>
+                        <li class="font-weight-600">
+                            <a href="#">Insulin Lispro (100IU)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS DETAILS -->
+        <section id="st-product-detail" class="ST_def-mar-B">
+            <div class="container">
+                <div class="st-product-detail d-flex flex-wrap p-3 bg-white">
+                    <!-- PRODUCT IMAGES -->
+                    <div class="product-images">
+                        <div class="inner">
+                            <a data-fancybox href="images/product-details/big-img1.jpg"
+                                class="big-img d-flex align-items-center justify-content-center p-3">
+                                <img src="images/product-details/big-img1.jpg" alt=""
+                                    class="img-fluid img-fluid-height">
+                            </a>
+                            <div class="thumbnails mt-3">
+                                <div class="owl-carousel" id="product-details-thumbnail-slider">
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2 active">
+                                            <img src="images/product-details/big-img1.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img6.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                    <!-- slider item -->
+                                    <div class="item">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-2">
+                                            <img src="images/categories/slider-img2.jpg" alt=""
+                                                class="img-fluid img-fluid-height">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT DETAILS -->
+                    <div class="product-details">
+                        <div class="inner">
+                            <p class="product-heading font-size-20 font-weight-600 mb-3 mb-md-4">
+                                Covid-19 Immunity + Anti Inflammatory Booster Pack (Curcumin Strips + Vitamin C Strips +
+                                Vitamin D Strips) 210's
+                            </p>
+
+                            <!-- OTHER DETAILS SECTION -->
+                            <div class="other-details d-flex mb-3 mb-md-4">
+                                <div class="w-50 item pr-1">
+                                    <p class="head text-uppercase font-weight-600 font-size-15 mb-2">Salt Composition
+                                    </p>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Insulin
+                                        Lispro (100IU),</a>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Amitriptyline
+                                        (12.5mg),</a>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-dark text-decoration-underline mb-1">Chlordiazepoxide
+                                        (5mg)</a>
+                                </div>
+                                <div class="w-50 item pl-1">
+                                    <p class="head text-uppercase font-weight-600 font-size-15 mb-2">MANUFACTURER</p>
+                                    <a href="#"
+                                        class="d-table font-weight-600 st-text-primary font-size-15 text-decoration-underline mb-1">Hozpito
+                                        Pharmaceuticals Ltd</a>
+                                </div>
+                            </div>
+
+                            <!-- PRODUCT PRICE DETAILS -->
+                            <p class="price font-size-20 font-weight-600">
+                                <span class="actual-price">₹ 1,610.00</span>
+                                <span class="cut-price ml-2 st-text-light font-size-15 text-decoration-line-through">Rs.
+                                    2065 </span>
+                                <span class="off ml-2 font-size-15 st-text-secondary">(20% OFF)</span>
+                            </p>
+                            <p class="add-text font-weight-600 st-text-primary">inclusive of all taxes</p>
+
+                            <!-- app devider -->
+                            <div class="app-devider-outer my-3 my-md-4">
+                                <div class="app-devider"></div>
+                            </div>
+
+                            <!-- QUANTITY SECTION -->
+                            <div class="quantity-section my-3 mt-md-4 mb-md-5">
+                                <div class="inner d-flex flex-wrap align-items-center">
+                                    <!-- heading -->
+                                    <p
+                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark mr-2 mr-md-4">
+                                        QTY:
+                                    </p>
+
+                                    <!-- quantity select controls -->
+                                    <div class="quantity-select-controls d-flex align-items-center mr-2 mr-md-4">
+                                        <button type="button" class="minus btn st-btn st-btn-white rounded-0">
+                                            <i class="feather-minus"></i>
+                                        </button>
+                                        <input type="number" class="form-control rounded-0 text-center" value="1"
+                                            min="1">
+                                        <button type="button"
+                                            class="plus btn st-btn st-btn-white rounded-0 font-size-14">
+                                            <i class="feather-plus"></i>
+                                        </button>
+                                    </div>
+
+                                    <!-- CART BUTTONS -->
+                                    <div class="cart-btns d-flex">
+                                        <a href="#"
+                                            class="btn st-btn st-btn-primary font-weight-600 text-capitalize mr-2 mr-md-3">
+                                            add to cart
+                                        </a>
+                                        <a href="#"
+                                            class="btn st-btn st-btn-outlined-black with-icon font-weight-600 text-capitalize">
+                                            <span>Wishlist</span>
+                                            <i class="feather-bookmark ml-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DELIVERY SECTION -->
+                            <div class="delivery-section">
+                                <div class="inner">
+                                    <!-- heading -->
+                                    <p
+                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
+                                        <span>delivery options:</span>
+                                        <i class="feather-truck font-size-16 ml-3 mt-1"></i>
+                                    </p>
+
+                                    <!-- check pincode -->
+                                    <div
+                                        class="form-group st-form st-form-sm with-icon position-relative col-12 col-md-6 col-lg-4 px-0 mb-2">
+                                        <input type="text" class="form-control font-size-13 border"
+                                            placeholder="Enter a PIN code">
+                                        <button
+                                            class="icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light">
+                                            check
+                                        </button>
+                                    </div>
+
+                                    <p class="add-text font-weight-600 st-text-light font-size-13">
+                                        Please enter PIN code to check delivery time & Pay on Delivery Availability
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- app devider -->
+                            <div class="app-devider-outer my-3 my-md-4">
+                                <div class="app-devider"></div>
+                            </div>
+
+                            <!-- BEST OFFER -->
+                            <div class="best-offer-section">
+                                <div class="inner">
+                                    <!-- heading -->
+                                    <p
+                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
+                                        <span>BEST OFFER</span>
+                                        <i class="feather-tag font-size-16 ml-3 mt-1"></i>
+                                    </p>
+
+                                    <p class="add-text font-weight-600 st-text-light font-size-13">
+                                        This product is already at its best price
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- app devider -->
+                            <div class="app-devider-outer my-3 my-md-4">
+                                <div class="app-devider"></div>
+                            </div>
+
+                            <!-- RATINGS -->
+                            <div class="ratings-section mb-2 mb-md-3">
+                                <div class="inner">
+                                    <!-- heading -->
+                                    <p
+                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
+                                        <span>Ratings</span>
+                                        <i class="feather-users font-size-16 ml-3 mt-1"></i>
+                                    </p>
+
+                                    <!-- rating count -->
+                                    <div class="st-ratings-count">
+                                        <div class="inner d-flex flex-wrap align-items-center">
+                                            <!-- left sec -->
+                                            <div class="lt-sec pr-2">
+                                                <p class="head">
+                                                    <span>4.4</span>
+                                                    <i class="feather-star font-size-20 ml-1 st-text-primary"></i>
+                                                </p>
+                                                <p class="desc font-size-13 mt-1 st-text-light">27 Varified Buyers</p>
+                                            </div>
+                                            <!-- right sec -->
+                                            <div class="rt-sec">
+                                                <div class="inner">
+                                                    <!-- frac -->
+                                                    <div class="frac d-flex align-items-center mb-1 five-star">
+                                                        <!-- count -->
+                                                        <span class="d-flex font-size-12 st-text-light pr-2">
+                                                            <span>5</span>
+                                                            <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                                        </span>
+                                                        <!-- progress bar -->
+                                                        <div class="progress media-body">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <!-- count -->
+                                                        <a href="#" class="d-flex font-size-12 pl-2 st-text-dark"
+                                                            style="min-width: 30px;">
+                                                            18
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- frac -->
+                                                    <div class="frac d-flex align-items-center mb-1 four-star">
+                                                        <!-- count -->
+                                                        <span class="d-flex font-size-12 st-text-light pr-2">
+                                                            <span>4</span>
+                                                            <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                                        </span>
+                                                        <!-- progress bar -->
+                                                        <div class="progress media-body">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <!-- count -->
+                                                        <a href="#" class="d-flex font-size-12 pl-2 st-text-dark"
+                                                            style="min-width: 30px;">
+                                                            5
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- frac -->
+                                                    <div class="frac d-flex align-items-center mb-1 three-star">
+                                                        <!-- count -->
+                                                        <span class="d-flex font-size-12 st-text-light pr-2">
+                                                            <span>3</span>
+                                                            <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                                        </span>
+                                                        <!-- progress bar -->
+                                                        <div class="progress media-body">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <!-- count -->
+                                                        <a href="#" class="d-flex font-size-12 pl-2 st-text-dark"
+                                                            style="min-width: 30px;">
+                                                            2
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- frac -->
+                                                    <div class="frac d-flex align-items-center mb-1 two-star">
+                                                        <!-- count -->
+                                                        <span class="d-flex font-size-12 st-text-light pr-2">
+                                                            <span>2</span>
+                                                            <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                                        </span>
+                                                        <!-- progress bar -->
+                                                        <div class="progress media-body">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <!-- count -->
+                                                        <a href="#" class="d-flex font-size-12 pl-2 st-text-dark"
+                                                            style="min-width: 30px;">
+                                                            1
+                                                        </a>
+                                                    </div>
+
+                                                    <!-- frac -->
+                                                    <div class="frac d-flex align-items-center one-star">
+                                                        <!-- count -->
+                                                        <span class="d-flex font-size-12 st-text-light pr-2">
+                                                            <span>1</span>
+                                                            <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                                        </span>
+                                                        <!-- progress bar -->
+                                                        <div class="progress media-body">
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                        <!-- count -->
+                                                        <a href="#" class="d-flex font-size-12 pl-2 st-text-dark"
+                                                            style="min-width: 30px;">
+                                                            1
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MORE PRODUCTS DETAILS TAB -->
+        <section id="st-more-product-detail" class="ST_def-mar-B">
+            <div class="container">
+                <div class="st-more-product-detail">
+                    <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                    <!-- remove id, href and aria-controls from nav-link for dynamic -->
+                    <!-- remove id and aria-labelledby from tab-pane for dynamic -->
+                    <ul class="nav nav-tabs st-dynamic-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item mb-0">
+                            <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0 active"
+                                data-toggle="tab" role="tab" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
+                                role="tab" aria-selected="false">Key Benefits</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
+                                role="tab" tudio" aria-selected="false">Direction for Use/Dosage</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
+                                role="tab" aria-selected="false">Safety Information/Precaution</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
+                                role="tab" aria-selected="false">Other Information</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane bg-white fade show active" role="tabpanel">
+                            <p class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                Covid-19 Immunity Anti Inflammatory Booster Pack (Curcumin Strips Vitamin C Strips
+                                Vitamin D Strips) keeps your immune system constantly active as having a healthy immune
+                                system is of top priority these days.
+                            </p>
+                            <p class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                Vitamin C is an essential nutrient that cannot be stored or made in the body, so a
+                                regular intake is required. It plays many beneficial roles including the normal function
+                                of the immune system, normal formation of collagen for normal skin function, and the
+                                reduction of tiredness and fatigue. If you feel you are not getting enough from your
+                                diet, a supplement could help safeguard your intake and Vitamin D3 is a fat-soluble
+                                vitamin that helps in intestinal absorption of calcium, magnesium, and phosphate, which
+                                in turn have multiple biological effects. Vitamin D is made by the body when the skin is
+                                exposed to sunlight. The oral flavoured strips of Vitamin D.
+                            </p>
+
+                            <div class="frac">
+                                <p class="head text-capitalize font-weight-600 font-size-15 mb-2">Salt Composition
+                                </p>
+                                <a href="#"
+                                    class="font-weight-600 st-text-dark text-decoration-underline mb-1 mr-2">Insulin
+                                    Lispro (100IU),</a>
+                                <a href="#"
+                                    class="font-weight-600 st-text-dark text-decoration-underline mb-1 mr-2">Amitriptyline
+                                    (12.5mg),</a>
+                                <a href="#"
+                                    class="font-weight-600 st-text-dark text-decoration-underline mb-1 mr-2">Chlordiazepoxide
+                                    (5mg)</a>
+                            </div>
+                        </div>
+                        <!-- tab item -->
+                        <div class="tab-pane bg-white fade" role="tabpanel">
+                            <div class="frac">
+                                <p class="head text-capitalize font-weight-600 font-size-15 mb-2">
+                                    Key Benefits
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tab item -->
+                        <div class="tab-pane bg-white fade" role="tabpanel">
+                            <div class="frac">
+                                <p class="head text-capitalize font-weight-600 font-size-15 mb-2">
+                                    Direction for Use/Dosage
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tab item -->
+                        <div class="tab-pane bg-white fade" role="tabpanel">
+                            <div class="frac">
+                                <p class="head text-capitalize font-weight-600 font-size-15 mb-2">
+                                    Safety Information/Precaution
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tab item -->
+                        <div class="tab-pane bg-white fade" role="tabpanel">
+                            <div class="frac">
+                                <p class="head text-capitalize font-weight-600 font-size-15 mb-2">
+                                    Other Information
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED PROSUCTS SLIDER -->
+        <section id="related-products-slider-main" class="ST_def-mar-B">
+            <div class="container">
+                <div class="related-products-slider-main bg-white p-3 p-md-4">
+                    <div class="st-main-heading d-flex mb-3">
+                        <div class="left-sec pr-2">
+                            <p class="st-heading text-capitalize font-weight-800">
+                                related products
+                            </p>
+                        </div>
+                    </div>
+                    <div class="owl-carousel" id="related-products-slider">
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="slider-item st-common-slider-item com-product">
+                            <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
+                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                    <img src="images/categories/slider-img1.jpg" alt=""
+                                        class="img-fluid img-fluid-height">
+                                </div>
+                                <div class="st-common-slider-text-sec text-center mt-2">
+                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                        Morpheme Remedies Garcinia Green Tea
+                                    </p>
+                                    <p class="price font-size-16">
+                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                            40% OFF
+                                        </span>
+                                    </p>
+                                    <p class="fina-price font-size-20 font-weight-600">
+                                        ₹ 435
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
+                                        Add to Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer>
+            <!-- top sec -->
+            <div id="footer-top-sec">
+                <div class="container">
+                    <div class="footer-top-sec d-flex align-items-center">
+                        <div class="img-sec">
+                            <a href="index.html" class="d-block text-decoration-none">
+                                <img src="images/logo-footer.png" alt="logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="text-sec">
+                            <p class="font-size-16">
+                                Lucknow Ki Pharmacy, is brought to you by the Company – one of India’s most trusted
+                                pharmacies, with over 100 years’
+                                experience in dispensing quality medicines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main sec -->
+            <div id="footer-main">
+                <div class="container">
+                    <div class="footer-main row">
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">COMPANY</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">About Hozpito</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Customers Speak</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">In the News</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Terms and
+                                            Conditions</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Privacy Policy</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">SHOPPING</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Browse by
+                                            Manufacturers</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Health Articles</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Offers / Coupons</a>
+                                    </li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">CATEGORIES</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Ayush</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Devices</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Family Care</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Fitness</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Lifestyle</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Personal care</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Treatments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">SOCIAL</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Patients Alike</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Facebook</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Twitter</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">LinkedIn</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Youtube</a></li>
+                                    <li class="mb-1"><a href="#" class="text-white font-size-15">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item pr-2 mb-2 col">
+                            <div class="inner">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">Download App</p>
+                                <a href="#" class="d-table mb-3">
+                                    <img src="images/download-app-ios.jpg" alt="" class="img-fluid">
+                                </a>
+                                <a href="#" class="d-table">
+                                    <img src="images/download-app-android.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bottom sec -->
+            <div id="footer-bottom-sec">
+                <div class="container">
+                    <div class="footer-bottom-sec">
+                        <div class="text-sec">
+                            <p class="font-size-15 text-center text-white">
+                                Copyright &copy; 2021 Hozpito. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="assets/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- RANGE SLIDER -->
+    <script src="assets/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- FANCY BOX -->
+    <script src="assets/fancybox/js/jquery.fancybox.min.js"></script>
+    <!-- SCRIPT CUSOMT -->
+    <script src="js/app.js"></script>
+
+    <script>
+        $(function () {
+            $('.product-images .thumbnails .item > a').click(function (ev) {
+                ev.preventDefault();
+                var imgPath = $('>img', this).attr('src')
+                if (imgPath) {
+                    $(this).addClass('active').parent().parent().siblings().find('.item > a').removeClass('active')
+                    $('.product-images .big-img').closest('.big-img').attr('href', imgPath)
+                    $('.product-images .big-img > img').closest('.big-img').find('>img').attr('src', imgPath)
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
