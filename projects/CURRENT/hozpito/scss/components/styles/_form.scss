@@ -42,7 +42,9 @@ $borderRadius: 4px;
             height: 45px;
         }
     }
+
     &.st-form-sm {
+
         >input:not([type="radio"]):not([type="checkbox"]),
         >select {
             @include min-width($sm-min) {
@@ -52,7 +54,13 @@ $borderRadius: 4px;
     }
 
     // width 50%
-    @include min_width(768px) {
+    &.lt,
+    &.rt {
+        width: 100%;
+    }
+
+    @include min_width($md-min) {
+
 
         &.lt,
         &.rt {

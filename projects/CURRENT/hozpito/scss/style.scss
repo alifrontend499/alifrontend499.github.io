@@ -32,8 +32,17 @@ body {
     // logo
     .logo {
         img {
-            @include min-width(768px) {
-                width: 170px;
+            width: 110px;
+            @include min-width($md-min) {
+                width: 130px;
+            }
+
+            @include min-width($lg-min) {
+                width: 140px;
+            }
+
+            @include min-width($xl-min) {
+                width: 150px;
             }
         }
     }
@@ -41,8 +50,16 @@ body {
     // header search
     .header-search {
         input {
+            @include min-width($md-min) {
+                width: 180px;
+            }
+
+            @include min-width($lg-min) {
+                width: 200px;
+            }
+
             @include min-width($xl-min) {
-                width: 400px;
+                width: 350px;
             }
         }
     }
@@ -91,7 +108,10 @@ body {
 
 .header-menu {
     .navbar {
-        padding: 15px 0;
+        padding: 10px 0;
+        @include min-width($xl-min) {
+            padding: 15px 0;
+        }
     }
 
     .navbar-nav {
@@ -104,7 +124,9 @@ body {
                 color: $dark-text-color;
                 padding: 2px 0;
                 @include transition(.2s);
-
+                @include max-width($xl-max) {
+                    padding: 10px 0;
+                }
                 >i {
                     color: $light-text-color;
                 }
@@ -129,7 +151,14 @@ body {
                     top: -100%;
                     opacity: 0;
                     visibility: hidden;
-
+                    @include max-width($xl-max) {
+                        position: absolute;
+                    }
+                    @include max-width($lg-max) {
+                        position: static;
+                        width: 100%;
+                        display: none;
+                    }
                     >li {
                         >a {
                             color: $dark-text-color;
@@ -158,6 +187,9 @@ body {
                         opacity: 1;
                         visibility: visible;
                         top: 100%;
+                        @include max-width($lg-max) {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -254,8 +286,11 @@ body {
 }
 
 .home-info-block {
-    padding: 20px 0;
+    padding: 10px 10px;
     background-color: #fff;
+    @include min-width($md-min) {
+        padding: 20px 10px;
+    }
 }
 
 // CATEGORY SLIDER
@@ -270,22 +305,22 @@ body {
 #home-four-blocks {}
 
 .home-four-blocks {
-    margin: 0 -8px;
+    // margin: 0 -8px;
 
     .item {
-        padding: 0 8px 0;
+        // padding: 0 8px 0;
 
-        @include max-width($lg-max) {
-            &:not(:nth-last-child(2)):not(:nth-last-child(1)) {
-                padding-bottom: 16px;
-            }
-        }
+        // @include max-width($lg-max) {
+        //     &:not(:nth-last-child(2)):not(:nth-last-child(1)) {
+        //         padding-bottom: 16px;
+        //     }
+        // }
 
-        @include max-width($sm-max) {
-            &:not(:nth-last-child(1)) {
-                padding-bottom: 16px;
-            }
-        }
+        // @include max-width($sm-max) {
+        //     &:not(:nth-last-child(1)) {
+        //         padding-bottom: 16px;
+        //     }
+        // }
 
         &.one {
             >.inner {
@@ -353,7 +388,11 @@ body {
         border: 1px solid transparent;
 
         &:hover {
-            border-color: $app-border-color;
+            border-color: $primary-color;
+        }
+        &:hover .st-btn-outlined-primary {
+            background-color: $primary-color;
+            color: #fff;
         }
     }
 
@@ -375,7 +414,7 @@ body {
 
 // home-contact
 #home-contact {
-    @include min-width(1200px) {
+    @include min-width($xl-min) {
         background: transparent url("../images/home-contact/right-bg.png") no-repeat right 91% / 52%;
     }
 }
@@ -383,11 +422,15 @@ body {
 .home-contact {
     margin-top: 20px;
 
-    @include min-width(768px) {
-        margin-top: 60px;
+    @include min-width($md-min) {
+        margin-top: 30px;
     }
 
-    @include min-width(1200px) {
+    @include min-width($lg-min) {
+        margin-top: 40px;
+    }
+
+    @include min-width($xl-min) {
         margin-top: 100px;
     }
 
@@ -399,7 +442,7 @@ body {
             margin-bottom: 0;
             padding-right: 10px;
 
-            @include min-width(992px) {
+            @include min-width($lg-min) {
                 padding-right: 18px;
             }
 
@@ -422,7 +465,7 @@ body {
 
     .tab-content {
         .tab-pane {
-            @include min-width(768px) {
+            @include min-width($md-min) {
                 min-height: 130px;
             }
 
@@ -451,11 +494,11 @@ body {
         @include box-shadow(0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.2));
         padding: 15px;
 
-        @include min-width(768px) {
+        @include min-width($md-min) {
             padding: 30px;
         }
 
-        @include min-width(1200px) {
+        @include min-width($xl-min) {
             padding: 70px 35px;
             width: 550px;
             margin-left: auto;
@@ -473,8 +516,11 @@ body {
 #largest-platform {}
 
 .largest-platform {
-    margin-top: 60px;
-
+    margin-top: 30px;
+    
+    @include min-width($lg-min) {
+        margin-top: 60px;
+    }
     .head {
         font-size: 20px;
 
@@ -540,6 +586,10 @@ footer {
     }
 
     .item {
+        @include max-width($lg-max) {
+            min-width: 160px;
+        }
+
         @include max-width($md-max) {
             min-width: 200px;
         }
@@ -567,12 +617,12 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px;
 
-    @include min_width(768px) {
+    @include min_width($md-min) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    @include min_width(992px) {
+    @include min_width($lg-min) {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -586,16 +636,16 @@ footer {
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
         border: 1px solid #dfdfdf;
 
-        @include min-width(768px) {
+        @include min-width($md-min) {
             width: 650px;
         }
 
-        @include min-width(992px) {
+        @include min-width($lg-min) {
             width: 850px;
         }
 
         >.lt {
-            @include min-width(992px) {
+            @include min-width($lg-min) {
                 min-height: 450px;
             }
 
@@ -609,7 +659,7 @@ footer {
             .inner {
                 padding: 20px;
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     padding: 40px;
                 }
             }
@@ -619,11 +669,11 @@ footer {
                 padding: 0;
                 margin-bottom: 10px;
 
-                @include min-width(768px) {
+                @include min-width($md-min) {
                     margin-bottom: 15px;
                 }
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     margin-bottom: 25px;
                 }
 
@@ -662,11 +712,11 @@ footer {
                 margin-bottom: 10px;
                 color: #666;
 
-                @include min-width(768px) {
+                @include min-width($md-min) {
                     margin-bottom: 15px;
                 }
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     margin-bottom: 25px;
                 }
 
@@ -687,7 +737,7 @@ footer {
             .or-text {
                 margin-top: 15px;
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     margin-top: 30px;
                 }
 
@@ -697,7 +747,7 @@ footer {
             .add-info {
                 margin-top: 15px;
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     margin-top: 30px;
                 }
 
@@ -710,7 +760,7 @@ footer {
             .other-options {
                 margin-top: 20px;
 
-                @include min-width(992px) {
+                @include min-width($lg-min) {
                     margin-top: 60px;
                 }
 
@@ -737,7 +787,7 @@ footer {
                             font-size: 11px;
                             @include transition;
 
-                            @include min-width(992px) {
+                            @include min-width($lg-min) {
                                 height: 30px;
                                 width: 30px;
                                 font-size: 17px;
@@ -801,6 +851,9 @@ footer {
             margin-bottom: 20px;
 
             @include min-width($md-min) {
+                margin-bottom: 25px;
+            }
+            @include min-width($lg-min) {
                 margin-bottom: 40px;
             }
         }
@@ -850,9 +903,12 @@ footer {
 }
 
 .products-listing-main {
-    padding-left: 20px;
+    // padding-left: 20px;
 
     @include min-width($md-min) {
+        padding-left: 25px;
+    }
+    @include min-width($lg-min) {
         padding-left: 40px;
     }
 
@@ -867,6 +923,10 @@ footer {
 
         &:hover {
             border-color: $primary-color;
+        }
+        &:hover .st-btn-outlined-primary {
+            background-color: $primary-color;
+            color: #fff;
         }
     }
 
@@ -889,6 +949,15 @@ footer {
 
     @include min-width($md-min) {
         .product-images {
+            width: 300px;
+        }
+
+        .product-details {
+            width: calc(100% - 300px);
+        }
+    }
+    @include min-width($lg-min) {
+        .product-images {
             width: 350px;
         }
 
@@ -899,8 +968,10 @@ footer {
 
     .product-images {
         .big-img {
-            height: 400px;
-            // border: 1px solid $app-border-color;
+            height: 200px;
+            @include min-width($md-min) {
+                height: 400px;
+            }
             @include transition(.2s);
 
             &:hover {
@@ -932,10 +1003,14 @@ footer {
         }
     }
 
-    .product-details {
-        padding-left: 20px;
-
+    .product-details {    
+        margin-top: 15px;
         @include min-width($md-min) {
+            margin-top: 0;
+            padding-left: 25px;
+        }
+
+        @include min-width($lg-min) {
             padding-left: 40px;
         }
     }
@@ -947,16 +1022,22 @@ footer {
 .st-more-product-detail {
     .nav-tabs {
         >.nav-item {
+            margin-bottom: 0;
             &:not(:last-child) {
                 margin-right: 10px;
+            }
+            @include max-width($xl-max) {
+                margin-bottom: 10px;
             }
 
             >.nav-link {
                 background-color: darken($color: #fff, $amount: 15);
-                padding: 15px;
+                padding: 10px;
                 color: $light-text-color;
                 @include transition;
-
+                @include min-width($md-min) {
+                    padding: 15px;
+                }
                 &:hover,
                 &.active {
                     background-color: #fff;
@@ -1020,17 +1101,34 @@ footer {
 
 .st-checkout {
     .st-checkout-cart-items {
-        width: calc(100% - 360px);
+        width: 100%;
+        margin-bottom: 20px;
+        @include min-width($md-min) {
+            margin-bottom: 0;
+            width: calc(100% - 300px);
+        }
+        @include min-width($lg-min) {
+            width: calc(100% - 360px);
+        }
     }
 
     .products-listing-main {
-        width: 360px;
+        width: 100%;
+        @include min-width($md-min) {
+            width: 300px;
+        }
+        @include min-width($lg-min) {
+            width: 360px;
+        }
     }
 
     .products-listing-main {
-        padding-left: 20px;
+        padding-left: 0;
 
         @include min-width($md-min) {
+            padding-left: 25px;
+        }
+        @include min-width($lg-min) {
             padding-left: 40px;
         }
 
@@ -1040,6 +1138,9 @@ footer {
                 margin-bottom: 20px;
 
                 @include min-width($md-min) {
+                    margin-bottom: 25px;
+                }
+                @include min-width($lg-min) {
                     margin-bottom: 40px;
                 }
             }
@@ -1085,24 +1186,30 @@ footer {
 
 .st-info-links {
     .all-info-links {
-        width: 230px;
-
+        @include min-width($md-min) {
+            width: 230px;
+        }
+        .nav-item {
+            width: 100%;
+        }
         .a-link {
             background-color: #fff;
             color: $dark-text-color;
-            padding: 23px 20px;
+            padding: 15px;
             @include transition(.1s);
-            pointer-events: none;
-            &::after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translate(100%, -50%);
-                border-width: 13px;
-                border-style: solid;
-                border-color: transparent;
-                border-left-color: transparent;
+            @include min-width($md-min) {
+                padding: 23px 20px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(100%, -50%);
+                    border-width: 13px;
+                    border-style: solid;
+                    border-color: transparent;
+                    border-left-color: transparent;
+                }
             }
 
             &.active,
@@ -1114,7 +1221,9 @@ footer {
             &.active {
                 background-color: $primary-color;
                 color: #fff;
-                width: calc(100% + (15px + 1px));
+                @include min-width($md-min) {
+                    width: calc(100% + (15px + 1px));
+                }
 
                 &::after {
                     border-left-color: $primary-color;
@@ -1124,15 +1233,18 @@ footer {
     }
 
     .info-sec {
-        width: calc(100% - 230px);
-        padding-left: 15px;
+        @include min-width($sm-min) {
+            width: calc(100% - 230px);
+            padding-left: 15px;
+        }
+
         >.inner {
             padding: 25px;
         }
     }
 
     .two-col-info,
-    .two-col-info + .app-devider-outer {
+    .two-col-info+.app-devider-outer {
         @include min-width($sm-min) {
             width: 70%;
         }

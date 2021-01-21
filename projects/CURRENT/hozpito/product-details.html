@@ -30,6 +30,7 @@
 <body>
 
     <!-- HEADER -->
+    <!-- HEADER -->
     <header>
         <!-- header top part -->
         <div id="header-top">
@@ -42,9 +43,41 @@
                         </a>
                     </div>
 
+                    <!-- header right | FOR MOBILE -->
+                    <div class="header-right pl-2 ml-auto d-md-none" style="margin-top: 15px;">
+                        <div class="inner d-flex align-items-center">
+                            <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
+                                <li class="pr-2">
+                                    <a href="authentication.html" class="text-white font-size-15"
+                                        title="Login">Login</a>
+                                </li>
+                                <li class="pl-2">
+                                    <a href="authentication.html" class="text-white font-size-15" title="Sign Up">Sign
+                                        Up</a>
+                                </li>
+                            </ul>
+                            <!-- favorite -->
+                            <a href="#"
+                                class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                title="Favorite">
+                                <i class="feather-heart"></i>
+                            </a>
+                            <!-- cart -->
+                            <a href="checkout.html"
+                                class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                title="Cart">
+                                <i class="feather-shopping-cart"></i>
+                                <span
+                                    class="app-badge app-badge-secondary align-items-center d-flex font-size-11 justify-content-center overflow-hidden position-absolute rounded-circle">
+                                    1
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="d-flex flex-wrap ml-auto align-items-center">
                         <!-- search -->
-                        <div class="header-search pl-3 pr-4 ml-auto">
+                        <div class="header-search pr-lg-2 pr-lg-3 ml-auto">
                             <div class="inner d-flex align-items-center">
                                 <div class="btns mr-2">
                                     <button class="btn st-btn st-btn-white font-size-17 font-weight-600 d-flex">
@@ -53,27 +86,28 @@
                                         <span>Location</span>
                                     </button>
                                 </div>
-                                <div class="form-group st-form with-icon position-relative mb-0">
+                                <div class="form-group st-form with-icon position-relative mb-0 mr-md-2">
                                     <input type="text" class="form-control"
                                         placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
                                     <button class="icon position-absolute no-browser-style"><i
                                             class="feather-search"></i></button>
                                 </div>
-                                <!-- <div class="btns">
+                                <!-- upload precription button | FOR WEB -->
+                                <div class="btns d-none d-lg-block">
                                     <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600">Upload
                                         Prescription</button>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
-                        <!-- header right -->
-                        <div class="header-right pl-3 ml-auto">
+                        <!-- header right | FOR WEB -->
+                        <div class="header-right pl-2 pl-lg-3 ml-auto d-none d-md-block">
                             <div class="inner d-flex align-items-center">
                                 <a href="#"
                                     class="lock-a st-round-icon-btn st-round-icon-btn-primary align-items-center d-flex justify-content-center rounded-circle text-decoration-none">
                                     <i class="feather-lock"></i>
                                 </a>
-                                <ul class="list-unstyled d-flex align-items-center mx-3">
+                                <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
                                     <li class="pr-2">
                                         <a href="authentication.html" class="text-white font-size-15"
                                             title="Login">Login</a>
@@ -90,7 +124,7 @@
                                     <i class="feather-heart"></i>
                                 </a>
                                 <!-- cart -->
-                                <a href="#"
+                                <a href="checkout.html"
                                     class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
                                     title="Cart">
                                     <i class="feather-shopping-cart"></i>
@@ -110,11 +144,17 @@
         <div id="header-menu">
             <div class="container">
                 <div class="header-menu">
-                    <nav class="navbar navbar-expand-lg px-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stMenuBar"
-                            aria-controls="stMenuBar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                    <nav class="navbar navbar-expand-xl px-0">
+                        <button class="navbar-toggler btn st-btn st-btn-outlined-primary" type="button"
+                            data-toggle="collapse" data-target="#stMenuBar" aria-controls="stMenuBar"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="feather-menu"></i>
                         </button>
+
+                        <!-- FOR MOBILE -->
+                        <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none">Upload
+                            Prescription</button>
+
                         <div class="collapse navbar-collapse" id="stMenuBar">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
@@ -297,7 +337,7 @@
 
                             <!-- PRODUCT PRICE DETAILS -->
                             <p class="price font-size-20 font-weight-600">
-                                <span class="actual-price">₹ 1,610.00</span>
+                                <span class="actual-price">Rs. 1,610.00</span>
                                 <span class="cut-price ml-2 st-text-light font-size-15 text-decoration-line-through">Rs.
                                     2065 </span>
                                 <span class="off ml-2 font-size-15 st-text-secondary">(20% OFF)</span>
@@ -314,12 +354,12 @@
                                 <div class="inner d-flex flex-wrap align-items-center">
                                     <!-- heading -->
                                     <p
-                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark mr-2 mr-md-4">
+                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark mr-2 mr-md-4 mt-1">
                                         QTY:
                                     </p>
 
                                     <!-- quantity select controls -->
-                                    <div class="quantity-select-controls d-flex align-items-center mr-2 mr-md-4">
+                                    <div class="quantity-select-controls d-flex align-items-center mr-2 mr-md-4 mt-1">
                                         <button type="button" class="minus btn st-btn st-btn-white rounded-0">
                                             <i class="feather-minus"></i>
                                         </button>
@@ -332,7 +372,7 @@
                                     </div>
 
                                     <!-- CART BUTTONS -->
-                                    <div class="cart-btns d-flex">
+                                    <div class="cart-btns d-flex mt-1">
                                         <a href="#"
                                             class="btn st-btn st-btn-primary font-weight-600 text-capitalize mr-2 mr-md-3">
                                             add to cart
@@ -358,7 +398,7 @@
 
                                     <!-- check pincode -->
                                     <div
-                                        class="form-group st-form st-form-sm with-icon position-relative col-12 col-md-6 col-lg-4 px-0 mb-2">
+                                        class="form-group st-form st-form-sm with-icon position-relative col-12 col-md-8 col-lg-6 col-lg-4 px-0 mb-2">
                                         <input type="text" class="form-control font-size-13 border"
                                             placeholder="Enter a PIN code">
                                         <button
@@ -545,23 +585,23 @@
                     <!-- remove id, href and aria-controls from nav-link for dynamic -->
                     <!-- remove id and aria-labelledby from tab-pane for dynamic -->
                     <ul class="nav nav-tabs st-dynamic-tabs border-0" id="myTab" role="tablist">
-                        <li class="nav-item mb-0">
+                        <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0 active"
                                 data-toggle="tab" role="tab" aria-selected="true">Description</a>
                         </li>
-                        <li class="nav-item mb-0">
+                        <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
                                 role="tab" aria-selected="false">Key Benefits</a>
                         </li>
-                        <li class="nav-item mb-0">
+                        <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
                                 role="tab" tudio" aria-selected="false">Direction for Use/Dosage</a>
                         </li>
-                        <li class="nav-item mb-0">
+                        <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
                                 role="tab" aria-selected="false">Safety Information/Precaution</a>
                         </li>
-                        <li class="nav-item mb-0">
+                        <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-600 border-0 rounded-0" data-toggle="tab"
                                 role="tab" aria-selected="false">Other Information</a>
                         </li>
@@ -659,13 +699,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -687,13 +727,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -715,13 +755,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -743,13 +783,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -771,13 +811,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -799,13 +839,13 @@
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">₹ 1,499.00</span>
+                                        <span class="cut-price">Rs. 1,499.00</span>
                                         <span class="font-weight-600 st-text-secondary ml-1">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
-                                        ₹ 435
+                                        Rs. 435
                                     </p>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
@@ -908,9 +948,10 @@
                         </div>
                         <!-- item -->
                         <div class="item pr-2 mb-2 col">
-                            <div class="inner">
-                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">Download App</p>
-                                <a href="#" class="d-table mb-3">
+                            <div class="inner d-flex flex-wrap">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17 w-100">Download App
+                                </p>
+                                <a href="#" class="d-table mb-3 mr-2">
                                     <img src="images/download-app-ios.jpg" alt="" class="img-fluid">
                                 </a>
                                 <a href="#" class="d-table">

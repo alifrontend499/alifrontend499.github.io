@@ -21,7 +21,11 @@
 .ST_def-mar-TB {
     margin-top: 20px;
 
-    @include min_width(992px) {
+    @include min_width($lg-min) {
+        margin-top: 35px;
+    }
+
+    @include min_width($xl-min) {
         margin-top: 50px;
     }
 }
@@ -30,7 +34,11 @@
 .ST_def-mar-TB {
     margin-bottom: 20px;
 
-    @include min_width(992px) {
+    @include min_width($lg-min) {
+        margin-bottom: 35px;
+    }
+
+    @include min_width($xl-min) {
         margin-bottom: 50px;
     }
 }
@@ -39,7 +47,11 @@
 .ST_def-pad-TB {
     padding-top: 20px;
 
-    @include min_width(992px) {
+    @include min_width($lg-min) {
+        padding-top: 35px;
+    }
+
+    @include min_width($xl-min) {
         padding-top: 50px;
     }
 }
@@ -48,7 +60,11 @@
 .ST_def-pad-TB {
     padding-bottom: 20px;
 
-    @include min_width(992px) {
+    @include min_width($lg-min) {
+        padding-bottom: 35px;
+    }
+
+    @include min_width($xl-min) {
         padding-bottom: 50px;
     }
 }
@@ -288,8 +304,10 @@
 // ST RATINGS COUNT
 .st-ratings-count {
     .lt-sec {
-        width: 135px;
-
+        width: 120px;
+        @include min-width($lg-min) {
+            width: 135px;
+        }
         .head {
             font-size: 45px;
             line-height: 45px;
@@ -297,11 +315,12 @@
     }
 
     .rt-sec {
-        width: calc(100% - 135px);
+        width: calc(100% - 120px);
         border-left: 1px solid $app-border-color;
-        padding-left: 30px;
-
-        @include min-width($md-min) {
+        padding-left: 18px;
+        
+        @include min-width($lg-min) {
+            padding-left: 30px;
             width: 250px;
         }
 
@@ -347,4 +366,14 @@
 .st-tag {
     background: transparent url('../images/tag-bg.png') no-repeat left center;
     padding: 6px 40px 6px 15px;
+}
+
+// NAVBAR TOGGLER
+.navbar-toggler {
+    font-size: 25px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    @include min-width($sm-min) {
+        padding: 6px 9px;
+    }
 }

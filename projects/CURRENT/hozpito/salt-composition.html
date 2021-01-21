@@ -30,6 +30,7 @@
 <body>
 
     <!-- HEADER -->
+    <!-- HEADER -->
     <header>
         <!-- header top part -->
         <div id="header-top">
@@ -42,9 +43,41 @@
                         </a>
                     </div>
 
+                    <!-- header right | FOR MOBILE -->
+                    <div class="header-right pl-2 ml-auto d-md-none" style="margin-top: 15px;">
+                        <div class="inner d-flex align-items-center">
+                            <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
+                                <li class="pr-2">
+                                    <a href="authentication.html" class="text-white font-size-15"
+                                        title="Login">Login</a>
+                                </li>
+                                <li class="pl-2">
+                                    <a href="authentication.html" class="text-white font-size-15" title="Sign Up">Sign
+                                        Up</a>
+                                </li>
+                            </ul>
+                            <!-- favorite -->
+                            <a href="#"
+                                class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                title="Favorite">
+                                <i class="feather-heart"></i>
+                            </a>
+                            <!-- cart -->
+                            <a href="checkout.html"
+                                class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
+                                title="Cart">
+                                <i class="feather-shopping-cart"></i>
+                                <span
+                                    class="app-badge app-badge-secondary align-items-center d-flex font-size-11 justify-content-center overflow-hidden position-absolute rounded-circle">
+                                    1
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="d-flex flex-wrap ml-auto align-items-center">
                         <!-- search -->
-                        <div class="header-search pl-3 pr-4 ml-auto">
+                        <div class="header-search pr-lg-2 pr-lg-3 ml-auto">
                             <div class="inner d-flex align-items-center">
                                 <div class="btns mr-2">
                                     <button class="btn st-btn st-btn-white font-size-17 font-weight-600 d-flex">
@@ -53,27 +86,28 @@
                                         <span>Location</span>
                                     </button>
                                 </div>
-                                <div class="form-group st-form with-icon position-relative mb-0">
+                                <div class="form-group st-form with-icon position-relative mb-0 mr-md-2">
                                     <input type="text" class="form-control"
                                         placeholder="Search Doctor, Hospital, Clinics, Spec.etc">
                                     <button class="icon position-absolute no-browser-style"><i
                                             class="feather-search"></i></button>
                                 </div>
-                                <!-- <div class="btns">
+                                <!-- upload precription button | FOR WEB -->
+                                <div class="btns d-none d-lg-block">
                                     <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600">Upload
                                         Prescription</button>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
-                        <!-- header right -->
-                        <div class="header-right pl-3 ml-auto">
+                        <!-- header right | FOR WEB -->
+                        <div class="header-right pl-2 pl-lg-3 ml-auto d-none d-md-block">
                             <div class="inner d-flex align-items-center">
                                 <a href="#"
                                     class="lock-a st-round-icon-btn st-round-icon-btn-primary align-items-center d-flex justify-content-center rounded-circle text-decoration-none">
                                     <i class="feather-lock"></i>
                                 </a>
-                                <ul class="list-unstyled d-flex align-items-center mx-3">
+                                <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
                                     <li class="pr-2">
                                         <a href="authentication.html" class="text-white font-size-15"
                                             title="Login">Login</a>
@@ -90,7 +124,7 @@
                                     <i class="feather-heart"></i>
                                 </a>
                                 <!-- cart -->
-                                <a href="#"
+                                <a href="checkout.html"
                                     class="cart-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
                                     title="Cart">
                                     <i class="feather-shopping-cart"></i>
@@ -110,11 +144,17 @@
         <div id="header-menu">
             <div class="container">
                 <div class="header-menu">
-                    <nav class="navbar navbar-expand-lg px-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stMenuBar"
-                            aria-controls="stMenuBar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                    <nav class="navbar navbar-expand-xl px-0">
+                        <button class="navbar-toggler btn st-btn st-btn-outlined-primary" type="button"
+                            data-toggle="collapse" data-target="#stMenuBar" aria-controls="stMenuBar"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="feather-menu"></i>
                         </button>
+
+                        <!-- FOR MOBILE -->
+                        <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none">Upload
+                            Prescription</button>
+
                         <div class="collapse navbar-collapse" id="stMenuBar">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
@@ -229,101 +269,70 @@
                     <!-- links -->
                     <div class="all-info-links">
                         <div class="inner">
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
+                            <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                            <!-- remove id, href and aria-controls from nav-link for dynamic -->
+                            <!-- remove id and aria-labelledby from tab-pane for dynamic -->
+                            <ul class="nav nav-tabs st-dynamic-tabs border-0" id="myTab" role="tablist">
+                                <li class="mb-2 nav-item">
                                     <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link active">Information</a>
+                                        class="nav-link border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link active"
+                                        data-toggle="tab" role="tab" aria-selected="true">
+                                        Information
+                                    </a>
                                 </li>
-                                <li class="mb-2">
+                                <li class="mb-2 nav-item">
                                     <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Available
-                                        Medicine</a>
+                                        class="nav-link border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link"
+                                        data-toggle="tab" role="tab" aria-selected="true">
+                                        Available Medicine
+                                    </a>
                                 </li>
-                                <li class="mb-2">
+                                <li class="mb-2 nav-item">
                                     <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Expert
-                                        Advice</a>
+                                        class="nav-link border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link"
+                                        data-toggle="tab" role="tab" aria-selected="true">
+                                        Expert Advice
+                                    </a>
                                 </li>
-                                <li class="mb-2">
+                                <li class="mb-2 nav-item">
                                     <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">FAQ</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Content
-                                        Details</a>
+                                        class="nav-link border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link"
+                                        data-toggle="tab" role="tab" aria-selected="true">FAQ</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- info sec -->
-                    <div class="info-sec">
-                        <div class="inner h-100 bg-white border">
+                    <!-- "st-dynamic-tabs-content": add this class to the tab-content
+                    if you want to place your tabs-content not next to the "st-dynamic-tabs" class -->
+                    <div class="info-sec tab-content st-dynamic-tabs-content">
+                        <!-- tab item -->
+                        <div class="tab-pane inner h-100 bg-white border fade show active" role="tabpanel">
                             <p class="st-heading text-uppercase font-size-18 font-weight-600 mb-2 mb-md-4">
                                 INFORMATION ABOUT INSULIN ISOPHANE
                             </p>
-                            <p class="text font-weight-600 st-text-light mb-2 mb-md-4">
+                            <p class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-4">
                                 <span class="d-block st-text-dark">Insulin Isophane Uses</span>
                                 Insulin Isophane is used in the treatment of <span class="st-text-secondary">diabetes
                                     mellitus (Type 1 & Type 2).</span>
                             </p>
-                            <p class="text font-weight-600 st-text-light mb-2 mb-md-4">
+                            <p class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-4">
                                 <span class="d-block st-text-dark">How Insulin Isophane works</span>
                                 Insulin Isophane is an intermediate-acting insulin, that starts working in 1-2 hours
                                 after injection. It works similar to the insulin that is produced by the body. Insulin
                                 facilitates reuptake of sugar in muscle and fat cells and also suppresses the production
                                 of sugar in the liver. This helps to lower the blood sugar levels in diabetes mellitus.
                             </p>
-                            <p class="text font-weight-600 st-text-light mb-2 mb-md-4">
+                            <p class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-4">
                                 <span class="d-block st-text-dark">Common side effects of Insulin Isophane</span>
                                 Hypoglycemia (low blood glucose level), Injection site allergic reaction, Edema
                                 (swelling), Lipodystrophy (skin thickening or pits at the injection site), Weight gain
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- INFO LINKS : SECTION 2 -->
-        <section id="st-info-links" class="ST_def-mar-B">
-            <div class="container">
-                <div class="st-info-links d-flex flex-wrap">
-                    <!-- links -->
-                    <div class="all-info-links">
-                        <div class="inner">
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Information</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link active">Available
-                                        Medicine</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Expert
-                                        Advice</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">FAQ</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Content
-                                        Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- info sec -->
-                    <div class="info-sec">
-                        <div class="inner h-100 bg-white border">
+                        <!-- tab item -->
+                        <div class="tab-pane inner h-100 bg-white border fade" role="tabpanel">
                             <p class="st-heading text-uppercase font-size-18 font-weight-600 mb-2 mb-md-4">
                                 AVAILABLE MEDICINE FOR INSULIN ISOPHANE
                             </p>
@@ -339,7 +348,7 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
@@ -362,7 +371,7 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
@@ -385,7 +394,7 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
@@ -408,7 +417,7 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
@@ -431,7 +440,7 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
@@ -454,129 +463,48 @@
                                 <!-- right -->
                                 <div class="rt" style="width: 150px;">
                                     <p class="text font-weight-600 st-text-light">
-                                        <span class="d-block mb-1">₹149 to ₹518</span>
+                                        <span class="d-block mb-1">Rs.149 to Rs.518</span>
                                         7 variant(s)
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- INFO LINKS : SECTION 3 -->
-        <section id="st-info-links" class="ST_def-mar-B">
-            <div class="container">
-                <div class="st-info-links d-flex flex-wrap">
-                    <!-- links -->
-                    <div class="all-info-links">
-                        <div class="inner">
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Information</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Available
-                                        Medicine</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link active">Expert
-                                        Advice</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">FAQ</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Content
-                                        Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- info sec -->
-                    <div class="info-sec">
-                        <div class="inner h-100 bg-white border">
+                        <!-- tab item -->
+                        <div class="tab-pane inner h-100 bg-white border fade" role="tabpanel">
                             <p class="st-heading text-uppercase font-size-18 font-weight-600 mb-2 mb-md-4">
                                 EXPERT ADVICE FOR INSULIN ISOPHANE
                             </p>
 
                             <div class="bullet-list">
                                 <ul class="pl-3">
-                                    <li class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                    <li class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-3">
                                         Hypoglycemia (low blood sugar level) is a common side effect. Hence, regular
                                         monitoring of blood sugar levels is required while taking this medicine.
                                     </li>
-                                    <li class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                    <li class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-3">
                                         Injection below the skin of the abdomen results in faster absorption than other
                                         injection sites.
                                     </li>
-                                    <li class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                    <li class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-3">
                                         Injection sites must be rotated to prevent hard lumps from developing at one
                                         site.
                                     </li>
-                                    <li class="text font-weight-600 st-text-light mb-2 mb-md-3">
+                                    <li class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-3">
                                         Opened vials/cartridge are good at room temperature for up to 4 weeks, while
                                         unopened vials must be placed in the refrigerator (2°C–8°C).
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- INFO LINKS : SECTION 4 -->
-        <section id="st-info-links" class="ST_def-mar-B">
-            <div class="container">
-                <div class="st-info-links d-flex flex-wrap">
-                    <!-- links -->
-                    <div class="all-info-links">
-                        <div class="inner">
-                            <ul class="list-unstyled">
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Information</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Available
-                                        Medicine</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Expert
-                                        Advice</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link active">FAQ</a>
-                                </li>
-                                <li class="mb-2">
-                                    <a href="#"
-                                        class="border text-uppercase font-size-16 font-weight-600 text-decoration-none d-block position-relative a-link">Content
-                                        Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- info sec -->
-                    <div class="info-sec">
-                        <div class="inner h-100 bg-white border">
+                        <!-- tab item -->
+                        <div class="tab-pane inner h-100 bg-white border fade" role="tabpanel">
                             <p class="st-heading text-uppercase font-size-18 font-weight-600 mb-2 mb-md-4">
                                 FREQUENTLY ASKED QUESTIONS FOR INSULIN ISOPHANE
                             </p>
 
-                            <p class="text font-weight-600 st-text-light mb-2 mb-md-4">
+                            <p class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-4">
                                 <span class="d-block st-text-dark">
                                     Q. How does biphasic isophane insulin work?
                                 </span>
@@ -589,7 +517,7 @@
                                 and reach a period of peak activity that lasts up to 7 hours, following which the action
                                 trails off; overall duration of action ranges from 18 to 24 hours.
                             </p>
-                            <p class="text font-weight-600 st-text-light mb-2 mb-md-4">
+                            <p class="text font-weight-600 font-size-15 st-text-light mb-2 mb-md-4">
                                 <span class="d-block st-text-dark">
                                     Q.. What is Insulin Isophane? How is it made?
                                 </span>
@@ -598,8 +526,9 @@
                                 clear, and colorless solution that contains insulin aspart along with other constituents
                                 like glycerin, phenol, metacresol, zinc, sodium chloride etc.
                             </p>
-
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -694,9 +623,10 @@
                         </div>
                         <!-- item -->
                         <div class="item pr-2 mb-2 col">
-                            <div class="inner">
-                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17">Download App</p>
-                                <a href="#" class="d-table mb-3">
+                            <div class="inner d-flex flex-wrap">
+                                <p class="heading font-weight-600 mb-3 text-uppercase font-size-17 w-100">Download App
+                                </p>
+                                <a href="#" class="d-table mb-3 mr-2">
                                     <img src="images/download-app-ios.jpg" alt="" class="img-fluid">
                                 </a>
                                 <a href="#" class="d-table">
@@ -739,6 +669,15 @@
 
     <script>
         $(function () {
+            // TABS JS FOR MOBILE
+            $('.st-dynamic-tabs .nav-link').click(function () {
+                if ($(window).width() < 768) {
+                    $('html, body').animate({
+                        scrollTop: $('.st-dynamic-tabs-content').offset().top - 10
+                    }, 800)
+                }
+            })
+
             $('.product-images .thumbnails .item > a').click(function (ev) {
                 ev.preventDefault();
                 var imgPath = $('>img', this).attr('src')

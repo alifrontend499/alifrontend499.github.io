@@ -1,3 +1,15 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width: 991px) {}
 
 @media screen and (min-width: 1200px) {
@@ -7,3 +19,12 @@
 }
 
 @media screen and (min-width: 1366px) {}
+
+@media screen and (max-width: 767px) {
+    .font-size-20 {
+        font-size: 17px !important;
+    }
+    .font-size-17 {
+        font-size: 15px !important;
+    }
+}

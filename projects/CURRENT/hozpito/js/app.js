@@ -92,6 +92,32 @@ $(function () {
         }
     });
 
+    // HOME FOUR BLOCKS SLIDER
+    $('#home-four-blocks-slider').owlCarousel({
+        items: 4,
+        // loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        autoplayTimeout: 2700,
+        margin: 15,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+        }
+    });
+
     // HEALTH EXPERTS SLIDER
     $('#health-experts-slider').owlCarousel({
         items: 3,
@@ -130,7 +156,7 @@ $(function () {
         margin: 5,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
             },
             576: {
                 items: 3,
@@ -149,7 +175,7 @@ $(function () {
             $('>a', this).attr('aria-controls', 'href-' + navCount);
             navCount += 1;
         });
-        $('.st-dynamic-tabs + .tab-content > .tab-pane').each(function () {
+        $('.st-dynamic-tabs + .tab-content > .tab-pane, .st-dynamic-tabs-content > .tab-pane').each(function () {
             $(this).attr('aria-labelledby', 'aria-tab-' + tabContentCount)
             $(this).attr('id', 'href-' + tabContentCount)
             tabContentCount += 1;
