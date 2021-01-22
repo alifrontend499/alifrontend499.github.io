@@ -377,3 +377,29 @@
         padding: 6px 9px;
     }
 }
+
+// star ratings
+.st-star-rating {
+    li {
+        i {
+            &.fas.fa-star {
+                color: $starRatingColor;
+            }
+            &.far.fa-star {
+                color: $starRatingNoRatingColor;
+            }
+        }
+    }
+}
+
+// custom modal
+.custom-modal {
+    .close {
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+    }
+    .modal-content {
+        border-radius: $app-block-border-radius;
+    }
+}

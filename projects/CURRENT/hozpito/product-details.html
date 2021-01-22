@@ -30,7 +30,6 @@
 <body>
 
     <!-- HEADER -->
-    <!-- HEADER -->
     <header>
         <!-- header top part -->
         <div id="header-top">
@@ -48,12 +47,14 @@
                         <div class="inner d-flex align-items-center">
                             <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
                                 <li class="pr-2">
-                                    <a href="authentication.html" class="text-white font-size-15"
-                                        title="Login">Login</a>
+                                    <a href="authentication.html" class="text-white font-size-15" title="Login"
+                                        data-toggle="modal" data-target="#loginModal"
+                                        data-open-tab="login-tab-in-modal">Login</a>
                                 </li>
                                 <li class="pl-2">
-                                    <a href="authentication.html" class="text-white font-size-15" title="Sign Up">Sign
-                                        Up</a>
+                                    <a href="authentication.html" class="text-white font-size-15" title="Sign Up"
+                                        data-toggle="modal" data-target="#loginModal"
+                                        data-open-tab="sign-up-tab-in-modal">Sign Up</a>
                                 </li>
                             </ul>
                             <!-- favorite -->
@@ -94,7 +95,8 @@
                                 </div>
                                 <!-- upload precription button | FOR WEB -->
                                 <div class="btns d-none d-lg-block">
-                                    <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600">Upload
+                                    <button class="btn st-btn st-btn-secondary font-size-17 font-weight-600"
+                                        data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
                                         Prescription</button>
                                 </div>
                             </div>
@@ -109,12 +111,14 @@
                                 </a>
                                 <ul class="list-unstyled d-flex align-items-center mx-2 mx-lg-3">
                                     <li class="pr-2">
-                                        <a href="authentication.html" class="text-white font-size-15"
-                                            title="Login">Login</a>
+                                        <a href="authentication.html" class="text-white font-size-15" title="Login"
+                                            data-toggle="modal" data-target="#loginModal"
+                                            data-open-tab="login-tab-in-modal">Login</a>
                                     </li>
                                     <li class="pl-2">
-                                        <a href="authentication.html" class="text-white font-size-15"
-                                            title="Sign Up">Sign Up</a>
+                                        <a href="authentication.html" class="text-white font-size-15" title="Sign Up"
+                                            data-toggle="modal" data-target="#loginModal"
+                                            data-open-tab="sign-up-tab-in-modal">Sign Up</a>
                                     </li>
                                 </ul>
                                 <!-- favorite -->
@@ -235,6 +239,217 @@
         </div>
     </header>
 
+    <!-- HEADER LOGIN Modal -->
+    <div class="modal fade custom-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="feather-x"></i>
+                </button>
+                <div class="modal-body p-0">
+
+                    <div class="st-authentication">
+                        <div class="login-inner d-flex flex-wrap in-modal">
+                            <div class="col-md-6 lt px-0 d-none d-md-block">
+                                <div class="inner h-100"></div>
+                            </div>
+                            <div class="col-md-6 rt px-0">
+                                <div class="inner bg-white h-100">
+                                    <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                    <ul class="nav nav-tabs" id="loginTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize active" id="login-tab-in-modal"
+                                                data-toggle="tab" href="#login-in-modal" role="tab"
+                                                aria-controls="login-in-modal" aria-selected="true">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize" id="sign-up-tab-in-modal"
+                                                data-toggle="tab" href="#sign-up-in-modal" role="tab"
+                                                aria-controls="sign-up-in-modal" aria-selected="false">Sign up</a>
+                                        </li>
+                                        <li class="nav-item d-none">
+                                            <a class="nav-link text-capitalize" id="forgot-password-tab-in-modal"
+                                                data-toggle="tab" href="#forgot-password-in-modal" role="tab"
+                                                aria-controls="forgot-password-in-modal" aria-selected="false">forgot
+                                                password</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="loginTabContent">
+                                        <!-- login tab -->
+                                        <div class="tab-pane fade show active" id="login-in-modal" role="tabpanel"
+                                            aria-labelledby="login-tab-in-modal">
+                                            <div class="login-form">
+                                                <div
+                                                    class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                    <!-- when user uses OTP -->
+                                                    <button
+                                                        class="get-otp-btn icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2 d-none">get
+                                                        OTP</button>
+                                                </div>
+                                                <!-- when user uses password -->
+                                                <div class="form-group st-form input-underline login-password-field">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <!-- when user uses OTP -->
+                                                <div class="form-group st-form input-underline login-otp-field d-none">
+                                                    <input type="password" class="form-control" placeholder="Enter OTP">
+                                                </div>
+                                                <div class="btns open-password-field">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
+                                                </div>
+                                                <div class="or-text position-relative">
+                                                    <span class="d-table mx-auto position-relative">OR</span>
+                                                </div>
+                                                <div class="btns open-otp-field">
+                                                    <button
+                                                        class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">Use
+                                                        OTP</button>
+                                                </div>
+                                                <div class="other-options d-flex align-items-center">
+                                                    <a href="" data-open-tab='forgot-password-tab-in-modal'
+                                                        class="font-size-16 st-text-primary">Forgot Password ?</a>
+                                                    <ul class="list-unstyled d-flex align-items-center ml-auto">
+                                                        <li class="first font-size-16">
+                                                            Login with
+                                                        </li>
+                                                        <li class="facebook">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="google">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-google-plus-g"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- sign up tab -->
+                                        <div class="tab-pane fade" id="sign-up-in-modal" role="tabpanel"
+                                            aria-labelledby="sign-up-tab-in-modal">
+                                            <div class="login-form">
+                                                <div class="form-group st-form input-underline">
+                                                    <input type="text" class="form-control" placeholder="Full Name">
+                                                </div>
+                                                <div class="form-group st-form input-underline">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <div class="form-group st-form input-underline">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <div class="form-group st-form input-underline">
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <div class="btns open-password-field">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
+                                                        up</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- forgot password tab -->
+                                        <div class="tab-pane fade" id="forgot-password-in-modal" role="tabpanel"
+                                            aria-labelledby="forgot-password-tab-in-modal">
+                                            <div class="login-form">
+                                                <div class="form-group st-form input-underline">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <div class="btns open-password-field">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
+                                                        password</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPLOAD PRESCRIPTION Modal -->
+    <div class="modal fade custom-modal" id="uploadPrescriptionModal" tabindex="-1" role="dialog"
+        aria-labelledby="uploadPrescriptionModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="feather-x"></i>
+                </button>
+                <div class="modal-body">
+
+                    <!-- app heading -->
+                    <div class="st-main-heading mb-1">
+                        <div class="left-sec pr-3">
+                            <p class="st-heading text-capitalize font-size-20 font-weight-600">
+                                Upload Prescription
+                            </p>
+                            <p class="desc mt-1">
+                                Please attach a prescription to proceed
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- upload prescription -->
+                    <div class="upload-prescription-section p-2">
+                        <div class="form-group st-form with-icon-text position-relative">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                            <button
+                                class="icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2">get
+                                OTP</button>
+                        </div>
+                        <div class="form-group st-form">
+                            <input type="text" class="form-control" placeholder="Otp">
+                        </div>
+                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center">
+                            <input type="file" class="d-none">
+                            <i class="fas fa-paperclip mr-2 mt-1"></i>
+                            <span>Upload Prescription</span>
+                        </label>
+                        <div class="mt-1">
+                            <p style="font-style: italic;"
+                                class="font-size-12 font-weight-600 st-text-light text-center">Make sure you choose pdf,
+                                jpg or png file format</p>
+                        </div>
+                        <div class="mt-4">
+                            <button
+                                class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600"
+                                disabled>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SITE WRAPPER -->
     <div id="wrapper">
         <!-- site breadcrumbs -->
@@ -307,10 +522,22 @@
                     <!-- PRODUCT DETAILS -->
                     <div class="product-details">
                         <div class="inner">
-                            <p class="product-heading font-size-20 font-weight-600 mb-3 mb-md-4">
+                            <p class="product-heading font-size-20 font-weight-600 mb-2">
                                 Covid-19 Immunity + Anti Inflammatory Booster Pack (Curcumin Strips + Vitamin C Strips +
                                 Vitamin D Strips) 210's
                             </p>
+
+                            <!-- go to rating -->
+                            <div class="go-to-rating mb-3 mb-md-4">
+                                <a href="#" class="text-decoration-none st-text-dark d-inline-flex align-items-center">
+                                    <button class="btn btn-sm font-size-14 px-2 py-1 st-btn st-btn-primary">
+                                        <span class="mr-1">4.2</span>
+                                        <i class="fa-star fas font-size-10 font-size-11 position-relative"
+                                            style=" top: -1px; "></i>
+                                    </button>
+                                    <span class="ml-1 font-size-13">15 Ratings</span>
+                                </a>
+                            </div>
 
                             <!-- OTHER DETAILS SECTION -->
                             <div class="other-details d-flex mb-3 mb-md-4">
@@ -695,18 +922,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -723,18 +968,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -751,18 +1014,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -779,18 +1060,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -807,18 +1106,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -835,18 +1152,36 @@
                                         class="img-fluid img-fluid-height">
                                 </div>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-16 mb-1">
+                                    <p class="heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </p>
                                     <p class="price font-size-16">
                                         <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1">
+                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
                                     <p class="fina-price font-size-20 font-weight-600">
                                         Rs. 435
                                     </p>
+                                    <!-- star rating -->
+                                    <ul class="st-star-rating list-unstyled d-flex justify-content-center mt-1 mb-2">
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-star"></i>
+                                        </li>
+                                    </ul>
                                     <a href="#"
                                         class="btn btn-block st-btn st-btn-sm st-btn-outlined-primary mt-2 font-weight-600">
                                         Add to Cart
@@ -1003,6 +1338,14 @@
                     $('.product-images .big-img > img').closest('.big-img').find('>img').attr('src', imgPath)
                 }
             });
+
+            // go-to-rating
+            $('.go-to-rating > a').click(function(ev) {
+                ev.preventDefault()
+                $('html, body').animate({
+                    scrollTop: $('.ratings-section').offset().top - 30
+                }, 1000)
+            })
         });
     </script>
 </body>

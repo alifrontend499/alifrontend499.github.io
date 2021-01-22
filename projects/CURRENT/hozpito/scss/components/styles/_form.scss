@@ -8,7 +8,7 @@ $borderRadius: 4px;
         border-radius: $borderRadiusInputsAndButtons;
         -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
         box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-        border: none;
+        // border: none;
         padding: 10px 15px;
         color: $dark-text-color;
         @include transition(.1s);
@@ -33,6 +33,7 @@ $borderRadius: 4px;
         &:focus {
             -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
             box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-color: #bfbfbf;
         }
     }
 
@@ -97,7 +98,8 @@ $borderRadius: 4px;
 
     }
 
-    &.with-icon {
+    &.with-icon,
+    &.with-icon-text {
 
         >input:not([type="radio"]):not([type="checkbox"]),
         >select,
@@ -116,6 +118,15 @@ $borderRadius: 4px;
             &:hover {
                 color: $dark-text-color;
             }
+        }
+    }
+
+    &.with-icon-text {
+
+        >input:not([type="radio"]):not([type="checkbox"]),
+        >select,
+        >textarea {
+            padding-right: 55px;
         }
     }
 }

@@ -197,6 +197,19 @@ body {
     }
 }
 
+// login modal
+#loginModal {
+    .modal-dialog {
+        @include min_width($md-min) {
+            max-width: 700px;
+        }
+
+        @include min_width($lg-min) {
+            max-width: 800px;
+        }
+    }
+}
+
 // ST COMMON THREE BLOCKS
 #st-common-three-blocks {
     margin: 20px 0;
@@ -436,21 +449,21 @@ body {
 
     .nav-tabs {
         border-bottom: none;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         >li {
-            margin-bottom: 0;
+            margin-bottom: 5px;
             padding-right: 10px;
 
             @include min-width($lg-min) {
-                padding-right: 18px;
+                padding-right: 10px;
             }
 
             >a {
                 border-radius: 0;
-                padding: 0 0 5px;
+                padding: 5px;
                 border: none;
-                border-bottom: 3px solid transparent;
+                border: 2px solid transparent;
                 @include transition;
 
                 &.active,
@@ -632,16 +645,22 @@ footer {
 
     .login-inner {
         margin: 0 auto;
-        -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-        border: 1px solid #dfdfdf;
+        &:not(.in-modal) {
+            -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dfdfdf;        
+        }
 
         @include min-width($md-min) {
-            width: 650px;
+            &:not(.in-modal) {
+                width: 650px;
+            }
         }
 
         @include min-width($lg-min) {
-            width: 850px;
+            &:not(.in-modal) {
+                width: 850px;
+            }
         }
 
         >.lt {
