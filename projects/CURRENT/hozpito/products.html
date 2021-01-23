@@ -154,7 +154,8 @@
                         </button>
 
                         <!-- FOR MOBILE -->
-                        <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none">Upload
+                        <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none"
+                        data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
                             Prescription</button>
 
                         <div class="collapse navbar-collapse" id="stMenuBar">
@@ -278,20 +279,19 @@
                                         <div class="tab-pane fade show active" id="login-in-modal" role="tabpanel"
                                             aria-labelledby="login-tab-in-modal">
                                             <div class="login-form">
-                                                <div
-                                                    class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
+                                                <div class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
                                                     <input type="text" class="form-control" placeholder="Mobile Number">
                                                     <!-- when user uses OTP -->
                                                     <button
-                                                        class="get-otp-btn icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2 d-none">get
+                                                        class="get-otp-btn icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2">get
                                                         OTP</button>
                                                 </div>
                                                 <!-- when user uses password -->
-                                                <div class="form-group st-form input-underline login-password-field">
+                                                <div class="form-group st-form input-underline login-password-field d-none">
                                                     <input type="password" class="form-control" placeholder="Password">
                                                 </div>
                                                 <!-- when user uses OTP -->
-                                                <div class="form-group st-form input-underline login-otp-field d-none">
+                                                <div class="form-group st-form input-underline login-otp-field">
                                                     <input type="password" class="form-control" placeholder="Enter OTP">
                                                 </div>
                                                 <div class="btns open-password-field">
@@ -303,8 +303,8 @@
                                                 </div>
                                                 <div class="btns open-otp-field">
                                                     <button
-                                                        class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">Use
-                                                        OTP</button>
+                                                        class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">use
+                                                        password</button>
                                                 </div>
                                                 <div class="other-options d-flex align-items-center">
                                                     <a href="" data-open-tab='forgot-password-tab-in-modal'
@@ -406,7 +406,7 @@
 
                     <!-- app heading -->
                     <div class="st-main-heading mb-1">
-                        <div class="left-sec pr-3">
+                        <div class="left-sec pr-3 mb-2 mb-md-3">
                             <p class="st-heading text-capitalize font-size-20 font-weight-600">
                                 Upload Prescription
                             </p>
@@ -417,7 +417,7 @@
                     </div>
 
                     <!-- upload prescription -->
-                    <div class="upload-prescription-section p-2">
+                    <div class="upload-prescription-section">
                         <div class="form-group st-form with-icon-text position-relative">
                             <input type="text" class="form-control" placeholder="Phone Number">
                             <button

@@ -215,18 +215,18 @@ $(function () {
     (function () {
         $('.btns.open-otp-field > .btn').click(function (ev) {
             ev.preventDefault()
-            if ($('.login-otp-field').hasClass('d-none')) {
-                $(this).text('use password')
-                $('.login-password-field').addClass('d-none')
-                $('.login-otp-field').removeClass('d-none')
-
-                $('.get-otp-btn').removeClass('d-none')
-            } else if ($('.login-password-field').hasClass('d-none')) {
+            if ($('.login-password-field').hasClass('d-none')) {
                 $(this).text('use OTP')
                 $('.login-otp-field').addClass('d-none')
                 $('.login-password-field').removeClass('d-none')
 
                 $('.get-otp-btn').addClass('d-none')
+            } else if ($('.login-otp-field').hasClass('d-none')) {
+                $(this).text('use password')
+                $('.login-password-field').addClass('d-none')
+                $('.login-otp-field').removeClass('d-none')
+
+                $('.get-otp-btn').removeClass('d-none')
             }
         });
     })();
