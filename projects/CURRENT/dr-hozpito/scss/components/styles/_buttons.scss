@@ -1,0 +1,270 @@
+button.no-browser-style {
+    background: transparent;
+    padding: initial;
+    line-height: normal;
+    outline: none;
+    border: none;
+}
+
+.st-round-icon-btn {
+    height: 40px;
+    width: 40px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+    @include transition(.2s);
+
+    &:hover {
+        background-color: darken($color: #333, $amount: 5);
+        color: #fff;
+    }
+
+    &:active {
+        background-color: darken($color: #333, $amount: 10);
+        color: #fff;
+    }
+    
+    // btn primary
+    &.st-round-icon-btn-primary {
+        background-color: lighten($color: $primary-color, $amount: 6);
+
+        &:hover {
+            background-color: lighten($color: $primary-color, $amount: 4);
+        }
+
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 3);
+        }
+    }
+
+    // bn secondary
+    &.st-round-icon-btn-secondary {
+        background-color: lighten($color: $secondary-color, $amount: 6);
+
+        &:hover {
+            background-color: lighten($color: $secondary-color, $amount: 4);
+        }
+
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 3);
+        }
+    }
+
+    // btn transparent only
+    &.st-round-icon-btn-transparent {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    // btn transparent with black on hover
+    &.st-round-icon-btn-transparent-hover-black {
+        background-color: transparent;
+        color: #fff;
+
+        &:hover {
+            color: $dark-text-color;
+        }
+
+        &:active {
+            color: $dark-text-color;
+        }
+    }
+
+    // btn transparent with white on hover
+    &.st-round-icon-btn-transparent-hover-white {
+        background-color: transparent;
+        color: $dark-text-color;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &:active {
+            color: #fff;
+        }
+    }
+}
+
+.st-btn {
+    background-color: #d8d8d8;
+    color: #000;
+    padding: 6px 15px 7px;
+    border: none;
+    border-radius: $borderRadiusInputsAndButtons;
+    box-shadow: none !important;
+    font-size: 15px;
+    line-height: normal;
+    @include transition(.2s);
+    @include min-width($sm-min) {
+        padding: 13px 20px;
+    }
+
+    &:hover {
+        background-color: darken($color: #d8d8d8, $amount: 10);
+        
+    }
+
+    &:active {
+        background-color: darken($color: #d8d8d8, $amount: 15);
+        
+    }
+
+    // small btn
+    &.st-btn-sm {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @include min-width($sm-min) {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    }
+    // with icon
+    &.with-icon {}
+
+    // btn secnodary
+    &.st-btn-secondary {
+        background-color: $secondary-color;
+        color: #fff;
+        &:hover {
+            background-color: darken($color: $secondary-color, $amount: 5);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 10);
+            color: #fff;
+        }
+    }
+
+    // btn secondary light
+    &.st-btn-secondary-light {
+        background-color: lighten($color: $secondary-color, $amount: 35%);
+        color: $secondary-color;
+        color: #fff;
+        &:hover {
+            background-color: darken($color: $secondary-color, $amount: 0);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
+    // btn outlined secnodary
+    &.st-btn-outlined-secondary {
+        background-color: transparent;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+        &:hover {
+            background-color: $secondary-color;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $secondary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
+    // btn primary
+    &.st-btn-primary {
+        background-color: $primary-color;
+        color: #fff;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 5);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 10);
+            color: #fff;
+        }
+    }
+
+    // btn primary light
+    &.st-btn-primary-light {
+        background-color: lighten($color: $primary-color, $amount: 50%);
+        color: $primary-color;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 0);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
+    // btn outlined primary
+    &.st-btn-outlined-primary {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        color: $dark-text-color;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $primary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
+    // btn outlined black
+    &.st-btn-outlined-black {
+        background-color: transparent;
+        border: 2px solid $dark-text-color;
+        color: $dark-text-color;
+        &:hover {
+            background-color: $dark-text-color;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: $dark-text-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
+    // btn outlined white
+    &.st-btn-outlined-white {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff !important;
+        &:hover {
+            background-color: #fff;
+            color: $secondary-color !important;
+        }
+
+        &:active {
+            background-color: darken($color: #fff, $amount: 5);
+            color: $secondary-color !important;
+        }
+    }
+
+    // btn white
+    &.st-btn-white {
+        background-color: #fff;
+        color: #333;
+
+        &:hover {
+            background-color: darken($color: #fff, $amount: 5);
+            color: #333;
+        }
+
+        &:active {
+            background-color: darken($color: #fff, $amount: 10);
+            color: #333;
+        }
+
+        &:focus {
+            color: #333;
+        }
+    }
+}
