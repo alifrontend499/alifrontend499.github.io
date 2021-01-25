@@ -24,6 +24,7 @@ header {
 // HEADER-TOP
 #header-top {
     border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    @include transition(.3s);
 }
 
 .header-top {
@@ -31,7 +32,9 @@ header {
 }
 
 // HEADER MENU
-#header-menu {}
+#header-menu {
+    @include transition(.3s);
+}
 
 .header-menu {
     .navbar {
@@ -66,6 +69,30 @@ header {
                 }
             }
         }
+    }
+}
+
+// header active
+header.fixed {
+    #header-menu {
+        background-color: #fff;
+        z-index: 12;
+        @include box-shadow(0px, 2px, 5px, 0, rgba(0, 0, 0, 0.1));
+    }
+
+    .header-menu {
+        .navbar-nav {
+            >.nav-item {
+                >.nav-link {
+                    color: $primary-color !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .social-ul>ul a {
+        color: $primary-color;
     }
 }
 
@@ -237,8 +264,10 @@ header {
         padding-left: 30px;
         padding-right: 30px;
     }
+
     .item {
         padding: 15px;
+
         >.inner {
             @include transition();
             padding: 20px 0px;
@@ -260,6 +289,7 @@ header {
             >.inner {
                 background-color: $primary-color;
             }
+
             .text-sec {
                 p {
                     color: #fff;
@@ -270,8 +300,7 @@ header {
 }
 
 // MEET DOCTORS
-#meet-doctors {
-}
+#meet-doctors {}
 
 .meet-doctors {
     .item {
@@ -289,14 +318,17 @@ header {
             .doc-name {
                 font-size: 18px;
                 margin-bottom: 15px;
+
                 @include min-width($md-min) {
                     font-size: 23px;
                     line-height: 23px;
                 }
             }
-            .doc.desg{
+
+            .doc.desg {
                 color: $primary-color;
                 margin-bottom: 15px;
+
                 &::after {
                     content: '';
                     display: block;
@@ -307,22 +339,62 @@ header {
                     @include transition(.4s);
                 }
             }
+
             .social-ul {
-                a {
-                    
-                }
+                a {}
             }
         }
+
         &:hover {
-            >.inner {
-            }
+            >.inner {}
+
             .text-sec {
-                .doc.desg{
+                .doc.desg {
                     &::after {
                         width: 50px;
                     }
                 }
             }
         }
+    }
+}
+
+// OUR SERVICES
+#our-services {
+    background-color: #efefef;
+}
+
+.our-services {
+    .item {
+        >.inner {
+            @include box-shadow(0px, 0px, 35px, 0px, rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    .img-sec {
+        .icon {
+            bottom: 0;
+            left: 50%;
+            @include transform(-50%, 50%);
+            background: #44a6e3;
+            height: 85px;
+            width: 85px;
+            border: 9px solid #fff;
+        }
+    }
+
+    .text-sec {
+        padding-top: 50px;
+
+        .head {
+            font-size: 18px;
+            margin-bottom: 15px;
+
+            @include min-width($md-min) {
+                font-size: 23px;
+                line-height: 23px;
+            }
+        }
+
     }
 }
