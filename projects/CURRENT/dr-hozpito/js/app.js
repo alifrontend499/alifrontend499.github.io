@@ -34,6 +34,29 @@ $(function () {
         autoplayTimeout: 3000,
     });
 
+    // TESTIMONIAL SLIDER
+    $('#testimonial-slider').owlCarousel({
+        items: 3,
+        // loop: true,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        autoplayTimeout: 3400,
+        margin: 20,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            }
+        }
+    });
+
 
     (function () {
         $('.slide-to-link').click(function (ev) {

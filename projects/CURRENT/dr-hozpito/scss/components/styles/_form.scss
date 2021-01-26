@@ -6,9 +6,8 @@ $borderRadius: 4px;
     >select,
     >textarea {
         border-radius: $borderRadiusInputsAndButtons;
-        -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-        // border: none;
+        box-shadow: none !important;
+        height: auto;
         padding: 10px 15px;
         color: $dark-text-color;
         @include transition(.1s);
@@ -31,8 +30,6 @@ $borderRadius: 4px;
         }
 
         &:focus {
-            -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
             border-color: #bfbfbf;
         }
     }
@@ -89,7 +86,6 @@ $borderRadius: 4px;
             padding-left: 0;
             padding-right: 0;
             border-radius: 0;
-            box-shadow: none;
 
             &:focus {
                 border-color: $primary-color;

@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (min-width: 991px) {}
+@media screen and (min-width: 992px) {}
 
 @media screen and (min-width: 1200px) {
     .container {
@@ -20,11 +20,93 @@
 
 @media screen and (min-width: 1366px) {}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .font-size-20 {
         font-size: 17px !important;
     }
+
     .font-size-17 {
         font-size: 15px !important;
+    }
+
+    /* header css */
+    .header-menu .social-ul {
+        position: absolute;
+        right: 0;
+        top: 7px;
+    }
+
+    .navbar-nav {
+        background: #fff;
+        margin-top: 10px;
+    }
+
+    .header-menu .navbar-nav>.nav-item>.nav-link {
+        color: #049fad !important;
+    }
+}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    /* header css */
+    header:not(.fixed) .navbar-nav {
+        padding: 0 15px;
+    }
+    .header-logo>a {
+        width: 125px;
+        margin-top: 12px;
+    }
+    #header-menu {
+        border-top: 1px solid #049fad;
+    }
+    header .social-ul>ul a {
+        color: #049fad;
+    }
+
+    /* wrapper css */
+    #wrapper {
+        margin-top: 147px;
+    }
+
+    /* our speciality css */
+    .our-speciality .item .text-sec {
+            word-wrap: break-word;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+
+    /* meet doctor css */
+    .meet-doctors>.item:not(:nth-last-child(1)),
+    .our-services>.item:not(:nth-last-child(1)) {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+    /* meet doctor css */
+    .meet-doctors>.item:not(:nth-last-child(1)):not(:nth-last-child(2)),
+    .our-services>.item:not(:nth-last-child(1)):not(:nth-last-child(2)) {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* header css */
+    .header-logo>a {
+        width: 150px;
+    }
+    header:not(.fixed) .navbar-nav {
+        padding: 0 15px;
+    }
+
+    /* meet doctor css */
+    .meet-doctors>.item:not(:nth-last-child(1)):not(:nth-last-child(2)),
+    .our-services>.item:not(:nth-last-child(1)):not(:nth-last-child(2)) {
+        margin-bottom: 15px;
     }
 }

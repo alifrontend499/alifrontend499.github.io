@@ -19,6 +19,8 @@ header {
     top: 0;
     left: 0;
     z-index: 12;
+    // @include min-width($md-min) {
+    // }
 }
 
 // HEADER-TOP
@@ -29,6 +31,21 @@ header {
 
 .header-top {
     padding: 8px 0;
+
+    .header-details {
+        .head,.desc {
+            color: #333;
+        }
+        @include min-width($md-min) {
+            .head {
+                color: #fff;
+            }
+
+            .desc {
+                color: $light-white-color;
+            }
+        }
+    }
 }
 
 // HEADER MENU
@@ -39,19 +56,33 @@ header {
 .header-menu {
     .navbar {
         padding: 0;
+
+        @include max-width($lg-max) {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
     }
 
     .navbar-nav {
         >.nav-item {
             &:not(:last-child) {
-                padding-right: 30px;
+                @include min-width($lg-min) {
+                    padding-right: 30px;
+                }
             }
 
             >.nav-link {
                 color: $dark-text-color;
                 @include transition();
                 border-bottom: 5px solid transparent;
-                padding: 15px 10px 11px;
+                padding: 15px 0px 11px;
+
+                @include min-width($lg-min) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                cursor: pointer;
 
                 >i {
                     color: $light-text-color;
@@ -85,7 +116,6 @@ header.fixed {
             >.nav-item {
                 >.nav-link {
                     color: $primary-color !important;
-                    cursor: pointer;
                 }
             }
         }
@@ -108,15 +138,17 @@ header.fixed {
     }
 
     .caption {
-        padding: 40px 0 70px;
-
+        padding: 20px 0 45px;
+        @include min-width($lg-min) {
+            padding: 40px 0 70px;
+        }
         @include min-width($lg-min) {
             padding: 55px 0 120px;
         }
 
         .head {
-            font-size: 30px;
-            line-height: 25px;
+            font-size: 35px;
+            line-height: 45px;
 
             @include min-width($lg-min) {
                 font-size: 45px;
@@ -127,7 +159,7 @@ header.fixed {
         .desc {
             font-size: 15px;
 
-            @include min-width($md-min) {
+            @include min-width($lg-min) {
                 font-size: 17px;
                 max-width: 540px;
                 line-height: 21px;
@@ -168,8 +200,10 @@ header.fixed {
 
 // WHAT YOU GET
 #what-you-get {
-    z-index: 1;
-    margin-top: -20px;
+    @include min-width($sm-min) {
+        z-index: 1;
+        margin-top: -20px;    
+    }
 }
 
 .what-you-get {
@@ -197,17 +231,20 @@ header.fixed {
         }
 
         >.inner {
-            padding: 30px 0;
-
+            padding: 20px 0;
+        
             @include min-width($md-min) {
+                padding: 35px 0;
+            }
+            @include min-width($lg-min) {
                 padding: 60px 0;
             }
         }
 
         .img-sec {
-            height: 80px;
+            height: 70px;
 
-            @include min-width($md-min) {
+            @include min-width($lg-min) {
                 height: 100px;
             }
         }
@@ -224,29 +261,31 @@ header.fixed {
 .about-doctor {
     .post {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
-        @include min-width($md-min) {
+        @include min-width($lg-min) {
             font-size: 20px;
+            margin-bottom: 20px;
         }
     }
 
     .head {
         font-size: 40px;
         line-height: 40px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
 
-        @include min-width($md-min) {
+        @include min-width($lg-min) {
             font-size: 55px;
             line-height: 55px;
+            margin-bottom: 25px;
         }
     }
 
     .desc {
-        font-size: 17px;
-        margin-bottom: 30px;
+        font-size: 16px;
+        margin-bottom: 20px;
 
-        @include min-width($md-min) {
+        @include min-width($lg-min) {
             font-size: 18px;
             margin-bottom: 50px;
             max-width: 600px;
@@ -266,13 +305,17 @@ header.fixed {
     }
 
     .item {
-        padding: 15px;
+        padding: 0 15px;
+        @include min-width($md-min) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
 
         >.inner {
             @include transition();
-            padding: 20px 0px;
+            padding: 20px 5px;
 
-            @include min-width($md-min) {
+            @include min-width($lg-min) {
                 padding: 40px 15px;
             }
         }
@@ -376,9 +419,10 @@ header.fixed {
             bottom: 0;
             left: 50%;
             @include transform(-50%, 50%);
-            background: #44a6e3;
-            height: 85px;
-            width: 85px;
+            // background: #44a6e3;
+            background: #333;
+            height: 90px;
+            width: 90px;
             border: 9px solid #fff;
         }
     }
@@ -396,5 +440,165 @@ header.fixed {
             }
         }
 
+    }
+}
+
+// TESTIMONIALS
+#testimonial {}
+
+.testimonial {
+    .st-heading {
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 55px;
+            margin: 15px 0 20px;
+            background-color: $primary-color;
+        }
+    }
+
+    .item {
+        .name {
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 35px;
+                margin: 5px 0 5px;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+// LOCATIONS SECTION
+#locations-sec {}
+
+.locations-sec {
+    >.lt {
+        >.inner {
+            padding: 20px;
+
+            @include min-width($md-min) {
+                padding: 30px;
+            }
+        }
+
+        .head {
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 40px;
+                margin: 5px 0 5px;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .timings {
+        >.d-flex {
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    .other-details {
+        >.d-flex {
+            // &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            // }
+        }
+
+        .icon {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-right: 10px;
+
+            @include min-width($md-min) {}
+        }
+    }
+
+    >.rt {
+        iframe {
+            height: 100%;
+            width: 100%;
+
+            @include min-width($md-min) {}
+        }
+    }
+}
+
+// footer
+footer {}
+
+.footer-main {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .head {
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 40px;
+            margin: 5px 0 5px;
+            background-color: $secondary-color;
+        }
+    }
+
+    .item {
+        @include min-width($lg-min) {
+            padding: 0 30px;
+        }
+
+        &.two {
+            @include min-width($md-min) {
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .st-form {
+            .form-control {
+                background-color: #29a6b4;
+                border: none !important;
+                color: #fff;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #fff;
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #fff;
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #fff;
+                }
+
+                &:focus {
+                    border-color: #bfbfbf;
+                }
+            }
+        }
+    }
+}
+
+#footer-bottom-sec {
+    background-color: darken($color: $primary-color, $amount: 10);
+}
+
+.footer-bottom-sec {
+    padding: 10px 0;
+
+    p {
+        color: #7bcbd6;
     }
 }

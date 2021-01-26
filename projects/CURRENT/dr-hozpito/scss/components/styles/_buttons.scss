@@ -88,14 +88,14 @@ button.no-browser-style {
 .st-btn {
     background-color: #d8d8d8;
     color: #000;
-    padding: 6px 15px 7px;
+    padding: 10px 11px 10px;
     border: none;
     border-radius: $borderRadiusInputsAndButtons;
     box-shadow: none !important;
     font-size: 15px;
     line-height: normal;
     @include transition(.2s);
-    @include min-width($sm-min) {
+    @include min-width($md-min) {
         padding: 13px 20px;
     }
 
@@ -204,7 +204,7 @@ button.no-browser-style {
     &.st-btn-outlined-primary {
         background-color: transparent;
         border: 2px solid $primary-color;
-        color: $dark-text-color;
+        color: $primary-color;
         &:hover {
             background-color: $primary-color;
             color: #fff;

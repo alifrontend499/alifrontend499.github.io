@@ -1,21 +1,30 @@
 /* HEADING STYLES */
 .st-main-heading {
-    margin-bottom: 35px;
-    @include min-width($md-min) {}
+    margin-bottom: 20px;
+    @include min-width($md-min) {
+        margin-bottom: 35px;
+    }
     .st-heading {
-        font-size: 20px;
+        font-size: 25px;
         color: #333;
 
         @include min-width($md-min) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @include min-width($lg-min) {
             font-size: 38px;
             line-height: 38px;
         }
     }
 
     .st-desc {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 10px;
 
-        @include min-width($md-min) {}
+        @include min-width($lg-min) {
+            font-size: 18px;
+        }
     }
 }

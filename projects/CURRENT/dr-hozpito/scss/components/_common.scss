@@ -19,7 +19,7 @@
 // common margin and padding
 .ST_def-mar-T,
 .ST_def-mar-TB {
-    margin-top: 20px;
+    margin-top: 30px;
 
     @include min_width($lg-min) {
         margin-top: 40px;
@@ -33,6 +33,10 @@
 .ST_def-mar-B,
 .ST_def-mar-TB {
     margin-bottom: 20px;
+    
+    @include min_width($md-min) {
+        margin-bottom: 30px;
+    }
 
     @include min_width($lg-min) {
         margin-bottom: 40px;
@@ -47,6 +51,10 @@
 .ST_def-pad-TB {
     padding-top: 20px;
 
+    @include min_width($md-min) {
+        padding-top: 30px;
+    }
+
     @include min_width($lg-min) {
         padding-top: 40px;
     }
@@ -59,6 +67,10 @@
 .ST_def-pad-B,
 .ST_def-pad-TB {
     padding-bottom: 20px;
+    
+    @include min_width($md-min) {
+        padding-bottom: 30px;
+    }
 
     @include min_width($lg-min) {
         padding-bottom: 40px;
@@ -411,11 +423,23 @@
 // .header like classes
 .header-like-margin-top {
     @include min-width($md-min) {
+        margin-top: 135px;
+    }
+    @include min-width($lg-min) {
         margin-top: 163px;
     }
 }
 .header-like-padding-top {
     @include min-width($md-min) {
+        padding-top: 135px;
+    }
+    @include min-width($lg-min) {
         padding-top: 163px;
     }
+}
+
+// NAVBAR TOGGLER
+.navbar-toggler {
+    padding: 1px 4px 1px;
+    line-height: 0;
 }
