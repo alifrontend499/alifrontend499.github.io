@@ -1,0 +1,604 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-text-color;
+}
+
+// HOMEPAGE CSS
+
+// HEADER 
+header {
+    top: 0;
+    left: 0;
+    z-index: 12;
+    // @include min-width($md-min) {
+    // }
+}
+
+// HEADER-TOP
+#header-top {
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    @include transition(.3s);
+}
+
+.header-top {
+    padding: 8px 0;
+
+    .header-details {
+        .head,.desc {
+            color: #333;
+        }
+        @include min-width($md-min) {
+            .head {
+                color: #fff;
+            }
+
+            .desc {
+                color: $light-white-color;
+            }
+        }
+    }
+}
+
+// HEADER MENU
+#header-menu {
+    @include transition(.3s);
+}
+
+.header-menu {
+    .navbar {
+        padding: 0;
+
+        @include max-width($lg-max) {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    }
+
+    .navbar-nav {
+        >.nav-item {
+            &:not(:last-child) {
+                @include min-width($lg-min) {
+                    padding-right: 30px;
+                }
+            }
+
+            >.nav-link {
+                color: $dark-text-color;
+                @include transition();
+                border-bottom: 5px solid transparent;
+                padding: 15px 0px 11px;
+
+                @include min-width($lg-min) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                cursor: pointer;
+
+                >i {
+                    color: $light-text-color;
+                }
+
+                &:hover {
+                    color: darken($color: $dark-text-color, $amount: 10);
+                    border-bottom-color: $secondary-color;
+                }
+
+                &.active,
+                &:active {
+                    color: darken($color: $dark-text-color, $amount: 10);
+                    border-bottom-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+// header active
+header.fixed {
+    #header-menu {
+        background-color: #fff;
+        z-index: 12;
+        @include box-shadow(0px, 2px, 5px, 0, rgba(0, 0, 0, 0.1));
+    }
+
+    .header-menu {
+        .navbar-nav {
+            >.nav-item {
+                >.nav-link {
+                    color: $primary-color !important;
+                }
+            }
+        }
+    }
+
+    .social-ul>ul a {
+        color: $primary-color;
+    }
+}
+
+// HOME SLIDER
+#home-slider-main {}
+
+.home-slider-main {
+    .item {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .caption {
+        padding: 20px 0 45px;
+        @include min-width($lg-min) {
+            padding: 40px 0 70px;
+        }
+        @include min-width($lg-min) {
+            padding: 55px 0 120px;
+        }
+
+        .head {
+            font-size: 35px;
+            line-height: 45px;
+
+            @include min-width($lg-min) {
+                font-size: 45px;
+                line-height: 55px;
+            }
+        }
+
+        .desc {
+            font-size: 15px;
+
+            @include min-width($lg-min) {
+                font-size: 17px;
+                max-width: 540px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .owl-nav {
+
+        // .owl-prev,
+        // .owl-next {
+        //     position: absolute;
+        //     top: 50%;
+        //     @include transformy(-50%);
+        //     outline: none !important;
+        //     box-shadow: none !important;
+        //     opacity: 0.6;
+
+        //     i {
+        //         color: #fff;
+        //         font-size: 40px;
+        //     }
+
+        //     &:hover {
+        //         opacity: 1;
+        //     }
+        // }
+
+        // .owl-prev {
+        //     left: 5px;
+        // }
+
+        // .owl-next {
+        //     right: 5px;
+        // }
+    }
+}
+
+// WHAT YOU GET
+#what-you-get {
+    @include min-width($sm-min) {
+        z-index: 1;
+        margin-top: -20px;    
+    }
+}
+
+.what-you-get {
+    .item {
+        &:nth-child(even) {
+            background-color: darken($color: $primary-color, $amount: 4);
+
+            @include min-width($md-min) {
+                @include transform_skew(0, -3deg);
+                // > .inner {
+                //     @include transform_skew(0, 3deg);
+                // }
+            }
+        }
+
+        &:nth-child(odd) {
+            background-color: $primary-color;
+
+            @include min-width($md-min) {
+                @include transform_skew(0, 3deg);
+                // > .inner {
+                //     @include transform_skew(0, -3deg);
+                // }
+            }
+        }
+
+        >.inner {
+            padding: 20px 0;
+        
+            @include min-width($md-min) {
+                padding: 35px 0;
+            }
+            @include min-width($lg-min) {
+                padding: 60px 0;
+            }
+        }
+
+        .img-sec {
+            height: 70px;
+
+            @include min-width($lg-min) {
+                height: 100px;
+            }
+        }
+
+        .text-sec {
+            .head {}
+        }
+    }
+}
+
+// ABOUT DOCTOR
+#about-doctor {}
+
+.about-doctor {
+    .post {
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        @include min-width($lg-min) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .head {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 15px;
+
+        @include min-width($lg-min) {
+            font-size: 55px;
+            line-height: 55px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .desc {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        @include min-width($lg-min) {
+            font-size: 18px;
+            margin-bottom: 50px;
+            max-width: 600px;
+        }
+    }
+}
+
+// OUR SPECIALITY
+#our-speciality {
+    background: #efefee url('../images/our-speciality/main-bg.png') no-repeat 0 0/ cover;
+}
+
+.our-speciality {
+    @include min-width($md-min) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .item {
+        padding: 0 15px;
+        @include min-width($md-min) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        >.inner {
+            @include transition();
+            padding: 20px 5px;
+
+            @include min-width($lg-min) {
+                padding: 40px 15px;
+            }
+        }
+
+        .img-sec {
+            height: 100px;
+            width: 100px;
+            border: 3px solid $primary-color;
+            padding: 5px;
+        }
+
+
+        &:hover {
+            >.inner {
+                background-color: $primary-color;
+            }
+
+            .text-sec {
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// MEET DOCTORS
+#meet-doctors {}
+
+.meet-doctors {
+    .item {
+        >.inner {
+            @include transition();
+        }
+
+        .img-sec {
+            height: 200px;
+            width: 200px;
+        }
+
+
+        .text-sec {
+            .doc-name {
+                font-size: 18px;
+                margin-bottom: 15px;
+
+                @include min-width($md-min) {
+                    font-size: 23px;
+                    line-height: 23px;
+                }
+            }
+
+            .doc.desg {
+                color: $primary-color;
+                margin-bottom: 15px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 35px;
+                    margin: 4px auto 0;
+                    background-color: $primary-color;
+                    @include transition(.4s);
+                }
+            }
+
+            .social-ul {
+                a {}
+            }
+        }
+
+        &:hover {
+            >.inner {}
+
+            .text-sec {
+                .doc.desg {
+                    &::after {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// OUR SERVICES
+#our-services {
+    background-color: #efefef;
+}
+
+.our-services {
+    .item {
+        >.inner {
+            @include box-shadow(0px, 0px, 35px, 0px, rgba(0, 0, 0, 0.1));
+        }
+    }
+
+    .img-sec {
+        .icon {
+            bottom: 0;
+            left: 50%;
+            @include transform(-50%, 50%);
+            // background: #44a6e3;
+            background: #333;
+            height: 90px;
+            width: 90px;
+            border: 9px solid #fff;
+        }
+    }
+
+    .text-sec {
+        padding-top: 50px;
+
+        .head {
+            font-size: 18px;
+            margin-bottom: 15px;
+
+            @include min-width($md-min) {
+                font-size: 23px;
+                line-height: 23px;
+            }
+        }
+
+    }
+}
+
+// TESTIMONIALS
+#testimonial {}
+
+.testimonial {
+    .st-heading {
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 55px;
+            margin: 15px 0 20px;
+            background-color: $primary-color;
+        }
+    }
+
+    .item {
+        .name {
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 35px;
+                margin: 5px 0 5px;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+// LOCATIONS SECTION
+#locations-sec {}
+
+.locations-sec {
+    >.lt {
+        >.inner {
+            padding: 20px;
+
+            @include min-width($md-min) {
+                padding: 30px;
+            }
+        }
+
+        .head {
+            &::after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 40px;
+                margin: 5px 0 5px;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .timings {
+        >.d-flex {
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    .other-details {
+        >.d-flex {
+            // &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            // }
+        }
+
+        .icon {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-right: 10px;
+
+            @include min-width($md-min) {}
+        }
+    }
+
+    >.rt {
+        iframe {
+            height: 100%;
+            width: 100%;
+
+            @include min-width($md-min) {}
+        }
+    }
+}
+
+// footer
+footer {}
+
+.footer-main {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .head {
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 40px;
+            margin: 5px 0 5px;
+            background-color: $secondary-color;
+        }
+    }
+
+    .item {
+        @include min-width($lg-min) {
+            padding: 0 30px;
+        }
+
+        &.two {
+            @include min-width($md-min) {
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .st-form {
+            .form-control {
+                background-color: #29a6b4;
+                border: none !important;
+                color: #fff;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #fff;
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #fff;
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #fff;
+                }
+
+                &:focus {
+                    border-color: #bfbfbf;
+                }
+            }
+        }
+    }
+}
+
+#footer-bottom-sec {
+    background-color: darken($color: $primary-color, $amount: 10);
+}
+
+.footer-bottom-sec {
+    padding: 10px 0;
+
+    p {
+        color: #7bcbd6;
+    }
+}
