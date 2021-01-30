@@ -40,11 +40,20 @@ body {
 }
 
 .header {
-    padding: 40px 0 10px;
+    padding: 10px 0 10px;
     @include transition;
 
+    @include min-width($lg-main) {
+        padding-top: 40px;
+    }
+
     .logo {
-        width: 200px;
+        width: 150px;
+
+        @include min-width($lg-main) {
+            padding-top: 40px;
+        }
+
         @include transition;
     }
 }
@@ -87,7 +96,7 @@ body {
         width: 100%;
 
         @include min-width($lg-main) {
-            width: 400px;
+            width: 420px;
         }
     }
 
@@ -100,7 +109,7 @@ body {
 
         .frac {
             &:first-child {
-                border-bottom: 2px solid #555;
+                border-bottom: 1px solid #555;
 
                 @include min-width($lg-main) {
                     padding-bottom: 20px;
@@ -126,15 +135,30 @@ body {
             img {
                 @include transition(1s);
             }
+
+            height: 300px;
+
+            @include min-width($lg-main) {
+                height: 500px;
+                // background-color: $light-white-2;
+                background-color: #fff;
+            }
         }
     }
 
     .page-heading-sub-head {
-        line-height: 30px;
+        line-height: 26px;
     }
 }
 
 #home-main-sec {
+    .item.ct {
+        >.inner {
+            img {
+                // transform: scale(1.1) rotate(-1deg);
+            }
+        }
+    }
     &:hover {
         .item.ct {
             >.inner {
@@ -199,6 +223,16 @@ body {
                 img {
                     @include transition(1s);
                 }
+
+                height: 300px;
+
+                @include min-width($lg-main) {
+                    height: 500px;
+                }
+
+                >.inner {
+                    background: $light-white-2;
+                }
             }
 
             &:hover {
@@ -211,6 +245,8 @@ body {
         }
 
         &:not(:last-child) {
+            margin-bottom: 30px;
+
             @include min-width($lg-main) {
                 margin-bottom: 50px;
             }
@@ -276,11 +312,18 @@ body {
 
     .item {
         @include min-width($lg-main) {
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         .img-sec {
+            background: $light-white-2;
+            height: 300px;
+
+            @include min-width($lg-main) {
+                height: 300px;
+            }
+
             img {
                 @include transition(1s);
                 filter: grayscale(1);

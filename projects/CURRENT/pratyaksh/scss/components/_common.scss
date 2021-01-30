@@ -288,6 +288,10 @@
 .st-head-menu {
     position: relative;
 
+    @include max_width($lg-less-one) {
+        margin-top: 20px;
+    }
+
     >li {
         @include max_width($md-less-one) {
             position: relative;
@@ -313,6 +317,7 @@
 
         @include min_width($lg-main) {
             padding-left: 20px;
+
             &:not(:last-child) {
                 padding-left: 40px;
             }
@@ -324,7 +329,7 @@
 
             >a {
                 width: 100%;
-                padding: 10px 20px;
+                padding: 14px 20px;
                 color: #fff;
                 display: block;
             }
@@ -464,18 +469,18 @@ $DEFxlScreensMargin: 90px;
 
     &.heading-lg {
         font-size: 26px;
-        line-height: 40px;
         color: #111;
         font-weight: 300;
-        @include min-width($lg-main) {
+
+        @include min-width($xl-main) {
             font-size: 40px;
-            line-height: 65px;
 
         }
     }
 
     &.heading-md {
         font-size: 27px;
+        line-height: 36px;
     }
 
     &.heading-sm {
@@ -509,7 +514,7 @@ $DEFxlScreensMargin: 90px;
 }
 
 .shadow-box {
-    @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.4))
+    @include box-shadow(0px, 0px, 15px, 0, rgba(0, 0, 0, 0.2))
 }
 
 .cstm-animation-delay-point-2s {
@@ -534,4 +539,24 @@ $DEFxlScreensMargin: 90px;
 
 .cstm-animation-delay-2-point-7s {
     animation-delay: 2.7s !important;
+}
+
+.header-like-margin-top {
+    margin-top: 75px;
+
+    @include min_width($lg-main) {
+        margin-top: 144px;
+    }
+}
+
+.header-like-padding-top {
+    padding-top: 75px;
+
+    @include min_width($lg-main) {
+        padding-top: 144px;
+    }
+}
+
+.img-fluid-height {
+    max-height: 100%;
 }

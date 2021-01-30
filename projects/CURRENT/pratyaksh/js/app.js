@@ -4,13 +4,13 @@ $(function () {
         $('.mob-menu-btn > a').click(function (ev) {
             ev.preventDefault();
             $(this).toggleClass('active').find('.icon').toggleClass('feather-x feather-menu');
-            $('.header-menu-col .menu').toggleClass('active');
+            $('header .menu').toggleClass('active');
             $('.menu .mob-menu-overlay').fadeToggle(100);
         });
         $('.menu .mob-menu-overlay').click(function (ev) {
             ev.preventDefault();
             $('.mob-menu-btn > a').removeClass('active').find('.icon').removeClass('feather-x').addClass('feather-menu');
-            $('.header-menu-col .menu').removeClass('active');
+            $('header .menu').removeClass('active');
             $('.menu .mob-menu-overlay').fadeOut(100);
         });
     })();
@@ -27,12 +27,12 @@ $(window).on("onreadystatechange contentLoaded load scroll", function () {
 
     (function () {
         // PADDING AND MARGIN CLASSES
-        $('.header-like-margin-top').css({
-            marginTop: app_headHeight
-        });
-        $('.header-like-padding-top').css({
-            paddingTop: app_headHeight
-        });
+        // $('.header-like-margin-top').css({
+        //     marginTop: app_headHeight
+        // });
+        // $('.header-like-padding-top').css({
+        //     paddingTop: app_headHeight
+        // });
 
         // HEADER FIXED
         if ($(this).scrollTop() > app_headHeight) {

@@ -1,0 +1,72 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    header .menu>.inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background: #333;
+        z-index: 123;
+        transition: .3s;
+        overflow: auto;
+    }
+
+    header .menu:not(.active)>.inner {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    header .menu .mob-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 12;
+        display: none;
+    }
+
+    .mob-menu-btn a {
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        z-index: 123;
+        position: relative;
+    }
+
+    .mob-menu-btn a.active {
+        /* color: #000; */
+        position: fixed;
+        top: 5px;
+        left: 210px;
+    }
+
+    .mob-menu-btn a.active>i {
+        color: #d20423;
+        background: #fff;
+        border-radius: 4px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}
