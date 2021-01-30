@@ -50,7 +50,7 @@
     }
 
     .mob-menu-btn a.active>i {
-        color: #d20423;
+        color: #333;
         background: #fff;
         border-radius: 4px;
         font-weight: 700;
@@ -60,6 +60,12 @@
 @media (max-width: 767px) {
     .container {
         max-width: 100%;
+    }
+    #home-main-sec.active .right-bar {
+        display: none !important;
+    }
+    .home-main-sec .item.ct {
+        padding: 0;
     }
 }
 

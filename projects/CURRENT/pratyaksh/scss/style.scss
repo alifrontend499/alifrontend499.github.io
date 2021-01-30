@@ -50,9 +50,9 @@ body {
     .logo {
         width: 150px;
         @include transition;
+
         @include min-width($lg-main) {
             width: 200px;
-            padding-top: 40px;
         }
 
         @include transition;
@@ -96,7 +96,15 @@ body {
     .item.rt {
         width: 100%;
 
+        @include min-width($md-main) {
+            width: 300px;
+        }
+
         @include min-width($lg-main) {
+            width: 370px;
+        }
+
+        @include min-width($xl-main) {
             width: 420px;
         }
     }
@@ -137,12 +145,14 @@ body {
                 @include transition(1s);
             }
 
-            height: 300px;
+            background-color: #fff;
+
+            @include min-width($md-main) {
+                height: 300px;
+            }
 
             @include min-width($lg-main) {
                 height: 500px;
-                // background-color: $light-white-2;
-                background-color: #fff;
             }
         }
     }
@@ -160,6 +170,7 @@ body {
             }
         }
     }
+
     &:hover {
         .item.ct {
             >.inner {
@@ -192,20 +203,29 @@ body {
     .frac {
         .text-sec {
             background: $st-dark-color;
-            padding: 0 15px;
+            padding: 15px;
+            width: 100%;
 
-            @include min-width($lg-main) {
+            @include min-width($md-main) {
                 width: 300px;
             }
 
             .page-heading {
-                @include rotate(-90deg)
+                @include min-width($md-main) {
+                    @include rotate(-90deg)
+                }
             }
         }
 
         .inner {
             &:not(.reverse) {
                 .image-sec {
+                    margin-top: 15px;
+                    @include min-width($md-main) {
+                        margin-top: 0;
+                        padding-left: 15px;
+                    }
+
                     @include min-width($lg-main) {
                         padding-left: 60px;
                     }
@@ -214,6 +234,12 @@ body {
 
             &.reverse {
                 .image-sec {
+                    margin-top: 15px;
+                    @include min-width($md-main) {
+                        margin-top: 0;
+                        padding-right: 15px;
+                    }
+
                     @include min-width($lg-main) {
                         padding-right: 60px;
                     }
@@ -221,11 +247,18 @@ body {
             }
 
             .image-sec {
+                width: 100%;
+
                 img {
                     @include transition(1s);
                 }
 
-                height: 300px;
+
+                @include min-width($md-main) {
+                    height: 300px;
+                    -ms-flex: 1;
+                    flex: 1;
+                }
 
                 @include min-width($lg-main) {
                     height: 500px;
@@ -249,11 +282,13 @@ body {
             margin-bottom: 30px;
 
             @include min-width($lg-main) {
-                margin-bottom: 50px;
+                margin-bottom: 60px;
             }
         }
 
         .other-details-sec {
+            margin-top: 20px;
+
             @include min-width($lg-main) {
                 margin-top: 40px;
             }
@@ -280,7 +315,7 @@ body {
 
 .manu-details-sec {
     @include min-width($lg-main) {
-        width: 40%;
+        width: 50%;
     }
 
     .page-heading {
@@ -313,8 +348,8 @@ body {
 
     .item {
         @include min-width($lg-main) {
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
         .img-sec {
@@ -333,6 +368,7 @@ body {
 
         .text-sec {
             padding: 0 10px;
+            margin-top: 20px;
 
             @include min-width($lg-main) {
                 margin-top: 30px;
@@ -448,10 +484,14 @@ footer {
 .ft-our-links {
     .frac {
         &:not(:last-child) {
-            margin-right: 50px;
+            padding-right: 15px;
+            padding-left: 0;
+            @include min-width($md-main) {
+                padding-right: 50px;
+            }
 
             @include min-width($lg-main) {
-                margin-right: 50px;
+                padding-right: 100px;
             }
         }
     }
