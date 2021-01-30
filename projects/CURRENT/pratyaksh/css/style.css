@@ -163,8 +163,8 @@ body { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 400;
 
 .header { padding: 10px 0 10px; transition: 0.3s; }
 @media screen and (min-width: 992px) { .header { padding-top: 40px; } }
-.header .logo { width: 150px; transition: 0.3s; }
-@media screen and (min-width: 992px) { .header .logo { padding-top: 40px; } }
+.header .logo { width: 150px; transition: 0.3s; transition: 0.3s; }
+@media screen and (min-width: 992px) { .header .logo { width: 200px; padding-top: 40px; } }
 
 #header.active .header { padding: 10px 0; }
 #header.active .header .logo { width: 150px; }
