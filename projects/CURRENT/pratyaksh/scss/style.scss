@@ -44,7 +44,7 @@ body {
     @include transition;
 
     @include min-width($lg-main) {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
     .logo {
