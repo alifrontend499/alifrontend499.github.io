@@ -307,11 +307,25 @@
             // @include min_width($lg-main) {
 
             // }
+            &::after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                @include transition;
+                background-color: #333;
+                margin-top: 2px;
+            }
             &:hover,
             &:focus,
             &:active,
             &.active {
-                color: $medium-white !important;
+                // color: $medium-white !important;
+                @include min-width($lg-main) {
+                    &::after {
+                        width: 100%;
+                    }
+                }
             }
         }
 
@@ -546,7 +560,7 @@ $DEFxlScreensMargin: 90px;
     margin-top: 75px;
 
     @include min_width($lg-main) {
-        margin-top: 113px;
+        margin-top: 103px;
     }
 }
 
@@ -554,7 +568,7 @@ $DEFxlScreensMargin: 90px;
     padding-top: 75px;
 
     @include min_width($lg-main) {
-        padding-top: 113px;
+        padding-top: 103px;
     }
 }
 
