@@ -232,7 +232,7 @@ body {
                 }
 
                 >.inner {
-                    background: $light-white-2;
+                    background: #fff;
                 }
             }
 
@@ -318,7 +318,7 @@ body {
         }
 
         .img-sec {
-            background: $light-white-2;
+            background: #fff;
             height: 300px;
 
             @include min-width($lg-main) {
