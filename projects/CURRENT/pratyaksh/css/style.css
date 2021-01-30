@@ -90,7 +90,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media screen and (max-width: 991px) { .st-head-menu { margin-top: 20px; } }
 @media screen and (max-width: 767px) { .st-head-menu > li { position: relative; } }
 .st-head-menu > li > a { font-weight: 600; font-size: 14px; color: #333; text-decoration: none !important; outline: none !important; transition: 0.3s; }
-.st-head-menu > li > a::after { content: ''; display: block; height: 3px; width: 0; transition: 0.3s; background-color: #333; margin-top: 2px; }
+.st-head-menu > li > a::after { content: ''; display: block; height: 2px; width: 0; transition: 0.3s; background-color: #333; margin-top: 5px; }
 @media screen and (min-width: 992px) { .st-head-menu > li > a:hover::after, .st-head-menu > li > a:focus::after, .st-head-menu > li > a:active::after, .st-head-menu > li > a.active::after { width: 100%; } }
 @media screen and (min-width: 992px) { .st-head-menu > li { padding-left: 20px; }
   .st-head-menu > li:not(:last-child) { padding-left: 40px; } }
