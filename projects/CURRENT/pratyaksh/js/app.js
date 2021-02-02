@@ -14,6 +14,22 @@ $(function () {
             $('.menu .mob-menu-overlay').fadeOut(100);
         });
     })();
+
+    // go to link
+    $('.go-to-link').click(function (ev) {
+        ev.preventDefault()
+        var headerHeight = $('header').innerHeight()
+        var attr = $(this).attr('href')
+        if (typeof attr !== 'undefined') {
+            $('.st-head-menu > li > a').removeClass('active')
+            $(this).addClass('active')
+            $('html, body').animate({
+                scrollTop: $(attr).offset().top - (headerHeight + 30)
+            }, 700, function () {
+                $('.mob-menu-btn > a.active').trigger('click')
+            })
+        }
+    })
 });
 
 // HOME MAIN SECTION ANIMATION
