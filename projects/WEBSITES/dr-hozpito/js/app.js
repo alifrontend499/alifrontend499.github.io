@@ -1,6 +1,6 @@
 $(window).on('load scroll', function () {
-    const headerHeight = $('header').innerHeight()
-    console.log(headerHeight);
+    // const headerHeight = $('header').innerHeight()
+    // console.log(headerHeight);
 
     // $('.header-like-margin-top').css('margin-top', headerHeight)
     // $('.header-like-padding-top').css('padding-top', headerHeight)
@@ -66,11 +66,24 @@ $(function () {
                 $('.slide-to-link').removeClass('active')
                 $(this).addClass('active')
                 const scrollTo = $(link).offset().top
-                console.log(scrollTo)
+                // console.log(scrollTo)
                 $('html,body').animate({
                     scrollTop: scrollTo - 15
                 }, 800)
             }
+        })
+    })();
+
+    // GALLERY
+    (function () {
+        $('.our-gallery-content [data-open-gallery]').click(function (ev) {
+            ev.preventDefault()
+            const galleryNameToBeOpened = $(this).attr('data-open-gallery')
+
+            // enabling gallery item
+            $(this).addClass('active').siblings().removeClass('active')
+            $('.our-gallery-content .gallery-item').removeClass('active')
+            $('.our-gallery-content .gallery-item[data-parent="' + galleryNameToBeOpened + '"]').addClass('active')
         })
     })();
 });
