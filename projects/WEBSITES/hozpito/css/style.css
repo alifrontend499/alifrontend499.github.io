@@ -207,12 +207,12 @@ a.st-text-dark:hover { color: #242424 !important; }
 
 .app-devider { height: 1px; width: 100%; background-color: #bfbfbf; }
 
-.or-text::after { content: ''; background-color: #bfbfbf; height: 1px; width: 100%; position: absolute; top: 50%; left: 0; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
+.or-text::after { content: ""; background-color: #bfbfbf; height: 1px; width: 100%; position: absolute; top: 50%; left: 0; -webkit-transform: translatey(-50%); transform: translatey(-50%); }
 .or-text span { z-index: 1; background-color: #fff; padding: 0 5px; color: #bfbfbf; }
 
 #st-breadcrumbs { margin: 20px 0; }
 
-.st-breadcrumbs ul li:not(:last-child)::after { content: '>'; margin: 0 8px 0 5px; }
+.st-breadcrumbs ul li:not(:last-child)::after { content: ">"; margin: 0 8px 0 5px; }
 .st-breadcrumbs ul li a { color: #06a0a8; }
 .st-breadcrumbs ul li:last-child a { color: #3d3d3d; pointer-events: none; }
 
@@ -248,8 +248,8 @@ a.st-text-dark:hover { color: #242424 !important; }
 .st-ratings-count .lt-sec { width: 120px; }
 @media screen and (min-width: 992px) { .st-ratings-count .lt-sec { width: 135px; } }
 .st-ratings-count .lt-sec .head { font-size: 45px; line-height: 45px; }
-.st-ratings-count .rt-sec { width: calc(100% - 120px); border-left: 1px solid #bfbfbf; padding-left: 18px; }
-@media screen and (min-width: 992px) { .st-ratings-count .rt-sec { padding-left: 30px; width: 250px; } }
+.st-ratings-count .rt-sec { border-left: 1px solid #bfbfbf; padding-left: 18px; }
+@media screen and (min-width: 992px) { .st-ratings-count .rt-sec { padding-left: 30px; } }
 .st-ratings-count .rt-sec .frac .progress { height: 5px; }
 .st-ratings-count .rt-sec .frac .progress .progress-bar { background-color: #6e6e6e; }
 .st-ratings-count .rt-sec .frac.five-star .progress-bar, .st-ratings-count .rt-sec .frac.four-star .progress-bar, .st-ratings-count .rt-sec .frac.three-star .progress-bar { background-color: #06a0a8; }
@@ -269,6 +269,11 @@ a.st-text-dark:hover { color: #242424 !important; }
 .custom-modal .modal-content { border-radius: 4px; }
 
 .upload-prescription-input .show-file-name { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 100%; }
+
+.st-text-check { font-weight: normal; cursor: pointer; }
+.st-text-check .text { border: 1px solid #6e6e6e; color: #6e6e6e; transition: 0.3s; padding: 6px 15px; border-radius: 4px; transition: 0.3s; }
+.st-text-check .text:hover { border-color: #3d3d3d; }
+.st-text-check input:checked + .text { border-color: #ec5c16; color: #ec5c16; background-color: #ffeadf; }
 
 body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 14px; color: #3d3d3d; background-color: #e8ebf0; }
 

@@ -1,20 +1,20 @@
 /* SCROLLBAR */
-@import 'styles/scrollbar';
+@import "styles/scrollbar";
 
 /* COLORS STYLES */
-@import 'styles/colors';
+@import "styles/colors";
 
 /* BUTTONS STYLES */
-@import 'styles/buttons';
+@import "styles/buttons";
 
 /* TEXT STYLES */
-@import 'styles/text';
+@import "styles/text";
 
 /* HEADING STYLES */
-@import 'styles/headings';
+@import "styles/headings";
 
 /* FORMS STYLES */
-@import 'styles/form';
+@import "styles/form";
 
 // common margin and padding
 .ST_def-mar-T,
@@ -69,7 +69,6 @@
     }
 }
 
-
 // APP BADGE
 .app-badge {
     background: #333;
@@ -96,13 +95,14 @@
 
 // common slider classes
 .st-common-slider-item {
-    .st-common-slider-item-inner {}
+    .st-common-slider-item-inner {
+    }
 }
 
 .st-common-slider-img-sec {
     height: 150px;
 
-    >img {
+    > img {
         width: auto !important;
     }
 }
@@ -117,14 +117,14 @@
 // or text
 .or-text {
     &::after {
-        content: '';
+        content: "";
         background-color: $app-border-color;
         height: 1px;
         width: 100%;
         position: absolute;
         top: 50%;
         left: 0;
-        @include transformy(-50%)
+        @include transformy(-50%);
     }
 
     span {
@@ -145,7 +145,7 @@
         li {
             &:not(:last-child) {
                 &::after {
-                    content: '>';
+                    content: ">";
                     margin: 0 8px 0 5px;
                 }
             }
@@ -179,7 +179,7 @@
         .round-inner {
             background-color: $primary-color;
             opacity: 0;
-            @include transition(.2s);
+            @include transition(0.2s);
         }
     }
 
@@ -195,7 +195,7 @@
     }
 
     .text {
-        @include transition(.2s);
+        @include transition(0.2s);
 
         &:hover {
             color: #111 !important;
@@ -213,22 +213,22 @@
         }
     }
 
-    >input:checked {
-        &+.round {
+    > input:checked {
+        & + .round {
             .round-inner {
                 opacity: 1;
             }
         }
 
-        &~.text {
+        & ~ .text {
             color: #111 !important;
         }
     }
 
     // radio white
     &.st-radio-white {
-        >input:checked {
-            &~.text {
+        > input:checked {
+            & ~ .text {
                 color: #fff !important;
             }
         }
@@ -263,9 +263,8 @@
 
 // QUANTITY-SELECT-CONTROLS
 .quantity-select-controls {
-
-    >button,
-    >input {
+    > button,
+    > input {
         height: 35px;
         border: 1px solid $app-border-color;
 
@@ -276,7 +275,7 @@
         }
     }
 
-    >button {
+    > button {
         width: 35px;
         padding: 0;
 
@@ -289,14 +288,14 @@
         }
     }
 
-    >input {
+    > input {
         width: 50px;
         box-shadow: none !important;
         padding: 0 5px;
 
         &::-webkit-inner-spin-button,
         &::-webkit-outer-spin-button {
-            -webkit-appearance: none
+            -webkit-appearance: none;
         }
     }
 }
@@ -315,13 +314,13 @@
     }
 
     .rt-sec {
-        width: calc(100% - 120px);
+        // width: calc(100% - 120px);
         border-left: 1px solid $app-border-color;
         padding-left: 18px;
-        
+
         @include min-width($lg-min) {
             padding-left: 30px;
-            width: 250px;
+            // width: 250px;
         }
 
         .frac {
@@ -364,7 +363,7 @@
 
 // tag
 .st-tag {
-    background: transparent url('../images/tag-bg.png') no-repeat left center;
+    background: transparent url("../images/tag-bg.png") no-repeat left center;
     padding: 6px 40px 6px 15px;
 }
 
@@ -411,5 +410,29 @@
         text-overflow: ellipsis;
         overflow: hidden;
         max-width: 100%;
+    }
+}
+
+// ST TEXT CHECK
+.st-text-check {
+    font-weight: normal;
+    cursor: pointer;
+    .text {
+        border: 1px solid $light-text-color;
+        color: $light-text-color;
+        transition: 0.3s;
+        padding: 6px 15px;
+        border-radius: $app-block-border-radius;
+        @include transition;
+        &:hover {
+            border-color: $dark-text-color;
+        }
+    }
+    input {
+        &:checked + .text {
+            border-color: $secondary-color;
+            color: $secondary-color;
+            background-color: #ffeadf;
+        }
     }
 }
