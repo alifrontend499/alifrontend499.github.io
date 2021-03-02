@@ -231,5 +231,13 @@ $(function () {
         });
     })();
 
+    // UPLOAD PRESCRIPTION INPUT
+    (function () {
+        $('.upload-prescription-input > input').change(function (ev) {
+            const selectedFileName = ev.target.files[0].name
+            $(this).parent().find('.show-file-name').removeClass('d-none').text(selectedFileName.toString())
+        });
+    })();
+
 
 });

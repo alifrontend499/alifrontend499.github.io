@@ -55,7 +55,8 @@
                             <!-- favorite -->
                             <a href="#"
                                 class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                title="Favorite">
+                                title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                data-open-tab="login-tab-in-modal">
                                 <i class="feather-heart"></i>
                             </a>
                             <!-- cart -->
@@ -119,7 +120,8 @@
                                 <!-- favorite -->
                                 <a href="#"
                                     class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                    title="Favorite">
+                                    title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                    data-open-tab="login-tab-in-modal">
                                     <i class="feather-heart"></i>
                                 </a>
                                 <!-- cart -->
@@ -276,7 +278,8 @@
                                         <div class="tab-pane fade show active" id="login-in-modal" role="tabpanel"
                                             aria-labelledby="login-tab-in-modal">
                                             <div class="login-form">
-                                                <div class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
+                                                <div
+                                                    class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
                                                     <input type="text" class="form-control" placeholder="Mobile Number">
                                                     <!-- when user uses OTP -->
                                                     <button
@@ -284,7 +287,8 @@
                                                         OTP</button>
                                                 </div>
                                                 <!-- when user uses password -->
-                                                <div class="form-group st-form input-underline login-password-field d-none">
+                                                <div
+                                                    class="form-group st-form input-underline login-password-field d-none">
                                                     <input type="password" class="form-control" placeholder="Password">
                                                 </div>
                                                 <!-- when user uses OTP -->
@@ -424,10 +428,11 @@
                         <div class="form-group st-form">
                             <input type="text" class="form-control" placeholder="Otp">
                         </div>
-                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center">
+                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center align-items-center upload-prescription-input">
                             <input type="file" class="d-none">
                             <i class="fas fa-paperclip mr-2 mt-1"></i>
                             <span>Upload Prescription</span>
+                            <span class="show-file-name background-primary font-weight-400 ml-2 px-2 rounded text-white d-none"></span>
                         </label>
                         <div class="mt-1">
                             <p style="font-style: italic;"

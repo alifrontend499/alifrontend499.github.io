@@ -60,7 +60,8 @@
                             <!-- favorite -->
                             <a href="#"
                                 class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                title="Favorite">
+                                title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                data-open-tab="login-tab-in-modal">
                                 <i class="feather-heart"></i>
                             </a>
                             <!-- cart -->
@@ -124,7 +125,8 @@
                                 <!-- favorite -->
                                 <a href="#"
                                     class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                    title="Favorite">
+                                    title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                    data-open-tab="login-tab-in-modal">
                                     <i class="feather-heart"></i>
                                 </a>
                                 <!-- cart -->
@@ -157,7 +159,7 @@
 
                         <!-- FOR MOBILE -->
                         <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none"
-                        data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
+                            data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
                             Prescription</button>
 
                         <div class="collapse navbar-collapse" id="stMenuBar">
@@ -429,10 +431,11 @@
                         <div class="form-group st-form">
                             <input type="text" class="form-control" placeholder="Otp">
                         </div>
-                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center">
+                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center align-items-center upload-prescription-input">
                             <input type="file" class="d-none">
                             <i class="fas fa-paperclip mr-2 mt-1"></i>
                             <span>Upload Prescription</span>
+                            <span class="show-file-name background-primary font-weight-400 ml-2 px-2 rounded text-white d-none"></span>
                         </label>
                         <div class="mt-1">
                             <p style="font-style: italic;"
@@ -917,17 +920,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
@@ -963,17 +966,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
@@ -1009,17 +1012,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
@@ -1055,17 +1058,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary ml-1 text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
@@ -1101,17 +1104,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>
@@ -1147,17 +1150,17 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <div class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
+                                <a href="#" class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
-                                </div>
+                                </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <p class="heading font-weight-600 font-size-15 mb-1">
+                                    <a href="#" class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
-                                    </p>
+                                    </a>
                                     <p class="price font-size-16">
-                                        <span class="cut-price">Rs. 1,499.00</span>
-                                        <span class="font-weight-600 st-text-secondary ml-1 text-nowrap">
+                                        <span class="cut-price d-block">Rs. 1,499.00</span>
+                                        <span class="font-weight-600 d-block st-text-secondary text-nowrap">
                                             40% OFF
                                         </span>
                                     </p>

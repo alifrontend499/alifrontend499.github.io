@@ -268,6 +268,8 @@ a.st-text-dark:hover { color: #242424 !important; }
 .custom-modal .close { z-index: 1; top: 10px; right: 10px; }
 .custom-modal .modal-content { border-radius: 4px; }
 
+.upload-prescription-input .show-file-name { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; max-width: 100%; }
+
 body { font-family: 'Lato', sans-serif; font-weight: 400; font-size: 14px; color: #3d3d3d; background-color: #e8ebf0; }
 
 #header-top { padding: 5px 0; z-index: 12; position: relative; background-color: #06a0a8; }
@@ -518,5 +520,8 @@ footer { background-color: #384651; }
 @media screen and (min-width: 576px) { .st-info-links .info-sec { width: calc(100% - 230px); padding-left: 15px; } }
 .st-info-links .info-sec > .inner { padding: 25px; }
 @media screen and (min-width: 576px) { .st-info-links .two-col-info, .st-info-links .two-col-info + .app-devider-outer { width: 70%; } }
+
+.st-whishlist .cart-product .product-name .img-sec { height: 90px; width: 90px; }
+.st-whishlist .product-whishlist-btns { width: 250px; }
 
 /*# sourceMappingURL=style.css.map */

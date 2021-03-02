@@ -403,3 +403,13 @@
         border-radius: $app-block-border-radius;
     }
 }
+
+// UPLOAD PRESCRIPTION INPUT
+.upload-prescription-input {
+    .show-file-name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}

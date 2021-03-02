@@ -58,7 +58,8 @@
                             <!-- favorite -->
                             <a href="#"
                                 class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                title="Favorite">
+                                title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                data-open-tab="login-tab-in-modal">
                                 <i class="feather-heart"></i>
                             </a>
                             <!-- cart -->
@@ -122,7 +123,8 @@
                                 <!-- favorite -->
                                 <a href="#"
                                     class="favorite-a st-round-icon-btn st-round-icon-btn-transparent align-items-center d-flex justify-content-center rounded-circle text-decoration-none position-relative"
-                                    title="Favorite">
+                                    title="Favorite" data-toggle="modal" data-target="#loginModal"
+                                    data-open-tab="login-tab-in-modal">
                                     <i class="feather-heart"></i>
                                 </a>
                                 <!-- cart -->
@@ -155,7 +157,7 @@
 
                         <!-- FOR MOBILE -->
                         <button class="btn st-btn st-btn-secondary font-size-14 font-weight-600 d-xl-none"
-                        data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
+                            data-toggle="modal" data-target="#uploadPrescriptionModal">Upload
                             Prescription</button>
 
                         <div class="collapse navbar-collapse" id="stMenuBar">
@@ -427,10 +429,11 @@
                         <div class="form-group st-form">
                             <input type="text" class="form-control" placeholder="Otp">
                         </div>
-                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center">
+                        <label class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center align-items-center upload-prescription-input">
                             <input type="file" class="d-none">
                             <i class="fas fa-paperclip mr-2 mt-1"></i>
                             <span>Upload Prescription</span>
+                            <span class="show-file-name background-primary font-weight-400 ml-2 px-2 rounded text-white d-none"></span>
                         </label>
                         <div class="mt-1">
                             <p style="font-style: italic;"
@@ -586,6 +589,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <label class="btn btn-block st-btn st-btn-primary align-items-center upload-prescription-input font-weight-600 d-flex justify-content-center mt-3">
+                            <input type="file" class="d-none">
+                            <i class="fas fa-paperclip mr-2 mt-1"></i>
+                            <span>Upload Prescription</span>
+                            <span class="show-file-name background-secondary font-weight-400 ml-2 px-2 rounded text-white d-none">Upload Prescription</span>
+                        </label>
 
                         <a href="#"
                             class="btn st-btn st-btn-outlined-black st-btn-sm with-icon font-weight-800 text-capitalize d-table mx-auto mt-3 mt-md-4">
