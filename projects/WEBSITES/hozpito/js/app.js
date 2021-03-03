@@ -239,5 +239,23 @@ $(function () {
         });
     })();
 
+    // star-rating-ul
+    (function () {
+        $('.star-rating-ul > li label').on('mouseover', function () {
+            $(this).parent().addClass('active').prevAll().addClass('active');
+        }).on('mouseout', function () {
+            $(this).closest('ul').find('>li').removeClass('active');
+        });
+        $('.star-rating-ul').on('mouseout', function () {
+            $(this).find('>li').removeClass('active');
+            $('.star-rating-ul > li').each(function () {
+                if ($('label>input', this).is(':checked')) {
+                    $(this).addClass('active').prevAll().addClass('active');
+                    $(this).nextAll().removeClass('active');
+                }
+            });
+        });
+    })();
+
 
 });

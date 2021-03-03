@@ -457,6 +457,92 @@
         </div>
     </div>
 
+    <!-- WRITE REVIEW MODAL -->
+    <div class="modal fade custom-modal" id="writeReviewModal" tabindex="-1" role="dialog"
+        aria-labelledby="writeReviewModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="feather-x"></i>
+                </button>
+                <div class="modal-body">
+
+                    <!-- app heading -->
+                    <div class="st-main-heading mb-1">
+                        <div class="left-sec pr-3 mb-2 mb-md-3">
+                            <p class="st-heading text-capitalize font-size-20 font-weight-600">
+                                Write a review
+                            </p>
+                            <p class="desc mt-1">
+                                Rate your overall experience with the product
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- modal-content -->
+                    <div class="write-review-modal-conten">
+                        <ul class="star-rating-ul list-unstyled d-inline-flex flex-wrap">
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="st-form mt-2">
+                            <textarea rows="3" class="form-control" placeholder="Help others make better choice. Write a review"></textarea>
+                        </div>
+
+                        <div class="btns">
+                            <button class="btn st-btn st-btn-primary font-size-16 font-weight-600 mt-4" style="min-width: 100px;">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SITE WRAPPER -->
     <div id="wrapper">
         <!-- site breadcrumbs -->
@@ -789,19 +875,27 @@
                             <!-- RATINGS -->
                             <div class="ratings-section mb-2 mb-md-3">
                                 <div class="inner">
-                                    <!-- heading -->
-                                    <p
-                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
-                                        <span>Ratings</span>
-                                        <i class="feather-users font-size-16 ml-3 mt-1"></i>
-                                    </p>
 
                                     <!-- rating count -->
                                     <div class="st-ratings-count">
                                         <div class="inner d-flex flex-wrap">
 
                                             <!-- current rating -->
-                                            <div class="col-12 col-lg-7 user-rating-current d-flex align-items-center">
+                                            <div
+                                                class="col-12 col-lg-7 user-rating-current d-flex flex-wrap align-items-center">
+                                                <div class="ct-sec w-100 mb-2 mb-md-3 d-flex">
+                                                    <!-- heading -->
+                                                    <p
+                                                        class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex">
+                                                        <span>Ratings</span>
+                                                        <i class="feather-users font-size-16 ml-3 mt-1"></i>
+                                                    </p>
+
+                                                    <a href=""
+                                                        class="ml-auto font-weight-600 font-size-14 st-text-primary">View
+                                                        all
+                                                        Reviews</a>
+                                                </div>
                                                 <!-- left sec -->
                                                 <div class="lt-sec pr-2">
                                                     <p class="head">
@@ -926,7 +1020,8 @@
                                                         class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
                                                         Rate this product</p>
                                                     <a href="#"
-                                                        class="btn st-btn st-btn-primary d-flex align-items-center justify-content-center">
+                                                        class="btn st-btn st-btn-primary d-flex align-items-center justify-content-center"
+                                                        data-toggle="modal" data-target="#writeReviewModal">
                                                         <i class="feather-edit"></i>
                                                         <span class="ml-2">Write a Review</span>
                                                     </a>
@@ -1057,13 +1152,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>
@@ -1105,13 +1200,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>
@@ -1153,13 +1248,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>
@@ -1201,13 +1296,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>
@@ -1249,13 +1344,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>
@@ -1297,13 +1392,13 @@
                         <!-- slider item -->
                         <div class="slider-item st-common-slider-item com-product">
                             <div class="st-common-slider-item-inner d-block text-decoration-none st-text-dark" title="">
-                                <a href="#"
+                                <a href="product-details.html"
                                     class="st-common-slider-img-sec d-flex align-items-center justify-content-center">
                                     <img src="images/categories/slider-img1.jpg" alt=""
                                         class="img-fluid img-fluid-height">
                                 </a>
                                 <div class="st-common-slider-text-sec text-center mt-2">
-                                    <a href="#"
+                                    <a href="product-details.html"
                                         class="d-block text-decoration-none st-text-dark heading font-weight-600 font-size-15 mb-1">
                                         Morpheme Remedies Garcinia Green Tea
                                     </a>

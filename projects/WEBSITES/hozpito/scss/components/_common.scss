@@ -436,3 +436,49 @@
         }
     }
 }
+
+
+// STAR RATING UL
+.star-rating-ul {
+    >li {
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
+
+        label {
+            font-weight: normal;
+            position: relative;
+            cursor: pointer;
+
+            >span {
+                img {
+                    width: 21px;
+
+                    &.gray {
+                        display: block;
+                    }
+
+                    &.colured {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        // &.active>label>span,
+        // &>label>input:checked+span
+        // &>label:hover>span {
+        &.active>label>span {
+            img {
+                &.gray {
+                    display: none;
+                }
+
+                &.colured {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -266,4 +266,24 @@ button.no-browser-style {
             color: #333;
         }
     }
+
+    // btn white
+    &.st-btn-dark {
+        background-color: #333;
+        color: #fff;
+
+        &:hover {
+            background-color: darken($color: #333, $amount: 5);
+            color: #fff;
+        }
+
+        &:active {
+            background-color: darken($color: #333, $amount: 10);
+            color: #fff;
+        }
+
+        &:focus {
+            color: #fff;
+        }
+    }
 }
