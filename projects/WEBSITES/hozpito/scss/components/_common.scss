@@ -437,10 +437,9 @@
     }
 }
 
-
 // STAR RATING UL
 .star-rating-ul {
-    >li {
+    > li {
         &:not(:last-child) {
             margin-right: 2px;
         }
@@ -450,7 +449,7 @@
             position: relative;
             cursor: pointer;
 
-            >span {
+            > span {
                 img {
                     width: 21px;
 
@@ -463,13 +462,12 @@
                     }
                 }
             }
-
         }
 
         // &.active>label>span,
         // &>label>input:checked+span
         // &>label:hover>span {
-        &.active>label>span {
+        &.active > label > span {
             img {
                 &.gray {
                     display: none;
@@ -478,6 +476,35 @@
                 &.colured {
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+// owl dots
+.owl-carousel {
+    .owl-dots {
+        margin-top: 25px;
+        line-height: normal;
+        text-align: center;
+        .owl-dot {
+            height: 11px;
+            width: 11px;
+            background-color: $starRatingNoRatingColor;
+            display: inline-block;
+            margin: 0 5px;
+            border-radius: 50%;
+            vertical-align: top;
+            line-height: normal !important;
+            outline: none !important;
+            @include transition;
+            opacity: 0.5;
+            &:focus {
+                outline: none !important;
+            }
+            &:hover,
+            &.active {
+                opacity: 1;
             }
         }
     }

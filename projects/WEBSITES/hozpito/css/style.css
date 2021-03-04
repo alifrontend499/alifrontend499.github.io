@@ -289,6 +289,11 @@ a.st-text-dark:hover { color: #242424 !important; }
 .star-rating-ul > li.active > label > span img.gray { display: none; }
 .star-rating-ul > li.active > label > span img.colured { display: block; }
 
+.owl-carousel .owl-dots { margin-top: 25px; line-height: normal; text-align: center; }
+.owl-carousel .owl-dots .owl-dot { height: 11px; width: 11px; background-color: #6e6e6e; display: inline-block; margin: 0 5px; border-radius: 50%; vertical-align: top; line-height: normal !important; outline: none !important; transition: 0.3s; opacity: 0.5; }
+.owl-carousel .owl-dots .owl-dot:focus { outline: none !important; }
+.owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot.active { opacity: 1; }
+
 body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; color: #3d3d3d; background-color: #e8ebf0; }
 
 #header-top { padding: 5px 0; z-index: 12; position: relative; background-color: #06a0a8; }

@@ -66,6 +66,34 @@ $(function () {
         }
     });
 
+    // USER REVIEWS SLIDER
+    $('#user-review-slider').owlCarousel({
+        items: 4,
+        // loop: true,
+        // nav: true,
+        // navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 700,
+        autoplayTimeout: 3200,
+        margin: 15,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            }
+        }
+    });
+
     // OUR PRODUCTS SLIDER
     $('#our-products-slider').owlCarousel({
         items: 6,
@@ -255,6 +283,22 @@ $(function () {
                 }
             });
         });
+    })();
+
+    (function () {
+        $('.slide-to-link').click(function (ev) {
+            ev.preventDefault()
+            const link = $(this).attr('data-href')
+            if (link) {
+                $('.slide-to-link').removeClass('active')
+                $(this).addClass('active')
+                const scrollTo = $(link).offset().top
+                // console.log(scrollTo)
+                $('html,body').animate({
+                    scrollTop: scrollTo - 15
+                }, 800)
+            }
+        })
     })();
 
 
