@@ -294,6 +294,17 @@ a.st-text-dark:hover { color: #242424 !important; }
 .owl-carousel .owl-dots .owl-dot:focus { outline: none !important; }
 .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot.active { opacity: 1; }
 
+.st-paginatins > ul li { margin-bottom: 5px; }
+.st-paginatins > ul li:not(:last-child) { margin-right: 10px; }
+.st-paginatins .link > a, .st-paginatins .next > a, .st-paginatins .prev > a { height: 35px; width: 35px; background-color: #fff; border-radius: 5px; color: #3d3d3d; font-size: 14px; font-weight: 600; padding: 3px; transition: 0.3s; }
+.st-paginatins .link > a:hover, .st-paginatins .next > a:hover, .st-paginatins .prev > a:hover { background-color: #06a0a8; color: #fff; }
+.st-paginatins .link.active > a, .st-paginatins .next.active > a, .st-paginatins .prev.active > a { background-color: #06a0a8; color: #fff; }
+.st-paginatins .link.disabled > a, .st-paginatins .next.disabled > a, .st-paginatins .prev.disabled > a { pointer-events: none !important; }
+.st-paginatins .link.not-allowed > a, .st-paginatins .next.not-allowed > a, .st-paginatins .prev.not-allowed > a { opacity: 0.6; pointer-events: none; }
+.st-paginatins .link.three-dots > a, .st-paginatins .next.three-dots > a, .st-paginatins .prev.three-dots > a { background-color: transparent !important; }
+.st-paginatins .next > a:hover, .st-paginatins .prev > a:hover { background-color: #ec5c16; }
+.st-paginatins .next.active > a, .st-paginatins .prev.active > a { background-color: #ec5c16; }
+
 body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; color: #3d3d3d; background-color: #e8ebf0; }
 
 #header-top { padding: 5px 0; z-index: 12; position: relative; background-color: #06a0a8; }

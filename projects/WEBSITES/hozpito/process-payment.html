@@ -463,73 +463,201 @@
                 <div class="st-process-payment d-flex flex-wrap">
                     <!-- left bar -->
                     <div class="st-process-payment-content bg-white p-4">
-                        <!-- heading -->
-                        <div class="st-main-heading d-flex mb-3">
-                            <div class="left-sec pr-2">
-                                <p class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
-                                    Shipping Details
-                                </p>                            
+
+                        <!-- ADDRESS DETAILS -->
+                        <div class="shipping-details mb-3">
+                            <!-- heading -->
+                            <div class="st-main-heading d-flex mb-3">
+                                <div class="left-sec pr-2">
+                                    <p
+                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
+                                        Shipping Details
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-address-details d-flex flex-wrap">
+                                <div class="user-details">
+                                    <p class="name font-size-15 font-weight-600 mb-1">
+                                        <span class="first">Ajay </span>
+                                        <span class="last">Nagar</span>
+                                    </p>
+                                    <p class="email mb-1">ajayn@gmail.com</p>
+                                    <p class="phone mb-1">+91 1234567890</p>
+                                    <p class="address mb-1">
+                                        Street: 275/10, 186, Tulasi Terrace 1 St Floor, <br />
+                                        Shahid Bhagat Singh Rd, Fort
+                                    </p>
+                                    <p class="pin mb-1">390005</p>
+                                    <p class="city mb-1">Vadodara</p>
+                                    <div class="d-flex align-items-center">
+                                        <a href="#"
+                                            class="bt st-btn st-btn-primary st-btn-sm mr-2 mt-2 font-size-12 edit-address-btn">
+                                            Edit
+                                        </a>
+                                        <a href="#"
+                                            class="bt st-btn st-btn-primary st-btn-sm mt-2 font-size-12 add-new-address-btn">
+                                            Add New
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- PROCESS FORM -->
-                        <div class="process-payment-form d-flex flex-wrap">
-                            <!-- lt form -->
-                            <div class="form-group st-form lt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                <input type="text" class="form-control" placeholder="First Name">
-                            </div>
 
-                            <!-- rt form -->
-                            <div class="form-group st-form rt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                <input type="text" class="form-control" placeholder="Last Name">
+                        <!-- ADD NEW ADDRESS -->
+                        <div class="add-new-address" style="display: none;">
+                            <!-- heading -->
+                            <div class="st-main-heading d-flex align-items-center mb-3">
+                                <div class="left-sec pr-2">
+                                    <p
+                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
+                                        Add new Details
+                                    </p>
+                                </div>
+                                <div class="right-sec ml-auto">
+                                    <a href=""
+                                        class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
+                                        Cancel
+                                    </a>
+                                </div>
                             </div>
+                            <div class="process-payment-form d-flex flex-wrap">
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
 
-                            <!-- lt form -->
-                            <div class="form-group st-form lt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                <input type="text" class="form-control" placeholder="Email">
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+
+                                <!-- ct form -->
+                                <div class="form-group st-form ct w-100">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <textarea type="text" rows="3" class="form-control"
+                                        placeholder="Address 1"></textarea>
+                                </div>
+
+                                <!-- ct form -->
+                                <div class="form-group st-form ct w-100">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <textarea type="text" rows="3" class="form-control"
+                                        placeholder="Address 2"></textarea>
+                                </div>
+
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Pin Code">
+                                </div>
+
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+
+                                <div class="btns w-100 mt-3 text-right">
+                                    <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
+                                        style="min-width: 100px;">Submit</button>
+                                </div>
                             </div>
+                        </div>
 
-                            <!-- rt form -->
-                            <div class="form-group st-form rt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                <input type="text" class="form-control" placeholder="Phone Number">
+                        <!-- EDIT NEW ADDRESS -->
+                        <div class="edit-new-address" style="display: none;">
+                            <!-- heading -->
+                            <div class="st-main-heading d-flex align-items-center mb-3">
+                                <div class="left-sec pr-2">
+                                    <p
+                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
+                                        Edit Details
+                                    </p>
+                                </div>
+                                <div class="right-sec ml-auto">
+                                    <a href=""
+                                        class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
+                                        Cancel
+                                    </a>
+                                </div>
                             </div>
+                            <div class="process-payment-form d-flex flex-wrap">
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="First Name" value="Ajay">
+                                </div>
 
-                            <!-- ct form -->
-                            <div class="form-group st-form ct w-100">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                <textarea type="text" rows="3" class="form-control" placeholder="Address 1"></textarea>
-                            </div>
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Last Name" value="Nagar">
+                                </div>
 
-                            <!-- ct form -->
-                            <div class="form-group st-form ct w-100">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                <textarea type="text" rows="3" class="form-control" placeholder="Address 2"></textarea>
-                            </div>
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Email" value="ajayn@gmail.com">
+                                </div>
 
-                            <!-- lt form -->
-                            <div class="form-group st-form lt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                <input type="text" class="form-control" placeholder="Pin Code">
-                            </div>
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Phone Number"
+                                        value="+91 1234567890">
+                                </div>
 
-                            <!-- rt form -->
-                            <div class="form-group st-form rt">
-                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                <input type="text" class="form-control" placeholder="City">
-                            </div>
+                                <!-- ct form -->
+                                <div class="form-group st-form ct w-100">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <textarea type="text" rows="3" class="form-control"
+                                        placeholder="Address 1">Street: 275/10, 186, Tulasi Terrace 1 St Floor, Shahid Bhagat Singh Rd, Fort</textarea>
+                                </div>
 
-                            <div class="btns w-100 mt-3 text-right">
-                                <button class="btn st-btn st-btn-primary font-size-16 font-weight-600" style="min-width: 100px;">Submit</button>
+                                <!-- ct form -->
+                                <div class="form-group st-form ct w-100">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <textarea type="text" rows="3" class="form-control"
+                                        placeholder="Address 2"></textarea>
+                                </div>
+
+                                <!-- lt form -->
+                                <div class="form-group st-form lt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                    <input type="text" class="form-control" placeholder="Pin Code" value="390005">
+                                </div>
+
+                                <!-- rt form -->
+                                <div class="form-group st-form rt">
+                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                    <input type="text" class="form-control" placeholder="City" value="Vadodara">
+                                </div>
+
+                                <div class="btns w-100 mt-3 text-right">
+                                    <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
+                                        style="min-width: 100px;">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- right bar -->
                     <div class="products-listing-main">
-                        <div class="products-listing-main-inner">
+                        <div class="products-listing-main-inner position-sticky" style="top: 15px">
                             <!-- payment details -->
                             <div class="frac payment-details">
                                 <div class="inner bg-white">
@@ -716,6 +844,7 @@
 
     <script>
         $(function () {
+            // promo code
             $('.promo-code-sec .st-radio > input').change(function (ev) {
                 ev.preventDefault()
                 if ($(this).is(':checked')) {
@@ -725,6 +854,48 @@
                 } else {
                     $('.promo-code-sec .add-promo-code').fadeOut(300)
                 }
+            });
+
+            // add new address
+            $('.add-new-address-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.add-new-address').fadeIn(100, function () {
+                    const scrollTo = $('.add-new-address').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+            // add new address : CANCEL BUTTON
+            $('.add-new-address .cancel-editing-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.add-new-address').fadeOut(100, function () {
+                    const scrollTo = $('.shipping-details').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+
+            // edit new address
+            $('.edit-address-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.edit-new-address').fadeIn(100, function () {
+                    const scrollTo = $('.edit-new-address').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+            // edit new address : CANCEL BUTTON
+            $('.edit-new-address .cancel-editing-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.edit-new-address').fadeOut(100, function () {
+                    const scrollTo = $('.shipping-details').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
             });
         });
     </script>

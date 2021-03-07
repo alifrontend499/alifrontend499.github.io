@@ -293,7 +293,6 @@ $(function () {
                 $('.slide-to-link').removeClass('active')
                 $(this).addClass('active')
                 const scrollTo = $(link).offset().top
-                // console.log(scrollTo)
                 $('html,body').animate({
                     scrollTop: scrollTo - 15
                 }, 800)
