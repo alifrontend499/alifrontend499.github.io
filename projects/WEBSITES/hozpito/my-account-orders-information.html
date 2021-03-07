@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hozpito | Process Payment</title>
+    <title>Hozpito | My Account</title>
 
     <!-- FONTAWSOME ICONS -->
     <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
@@ -457,256 +457,244 @@
 
     <!-- SITE WRAPPER -->
     <div id="wrapper">
-        <!-- PRODUCTS LISTING -->
-        <section id="st-process-payment" class="ST_def-mar-TB">
+        <!-- MY ACCOUNT -->
+        <section id="my-account" class="ST_def-mar-TB">
             <div class="container">
-                <div class="st-process-payment d-flex flex-wrap">
-                    <!-- left bar -->
-                    <div class="st-process-payment-content bg-white p-4">
+                <div class="my-account d-flex flex-wrap position-relative bg-white overflow-hidden">
 
-                        <!-- ADDRESS DETAILS -->
-                        <div class="shipping-details">
-                            <!-- heading -->
-                            <div class="st-main-heading d-flex mb-3">
-                                <div class="left-sec pr-2">
-                                    <p
-                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
-                                        Shipping Details
+                    <!-- ICON FOR MOBILE -->
+                    <div class="ma-mobile-icon position-absolute d-md-none">
+                        <img src="images/icons/hamburger-menu-icon.png" width="25" class="img-fluid">
+                    </div>
+
+                    <!-- LEFT SECTION -->
+                    <div class="ma-leftbar position-absolute h-100">
+                        <div class="inner border-right bg-white overflow-auto h-100">
+                            <!-- user details -->
+                            <div class="ma-leftbar-user-details border-bottom p-3 d-flex mb-3">
+                                <!-- img sec -->
+                                <div class="img-sec border rounded-circle overflow-hidden bg-white">
+                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                        height="45" width="45" class="img-fluid">
+                                </div>
+
+                                <!-- text sec -->
+                                <div class="text-sec media-body pl-3">
+                                    <p class="sm-text font-size-13">Welcome,</p>
+                                    <p class="user-name font-size-17 font-weight-600 st-text-primary">
+                                        Deep
+                                        Dive Media
                                     </p>
                                 </div>
                             </div>
-                            <div class="process-address-details d-flex flex-wrap">
-                                <div class="user-details">
-                                    <p class="name font-size-15 font-weight-600 mb-1">
-                                        <span class="first">Ajay </span>
-                                        <span class="last">Nagar</span>
-                                    </p>
-                                    <p class="email mb-1">ajayn@gmail.com</p>
-                                    <p class="phone mb-1">+91 1234567890</p>
-                                    <p class="address mb-1">
-                                        Street: 275/10, 186, Tulasi Terrace 1 St Floor, <br />
-                                        Shahid Bhagat Singh Rd, Fort
-                                    </p>
-                                    <p class="pin mb-1">390005</p>
-                                    <p class="city mb-1">Vadodara</p>
-                                    <div class="d-flex align-items-center">
-                                        <a href="#"
-                                            class="bt st-btn st-btn-primary st-btn-sm mr-2 mt-2 font-size-12 edit-address-btn">
-                                            Edit
+
+                            <!-- user menu -->
+                            <div class="ma-leftbar-menu mb-3 mb-lg-4">
+                                <ul class="list-unstyled">
+                                    <!-- link -->
+                                    <li class="w-100 menu-item">
+                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
+                                            href="my-account.html">
+                                            <i class="feather-chevron-right mt-1"></i>
+                                            <span class="ml-2">Dashboard</span>
                                         </a>
-                                        <a href="#"
-                                            class="bt st-btn st-btn-primary st-btn-sm mt-2 font-size-12 add-new-address-btn">
-                                            Add New
+                                    </li>
+
+                                    <!-- link -->
+                                    <li class="w-100 menu-item">
+                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
+                                            href="my-account-account-information.html">
+                                            <i class="feather-chevron-right mt-1"></i>
+                                            <span class="ml-2">Account Information</span></a>
+                                    </li>
+
+                                    <!-- link -->
+                                    <li class="w-100 menu-item">
+                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
+                                            href="my-account-address-information.html">
+                                            <i class="feather-chevron-right mt-1"></i>
+                                            <span class="ml-2">Address Information</span>
                                         </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </li>
 
-                        <!-- ADD NEW ADDRESS -->
-                        <div class="add-new-address mt-3" style="display: none;">
-                            <!-- heading -->
-                            <div class="st-main-heading d-flex align-items-center mb-3">
-                                <div class="left-sec pr-2">
-                                    <p
-                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
-                                        Add new Details
-                                    </p>
-                                </div>
-                                <div class="right-sec ml-auto">
-                                    <a href=""
-                                        class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
-                                        Cancel
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="process-payment-form d-flex flex-wrap">
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="First Name">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Last Name">
-                                </div>
-
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Phone Number">
-                                </div>
-
-                                <!-- ct form -->
-                                <div class="form-group st-form ct w-100">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <textarea type="text" rows="3" class="form-control"
-                                        placeholder="Address 1"></textarea>
-                                </div>
-
-                                <!-- ct form -->
-                                <div class="form-group st-form ct w-100">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <textarea type="text" rows="3" class="form-control"
-                                        placeholder="Address 2"></textarea>
-                                </div>
-
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Pin Code">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="City">
-                                </div>
-
-                                <div class="btns w-100 mt-3 text-right">
-                                    <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
-                                        style="min-width: 100px;">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- EDIT NEW ADDRESS -->
-                        <div class="edit-new-address" style="display: none;">
-                            <!-- heading -->
-                            <div class="st-main-heading d-flex align-items-center mb-3">
-                                <div class="left-sec pr-2">
-                                    <p
-                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
-                                        Edit Details
-                                    </p>
-                                </div>
-                                <div class="right-sec ml-auto">
-                                    <a href=""
-                                        class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
-                                        Cancel
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="process-payment-form d-flex flex-wrap">
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="First Name" value="Ajay">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Last Name" value="Nagar">
-                                </div>
-
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Email" value="ajayn@gmail.com">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Phone Number"
-                                        value="+91 1234567890">
-                                </div>
-
-                                <!-- ct form -->
-                                <div class="form-group st-form ct w-100">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <textarea type="text" rows="3" class="form-control"
-                                        placeholder="Address 1">Street: 275/10, 186, Tulasi Terrace 1 St Floor, Shahid Bhagat Singh Rd, Fort</textarea>
-                                </div>
-
-                                <!-- ct form -->
-                                <div class="form-group st-form ct w-100">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <textarea type="text" rows="3" class="form-control"
-                                        placeholder="Address 2"></textarea>
-                                </div>
-
-                                <!-- lt form -->
-                                <div class="form-group st-form lt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
-                                    <input type="text" class="form-control" placeholder="Pin Code" value="390005">
-                                </div>
-
-                                <!-- rt form -->
-                                <div class="form-group st-form rt">
-                                    <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
-                                    <input type="text" class="form-control" placeholder="City" value="Vadodara">
-                                </div>
-
-                                <div class="btns w-100 mt-3 text-right">
-                                    <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
-                                        style="min-width: 100px;">Submit</button>
-                                </div>
+                                    <!-- link -->
+                                    <li class="w-100 menu-item active">
+                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
+                                            href="my-account-orders-information.html">
+                                            <i class="feather-chevron-right mt-1"></i>
+                                            <span class="ml-2">My Orders</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- right bar -->
-                    <div class="products-listing-main">
-                        <div class="products-listing-main-inner position-sticky" style="top: 15px">
-                            <!-- payment details -->
-                            <div class="frac payment-details">
-                                <div class="inner bg-white">
-                                    <p
-                                        class="head font-weight-600 d-flex text-decoration-none st-text-dark mb-2 mb-md-3 text-uppercase">
-                                        payment details
-                                    </p>
+                    <!-- CONTENT SECTION -->
+                    <div class="ma-content dashboard-content ">
+                        <div class="inner p-3 p-lg-5">
+                            <div class="st-heading-wrapper mb-3 mb-lg-4">
+                                <p class="heading font-size-18 font-weight-600 st-text-primary">
+                                    My Order
+                                </p>
+                                <p class="desc font-size-15 mt-1">
+                                    See your past orders list
+                                </p>
+                            </div>
+                            <div class="ma-content-main orders-information">
+                                <div class="orders-information-table">
+                                    <div class="overflow-auto">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Product Description
+                                                    </th>
+                                                    <th>
+                                                        Order No.
+                                                    </th>
+                                                    <th>
+                                                        Order Total
+                                                    </th>
+                                                </tr>
+                                            </thead>
 
-                                    <div class="payments-price-details">
-                                        <!-- item -->
-                                        <div class="item d-flex mb-2">
-                                            <p class="w-50 pr-1">MRP Total</p>
-                                            <p class="w-50 pl-1 text-right">Rs. 1750</p>
-                                        </div>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" class="d-block prod-details d-flex align-items-center st-text-dark text-decoration-none">
+                                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                                class="img-fluid" width="50">
+                                                            <p class="name media-body pl-2">Morpheme Remedies Garcinia Green Tea</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="orderno">
+                                                            <span class="d-block">8486225097</span>
+                                                            <span class="d-block">12 Jun '19 7:55 pm</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">
+                                                            Rs 25000
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" class="d-block prod-details d-flex align-items-center st-text-dark text-decoration-none">
+                                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                                class="img-fluid" width="50">
+                                                            <p class="name media-body pl-2">Morpheme Remedies Garcinia Green Tea</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="orderno">
+                                                            <span class="d-block">8486225097</span>
+                                                            <span class="d-block">12 Jun '19 7:55 pm</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">
+                                                            Rs 25000
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" class="d-block prod-details d-flex align-items-center st-text-dark text-decoration-none">
+                                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                                class="img-fluid" width="50">
+                                                            <p class="name media-body pl-2">Morpheme Remedies Garcinia Green Tea</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="orderno">
+                                                            <span class="d-block">8486225097</span>
+                                                            <span class="d-block">12 Jun '19 7:55 pm</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">
+                                                            Rs 25000
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#" class="d-block prod-details d-flex align-items-center st-text-dark text-decoration-none">
+                                                            <img src="images/categories/slider-img1.jpg" alt=""
+                                                                class="img-fluid" width="50">
+                                                            <p class="name media-body pl-2">Morpheme Remedies Garcinia Green Tea</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <div class="orderno">
+                                                            <span class="d-block">8486225097</span>
+                                                            <span class="d-block">12 Jun '19 7:55 pm</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">
+                                                            Rs 25000
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                        <!-- item -->
-                                        <div class="item d-flex mb-2">
-                                            <p class="w-50 pr-1">Discount</p>
-                                            <p class="w-50 pl-1 text-right">Rs. -150</p>
-                                        </div>
-                                        <!-- app devider -->
-                                        <div class="app-devider-outer mb-2">
-                                            <div class="app-devider"></div>
-                                        </div>
-                                        <!-- item -->
-                                        <div class="item d-flex font-size-15 font-weight-600 mb-2">
-                                            <p class="w-50 pr-1">Total Payable</p>
-                                            <p class="w-50 pl-1 text-right">Rs. 1610</p>
-                                        </div>
-
-                                        <!-- btns -->
-                                        <div class="btns mt-3">
-                                            <p class="btn st-btn st-btn-sm st-btn-primary-light btn-block font-weight-600 text-capitalize text-left mb-2"
-                                                style="pointer-events: none;">
-                                                Total Savings Rs. 150
-                                            </p>
-
-                                            <button
-                                                class="btn st-btn st-btn-sm st-btn-secondary btn-block font-size-16 font-weight-600 text-capitalize">
-                                                Confirm Order
-                                            </button>
-                                        </div>
-
+                                    <!-- pagination -->
+                                    <div class="st-paginatins mt-3 mt-lg-4">
+                                        <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                                            <li class="prev">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    <i class="feather-chevron-left font-weight-bold"></i>
+                                                </a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center active">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li class="link active not-allowed">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li class="link disabled three-dots">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    . . .
+                                                </a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    15
+                                                </a>
+                                            </li>
+                                            <li class="next">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center justify-content-center">
+                                                    <i class="feather-chevron-right font-weight-bold"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -844,59 +832,10 @@
 
     <script>
         $(function () {
-            // promo code
-            $('.promo-code-sec .st-radio > input').change(function (ev) {
-                ev.preventDefault()
-                if ($(this).is(':checked')) {
-                    $('.promo-code-sec .add-promo-code').fadeIn(300, function () {
-                        $('.promo-code-sec .add-promo-code > input').focus()
-                    })
-                } else {
-                    $('.promo-code-sec .add-promo-code').fadeOut(300)
-                }
-            });
-
-            // add new address
-            $('.add-new-address-btn').click(function (ev) {
-                ev.preventDefault()
-                $('.add-new-address').fadeIn(100, function () {
-                    const scrollTo = $('.add-new-address').offset().top
-                    $('html,body').animate({
-                        scrollTop: scrollTo - 15
-                    }, 500)
-                })
-            });
-            // add new address : CANCEL BUTTON
-            $('.add-new-address .cancel-editing-btn').click(function (ev) {
-                ev.preventDefault()
-                $('.add-new-address').fadeOut(100, function () {
-                    const scrollTo = $('.shipping-details').offset().top
-                    $('html,body').animate({
-                        scrollTop: scrollTo - 15
-                    }, 500)
-                })
-            });
-
-            // edit new address
-            $('.edit-address-btn').click(function (ev) {
-                ev.preventDefault()
-                $('.edit-new-address').fadeIn(100, function () {
-                    const scrollTo = $('.edit-new-address').offset().top
-                    $('html,body').animate({
-                        scrollTop: scrollTo - 15
-                    }, 500)
-                })
-            });
-            // edit new address : CANCEL BUTTON
-            $('.edit-new-address .cancel-editing-btn').click(function (ev) {
-                ev.preventDefault()
-                $('.edit-new-address').fadeOut(100, function () {
-                    const scrollTo = $('.shipping-details').offset().top
-                    $('html,body').animate({
-                        scrollTop: scrollTo - 15
-                    }, 500)
-                })
-            });
+            $('.ma-mobile-icon').click(function () {
+                $(this).toggleClass('active')
+                $('.ma-leftbar,.ma-content').toggleClass('active')
+            })
         });
     </script>
 </body>
