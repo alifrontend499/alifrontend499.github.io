@@ -1,0 +1,137 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+@import "components/reset";
+// @import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Lato', sans-serif;
+// font-family: 'Bitter', serif;
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// HOMEPAGE CSS
+// header top
+#header-top {
+  background-color: $headerTopColor;
+}
+.header-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// header main
+#header-main {
+}
+.header-main {
+  .logo {
+    @include min-width($lg-min) {
+      width: 530px;
+      margin-top: -13px;
+    }
+  }
+
+  .rt-sec {
+    .btn {
+      background-color: $primary-color-light;
+      color: #fff;
+      padding: 12px 29px;
+      border-radius: 50px;
+      box-shadow: none !important;
+      @include transition;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50px;
+        background-color: $primary-color;
+        @include transition;
+      }
+      &:hover {
+        &::before {
+          top: 5px;
+        }
+      }
+
+      > span {
+        z-index: 1px;
+      }
+    }
+  }
+}
+
+// header menu
+#header-menu {
+}
+.header-menu {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  .navbar-nav {
+    // .nav-item {
+    //   padding: 15px;
+    // }
+    .nav-link {
+      color: $light-text-color;
+      @include transition;
+      padding: 0 5px;
+      &::after {
+        content: "";
+        display: block;
+        background-color: transparent;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        margin-top: 12px;
+      }
+      &.active {
+        &::after {
+          background-color: $primary-color;
+        }
+      }
+      &.active,
+      &:hover {
+        color: $dark-text-color;
+      }
+    }
+    .nav-item {
+      &.active {
+        > a {
+          &::after {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// STUDENT ENQUIRY FORM
+#student-enquiry-form {
+  background: transparent url("../images/bg-student-enquiry-form.jpg") no-repeat
+    center / cover;
+}
+.student-enquiry-form {
+  .form-container {
+    > .inner {
+      border-radius: 50px;
+    }
+  }
+}
+
+// HOME TOP SERVICES
+#home-top-services {
+  background-color: $servicesBgColor;
+}
+
+.home-top-services {
+    
+}

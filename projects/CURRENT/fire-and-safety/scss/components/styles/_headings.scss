@@ -1,0 +1,44 @@
+/* HEADING STYLES */
+.st-main-heading {
+  .st-heading {
+    font-family: "Bitter", serif;
+    font-size: 30px;
+    color: $dark-text-color;
+    font-weight: 800;
+    @include min-width($md-min) {
+      font-size: 43px;
+    }
+  }
+
+  // underline heading
+  &.with-underline {
+    .st-heading {
+      &::after {
+        content: "";
+        display: block;
+        background-color: $primary-color;
+        width: 60px;
+        height: 5px;
+        border-radius: 20px;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  // small heading
+  &.st-heading-sm {
+    .st-heading {
+      font-size: 20px;
+      @include min-width($md-min) {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* DESCRIPTION STYLES */
+.st-desc {
+  &.font-size-18 {
+    line-height: 30px;
+  }
+}

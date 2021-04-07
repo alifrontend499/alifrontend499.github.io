@@ -1,0 +1,130 @@
+.st-form {
+
+    >input:not([type="radio"]):not([type="checkbox"]),
+    >select,
+    >textarea {
+        border-radius: $borderRadiusInputsAndButtons;
+        -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        // border: none;
+        padding: 10px 15px;
+        color: $dark-text-color;
+        @include transition(.1s);
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $light-text-color;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $light-text-color;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $light-text-color;
+        }
+
+        &:focus {
+            -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            border-color: $app-border-color-input;
+        }
+    }
+
+    >input:not([type="radio"]):not([type="checkbox"]),
+    >select {
+        @include min-width($sm-min) {
+            height: 45px;
+        }
+    }
+
+    &.st-form-sm {
+
+        >input:not([type="radio"]):not([type="checkbox"]),
+        >select {
+            @include min-width($sm-min) {
+                height: 40px;
+            }
+        }
+    }
+
+    // width 50%
+    &.lt,
+    &.rt {
+        width: 100%;
+    }
+
+    @include min_width($md-min) {
+
+
+        &.lt,
+        &.rt {
+            width: 50%;
+        }
+
+        &.lt {
+            padding-right: 7.5px;
+        }
+
+        &.rt {
+            padding-left: 7.5px;
+        }
+    }
+
+    // input underline
+    &.input-underline {
+
+        >input:not([type="radio"]):not([type="checkbox"]),
+        >select,
+        >textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $app-border-color-input;
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:focus {
+                border-color: $primary-color;
+            }
+        }
+
+    }
+
+    &.with-icon,
+    &.with-icon-text {
+
+        >input:not([type="radio"]):not([type="checkbox"]),
+        >select,
+        >textarea {
+            padding-right: 40px;
+        }
+
+        .icon {
+            top: 50%;
+            right: 10px;
+            @include transformy(-50%);
+            font-size: 24px;
+            color: $light-text-color;
+            @include transition;
+
+            &:hover {
+                color: $dark-text-color;
+            }
+        }
+    }
+
+    &.with-icon-text {
+
+        >input:not([type="radio"]):not([type="checkbox"]),
+        >select,
+        >textarea {
+            padding-right: 55px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+button.no-browser-style {
+  background: transparent;
+  padding: initial;
+  line-height: normal;
+  outline: none;
+  border: none;
+}
+
+.st-btn {
+  background-color: #d8d8d8;
+  color: #000;
+  padding: 6px 15px 7px;
+  border: none;
+  border-radius: $borderRadiusInputsAndButtons;
+  box-shadow: none !important;
+  font-size: 15px;
+  @include transition(0.2s);
+  @include min-width($sm-min) {
+    padding: 10px 15px;
+  }
+
+  &:hover {
+    background-color: darken($color: #d8d8d8, $amount: 10);
+  }
+
+  &:active {
+    background-color: darken($color: #d8d8d8, $amount: 15);
+  }
+
+  // small btn
+  &.st-btn-sm {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include min-width($sm-min) {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+
+  // large btn
+  &.st-btn-lg {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include min-width($sm-min) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  // rounded btn
+  &.st-btn-rounded {
+    border-radius: 50px;
+  }
+
+  // with icon
+  &.with-icon {
+  }
+
+  // btn secnodary
+  &.st-btn-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    &:hover {
+      background-color: darken($color: $secondary-color, $amount: 5);
+      color: #fff;
+    }
+
+    &:active {
+      background-color: darken($color: $secondary-color, $amount: 10);
+      color: #fff;
+    }
+  }
+
+  // btn primary
+  &.st-btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($color: $primary-color, $amount: 5);
+      color: #fff;
+    }
+
+    &:active {
+      background-color: darken($color: $primary-color, $amount: 10);
+      color: #fff;
+    }
+  }
+
+  // btn white
+  &.st-btn-white {
+    background-color: #fff;
+    color: #333;
+
+    &:hover {
+      background-color: darken($color: #fff, $amount: 5);
+      color: #333;
+    }
+
+    &:active {
+      background-color: darken($color: #fff, $amount: 10);
+      color: #333;
+    }
+
+    &:focus {
+      color: #333;
+    }
+  }
+
+  // btn black
+  &.st-btn-dark {
+    background-color: #333;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($color: #333, $amount: 5);
+      color: #fff;
+    }
+
+    &:active {
+      background-color: darken($color: #333, $amount: 10);
+      color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+    }
+  }
+}
