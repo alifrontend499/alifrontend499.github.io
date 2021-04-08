@@ -19,7 +19,7 @@
 // common margin and padding
 .ST_def-mar-T,
 .ST_def-mar-TB {
-  margin-top: 20px;
+  margin-top: 30px;
 
   @include min_width($lg-min) {
     margin-top: 50px;
@@ -32,7 +32,7 @@
 
 .ST_def-mar-B,
 .ST_def-mar-TB {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @include min_width($lg-min) {
     margin-bottom: 50px;
@@ -45,7 +45,7 @@
 
 .ST_def-pad-T,
 .ST_def-pad-TB {
-  padding-top: 20px;
+  padding-top: 30px;
 
   @include min_width($lg-min) {
     padding-top: 50px;
@@ -58,7 +58,7 @@
 
 .ST_def-pad-B,
 .ST_def-pad-TB {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 
   @include min_width($lg-min) {
     padding-bottom: 50px;
@@ -225,4 +225,10 @@
 // BORDER CLASSES
 .st-border-default {
   border-color: $app-border-color !important;
+}
+
+
+// CURSOR
+.cursor-pointer {
+  cursor: pointer;
 }

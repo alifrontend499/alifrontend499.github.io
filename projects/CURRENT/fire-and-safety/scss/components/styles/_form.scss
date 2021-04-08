@@ -37,9 +37,9 @@
 
     >input:not([type="radio"]):not([type="checkbox"]),
     >select {
-        @include min-width($sm-min) {
-            height: 45px;
-        }
+        height: 45px;
+        // @include min-width($sm-min) {
+        // }
     }
 
     &.st-form-sm {

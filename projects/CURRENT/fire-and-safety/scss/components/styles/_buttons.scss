@@ -39,8 +39,8 @@ button.no-browser-style {
 
   // large btn
   &.st-btn-lg {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     @include min-width($sm-min) {
       padding-top: 15px;
       padding-bottom: 15px;

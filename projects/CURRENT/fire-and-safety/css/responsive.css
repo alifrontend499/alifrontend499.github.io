@@ -1,61 +1,69 @@
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 100%;
-    }
+  .container {
+    max-width: 100%;
+  }
 }
 
-@media screen and (min-width: 991px) {}
+@media screen and (min-width: 991px) {
+}
 
 @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1180px;
-    }
+  .container {
+    max-width: 1180px;
+  }
 }
 
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1366px) {
+}
 
+@media screen and (max-width: 991px) {
+  /* HEADER */
+  .header-menu .navbar-nav {
+    margin-top: 20px;
+  }
+  .header-menu .navbar-nav .nav-item {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
-    .font-size-20 {
-        font-size: 17px !important;
-    }
-    .font-size-17 {
-        font-size: 15px !important;
-    }
+  .font-size-20:not(.no-responsive-text) {
+    font-size: 17px !important;
+  }
+  .font-size-18:not(.no-responsive-text) {
+    font-size: 16px !important;
+  }
+  .font-size-17:not(.no-responsive-text) {
+    font-size: 15px !important;
+  }
 
-    /* my account sidevbar */
-    .ma-mobile-icon {
-        top: 9px;
-        left: 17px;
-        cursor: pointer;
-    }
-    .ma-mobile-icon.active {
-        left: 256px;
-    }
+  /* HEADER */
+  .header-main > .rt-sec {
+    width: 100%;
+    text-align: right;
+  }
+  .header-main > .rt-sec {
+    margin-bottom: -111px;
+  }
+  .header-main > .rt-sec button {
+    font-size: 13px !important;
+  }
 
-    .ma-leftbar {
-        left: calc(-100% - 16px);
-        transition: 0.3s;
-        width: 240px;
-    }
-    .ma-leftbar.active {
-        left: 0;
-        transition: 0.3s;
-    }
+  /* footer */
+  .footer-item.four {
+    margin-bottom: 0 !important;
+  }
+}
 
-    .ma-content {
-        margin-top: 25px;
-        margin-left: 0;
-        width: 100%;
-        transition: 0.1s;
-    }
-    .ma-content.active {
-        margin-left: 240px;
-        width: calc(100% - 240px);
-    }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* footer */
+  .footer-item.three,
+  .footer-item.four {
+    margin-bottom: 0 !important;
+  }
 }
