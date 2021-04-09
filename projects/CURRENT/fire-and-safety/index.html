@@ -40,12 +40,12 @@
                         <!-- LINK -->
                         <a href="#"
                             class="link text-decoration-none font-weight-600 st-text-dark font-size-17 d-flex align-items-center">
-                            <i class="feather-phone-call font-size-20"></i>
-                            <span class="ml-2">
+                            <i class="feather-phone-call font-size-20 mr-2"></i>
+                            <span class="d-none d-md-block">
                                 01883-500354
                             </span>
                         </a>
-                        <span class="font-weight-600 ml-3 mr-3 st-text-light">|</span>
+                        <span class="font-weight-600 ml-3 mr-3 st-text-light d-none d-md-inline-block">|</span>
                         <!-- LINK -->
                         <a href="#" class="link text-decoration-none font-weight-600 st-text-dark font-size-17 d-flex">
                             <span>+91 82880-07070</span>
@@ -93,25 +93,25 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav w-100 justify-content-between">
-                                <li class="nav-item font-size-16 font-weight-800 active">
+                                <li class="nav-item font-size-16 font-weight-600 active">
                                     <a class="nav-link text-uppercase" href="#">Home</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">About Us</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">Our presence</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">student section</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">course</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">gallery</a>
                                 </li>
-                                <li class="nav-item font-size-16 font-weight-800">
+                                <li class="nav-item font-size-16 font-weight-600">
                                     <a class="nav-link text-uppercase" href="#">Contact Us</a>
                                 </li>
                             </ul>
@@ -131,12 +131,26 @@
                 <div class="slider">
                     <div class="owl-carousel" id="home-slider">
                         <!-- slider item -->
-                        <div class="item">
-                            <img src="images/sliders/home-slider-img1.jpg" alt="" class="w-100 img-fluid">
+                        <div class="item" style="background-image: url('images/sliders/home-slider-img1.jpg');">
+                            <div class="container">
+                                <div class="st-main-heading">
+                                    <p class="st-heading text-white">
+                                        Fully Accrediated <br/>
+                                        Fire & Safety Traning
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <!-- slider item -->
-                        <div class="item">
-                            <img src="images/sliders/home-slider-img1.jpg" alt="" class="w-100 img-fluid">
+                        <div class="item" style="background-image: url('images/sliders/home-slider-img1.jpg');">
+                            <div class="container">
+                                <div class="st-main-heading">
+                                    <p class="st-heading text-white">
+                                        Fully Accrediated <br/>
+                                        Fire & Safety Traning
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,15 +167,22 @@
                             <div class="st-main-heading with-underline mb-3 mb-lg-4">
                                 <p class="st-heading">Welcome to UFSSI</p>
                             </div>
-                            <p class="st-desc st-text-paragraph font-size-17 font-weight-600">
+
+                            <!-- FOR MOBILE -->
+                            <div class="mobile-img-sec mb-3 d-md-none">
+                                <img src="images/home-welcome/img.png" alt="" class="img-fluid mx-auto d-block">
+                            </div>
+
+                            <p class="st-desc st-text-paragraph font-size-18">
+
                                 Universal Fire & Safety Skills Institutions is a leading organisation for fire
                                 prevention, protection and Industrial Safety, providing assessed, accredited and assured
                                 fire and multi-service training for emergency service professionals globally with over
-                                <span class="font-weight-800">08 years experience</span> in delivering fire and rescue
+                                <span class="font-weight-600">08 years experience</span> in delivering fire and rescue
                                 training, we specialise in equipping
                                 today’s fire fighters and other emergency responders with the best possible skills and
                                 training to learn the latest techniques and procedures. Our unique incident ground, at
-                                one of the premier fire training venues in <span class="font-weight-800">Civil Lines
+                                one of the premier fire training venues in <span class="font-weight-600">Civil Lines
                                     Nagpur</span>, coupled with our expert
                                 instructors, provides the opportunity for our learners to train and exercise in a
                                 realistic and challenging environment, for a learning experience that is second to none.
@@ -174,7 +195,7 @@
                         </div>
                     </div>
                     <!-- RT SEC -->
-                    <div class="col-12 col-lg-6 rt-sec mt-3 mt-lg-0">
+                    <div class="col-12 col-lg-6 rt-sec mt-3 mt-lg-0 d-none d-md-block">
                         <div class="inner">
                             <img src="images/home-welcome/img.png" alt="" class="img-fluid mx-auto d-block">
                         </div>
@@ -252,15 +273,14 @@
                 <!-- HOME TOP SERVICES -->
                 <div class="home-top-services1 row ST_def-pad-TB border-bottom">
                     <!-- LT SEC -->
-                    <div class="col-12 col-lg-5 lt-sec">
+                    <div class="col-12 col-lg-4 lt-sec">
                         <div class="inner">
-                            <div class="st-main-heading mb-3 mb-lg-4">
+                            <div class="st-main-heading mb-3">
                                 <p class="st-heading">We provide top services</p>
                             </div>
-                            <p class="st-desc st-text-paragraph font-size-17 font-weight-600">
+                            <p class="st-desc st-text-paragraph font-size-18">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                                Risus commodo viverra maecenas accumsan lacus vel facilisis.
                             </p>
                             <a href="#"
                                 class="text-decoration-none st-text-secondary font-size-18 font-weight-600 d-flex align-items-center mt-3">
@@ -270,7 +290,7 @@
                         </div>
                     </div>
                     <!-- RT SEC -->
-                    <div class="col-12 col-lg-7 rt-sec mt-3 mt-lg-0">
+                    <div class="col-12 col-lg-8 rt-sec mt-3 mt-lg-0">
                         <div class="inner d-flex flex-wrap">
                             <!-- service item -->
                             <div class="service-item mb-3 mb-lg-4 col-12 col-md-6">
@@ -534,16 +554,19 @@
                                     <a href="#" class="footer-link text-decoration-none">About Us</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="#" class="footer-link text-decoration-none">About Us</a>
+                                    <a href="#" class="footer-link text-decoration-none">Our presence</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="#" class="footer-link text-decoration-none">Safety & Services</a>
+                                    <a href="#" class="footer-link text-decoration-none">Student Section</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="#" class="footer-link text-decoration-none">Jobs</a>
+                                    <a href="#" class="footer-link text-decoration-none">Course</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="#" class="footer-link text-decoration-none">Contact Us</a>
+                                    <a href="#" class="footer-link text-decoration-none">Gallery</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#" class="footer-link text-decoration-none">Contact UsWelcome to UFSSI</a>
                                 </li>
                             </ul>
 

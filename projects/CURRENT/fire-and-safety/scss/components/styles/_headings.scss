@@ -3,10 +3,12 @@
   .st-heading {
     font-family: "Bitter", serif;
     font-size: 30px;
+    line-height: 40px;
     color: $dark-text-color;
     font-weight: 800;
     @include min-width($md-min) {
       font-size: 43px;
+      line-height: 50px;
     }
   }
 
@@ -49,6 +51,6 @@
 .st-desc {
   &.font-size-18,
   &.font-size-17 {
-    line-height: 30px;
+    // line-height: 30px;
   }
 }

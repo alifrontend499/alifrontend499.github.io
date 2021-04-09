@@ -82,7 +82,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   @include min-width($md-min) {
-    padding-bottom: 10px;  
+    padding-bottom: 10px;
   }
   .navbar-nav {
     // .nav-item {
@@ -119,6 +119,22 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+#slider {
+
+}
+.slider {
+  .item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include min-width($md-min) {
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 }
@@ -224,6 +240,7 @@ body {
     cover;
 }
 .testimonial-slider-main {
+  
 }
 
 // FOOTER

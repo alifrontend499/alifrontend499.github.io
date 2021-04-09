@@ -8,8 +8,8 @@ $(function () {
         // navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
         autoplay: true,
         autoplayHoverPause: true,
-        smartSpeed: 700,
-        autoplayTimeout: 3000,
+        smartSpeed: 1500,
+        autoplayTimeout: 4000,
     });
 
     // TESTIMONIAL SLIDER
