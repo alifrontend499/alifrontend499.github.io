@@ -14,13 +14,26 @@ $(function () {
 
     // TESTIMONIAL SLIDER
     var owl = $('#testimonial-slider').owlCarousel({
-        items: 1,
-        loop: false,
+        items: 3,
         dots: false,
         nav: false,
-        // navText: ['<i class="feather-chevron-left"></i>', '<i class="feather-chevron-right"></i>'],
-        autoplay: false,
-        smartSpeed: 700,
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 30,
+        center: true,
+        loop: true,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            500: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+        }
     });
 
     $('.owl-dot').click(function () {

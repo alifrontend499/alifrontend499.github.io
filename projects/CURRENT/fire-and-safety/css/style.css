@@ -265,6 +265,11 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 16px; }
 
 #testimonial-slider-main { background: url("../images/testimonial/testimonial-bg.jpg") no-repeat center/cover; }
 
+.testimonial-slider-main .item { opacity: 0.5; transform: scale(0.8); transition: 0.3s; }
+.testimonial-slider-main .item .img-sec { height: 90px; width: 90px; background-color: #ececec; }
+.testimonial-slider-main .item .img-sec img { max-height: 100%; }
+.testimonial-slider-main .owl-item.active.center .item { opacity: 1; transform: scale(1); }
+
 footer { background: url("../images/footer-bg.jpg") no-repeat center/cover; }
 footer .footer-logo { top: 0; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 80px; }
 @media screen and (min-width: 992px) { footer .footer-logo { width: 100px; } }
