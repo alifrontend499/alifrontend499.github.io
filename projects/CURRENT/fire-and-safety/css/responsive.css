@@ -59,6 +59,11 @@
   .footer-item.four {
     margin-bottom: 0 !important;
   }
+
+  .slider .item .st-main-heading .st-heading {
+    font-size: 26px;
+    line-height: 35px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
