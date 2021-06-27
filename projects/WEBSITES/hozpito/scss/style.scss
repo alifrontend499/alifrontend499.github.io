@@ -114,14 +114,17 @@ body {
     }
 
     .navbar-nav {
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
         > .nav-item {
             &:not(:last-child) {
-                padding-right: 25px;
+                padding-right: 0;
+                margin-right: 25px;
             }
 
             > .nav-link {
                 color: $dark-text-color;
-                padding: 2px 0;
+                padding: 0;
                 @include transition(0.2s);
                 @include max-width($xl-max) {
                     padding: 10px 0;
@@ -146,8 +149,8 @@ body {
                 .dropdown-menu {
                     display: block;
                     border-radius: $app-block-border-radius;
-                    @include transition;
-                    top: -100%;
+                    @include transition(0.2s);
+                    top: 0%;
                     opacity: 0;
                     visibility: hidden;
                     @include max-width($xl-max) {
@@ -157,6 +160,73 @@ body {
                         position: static;
                         width: 100%;
                         display: none;
+                    }
+
+                    // mega menu
+                    &.mega-menu {
+                        padding: 10px;
+                        > ul {
+                            width: 50%;
+                            > li {
+                                &:last-child {
+                                    margin-bottom: 15px;
+                                }
+                                &.heading {
+                                    text-transform: capitalize;
+                                }
+                                > a {
+                                    color: $light-text-color;
+                                    &:hover {
+                                        color: $secondary-color;
+                                    }
+                                }
+                            }
+                        }
+
+                        @include max-width($xl-max) {
+                            width: 330px;
+                            > ul {
+                                width: 50%;
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-right: -3px;
+                                &:not(:nth-child(2n)) {
+                                    border-right: 1px solid $app-border-color;
+                                }
+                                &:not(:nth-child(2n + 1)) {
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                        @include min-width($xl-min) {
+                            display: -ms-flexbox !important;
+                            display: flex !important;
+                            -ms-flex-wrap: wrap !important;
+                            flex-wrap: wrap !important;
+                            width: 700px;
+
+                            > ul {
+                                width: 33.3%;
+                                &:not(:nth-child(3n)) {
+                                    border-right: 1px solid $app-border-color;
+                                }
+                                &:not(:nth-child(3n + 1)) {
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                        &.center {
+                            @include min-width($xl-min) {
+                                left: 50%;
+                                @include transformx(-50%);
+                            }
+                        }
+                        &.right {
+                            @include min-width($xl-min) {
+                                right: 0;
+                                left: initial;
+                            }
+                        }
                     }
                     > li {
                         > a {
@@ -1326,7 +1396,6 @@ footer {
     }
 }
 
-
 /* MY ACCOUNT CSS */
 .account-menu {
 }
@@ -1341,7 +1410,7 @@ footer {
     .ma-leftbar {
         width: 285px;
     }
-    
+
     .ma-content {
         margin-left: 285px;
         width: calc(100% - 285px);
@@ -1359,7 +1428,7 @@ footer {
 }
 .ma-leftbar-menu .menu-link {
     color: $light-text-color;
-    @include transition
+    @include transition;
 }
 .ma-leftbar-menu .menu-item.active > .menu-link,
 .ma-leftbar-menu .menu-link.active,
@@ -1377,13 +1446,11 @@ footer {
     color: $light-text-color;
 }
 
-
 /* MA DASHBOARD CONTENT */
 .ma-content.dashboard-content {
-    
 }
 .ma-content.dashboard-content .frac > .inner {
-    @include transition
+    @include transition;
 }
 .ma-content.dashboard-content .frac:hover > .inner {
     border-color: #bebebe !important;
@@ -1391,11 +1458,10 @@ footer {
 
 /* MA LOGIN INFORMATION CONTENT */
 .ma-content.login-information-content {
-    
 }
 
 // ORDERS INFORMATION TABLE
-.orders-information-table{
+.orders-information-table {
     @include max-width($sm-max) {
         table {
             width: 600px;
