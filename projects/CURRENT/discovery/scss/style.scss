@@ -1,0 +1,306 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+@import "components/reset";
+// @import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Lato', sans-serif;
+// font-family: 'Bitter', serif;
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #f2f3ff;
+}
+html,
+body,
+#admin-login {
+    height: 100%;
+}
+
+// LOGIN PAGE CSS
+#st-login {
+}
+.st-login {
+    @include min_width($md-min) {
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .sl-lt {
+        background: url("../images/login-right-bg.jpg") no-repeat center / cover;
+        .logo {
+            width: 200px;
+            @include min_width($lg-min) {
+                width: 280px;
+            }
+        }
+    }
+    .sl-rt {
+        .login-form {
+            width: 100%;
+            @include min_width($sm-min) {
+                width: 300px;
+            }
+            @include min_width($lg-min) {
+                width: 350px;
+            }
+
+            .heading {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// ADMIN WRAPPER
+#admin-login {
+    height: 100%;
+}
+.admin-left-bar {
+    width: 260px;
+    @include transition(0.1s);
+    &.hide-bar {
+        width: 56px;
+        .menu {
+            > ul {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.admin-content-area {
+    @include transition(0.1s);
+    width: calc(100% - 260px);
+    overflow: auto;
+    &.expand {
+        width: calc(100% - 56px);
+    }
+}
+.admin-left-bar {
+    background-color: $primary-color;
+    @include box-shadow(3px, 0px, 9px, 0px, #c3c3c3);
+    // SCROLLBAR
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #e2e2e2;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #ddd;
+        border-radius: 15px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: darken($color: #ddd, $amount: 10%);
+    }
+    .logo {
+        padding: 10px;
+        border-bottom: 1px solid #38368c;
+        img {
+            width: 165px;
+            margin: 0 auto;
+        }
+    }
+    .menu {
+        padding-top: 10px;
+        height: calc(100% - 95px);
+        overflow: auto;
+        > ul {
+            padding-left: 15px;
+            > li {
+                margin-bottom: 5px;
+                > a {
+                    text-decoration: none;
+                    padding: 13px 15px 14px;
+                    @include transition(0.1s);
+                    text-transform: capitalize;
+                    border-radius: 30px 0 0 30px;
+                    font-size: 15px;
+                    > i {
+                        font-size: 16px;
+                        position: relative;
+                        top: 0px;
+                        color: #fff;
+                    }
+                    > span {
+                        margin-left: 13px;
+                        color: #fff;
+                        line-height: normal;
+                        // position: relative;
+                        // top: -3px;
+                    }
+                }
+                &:hover,
+                &.active {
+                    > a {
+                        > i,
+                        > span {
+                            color: $dark-text-color;
+                        }
+                        background-color: #fff;
+                    }
+                }
+                &:active {
+                    > a {
+                        background-color: darken(
+                            $color: $app-border-color,
+                            $amount: 10%
+                        );
+                    }
+                }
+            }
+        }
+    }
+    &.hide-bar {
+        .menu {
+            height: calc(100% - 40px);
+            > ul > li > a > span {
+                display: none;
+            }
+        }
+    }
+}
+
+// ADMIN HEADER
+.admin-header {
+    padding: 10px 0;
+    border-bottom: 1px solid $app-border-color;
+    @include min_width(768px) {
+        padding: 10px 10px;
+    }
+    .LT {
+        // width: calc(100% - 150px);
+        .inner {
+            > a {
+                width: 70px;
+                z-index: 1;
+                i {
+                    color: #000;
+                    font-size: 30px;
+                    border-radius: 100%;
+                    padding: 5px;
+                    @include transition(0.2s);
+                    margin-left: -6px;
+                    &:active {
+                        background-color: lighten(
+                            $color: $primary-color,
+                            $amount: 10%
+                        );
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .RT {
+        // width: 150px;
+        ul {
+            li {
+                i {
+                    font-size: 18px;
+                }
+                a {
+                    color: $dark-text-color;
+                    text-decoration: none;
+                    span {
+                        margin-left: 10px;
+                    }
+                    @include transition;
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    .user-details {
+                        line-height: normal;
+                        .name {
+                        }
+                        .email {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ADMIN WRAPPER
+.wrapper {
+    padding: 10px 10px 0;
+    @include min_width(768px) {
+        padding: 30px 25px 0;
+    }
+}
+
+// PAGE DASHBOARD
+.page-dashboard {
+    .atc-top-sec {
+        padding-bottom: 0;
+        .search {
+            margin-bottom: 10px;
+            @include min_width($lg-min) {
+                width: 300px;
+            }
+        }
+    }
+}
+
+// student edit form
+.student-edit-form {
+    > .inner {
+        padding: 20px;
+        @include min_width($md-min) {
+            padding: 25px;
+        }
+    }
+
+    .inner {
+        > .rt {
+            @include min_width($md-min) {
+                padding-left: 15px;
+                // padding-top: 10px;
+            }
+            @include max_width($md-max) {
+                width: 100%;
+            }
+            @include min_width($md-min) {
+                padding-left: 20px;
+            }
+
+            .img-sec {
+                img {
+                    width: 100%;
+                }
+                width: 100%;
+                margin-top: 15px;
+                background-color: #f2f3ff;
+                font-size: 80px;
+                color: $light-text-color;
+                border-radius: $app-block-border-radius;
+                overflow: hidden;
+                @include min_width($md-min) {
+                    margin-top: 0;
+                    width: 250px;
+                    min-height: 250px;
+                }
+            }
+        }
+    }
+}
+
+// student view form
+.student-view-form {
+    > .inner {
+        padding: 20px;
+        @include min_width($md-min) {
+            padding: 25px;
+        }
+    }
+}

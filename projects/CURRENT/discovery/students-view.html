@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fire & Safety | Dashboard</title>
+
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="admin-wrapper d-flex h-100">
+        <!-- left bar -->
+        <div class="admin-left-bar">
+            <div class="ALB_inner h-100 w-100">
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="" class="img-fluid img-fluid-height d-block">
+                </div>
+                <div class="menu">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-home"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-list"></i>
+                                <span>Course</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-database"></i>
+                                <span>Raw Data</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-user"></i>
+                                <span>Admin</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="d-flex">
+                                <i class="feather-users"></i>
+                                <span>Student</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-dollar-sign"></i>
+                                <span>Fee</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-file-text"></i>
+                                <span>Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-pie-chart"></i>
+                                <span>Fee Reports</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-clipboard"></i>
+                                <span>Statement</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex">
+                                <i class="feather-lock"></i>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-content-area">
+            <div class="ACA_inner">
+
+                <!-- HEADER -->
+                <section id="admin-header" class="admin-geadient-background">
+                    <div class="container-fluid">
+                        <div class="admin-header d-flex align-items-center">
+                            <div class="LT">
+                                <div class="inner d-flex align-items-center">
+                                    <a href="#" class="d-block left-bar-toggle-btn text-decoration-none">
+                                        <i class="feather-menu"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="RT ml-auto">
+                                <ul class="d-flex list-unstyled align-items-center justify-content-end">
+                                    <li class="mr-2 mr-lg-3">
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="data:image/jpeg;base64,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"
+                                                alt="" class="img-fluid rounded-circle">
+                                            <p class="user-details">
+                                                <span
+                                                    class="name d-block font-size-14 st-text-primary font-weight-600 text-uppercase mb-1">User
+                                                    Name</span>
+                                                <span
+                                                    class="email d-block font-size-13 st-text-light">username@gmail.com</span>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" class="d-flex align-items-center">
+                                            <i class="feather-log-in"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WRAPPER -->
+                <div class="wrapper">
+                    <!-- student-view page content -->
+                    <section class="page-content page-student-view">
+                        <!-- page head wrapper -->
+                        <div class="page-head-wrapper d-flex flex-wrap mb-3 mb-lg-4">
+                            <div class="lt">
+                                <p class="heading">Students View</p>
+                            </div>
+                            <div class="rt ml-auto">
+                                <ul class="page-breadcrumbs list-unstyled d-flex">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center text-decoration-none">
+                                            <i class="feather-home"></i>
+                                            <span class="ml-2">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center text-decoration-none">
+                                            <span class="">Students View</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="app-table-container mb-3 mb-lg-4">
+                            <div class="atc-inner">
+                                <!-- top sec -->
+                                <div class="atc-top-sec need-b-pad border-bottom st-border-default">
+                                    <div class="inner d-flex flex-wrap">
+                                        <!-- item: add button -->
+                                        <div class="item add-button mr-2 mr-lg-3">
+                                            <button
+                                                class="st-btn st-btn-secondary text-capitalize st-btn-rounded font-weight-600">
+                                                <i class="feather-plus mr-1"></i>
+                                                <span>Student Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- main table -->
+                                <div class="student-view-form">
+                                    <div class="inner d-flex flex-wrap">
+                                        <!-- form item -->
+                                        <div class="st-form lt mb-3">
+                                            <label
+                                                class="mb-1 font-weight-600 font-size-14 st-text-light">Center</label>
+                                            <select id="center" class="form-control">
+                                                <option value="1">Select Center</option>
+                                                <option value="1">option 1</option>
+                                                <option value="1">option 2</option>
+                                                <option value="1">option 3</option>
+                                                <option value="1">option 4</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form rt mb-3">
+                                            <label
+                                                class="mb-1 font-weight-600 font-size-14 st-text-light">Course</label>
+                                            <select id="course" class="form-control">
+                                                <option value="1">Select Course</option>
+                                                <option value="1">option 1</option>
+                                                <option value="1">option 2</option>
+                                                <option value="1">option 3</option>
+                                                <option value="1">option 4</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form lt mb-3">
+                                            <label class="mb-1 font-weight-600 font-size-14 st-text-light">First
+                                                Name</label>
+                                            <input type="text" class="form-control pr-0" placeholder="First Name">
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form rt mb-3">
+                                            <label class="mb-1 font-weight-600 font-size-14 st-text-light">Last
+                                                Name</label>
+                                            <input type="text" class="form-control pr-0" placeholder="Last Name">
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form ct w-100 mb-3">
+                                            <label
+                                                class="mb-1 font-weight-600 font-size-14 st-text-light">Subject</label>
+                                            <!-- listing -->
+                                            <div class="d-flex flex-wrap">
+                                                <!-- item -->
+                                                <label class="admin-checkbox-with-check d-flex mr-3 mb-3">
+                                                    <input type="checkbox" class="d-none">
+                                                    <span class="box d-flex align-items-center justify-content-center">
+                                                        <i class="feather-check"></i>
+                                                    </span>
+                                                    <span class="text text-capitalize position-relative"
+                                                        style="top: -1px;">Biology</span>
+                                                </label>
+                                                <!-- item -->
+                                                <label class="admin-checkbox-with-check d-flex mr-3 mb-3">
+                                                    <input type="checkbox" class="d-none">
+                                                    <span class="box d-flex align-items-center justify-content-center">
+                                                        <i class="feather-check"></i>
+                                                    </span>
+                                                    <span class="text text-capitalize position-relative"
+                                                        style="top: -1px;">Physics</span>
+                                                </label>
+                                                <!-- item -->
+                                                <label class="admin-checkbox-with-check d-flex mr-3 mb-3">
+                                                    <input type="checkbox" class="d-none">
+                                                    <span class="box d-flex align-items-center justify-content-center">
+                                                        <i class="feather-check"></i>
+                                                    </span>
+                                                    <span class="text text-capitalize position-relative"
+                                                        style="top: -1px;">Chemistry</span>
+                                                </label>
+                                                <!-- item -->
+                                                <label class="admin-checkbox-with-check d-flex mr-3 mb-3">
+                                                    <input type="checkbox" class="d-none">
+                                                    <span class="box d-flex align-items-center justify-content-center">
+                                                        <i class="feather-check"></i>
+                                                    </span>
+                                                    <span class="text text-capitalize position-relative"
+                                                        style="top: -1px;">Test Series</span>
+                                                </label>
+                                                <!-- item -->
+                                                <label class="admin-checkbox-with-check d-flex mr-3 mb-3">
+                                                    <input type="checkbox" class="d-none">
+                                                    <span class="box d-flex align-items-center justify-content-center">
+                                                        <i class="feather-check"></i>
+                                                    </span>
+                                                    <span class="text text-capitalize position-relative"
+                                                        style="top: -1px;">Video Lecture</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form lt mb-3">
+                                            <label class="mb-1 font-weight-600 font-size-14 st-text-light">Email</label>
+                                            <input type="email" class="form-control pr-0" id="email"
+                                                placeholder="Email">
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form rt mb-3">
+                                            <label class="mb-1 font-weight-600 font-size-14 st-text-light">Phone</label>
+                                            <input type="text" class="form-control pr-0" id="phone" placeholder="Phone">
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form ct w-100 mb-3">
+                                            <label
+                                                class="mb-1 font-weight-600 font-size-14 st-text-light">Address</label>
+                                            <textarea rows="2" id="address" class="form-control pr-0"
+                                                placeholder="Address"></textarea>
+                                        </div>
+
+                                        <!-- form item -->
+                                        <div class="st-form w-100 mb-3">
+                                            <label class="mb-1 font-weight-600 font-size-14 st-text-light">Upload
+                                                File</label>
+                                            <input type="file" class="form-control pr-0" id="file">
+                                        </div>
+
+                                        <!-- btn -->
+                                        <div class="btns w-100 text-right pt-2">
+                                            <button
+                                                class="st-btn st-btn-primary text-capitalize st-btn-rounded font-weight-600"
+                                                style="min-width: 100px;">
+                                                <span>Submit</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="assets/jquery/js/jquery.3.4.1.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
