@@ -36,7 +36,19 @@ body,
         .logo {
             width: 200px;
             @include min_width($lg-min) {
-                width: 280px;
+                width: 240px;
+            }
+            .main-logo {
+                border-radius: 10px;
+                margin: 0 auto;
+                padding: 15px;
+                background: $secondary-color;
+            }
+            .text {
+                img {
+                    width: 15px;
+                    margin: 0 2px;
+                }
             }
         }
     }
@@ -104,7 +116,8 @@ body,
         padding: 10px;
         border-bottom: 1px solid #38368c;
         img {
-            width: 165px;
+            // width: 165px;
+            width: 185px;
             margin: 0 auto;
         }
     }

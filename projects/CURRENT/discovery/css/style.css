@@ -142,7 +142,7 @@ a.st-text-paragraph:hover { color: #373737 !important; }
 
 /* FORMS STYLES */
 .st-form { position: relative; }
-.st-form > input:not([type="radio"]):not([type="checkbox"]), .st-form > select, .st-form > textarea { border-radius: 5px; -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1); padding: 10px 15px; color: #333333; transition: 0.1s; }
+.st-form > input:not([type="radio"]):not([type="checkbox"]), .st-form > select, .st-form > textarea { border-radius: 5px; padding: 10px 15px; color: #333333; transition: 0.1s; }
 .st-form > input:not([type="radio"]):not([type="checkbox"])::placeholder, .st-form > select::placeholder, .st-form > textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ color: #6e6e6e; opacity: 1; /* Firefox */ }
 .st-form > input:not([type="radio"]):not([type="checkbox"]):-ms-input-placeholder, .st-form > select:-ms-input-placeholder, .st-form > textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #6e6e6e; }
 .st-form > input:not([type="radio"]):not([type="checkbox"])::-ms-input-placeholder, .st-form > select::-ms-input-placeholder, .st-form > textarea::-ms-input-placeholder { /* Microsoft Edge */ color: #6e6e6e; }
@@ -256,7 +256,9 @@ html, body, #admin-login { height: 100%; }
 @media screen and (min-width: 768px) { .st-login { height: 100vh; overflow: auto; } }
 .st-login .sl-lt { background: url("../images/login-right-bg.jpg") no-repeat center/cover; }
 .st-login .sl-lt .logo { width: 200px; }
-@media screen and (min-width: 992px) { .st-login .sl-lt .logo { width: 280px; } }
+@media screen and (min-width: 992px) { .st-login .sl-lt .logo { width: 240px; } }
+.st-login .sl-lt .logo .main-logo { border-radius: 10px; margin: 0 auto; padding: 15px; background: #d6da09; }
+.st-login .sl-lt .logo .text img { width: 15px; margin: 0 2px; }
 .st-login .sl-rt .login-form { width: 100%; }
 @media screen and (min-width: 576px) { .st-login .sl-rt .login-form { width: 300px; } }
 @media screen and (min-width: 992px) { .st-login .sl-rt .login-form { width: 350px; } }
@@ -276,7 +278,7 @@ html, body, #admin-login { height: 100%; }
 .admin-left-bar ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 15px; }
 .admin-left-bar ::-webkit-scrollbar-thumb:hover { background: #c4c4c4; }
 .admin-left-bar .logo { padding: 10px; border-bottom: 1px solid #38368c; }
-.admin-left-bar .logo img { width: 165px; margin: 0 auto; }
+.admin-left-bar .logo img { width: 185px; margin: 0 auto; }
 .admin-left-bar .menu { padding-top: 10px; height: calc(100% - 95px); overflow: auto; }
 .admin-left-bar .menu > ul { padding-left: 15px; }
 .admin-left-bar .menu > ul > li { margin-bottom: 5px; }

@@ -4,8 +4,8 @@
     > select,
     > textarea {
         border-radius: $borderRadiusInputsAndButtons;
-        -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        // -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
         // border: none;
         padding: 10px 15px;
         color: $dark-text-color;
