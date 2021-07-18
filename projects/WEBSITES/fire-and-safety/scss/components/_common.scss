@@ -1,0 +1,234 @@
+/* SCROLLBAR */
+@import "styles/scrollbar";
+
+/* COLORS STYLES */
+@import "styles/colors";
+
+/* BUTTONS STYLES */
+@import "styles/buttons";
+
+/* TEXT STYLES */
+@import "styles/text";
+
+/* HEADING STYLES */
+@import "styles/headings";
+
+/* FORMS STYLES */
+@import "styles/form";
+
+// common margin and padding
+.ST_def-mar-T,
+.ST_def-mar-TB {
+  margin-top: 30px;
+
+  @include min_width($lg-min) {
+    margin-top: 50px;
+  }
+
+  @include min_width($xl-min) {
+    margin-top: 100px;
+  }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+  margin-bottom: 30px;
+
+  @include min_width($lg-min) {
+    margin-bottom: 50px;
+  }
+
+  @include min_width($xl-min) {
+    margin-bottom: 100px;
+  }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+  padding-top: 30px;
+
+  @include min_width($lg-min) {
+    padding-top: 50px;
+  }
+
+  @include min_width($xl-min) {
+    padding-top: 100px;
+  }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+  padding-bottom: 30px;
+
+  @include min_width($lg-min) {
+    padding-bottom: 50px;
+  }
+
+  @include min_width($xl-min) {
+    padding-bottom: 100px;
+  }
+}
+
+// APP BADGE
+.app-badge {
+  background: #333;
+  padding: 2px;
+  height: 22px;
+  width: 22px;
+  top: 0;
+  right: -5px;
+  color: #fff;
+
+  &.app-badge-primary {
+    background-color: $primary-color;
+  }
+
+  &.app-badge-secondary {
+    background-color: $secondary-color;
+  }
+}
+
+// img classes
+.img-fluid-height {
+  max-height: 100%;
+}
+
+// app-devider
+.app-devider {
+  height: 1px;
+  width: 100%;
+  background-color: $app-border-color;
+}
+
+// ST-RADIO
+.st-radio {
+  font-weight: normal;
+  cursor: pointer;
+
+  .round {
+    height: 16px;
+    width: 16px;
+    padding: 2px;
+    border: 2px solid $primary-color;
+    margin-top: 3px;
+
+    .round-inner {
+      background-color: $primary-color;
+      opacity: 0;
+      @include transition(0.2s);
+    }
+  }
+
+  // radio white
+  &.st-radio-white {
+    .round {
+      border-color: #fff;
+
+      .round-inner {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  .text {
+    @include transition(0.2s);
+
+    &:hover {
+      color: #111 !important;
+    }
+  }
+
+  // radio white
+  &.st-radio-white {
+    .text {
+      color: #fff !important;
+
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+
+  > input:checked {
+    & + .round {
+      .round-inner {
+        opacity: 1;
+      }
+    }
+
+    & ~ .text {
+      color: #111 !important;
+    }
+  }
+
+  // radio white
+  &.st-radio-white {
+    > input:checked {
+      & ~ .text {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+// NAVBAR TOGGLER
+.navbar-toggler {
+  font-size: 20px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  @include min-width($sm-min) {
+    padding: 6px 9px;
+  }
+}
+
+// custom modal
+.custom-modal {
+  .close {
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+  }
+  .modal-content {
+    border-radius: $app-block-border-radius;
+  }
+}
+
+// owl dots
+.owl-carousel {
+  .owl-dots {
+    margin-top: 25px;
+    line-height: normal;
+    text-align: center;
+    .owl-dot {
+      height: 11px;
+      width: 11px;
+      background-color: $primary-color;
+      display: inline-block;
+      margin: 0 5px;
+      border-radius: 50%;
+      vertical-align: top;
+      line-height: normal !important;
+      outline: none !important;
+      @include transition;
+      opacity: 0.5;
+      &:focus {
+        outline: none !important;
+      }
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// BORDER CLASSES
+.st-border-default {
+  border-color: $app-border-color !important;
+}
+
+
+// CURSOR
+.cursor-pointer {
+  cursor: pointer;
+}

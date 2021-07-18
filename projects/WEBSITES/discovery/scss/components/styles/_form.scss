@@ -1,0 +1,266 @@
+.st-form {
+    position: relative;
+    > input:not([type="radio"]):not([type="checkbox"]),
+    > select,
+    > textarea {
+        border-radius: $borderRadiusInputsAndButtons;
+        // -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        // border: none;
+        padding: 10px 15px;
+        color: $dark-text-color;
+        @include transition(0.1s);
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $light-text-color;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $light-text-color;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $light-text-color;
+        }
+
+        &:focus {
+            -webkit-box-shadow: 0px 0px 2px 0px $primary-color;
+            box-shadow: 0px 0px 2px 0px $primary-color;
+            border-color: transparent;
+        }
+    }
+
+    > input:not([type="radio"]):not([type="checkbox"]),
+    > select {
+        height: 42px;
+    }
+
+    &.st-form-rounded {
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select {
+            border-radius: 42px;
+        }
+    }
+
+    &.st-form-sm {
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select {
+            @include min-width($sm-min) {
+                height: 30px;
+            }
+        }
+    }
+
+    // width 50%
+    &.lt,
+    &.rt {
+        width: 100%;
+    }
+
+    @include min_width($md-min) {
+        &.lt,
+        &.rt {
+            width: 50%;
+        }
+
+        &.lt {
+            padding-right: 7.5px;
+        }
+
+        &.rt {
+            padding-left: 7.5px;
+        }
+    }
+
+    // input underline
+    &.input-underline {
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select,
+        > textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $app-border-color-input;
+            padding-left: 0;
+            padding-right: 0;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:focus {
+                border-color: $primary-color;
+            }
+        }
+    }
+
+    &.with-icon,
+    &.with-icon-right {
+        position: relative;
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select,
+        > textarea {
+            padding-left: 45px;
+            padding-right: 10px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            @include transformy(-50%);
+            font-size: 20px;
+            color: $light-text-color;
+            @include transition;
+
+            &:hover {
+                color: $dark-text-color;
+            }
+        }
+    }
+
+    &.with-icon-right {
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select,
+        > textarea {
+            padding-right: 45px;
+            padding-left: 10px;
+        }
+        .icon {
+            right: 15px;
+            left: initial;
+        }
+    }
+
+    &.materialize-like-input {
+        > label {
+            font-weight: 600;
+            font-size: 13px;
+            color: $light-text-color;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            @include transition(0.2s);
+        }
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select,
+        > textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $app-border-color-input;
+            padding-left: 0;
+            padding-right: 35px;
+            padding-top: 5px;
+            padding-bottom: 0;
+            border-radius: 0;
+            box-shadow: none;
+            &:focus,
+            &:not(:empty),
+            &:valid {
+                border-color: $primary-color;
+                & + label {
+                    font-size: 12px;
+                    top: -5px;
+                    color: $dark-text-color;
+                }
+            }
+        }
+
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: $light-text-color;
+        }
+    }
+}
+
+// ADMIN CHECKBOX
+.admin-checkbox {
+    cursor: pointer;
+    .box {
+        height: 18px;
+        width: 18px;
+        border: 1px solid $app-border-color-input;
+        border-radius: 3px;
+        margin-right: 7px;
+        @include transition(0.2s);
+        &::after {
+            content: "";
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            display: block;
+            margin: 1px 0 0 1px;
+            border: 1px dotted $app-border-color-input;
+            border-radius: 3px;
+            @include transition(0.2s);
+        }
+    }
+    .text {
+        color: $light-text-color;
+        line-height: normal;
+        position: relative;
+        top: 1px;
+    }
+    &:hover,
+    & > input:checked + {
+        .box {
+            border-color: $dark-text-color;
+        }
+    }
+    & > input:checked {
+        + .box {
+            &::after {
+                border-color: $secondary-color;
+                background-color: $secondary-color;
+            }
+        }
+        ~ .text {
+            color: #000;
+        }
+    }
+}
+
+.admin-checkbox-with-check {
+    cursor: pointer;
+    .box {
+        height: 18px;
+        width: 18px;
+        border: 1px solid $app-border-color-input;
+        border-radius: 3px;
+        margin-right: 7px;
+        @include transition(0.2s);
+        i {
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+        }
+    }
+    .text {
+        color: $light-text-color;
+        line-height: normal;
+        position: relative;
+        top: 1px;
+    }
+    &:hover,
+    & > input:checked + {
+        .box {
+            border-color: $primary-color;
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+    & > input:checked {
+        + .box {
+            i {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        ~ .text {
+            color: #000;
+        }
+    }
+}

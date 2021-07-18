@@ -1,0 +1,296 @@
+/* SCROLLBAR */
+@import "styles/scrollbar";
+
+/* COLORS STYLES */
+@import "styles/colors";
+
+/* BUTTONS STYLES */
+@import "styles/buttons";
+
+/* TEXT STYLES */
+@import "styles/text";
+
+/* HEADING STYLES */
+@import "styles/headings";
+
+/* FORMS STYLES */
+@import "styles/form";
+
+// common margin and padding
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: 30px;
+
+    @include min_width($lg-min) {
+        margin-top: 50px;
+    }
+
+    @include min_width($xl-min) {
+        margin-top: 100px;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: 30px;
+
+    @include min_width($lg-min) {
+        margin-bottom: 50px;
+    }
+
+    @include min_width($xl-min) {
+        margin-bottom: 100px;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: 30px;
+
+    @include min_width($lg-min) {
+        padding-top: 50px;
+    }
+
+    @include min_width($xl-min) {
+        padding-top: 100px;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: 30px;
+
+    @include min_width($lg-min) {
+        padding-bottom: 50px;
+    }
+
+    @include min_width($xl-min) {
+        padding-bottom: 100px;
+    }
+}
+// img classes
+.img-fluid-height {
+    max-height: 100%;
+}
+
+// custom modal
+.custom-modal {
+    .close {
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+    }
+    .modal-content {
+        border-radius: $app-block-border-radius;
+    }
+}
+
+// BORDER CLASSES
+.st-border-default {
+    border-color: $app-border-color !important;
+}
+.st-border-radius-default {
+    border-radius: $app-block-border-radius !important;
+}
+
+// CURSOR
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// page breadcrumbs
+.page-breadcrumbs {
+    margin-top: 6px;
+    > li {
+        color: $dark-text-color;
+        line-height: normal;
+        position: relative;
+        > a {
+            color: $dark-text-color;
+            @include transition;
+            &:hover {
+                color: $primary-color;
+            }
+            i {
+                font-size: 15px;
+            }
+        }
+        &:not(:first-child) {
+            padding-left: 6px;
+        }
+        &:not(:last-child) {
+            padding-right: 16px;
+            &::after {
+                content: ">";
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 17px;
+            }
+        }
+        &:last-child {
+            pointer-events: none !important;
+            > a {
+                pointer-events: none !important;
+            }
+        }
+    }
+}
+
+// app table container
+.app-table-container {
+    .atc-inner {
+        border-radius: 15px;
+        background: #fff;
+    }
+    .atc-top-sec {
+        padding: 10px 15px;
+    }
+
+    .atc-table {
+        table {
+            margin-bottom: 0;
+        }
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid $app-border-color;
+        }
+        tr:last-child {
+            > th,
+            > td {
+                border-bottom: none;
+            }
+        }
+        .table-tag {
+            padding: 6px 15px;
+            display: inline-block;
+            border-radius: 30px;
+            &.orange {
+                background-color: #fc7d5c;
+                color: #fff;
+            }
+            &.yellow {
+                background-color: #fdc43f;
+                color: #fff;
+            }
+            &.blue {
+                background-color: #4d45b5;
+                color: #fff;
+            }
+        }
+        table {
+            tbody {
+                tr {
+                    td {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .column__checkbox {
+            border-left: 4px solid transparent;
+        }
+        tbody {
+            tr.selected {
+                .column__checkbox {
+                    border-left-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .atc-pagination {
+        padding: 15px 15px 25px;
+        .lt {
+        }
+        .pagination {
+            > a {
+                height: 35px;
+                width: 35px;
+                text-decoration: none !important;
+                border-radius: 50%;
+                color: $primary-color;
+                font-size: 13px;
+                @include transition;
+                margin: 0 5px;
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+            > .link {
+                border: 2px solid $app-border-color;
+                &:hover {
+                    border-color: $primary-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .more-options {
+        position: relative;
+        .more-option-dropdown {
+            position: absolute;
+            top: calc(100% + 5px);
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            @include transition;
+            .inner {
+                background: #fff;
+                border-radius: 6px;
+                min-width: 120px;
+                border: 1px solid $app-border-color;
+                overflow: hidden;
+            }
+            .link {
+                padding: 7px 15px;
+                text-decoration: none !important;
+                text-transform: capitalize;
+                font-size: 13px;
+                color: $dark-text-color;
+                @include transition;
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+                &:not(:last-child) {
+                    border-bottom: 1px solid $app-border-color;
+                }
+            }
+        }
+
+        &.active {
+            .st-btn-circle {
+                background-color: darken($color: #efedf8, $amount: 5);
+            }
+            .more-option-dropdown {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .atc-table {
+        tbody {
+            tr {
+                &:last-child,
+                &:nth-last-child(2),
+                &:nth-last-child(3),
+                &:nth-last-child(4),
+                &:nth-last-child(5) {
+                    .more-options {
+                        .more-option-dropdown {
+                            top: initial;
+                            bottom: calc(100% + 5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
