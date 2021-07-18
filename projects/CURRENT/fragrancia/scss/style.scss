@@ -1,0 +1,464 @@
+// sass --watch scss/style.scss:css/style.css --style compact
+@import "components/reset";
+@import "components/fonts";
+@import "components/variables";
+@import "components/mixins";
+@import "components/common";
+
+// GOOGLE FONTS
+// font-family: 'Cinzel', serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-text-color;
+}
+
+// HOMEPAGE CSS
+
+// header
+#header-top-bar {
+    background-color: #363636;
+    padding: 7px 0;
+}
+.header-top-bar {
+    .htb-link {
+        color: #d4d4d4;
+        position: relative;
+        @include transition;
+        &:not(:last-child) {
+            padding-right: 15px;
+            margin-right: 11px;
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                height: calc(100% - 10px);
+                width: 1px;
+                background-color: #d4d4d4;
+                @include transformy(-50%);
+            }
+        }
+    }
+
+    @include max_width($md-max) {
+        .lt-sec,
+        .rt-sec {
+            width: 100%;
+        }
+    }
+}
+
+// header main bar
+#header-main-bar {
+    padding: 10px 0;
+    border-bottom: 1px solid $app-border-color;
+    @include min_width($md-min) {
+        border-width: 2px;
+    }
+}
+.header-main-bar {
+    .logo-sec {
+        @include max_width($xl-max) {
+            width: 180px;
+        }
+        @include max_width($lg-max) {
+            width: 150px;
+        }
+        @include max_width($md-max) {
+            width: 130px;
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    .rt-sec {
+        @include max_width($md-max) {
+            margin-top: -56px;
+        }
+        @include min_width($md-min) {
+            margin-left: auto;
+        }
+    }
+}
+
+// header search
+.header-search {
+    @include max_width($md-max) {
+        margin-top: 15px;
+        padding-right: 60px;
+    }
+    @include min_width($md-min) {
+        padding: 0 10px 0 40px;
+    }
+    @include min_width($lg-min) {
+        padding: 0 30px 0 100px;
+    }
+    .st-form {
+        > input:not([type="radio"]):not([type="checkbox"]) {
+            height: 50px;
+            padding-left: 15px;
+            padding-right: 60px;
+        }
+        > .icon {
+            height: 50px;
+            right: 0;
+        }
+    }
+}
+
+// header cart
+.header-cart {
+    @include max_width($md-max) {
+        margin-left: auto;
+    }
+    @include min_width($md-min) {
+        position: relative;
+        top: 7px;
+    }
+    .hc-link {
+        color: $dark-text-color;
+        @include transition;
+        font-size: 25px;
+        &:hover,
+        &:active {
+            color: #000;
+        }
+    }
+
+    .your-account {
+        width: 50px;
+        @include min_width($md-min) {
+            width: 70px;
+        }
+    }
+
+    .cart-main {
+        width: 140px;
+        padding-left: 10px;
+        @include min_width($md-min) {
+            padding-left: 20px;
+        }
+        > span {
+            line-height: normal;
+        }
+        .hc-link {
+            > span {
+                font-size: 15px;
+            }
+
+            .count {
+                height: 19px;
+                width: 19px;
+                padding-top: 1px;
+                overflow: hidden;
+                background-color: $primary-color;
+                font-style: normal;
+                font-size: 10px;
+                color: #fff;
+                border-radius: 50%;
+                top: -8px;
+                left: 13px;
+            }
+        }
+    }
+}
+
+// header menu bar
+#header-menu-bar {
+}
+.header-menu-bar {
+    @include min_width($md-min) {
+        padding: 15px 0;
+    }
+    .nav-item {
+        @include st-ff-montserrat;
+        font-weight: 700;
+        font-size: 15px;
+        color: $dark-text-color;
+        margin: 0 15px;
+        @include transition;
+        @include min_width($lg-min) {
+            font-size: 17px;
+        }
+    }
+    .nav-link {
+        color: $dark-text-color;
+        padding: 0;
+        @include max_width($md-max) {
+            padding: 10px 0;
+        }
+        @include transition;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    .home {
+        font-size: 23px;
+        .nav-link {
+            color: $secondary-color !important;
+        }
+    }
+}
+
+// home slider
+#home-slider {
+}
+.home-slider {
+    .slider-item {
+        .caption {
+            top: 0;
+            left: 0;
+            @include max_width($md-max) {
+                background: rgba(255, 255, 255, 0.8);
+            }
+            > .inner {
+                @include max_width($md-max) {
+                    text-align: center;
+                }
+            }
+        }
+        .head {
+            font-size: 18px;
+            color: #000;
+            line-height: normal;
+            @include min_width($md-min) {
+                font-size: 25px;
+            }
+            @include min_width($lg-min) {
+                font-size: 40px;
+            }
+            span {
+                margin-top: 5px;
+                font-size: 30px;
+                font-weight: 600;
+                @include min_width($md-min) {
+                    font-size: 45px;
+                }
+                @include min_width($lg-min) {
+                    font-size: 57px;
+                }
+            }
+        }
+        .desc {
+            font-size: 15px;
+            @include min_width($md-min) {
+                font-size: 20px;
+            }
+        }
+
+        .st-btn {
+            @include min_width($md-min) {
+                padding: 14px 30px 13px;
+            }
+        }
+    }
+}
+
+// four section
+#four-section {
+}
+.four-section {
+    .item {
+        .img {
+            width: 70px;
+        }
+        .text {
+            padding-left: 15px;
+            color: #5a5254;
+        }
+    }
+}
+
+// deals sec
+#home-deals-sec {
+    @include max_width($md-max) {
+        padding-bottom: 0 !important;
+    }
+}
+.home-deals-sec {
+    @include max_width($md-max) {
+        background: transparent url("../images/home-discount-sec-bg.png")
+            no-repeat 0 0 / cover fixed;
+    }
+    > img {
+        @include max_width($md-max) {
+            display: none;
+        }
+    }
+    .caption {
+        @include min_width($md-min) {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        > .inner {
+            padding-top: 15px;
+            padding-bottom: 20px;
+            @include min_width($md-min) {
+                padding-left: 30px;
+            }
+            @include min_width($lg-min) {
+                padding-left: 100px;
+            }
+        }
+    }
+    .head {
+        font-size: 37px;
+        @include min_width($md-min) {
+            font-size: 43px;
+        }
+    }
+    .desc {
+        color: #a6a6a6;
+        font-size: 18px;
+
+        @include min_width($md-min) {
+            font-size: 20px;
+        }
+    }
+}
+
+// home detail sec1
+#home-detail-sec1 {
+    background: transparent url("../images/home-detail-sec1-bg.jpg") no-repeat
+        left center / 50%;
+}
+.home-detail-sec1 {
+    @include min_width($md-min) {
+        padding: 50px 0;
+    }
+    @include min_width($lg-min) {
+        padding: 100px 0;
+    }
+
+    .caption {
+        background: rgb(202, 229, 62);
+        background: linear-gradient(
+            90deg,
+            rgba(202, 229, 62, 1) 0%,
+            rgba(145, 176, 32, 1) 100%
+        );
+
+        padding: 50px 15px;
+        @include min_width($md-min) {
+            left: -50px;
+            position: relative;
+        }
+        @include min_width($lg-min) {
+            left: -100px;
+            min-height: 500px;
+        }
+        .head {
+            color: #000;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: normal;
+            @include min_width($lg-min) {
+                font-size: 45px;
+            }
+        }
+        .desc {
+            color: #101010;
+            font-size: 20px;
+            @include min_width($lg-min) {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+// home products
+#home-products {
+}
+.home-products {
+}
+
+// newsletter sec
+#newsletter-sec {
+    background-color: #f1f1f1;
+}
+.newsletter-sec {
+    .lt-sec {
+        .sm-head {
+            font-style: italic;
+        }
+        .head {
+            color: #54595f;
+            font-size: 32px;
+        }
+        .desc {
+            color: #54595f;
+        }
+    }
+
+    .rt-sec {
+        input,
+        .st-btn {
+            height: 45px !important;
+        }
+    }
+}
+
+// footer
+#footer {
+    background-color: #000;
+}
+
+.footer {
+    .footer-logo {
+    }
+
+    .desc {
+        p {
+            color: #a9a9a9;
+            margin-left: auto;
+            margin-right: auto;
+            @include min_width($md-min) {
+                max-width: 70%;
+            }
+        }
+    }
+
+    .social-sec {
+        .social-link {
+            height: 27px;
+            width: 27px;
+            background-color: #4e5658;
+            @include transition;
+            color: #fff;
+            font-size: 13px;
+            // border-radius: $app-block-border-radius;
+            &:hover {
+                background-color: lighten($color: #4e5658, $amount: 20%);
+            }
+        }
+    }
+
+    .footer-links-wrapper {
+        .footer-link {
+            color: #a9a9a9;
+            @include transition(0.1s);
+            margin: 0 10px;
+            @include min_width($lg-min) {
+                margin: 0 20px;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .copyright {
+        p {
+            color: #a9a9a9;
+        }
+    }
+}

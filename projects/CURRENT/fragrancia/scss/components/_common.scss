@@ -1,0 +1,169 @@
+/* SCROLLBAR */
+@import "styles/scrollbar";
+
+/* COLORS STYLES */
+@import "styles/colors";
+
+/* BUTTONS STYLES */
+@import "styles/buttons";
+
+/* TEXT STYLES */
+@import "styles/text";
+
+/* HEADING STYLES */
+@import "styles/headings";
+
+/* FORMS STYLES */
+@import "styles/form";
+
+// common margin and padding
+.ST_def-mar-T,
+.ST_def-mar-TB {
+    margin-top: 20px;
+
+    @include min_width($lg-min) {
+        margin-top: 35px;
+    }
+
+    @include min_width($xl-min) {
+        margin-top: 50px;
+    }
+}
+
+.ST_def-mar-B,
+.ST_def-mar-TB {
+    margin-bottom: 20px;
+
+    @include min_width($lg-min) {
+        margin-bottom: 35px;
+    }
+
+    @include min_width($xl-min) {
+        margin-bottom: 50px;
+    }
+}
+
+.ST_def-pad-T,
+.ST_def-pad-TB {
+    padding-top: 20px;
+
+    @include min_width($lg-min) {
+        padding-top: 35px;
+    }
+
+    @include min_width($xl-min) {
+        padding-top: 50px;
+    }
+}
+
+.ST_def-pad-B,
+.ST_def-pad-TB {
+    padding-bottom: 20px;
+
+    @include min_width($lg-min) {
+        padding-bottom: 35px;
+    }
+
+    @include min_width($xl-min) {
+        padding-bottom: 50px;
+    }
+}
+
+// img classes
+.img-fluid-height {
+    max-height: 100%;
+}
+// owl dots
+.owl-carousel {
+    .owl-dots {
+        margin-top: 25px;
+        line-height: normal;
+        text-align: center;
+        .owl-dot {
+            height: 11px;
+            width: 11px;
+            background-color: $starRatingNoRatingColor;
+            display: inline-block;
+            margin: 0 5px;
+            border-radius: 50%;
+            vertical-align: top;
+            line-height: normal !important;
+            outline: none !important;
+            @include transition;
+            opacity: 0.5;
+            &:focus {
+                outline: none !important;
+            }
+            &:hover,
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// navbar toggler
+.navbar-toggler {
+    background: $primary-color;
+    color: #fff;
+    font-size: 28px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: $app-block-border-radius;
+    i {
+        line-height: 0;
+    }
+
+    @include max_width($md-max) {
+        position: absolute;
+        top: -61px;
+        right: 0;
+    }
+}
+
+// st single product item
+.st-single-product-item {
+    >.inner {
+        border: 1px solid #ededed;
+        padding: 15px;
+        @include min_width($md-min) {
+            padding: 25px;
+        }
+    }
+    .img-sec {
+        height: 230px;
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+    }
+    .off-percent {
+        top: 10px;
+        left: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: $secondary-color;
+        color: #fff;
+    }
+    .text-sec {
+        .name,
+        .price,
+        .qty label {
+            color: #2d2d2d;
+        }
+
+        .price {
+            .old-price {
+                color: #a5a5a5;
+                text-decoration: line-through;
+            }
+        }
+
+        .qty {
+            input {
+                width: 80px;
+            }
+        }
+    }
+}
