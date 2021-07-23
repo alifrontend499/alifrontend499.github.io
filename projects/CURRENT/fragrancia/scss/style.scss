@@ -79,7 +79,7 @@ body {
 
     .rt-sec {
         @include max_width($md-max) {
-            margin-top: -56px;
+            margin-top: -40px;
         }
         @include min_width($md-min) {
             margin-left: auto;
@@ -139,10 +139,14 @@ body {
     }
 
     .cart-main {
-        width: 140px;
+        width: 100px;
         padding-left: 10px;
+        padding-top: 5px;
+
         @include min_width($md-min) {
+            width: 140px;
             padding-left: 20px;
+            padding-top: 0;
         }
         > span {
             line-height: normal;
@@ -164,6 +168,11 @@ body {
                 border-radius: 50%;
                 top: -8px;
                 left: 13px;
+            }
+        }
+        @include max_width($md-max) {
+            .info-text {
+                display: none !important;
             }
         }
     }
@@ -282,9 +291,11 @@ body {
     }
 }
 .home-deals-sec {
+    border-radius: 30px;
     @include max_width($md-max) {
+        border-radius: 10px;
         background: transparent url("../images/home-discount-sec-bg.png")
-            no-repeat 0 0 / cover fixed;
+            no-repeat 0 0 / cover;
     }
     > img {
         @include max_width($md-max) {
@@ -311,7 +322,7 @@ body {
         }
     }
     .head {
-        font-size: 37px;
+        font-size: 34px;
         @include min_width($md-min) {
             font-size: 43px;
         }
@@ -319,6 +330,9 @@ body {
     .desc {
         color: #a6a6a6;
         font-size: 18px;
+        @include max_width($md-max) {
+            max-width: 90%;
+        }
 
         @include min_width($md-min) {
             font-size: 20px;
@@ -459,6 +473,182 @@ body {
     .copyright {
         p {
             color: #a9a9a9;
+        }
+    }
+}
+
+// page - not found
+#not-found {
+}
+.not-found {
+    background-color: $gray-bg-color;
+    padding: 30px 15px;
+    margin: 0 auto;
+    @include min_width($md-min) {
+        max-width: 550px;
+    }
+    @include min_width($lg-min) {
+        padding: 60px 30px;
+    }
+    .head {
+        font-size: 80px;
+        line-height: normal;
+        color: #b3abb6;
+        @include min_width($md-min) {
+            font-size: 100px;
+            line-height: 90px;
+        }
+    }
+    .desc-md {
+        font-size: 30px;
+        position: relative;
+        top: -5px;
+        padding-bottom: 17px;
+        margin-bottom: 15px;
+        color: #54595f;
+        &::after {
+            content: "";
+            height: 2px;
+            width: 40px;
+            background-color: $secondary-color;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include transformx(-50%);
+        }
+    }
+    .desc-sm {
+        font-size: 17px;
+        color: #54595f;
+    }
+}
+
+// page - cart
+#st-cart {
+}
+.st-cart {
+    .lt-sec {
+        @include min_width($lg-min) {
+            padding-right: 50px;
+        }
+    }
+    .rt-sec {
+        width: 100%;
+        margin-top: 20px;
+        @include min_width($lg-min) {
+            margin-top: 0;
+            width: 350px;
+        }
+        > .inner {
+            padding: 20px;
+            background-color: #fcf3e0;
+            border-radius: $app-block-border-radius;
+        }
+
+        .frac {
+            border-bottom: 1px solid $secondary-color;
+            margin-bottom: 20px;
+            padding: 0 5px 20px;
+        }
+    }
+
+    .cart-table {
+        th,
+        td {
+            border: none;
+            border-bottom: 1px solid $app-border-color;
+            padding: 15px 10px;
+        }
+        td {
+            padding-bottom: 20px;
+        }
+        .details {
+            .img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+// page - payment
+#st-payment {
+}
+.st-payment {
+    .lt-sec {
+        @include min_width($lg-min) {
+            padding-right: 50px;
+        }
+
+        .frac {
+            border-bottom-width: 2px;
+            padding-bottom: 15px;
+            @include min_width($lg-min) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .rt-sec {
+        width: 100%;
+        margin-top: 20px;
+        @include min_width($lg-min) {
+            margin-top: 0;
+            width: 350px;
+        }
+        > .inner {
+            padding: 20px;
+            background-color: #fcf3e0;
+            border-radius: $app-block-border-radius;
+        }
+
+        .frac {
+            border-bottom: 1px solid $secondary-color;
+            margin-bottom: 20px;
+            padding: 0 5px 20px;
+        }
+    }
+}
+
+// page contact us
+#contact-us {
+}
+.contact-us {
+    .lt-sec {
+        @include min_width($md-min) {
+            width: 300px;
+        }
+        @include min_width($lg-min) {
+            width: 350px;
+        }
+        .frac {
+            padding: 15px;
+            @include min_width($lg-min) {
+                padding: 25px;
+            }
+
+            .st-main-heading {
+                .icon {
+                    border-width: 2px !important;
+                    height: 40px;
+                    width: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .rt-sec {
+        @include min_width($md-min) {
+            padding-left: 15px;
+        }
+        @include min_width($lg-min) {
+            padding-left: 35px;
+        }
+
+        .contact-form {
+            input,
+            .st-btn {
+                height: 50px;
+            }
         }
     }
 }

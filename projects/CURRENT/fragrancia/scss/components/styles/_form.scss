@@ -8,6 +8,7 @@
         // box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
         // border: none;
         padding: 10px 15px;
+        font-size: 15px;
         color: $dark-text-color;
         @include transition(0.1s);
 
@@ -37,7 +38,8 @@
 
     > input:not([type="radio"]):not([type="checkbox"]),
     > select {
-        height: 42px;
+        // height: 42px;
+        height: 45px;
     }
 
     &.st-form-rounded {
@@ -136,13 +138,17 @@
 
     &.materialize-like-input {
         > label {
-            font-weight: 600;
-            font-size: 13px;
+            font-size: 15px;
             color: $light-text-color;
             position: absolute;
-            top: 12px;
-            left: 0;
             @include transition(0.2s);
+        }
+        &.rt {
+            > label {
+                @include min_width($md-min) {
+                    left: 8px !important;
+                }
+            }
         }
         > input:not([type="radio"]):not([type="checkbox"]),
         > select,
@@ -156,15 +162,25 @@
             padding-bottom: 0;
             border-radius: 0;
             box-shadow: none;
-            &:focus,
-            &:not(:empty),
-            &:valid {
+            &:focus {
                 border-color: $primary-color;
                 & + label {
                     font-size: 12px;
-                    top: -5px;
-                    color: $dark-text-color;
+                    top: -7px;
                 }
+            }
+        }
+
+        &.empty {
+            label {
+                top: 12px;
+                left: 0;
+            }
+        }
+        &:not(.empty) {
+            label {
+                font-size: 12px;
+                top: -7px;
             }
         }
 
@@ -177,60 +193,14 @@
     }
 }
 
-// ADMIN CHECKBOX
-.admin-checkbox {
+.st-checkbox {
     cursor: pointer;
     .box {
         height: 18px;
         width: 18px;
         border: 1px solid $app-border-color-input;
         border-radius: 3px;
-        margin-right: 7px;
-        @include transition(0.2s);
-        &::after {
-            content: "";
-            height: calc(100% - 2px);
-            width: calc(100% - 2px);
-            display: block;
-            margin: 1px 0 0 1px;
-            border: 1px dotted $app-border-color-input;
-            border-radius: 3px;
-            @include transition(0.2s);
-        }
-    }
-    .text {
-        color: $light-text-color;
-        line-height: normal;
-        position: relative;
-        top: 1px;
-    }
-    &:hover,
-    & > input:checked + {
-        .box {
-            border-color: $dark-text-color;
-        }
-    }
-    & > input:checked {
-        + .box {
-            &::after {
-                border-color: $secondary-color;
-                background-color: $secondary-color;
-            }
-        }
-        ~ .text {
-            color: #000;
-        }
-    }
-}
-
-.admin-checkbox-with-check {
-    cursor: pointer;
-    .box {
-        height: 18px;
-        width: 18px;
-        border: 1px solid $app-border-color-input;
-        border-radius: 3px;
-        margin-right: 7px;
+        margin-right: 10px;
         @include transition(0.2s);
         i {
             opacity: 0;

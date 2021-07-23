@@ -8,6 +8,20 @@
         }
     }
 
+    // extra small heading
+    &.st-heading-xs {
+        .st-heading {
+            font-size: 16px;
+        }
+    }
+
+    // small heading
+    &.st-heading-sm {
+        .st-heading {
+            font-size: 20px;
+        }
+    }
+
     // medium heading
     &.st-heading-md {
         .st-heading {

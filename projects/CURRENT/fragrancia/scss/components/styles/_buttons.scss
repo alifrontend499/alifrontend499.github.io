@@ -229,8 +229,8 @@ button.no-browser-style {
     // btn outlined black
     &.st-btn-outlined-black {
         background-color: transparent;
-        border: 1px solid $dark-text-color;
-        color: $dark-text-color;
+        border: 1px solid $app-border-color;
+        color: $primary-color;
         &:hover {
             background-color: $dark-text-color;
             color: #fff;
@@ -284,12 +284,12 @@ button.no-browser-style {
         color: #fff;
 
         &:hover {
-            background-color: darken($color: #333, $amount: 5);
+            background-color: darken($color: $primary-color, $amount: 0);
             color: #fff;
         }
 
         &:active {
-            background-color: darken($color: #333, $amount: 10);
+            background-color: darken($color: $primary-color, $amount: 10);
             color: #fff;
         }
 
