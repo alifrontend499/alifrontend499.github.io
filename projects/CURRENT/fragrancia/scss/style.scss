@@ -219,7 +219,10 @@ body {
 #home-slider {
 }
 .home-slider {
-    .slider-item {
+    .swiper-slide {
+        img {
+            width: 100%;
+        }
         .caption {
             top: 0;
             left: 0;
@@ -648,6 +651,86 @@ body {
             input,
             .st-btn {
                 height: 50px;
+            }
+        }
+    }
+}
+
+// page: product listing
+#products-listing {
+}
+.products-listing {
+    .left-bar {
+        width: 100%;
+        @include min_width($md-min) {
+            width: 250px;
+            padding-right: 15px;
+            position: -webkit-sticky !important;
+            position: sticky !important;
+            top: 10px;
+        }
+        @include min_width($lg-min) {
+            width: 300px;
+        }
+    }
+}
+
+// page: products view
+#products-view {
+}
+.products-view {
+    .lt-sec {
+        .main-slides {
+            margin-bottom: 10px;
+            border: 1px solid #dddddd;
+            border-radius: $app-block-border-radius;
+            .swiper-slide {
+                padding: 20px;
+                @include min_width($lg-min) {
+                    height: 400px;
+                }
+                img {
+                    width: auto;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .thumb-slides {
+            .swiper-slide {
+                border: 2px solid #dddddd;
+                border-radius: $app-block-border-radius;
+                overflow: hidden;
+                height: 120px;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                &.swiper-slide-thumb-active {
+                    border-color: $primary-color;
+                }
+                img {
+                    width: auto;
+                    max-height: 100%;
+                }
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                &:after {
+                    font-size: 30px;
+                    color: #dddddd;
+                    @include transition;
+                }
+                &:hover::after {
+                    color: $primary-color;
+                }
+            }
+
+            .swiper-button-next {
+                right: 5px;
+            }
+            .swiper-button-prev {
+                left: 5px;
             }
         }
     }

@@ -270,7 +270,7 @@
         left: 0;
         z-index: 1;
         // padding: 15px;
-        >.container {
+        > .container {
             @include max_width($xl-max) {
                 border-left: none !important;
             }
@@ -291,6 +291,49 @@
         }
         .desc {
             color: #fff;
+        }
+    }
+}
+
+// st pagination
+.st-pagination {
+    .pagi-link {
+        text-decoration: none;
+        height: 35px;
+        width: 35px;
+        margin: 0 1px;
+        color: $dark-text-color;
+        @include transition;
+        &.first,
+        &.last {
+            border: 1px solid $app-border-color;
+            border-radius: $app-block-border-radius;
+            color: $primary-color;
+            font-size: 16px;
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+                border-color: $primary-color;
+            }
+        }
+        &.active {
+            font-weight: 600;
+        }
+    }
+
+    .rt {
+        @include min_width($lg-min) {
+            margin-left: auto;
+        }
+        select {
+            height: 35px;
+            width: 80px;
+            padding: 0 8px;
+        }
+        .text {
+            &.page {
+                width: 55px;
+            }
         }
     }
 }
