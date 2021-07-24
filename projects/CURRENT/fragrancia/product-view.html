@@ -93,12 +93,12 @@
                                     class="text-decoration-none hc-link position-relative d-inline-flex align-items-center"
                                     title="Cart">
                                     <i class="feather-shopping-cart"></i>
-                                    <span class="ml-2">$ 0.00</span>
+                                    <span class="ml-2">&#8377; 0.00</span>
                                     <i
                                         class="count position-absolute d-flex align-items-center justify-content-center font-weight-600">1</i>
                                 </a>
                                 <span class="info-text d-block st-text-secondary font-size-13 font-weight-600 mt-1">
-                                    Spend $79.95 to get free delivery
+                                    Spend &#8377;79.95 to get free delivery
                                 </span>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
         <div class="container">
             <div class="products-view row">
                 <!-- left sec -->
-                <div class="lt-sec col-12 col-md-4 col-lg-5">
+                <div class="lt-sec col-12 col-md-5">
                     <!-- main slides -->
                     <div class="swiper-container main-slides">
                         <div class="swiper-wrapper">
@@ -224,10 +224,10 @@
                     </div>
                 </div>
 
-                <!-- left sec -->
-                <div class="lt-sec col-12 col-md-8 col-lg-7">
+                <!-- right sec -->
+                <div class="rt-sec col-12 col-md-7">
                     <div class="inner st-ff-montserrat">
-                        <p class="product-heading font-weight-600 mb-2">
+                        <p class="product-heading font-weight-700 mb-3">
                             Fragranicia Ambience Sweet Lemon
                             2x200ml
                         </p>
@@ -253,12 +253,12 @@
                         </div>
 
                         <!-- price -->
-                        <p class="price font-weight-600 font-size-18 mb-3">
-                            $450 <span class="old-price ml-1">$550</span>
+                        <p class="price font-weight-700 mb-3">
+                            &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                         </p>
 
                         <!-- select quantity -->
-                        <div class="select-quantity d-flex mb-3">
+                        <div class="select-quantity d-flex mb-3 mb-lg-4">
                             <!-- quantity select controls -->
                             <div class="quantity-select-controls d-inline-flex align-items-center text-left">
                                 <button type="button" class="minus btn st-btn st-btn-white rounded-0">
@@ -269,27 +269,27 @@
                                     <i class="feather-plus"></i>
                                 </button>
                             </div>
-                            <button class="btn st-btn st-btn-primary ml-3">Add to cart</button>
+                            <button class="add-btn btn st-btn st-btn-primary font-weight-600 ml-3">Add to cart</button>
                         </div>
 
                         <!-- product details -->
                         <div class="product-details-tabs mb-3">
                             <ul class="nav nav-tabs border-0 mb-2" id="myTab" role="tablist">
                                 <li class="nav-item mb-0 border-0">
-                                    <a class="nav-link pl-0 pr-3 pr-lg-4 mr-lg-2 font-weight-600 text-uppercase border-0 active"
+                                    <a class="nav-link font-size-16 pl-0 pr-3 pr-lg-4 mr-lg-2 font-weight-700 text-uppercase border-0 active"
                                         id="description-tab" data-toggle="tab" href="#description" role="tab"
                                         aria-controls="description" aria-selected="true">description</a>
                                 </li>
                                 <li class="nav-item mb-0 border-0">
-                                    <a class="nav-link pl-0 pr-3 pr-lg-4 mr-lg-2 font-weight-600 text-uppercase border-0"
+                                    <a class="nav-link font-size-16 pl-0 pr-3 pr-lg-4 mr-lg-2 font-weight-700 text-uppercase border-0"
                                         id="shipping-tab" data-toggle="tab" href="#shipping" role="tab"
-                                        aria-controls="shipping" aria-selected="false">shipping</a>
+                                        aria-controls="shipping" aria-selected="false">shipping & return</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="description" role="tabpanel"
                                     aria-labelledby="description-tab">
-                                    <p class="font-weight-600">
+                                    <p class="font-weight-600 st-text-light font-size-15">
                                         Unleash your inner #PartyAnimal with this amazing concoction of notes and aromas
                                         created for the nightlife lovers just like you. While the citruses keep you
                                         fresh,
@@ -299,7 +299,7 @@
                                     </p>
                                 </div>
                                 <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
-                                    <p class="font-weight-600">
+                                    <p class="font-weight-600 st-text-light font-size-15">
                                         Unleash your inner #PartyAnimal with this amazing concoction of notes and aromas
                                         created for the nightlife lovers just like you. While the citruses keep you
                                         fresh,
@@ -312,19 +312,23 @@
                         </div>
 
                         <!-- add info -->
-                        <div class="add-info d-flex mb-3">
-                            <div class="item">
-                                <div class="icon"></div>
-                                <div class="text">
-                                    <p class="head font-weight-600 mb-1">Free Delivery</p>
-                                    <p class="desc">On order over $79.95</p>
+                        <div class="add-info d-flex border-top border-bottom st-border-default py-3 mb-3">
+                            <div class="item d-flex align-items-center mr-3 mr-lg-4">
+                                <div class="icon st-text-secondary">
+                                    <i class="feather-shopping-cart"></i>
+                                </div>
+                                <div class="text media-body pl-2">
+                                    <p class="head font-weight-700">Free Delivery</p>
+                                    <p class="desc st-text-light">On order over &#8377;79.95</p>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="icon"></div>
-                                <div class="text">
-                                    <p class="head font-weight-600 mb-1">Next day delivery</p>
-                                    <p class="desc">Additional charges $3.95</p>
+                            <div class="item d-flex align-items-center">
+                                <div class="icon st-text-secondary">
+                                    <i class="feather-truck"></i>
+                                </div>
+                                <div class="text media-body pl-2">
+                                    <p class="head font-weight-700">Next day delivery</p>
+                                    <p class="desc st-text-light">Additional charges &#8377;3.95</p>
                                 </div>
                             </div>
                         </div>
@@ -336,14 +340,275 @@
         </div>
     </section>
 
-    <!-- home products -->
+    <!-- st ratings count -->
+    <section id="st-ratings-count" class="ST_def-pad-TB">
+        <div class="container">
+
+            <div class="st-ratings-count">
+                <div class="inner row">
+                    <!-- heading -->
+                    <div class="col-12 st-main-heading st-heading-sm mb-3 mb-lg-4">
+                        <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase d-flex">
+                            <i class="feather-users font-size-17 position-relative mr-3" style="top: 6px"></i>
+                            <span>review & rating</span>
+                        </p>
+                    </div>
+
+                    <!-- current rating -->
+                    <div class="col-12 col-md-8 col-lg-5 user-rating-current d-flex flex-wrap align-items-center">
+                        <div class="ct-sec w-100 mb-2 mb-md-3 d-flex">
+                            <!-- heading -->
+                            <!-- <p class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex">
+                                <span>Ratings</span>
+                                <i class="feather-users font-size-16 ml-3 mt-1"></i>
+                            </p> -->
+
+                            <a href="" data-href="#customer-reviews"
+                                class="ml-auto font-weight-600 font-size-14 st-text-primary slide-to-link">View
+                                all
+                                Reviews</a>
+                        </div>
+                        <!-- left sec -->
+                        <div class="lt-sec pr-2">
+                            <p class="head">
+                                <span>4.4</span>
+                                <i class="feather-star font-size-20 ml-1 st-text-primary"></i>
+                            </p>
+                            <p class="desc font-size-13 mt-1 st-text-light">27 Varified Buyers
+                            </p>
+                        </div>
+                        <!-- right sec -->
+                        <div class="rt-sec media-body">
+                            <div class="inner">
+                                <!-- frac -->
+                                <div class="frac d-flex align-items-center mb-1 five-star">
+                                    <!-- count -->
+                                    <span class="d-flex font-size-12 st-text-light pr-2">
+                                        <span>5</span>
+                                        <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                    </span>
+                                    <!-- progress bar -->
+                                    <div class="progress media-body">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!-- count -->
+                                    <a href="#" data-href="#products-reviews-section"
+                                        class="slide-to-link d-flex font-size-12 pl-2 st-text-dark"
+                                        style="min-width: 30px;">
+                                        18
+                                    </a>
+                                </div>
+
+                                <!-- frac -->
+                                <div class="frac d-flex align-items-center mb-1 four-star">
+                                    <!-- count -->
+                                    <span class="d-flex font-size-12 st-text-light pr-2">
+                                        <span>4</span>
+                                        <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                    </span>
+                                    <!-- progress bar -->
+                                    <div class="progress media-body">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!-- count -->
+                                    <a href="#" data-href="#products-reviews-section"
+                                        class="slide-to-link d-flex font-size-12 pl-2 st-text-dark"
+                                        style="min-width: 30px;">
+                                        5
+                                    </a>
+                                </div>
+
+                                <!-- frac -->
+                                <div class="frac d-flex align-items-center mb-1 three-star">
+                                    <!-- count -->
+                                    <span class="d-flex font-size-12 st-text-light pr-2">
+                                        <span>3</span>
+                                        <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                    </span>
+                                    <!-- progress bar -->
+                                    <div class="progress media-body">
+                                        <div class="progress-bar" role="progressbar" style="width: 10%"
+                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!-- count -->
+                                    <a href="#" data-href="#products-reviews-section"
+                                        class="slide-to-link d-flex font-size-12 pl-2 st-text-dark"
+                                        style="min-width: 30px;">
+                                        2
+                                    </a>
+                                </div>
+
+                                <!-- frac -->
+                                <div class="frac d-flex align-items-center mb-1 two-star">
+                                    <!-- count -->
+                                    <span class="d-flex font-size-12 st-text-light pr-2">
+                                        <span>2</span>
+                                        <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                    </span>
+                                    <!-- progress bar -->
+                                    <div class="progress media-body">
+                                        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!-- count -->
+                                    <a href="#" data-href="#products-reviews-section"
+                                        class="slide-to-link d-flex font-size-12 pl-2 st-text-dark"
+                                        style="min-width: 30px;">
+                                        1
+                                    </a>
+                                </div>
+
+                                <!-- frac -->
+                                <div class="frac d-flex align-items-center one-star">
+                                    <!-- count -->
+                                    <span class="d-flex font-size-12 st-text-light pr-2">
+                                        <span>1</span>
+                                        <i class="feather-star font-size-10 mt-1 ml-1"></i>
+                                    </span>
+                                    <!-- progress bar -->
+                                    <div class="progress media-body">
+                                        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <!-- count -->
+                                    <a href="#" data-href="#products-reviews-section"
+                                        class="slide-to-link d-flex font-size-12 pl-2 st-text-dark"
+                                        style="min-width: 30px;">
+                                        1
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- current rating -->
+                    <div
+                        class="col-12 col-md-4 col-lg-7 write-user-rating d-flex flex-wrap align-items-center justify-content-md-center mt-3 mt-lg-0">
+                        <div class="inner text-center">
+                            <p
+                                class="head font-weight-600 text-uppercase font-size-15 st-text-dark d-flex mb-2 mb-md-3">
+                                Rate this product</p>
+                            <a href="#"
+                                class="btn st-btn st-btn-primary d-flex align-items-center justify-content-center"
+                                data-toggle="modal" data-target="#writeReviewModal">
+                                <i class="feather-edit"></i>
+                                <span class="ml-2">Write a Review</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- st ratings count -->
+    <section id="customer-reviews" class="ST_def-pad-T">
+        <div class="container">
+            <div class="customer-reviews ST_def-pad-B border-bottom st-border-default">
+                <!-- heading -->
+                <div class="st-main-heading st-heading-sm mb-3 mb-lg-4">
+                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase d-flex">
+                        <i class="feather-users font-size-17 position-relative mr-3" style="top: 6px"></i>
+                        <span>customer reviews</span>
+                    </p>
+                </div>
+
+                <div class="all-reviews">
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner border st-border-default">
+                            <p class="title st-ff-montserrat font-size-16 font-weight-700 mb-2">Awesome</p>
+                            <!-- rating container -->
+                            <div class="rating-container d-flex flex-wrap mb-2">
+                                <!-- star rating -->
+                                <ul class="st-star-rating list-unstyled d-flex">
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                    <li class="font-size-14">
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                </ul>
+                                <!-- auther -->
+                                <p class="auther font-size-15 st-text-light font-weight-600">By anurag khandal</p>
+
+                                <!-- date -->
+                                <p class="date font-size-15 st-text-light font-weight-600">June 12, 2021 05:06:00 AM</p>
+                            </div>
+                            <p class="review font-size-16 st-text-light font-weight-600">
+                                When you see the bottle, you will not be able to think about anything. It has a
+                                refreshing
+                                citrusy scent which is pretty strong and great for evenings. Must try for all!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner border st-border-default">
+                            <p class="title st-ff-montserrat font-size-16 font-weight-700 mb-2">Awesome</p>
+                            <!-- rating container -->
+                            <div class="rating-container d-flex flex-wrap mb-2">
+                                <!-- star rating -->
+                                <ul class="st-star-rating list-unstyled d-flex">
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li class="mr-1 font-size-14">
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                    <li class="font-size-14">
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                </ul>
+                                <!-- auther -->
+                                <p class="auther font-size-15 st-text-light font-weight-600">By anurag khandal</p>
+
+                                <!-- date -->
+                                <p class="date font-size-15 st-text-light font-weight-600">June 12, 2021 05:06:00 AM</p>
+                            </div>
+                            <p class="review font-size-16 st-text-light font-weight-600">
+                                When you see the bottle, you will not be able to think about anything. It has a
+                                refreshing
+                                citrusy scent which is pretty strong and great for evenings. Must try for all!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn st-btn st-btn-primary text-capitalize">read
+                            more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular products -->
     <section id="popular-products" class="ST_def-pad-TB">
         <div class="container">
             <div class="popular-products">
                 <div class="st-main-heading st-ff-montserrat font-weight-600 text-center mb-3 mb-lg-4">
                     <p class="st-heading">Popular Related Products</p>
                 </div>
-
 
                 <div class="popular-products-slider overflow-hidden" id="popular-products-slider">
                     <div class="swiper-wrapper">
@@ -368,7 +633,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -403,7 +668,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -443,7 +708,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -478,7 +743,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -518,7 +783,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -553,7 +818,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -644,6 +909,97 @@
         </div>
     </footer>
 
+    <!-- modals -->
+    <!-- WRITE REVIEW MODAL -->
+    <div class="modal fade custom-modal" id="writeReviewModal" tabindex="-1" role="dialog"
+        aria-labelledby="writeReviewModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="feather-x"></i>
+                </button>
+                <div class="modal-body">
+
+                    <!-- heading -->
+                    <div class="st-main-heading st-heading-sm mb-3">
+                        <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                            Write a review
+                        <p class="desc mt-1">
+                            Rate your overall experience with the product
+                        </p>
+                        </p>
+                    </div>
+
+                    <!-- modal-content -->
+                    <div class="write-review-modal-conten">
+                        <p class="font-weight-600 mb-1 font-size-12">Rate Product</p>
+                        <ul class="star-rating-ul list-unstyled d-inline-flex flex-wrap">
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="star-rating" class="d-none">
+                                    <span class="d-block">
+                                        <img src="images/icons/icon-star-gray.png" alt="" class="img-fluid gray">
+                                        <img src="images/icons/icon-star-coloured.png" alt="" class="img-fluid colured">
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="st-form mt-3 mb-3">
+                            <input type="text" name="" id="" class="form-control" placeholder="Title">
+                        </div>
+                        <div class="st-form">
+                            <textarea rows="3" class="form-control"
+                                placeholder="Help others make better choice. Write a review"></textarea>
+                        </div>
+
+                        <div class="btns">
+                            <button class="btn st-btn st-btn-primary font-size-16 mt-4"
+                                style="min-width: 100px;">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
@@ -658,11 +1014,27 @@
             // thumb slider
             var swiper = new Swiper(".thumb-slides", {
                 loop: true,
-                spaceBetween: 10,
-                slidesPerView: 4,
                 freeMode: true,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 15,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 15,
+                    },
+                },
             });
             // main slider
             var swiper2 = new Swiper(".main-slides", {
@@ -681,18 +1053,33 @@
             $('.go-to-rating > a').click(function (ev) {
                 ev.preventDefault()
                 $('html, body').animate({
-                    scrollTop: $('.ratings-section').offset().top - 30
+                    scrollTop: $('.st-ratings-count').offset().top - 30
                 }, 1000)
             })
 
             var popularProductsSlider = new Swiper("#popular-products-slider", {
-                slidesPerView: 4,
-                spaceBetween: 30,
                 grabCursor: true,
                 loop: true,
                 autoplay: {
                     delay: 2000,
                     pauseOnMouseEnter: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
                 },
             });
         })

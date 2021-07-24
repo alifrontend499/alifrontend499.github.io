@@ -9,6 +9,8 @@
 
     <!-- FEATHER ICONS -->
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/animate/animate.min.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- SWIPPER JS -->
@@ -28,17 +30,18 @@
                 <div class="header-top-bar d-flex flex-wrap align-items-center">
                     <!-- lt sec -->
                     <div class="lt-sec mb-1 mb-md-0">
+                        <p class="htb-text font-weight-600">Free shipping on all orders over &#8377;1000</p>
+                    </div>
+
+                    <!-- rt sec -->
+                    <div class="rt-sec ml-auto">
                         <a href="tel: +91 522 2356 584"
                             class="htb-link text-decoration-none d-inline-flex align-items-center">
                             <i class="feather-phone mr-2 d-none d-md-block"></i>
                             <span>Telephone Orders & Product Help</span>
                             <span class="ml-2 font-weight-600 st-fs-16">+91 522 2356 584</span>
                         </a>
-                    </div>
-
-                    <!-- rt sec -->
-                    <div class="rt-sec ml-auto">
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
+                        <!-- <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
                             <span>Reorder</span>
                         </a>
                         <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
@@ -49,7 +52,7 @@
                         </a>
                         <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
                             <span>Contact</span>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -91,12 +94,12 @@
                                     class="text-decoration-none hc-link position-relative d-inline-flex align-items-center"
                                     title="Cart">
                                     <i class="feather-shopping-cart"></i>
-                                    <span class="ml-2">$ 0.00</span>
+                                    <span class="ml-2">&#8377; 0.00</span>
                                     <i
                                         class="count position-absolute d-flex align-items-center justify-content-center font-weight-600">1</i>
                                 </a>
                                 <span class="info-text d-block st-text-secondary font-size-13 font-weight-600 mt-1">
-                                    Spend $79.95 to get free delivery
+                                    Spend &#8377;79.95 to get free delivery
                                 </span>
                             </div>
                         </div>
@@ -150,37 +153,67 @@
             <div class="home-slider overflow-hidden" id="home-slider-main">
                 <div class="swiper-wrapper">
                     <!-- slider item -->
-                    <div class="swiper-slide position-relative">
-                        <img src="images/home-slider/img1.jpg" alt="" class="img-fluid">
-                        <div
-                            class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-end">
-                            <div class="col-12 col-md-6 inner">
-                                <p class="head st-ff-montserrat text-capitalize mb-2 mb-lg-3">
-                                    lemon grass high living
-                                    <span class="d-block">air freshner</span>
-                                </p>
-                                <p class="desc st-ff-montserrat mb-3 mb-lg-4">We've Huge Stock in Luxary Perfume</p>
-                                <a href="#"
-                                    class="btn st-btn st-btn-rounded st-btn-secondary st-ff-montserrat font-weight-600">Shop
-                                    Collection</a>
+                    <div class="swiper-slide position-relative"
+                        style="background-image: url('images/home-slider/img1.jpg');">
+                        <div class="caption d-flex align-items-center justify-content-end">
+                            <div class="col-12 col-md-6 inner overflow-hidden d-md-flex">
+                                <div class="inner-main animate__animated cstm-animation-delay-point-2s animate__fadeIn">
+                                    <p
+                                        class="head st-ff-montserrat text-capitalize mb-2 mb-lg-3 animate__animated cstm-animation-delay-point-2s animate__fadeInRight">
+                                        lemon grass high living
+                                        <span class="d-block">air freshner</span>
+                                    </p>
+                                    <p
+                                        class="desc st-ff-montserrat mb-3 mb-lg-4 animate__animated cstm-animation-delay-point-5s animate__fadeInRight">
+                                        We've Huge Stock in Luxary Perfume</p>
+                                    <a href="#"
+                                        class="btn st-btn st-btn-rounded st-btn-secondary st-ff-montserrat font-weight-600 animate__animated cstm-animation-delay-point-7s animate__fadeInRight">Shop
+                                        Collection</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- slider item -->
-                    <div class="swiper-slide position-relative">
-                        <img src="images/home-slider/img1.jpg" alt="" class="img-fluid">
-                        <div
-                            class="caption position-absolute h-100 w-100 d-flex align-items-center justify-content-end">
-                            <div class="col-12 col-md-6 inner">
-                                <p class="head st-ff-montserrat text-capitalize mb-2 mb-lg-3">
-                                    lemon grass high living
-                                    <span class="d-block">air freshner</span>
-                                </p>
-                                <p class="desc st-ff-montserrat mb-3 mb-lg-4">We've Huge Stock in Luxary Perfume</p>
-                                <a href="#"
-                                    class="btn st-btn st-btn-rounded st-btn-secondary st-ff-montserrat font-weight-600">Shop
-                                    Collection</a>
+                    <div class="swiper-slide position-relative"
+                        style="background-image: url('images/home-slider/img2.jpg');">
+                        <div class="caption d-flex align-items-center justify-content-end">
+                            <div class="col-12 col-md-6 inner d-md-flex">
+                                <div class="inner-main animate__animated cstm-animation-delay-point-2s">
+                                    <p
+                                        class="head st-ff-montserrat text-capitalize mb-2 mb-lg-3 animate__animated cstm-animation-delay-point-2s">
+                                        lemon grass high living
+                                        <span class="d-block">air freshner</span>
+                                    </p>
+                                    <p
+                                        class="desc st-ff-montserrat mb-3 mb-lg-4 animate__animated cstm-animation-delay-point-5s">
+                                        We've Huge Stock in Luxary Perfume</p>
+                                    <a href="#"
+                                        class="btn st-btn st-btn-rounded st-btn-secondary st-ff-montserrat font-weight-600 animate__animated cstm-animation-delay-point-7s">Shop
+                                        Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slider item -->
+                    <div class="swiper-slide position-relative"
+                        style="background-image: url('images/home-slider/img3.jpg');">
+                        <div class="caption d-flex align-items-center">
+                            <div class="col-12 col-md-6 inner d-md-flex justify-content-md-end">
+                                <div class="inner-main animate__animated cstm-animation-delay-point-2s">
+                                    <p
+                                        class="head st-ff-montserrat text-capitalize mb-2 mb-lg-3 animate__animated cstm-animation-delay-point-2s">
+                                        lemon grass high living
+                                        <span class="d-block">air freshner</span>
+                                    </p>
+                                    <p
+                                        class="desc st-ff-montserrat mb-3 mb-lg-4 animate__animated cstm-animation-delay-point-5s">
+                                        We've Huge Stock in Luxary Perfume</p>
+                                    <a href="#"
+                                        class="btn st-btn st-btn-rounded st-btn-secondary st-ff-montserrat font-weight-600 animate__animated cstm-animation-delay-point-7s">Shop
+                                        Collection</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -249,17 +282,21 @@
     </section>
 
     <!-- deals sec -->
-    <section id="home-deals-sec" class="ST_def-pad-B">
+    <section id="home-deals-sec" class="ST_def-pad-B animate__animated" data-scroll-detection="animate__fadeIn">
         <div class="container">
             <div class="home-deals-sec position-relative overflow-hidden">
                 <img src="images/home-discount-sec-bg.png" alt="" class="img-fluid">
                 <div class="caption d-flex align-items-center">
                     <div class="col-12 col-md-8 inner">
-                        <p class="head font-weight-600 st-ff-cenzel text-capitalize text-white mb-2">Great deal &
+                        <p class="head font-weight-600 st-ff-cenzel text-capitalize text-white mb-2 animate__animated cstm-animation-delay-point-2s"
+                            data-scroll-detection="animate__fadeInLeft">
+                            Great deal &
                             discount</p>
-                        <p class="desc st-ff-montserrat mb-2 mb-lg-4">Get a monthly supply of designer cologne</p>
+                        <p class="desc st-ff-montserrat mb-2 mb-lg-4 animate__animated cstm-animation-delay-point-5s"
+                            data-scroll-detection="animate__fadeInLeft">Get a monthly supply of designer cologne</p>
                         <button
-                            class="btn st-btn st-btn-lg st-btn-secondary btn font-weight-600 st-btn st-ff-montserrat">Shop
+                            class="btn st-btn st-btn-lg st-btn-secondary btn font-weight-600 st-btn st-ff-montserrat animate__animated cstm-animation-delay-point-7s"
+                            data-scroll-detection="animate__fadeInLeft">Shop
                             Now</button>
                     </div>
                 </div>
@@ -268,15 +305,20 @@
     </section>
 
     <!-- detail sec 1 -->
-    <section id="home-detail-sec1" class="ST_def-mar-TB">
+    <section id="home-detail-sec1" class="ST_def-mar-TB overflow-hidden animate__animated"
+        data-scroll-detection="animate__fadeIn">
         <div class="container-fluid px-0">
             <div class="home-detail-sec1 position-relative">
-                <div
-                    class="caption col-12 col-md-6 text-center ml-auto d-flex align-items-center justify-content-center">
+                <div class="caption col-12 col-md-6 text-center ml-auto d-flex align-items-center justify-content-center animate__animated"
+                    data-scroll-detection="animate__fadeInRight">
                     <div class="inner">
-                        <p class="head text-uppercase st-ff-cenzel mb-2">Fragancia <br /> ambience</p>
-                        <p class="desc text-capitalize st-ff-montserrat mb-3 mb-lg-4">Fresh lime bathroom freshner</p>
-                        <button class="btn st-btn st-btn-lg st-btn-white btn font-weight-600 st-btn st-ff-montserrat">
+                        <p class="head text-uppercase st-ff-cenzel mb-2 animate__animated cstm-animation-delay-point-2s"
+                            data-scroll-detection="animate__fadeInRight">Fragancia <br /> ambience</p>
+                        <p class="desc text-capitalize st-ff-montserrat mb-3 mb-lg-4 animate__animated cstm-animation-delay-point-5s"
+                            data-scroll-detection="animate__fadeInRight">Fresh lime bathroom freshner</p>
+                        <button
+                            class="btn st-btn st-btn-lg st-btn-white btn font-weight-600 st-btn st-ff-montserrat animate__animated cstm-animation-delay-point-7s"
+                            data-scroll-detection="animate__fadeInRight">
                             Shop Now
                         </button>
                     </div>
@@ -317,7 +359,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -352,7 +394,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -392,7 +434,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -427,7 +469,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -467,7 +509,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -502,7 +544,7 @@
                                         Jasmine
                                         room fresher (2 x 200ml)</a>
                                     <p class="price font-weight-600 font-size-18 mb-3">
-                                        $450 <span class="old-price ml-1">$550</span>
+                                        &#8377;450 <span class="old-price ml-1">&#8377;550</span>
                                     </p>
 
                                     <div class="qty mb-3 mb-lg-4">
@@ -645,14 +687,39 @@
                 },
             });
 
+            homeMainSlider.on('slideChangeTransitionEnd', function () {
+                $("#home-slider-main .swiper-slide.swiper-slide-active .inner-main").css("opacity", "1")
+                $("#home-slider-main .swiper-slide.swiper-slide-active").find('.inner-main').addClass("animate__fadeIn")
+                $("#home-slider-main .swiper-slide.swiper-slide-active").find('.head').addClass("animate__fadeInRight")
+                $("#home-slider-main .swiper-slide.swiper-slide-active").find('.desc').addClass("animate__fadeInRight")
+                $("#home-slider-main .swiper-slide.swiper-slide-active").find('.st-btn').addClass("animate__fadeInRight")
+            })
+
             var homeProductsSlider = new Swiper("#home-products-slider", {
-                slidesPerView: 4,
-                spaceBetween: 30,
+                // slidesPerView: 4,
+                // spaceBetween: 30,
                 grabCursor: true,
                 loop: true,
                 autoplay: {
                     delay: 2000,
                     pauseOnMouseEnter: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
                 },
             });
         });

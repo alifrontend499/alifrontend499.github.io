@@ -337,3 +337,164 @@
         }
     }
 }
+
+// ST RATINGS COUNT
+#st-ratings-count {
+}
+.st-ratings-count {
+    .lt-sec {
+        width: 120px;
+        @include min-width($lg-min) {
+            width: 135px;
+        }
+        .head {
+            font-size: 45px;
+            line-height: 45px;
+        }
+    }
+
+    .rt-sec {
+        // width: calc(100% - 120px);
+        border-left: 1px solid $app-border-color;
+        padding-left: 18px;
+
+        @include min-width($lg-min) {
+            padding-left: 30px;
+            // width: 250px;
+        }
+
+        .frac {
+            .progress {
+                height: 5px;
+
+                .progress-bar {
+                    background-color: $light-text-color;
+                }
+            }
+
+            &.five-star,
+            &.four-star,
+            &.three-star {
+                .progress-bar {
+                    background-color: $primary-color;
+                }
+            }
+
+            &.three-star {
+                .progress-bar {
+                    opacity: 0.5;
+                }
+            }
+
+            &.two-star {
+                .progress-bar {
+                    background-color: #fcb301;
+                }
+            }
+
+            &.one-star {
+                .progress-bar {
+                    background-color: #f16565;
+                }
+            }
+        }
+    }
+}
+
+// STAR RATING UL
+.star-rating-ul {
+    > li {
+        &:not(:last-child) {
+            margin-right: 2px;
+        }
+
+        label {
+            font-weight: normal;
+            position: relative;
+            cursor: pointer;
+
+            > span {
+                img {
+                    width: 21px;
+
+                    &.gray {
+                        display: block;
+                    }
+
+                    &.colured {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        // &.active>label>span,
+        // &>label>input:checked+span
+        // &>label:hover>span {
+        &.active > label > span {
+            img {
+                &.gray {
+                    display: none;
+                }
+
+                &.colured {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// custom modal
+.custom-modal {
+    .close {
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+    }
+    .modal-content {
+        border-radius: $app-block-border-radius;
+    }
+}
+
+// star ratings
+.st-star-rating {
+    li {
+        i {
+            &.fas.fa-star {
+                color: $starRatingColor;
+            }
+            &.far.fa-star {
+                color: $starRatingNoRatingColor;
+            }
+        }
+    }
+}
+
+.cstm-animation-delay-point-2s {
+    animation-delay: 0.2s !important;
+}
+
+.cstm-animation-delay-point-5s {
+    animation-delay: 0.5s !important;
+}
+
+.cstm-animation-delay-point-7s {
+    animation-delay: 0.7s !important;
+}
+
+.cstm-animation-delay-1-point-2s {
+    animation-delay: 1.2s !important;
+}
+
+.cstm-animation-delay-1-point-7s {
+    animation-delay: 1.7s !important;
+}
+
+.cstm-animation-delay-2-point-2s {
+    animation-delay: 2.2s !important;
+}
+
+.cstm-animation-delay-2-point-7s {
+    animation-delay: 2.7s !important;
+}

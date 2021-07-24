@@ -26,6 +26,9 @@ body {
     padding: 7px 0;
 }
 .header-top-bar {
+    .htb-text {
+        color: #d4d4d4;
+    }
     .htb-link {
         color: #d4d4d4;
         position: relative;
@@ -220,18 +223,38 @@ body {
 }
 .home-slider {
     .swiper-slide {
-        img {
-            width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include min_width($md-min) {
+            padding: 60px 0;
         }
+        @include min_width($lg-min) {
+            padding: 100px 0;
+        }
+        @include min_width($xl-min) {
+            padding: 160px 0;
+        }
+        // img {
+        //     width: 100%;
+        // }
         .caption {
-            top: 0;
-            left: 0;
+            // top: 0;
+            // left: 0;
             @include max_width($md-max) {
-                background: rgba(255, 255, 255, 0.8);
+                background: rgba(255, 255, 255, 0.6);
+                padding: 40px 0;
             }
             > .inner {
                 @include max_width($md-max) {
                     text-align: center;
+                }
+                > .inner-main {
+                    opacity: 0;
+                    @include min_width($md-min) {
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.5);
+                        padding: 30px;
+                    }
                 }
             }
         }
@@ -732,6 +755,127 @@ body {
             .swiper-button-prev {
                 left: 5px;
             }
+        }
+    }
+
+    .rt-sec {
+        > .inner {
+            @include min_width($lg-min) {
+                padding-left: 50px;
+            }
+        }
+
+        .product-heading {
+            font-size: 20px;
+            margin-top: 20px;
+            @include min_width($lg-min) {
+                font-size: 28px;
+                margin-top: 0;
+            }
+        }
+
+        .price {
+            font-size: 23px;
+            .old-price {
+                color: #a5a5a5;
+                text-decoration: line-through;
+            }
+        }
+
+        .select-quantity {
+            .quantity-select-controls {
+                button {
+                    width: 42px;
+                    height: 42px;
+                }
+                input {
+                    height: 42px;
+                }
+            }
+            .add-btn {
+                @include min_width($lg-min) {
+                    width: 200px;
+                }
+            }
+        }
+
+        .product-details-tabs {
+            .nav-item {
+            }
+            .nav-link {
+                color: $light-text-color;
+                &.active {
+                    color: $dark-text-color;
+                }
+            }
+        }
+
+        .add-info {
+            .icon {
+                font-size: 27px;
+                width: 40px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// st ratings count
+#st-ratings-count {
+    background-color: #f7f7f7;
+}
+
+// customer reviews
+#customer-reviews {
+}
+
+.customer-reviews {
+    .all-reviews {
+        .item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+                @include min_width($lg-min) {
+                    margin-bottom: 25px;
+                }
+            }
+            > .inner {
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .rating-container {
+                > ul,
+                p {
+                    position: relative;
+                    &:not(:last-child) {
+                        padding-right: 20px;
+                        @include min_width($lg-min) {
+                            padding-right: 30px;
+                        }
+                        &:after {
+                            content: "";
+                            height: 13px;
+                            width: 2px;
+                            background-color: $light-text-color;
+                            position: absolute;
+                            top: 5px;
+                            right: 14px;
+                        }
+                    }
+                }
+            }
+
+            .review {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .buttons {
+        @include min_width($lg-min) {
+            padding-top: 20px;
+        }
+        .st-btn {
+            min-width: 140px;
         }
     }
 }
