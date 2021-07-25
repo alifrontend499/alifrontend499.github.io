@@ -879,3 +879,81 @@ body {
         }
     }
 }
+
+
+
+/* MY ACCOUNT CSS */
+.account-menu {
+}
+
+.my-account {
+    @include min-width($md-min) {
+        min-height: 500px;
+    }
+}
+
+@media screen and (min-width: $md-min) {
+    .ma-leftbar {
+        width: 285px;
+    }
+
+    .ma-content {
+        margin-left: 285px;
+        width: calc(100% - 285px);
+    }
+}
+
+.ma-leftbar-user-details {
+    box-shadow: 0 1px 2px #c3c3c3;
+}
+
+/* menu */
+.ma-leftbar-menu {
+}
+.ma-leftbar-menu .menu-item {
+}
+.ma-leftbar-menu .menu-link {
+    color: $light-text-color;
+    @include transition;
+}
+.ma-leftbar-menu .menu-item.active > .menu-link,
+.ma-leftbar-menu .menu-link.active,
+.ma-leftbar-menu .menu-link:hover {
+    background-color: $primary-color;
+    color: #fff;
+}
+.ma-leftbar-menu .dropdown-menu-item .menu-link {
+    background: #ececec;
+}
+.ma-leftbar-menu .dropdown-menu-item.active > .menu-link,
+.ma-leftbar-menu .dropdown-menu-item > .menu-link.active,
+.ma-leftbar-menu .dropdown-menu-item > .menu-link:hover {
+    background: #c3c3c3;
+    color: $light-text-color;
+}
+
+/* MA DASHBOARD CONTENT */
+.ma-content.dashboard-content {
+}
+.ma-content.dashboard-content .frac > .inner {
+    @include transition;
+}
+.ma-content.dashboard-content .frac:hover > .inner {
+    border-color: #bebebe !important;
+}
+
+/* MA LOGIN INFORMATION CONTENT */
+.ma-content.login-information-content {
+}
+
+// ORDERS INFORMATION TABLE
+.orders-information-table {
+    @include max-width($sm-max) {
+        table {
+            width: 600px;
+        }
+    }
+    .prod-details {
+        max-width: 200px;
+    }
+}

@@ -241,7 +241,7 @@ a.st-text-dark:hover { color: #242424 !important; }
 .navbar-toggler i { line-height: 0; }
 @media screen and (max-width: 767px) { .navbar-toggler { position: absolute; top: -61px; right: 0; } }
 
-.st-single-product-item > .inner { border: 1px solid #ededed; padding: 15px; }
+.st-single-product-item > .inner { border: 1px solid #ededed; padding: 15px; transition: 0.3s; }
 @media screen and (min-width: 768px) { .st-single-product-item > .inner { padding: 25px; } }
 .st-single-product-item .img-sec { height: 230px; }
 .st-single-product-item .img-sec img { max-height: 100%; width: auto; }
@@ -518,5 +518,30 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; color
 .customer-reviews .all-reviews .item .review { margin-bottom: 15px; }
 @media screen and (min-width: 992px) { .customer-reviews .buttons { padding-top: 20px; } }
 .customer-reviews .buttons .st-btn { min-width: 140px; }
+
+/* MY ACCOUNT CSS */
+@media screen and (min-width: 768px) { .my-account { min-height: 500px; } }
+
+@media screen and (min-width: 768px) { .ma-leftbar { width: 285px; }
+  .ma-content { margin-left: 285px; width: calc(100% - 285px); } }
+.ma-leftbar-user-details { box-shadow: 0 1px 2px #c3c3c3; }
+
+/* menu */
+.ma-leftbar-menu .menu-link { color: #6e6e6e; transition: 0.3s; }
+
+.ma-leftbar-menu .menu-item.active > .menu-link, .ma-leftbar-menu .menu-link.active, .ma-leftbar-menu .menu-link:hover { background-color: #e9ac38; color: #fff; }
+
+.ma-leftbar-menu .dropdown-menu-item .menu-link { background: #ececec; }
+
+.ma-leftbar-menu .dropdown-menu-item.active > .menu-link, .ma-leftbar-menu .dropdown-menu-item > .menu-link.active, .ma-leftbar-menu .dropdown-menu-item > .menu-link:hover { background: #c3c3c3; color: #6e6e6e; }
+
+/* MA DASHBOARD CONTENT */
+.ma-content.dashboard-content .frac > .inner { transition: 0.3s; }
+
+.ma-content.dashboard-content .frac:hover > .inner { border-color: #bebebe !important; }
+
+/* MA LOGIN INFORMATION CONTENT */
+@media screen and (max-width: 575px) { .orders-information-table table { width: 600px; } }
+.orders-information-table .prod-details { max-width: 200px; }
 
 /*# sourceMappingURL=style.css.map */
