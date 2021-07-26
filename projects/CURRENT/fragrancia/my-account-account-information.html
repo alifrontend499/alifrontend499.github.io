@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fragrancia | Home</title>
+    <title>Fragrancia</title>
 
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
     <!-- FEATHER ICONS -->
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
     <!-- ANIMATE CSS -->
@@ -38,20 +40,16 @@
                         <a href="tel: +91 522 2356 584"
                             class="htb-link text-decoration-none d-inline-flex align-items-center">
                             <i class="feather-phone mr-2 d-none d-md-block"></i>
-                            <span>Telephone Orders & Product Help</span>
-                            <span class="ml-2 font-weight-600 st-fs-16">+91 522 2356 584</span>
+                            <span class="d-none d-md-inline-block">Telephone Orders & Product Help</span>
+                            <span class="ml-md-2 font-weight-600 st-fs-16">+91 522 2356 584</span>
                         </a>
-                        <!-- <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Reorder</span>
+                        <!-- <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center"
+                            data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
+                            <span>Login</span>
                         </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Track Order</span>
-                        </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Blog</span>
-                        </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Contact</span>
+                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center"
+                            data-toggle="modal" data-target="#loginModal" data-open-tab="sign-up-tab-in-modal">
+                            <span>Sign Up</span>
                         </a> -->
                     </div>
                 </div>
@@ -85,7 +83,7 @@
                         <!-- header cart -->
                         <div class="header-cart d-flex align-items-center align-items-md-start">
                             <div class="your-account text-center border-right">
-                                <a href="#" class="hc-link text-decoration-none" title="Your Account">
+                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
                                     <i class="feather-user"></i>
                                 </a>
                             </div>
@@ -158,11 +156,8 @@
                 <div class="modal-body p-0">
 
                     <div class="st-authentication">
-                        <div class="login-inner d-flex flex-wrap in-modal">
-                            <div class="col-md-6 lt px-0 d-none d-md-block">
-                                <div class="inner h-100"></div>
-                            </div>
-                            <div class="col-md-6 rt px-0">
+                        <div class="login-inner in-modal">
+                            <div class="main-sec">
                                 <div class="inner bg-white h-100">
                                     <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
                                     <ul class="nav nav-tabs" id="loginTab" role="tablist">
@@ -188,35 +183,20 @@
                                         <div class="tab-pane fade show active" id="login-in-modal" role="tabpanel"
                                             aria-labelledby="login-tab-in-modal">
                                             <div class="login-form">
-                                                <div
-                                                    class="form-group st-form with-icon-text input-underline position-relative with-icon-text">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="text" class="form-control" placeholder="Mobile Number">
-                                                    <!-- when user uses OTP -->
-                                                    <button
-                                                        class="get-otp-btn icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2">get
-                                                        OTP</button>
                                                 </div>
-                                                <!-- when user uses password -->
-                                                <div
-                                                    class="form-group st-form input-underline login-password-field d-none">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="password" class="form-control" placeholder="Password">
                                                 </div>
-                                                <!-- when user uses OTP -->
-                                                <div class="form-group st-form input-underline login-otp-field">
-                                                    <input type="password" class="form-control" placeholder="Enter OTP">
-                                                </div>
-                                                <div class="btns open-password-field">
+                                                <!-- buttons -->
+                                                <div class="btns">
                                                     <button
                                                         class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
                                                 </div>
-                                                <div class="or-text position-relative">
-                                                    <span class="d-table mx-auto position-relative">OR</span>
-                                                </div>
-                                                <div class="btns open-otp-field">
-                                                    <button
-                                                        class="btn st-btn st-btn-outlined-primary btn-block text-uppercase font-size-16 font-weight-600">use
-                                                        password</button>
-                                                </div>
+
                                                 <div class="other-options d-flex align-items-center">
                                                     <a href="" data-open-tab='forgot-password-tab-in-modal'
                                                         class="font-size-16 st-text-primary">Forgot Password ?</a>
@@ -245,20 +225,25 @@
                                         <div class="tab-pane fade" id="sign-up-in-modal" role="tabpanel"
                                             aria-labelledby="sign-up-tab-in-modal">
                                             <div class="login-form">
-                                                <div class="form-group st-form input-underline">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="text" class="form-control" placeholder="Full Name">
                                                 </div>
-                                                <div class="form-group st-form input-underline">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="text" class="form-control" placeholder="Mobile Number">
                                                 </div>
-                                                <div class="form-group st-form input-underline">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="password" class="form-control" placeholder="Password">
                                                 </div>
-                                                <div class="form-group st-form input-underline">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="password" class="form-control"
                                                         placeholder="Confirm Password">
                                                 </div>
-                                                <div class="btns open-password-field">
+                                                <!-- btns -->
+                                                <div class="btns">
                                                     <button
                                                         class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
                                                         up</button>
@@ -277,10 +262,12 @@
                                         <div class="tab-pane fade" id="forgot-password-in-modal" role="tabpanel"
                                             aria-labelledby="forgot-password-tab-in-modal">
                                             <div class="login-form">
-                                                <div class="form-group st-form input-underline">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
                                                     <input type="text" class="form-control" placeholder="Mobile Number">
                                                 </div>
-                                                <div class="btns open-password-field">
+                                                <!-- btns -->
+                                                <div class="btns">
                                                     <button
                                                         class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
                                                         password</button>
@@ -305,65 +292,30 @@
         </div>
     </div>
 
-    <!-- UPLOAD PRESCRIPTION Modal -->
-    <div class="modal fade custom-modal" id="uploadPrescriptionModal" tabindex="-1" role="dialog"
-        aria-labelledby="uploadPrescriptionModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content border-0">
-                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
-                    <i class="feather-x"></i>
-                </button>
-                <div class="modal-body">
-
-                    <!-- app heading -->
-                    <div class="st-main-heading mb-1">
-                        <div class="left-sec pr-3 mb-2 mb-md-3">
-                            <p class="st-heading text-capitalize font-size-20 font-weight-600">
-                                Upload Prescription
-                            </p>
-                            <p class="desc mt-1">
-                                Please attach a prescription to proceed
-                            </p>
-                        </div>
+    <!-- SITE WRAPPER -->
+    <div id="wrapper">
+        <!-- breadcrumbs -->
+        <section id="st-breadcrumbs">
+            <div class="container">
+                <div class="st-breadcrumbs d-flex flex-wrap">
+                    <!-- link -->
+                    <div class="breadcrumbs-link">
+                        <a href="#">Home</a>
                     </div>
 
-                    <!-- upload prescription -->
-                    <div class="upload-prescription-section">
-                        <div class="form-group st-form with-icon-text position-relative">
-                            <input type="text" class="form-control" placeholder="Phone Number">
-                            <button
-                                class="icon position-absolute no-browser-style text-uppercase font-size-10 st-text-light py-2">get
-                                OTP</button>
-                        </div>
-                        <div class="form-group st-form">
-                            <input type="text" class="form-control" placeholder="Otp">
-                        </div>
-                        <label
-                            class="btn btn-block st-btn st-btn-sm font-weight-600 d-flex justify-content-center align-items-center upload-prescription-input">
-                            <input type="file" class="d-none">
-                            <i class="fas fa-paperclip mr-2 mt-1"></i>
-                            <span>Upload Prescription</span>
-                            <span
-                                class="show-file-name background-primary font-weight-400 ml-2 px-2 rounded text-white d-none"></span>
-                        </label>
-                        <div class="mt-1">
-                            <p style="font-style: italic;"
-                                class="font-size-12 font-weight-600 st-text-light text-center">Make sure you choose pdf,
-                                jpg or png file format</p>
-                        </div>
-                        <div class="mt-4">
-                            <button
-                                class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600"
-                                disabled>Submit</button>
-                        </div>
+                    <!-- link -->
+                    <div class="breadcrumbs-link active">
+                        <a href="#">My Account</a>
+                    </div>
+
+                    <!-- link -->
+                    <div class="breadcrumbs-link active">
+                        <a href="#">Account Information</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- SITE WRAPPER -->
-    <div id="wrapper">
         <!-- MY ACCOUNT -->
         <section id="my-account" class="ST_def-mar-TB">
             <div class="container">
@@ -430,6 +382,15 @@
                                             href="my-account-orders-information.html">
                                             <i class="feather-chevron-right mt-1"></i>
                                             <span class="ml-2">My Orders</span>
+                                        </a>
+                                    </li>
+
+                                    <!-- link -->
+                                    <li class="w-100 menu-item">
+                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
+                                            href="my-account-orders-information.html">
+                                            <i class="feather-log-out mt-1"></i>
+                                            <span class="ml-2">Logout</span>
                                         </a>
                                     </li>
                                 </ul>

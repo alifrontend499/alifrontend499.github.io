@@ -223,25 +223,38 @@ body {
 }
 .home-slider {
     .swiper-slide {
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include max_width($md-max) {
+            img {
+                display: none;
+            }
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         @include min_width($md-min) {
-            padding: 60px 0;
+            img {
+                width: 100%;
+            }
+            background-image: none !important;
         }
-        @include min_width($lg-min) {
-            padding: 100px 0;
+        @include max_width($lg-max) {
+            // padding: 100px 0;
         }
-        @include min_width($xl-min) {
-            padding: 160px 0;
+        @include max_width($md-max) {
+            // padding: 0;
         }
         // img {
         //     width: 100%;
         // }
         .caption {
-            // top: 0;
-            // left: 0;
+            @include min_width($md-min) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
             @include max_width($md-max) {
-                background: rgba(255, 255, 255, 0.6);
+                background: rgba(0, 0, 0, 0.3);
                 padding: 40px 0;
             }
             > .inner {
@@ -262,6 +275,9 @@ body {
             font-size: 18px;
             color: #000;
             line-height: normal;
+            @include max_width($md-max) {
+                color: #fff;
+            }
             @include min_width($md-min) {
                 font-size: 25px;
             }
@@ -282,6 +298,9 @@ body {
         }
         .desc {
             font-size: 15px;
+            @include max_width($md-max) {
+                color: #fff;
+            }
             @include min_width($md-min) {
                 font-size: 20px;
             }
@@ -321,7 +340,7 @@ body {
     @include max_width($md-max) {
         border-radius: 10px;
         background: transparent url("../images/home-discount-sec-bg.png")
-            no-repeat 0 0 / cover;
+            no-repeat -240px 0 / cover;
     }
     > img {
         @include max_width($md-max) {
@@ -358,6 +377,7 @@ body {
         font-size: 18px;
         @include max_width($md-max) {
             max-width: 90%;
+            color: #fff;
         }
 
         @include min_width($md-min) {
@@ -880,8 +900,6 @@ body {
     }
 }
 
-
-
 /* MY ACCOUNT CSS */
 .account-menu {
 }
@@ -955,5 +973,206 @@ body {
     }
     .prod-details {
         max-width: 200px;
+    }
+}
+
+// login modal
+#loginModal {
+    .modal-dialog {
+        @include min_width($md-min) {
+        }
+    }
+}
+
+// AUTHENTICATION PAGE
+#st-authentication {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include min_width($md-min) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    @include min_width($lg-min) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.st-authentication {
+    .login-inner {
+        margin: 0 auto;
+
+        > .main-sec {
+            .inner {
+                border-radius: $app-block-border-radius;
+                padding: 20px;
+
+                @include min-width($lg-min) {
+                    padding: 40px;
+                }
+            }
+
+            .nav-tabs {
+                border-bottom: none;
+                padding: 0;
+                margin-bottom: 10px;
+
+                @include min-width($md-min) {
+                    margin-bottom: 15px;
+                }
+
+                @include min-width($lg-min) {
+                    margin-bottom: 25px;
+                }
+
+                > li {
+                    margin-bottom: 0;
+
+                    > a {
+                        background-color: transparent !important;
+                        border: none !important;
+                        border-radius: 0;
+                        padding: 0;
+                        @include transition(0.1s);
+                        font-size: 26px;
+                        color: #888;
+
+                        &.active,
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+
+                    &:first-child {
+                        > a {
+                            &:after {
+                                content: "/";
+                                color: #888;
+                                margin: 0 7px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .head {
+                font-size: 26px;
+                margin-bottom: 10px;
+                color: #666;
+
+                @include min-width($md-min) {
+                    margin-bottom: 15px;
+                }
+
+                @include min-width($lg-min) {
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            .st-form {
+                input,
+                select,
+                textarea {
+                }
+            }
+
+            .submit-btn,
+            .btns,
+            .or-text {
+                margin-top: 15px;
+
+                @include min-width($lg-min) {
+                    margin-top: 30px;
+                }
+
+                .st-btn {
+                }
+            }
+
+            .add-info {
+                margin-top: 15px;
+
+                @include min-width($lg-min) {
+                    margin-top: 30px;
+                }
+
+                p {
+                    a {
+                    }
+                }
+            }
+
+            .other-options {
+                margin-top: 20px;
+
+                @include min-width($lg-min) {
+                    margin-top: 60px;
+                }
+
+                > a {
+                    @include transition;
+                }
+
+                > ul {
+                    > li {
+                        &.first {
+                            color: #888;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 8px;
+                        }
+
+                        > a {
+                            height: 25px;
+                            width: 25px;
+                            border-radius: $app-block-border-radius;
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 11px;
+                            @include transition;
+
+                            @include min-width($lg-min) {
+                                height: 30px;
+                                width: 30px;
+                                font-size: 17px;
+                            }
+                        }
+
+                        &.facebook {
+                            > a {
+                                background: #3b5998;
+
+                                &:hover {
+                                    background: darken(
+                                        $color: #3b5998,
+                                        $amount: 5%
+                                    );
+                                }
+                            }
+                        }
+
+                        &.google {
+                            > a {
+                                background: #f14335;
+
+                                &:hover {
+                                    background: darken(
+                                        $color: #f14335,
+                                        $amount: 5%
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

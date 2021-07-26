@@ -97,6 +97,14 @@ $(function () {
             });
         });
     })();
+
+    // OPEN TABS
+    (function () {
+        $("[data-open-tab]").click(function (ev) {
+            ev.preventDefault();
+            $("#" + $(this).attr("data-open-tab")).trigger("click");
+        });
+    })();
 });
 
 // DETECT SECTION SCROLL

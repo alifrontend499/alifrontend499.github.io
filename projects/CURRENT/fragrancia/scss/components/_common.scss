@@ -131,6 +131,11 @@
         @include min_width($md-min) {
             padding: 25px;
         }
+        border-radius: $app-block-border-radius;
+        @include transition;
+        &:hover {
+            border-color: $primary-color;
+        }
     }
     .img-sec {
         height: 230px;
@@ -164,6 +169,16 @@
         .qty {
             input {
                 width: 80px;
+            }
+        }
+    }
+
+    > .inner {
+        &:hover {
+            .text-sec {
+                .st-btn {
+                    background-color: lighten($color: $primary-color, $amount: 4);
+                }
             }
         }
     }

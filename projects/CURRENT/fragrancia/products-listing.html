@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fragrancia | Products</title>
+    <title>Fragrancia</title>
 
+    <!-- FONTAWSOME ICONS -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
     <!-- FEATHER ICONS -->
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/animate/animate.min.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- OWL CAROUSEL -->
-    <link rel="stylesheet" href="assets/owl-carousel/css/owl.carousel.min.css">
-
+    <!-- SWIPPER JS -->
+    <link rel="stylesheet" href="assets/swipper/css/swiper-bundle.min.css">
+    <!-- custom -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -28,28 +32,25 @@
                 <div class="header-top-bar d-flex flex-wrap align-items-center">
                     <!-- lt sec -->
                     <div class="lt-sec mb-1 mb-md-0">
-                        <a href="tel: +91 522 2356 584"
-                            class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <i class="feather-phone mr-2 d-none d-md-block"></i>
-                            <span>Telephone Orders & Product Help</span>
-                            <span class="ml-2 font-weight-600 st-fs-16">+91 522 2356 584</span>
-                        </a>
+                        <p class="htb-text font-weight-600">Free shipping on all orders over &#8377;1000</p>
                     </div>
 
                     <!-- rt sec -->
                     <div class="rt-sec ml-auto">
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Reorder</span>
+                        <a href="tel: +91 522 2356 584"
+                            class="htb-link text-decoration-none d-inline-flex align-items-center">
+                            <i class="feather-phone mr-2 d-none d-md-block"></i>
+                            <span class="d-none d-md-inline-block">Telephone Orders & Product Help</span>
+                            <span class="ml-md-2 font-weight-600 st-fs-16">+91 522 2356 584</span>
                         </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Track Order</span>
+                        <!-- <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center"
+                            data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
+                            <span>Login</span>
                         </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Blog</span>
-                        </a>
-                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center">
-                            <span>Contact</span>
-                        </a>
+                        <a href="#" class="htb-link text-decoration-none d-inline-flex align-items-center"
+                            data-toggle="modal" data-target="#loginModal" data-open-tab="sign-up-tab-in-modal">
+                            <span>Sign Up</span>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -80,9 +81,9 @@
                         </div>
 
                         <!-- header cart -->
-                        <div class="header-cart d-flex align-items-start">
+                        <div class="header-cart d-flex align-items-center align-items-md-start">
                             <div class="your-account text-center border-right">
-                                <a href="#" class="hc-link text-decoration-none" title="Your Account">
+                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
                                     <i class="feather-user"></i>
                                 </a>
                             </div>
@@ -144,6 +145,153 @@
         </section>
     </header>
 
+    <!-- HEADER LOGIN Modal -->
+    <div class="modal fade custom-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <i class="feather-x"></i>
+                </button>
+                <div class="modal-body p-0">
+
+                    <div class="st-authentication">
+                        <div class="login-inner in-modal">
+                            <div class="main-sec">
+                                <div class="inner bg-white h-100">
+                                    <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                    <ul class="nav nav-tabs" id="loginTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize active" id="login-tab-in-modal"
+                                                data-toggle="tab" href="#login-in-modal" role="tab"
+                                                aria-controls="login-in-modal" aria-selected="true">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize" id="sign-up-tab-in-modal"
+                                                data-toggle="tab" href="#sign-up-in-modal" role="tab"
+                                                aria-controls="sign-up-in-modal" aria-selected="false">Sign up</a>
+                                        </li>
+                                        <li class="nav-item d-none">
+                                            <a class="nav-link text-capitalize" id="forgot-password-tab-in-modal"
+                                                data-toggle="tab" href="#forgot-password-in-modal" role="tab"
+                                                aria-controls="forgot-password-in-modal" aria-selected="false">forgot
+                                                password</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="loginTabContent">
+                                        <!-- login tab -->
+                                        <div class="tab-pane fade show active" id="login-in-modal" role="tabpanel"
+                                            aria-labelledby="login-tab-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <!-- buttons -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
+                                                </div>
+
+                                                <div class="other-options d-flex align-items-center">
+                                                    <a href="" data-open-tab='forgot-password-tab-in-modal'
+                                                        class="font-size-16 st-text-primary">Forgot Password ?</a>
+                                                    <ul class="list-unstyled d-flex align-items-center ml-auto">
+                                                        <li class="first font-size-16">
+                                                            Login with
+                                                        </li>
+                                                        <li class="facebook">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="google">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-google-plus-g"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- sign up tab -->
+                                        <div class="tab-pane fade" id="sign-up-in-modal" role="tabpanel"
+                                            aria-labelledby="sign-up-tab-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Full Name">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <!-- btns -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
+                                                        up</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- forgot password tab -->
+                                        <div class="tab-pane fade" id="forgot-password-in-modal" role="tabpanel"
+                                            aria-labelledby="forgot-password-tab-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- btns -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
+                                                        password</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- breadcrumbs -->
     <section id="st-breadcrumbs">
         <div class="container">
@@ -178,7 +326,7 @@
                         <!-- filter list -->
                         <div class="filter-list">
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -189,7 +337,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -200,7 +348,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -211,7 +359,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -222,7 +370,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -233,7 +381,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
@@ -244,7 +392,7 @@
                             </div>
 
                             <!-- item -->
-                            <div class="item mb-2">
+                            <div class="item mb-3">
                                 <label class="st-checkbox d-flex st-ff-montserrat font-weight-600">
                                     <input type="checkbox" class="d-none">
                                     <span class="box d-flex align-items-center justify-content-center">
