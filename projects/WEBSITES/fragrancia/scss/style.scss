@@ -312,6 +312,24 @@ body {
             }
         }
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #fff;
+        @include max_width($md-max) {
+            &::after {
+                font-size: 25px;
+            }
+        }
+    }
+    @include min_width($md-min) {
+        .swiper-button-next {
+            right: 20px;
+        }
+        .swiper-button-prev {
+            left: 20px;
+        }
+    }
 }
 
 // four section
@@ -1020,12 +1038,12 @@ body {
                 margin-bottom: 10px;
 
                 @include min-width($md-min) {
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                 }
 
-                @include min-width($lg-min) {
-                    margin-bottom: 25px;
-                }
+                // @include min-width($lg-min) {
+                //     margin-bottom: 25px;
+                // }
 
                 > li {
                     margin-bottom: 0;
@@ -1172,6 +1190,166 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.login-form {
+    .other-options {
+        margin-top: 20px;
+
+        @include min-width($lg-min) {
+            margin-top: 60px;
+        }
+
+        > a {
+            @include transition;
+        }
+
+        > ul {
+            > li {
+                &.first {
+                    color: #888;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+
+                > a {
+                    height: 25px;
+                    width: 25px;
+                    border-radius: $app-block-border-radius;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 11px;
+                    @include transition;
+
+                    @include min-width($lg-min) {
+                        height: 30px;
+                        width: 30px;
+                        font-size: 17px;
+                    }
+                }
+
+                &.facebook {
+                    > a {
+                        background: #3b5998;
+
+                        &:hover {
+                            background: darken($color: #3b5998, $amount: 5%);
+                        }
+                    }
+                }
+
+                &.google {
+                    > a {
+                        background: #f14335;
+
+                        &:hover {
+                            background: darken($color: #f14335, $amount: 5%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// page - checkout
+#st-checkout {
+}
+.st-checkout {
+    .content {
+        .st-authentication,
+        .st-guest-login {
+            width: 100%;
+            @include min_width($lg-min) {
+                width: 50%;
+            }
+        }
+        .st-authentication {
+            @include min_width($lg-min) {
+                padding-right: 30px;
+            }
+            @include max_width($lg-max) {
+                margin-bottom: 25px;
+            }
+        }
+        .st-guest-login {
+            @include min_width($lg-min) {
+                padding-left: 30px;
+            }
+
+            > .heading {
+                transition: 0.1s;
+                font-size: 26px;
+                color: $secondary-color;
+                margin-bottom: 10px;
+
+                @include min-width($md-min) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .or-icon {
+            left: 50%;
+            top: 50%;
+            width: 1px;
+            height: calc(100% - 20px);
+            background: #ddd;
+            @include transform(-50%, -50%);
+            @include max_width($lg-max) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// page - checkout main
+#st-checkout-main {
+}
+.st-checkout-main {
+    .lt-sec {
+        @include min_width($lg-min) {
+            padding-right: 50px;
+        }
+    }
+    .rt-sec {
+        width: 100%;
+        margin-top: 20px;
+        @include min_width($lg-min) {
+            margin-top: 0;
+            width: 350px;
+        }
+        > .inner {
+            padding: 20px;
+            background-color: #fcf3e0;
+            border-radius: $app-block-border-radius;
+        }
+
+        .frac {
+            border-bottom: 1px solid $secondary-color;
+            margin-bottom: 20px;
+            padding: 0 5px 20px;
+        }
+    }
+
+    .cart-table {
+        th,
+        td {
+            border: none;
+            border-bottom: 1px solid $app-border-color;
+            padding: 15px 10px;
+        }
+        td {
+            padding-bottom: 20px;
+        }
+        .details {
+            .img {
+                width: 100px;
             }
         }
     }

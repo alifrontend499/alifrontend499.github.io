@@ -83,7 +83,8 @@
                         <!-- header cart -->
                         <div class="header-cart d-flex align-items-center align-items-md-start">
                             <div class="your-account text-center border-right">
-                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
+                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal"
+                                    data-target="#loginModal" data-open-tab="login-tab-in-modal">
                                     <i class="feather-user"></i>
                                 </a>
                             </div>
@@ -130,6 +131,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase" href="#">gifts sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#">products</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase" href="#">brands</a>
@@ -292,21 +296,6 @@
         </div>
     </div>
 
-    <!-- banner -->
-    <section id="st-banner" class="d-none">
-        <div class="container-fluid px-0">
-            <div class="st-banner position-relative">
-                <img src="images/page-banner.jpg" alt="" class="img-fluid">
-                <div class="caption position-absolute d-flex align-items-center h-100 w-100">
-                    <div class="container border-left st-border-primary st-ff-montserrat">
-                        <p class="heading font-weight-600">Contact Us</p>
-                        <p class="desc">Founded In 1996 New York,USA</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- breadcrumbs -->
     <section id="st-breadcrumbs">
         <div class="container">
@@ -318,117 +307,225 @@
 
                 <!-- link -->
                 <div class="breadcrumbs-link active">
-                    <a href="#">Contact Us</a>
+                    <a href="#">Checkout</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact us -->
-    <section id="contact-us" class="ST_def-mar-TB">
+    <!-- checkout page -->
+    <section id="st-checkout" class="ST_def-mar-TB">
         <div class="container">
-            <div class="contact-us d-flex flex-wrap">
-                <!-- left sec -->
-                <div class="lt-sec">
-                    <!-- frac -->
-                    <div class="frac background-primary">
-                        <div class="st-main-heading st-heading-sm mb-3">
-                            <p class="st-heading st-ff-montserrat font-weight-700 text-capitalize text-white mb-2">
-                                our location
-                            </p>
-
-                            <p class="desc text-white font-size-15">
-                                4578 Heverly Rd Crooklyn Mew York 12345 United States.
-                            </p>
-                        </div>
-
-                        <div class="st-main-heading st-heading-sm mb-3">
-                            <p class="st-heading st-ff-montserrat font-weight-700 text-capitalize text-white mb-2">
-                                Quick Contact
-                            </p>
-
-                            <p class="desc text-white font-size-15 mb-1">
-                                Email: info@example.com
-                            </p>
-                            <p class="desc text-white font-size-15">
-                                Support: info@werxyz.com
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- frac -->
-                    <div class="frac" style="background-color: #333;">
-                        <p class="desc text-white font-size-17 mb-3">
-                            We will get back to you within 24 hours, or call us everyday, 09:00 AM - 12:00 PM
-                        </p>
-
-                        <div class="st-main-heading st-heading-sm d-flex align-items-center mb-3">
-                            <div
-                                class="icon border border-white rounded-circle d-flex align-items-center justify-content-center text-white">
-                                <i class="feather-phone"></i>
-                            </div>
-                            <p class="st-heading st-ff-montserrat font-weight-700 text-capitalize text-white pl-3">
-                                +123 456 7890
-                            </p>
-                        </div>
-                    </div>
+            <div class="st-checkout">
+                <div class="st-main-heading st-heading-sm mb-3">
+                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                        Verify your details
+                    </p>
                 </div>
 
-                <!-- right sec -->
-                <div class="rt-sec media-body mt-3 mt-md-0">
-                    <div class="inner">
-                        <div class="st-main-heading mb-3">
-                            <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
-                                Get In Touch
-                            </p>
-                            <p class="desc">Contact us to get in touch with us</p>
+                <!-- content -->
+                <div class="content d-flex flex-wrap position-relative">
+                    <!-- login -->
+                    <div class="st-authentication">
+                        <div class="login-inner not-in-modal">
+                            <div class="main-sec">
+                                <div class="inner p-0">
+                                    <!-- ADD CLASS st-dynamic-tabs TO the below ul to MAKE TABS DYNAMIC -->
+                                    <ul class="nav nav-tabs" id="loginTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize active" id="login-tab-not-in-modal"
+                                                data-toggle="tab" href="#login-not-in-modal" role="tab"
+                                                aria-controls="login-not-in-modal" aria-selected="true">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-capitalize" id="sign-up-tab-not-in-modal"
+                                                data-toggle="tab" href="#sign-up-not-in-modal" role="tab"
+                                                aria-controls="sign-up-not-in-modal" aria-selected="false">Sign
+                                                up</a>
+                                        </li>
+                                        <li class="nav-item d-none">
+                                            <a class="nav-link text-capitalize" id="forgot-password-tab-not-in-modal"
+                                                data-toggle="tab" href="#forgot-password-not-in-modal" role="tab"
+                                                aria-controls="forgot-password-not-in-modal"
+                                                aria-selected="false">forgot
+                                                password</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="loginTabContent">
+                                        <!-- login tab -->
+                                        <div class="tab-pane fade show active" id="login-not-in-modal" role="tabpanel"
+                                            aria-labelledby="login-tab-not-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <!-- buttons -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Login</button>
+                                                </div>
+
+                                                <div class="other-options d-flex align-items-center">
+                                                    <a href="" data-open-tab='forgot-password-tab-not-in-modal'
+                                                        class="font-size-16 st-text-primary">Forgot Password ?</a>
+                                                    <ul class="list-unstyled d-flex align-items-center ml-auto">
+                                                        <li class="first font-size-16">
+                                                            Login with
+                                                        </li>
+                                                        <li class="facebook">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-facebook-f"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="google">
+                                                            <a href=""
+                                                                class="d-flex align-items-center justify-content-center">
+                                                                <i class="fab fa-google-plus-g"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- sign up tab -->
+                                        <div class="tab-pane fade" id="sign-up-not-in-modal" role="tabpanel"
+                                            aria-labelledby="sign-up-tab-not-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Full Name">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <!-- btns -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">Sign
+                                                        up</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-not-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- forgot password tab -->
+                                        <div class="tab-pane fade" id="forgot-password-not-in-modal" role="tabpanel"
+                                            aria-labelledby="forgot-password-tab-not-in-modal">
+                                            <div class="login-form">
+                                                <!-- form field -->
+                                                <div class="form-group st-form">
+                                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                                </div>
+                                                <!-- btns -->
+                                                <div class="btns">
+                                                    <button
+                                                        class="btn st-btn st-btn-secondary btn-block text-uppercase font-size-16 font-weight-600">retrieve
+                                                        password</button>
+                                                </div>
+                                                <div class="add-info">
+                                                    <p class="font-size-16">
+                                                        Already have an account?
+                                                        <a href="" data-open-tab='login-tab-not-in-modal'
+                                                            class="st-text-primary">Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="contact-form d-flex flex-wrap">
-                            <!-- form field -->
-                            <div class="st-form lt mb-4">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                    <!-- or -->
+                    <div class="or-icon position-absolute">
+                        <!-- <span>OR</span> -->
+                    </div>
+
+                    <!-- guest login -->
+                    <div class="st-guest-login">
+                        <p class="heading">Continue as a Guest</p>
+
+                        <div class="d-flex flex-wrap">
+                            <!-- lt form -->
+                            <div class="form-group st-form lt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                <input type="text" class="form-control" placeholder="First Name">
                             </div>
 
-                            <!-- form field -->
-                            <div class="st-form rt mb-4">
-                                <input type="text" class="form-control" placeholder="Your Email">
+                            <!-- rt form -->
+                            <div class="form-group st-form rt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                <input type="text" class="form-control" placeholder="Last Name">
                             </div>
 
-                            <!-- form field -->
-                            <div class="st-form lt mb-4">
+                            <!-- lt form -->
+                            <div class="form-group st-form lt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+
+                            <!-- rt form -->
+                            <div class="form-group st-form rt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
                                 <input type="text" class="form-control" placeholder="Phone Number">
                             </div>
 
-                            <!-- form field -->
-                            <div class="st-form rt mb-4">
-                                <input type="text" class="form-control" placeholder="Subject">
+                            <!-- ct form -->
+                            <div class="form-group st-form ct w-100">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                <textarea type="text" rows="3" class="form-control" placeholder="Address 1"></textarea>
                             </div>
 
-                            <!-- form field -->
-                            <div class="st-form ct w-100 mb-4">
-                                <textarea rows="5" class="form-control" placeholder="Message"></textarea>
+                            <!-- ct form -->
+                            <div class="form-group st-form ct w-100">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                <textarea type="text" rows="3" class="form-control" placeholder="Address 2"></textarea>
                             </div>
 
-                            <!-- form field -->
-                            <div class="btns w-100 pt-2">
-                                <button
-                                    class="btn btn-block st-btn st-btn-primary st-ff-montserrat font-size-17 font-weight-600">Submit</button>
+                            <!-- lt form -->
+                            <div class="form-group st-form lt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                <input type="text" class="form-control" placeholder="Pin Code">
+                            </div>
+
+                            <!-- rt form -->
+                            <div class="form-group st-form rt">
+                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+
+                            <div class="btns w-100 mt-3 text-right">
+                                <button class="btn st-btn st-btn-secondary font-size-16 font-weight-600 px-lg-4"
+                                    style="min-width: 100px;">Continue to checkout</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="footer-map">
-        <div class="container-fluid px-0">
-            <div class="footer-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29616030.892363567!2d115.17403830285546!3d-25.02599098901883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1626968049823!5m2!1sen!2sin"
-                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -508,6 +605,7 @@
     <script src="assets/swipper/js/swiper-bundle.min.js"></script>
     <!-- SCRIPT CUSTOM -->
     <script src="js/app.js"></script>
+
 </body>
 
 </html>

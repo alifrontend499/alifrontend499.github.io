@@ -83,7 +83,8 @@
                         <!-- header cart -->
                         <div class="header-cart d-flex align-items-center align-items-md-start">
                             <div class="your-account text-center border-right">
-                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal" data-target="#loginModal" data-open-tab="login-tab-in-modal">
+                                <a href="#" class="hc-link text-decoration-none" title="Login" data-toggle="modal"
+                                    data-target="#loginModal" data-open-tab="login-tab-in-modal">
                                     <i class="feather-user"></i>
                                 </a>
                             </div>
@@ -130,6 +131,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase" href="#">gifts sets</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#">products</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-uppercase" href="#">brands</a>
@@ -303,25 +307,319 @@
 
                 <!-- link -->
                 <div class="breadcrumbs-link active">
-                    <a href="#">404 Error</a>
+                    <a href="#">Shopping Cart</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- not found -->
-    <section id="not-found" class="ST_def-mar-TB">
+    <!-- checkout main page -->
+    <section id="st-checkout-main" class="ST_def-mar-TB">
         <div class="container">
-            <div class="not-found text-center">
-                <p class="head st-ff-cenzel font-weight-600">404</p>
-                <p class="desc-md st-ff-montserrat">Page not found</p>
-                <p class="desc-sm">
-                    The page you are looking for does not exist. it may have been moved or removed altogether.
-                </p>
-                <a href="index.html" class="btn st-btn st-btn-primary d-inline-flex align-items-center mt-3">
-                    <i class=" feather-arrow-left mr-2"></i>
-                    <span>Back Home</span>
-                </a>
+            <div class="st-checkout-main d-md-flex flex-md-wrap">
+
+                <!-- left bar -->
+                <div class="lt-sec media-body">
+                    <div class="st-main-heading st-heading-sm mb-3">
+                        <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                            review your cart
+                        </p>
+                    </div>
+
+                    <div class="content">
+
+
+                        <div class="dashboard-content">
+                            <div class="inner">
+                                <div class="st-main-heading st-heading-sm mb-3 mb-lg-4">
+                                    <p
+                                        class="st-heading st-ff-montserrat font-weight-700 text-uppercase st-text-primary">
+                                        Address Information
+                                    </p>
+                                    <p class="desc mt-1">
+                                        Create new addresses and edit or delete existing addresses.
+                                    </p>
+                                </div>
+                                <div class="ma-content-main address-information">
+                                    <!-- Address Information -->
+                                    <div class="shipping-details">
+                                        <div class="process-address-details d-flex flex-wrap">
+                                            <div class="user-details">
+                                                <p class="name font-size-15 font-weight-600 mb-1">
+                                                    <span class="first">Ajay </span>
+                                                    <span class="last">Nagar</span>
+                                                </p>
+                                                <p class="email mb-1">ajayn@gmail.com</p>
+                                                <p class="phone mb-1">+91 1234567890</p>
+                                                <p class="address mb-1">
+                                                    Street: 275/10, 186, Tulasi Terrace 1 St Floor, <br>
+                                                    Shahid Bhagat Singh Rd, Fort
+                                                </p>
+                                                <p class="pin mb-1">390005</p>
+                                                <p class="city mb-1">Vadodara</p>
+                                                <div class="d-flex align-items-center">
+                                                    <a href="#"
+                                                        class="bt st-btn st-btn-primary st-btn-sm mr-2 mt-2 font-size-12 edit-address-btn">
+                                                        Edit
+                                                    </a>
+                                                    <a href="#"
+                                                        class="bt st-btn st-btn-primary st-btn-sm mt-2 font-size-12 add-new-address-btn">
+                                                        Add New
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ADD NEW ADDRESS -->
+                                    <div class="add-new-address mt-3" style="display: none;">
+                                        <!-- heading -->
+                                        <div class="st-main-heading d-flex align-items-center mb-3">
+                                            <div class="left-sec pr-2">
+                                                <p
+                                                    class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
+                                                    Add new Details
+                                                </p>
+                                            </div>
+                                            <div class="right-sec ml-auto">
+                                                <a href=""
+                                                    class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
+                                                    Cancel
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="process-payment-form d-flex flex-wrap mb-2">
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+
+                                            <!-- ct form -->
+                                            <div class="form-group st-form ct w-100">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <textarea type="text" rows="3" class="form-control"
+                                                    placeholder="Address 1"></textarea>
+                                            </div>
+
+                                            <!-- ct form -->
+                                            <div class="form-group st-form ct w-100">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <textarea type="text" rows="3" class="form-control"
+                                                    placeholder="Address 2"></textarea>
+                                            </div>
+
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Pin Code">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="City">
+                                            </div>
+
+                                            <div class="btns w-100 mt-3 text-right">
+                                                <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
+                                                    style="min-width: 100px;">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- EDIT NEW ADDRESS -->
+                                    <div class="edit-new-address mt-2" style="display: none;">
+                                        <!-- heading -->
+                                        <div class="st-main-heading d-flex align-items-center mb-3">
+                                            <div class="left-sec pr-2">
+                                                <p
+                                                    class="head font-weight-600 d-flex text-decoration-none st-text-dark text-uppercase">
+                                                    Edit Details
+                                                </p>
+                                            </div>
+                                            <div class="right-sec ml-auto">
+                                                <a href=""
+                                                    class="cancel-editing-btn btn st-btn st-btn-sm st-btn-secondary text-capitalize font-size-12 text-nowrap">
+                                                    Cancel
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="process-payment-form d-flex flex-wrap">
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="First Name"
+                                                    value="Ajay">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Last Name"
+                                                    value="Nagar">
+                                            </div>
+
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Email"
+                                                    value="ajayn@gmail.com">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Phone Number"
+                                                    value="+91 1234567890">
+                                            </div>
+
+                                            <!-- ct form -->
+                                            <div class="form-group st-form ct w-100">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <textarea type="text" rows="3" class="form-control"
+                                                    placeholder="Address 1">Street: 275/10, 186, Tulasi Terrace 1 St Floor, Shahid Bhagat Singh Rd, Fort</textarea>
+                                            </div>
+
+                                            <!-- ct form -->
+                                            <div class="form-group st-form ct w-100">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <textarea type="text" rows="3" class="form-control"
+                                                    placeholder="Address 2"></textarea>
+                                            </div>
+
+                                            <!-- lt form -->
+                                            <div class="form-group st-form lt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">First Name</label> -->
+                                                <input type="text" class="form-control" placeholder="Pin Code"
+                                                    value="390005">
+                                            </div>
+
+                                            <!-- rt form -->
+                                            <div class="form-group st-form rt">
+                                                <!-- <label class="font-weight-600 font-size-14 mb-1">Last Name</label> -->
+                                                <input type="text" class="form-control" placeholder="City"
+                                                    value="Vadodara">
+                                            </div>
+
+                                            <div class="btns w-100 mt-3 text-right">
+                                                <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
+                                                    style="min-width: 100px;">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- right bar -->
+                <div class="rt-sec">
+                    <div class="inner">
+                        <div class="st-main-heading st-heading-sm mb-3">
+                            <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                price summary
+                            </p>
+                        </div>
+
+                        <div class="cart-total-table">
+
+                            <!-- frac -->
+                            <div class="frac">
+                                <div class="st-main-heading st-heading-xs mb-3">
+                                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                        Estimate Shipping and Tax
+                                    </p>
+                                </div>
+
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Subtotal </p>
+                                    </div>
+                                    <div class="rt">
+                                        <p>&#8377;500 </p>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Shipping </p>
+                                    </div>
+                                    <div class="rt">
+                                        <p>&#8377;50 </p>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Discount </p>
+                                    </div>
+                                    <div class="rt">
+                                        <p>&#8377;30 </p>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-800">
+                                    <div class="lt">
+                                        <p>Total Order </p>
+                                    </div>
+                                    <div class="rt">
+                                        <p>&#8377;520 </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- frac -->
+                            <div class="frac">
+                                <div class="st-main-heading st-heading-xs mb-3">
+                                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                        Apply Discount Code
+                                    </p>
+                                </div>
+
+                                <div class="st-form">
+                                    <input type="text" class="form-control" placeholder="Coupon Code">
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <a href="#"
+                                    class="btn btn-block st-btn st-btn-primary st-ff-montserrat font-weight-600 font-size-16">
+                                    Proceed to Checkout
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -401,6 +699,53 @@
     <script src="assets/swipper/js/swiper-bundle.min.js"></script>
     <!-- SCRIPT CUSTOM -->
     <script src="js/app.js"></script>
+
+    <script>
+        $(function () {
+            // add new address
+            $('.add-new-address-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.add-new-address').fadeIn(100, function () {
+                    const scrollTo = $('.add-new-address').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+            // add new address : CANCEL BUTTON
+            $('.add-new-address .cancel-editing-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.add-new-address').fadeOut(100, function () {
+                    const scrollTo = $('.shipping-details').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+
+            // edit new address
+            $('.edit-address-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.edit-new-address').fadeIn(100, function () {
+                    const scrollTo = $('.edit-new-address').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+            // edit new address : CANCEL BUTTON
+            $('.edit-new-address .cancel-editing-btn').click(function (ev) {
+                ev.preventDefault()
+                $('.edit-new-address').fadeOut(100, function () {
+                    const scrollTo = $('.shipping-details').offset().top
+                    $('html,body').animate({
+                        scrollTop: scrollTo - 15
+                    }, 500)
+                })
+            });
+        });
+    </script>
+
 </body>
 
 </html>

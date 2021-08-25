@@ -132,6 +132,9 @@
                                     <a class="nav-link text-uppercase" href="#">gifts sets</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#">products</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link text-uppercase" href="#">brands</a>
                                 </li>
                                 <li class="nav-item">
@@ -292,237 +295,335 @@
         </div>
     </div>
 
-    <!-- SITE WRAPPER -->
-    <div id="wrapper">
-        <!-- breadcrumbs -->
-        <section id="st-breadcrumbs">
-            <div class="container">
-                <div class="st-breadcrumbs d-flex flex-wrap">
-                    <!-- link -->
-                    <div class="breadcrumbs-link">
-                        <a href="#">Home</a>
-                    </div>
+    <!-- breadcrumbs -->
+    <section id="st-breadcrumbs">
+        <div class="container">
+            <div class="st-breadcrumbs d-flex flex-wrap">
+                <!-- link -->
+                <div class="breadcrumbs-link">
+                    <a href="#">Home</a>
+                </div>
 
-                    <!-- link -->
-                    <div class="breadcrumbs-link active">
-                        <a href="#">My Account</a>
-                    </div>
-
-                    <!-- link -->
-                    <div class="breadcrumbs-link active">
-                        <a href="#">Account Information</a>
-                    </div>
+                <!-- link -->
+                <div class="breadcrumbs-link active">
+                    <a href="#">Shopping Cart</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- MY ACCOUNT -->
-        <section id="my-account" class="ST_def-mar-TB">
-            <div class="container">
-                <div class="my-account d-flex flex-wrap position-relative bg-white overflow-hidden">
+    <!-- ccart page -->
+    <section id="st-cart" class="ST_def-mar-TB">
+        <div class="container">
+            <div class="st-cart d-md-flex flex-md-wrap">
 
-                    <!-- ICON FOR MOBILE -->
-                    <div class="ma-mobile-icon position-absolute d-md-none">
-                        <img src="images/icons/hamburger-menu-icon.png" width="25" class="img-fluid">
+                <!-- left bar -->
+                <div class="lt-sec media-body">
+                    <div class="st-main-heading st-heading-sm mb-3">
+                        <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                            review your cart
+                        </p>
                     </div>
 
-                    <!-- LEFT SECTION -->
-                    <div class="ma-leftbar position-absolute h-100">
-                        <div class="inner border-right bg-white overflow-auto h-100">
-                            <!-- user details -->
-                            <div class="ma-leftbar-user-details border-bottom p-3 d-flex mb-3">
-                                <!-- img sec -->
-                                <div class="img-sec border rounded-circle overflow-hidden bg-white">
-                                    <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg"
-                                        height="45" width="45" class="img-fluid">
-                                </div>
+                    <div class="cart-table">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="st-ff-montserrat font-weight-600">items</th>
+                                        <th class="st-ff-montserrat font-weight-600">qty</th>
+                                        <th class="st-ff-montserrat font-weight-600">subtotal</th>
+                                        <th width="70" class="st-ff-montserrat font-weight-600 text-right">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="details d-flex align-items-start">
+                                                <div class="img border st-border-gray text-center p-1">
+                                                    <img src="images/cart-img.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="text pl-3 media-body">
+                                                    <p class="name st-ff-montserrat font-size-17 font-weight-600">
+                                                        Lemon Grass high Living Air freshner
+                                                        200ml
+                                                    </p>
+                                                    <p class="price st-ff-montserrat font-size-17 font-weight-600 mt-1">
+                                                        &#8377;520</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <!-- quantity select controls -->
+                                            <div
+                                                class="quantity-select-controls d-inline-flex align-items-center text-left">
+                                                <button type="button" class="minus btn st-btn st-btn-white rounded-0">
+                                                    <i class="feather-minus"></i>
+                                                </button>
+                                                <input type="number" class="form-control rounded-0 text-center"
+                                                    value="1" min="1">
+                                                <button type="button"
+                                                    class="plus btn st-btn st-btn-white rounded-0 font-size-14">
+                                                    <i class="feather-plus"></i>
+                                                </button>
+                                        </td>
+                                        <td>
+                                            <p class="price st-ff-montserrat font-size-17 font-weight-600">&#8377;520</p>
+                                        </td>
+                                        <td class="action text-right">
+                                            <a href="#" class="st-text-primary font-size-16 text-decoration-none"
+                                                title="Delete">
+                                                <i class="feather-trash ml-2"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="details d-flex align-items-start">
+                                                <div class="img border st-border-gray text-center p-1">
+                                                    <img src="images/cart-img.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="text pl-3 media-body">
+                                                    <p class="name st-ff-montserrat font-size-17 font-weight-600">
+                                                        Lemon Grass high Living Air freshner
+                                                        200ml
+                                                    </p>
+                                                    <p class="price st-ff-montserrat font-size-17 font-weight-600 mt-1">
+                                                        &#8377;520</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <!-- quantity select controls -->
+                                            <div
+                                                class="quantity-select-controls d-inline-flex align-items-center text-left">
+                                                <button type="button" class="minus btn st-btn st-btn-white rounded-0">
+                                                    <i class="feather-minus"></i>
+                                                </button>
+                                                <input type="number" class="form-control rounded-0 text-center"
+                                                    value="1" min="1">
+                                                <button type="button"
+                                                    class="plus btn st-btn st-btn-white rounded-0 font-size-14">
+                                                    <i class="feather-plus"></i>
+                                                </button>
+                                        </td>
+                                        <td>
+                                            <p class="price st-ff-montserrat font-size-17 font-weight-600">&#8377;520</p>
+                                        </td>
+                                        <td class="action text-right">
+                                            <a href="#" class="st-text-primary font-size-16 text-decoration-none"
+                                                title="Delete">
+                                                <i class="feather-trash ml-2"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="details d-flex align-items-start">
+                                                <div class="img border st-border-gray text-center p-1">
+                                                    <img src="images/cart-img.jpg" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="text pl-3 media-body">
+                                                    <p class="name st-ff-montserrat font-size-17 font-weight-600">
+                                                        Lemon Grass high Living Air freshner
+                                                        200ml
+                                                    </p>
+                                                    <p class="price st-ff-montserrat font-size-17 font-weight-600 mt-1">
+                                                        &#8377;520</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <!-- quantity select controls -->
+                                            <div
+                                                class="quantity-select-controls d-inline-flex align-items-center text-left">
+                                                <button type="button" class="minus btn st-btn st-btn-white rounded-0">
+                                                    <i class="feather-minus"></i>
+                                                </button>
+                                                <input type="number" class="form-control rounded-0 text-center"
+                                                    value="1" min="1">
+                                                <button type="button"
+                                                    class="plus btn st-btn st-btn-white rounded-0 font-size-14">
+                                                    <i class="feather-plus"></i>
+                                                </button>
+                                        </td>
+                                        <td>
+                                            <p class="price st-ff-montserrat font-size-17 font-weight-600">&#8377;520</p>
+                                        </td>
+                                        <td class="action text-right">
+                                            <a href="#" class="st-text-primary font-size-16 text-decoration-none"
+                                                title="Delete">
+                                                <i class="feather-trash ml-2"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                <!-- text sec -->
-                                <div class="text-sec media-body pl-3">
-                                    <p class="sm-text font-size-13">Welcome,</p>
-                                    <p class="user-name font-size-17 font-weight-600 st-text-primary">
-                                        Deep
-                                        Dive Media
+                        <div class="buttons mt-3">
+                            <a href="#" class="btn st-btn st-btn-outlined-black st-ff-montserrat font-weight-600 px-4">
+                                continute shopping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right bar -->
+                <div class="rt-sec">
+                    <div class="inner">
+                        <div class="st-main-heading st-heading-sm mb-3">
+                            <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                price summary
+                            </p>
+                        </div>
+
+                        <div class="cart-total-table">
+
+                            <!-- frac -->
+                            <div class="frac">
+                                <div class="st-main-heading st-heading-xs mb-3">
+                                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                        Estimate Shipping and Tax
                                     </p>
                                 </div>
-                            </div>
 
-                            <!-- user menu -->
-                            <div class="ma-leftbar-menu mb-3 mb-lg-4">
-                                <ul class="list-unstyled">
-                                    <!-- link -->
-                                    <li class="w-100 menu-item">
-                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
-                                            href="my-account.html">
-                                            <i class="feather-chevron-right mt-1"></i>
-                                            <span class="ml-2">Dashboard</span>
-                                        </a>
-                                    </li>
-
-                                    <!-- link -->
-                                    <li class="w-100 menu-item active">
-                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
-                                            href="my-account-account-information.html">
-                                            <i class="feather-chevron-right mt-1"></i>
-                                            <span class="ml-2">Account Information</span></a>
-                                    </li>
-
-                                    <!-- link -->
-                                    <li class="w-100 menu-item">
-                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
-                                            href="my-account-address-information.html">
-                                            <i class="feather-chevron-right mt-1"></i>
-                                            <span class="ml-2">Address Information</span>
-                                        </a>
-                                    </li>
-
-                                    <!-- link -->
-                                    <li class="w-100 menu-item">
-                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
-                                            href="my-account-orders-information.html">
-                                            <i class="feather-chevron-right mt-1"></i>
-                                            <span class="ml-2">My Orders</span>
-                                        </a>
-                                    </li>
-
-                                    <!-- link -->
-                                    <li class="w-100 menu-item">
-                                        <a class="menu-link d-flex text-decoration-none border-bottom py-2 px-3"
-                                            href="my-account-orders-information.html">
-                                            <i class="feather-log-out mt-1"></i>
-                                            <span class="ml-2">Logout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CONTENT SECTION -->
-                    <div class="ma-content dashboard-content ">
-                        <div class="inner p-3 p-lg-5">
-                            <div class="st-main-heading st-heading-sm mb-3 mb-lg-4">
-                                <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase st-text-primary">
-                                    Account Information
-                                </p>
-                                <p class="desc mt-1">
-                                    Manage your account details, update your email address or change your password.
-                                </p>
-                            </div>
-
-                            <div class="ma-content-main account-information">
-                                <div class="account-information-form d-flex flex-wrap">
-                                    <!-- form lt -->
-                                    <div class="form-group st-form lt">
-                                        <input type="text" class="form-control" placeholder="First Name" value="Ajay">
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Subtotal </p>
                                     </div>
-                                    <!-- form rt -->
-                                    <div class="form-group st-form rt">
-                                        <input type="text" class="form-control" placeholder="Last Name" value="Nagar">
+                                    <div class="rt">
+                                        <p>&#8377;500 </p>
                                     </div>
-
-                                    <!-- form lt -->
-                                    <div class="form-group st-form lt">
-                                        <input type="email" class="form-control" placeholder="Email"
-                                            value="ajayn@gmail.com">
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Shipping </p>
                                     </div>
-                                    <!-- form rt -->
-                                    <div class="form-group st-form rt">
-                                        <input type="text" class="form-control" placeholder="Phone"
-                                            value="+91 1234567890">
+                                    <div class="rt">
+                                        <p>&#8377;50 </p>
                                     </div>
-
-                                    <!-- form lt -->
-                                    <div class="form-group st-form lt">
-                                        <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-600 mb-3">
+                                    <div class="lt">
+                                        <p>Discount </p>
                                     </div>
-                                    <!-- form rt -->
-                                    <div class="form-group st-form rt">
-                                        <input type="password" class="form-control" placeholder="Confirm Password">
+                                    <div class="rt">
+                                        <p>&#8377;30 </p>
                                     </div>
-
-                                    <div class="btns w-100 mt-3">
-                                        <button class="btn st-btn st-btn-primary font-size-16 font-weight-600"
-                                            style="min-width: 100px;">Save</button>
+                                </div>
+                                <!-- item -->
+                                <div
+                                    class="item d-flex justify-content-between st-ff-montserrat font-size-15 font-weight-800">
+                                    <div class="lt">
+                                        <p>Total Order </p>
+                                    </div>
+                                    <div class="rt">
+                                        <p>&#8377;520 </p>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- frac -->
+                            <div class="frac">
+                                <div class="st-main-heading st-heading-xs mb-3">
+                                    <p class="st-heading st-ff-montserrat font-weight-700 text-uppercase">
+                                        Apply Discount Code
+                                    </p>
+                                </div>
+
+                                <div class="st-form">
+                                    <input type="text" class="form-control" placeholder="Coupon Code">
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <a href="#"
+                                    class="btn btn-block st-btn st-btn-primary st-ff-montserrat font-weight-600 font-size-16">
+                                    Proceed to Checkout
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- footer -->
+    <footer id="footer" class="ST_def-pad-T">
+        <div class="container">
+            <div class="footer row text-center">
+                <!-- logo -->
+                <div class="footer-logo col-12 mb-3 mb-lg-4">
+                    <img src="images/footer-logo.png" alt="" class="img-fluid">
+                </div>
 
-        <!-- footer -->
-        <footer id="footer" class="ST_def-pad-T">
-            <div class="container">
-                <div class="footer row text-center">
-                    <!-- logo -->
-                    <div class="footer-logo col-12 mb-3 mb-lg-4">
-                        <img src="images/footer-logo.png" alt="" class="img-fluid">
-                    </div>
+                <!-- desc -->
+                <div class="desc col-12 mb-3 mb-lg-4">
+                    <p class="font-size-15">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur commodi
+                        repudiandae eius
+                        quo, amet, exercitationem iure nostrum ad error corrupti ab placeat officia dolorem nobis
+                        dolores non quos magnam totam?</p>
+                </div>
 
-                    <!-- desc -->
-                    <div class="desc col-12 mb-3 mb-lg-4">
-                        <p class="font-size-15">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-                            commodi
-                            repudiandae eius
-                            quo, amet, exercitationem iure nostrum ad error corrupti ab placeat officia dolorem nobis
-                            dolores non quos magnam totam?</p>
-                    </div>
+                <!-- social -->
+                <div class="social-sec d-flex align-items-center justify-content-center col-12 mb-3 mb-lg-4">
+                    <!-- link -->
+                    <a href="#"
+                        class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
+                        title="Facebook">
+                        <i class="feather-facebook"></i>
+                    </a>
+                    <!-- link -->
+                    <a href="#"
+                        class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
+                        title="Instagram">
+                        <i class="feather-instagram"></i>
+                    </a>
+                    <!-- link -->
+                    <a href="#"
+                        class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
+                        title="Twitter">
+                        <i class="feather-twitter"></i>
+                    </a>
+                    <!-- link -->
+                    <a href="#"
+                        class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
+                        title="Youtube">
+                        <i class="feather-youtube"></i>
+                    </a>
+                </div>
 
-                    <!-- social -->
-                    <div class="social-sec d-flex align-items-center justify-content-center col-12 mb-3 mb-lg-4">
-                        <!-- link -->
-                        <a href="#"
-                            class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
-                            title="Facebook">
-                            <i class="feather-facebook"></i>
-                        </a>
-                        <!-- link -->
-                        <a href="#"
-                            class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
-                            title="Instagram">
-                            <i class="feather-instagram"></i>
-                        </a>
-                        <!-- link -->
-                        <a href="#"
-                            class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
-                            title="Twitter">
-                            <i class="feather-twitter"></i>
-                        </a>
-                        <!-- link -->
-                        <a href="#"
-                            class="social-link d-flex align-items-center justify-content-center text-decoration-none mx-1"
-                            title="Youtube">
-                            <i class="feather-youtube"></i>
-                        </a>
-                    </div>
+                <!-- links -->
+                <div class="footer-links-wrapper col-12 mb-3 mb-lg-4">
+                    <!-- link -->
+                    <a href="#" class="footer-link text-decoration-none font-size-15">About Us</a>
+                    <!-- link -->
+                    <a href="#" class="footer-link text-decoration-none font-size-15">Contact</a>
+                    <!-- link -->
+                    <a href="#" class="footer-link text-decoration-none font-size-15">FAQ</a>
+                    <!-- link -->
+                    <a href="#" class="footer-link text-decoration-none font-size-15">Privacy Policy</a>
+                    <!-- link -->
+                    <a href="#" class="footer-link text-decoration-none font-size-15">Terms & Services</a>
+                </div>
 
-                    <!-- links -->
-                    <div class="footer-links-wrapper col-12 mb-3 mb-lg-4">
-                        <!-- link -->
-                        <a href="#" class="footer-link text-decoration-none font-size-15">About Us</a>
-                        <!-- link -->
-                        <a href="#" class="footer-link text-decoration-none font-size-15">Contact</a>
-                        <!-- link -->
-                        <a href="#" class="footer-link text-decoration-none font-size-15">FAQ</a>
-                        <!-- link -->
-                        <a href="#" class="footer-link text-decoration-none font-size-15">Privacy Policy</a>
-                        <!-- link -->
-                        <a href="#" class="footer-link text-decoration-none font-size-15">Terms & Services</a>
-                    </div>
-
-                    <!-- copyright -->
-                    <div class="copyright col-12 mb-3 mb-lg-4">
-                        <p class="font-size-15">Copyright &copy; Fragrancia, All right reserved</p>
-                    </div>
+                <!-- copyright -->
+                <div class="copyright col-12 mb-3 mb-lg-4">
+                    <p class="font-size-15">Copyright &copy; Fragrancia, All right reserved</p>
                 </div>
             </div>
-        </footer>
-
-    </div>
+        </div>
+    </footer>
 
 
     <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
@@ -533,14 +634,6 @@
     <!-- SCRIPT CUSTOM -->
     <script src="js/app.js"></script>
 
-    <script>
-        $(function () {
-            $('.ma-mobile-icon').click(function () {
-                $(this).toggleClass('active')
-                $('.ma-leftbar,.ma-content').toggleClass('active')
-            })
-        });
-    </script>
 </body>
 
 </html>
