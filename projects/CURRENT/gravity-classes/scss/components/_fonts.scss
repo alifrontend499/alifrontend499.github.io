@@ -1,0 +1,23 @@
+.app-ff-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin app-ff-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.app-ff-cenzel {
+    font-family: "Cinzel", serif;
+}
+
+@mixin app-ff-cenzel {
+    font-family: "Cinzel", serif;
+}
+
+.app-ff-lato {
+    font-family: "Lato", sans-serif;
+}
+
+@mixin app-ff-lato {
+    font-family: "Lato", sans-serif;
+}

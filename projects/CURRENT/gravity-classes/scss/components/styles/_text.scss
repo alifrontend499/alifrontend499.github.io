@@ -1,0 +1,145 @@
+// STYLES
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+}
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+/* FONT WEIGHT CLASSES */
+.app-fw-100 {
+    font-weight: 100 !important;
+}
+
+.app-fw-200 {
+    font-weight: 200 !important;
+}
+
+.app-fw-300 {
+    font-weight: 300 !important;
+}
+
+.app-fw-400 {
+    font-weight: 400 !important;
+}
+
+.app-fw-500 {
+    font-weight: 500 !important;
+}
+
+.app-fw-600 {
+    font-weight: 600 !important;
+}
+
+.app-fw-700 {
+    font-weight: 700 !important;
+}
+
+.app-fw-800 {
+    font-weight: 800 !important;
+}
+
+.app-fw-900 {
+    font-weight: 900 !important;
+}
+
+/* SIZES */
+.app-fs-10 {
+    font-size: 10px !important;
+}
+
+.app-fs-11 {
+    font-size: 11px !important;
+}
+
+.app-fs-12 {
+    font-size: 12px !important;
+}
+
+.app-fs-13 {
+    font-size: 13px !important;
+}
+
+.app-fs-14 {
+    font-size: 14px !important;
+}
+
+.app-fs-15 {
+    font-size: 15px !important;
+}
+
+.app-fs-16 {
+    font-size: 16px !important;
+}
+
+.app-fs-17 {
+    font-size: 17px !important;
+}
+
+.app-fs-18 {
+    font-size: 18px !important;
+}
+
+.app-fs-19 {
+    font-size: 19px !important;
+}
+
+.app-fs-20 {
+    font-size: 20px !important;
+}
+.app-fs-24 {
+    font-size: 24px !important;
+}
+.app-fs-25 {
+    font-size: 25px !important;
+}
+
+/* COLORS */
+.app-text-black {
+    color: #000 !important;
+}
+
+.app-text-gray {
+    color: gray !important;
+}
+
+.app-text-primary {
+    color: $primary-color !important;
+}
+
+.app-text-secondary {
+    color: $secondary-color !important;
+}
+
+a.app-text-primary {
+    &:hover {
+        color: darken($color: $primary-color, $amount: 10) !important;
+    }
+}
+
+a.app-text-secondary {
+    &:hover {
+        color: darken($color: $secondary-color, $amount: 10) !important;
+    }
+}
+
+.app-text-light {
+    color: $light-text-color !important;
+}
+
+a.app-text-light:hover {
+    color: darken($color: $light-text-color, $amount: 10) !important;
+}
+
+.app-text-dark {
+    color: $dark-text-color !important;
+}
+
+a.app-text-dark:hover {
+    color: darken($color: $dark-text-color, $amount: 10) !important;
+}
+
+// line height
+.app-lh-0 {
+    line-height: 0;
+}

@@ -1,0 +1,40 @@
+/* HEADING STYLES */
+.app-main-heading {
+    .app-heading {
+        font-size: 25px;
+        color: #222;
+        @include min-width($md-min) {
+            font-size: 30px;
+        }
+    }
+
+    // extra small heading
+    &.app-heading-xs {
+        .app-heading {
+            font-size: 16px;
+        }
+    }
+
+    // small heading
+    &.app-heading-sm {
+        .app-heading {
+            font-size: 20px;
+        }
+    }
+
+    // medium heading
+    &.app-heading-md {
+        .app-heading {
+            @include min-width($md-min) {
+            }
+        }
+    }
+
+    // large heading
+    &.app-heading-lg {
+        .app-heading {
+            @include min-width($md-min) {
+            }
+        }
+    }
+}

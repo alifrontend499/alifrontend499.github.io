@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gravity Classes</title>
+
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- app header -->
+    <header id="app-header" class="app-bg-primary">
+        <div class="container">
+            <div class="app-header d-flex align-items-center position-relative">
+                <!-- left sec -->
+                <div class="lt-sec media-body pe-2">
+                    <div class="inner d-flex align-items-center">
+                        <!-- menu icon -->
+                        <a href="#" class="menu-icon app-round-icon-btn app-btn-transparent-hover-primary-dark me-1">
+                            <i class="feather-menu"></i>
+                        </a>
+                        <!-- text -->
+                        <div class="text position-relative">
+                            <a href="#" class="app-fw-700 text-white app-fs-17 text-decoration-none">Need Test</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right sec -->
+                <div class="rt-sec ms-auto">
+                    <div class="inner d-flex align-items-center">
+                        <!-- header timer -->
+                        <div class="app-header-timer position-relative me-2">
+                            <p class="text-white app-fw-600">02:58:50</p>
+                        </div>
+
+                        <!-- header submit btn -->
+                        <div class="app-header-submit-btn">
+                            <button class="app-btn app-btn-rounded app-btn-secondary">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- wrapper -->
+
+    <div class="wrapper">
+
+        <!-- page tab sec -->
+        <div class="page-tab-sec sticky">
+            <div class="container">
+                <div class="pts-inner d-flex align-items-center justify-content-evenly overflow-auto">
+                    <!-- link -->
+                    <a href="#"
+                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize active">
+                        chemistery
+                    </a>
+
+                    <!-- link -->
+                    <a href="#"
+                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
+                        biology
+                    </a>
+
+                    <!-- link -->
+                    <a href="#"
+                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
+                        physics
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- question sec -->
+        <section id="question-sec" class="app-page-margin-bottom">
+            <div class="container">
+                <div class="question-sec">
+                    <!-- item -->
+                    <div class="ques-item">
+                        <div class="qi-inner">
+                            <!-- top sec -->
+                            <div class="top-sec">
+                                <!-- title -->
+                                <div class="qi-title app-bg-primary text-white app-fw-600 app-fs-17">
+                                    <span>Q.6</span> single choice
+                                </div>
+
+                                <!-- description -->
+                                <div class="qi-desc app-fw-600 app-fs-17">
+                                    Consider the figure shown. What type of
+                                    Qyadrilateral can it be ?
+                                </div>
+
+                                <!-- options -->
+                                <div class="qi-options">
+                                    <!-- single -->
+                                    <label class="option-single d-block">
+                                        <input type="radio" name="option" class="d-none">
+                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                            <span class="tag app-fw-700 app-fs-14">A</span>
+                                            <span class="text ps-2">Spine of the scapula</span>
+                                        </span>
+                                    </label>
+
+                                    <!-- single -->
+                                    <label class="option-single d-block">
+                                        <input type="radio" name="option" class="d-none">
+                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                            <span class="tag app-fw-700 app-fs-14">B</span>
+                                            <span class="text ps-2">Glenoid cavity of the scapula</span>
+                                        </span>
+                                    </label>
+
+                                    <!-- single -->
+                                    <label class="option-single d-block">
+                                        <input type="radio" name="option" class="d-none">
+                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                            <span class="tag app-fw-700 app-fs-14">C</span>
+                                            <span class="text ps-2">Acromiam process of the scapula</span>
+                                        </span>
+                                    </label>
+
+                                    <!-- single -->
+                                    <label class="option-single d-block">
+                                        <input type="radio" name="option" class="d-none">
+                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                            <span class="tag app-fw-700 app-fs-14">D</span>
+                                            <span class="text ps-2">Head of the humerous</span>
+                                        </span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- page bottom buttons -->
+        <div class="page-bottom-buttons position-fixed">
+            <div class="inner app-bg-gray d-flex align-items-center justify-content-center">
+                <button type="button"
+                    class="preview btn app-btn app-btn-rounded app-btn-outlined-black text-capitalize app-fs-14 mx-1">preview</button>
+                <button type="button"
+                    class="review btn app-btn app-btn-rounded app-btn-secondary text-capitalize app-fs-14 mx-1">review</button>
+                <button type="button"
+                    class="save btn app-btn app-btn-rounded app-btn-primary text-capitalize app-fs-14 mx-1">save &
+                    next</button>
+            </div>
+        </div>
+
+        <!-- left bar -->
+        <div class="ques-left-bar active">
+            <div class="alb-inner">
+                <ul class="nav nav-tabs justify-content-center mb-0 border-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link app-fs-16 text-capitalize active" id="question-paper-tab"
+                            data-bs-toggle="tab" data-bs-target="#question-paper" type="button" role="tab"
+                            aria-controls="question-paper" aria-selected="true">question paper</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link app-fs-16 text-capitalize" id="instructions-tab" data-bs-toggle="tab"
+                            data-bs-target="#instructions" type="button" role="tab" aria-controls="instructions"
+                            aria-selected="false">instructions</button>
+                    </li>
+                </ul>
+
+                <!-- content -->
+                <div class="tab-content" id="questionLeftBarTabs">
+                    <!-- questions tab -->
+                    <div class="tab-pane fade show active question-paper-tab" id="question-paper" role="tabpanel"
+                        aria-labelledby="question-paper-tab">
+                        <!-- head -->
+                        <div class="head d-flex flex-wrap">
+                            <!-- item -->
+                            <div class="item d-flex align-items-center pb-2">
+                                <div class="pentagon-icon pi-sky-blue upside-down"></div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">Answered</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center pb-2">
+                                <div class="pentagon-icon pi-orange"></div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">not visited</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon pi-dark-gray"></div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">not visited</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon pi-primary"></div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">review later</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon pi-primary"></div>
+                                <div class="text app-fw-700 app-text-black ms-2">Answered and Market for Review</div>
+                            </div>
+                        </div>
+
+                        <!-- body -->
+                        <div class="body">
+                            <div class="item w-100 mb-3">
+                                <p class="app-fw-700 app-text-black app-fs-19">Chemistry</p>            
+                            </div>
+
+                            <div class="top d-flex flex-wrap">
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        <div class="p-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                            1
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="pentagon-icon-with-text pi-orange position-relative mx-auto">
+                                        <div class="p-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                            2
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        <div class="p-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                            3
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        <div class="p-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                            4
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        <div class="p-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                            5
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main d-flex flex-wrap">
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            6
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            7
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            8
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            9
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="item">
+                                    <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                        <div class="r-icon"></div>
+                                        <span
+                                            class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                            10
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- instructions tab -->
+                    <div class="tab-pane fade instructions-tab" id="instructions" role="tabpanel"
+                        aria-labelledby="instructions-tab">
+                        <div class="body">
+                            <p class="item app-fw-700 app-text-black">
+                                Total duration of this test is 180 minutes.
+                            </p>
+                            <p class="item app-fw-700 app-text-black">
+                                There will be 180 Single Option Correct Multiple choice questions.
+                            </p>
+                            <p class="item app-fw-700 app-text-black">
+                                There are 3 sections in the question paper consisting of (Physics), (Chemistry)
+                                &(Biology).
+                            </p>
+                            <p class="item app-fw-700 app-text-black">
+                                Each question is allotted 4 marks
+                                for correct response.
+                            </p>
+                            <p class="item app-fw-700 app-text-black">
+                                Candidates will be awarded marks
+                                as stated a]bove in instruction
+                                No. 4 for correct response of
+                                each question. -1 mark will be
+                                deducted for indicating incorrect
+                                response for each question.
+                            </p>
+                            <p class="item app-fw-700 app-text-black">
+                                No deduction will be made from
+                                the total marks if no response
+                                is indicated.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade custom-modal instructions-modal" id="instructionsModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- head -->
+                <div class="head">
+                    <div class="inner app-bg-gray">
+                        <p class="app-fw-700 app-fs-20 app-text-black text-capitalize text-center">instructions</p>
+                    </div>
+                </div>
+                <!-- body -->
+                <div class="body">
+                    <p class="item app-fw-700 app-text-black">
+                        Total duration of this test is 180 minutes.
+                    </p>
+                    <p class="item app-fw-700 app-text-black">
+                        There will be 180 Single Option Correct Multiple choice questions.
+                    </p>
+                    <p class="item app-fw-700 app-text-black">
+                        There are 3 sections in the question paper consisting of (Physics), (Chemistry) &(Biology).
+                    </p>
+                    <p class="item app-fw-700 app-text-black">
+                        Each question is allotted 4 marks
+                        for correct response.
+                    </p>
+                    <p class="item app-fw-700 app-text-black">
+                        Candidates will be awarded marks
+                        as stated a]bove in instruction
+                        No. 4 for correct response of
+                        each question. -1 mark will be
+                        deducted for indicating incorrect
+                        response for each question.
+                    </p>
+                    <p class="item app-fw-700 app-text-black">
+                        No deduction will be made from
+                        the total marks if no response
+                        is indicated.
+                    </p>
+                </div>
+                <!-- foot -->
+                <div class="foot">
+                    <div class="inner app-bg-primary">
+                        <p class="app-fw-700 app-fs-20 text-white text-capitalize text-center" data-bs-dismiss="modal">
+                            close</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SCRIPT CUSTOM -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
