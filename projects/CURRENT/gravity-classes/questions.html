@@ -9,6 +9,8 @@
 
     <!-- FEATHER ICONS -->
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- custom -->
@@ -40,7 +42,8 @@
                     <div class="inner d-flex align-items-center">
                         <!-- header timer -->
                         <div class="app-header-timer position-relative me-2">
-                            <p class="text-white app-fw-600">02:58:50</p>
+                            <p class="text-white app-fw-600 cursor-pointer" data-bs-toggle="modal"
+                                data-bs-target="#remainingTimeModal">02:58:50</p>
                         </div>
 
                         <!-- header submit btn -->
@@ -53,8 +56,50 @@
         </div>
     </header>
 
-    <!-- wrapper -->
+    <!-- left menu -->
+    <div class="header-left-menu">
+        <div class="hlm-inner">
+            <div class="close-icon my-2 px-1">
+                <a href="#" class="app-round-icon-btn app-btn-transparent-hover-primary-dark ms-auto me-1">
+                    <i class="feather-x"></i>
+                </a>
+            </div>
 
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center active">
+                <span class="icon position-relative">
+                    <i class="feather-home"></i>
+                </span>
+                <span class="text media-body">Home</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-align-justify"></i>
+                </span>
+                <span class="text media-body">Test</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-check-square"></i>
+                </span>
+                <span class="text media-body">Scores</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-bar-chart-2"></i>
+                </span>
+                <span class="text media-body">Progress</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- wrapper -->
     <div class="wrapper">
 
         <!-- page tab sec -->
@@ -107,7 +152,7 @@
                                     <!-- single -->
                                     <label class="option-single d-block">
                                         <input type="radio" name="option" class="d-none">
-                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
                                             <span class="tag app-fw-700 app-fs-14">A</span>
                                             <span class="text ps-2">Spine of the scapula</span>
                                         </span>
@@ -116,7 +161,7 @@
                                     <!-- single -->
                                     <label class="option-single d-block">
                                         <input type="radio" name="option" class="d-none">
-                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
                                             <span class="tag app-fw-700 app-fs-14">B</span>
                                             <span class="text ps-2">Glenoid cavity of the scapula</span>
                                         </span>
@@ -125,7 +170,7 @@
                                     <!-- single -->
                                     <label class="option-single d-block">
                                         <input type="radio" name="option" class="d-none">
-                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
                                             <span class="tag app-fw-700 app-fs-14">C</span>
                                             <span class="text ps-2">Acromiam process of the scapula</span>
                                         </span>
@@ -134,7 +179,7 @@
                                     <!-- single -->
                                     <label class="option-single d-block">
                                         <input type="radio" name="option" class="d-none">
-                                        <span class="inner d-flex app-fw-600 app-fs-16">
+                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
                                             <span class="tag app-fw-700 app-fs-14">D</span>
                                             <span class="text ps-2">Head of the humerous</span>
                                         </span>
@@ -162,7 +207,7 @@
         </div>
 
         <!-- left bar -->
-        <div class="ques-left-bar active">
+        <div class="ques-left-bar">
             <div class="alb-inner">
                 <ul class="nav nav-tabs justify-content-center mb-0 border-0" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -218,13 +263,14 @@
                         <!-- body -->
                         <div class="body">
                             <div class="item w-100 mb-3">
-                                <p class="app-fw-700 app-text-black app-fs-19">Chemistry</p>            
+                                <p class="app-fw-700 app-text-black app-fs-19">Chemistry</p>
                             </div>
 
                             <div class="top d-flex flex-wrap">
                                 <!-- item -->
                                 <div class="item">
-                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                    <div
+                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -246,7 +292,8 @@
 
                                 <!-- item -->
                                 <div class="item">
-                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                    <div
+                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -257,7 +304,8 @@
 
                                 <!-- item -->
                                 <div class="item">
-                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                    <div
+                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -268,7 +316,8 @@
 
                                 <!-- item -->
                                 <div class="item">
-                                    <div class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                    <div
+                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -773,6 +822,7 @@
     </div>
 
     <!-- Modal -->
+    <!-- instructions Modal -->
     <div class="modal fade custom-modal instructions-modal" id="instructionsModal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -817,6 +867,102 @@
                     <div class="inner app-bg-primary">
                         <p class="app-fw-700 app-fs-20 text-white text-capitalize text-center" data-bs-dismiss="modal">
                             close</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- remaning time Modal -->
+    <div class="modal fade custom-modal remaining-time-modal" id="remainingTimeModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- body -->
+                <div class="body">
+                    <!-- top sec -->
+                    <div class="top-sec mb-3">
+                        <p class="head app-fs-17 app-fw-600 text-center mb-1">Remaining Time</p>
+                        <p class="timer app-fs-25 app-fw-800 app-text-primary text-center">02:58:50</p>
+                    </div>
+
+                    <!-- details -->
+                    <div class="details-tags">
+                        <div class="inner d-flex flex-wrap">
+                            <!-- item -->
+                            <div class="item d-flex align-items-center pb-2">
+                                <div class="pentagon-icon-with-text pi-sky-blue position-relative mx-auto">
+                                    <div class="p-icon"></div>
+                                    <span class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                        1
+                                    </span>
+                                </div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">Answered</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center pb-2">
+                                <div class="pentagon-icon-with-text pi-orange position-relative mx-auto">
+                                    <div class="p-icon"></div>
+                                    <span class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
+                                        7
+                                    </span>
+                                </div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">not visited</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon-with-text pi-dark-gray mx-auto position-relative">
+                                    <div class="r-icon"></div>
+                                    <span
+                                        class="text position-absolute app-fs-13 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                        145
+                                    </span>
+                                </div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">not visited</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon-with-text pi-primary mx-auto position-relative">
+                                    <div class="r-icon"></div>
+                                    <span
+                                        class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                        1
+                                    </span>
+                                </div>
+                                <div class="text app-fw-700 app-text-black text-capitalize ms-2">review later</div>
+                            </div>
+
+                            <!-- item -->
+                            <div class="item d-flex align-items-center">
+                                <div class="round-icon-with-text pi-primary mx-auto position-relative">
+                                    <div class="r-icon"></div>
+                                    <span
+                                        class="text position-absolute app-fs-16 app-fw-600 text-white d-flex align-items-center justify-content-center">
+                                        0
+                                    </span>
+                                </div>
+                                <div class="text app-fw-700 app-text-black ms-2">Answered and Market for Review</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- bottom sec -->
+                    <div class="bottom-sec pt-4">
+                        <div class="inner d-flex flex-wrap justify-content-center">
+                            <p class="top-p w-100 app-fs-20 app-fw-700 text-center mb-2">You cannot edit your response later when you are finished</p>
+                            <button type="button"
+                                class="resume btn app-btn app-btn-rounded app-btn-primary text-capitalize app-fs-14 mx-1">
+                                Resume
+                            </button>
+                            <button type="button"
+                                class="submit btn app-btn app-btn-rounded app-btn-primary text-capitalize app-fs-14 mx-1">
+                                Submit
+                            </button>
+                            <p class="bottom-p w-100 app-fw-600 app-text-gray text-center mt-3">If you are offline don't worry, you can sync later.</p>
+                        </div>
                     </div>
                 </div>
             </div>

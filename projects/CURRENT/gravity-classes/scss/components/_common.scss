@@ -103,6 +103,29 @@ $defaultMarginAndPadding: 25px;
     }
 }
 
+// page tab sec 2
+.page-tab-sec-2 {
+    background-color: $gray-bg-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include transition;
+    &.sticky {
+        position: sticky;
+        top: 0;
+    }
+
+    .pts-link {
+        padding: 8px 13px;
+        border-radius: 30px;
+        background-color: darken($color: $gray-bg-color, $amount: 10);
+        color: darken($color: $gray-bg-color, $amount: 20);
+        &.active {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}
+
 // pentagon icon
 .pentagon-icon {
     position: relative;

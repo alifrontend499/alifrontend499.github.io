@@ -159,6 +159,10 @@ button.no-browser-style { background: transparent; padding: initial; line-height
 
 .app-text-gray { color: gray !important; }
 
+.app-text-success { color: #0fae59 !important; }
+
+.app-text-danger { color: #c92f2f !important; }
+
 .app-text-primary { color: #0c374f !important; }
 
 .app-text-secondary { color: #019c9e !important; }
@@ -246,6 +250,11 @@ a.app-text-dark:hover { color: #242424 !important; }
 .page-tab-sec .pts-link.active { color: #fff; border-color: #019c9e; }
 .page-tab-sec .pts-link .tag { background-color: #019c9e; color: #fff; min-height: 20px; min-width: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-left: 5px; }
 
+.page-tab-sec-2 { background-color: #f1f1f1; padding-top: 10px; padding-bottom: 10px; transition: 0.3s; }
+.page-tab-sec-2.sticky { position: sticky; top: 0; }
+.page-tab-sec-2 .pts-link { padding: 8px 13px; border-radius: 30px; background-color: #d8d8d8; color: #bebebe; }
+.page-tab-sec-2 .pts-link.active { background-color: #0c374f; color: #fff; }
+
 .pentagon-icon { position: relative; width: 28px; box-sizing: content-box; border-width: 20px 5px 0; border-style: solid; border-color: #f1f1f1 transparent; top: 7px; }
 .pentagon-icon::before { content: ""; position: absolute; height: 0; width: 0; top: -37px; left: -5px; border-width: 0 19px 17px; border-style: solid; border-color: transparent transparent #f1f1f1; }
 .pentagon-icon.upside-down { top: -7px; transform: rotate(180deg); }
@@ -282,6 +291,15 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .app-header { margin: 0 -7px; }
 .app-header .lt-sec .text { top: 1.5px; }
 
+.header-left-menu { position: fixed; left: -100%; height: 100%; width: 270px; top: 0; background-color: #0c374f; z-index: 11; transition: 0.6s; }
+.header-left-menu.active { left: 0; }
+.header-left-menu .close-icon { color: #fff; }
+.header-left-menu .hlm-link { text-decoration: none; color: #fff; transition: 0.3s; font-size: 16px; padding: 12px 15px 11px; border-left: 5px solid transparent; margin-bottom: 5px; }
+.header-left-menu .hlm-link .icon { top: 1px; }
+.header-left-menu .hlm-link .text { padding-left: 15px; }
+.header-left-menu .hlm-link.active { border-color: #1975a8; background-color: #051823; }
+.header-left-menu .hlm-link:active { background-color: #051823; }
+
 .app-header-search .content-container { top: 0; left: 0; width: 100%; z-index: 1; opacity: 0; visibility: hidden; transition: 0.3s; }
 .app-header-search .content-container .app-form .icon { right: 1px; }
 .app-header-search.active .content-container { opacity: 1; visibility: visible; }
@@ -313,6 +331,14 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .question-sec .ques-item .qi-options .option-single.right .inner .text { color: #fff; }
 .question-sec .ques-item .qi-options .option-single > input:checked + .inner { background-color: #0fae59; }
 .question-sec .ques-item .qi-options .option-single > input:checked + .inner .text { color: #fff; }
+.question-sec .ques-item .qi-options-not-selectable .option-single > .inner { padding: 14px 12px 13px; border-bottom: 1px solid #ccc; }
+.question-sec .ques-item .qi-options-not-selectable .option-single .tag { background-color: #ddd; min-height: 25px; min-width: 25px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-left: 5px; position: relative; top: 3px; }
+.question-sec .ques-item .qi-options-not-selectable .option-single .inner { transition: 0.3s; }
+.question-sec .ques-item .qi-options-not-selectable .option-single.right .inner { background-color: #0fae59; }
+.question-sec .ques-item .qi-options-not-selectable .option-single.right .inner .text { color: #fff; }
+.question-sec .ques-item .qi-options-not-selectable .option-single.correct-answer > .inner { background-color: #d2feff; }
+.question-sec .ques-item .single-field-option { padding: 20px; }
+.question-sec .ques-item .single-field-option input { width: auto; }
 
 .page-bottom-buttons { bottom: 0; left: 0; width: 100%; }
 .page-bottom-buttons > .inner { padding: 15px 5px; }
@@ -351,5 +377,11 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .page-test-details .com-item .icon-right.bg-sky-blue { background-color: #148bd0; }
 .page-test-details .com-item .icon-right.bg-dark-red { background-color: #c92f2f; }
 .page-test-details .com-item .text { padding: 15px 10px; }
+
+.remaining-time-modal .body { padding: 15px 15px; }
+.remaining-time-modal .body .details-tags .item:not(:last-child) { margin-bottom: 15px; padding-right: 15px; }
+.remaining-time-modal .body .bottom-sec .app-btn { min-width: 100px; }
+
+.network-check-modal .body { padding: 35px 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,6 +14,20 @@ $(function () {
             $(this).toggleClass("active");
             $(this).parent().toggleClass("active");
         });
+        // side menu open
+        $(".menu-icon").click(function (ev) {
+            ev.preventDefault();
+
+            $(".header-left-menu").toggleClass("active");
+        });
+        // side menu close
+        $(".header-left-menu .close-icon").click(function (ev) {
+            ev.preventDefault();
+
+            setTimeout(function () {
+                $(".header-left-menu").removeClass("active");
+            }, 100);
+        });
         // closing on document click
         $(document).click(function (ev) {
             // search
@@ -25,6 +39,10 @@ $(function () {
                 $(
                     ".app-header-options, .app-header-options > .icon"
                 ).removeClass("active");
+            }
+            // side menu
+            if (!$(".header-left-menu:hover,.menu-icon:hover").length) {
+                $(".header-left-menu").removeClass("active");
             }
         });
     })();
