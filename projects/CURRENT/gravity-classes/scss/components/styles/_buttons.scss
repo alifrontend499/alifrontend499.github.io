@@ -102,6 +102,23 @@ button.no-browser-style {
         }
     }
 
+    // btn transparent with primary hover
+    &.app-btn-transparent-hover-primary {
+        background-color: transparent;
+        color: $dark-text-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: #fff !important;
+        }
+
+        &:active,
+        &.active {
+            background-color: $primary-color;
+            color: #fff !important;
+        }
+    }
+
     // btn transparent with primary dark on hover
     &.app-btn-transparent-hover-primary-dark {
         background-color: transparent;
