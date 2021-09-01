@@ -293,7 +293,7 @@ a.app-text-dark:hover { color: #242424 !important; }
 .round-icon-with-text.pi-primary .r-icon { background-color: #0c374f; }
 .round-icon-with-text .text { top: 0; left: 0; height: 100%; width: 100%; padding: 0 5px; overflow: hidden; }
 
-.app-white-shadow-box { box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); border-radius: 12px; }
+.app-white-shadow-box { box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); border-radius: 12px; background-color: #fff; }
 
 body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px; color: #3d3d3d; padding-bottom: 80px; }
 
@@ -335,17 +335,27 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .bottom-menu-bar .item:hover .icon-sec, .bottom-menu-bar .item.active .icon-sec { color: #019c9e; }
 .bottom-menu-bar .item:hover .text-sec p, .bottom-menu-bar .item.active .text-sec p { color: #019c9e; }
 
+#home-sec-one { padding: 15px 0px 5px; }
+
+.home-sec-one .item { margin-right: 15px; margin-bottom: 10px; min-width: 80px; }
+.home-sec-one .item > .item-inner { padding: 10px; }
+.home-sec-one .item .img { height: 30px; margin-bottom: 5px; }
+
 .test-series .list .item { width: 50%; padding: 0 7px; }
 .test-series .list .item:not(:last-child):not(:nth-last-child(2)) { margin-bottom: 14px; }
-.test-series .list .item .inner { background-color: #fff; min-height: 66px; padding: 10px 15px; }
+.test-series .list .item .inner { min-height: 66px; padding: 10px 15px; }
 .test-series .list .item .inner:active { background-color: #efefef; }
 .test-series .list .item .text { line-height: normal; }
 
 .home-banner img { width: 100%; }
 .home-banner .item .caption { top: 0; right: 0; width: 50%; }
 
+.home-online-class .item { margin-right: 15px; margin-bottom: 10px; min-width: 120px; padding: 5px 0 0 5px; }
+.home-online-class .item > .item-inner { padding: 15px 10px 10px; }
+.home-online-class .item .img { height: 50px; margin-bottom: 10px; }
+
 .buy-books .list .item:not(:last-child) { margin-bottom: 20px; }
-.buy-books .list .item .inner { background-color: #fff; min-height: 66px; padding: 10px 15px; }
+.buy-books .list .item .inner { min-height: 66px; padding: 10px 15px; }
 .buy-books .list .item .inner:active { background-color: #efefef; }
 .buy-books .list .item .img-sec { width: 45px; }
 .buy-books .list .item .text-sec { line-height: normal; }
@@ -421,5 +431,7 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .remaining-time-modal .body .bottom-sec .app-btn { min-width: 100px; }
 
 .network-check-modal .body { padding: 35px 15px; }
+
+.charts-page .chart-main { padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gravity Classes</title>
+
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- app header -->
+    <header id="app-header" class="app-bg-primary">
+        <div class="container">
+            <div class="app-header d-flex align-items-center position-relative">
+                <!-- left sec -->
+                <div class="lt-sec media-body pe-2">
+                    <div class="inner d-flex align-items-center">
+                        <!-- menu icon -->
+                        <a href="#" class="back-icon app-round-icon-btn app-btn-transparent-hover-primary-dark me-1">
+                            <i class="feather-chevron-left"></i>
+                        </a>
+                        <!-- text -->
+                        <div class="text position-relative">
+                            <a href="#" class="app-fw-700 text-white app-fs-17 text-decoration-none">Test Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- left menu -->
+    <div class="header-left-menu">
+        <div class="hlm-inner">
+            <div class="close-icon my-2 px-1">
+                <a href="#" class="app-round-icon-btn app-btn-transparent-hover-primary-dark ms-auto me-1">
+                    <i class="feather-x"></i>
+                </a>
+            </div>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center active">
+                <span class="icon position-relative">
+                    <i class="feather-home"></i>
+                </span>
+                <span class="text media-body">Home</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-align-justify"></i>
+                </span>
+                <span class="text media-body">Test</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-check-square"></i>
+                </span>
+                <span class="text media-body">Scores</span>
+            </a>
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-bar-chart-2"></i>
+                </span>
+                <span class="text media-body">Progress</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <!-- charts page -->
+        <section id="charts-page" class="app-page-margin-top-bottom subject-wise-charts">
+            <div class="container">
+                <div class="charts-page">
+                    <div class="header mb-3">
+                        <p class="head app-text-primary text-uppercase app-fw-700 app-fs-18">Subject Wise Time Spent</p>
+                        <p class="desc app-fs-17 mt-1">How did you spend your time?</p>
+                    </div>
+
+                    <div class="chart-main app-white-shadow-box">
+                        <div class="inner">
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- page bottom buttons -->
+        <div class="page-bottom-buttons position-fixed">
+            <div class="inner app-bg-gray d-flex align-items-center justify-content-center">
+                <button type="button"
+                    class="prev btn app-btn app-btn-rounded app-btn-primary text-uppercase app-fs-14 mx-1">previous</button>
+                <button type="button"
+                    class="save btn app-btn app-btn-rounded app-btn-primary text-uppercase app-fs-14 mx-1">next</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- CHARTS JS -->
+    <script src="assets/chartsjs/js/chart.min.js"></script>
+    <!-- SCRIPT CUSTOM -->
+    <script src="js/app.js"></script>
+
+
+    <script>
+        $(function () {
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['CHEMISTERY', 'UNATTEMPTED'],
+                    datasets: [{
+                        label: 'Scores',
+                        data: [1.52, 0.94,],
+                        backgroundColor: [
+                            '#2dcc70', '#f1c316'
+                        ],
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            // enabled: false,
+                            // position: "nearest"
+                            // callbacks: {
+                            //     footer: (tooltipItems) => {
+                            //         let sum = 0;
+                            //         tooltipItems.forEach(function (tooltipItem) {
+                            //             sum += tooltipItem.parsed.y;
+                            //         });
+                            //         return 'Scores: ' + sum + " %";
+                            //     },
+                            // }
+                        }
+
+                    },
+
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            min: 0,
+                            max: 60,
+                            stepSize: 12,
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                        }
+
+                    },
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

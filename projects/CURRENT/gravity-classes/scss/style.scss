@@ -209,6 +209,26 @@ body {
     }
 }
 
+// home sec one
+#home-sec-one {
+    padding: 15px 0px 5px;
+}
+.home-sec-one {
+    .item {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        min-width: 80px;
+        > .item-inner {
+            padding: 10px;
+        }
+
+        .img {
+            height: 30px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
 // test series
 #test-series {
 }
@@ -221,7 +241,6 @@ body {
                 margin-bottom: 14px;
             }
             .inner {
-                background-color: #fff;
                 min-height: 66px;
                 padding: 10px 15px;
                 &:active {
@@ -251,6 +270,26 @@ body {
     }
 }
 
+// home online class
+#home-online-class {
+}
+.home-online-class {
+    .item {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        min-width: 120px;
+        padding: 5px 0 0 5px;
+        > .item-inner {
+            padding: 15px 10px 10px;
+        }
+
+        .img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 // test series
 #buy-books {
 }
@@ -261,7 +300,6 @@ body {
                 margin-bottom: 20px;
             }
             .inner {
-                background-color: #fff;
                 min-height: 66px;
                 padding: 10px 15px;
                 &:active {
@@ -635,5 +673,14 @@ body {
 .network-check-modal {
     .body {
         padding: 35px 15px;
+    }
+}
+
+
+// charts page
+#charts-page {}
+.charts-page {
+    .chart-main {
+        padding: 10px;
     }
 }
