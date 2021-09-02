@@ -42,13 +42,13 @@
                     <div class="inner d-flex align-items-center">
                         <!-- header timer -->
                         <div class="app-header-timer position-relative me-2">
-                            <p class="text-white app-fw-600 cursor-pointer" data-bs-toggle="modal"
-                                data-bs-target="#remainingTimeModal">02:58:50</p>
+                            <p class="text-white app-fw-600 cursor-pointer">02:58:50</p>
                         </div>
 
                         <!-- header submit btn -->
                         <div class="app-header-submit-btn">
-                            <button class="app-btn app-btn-rounded app-btn-secondary">submit</button>
+                            <button class="app-btn app-btn-rounded app-btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#remainingTimeModal">submit</button>
                         </div>
                     </div>
                 </div>
@@ -96,6 +96,15 @@
                 </span>
                 <span class="text media-body">Progress</span>
             </a>
+
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-airplay"></i>
+                </span>
+                <span class="text media-body">Matrix</span>
+            </a>
         </div>
     </div>
 
@@ -138,7 +147,7 @@
                                 <!-- single field -->
                                 <div class="single-field-option">
                                     <div class="app-form">
-                                        <input type="number" class="form-control" placeholder="Your Answer">
+                                        <input type="text" class="form-control" placeholder="Your Answer">
                                     </div>
                                 </div>
 

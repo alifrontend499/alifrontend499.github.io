@@ -42,13 +42,13 @@
                     <div class="inner d-flex align-items-center">
                         <!-- header timer -->
                         <div class="app-header-timer position-relative me-2">
-                            <p class="text-white app-fw-600 cursor-pointer" data-bs-toggle="modal"
-                                data-bs-target="#remainingTimeModal">02:58:50</p>
+                            <p class="text-white app-fw-600 cursor-pointer">02:58:50</p>
                         </div>
 
                         <!-- header submit btn -->
                         <div class="app-header-submit-btn">
-                            <button class="app-btn app-btn-rounded app-btn-secondary">submit</button>
+                            <button class="app-btn app-btn-rounded app-btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#remainingTimeModal">submit</button>
                         </div>
                     </div>
                 </div>
@@ -95,6 +95,15 @@
                     <i class="feather-bar-chart-2"></i>
                 </span>
                 <span class="text media-body">Progress</span>
+            </a>
+
+
+            <!-- link -->
+            <a href="#" class="hlm-link d-flex align-items-center">
+                <span class="icon position-relative">
+                    <i class="feather-airplay"></i>
+                </span>
+                <span class="text media-body">Matrix</span>
             </a>
         </div>
     </div>
@@ -824,7 +833,7 @@
     <!-- Modal -->
     <!-- instructions Modal -->
     <div class="modal fade custom-modal instructions-modal" id="instructionsModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        aria-labelledby="instructionsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!-- head -->
@@ -875,7 +884,7 @@
 
     <!-- remaning time Modal -->
     <div class="modal fade custom-modal remaining-time-modal" id="remainingTimeModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        aria-labelledby="remainingTimeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <!-- body -->
@@ -952,7 +961,8 @@
                     <!-- bottom sec -->
                     <div class="bottom-sec pt-4">
                         <div class="inner d-flex flex-wrap justify-content-center">
-                            <p class="top-p w-100 app-fs-20 app-fw-700 text-center mb-2">You cannot edit your response later when you are finished</p>
+                            <p class="top-p w-100 app-fs-20 app-fw-700 text-center mb-2">You cannot edit your response
+                                later when you are finished</p>
                             <button type="button"
                                 class="resume btn app-btn app-btn-rounded app-btn-primary text-capitalize app-fs-14 mx-1">
                                 Resume
@@ -961,7 +971,8 @@
                                 class="submit btn app-btn app-btn-rounded app-btn-primary text-capitalize app-fs-14 mx-1">
                                 Submit
                             </button>
-                            <p class="bottom-p w-100 app-fw-600 app-text-gray text-center mt-3">If you are offline don't worry, you can sync later.</p>
+                            <p class="bottom-p w-100 app-fw-600 app-text-gray text-center mt-3">If you are offline don't
+                                worry, you can sync later.</p>
                         </div>
                     </div>
                 </div>

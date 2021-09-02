@@ -46,4 +46,19 @@ $(function () {
             }
         });
     })();
+
+    // SHOW MODAL TEMPRORY FUNCTION: PLEASE REMOVE LATER
+    // IT IS ONLY FOR SHOWING MODAL FOR TESTING PURPOSE ONLY
+    (function () {
+        const hash = location.hash;
+
+        console.log("hash ", hash)
+        if (hash) {
+            var myModal = new bootstrap.Modal(
+                document.getElementById(hash.replace("#", "")),
+                {}
+            );
+            myModal.show();
+        }
+    })();
 });
