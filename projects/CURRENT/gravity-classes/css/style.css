@@ -99,6 +99,9 @@ button.no-browser-style { background: transparent; padding: initial; line-height
 .app-btn.app-btn-outlined-black { background-color: transparent; border: 1px solid #bfbfbf; color: #0c374f; }
 .app-btn.app-btn-outlined-black:hover { background-color: #3d3d3d; color: #fff; }
 .app-btn.app-btn-outlined-black:active, .app-btn.app-btn-outlined-black.active { background-color: #303030; color: #fff; }
+.app-btn.app-btn-outlined-blue { background-color: transparent; border: 1px solid #0c374f; color: #0c374f; }
+.app-btn.app-btn-outlined-blue:hover { background-color: #0c374f; color: #fff; }
+.app-btn.app-btn-outlined-blue:active, .app-btn.app-btn-outlined-blue.active { background-color: #092839; color: #fff; }
 .app-btn.app-btn-outlined-white { background-color: transparent; border: 1px solid #fff; color: #fff; }
 .app-btn.app-btn-outlined-white:hover { background-color: #fff; color: #019c9e; }
 .app-btn.app-btn-outlined-white:active, .app-btn.app-btn-outlined-white.active { background-color: #f2f2f2; color: #019c9e; }

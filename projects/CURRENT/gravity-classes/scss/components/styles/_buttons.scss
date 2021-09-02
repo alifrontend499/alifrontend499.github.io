@@ -301,6 +301,23 @@ button.no-browser-style {
         }
     }
 
+    // btn outlined blue
+    &.app-btn-outlined-blue {
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+
+        &:active,
+        &.active {
+            background-color: darken($color: $primary-color, $amount: 5);
+            color: #fff;
+        }
+    }
+
     // btn outlined white
     &.app-btn-outlined-white {
         background-color: transparent;
