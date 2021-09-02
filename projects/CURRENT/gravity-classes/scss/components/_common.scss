@@ -277,6 +277,12 @@ $defaultMarginAndPadding: 25px;
             background-color: $primary-color;
         }
     }
+    // secondary
+    &.pi-secondary {
+        .r-icon {
+            background-color: $secondary-color;
+        }
+    }
     .text {
         top: 0;
         left: 0;

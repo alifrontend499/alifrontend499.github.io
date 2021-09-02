@@ -291,6 +291,7 @@ a.app-text-dark:hover { color: #242424 !important; }
 .round-icon-with-text .r-icon { height: 100%; width: 100%; border-radius: 50%; background-color: #f1f1f1; }
 .round-icon-with-text.pi-dark-gray .r-icon { background-color: #a5a5a5; }
 .round-icon-with-text.pi-primary .r-icon { background-color: #0c374f; }
+.round-icon-with-text.pi-secondary .r-icon { background-color: #019c9e; }
 .round-icon-with-text .text { top: 0; left: 0; height: 100%; width: 100%; padding: 0 5px; overflow: hidden; }
 
 .app-white-shadow-box { box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); border-radius: 12px; background-color: #fff; }
