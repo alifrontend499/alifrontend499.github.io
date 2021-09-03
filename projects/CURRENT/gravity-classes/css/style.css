@@ -335,7 +335,7 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .app-header-search .content-container .app-form .icon { right: 1px; }
 .app-header-search.active .content-container { opacity: 1; visibility: visible; }
 
-.app-header-options .content-container { top: calc(100% + 5px); right: 0; min-width: 170px; z-index: 1; opacity: 0; visibility: hidden; transition: 0.3s; }
+.app-header-options .content-container { top: calc(100% + 5px); right: 0; min-width: 170px; z-index: 123; opacity: 0; visibility: hidden; transition: 0.3s; }
 .app-header-options .content-container > .inner { border-radius: 6px; overflow: hidden; box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1); }
 .app-header-options .content-container .aho-link { padding: 8px 15px; border: 1px solid #f1f1f1; color: #3d3d3d; font-weight: 600; transition: 0.3s; }
 .app-header-options .content-container .aho-link:hover { background-color: #092839; color: #fff; }
