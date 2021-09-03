@@ -79,6 +79,7 @@ $defaultMarginAndPadding: 25px;
     &.sticky {
         position: sticky;
         top: 0;
+        z-index: 12;
     }
 
     .pts-link {
@@ -99,6 +100,55 @@ $defaultMarginAndPadding: 25px;
             justify-content: center;
             border-radius: 50%;
             margin-left: 5px;
+        }
+    }
+}
+
+// page tab sec swipper
+.page-tab-sec-swipper {
+    background-color: $primary-color-shade-1;
+    padding-top: 14px;
+    padding-left: 15px;
+    @include transition;
+    &.sticky {
+        position: sticky;
+        top: 0;
+        z-index: 12;
+    }
+
+    .pts-link {
+        padding: 0 13px 9px;
+        border-bottom: 4px solid transparent;
+        color: $primary-color-light;
+        margin-right: 15px;
+        &.active {
+            color: #fff;
+            border-color: $secondary-color;
+        }
+        .tag {
+            background-color: $secondary-color;
+            color: #fff;
+            min-height: 20px;
+            min-width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+    }
+
+    .swiper-wrapper {
+        // justify-content: center;
+    }
+    .swiper-slide {
+        width: auto !important;
+
+        &.swiper-slide-thumb-active {
+            .pts-link {
+                color: #fff;
+                border-color: $secondary-color;
+            }
         }
     }
 }
@@ -251,6 +301,11 @@ $defaultMarginAndPadding: 25px;
     &.pi-primary {
         background-color: $primary-color;
     }
+
+    // primary
+    &.pi-secondary {
+        background-color: $secondary-color;
+    }
 }
 
 // round icon
@@ -298,4 +353,24 @@ $defaultMarginAndPadding: 25px;
     box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.2);
     border-radius: 12px;
     background-color: #fff;
+}
+
+// app spinner
+.app-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba($color: #000, $alpha: 0.5);
+    &:not(.active) {
+        display: none;
+    }
+    .spinner-border {
+        color: #fff;
+        height: 48px;
+        width: 48px;
+        font-size: 20px;
+    }
 }

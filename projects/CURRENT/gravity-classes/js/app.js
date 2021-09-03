@@ -21,6 +21,13 @@ $(function () {
             $(".header-left-menu").toggleClass("active");
         });
         // side menu close
+        $(".header-left-menu > .overlay").click(function (ev) {
+            ev.preventDefault();
+            setTimeout(function () {
+                $(".header-left-menu").removeClass("active");
+            }, 50);
+        });
+        // side menu close
         $(".header-left-menu .close-icon").click(function (ev) {
             ev.preventDefault();
 
@@ -34,6 +41,13 @@ $(function () {
             setTimeout(function () {
                 $(".ques-left-bar").addClass("active");
             }, 100);
+        });
+        // ques menu close
+        $(".ques-left-bar > .overlay").click(function (ev) {
+            ev.preventDefault();
+            setTimeout(function () {
+                $(".ques-left-bar").removeClass("active");
+            }, 50);
         });
         // closing on document click
         $(document).click(function (ev) {
@@ -65,14 +79,12 @@ $(function () {
     // IT IS ONLY FOR SHOWING MODAL FOR TESTING PURPOSE ONLY
     (function () {
         const hash = location.hash;
-
-        console.log("hash ", hash);
         if (hash) {
-            var myModal = new bootstrap.Modal(
-                document.getElementById(hash.replace("#", "")),
-                {}
-            );
-            myModal.show();
+            const ele = document.getElementById(hash.replace("#", ""));
+            if (ele) {
+                var myModal = new bootstrap.Modal(ele, {});
+                myModal.show();
+            }
         }
     })();
 });

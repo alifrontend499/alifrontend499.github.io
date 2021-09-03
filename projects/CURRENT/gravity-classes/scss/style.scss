@@ -37,12 +37,30 @@ body {
     height: 100%;
     width: 270px;
     top: 0;
-    background-color: $primary-color;
-    z-index: 12;
     @include transition(0.6s);
 
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 11;
+    }
     &.active {
         left: 0;
+        .overlay {
+            left: 0;
+        }
+    }
+    > .hlm-inner {
+        height: 100%;
+        overflow: auto;
+        background: #fff;
+        position: relative;
+        background-color: $primary-color;
+        z-index: 12;
     }
     .close-icon {
         color: #fff;
@@ -171,7 +189,7 @@ body {
     bottom: 0px;
     left: 0;
     width: 100%;
-    z-index: 11;
+    // z-index: 11;
     background-color: #fff;
     @include box-shadow(0px, 0px, 4px, 0px, rgba(0, 0, 0, 0.2));
     border-radius: 30px 30px 0px 0px;
@@ -355,19 +373,25 @@ body {
     }
 }
 
+.swipper-view {
+    .swiper-slide {
+        min-height: calc(100vh - 150px);
+    }
+}
+
 // question-sec
 .question-sec {
     margin-bottom: 80px;
     .ques-item {
-        margin: 0 -12px;
+        // margin: 0 -12px;
         > .qi-inner {
         }
 
         .qi-title {
-            padding: 15px 12px 13px;
+            padding: 15px 15px 13px;
         }
         .qi-desc {
-            padding: 20px 12px;
+            padding: 20px 15px;
             border-bottom: 2px solid #ccc;
         }
 
@@ -375,7 +399,7 @@ body {
         .qi-options {
             .option-single {
                 > .inner {
-                    padding: 14px 12px 13px;
+                    padding: 14px 15px 13px;
                     border-bottom: 1px solid #ccc;
                 }
                 .tag {
@@ -487,6 +511,15 @@ body {
 }
 
 // instructions modal
+.instructions-modal {
+    .body {
+        height: 100%;
+        overflow: auto;
+    }
+    .modal-content {
+        border-radius: 0;
+    }
+}
 .instructions-modal,
 .instructions-tab {
     .head,
@@ -525,15 +558,29 @@ body {
     top: 0;
     height: 100%;
     width: 300px;
-    background-color: #fff;
+    z-index: 12;
     @include transition(0.5s);
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 11;
+    }
     &.active {
         left: 0;
+        .overlay {
+            left: 0;
+        }
     }
-
     .alb-inner {
         height: 100%;
         overflow: auto;
+        background: #fff;
+        position: relative;
+        z-index: 12;
     }
     .nav-tabs {
         position: sticky;
@@ -676,9 +723,9 @@ body {
     }
 }
 
-
 // charts page
-#charts-page {}
+#charts-page {
+}
 .charts-page {
     .chart-main {
         padding: 10px;

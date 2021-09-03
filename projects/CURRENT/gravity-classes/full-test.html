@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="assets/swipperjs/css/swiper-bundle.min.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- custom -->
@@ -92,72 +94,24 @@
         </div>
     </header>
 
-    <!-- left menu -->
-    <div class="header-left-menu">
-        <div class="hlm-inner">
-            <div class="close-icon my-2 px-1">
-                <a href="#" class="app-round-icon-btn app-btn-transparent-hover-primary-dark ms-auto me-1">
-                    <i class="feather-x"></i>
-                </a>
-            </div>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center active">
-                <span class="icon position-relative">
-                    <i class="feather-home"></i>
-                </span>
-                <span class="text media-body">Home</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-align-justify"></i>
-                </span>
-                <span class="text media-body">Test</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-check-square"></i>
-                </span>
-                <span class="text media-body">Scores</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-bar-chart-2"></i>
-                </span>
-                <span class="text media-body">Progress</span>
-            </a>
-
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-airplay"></i>
-                </span>
-                <span class="text media-body">Matrix</span>
-            </a>
-        </div>
-    </div>
-
     <!-- wrapper -->
     <div class="wrapper">
 
-        <!-- page tab sec -->
-        <div class="page-tab-sec sticky">
-            <div class="container">
-                <div class="pts-inner d-flex align-items-center justify-content-evenly overflow-auto">
+        <!-- SLIDES | thumbs -->
+        <div thumbsSlider="" class="swiper swipper-thumbs page-tab-sec-swipper sticky">
+            <div class="swiper-wrapper">
+                <!-- active | item -->
+                <div data-hash="active" class="swiper-slide">
                     <!-- link -->
                     <a href="#"
-                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize active">
+                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
                         Active
                         <span class="tag app-fs-12 app-fw-400">77</span>
                     </a>
+                </div>
 
+                <!-- attempted | item -->
+                <div data-hash="attempted" class="swiper-slide">
                     <!-- link -->
                     <a href="#"
                         class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
@@ -172,123 +126,172 @@
         <section id="full-test-sec" class="app-page-margin-top-bottom">
             <div class="container">
                 <div class="full-test-sec">
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                    <!-- SLIDES | VIEW -->
+                    <div class="swiper swipper-view">
+                        <div class="swiper-wrapper">
+                            <!-- active | item -->
+                            <div data-hash="active" class="swiper-slide">
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
 
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
+                            <!-- attempted | item -->
+                            <div data-hash="attempted" class="swiper-slide">
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
 
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
-
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
-
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
-
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
-
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- item -->
-                    <div class="listing-item">
-                        <div class="li-inner d-flex align-items-center">
-                            <!-- left sec -->
-                            <div class="lt-sec media-body">
-                                <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                            </div>
-
-                            <!-- right sec -->
-                            <div class="rt-sec pl-2">
-                                <i class="feather-download"></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- left bar -->
         <div class="ques-left-bar">
+            <div class="overlay"></div>
             <div class="alb-inner">
                 <ul class="nav nav-tabs justify-content-center mb-0 border-0" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -902,13 +905,43 @@
         </div>
     </div>
 
-
+    <!-- spinner -->
+    <div class="app-spinner">
+        <div class="inner h-100 w-100 d-flex align-items-center justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SWIPPER -->
+    <script src="assets/swipperjs/js/swiper-bundle.min.js"></script>
     <!-- SCRIPT CUSTOM -->
     <script src="js/app.js"></script>
+
+    <script>
+        var swiperThumbs = new Swiper(".swipper-thumbs", {
+            // allowTouchMove: false,
+            slidesPerView: "auto",
+            hashNavigation: {
+                watchState: true,
+            },
+        });
+
+        var swiperView = new Swiper(".swipper-view", {
+            spaceBetween: 30,
+            hashNavigation: {
+                watchState: true,
+            },
+            thumbs: {
+                swiper: swiperThumbs,
+            },
+            autoHeight: false
+        });
+    </script>
 </body>
 
 </html>

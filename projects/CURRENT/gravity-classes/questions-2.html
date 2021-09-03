@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/feather-icons/feather.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="assets/swipperjs/css/swiper-bundle.min.css">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- custom -->
@@ -27,7 +29,8 @@
                 <div class="lt-sec media-body pe-2">
                     <div class="inner d-flex align-items-center">
                         <!-- menu icon -->
-                        <a href="#" class="ques-menu-icon app-round-icon-btn app-btn-transparent-hover-primary-dark me-1">
+                        <a href="#"
+                            class="ques-menu-icon app-round-icon-btn app-btn-transparent-hover-primary-dark me-1">
                             <i class="feather-menu"></i>
                         </a>
                         <!-- text -->
@@ -56,77 +59,32 @@
         </div>
     </header>
 
-    <!-- left menu -->
-    <div class="header-left-menu">
-        <div class="hlm-inner">
-            <div class="close-icon my-2 px-1">
-                <a href="#" class="app-round-icon-btn app-btn-transparent-hover-primary-dark ms-auto me-1">
-                    <i class="feather-x"></i>
-                </a>
-            </div>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center active">
-                <span class="icon position-relative">
-                    <i class="feather-home"></i>
-                </span>
-                <span class="text media-body">Home</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-align-justify"></i>
-                </span>
-                <span class="text media-body">Test</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-check-square"></i>
-                </span>
-                <span class="text media-body">Scores</span>
-            </a>
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-bar-chart-2"></i>
-                </span>
-                <span class="text media-body">Progress</span>
-            </a>
-
-
-            <!-- link -->
-            <a href="#" class="hlm-link d-flex align-items-center">
-                <span class="icon position-relative">
-                    <i class="feather-airplay"></i>
-                </span>
-                <span class="text media-body">Matrix</span>
-            </a>
-        </div>
-    </div>
-
     <!-- wrapper -->
     <div class="wrapper">
 
-        <!-- page tab sec -->
-        <div class="page-tab-sec sticky">
-            <div class="container">
-                <div class="pts-inner d-flex align-items-center justify-content-evenly overflow-auto">
+        <!-- SLIDES | thumbs -->
+        <div thumbsSlider="" class="swiper swipper-thumbs page-tab-sec-swipper sticky">
+            <div class="swiper-wrapper">
+                <!-- chemistery | item -->
+                <div data-hash="chemistery" class="swiper-slide">
                     <!-- link -->
                     <a href="#"
-                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize active">
+                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
                         chemistery
                     </a>
+                </div>
 
+                <!-- biology | item -->
+                <div data-hash="biology" class="swiper-slide">
                     <!-- link -->
                     <a href="#"
                         class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
                         biology
                     </a>
+                </div>
 
+                <!-- physics | item -->
+                <div data-hash="physics" class="swiper-slide">
                     <!-- link -->
                     <a href="#"
                         class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
@@ -138,63 +96,195 @@
 
         <!-- question sec -->
         <section id="question-sec" class="app-page-margin-bottom">
-            <div class="container">
+            <div class="container px-0">
                 <div class="question-sec">
-                    <!-- item -->
-                    <div class="ques-item">
-                        <div class="qi-inner">
-                            <!-- top sec -->
-                            <div class="top-sec">
-                                <!-- title -->
-                                <div class="qi-title app-bg-primary text-white app-fw-600 app-fs-17">
-                                    <span>Q.6</span> single choice
+                    <!-- SLIDES | VIEW -->
+                    <div class="swiper swipper-view">
+                        <div class="swiper-wrapper">
+                            <!-- chemistery | item -->
+                            <div data-hash="chemistery" class="swiper-slide">
+                                <!-- item -->
+                                <div class="ques-item">
+                                    <div class="qi-inner">
+                                        <!-- top sec -->
+                                        <div class="top-sec">
+                                            <!-- title -->
+                                            <div class="qi-title app-bg-primary text-white app-fw-600 app-fs-17">
+                                                <span>Q.6</span> single choice
+                                            </div>
+
+                                            <!-- description -->
+                                            <div class="qi-desc app-fw-600 app-fs-17">
+                                                Consider the figure shown. What type of
+                                                Qyadrilateral can it be ?
+                                            </div>
+
+                                            <!-- options -->
+                                            <div class="qi-options">
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">A</span>
+                                                        <span class="text ps-2">Spine of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">B</span>
+                                                        <span class="text ps-2">Glenoid cavity of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">C</span>
+                                                        <span class="text ps-2">Acromiam process of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">D</span>
+                                                        <span class="text ps-2">Head of the humerous</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <!-- description -->
-                                <div class="qi-desc app-fw-600 app-fs-17">
-                                    Consider the figure shown. What type of
-                                    Qyadrilateral can it be ?
+                            <!-- biology | item -->
+                            <div data-hash="biology" class="swiper-slide">
+                                <!-- item -->
+                                <div class="ques-item">
+                                    <div class="qi-inner">
+                                        <!-- top sec -->
+                                        <div class="top-sec">
+                                            <!-- title -->
+                                            <div class="qi-title app-bg-primary text-white app-fw-600 app-fs-17">
+                                                <span>Q.6</span> Biology | single choice
+                                            </div>
+
+                                            <!-- description -->
+                                            <div class="qi-desc app-fw-600 app-fs-17">
+                                                Consider the figure shown. What type of
+                                                Qyadrilateral can it be ?
+                                            </div>
+
+                                            <!-- options -->
+                                            <div class="qi-options">
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">A</span>
+                                                        <span class="text ps-2">Spine of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">B</span>
+                                                        <span class="text ps-2">Glenoid cavity of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">C</span>
+                                                        <span class="text ps-2">Acromiam process of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">D</span>
+                                                        <span class="text ps-2">Head of the humerous</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <!-- options -->
-                                <div class="qi-options">
-                                    <!-- single -->
-                                    <label class="option-single d-block">
-                                        <input type="checkbox" name="option" class="d-none">
-                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
-                                            <span class="tag app-fw-700 app-fs-14">A</span>
-                                            <span class="text ps-2">Spine of the scapula</span>
-                                        </span>
-                                    </label>
+                            <!-- physics | item -->
+                            <div data-hash="physics" class="swiper-slide">
+                                <!-- item -->
+                                <div class="ques-item">
+                                    <div class="qi-inner">
+                                        <!-- top sec -->
+                                        <div class="top-sec">
+                                            <!-- title -->
+                                            <div class="qi-title app-bg-primary text-white app-fw-600 app-fs-17">
+                                                <span>Q.6</span> Physics | single choice
+                                            </div>
 
-                                    <!-- single -->
-                                    <label class="option-single d-block">
-                                        <input type="checkbox" name="option" class="d-none">
-                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
-                                            <span class="tag app-fw-700 app-fs-14">B</span>
-                                            <span class="text ps-2">Glenoid cavity of the scapula</span>
-                                        </span>
-                                    </label>
+                                            <!-- description -->
+                                            <div class="qi-desc app-fw-600 app-fs-17">
+                                                Consider the figure shown. What type of
+                                                Qyadrilateral can it be ?
+                                            </div>
 
-                                    <!-- single -->
-                                    <label class="option-single d-block">
-                                        <input type="checkbox" name="option" class="d-none">
-                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
-                                            <span class="tag app-fw-700 app-fs-14">C</span>
-                                            <span class="text ps-2">Acromiam process of the scapula</span>
-                                        </span>
-                                    </label>
+                                            <!-- options -->
+                                            <div class="qi-options">
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">A</span>
+                                                        <span class="text ps-2">Spine of the scapula</span>
+                                                    </span>
+                                                </label>
 
-                                    <!-- single -->
-                                    <label class="option-single d-block">
-                                        <input type="checkbox" name="option" class="d-none">
-                                        <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
-                                            <span class="tag app-fw-700 app-fs-14">D</span>
-                                            <span class="text ps-2">Head of the humerous</span>
-                                        </span>
-                                    </label>
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">B</span>
+                                                        <span class="text ps-2">Glenoid cavity of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">C</span>
+                                                        <span class="text ps-2">Acromiam process of the scapula</span>
+                                                    </span>
+                                                </label>
+
+                                                <!-- single -->
+                                                <label class="option-single d-block">
+                                                    <input type="checkbox" name="option" class="d-none">
+                                                    <span class="inner d-flex align-items-start app-fw-600 app-fs-16">
+                                                        <span class="tag app-fw-700 app-fs-14">D</span>
+                                                        <span class="text ps-2">Head of the humerous</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -217,6 +307,7 @@
 
         <!-- left bar -->
         <div class="ques-left-bar">
+            <div class="overlay"></div>
             <div class="alb-inner">
                 <ul class="nav nav-tabs justify-content-center mb-0 border-0" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -834,7 +925,7 @@
     <!-- instructions Modal -->
     <div class="modal fade custom-modal instructions-modal" id="instructionsModal" tabindex="-1"
         aria-labelledby="instructionsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <!-- head -->
                 <div class="head">
@@ -980,13 +1071,43 @@
         </div>
     </div>
 
-
+    <!-- spinner -->
+    <div class="app-spinner">
+        <div class="inner h-100 w-100 d-flex align-items-center justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SWIPPER -->
+    <script src="assets/swipperjs/js/swiper-bundle.min.js"></script>
     <!-- SCRIPT CUSTOM -->
     <script src="js/app.js"></script>
+
+    <script>
+        var swiperThumbs = new Swiper(".swipper-thumbs", {
+            // allowTouchMove: false,
+            slidesPerView: "auto",
+            hashNavigation: {
+                watchState: true,
+            },
+        });
+
+        var swiperView = new Swiper(".swipper-view", {
+            spaceBetween: 5,
+            hashNavigation: {
+                watchState: true,
+            },
+            thumbs: {
+                swiper: swiperThumbs,
+            },
+            autoHeight: false
+        });
+    </script>
 </body>
 
 </html>
