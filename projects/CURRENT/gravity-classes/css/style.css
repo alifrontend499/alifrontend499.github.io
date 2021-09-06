@@ -460,4 +460,10 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 
 .charts-page .chart-main { padding: 10px; }
 
+.question-sec-3 .question-paper-tab .head { background-color: #e4e4e4; padding: 30px 15px 20px; }
+.question-sec-3 .question-paper-tab .head .item:not(:last-child) { margin-bottom: 15px; }
+.question-sec-3 .question-paper-tab .head .item:not(:nth-child(2n)) { margin-right: 15px; }
+.question-sec-3 .question-paper-tab .body .item { width: 20%; }
+.question-sec-3 .question-paper-tab .body .item:not(:last-child) { margin-bottom: 20px; }
+
 /*# sourceMappingURL=style.css.map */

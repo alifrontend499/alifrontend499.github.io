@@ -731,3 +731,31 @@ body {
         padding: 10px;
     }
 }
+
+// question sec 3
+#question-sec-3 {
+}
+.question-sec-3 {
+    .question-paper-tab {
+        .head {
+            background-color: darken($color: $gray-bg-color, $amount: 5);
+            padding: 30px 15px 20px;
+            .item {
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+                &:not(:nth-child(2n)) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .body {
+            .item {
+                width: 20%;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
