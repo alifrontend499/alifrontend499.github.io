@@ -759,3 +759,48 @@ body {
         }
     }
 }
+
+// contact us
+body.root-page-contact {
+    background-color: #ebebeb;
+}
+#contact-us {
+}
+.contact-us {
+    .top-sec {
+        position: relative;
+        padding-top: 10px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50%;
+            width: 100%;
+            background-color: $primary-color;
+        }
+
+        .top-sec-inner {
+            z-index: 1;
+            position: relative;
+        }
+    }
+    .contact-form {
+        padding: 5px 20px 0;
+        .inner {
+            padding: 20px 15px 20px;
+            border-radius: 15px;
+        }
+    }
+
+    .bottom-sec {
+        padding: 0 15px;
+        .item {
+            .icon {
+                font-size: 30px;
+                line-height: 0;
+                min-height: 45px;
+            }
+        }
+    }
+}

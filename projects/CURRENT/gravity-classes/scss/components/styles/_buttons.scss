@@ -170,6 +170,12 @@ button.no-browser-style {
         }
     }
 
+    // medium btn
+    &.app-btn-md {
+        padding: 12px 15px 11px;
+        font-size: 16px;
+    }
+
     // large btn
     &.app-btn-lg {
         padding: 14px 25px 15px;

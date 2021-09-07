@@ -76,6 +76,7 @@ button.no-browser-style { background: transparent; padding: initial; line-height
 .app-btn:active, .app-btn.active { background-color: #b2b2b2; }
 .app-btn.app-btn-sm { padding-top: 5px; padding-bottom: 5px; }
 @media screen and (min-width: 576px) { .app-btn.app-btn-sm { padding-top: 7px; padding-bottom: 7px; } }
+.app-btn.app-btn-md { padding: 12px 15px 11px; font-size: 16px; }
 .app-btn.app-btn-lg { padding: 14px 25px 15px; font-size: 19px; }
 @media screen and (min-width: 576px) { .app-btn.app-btn-lg { padding: 14px 25px 15px; min-width: 200px; } }
 .app-btn.app-btn-secondary { background-color: #019c9e; color: #fff; }
@@ -206,8 +207,7 @@ a.app-text-dark:hover { color: #242424 !important; }
 .app-form > input:not([type="radio"]):not([type="checkbox"])::placeholder, .app-form > select::placeholder, .app-form > textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ color: #6e6e6e; opacity: 1; /* Firefox */ }
 .app-form > input:not([type="radio"]):not([type="checkbox"]):-ms-input-placeholder, .app-form > select:-ms-input-placeholder, .app-form > textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #6e6e6e; }
 .app-form > input:not([type="radio"]):not([type="checkbox"])::-ms-input-placeholder, .app-form > select::-ms-input-placeholder, .app-form > textarea::-ms-input-placeholder { /* Microsoft Edge */ color: #6e6e6e; }
-.app-form > input:not([type="radio"]):not([type="checkbox"]):focus, .app-form > select:focus, .app-form > textarea:focus { box-shadow: none; border: transparent; }
-.app-form:not(.no-shadow) > input:not([type="radio"]):not([type="checkbox"]):focus, .app-form:not(.no-shadow) > select:focus, .app-form:not(.no-shadow) > textarea:focus { -webkit-box-shadow: 0px 0px 2px 0px #0c374f; box-shadow: 0px 0px 2px 0px #0c374f; }
+.app-form:not(.no-shadow) > input:not([type="radio"]):not([type="checkbox"]):focus, .app-form:not(.no-shadow) > select:focus, .app-form:not(.no-shadow) > textarea:focus { -webkit-box-shadow: 0px 0px 2px 0px #019c9e; box-shadow: 0px 0px 2px 0px #019c9e; }
 .app-form > input:not([type="radio"]):not([type="checkbox"]), .app-form > select { height: 42px; }
 .app-form.app-form-rounded > input:not([type="radio"]):not([type="checkbox"]), .app-form.app-form-rounded > select { border-radius: 42px; }
 .app-form.app-form-sm > input:not([type="radio"]):not([type="checkbox"]), .app-form.app-form-sm > select { height: 30px; }
@@ -465,5 +465,15 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .question-sec-3 .question-paper-tab .head .item:not(:nth-child(2n)) { margin-right: 15px; }
 .question-sec-3 .question-paper-tab .body .item { width: 20%; }
 .question-sec-3 .question-paper-tab .body .item:not(:last-child) { margin-bottom: 20px; }
+
+body.root-page-contact { background-color: #ebebeb; }
+
+.contact-us .top-sec { position: relative; padding-top: 10px; }
+.contact-us .top-sec::after { content: ""; position: absolute; top: 0; left: 0; height: 50%; width: 100%; background-color: #0c374f; }
+.contact-us .top-sec .top-sec-inner { z-index: 1; position: relative; }
+.contact-us .contact-form { padding: 5px 20px 0; }
+.contact-us .contact-form .inner { padding: 20px 15px 20px; border-radius: 15px; }
+.contact-us .bottom-sec { padding: 0 15px; }
+.contact-us .bottom-sec .item .icon { font-size: 30px; line-height: 0; min-height: 45px; }
 
 /*# sourceMappingURL=style.css.map */
