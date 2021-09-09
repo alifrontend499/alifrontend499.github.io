@@ -263,7 +263,7 @@ a.app-text-dark:hover { color: #242424 !important; }
 .page-tab-sec .pts-link .tag { background-color: #019c9e; color: #fff; min-height: 20px; min-width: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-left: 5px; }
 
 .page-tab-sec-swipper { background-color: #12425d; padding-top: 14px; padding-left: 15px; transition: 0.3s; }
-.page-tab-sec-swipper.sticky { position: sticky; top: 0; z-index: 12; }
+.page-tab-sec-swipper.sticky { position: sticky; top: -1px; z-index: 12; }
 .page-tab-sec-swipper .pts-link { padding: 0 13px 9px; border-bottom: 4px solid transparent; color: #6b97af; margin-right: 15px; }
 .page-tab-sec-swipper .pts-link.active { color: #fff; border-color: #019c9e; }
 .page-tab-sec-swipper .pts-link .tag { background-color: #019c9e; color: #fff; min-height: 20px; min-width: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-left: 5px; }
@@ -311,6 +311,11 @@ a.app-text-dark:hover { color: #242424 !important; }
 .app-spinner { position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 99; background-color: rgba(0, 0, 0, 0.5); }
 .app-spinner:not(.active) { display: none; }
 .app-spinner .spinner-border { color: #fff; height: 48px; width: 48px; font-size: 20px; }
+
+.faqs-wrapper .faq-item .faq-header { padding: 9px 10px 6px; background: #efefef; border-radius: 5px; font-weight: 600; line-height: normal; transition: 0.3s; }
+.faqs-wrapper .faq-item .faq-header > i { background: #ddd; position: relative; height: 25px; width: 25px; border-radius: 4px; font-size: 20px; }
+.faqs-wrapper .faq-item .faq-body { padding: 10px 10px; border: 1px solid #efefef; border-radius: 4px; margin-top: 5px; font-size: 14px; }
+.faqs-wrapper .faq-item.active .faq-header { background-color: #e7e7e7; }
 
 body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px; color: #3d3d3d; padding-bottom: 80px; }
 
