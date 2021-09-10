@@ -96,125 +96,40 @@
 
     <!-- wrapper -->
     <div class="wrapper">
-
-        <!-- SLIDES | thumbs -->
-        <div thumbsSlider="" class="swiper swipper-thumbs page-tab-sec-swipper sticky">
-            <div class="swiper-wrapper">
-                <!-- active | item -->
-                <div data-hash="active" class="swiper-slide">
-                    <!-- link -->
-                    <a href="#"
-                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
-                        Active
-                        <span class="tag app-fs-12 app-fw-400">77</span>
-                    </a>
-                </div>
-
-                <!-- attempted | item -->
-                <div data-hash="attempted" class="swiper-slide">
-                    <!-- link -->
-                    <a href="#"
-                        class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
-                        Attempted
-                        <span class="tag app-fs-12 app-fw-400">12</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
         <!-- full test sec -->
-        <section id="full-test-sec" class="app-page-margin-top-bottom">
-            <div class="container">
+        <section id="full-test-sec" class="app-page-margin-bottom">
+            <div class="container px-0">
                 <div class="full-test-sec">
-                    <!-- SLIDES | VIEW -->
-                    <div class="swiper swipper-view">
-                        <div class="swiper-wrapper">
-                            <!-- active | item -->
-                            <div data-hash="active" class="swiper-slide">
-                                <!-- item -->
-                                <div class="listing-item">
-                                    <a href="#"
-                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
-                                        <!-- left sec -->
-                                        <div class="lt-sec media-body">
-                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                                        </div>
-
-                                        <!-- right sec -->
-                                        <div class="rt-sec pl-2">
-                                            <i class="feather-download"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item -->
-                                <div class="listing-item">
-                                    <a href="#"
-                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
-                                        <!-- left sec -->
-                                        <div class="lt-sec media-body">
-                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                                        </div>
-
-                                        <!-- right sec -->
-                                        <div class="rt-sec pl-2">
-                                            <i class="feather-download"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item -->
-                                <div class="listing-item">
-                                    <a href="#"
-                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
-                                        <!-- left sec -->
-                                        <div class="lt-sec media-body">
-                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                                        </div>
-
-                                        <!-- right sec -->
-                                        <div class="rt-sec pl-2">
-                                            <i class="feather-download"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item -->
-                                <div class="listing-item">
-                                    <a href="#"
-                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
-                                        <!-- left sec -->
-                                        <div class="lt-sec media-body">
-                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                                        </div>
-
-                                        <!-- right sec -->
-                                        <div class="rt-sec pl-2">
-                                            <i class="feather-download"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item -->
-                                <div class="listing-item">
-                                    <a href="#"
-                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
-                                        <!-- left sec -->
-                                        <div class="lt-sec media-body">
-                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
-                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
-                                        </div>
-
-                                        <!-- right sec -->
-                                        <div class="rt-sec pl-2">
-                                            <i class="feather-download"></i>
-                                        </div>
-                                    </a>
-                                </div>
+                    <!-- tabs sec -->
+                    <div class="page-tab-sec-main">
+                        <!-- tabs header -->
+                        <div class="tabs-header sticky d-flex">
+                            <!-- item -->
+                            <div class="pts-item">
+                                <!-- link -->
+                                <a href="#" data-id="active"
+                                    class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize active">
+                                    Active
+                                    <span class="tag app-fs-12 app-fw-400">77</span>
+                                </a>
                             </div>
 
-                            <!-- attempted | item -->
-                            <div data-hash="attempted" class="swiper-slide">
+                            <!-- item -->
+                            <div class="pts-item">
+                                <!-- link -->
+                                <a href="#" data-id="attempted"
+                                    class="pts-link d-flex align-items-center text-decoration-none app-fs-16 app-fw-700 text-capitalize">
+                                    Attempted
+                                    <span class="tag app-fs-12 app-fw-400">12</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- tabs content -->
+                        <div class="tabs-content position-relative">
+                            <!-- change the dynamic html here -->
+                            <div class="main-content">
+
                                 <!-- item -->
                                 <div class="listing-item">
                                     <a href="#"
@@ -278,13 +193,33 @@
                                             <i class="feather-download"></i>
                                         </div>
                                     </a>
+                                </div>
+                                <!-- item -->
+                                <div class="listing-item">
+                                    <a href="#"
+                                        class="li-inner text-decoration-none app-text-dark d-flex align-items-center">
+                                        <!-- left sec -->
+                                        <div class="lt-sec media-body">
+                                            <p class="head app-fs-18 app-fw-600 mb-1">NTA TPC NEET Test 119</p>
+                                            <p class="desc app-fs-16 app-text-secondary">180 Ques - 180 mins</p>
+                                        </div>
+
+                                        <!-- right sec -->
+                                        <div class="rt-sec pl-2">
+                                            <i class="feather-download"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="content-loading text-center d-none">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </section>
@@ -315,7 +250,7 @@
                         <div class="head d-flex flex-wrap">
                             <!-- item -->
                             <div class="item d-flex align-items-center pb-2">
-                                <div class="pentagon-icon pi-sky-blue upside-down"></div>
+                                <div class="pentagon-icon-rotated pi-sky-blue"></div>
                                 <div class="text app-fw-700 app-text-black text-capitalize ms-2">Answered</div>
                             </div>
 
@@ -354,7 +289,7 @@
                                 <!-- item -->
                                 <div class="item">
                                     <div
-                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        class="pentagon-icon-rotated-with-text pi-sky-blue position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -377,7 +312,7 @@
                                 <!-- item -->
                                 <div class="item">
                                     <div
-                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        class="pentagon-icon-rotated-with-text pi-sky-blue position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -389,7 +324,7 @@
                                 <!-- item -->
                                 <div class="item">
                                     <div
-                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        class="pentagon-icon-rotated-with-text pi-sky-blue position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -401,7 +336,7 @@
                                 <!-- item -->
                                 <div class="item">
                                     <div
-                                        class="pentagon-icon-with-text pi-sky-blue upside-down position-relative mx-auto">
+                                        class="pentagon-icon-rotated-with-text pi-sky-blue position-relative mx-auto">
                                         <div class="p-icon"></div>
                                         <span
                                             class="text position-absolute app-fs-16 app-fw-600 text-center text-white">
@@ -923,23 +858,36 @@
     <script src="js/app.js"></script>
 
     <script>
-        var swiperThumbs = new Swiper(".swipper-thumbs", {
-            // allowTouchMove: false,
-            slidesPerView: "auto",
-            hashNavigation: {
-                watchState: true,
-            },
-        });
+        $(function () {
+            // tabs working on click
+            $('.page-tab-sec-main > .tabs-header .pts-link ').click(function (ev) {
+                ev.preventDefault()
+                const $this = $(this)
 
-        var swiperView = new Swiper(".swipper-view", {
-            spaceBetween: 30,
-            hashNavigation: {
-                watchState: true,
-            },
-            thumbs: {
-                swiper: swiperThumbs,
-            },
-            autoHeight: false
+                // getting data id
+                const dataId = $this.attr('data-id')
+
+                // adding active class to tab link and removing from other tabs links
+                $this.addClass('active').closest('.pts-item').siblings().find('>.pts-link').removeClass('active')
+
+                // adding current active element class to content section
+                $this.closest('.page-tab-sec-main').find('.tabs-content').attr('data-active', dataId)
+
+                // showing loading and hiding content
+                $this.closest('.page-tab-sec-main').find('.tabs-content > .main-content').hide()
+                $this.closest('.page-tab-sec-main').find('.tabs-content > .content-loading').removeClass('d-none')
+
+
+                // disabling the loading showing the content: CAN BE USED AFTER THE SUCCESFULL NETWORK REQUEST TO SHOW THE DATA BACK AGAIN
+                // please remove the setTimeout later
+                setTimeout(() => {
+                    $this.closest('.page-tab-sec-main').find('.tabs-content > .main-content').fadeIn(100)
+                    $this.closest('.page-tab-sec-main').find('.tabs-content > .content-loading').addClass('d-none')
+
+                    // scrolling the window to top
+                    $(window).scrollTop(0)
+                }, 2000);
+            })
         });
     </script>
 </body>

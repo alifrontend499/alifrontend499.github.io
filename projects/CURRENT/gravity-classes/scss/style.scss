@@ -349,8 +349,7 @@ body {
 // full test sec
 .full-test-sec {
     .listing-item {
-        // margin: 0 -15px;
-        margin: 0 -10px;
+        margin: 0 -15px;
         > .li-inner {
             padding: 14px 15px;
             border-bottom: 2px solid #ccc;
@@ -816,7 +815,7 @@ body.root-page-contact {
 
     .buy-list {
         .item {
-            padding: 0 10px 10px;
+            padding: 0 15px 10px;
             &:not(:last-child) {
                 margin-bottom: 20px;
             }
@@ -851,6 +850,36 @@ body.root-page-contact {
                 .body-sec {
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+// classes sec
+#classes-sec {
+}
+.classes-sec {
+    .listing-item {
+        margin: 0 -15px;
+        .li-inner {
+            padding: 15px 15px;
+            border-bottom: 2px solid #ccc;
+            transition: 0.3s;
+            background-color: transparent;
+            &:hover,
+            &:active,
+            &.active {
+                background: rgb(255, 255, 255);
+                background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(215, 215, 215, 1) 100%
+                );
+            }
+        }
+        .lt-sec {
+            width: 70px;
+            img {
             }
         }
     }

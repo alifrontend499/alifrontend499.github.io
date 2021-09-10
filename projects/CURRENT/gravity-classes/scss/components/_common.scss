@@ -72,34 +72,48 @@ $defaultMarginAndPadding: 25px;
 }
 
 // page tab sec
-.page-tab-sec {
-    background-color: $primary-color-shade-1;
-    padding-top: 14px;
-    @include transition;
-    &.sticky {
-        position: sticky;
-        top: 0;
-        z-index: 12;
+.page-tab-sec-main {
+    .tabs-header {
+        background-color: $primary-color-shade-1;
+        padding-top: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+        white-space: nowrap;
+        overflow: auto;
+        @include transition;
+        &.sticky {
+            position: sticky;
+            top: -1px;
+            z-index: 12;
+        }
+        .pts-link {
+            padding: 0 13px 9px;
+            border-bottom: 4px solid transparent;
+            color: $primary-color-light;
+            &.active {
+                color: #fff;
+                border-color: $secondary-color;
+            }
+            .tag {
+                background-color: $secondary-color;
+                color: #fff;
+                min-height: 20px;
+                min-width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+        }
     }
 
-    .pts-link {
-        padding: 0 13px 9px;
-        border-bottom: 4px solid transparent;
-        color: $primary-color-light;
-        &.active {
-            color: #fff;
-            border-color: $secondary-color;
-        }
-        .tag {
-            background-color: $secondary-color;
-            color: #fff;
-            min-height: 20px;
-            min-width: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin-left: 5px;
+    .tabs-content {
+        padding: 15px;
+        .content-loading {
+            margin-top: 10px;
+            padding: 20px;
+            color: $secondary-color;
         }
     }
 }
@@ -185,6 +199,7 @@ $defaultMarginAndPadding: 25px;
     border-style: solid;
     border-color: $gray-bg-color transparent;
     top: 7px;
+
     &::before {
         content: "";
         position: absolute;
@@ -197,12 +212,7 @@ $defaultMarginAndPadding: 25px;
         border-color: transparent transparent $gray-bg-color;
     }
 
-    // upside down
-    &.upside-down {
-        top: -7px;
-        transform: rotate(180deg);
-    }
-
+    // COLORS
     // orange
     &.pi-orange {
         border-color: $pentagon-orange-color transparent;
@@ -218,10 +228,82 @@ $defaultMarginAndPadding: 25px;
             border-color: transparent transparent $pentagon-skyblue-color;
         }
     }
+
+    // primary
+    &.pi-primary {
+        border-color: $primary-color transparent;
+        &::before {
+            border-color: transparent transparent $primary-color;
+        }
+    }
+
+    // secondary
+    &.pi-secondary {
+        border-color: $secondary-color transparent;
+        &::before {
+            border-color: transparent transparent $secondary-color;
+        }
+    }
+}
+
+// pentagon icon
+.pentagon-icon-rotated {
+    position: relative;
+    width: 28px;
+    box-sizing: content-box;
+    border-width: 20px 5px 0;
+    border-style: solid;
+    border-color: $gray-bg-color transparent;
+    top: -7px;
+    transform: rotate(180deg);
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -37px;
+        left: -5px;
+        border-width: 0 19px 17px;
+        border-style: solid;
+        border-color: transparent transparent $gray-bg-color;
+    }
+
+    // COLORS
+    // orange
+    &.pi-orange {
+        border-color: $pentagon-orange-color transparent;
+        &::before {
+            border-color: transparent transparent $pentagon-orange-color;
+        }
+    }
+
+    // sky-blue
+    &.pi-sky-blue {
+        border-color: $pentagon-skyblue-color transparent;
+        &::before {
+            border-color: transparent transparent $pentagon-skyblue-color;
+        }
+    }
+
+    // primary
+    &.pi-primary {
+        border-color: $primary-color transparent;
+        &::before {
+            border-color: transparent transparent $primary-color;
+        }
+    }
+
+    // secondary
+    &.pi-secondary {
+        border-color: $secondary-color transparent;
+        &::before {
+            border-color: transparent transparent $secondary-color;
+        }
+    }
 }
 
 // pentagon icon with text
-
 .pentagon-icon-with-text {
     width: 39px;
     height: 39px;
@@ -246,6 +328,15 @@ $defaultMarginAndPadding: 25px;
         }
     }
 
+    .text {
+        top: 11px;
+        left: 0;
+        width: 100%;
+        padding: 0 6px;
+        overflow: hidden;
+    }
+
+    // COLORS
     // orange
     &.pi-orange {
         .p-icon {
@@ -266,22 +357,99 @@ $defaultMarginAndPadding: 25px;
         }
     }
 
+    // primary
+    &.pi-primary {
+        .p-icon {
+            border-color: $primary-color transparent;
+            &::before {
+                border-color: transparent transparent $primary-color;
+            }
+        }
+    }
+
+    // secondary
+    &.pi-secondary {
+        .p-icon {
+            border-color: $secondary-color transparent;
+            &::before {
+                border-color: transparent transparent $secondary-color;
+            }
+        }
+    }
+}
+
+// pentagon icon rotated with text
+.pentagon-icon-rotated-with-text {
+    width: 39px;
+    height: 39px;
+    .p-icon {
+        position: relative;
+        width: 28px;
+        box-sizing: content-box;
+        border-width: 20px 5px 0;
+        border-style: solid;
+        border-color: $gray-bg-color transparent;
+        top: 1px;
+        transform: rotate(180deg);
+        &::before {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -37px;
+            left: -5px;
+            border-width: 0 19px 17px;
+            border-style: solid;
+            border-color: transparent transparent $gray-bg-color;
+        }
+    }
+
     .text {
-        top: 11px;
+        top: 5px;
         left: 0;
         width: 100%;
         padding: 0 6px;
         overflow: hidden;
     }
 
-    // upside down
-    &.upside-down {
+    // COLORS
+    // orange
+    &.pi-orange {
         .p-icon {
-            top: 1px;
-            transform: rotate(180deg);
+            border-color: $pentagon-orange-color transparent;
+            &::before {
+                border-color: transparent transparent $pentagon-orange-color;
+            }
         }
-        .text {
-            top: 5px;
+    }
+
+    // sky-blue
+    &.pi-sky-blue {
+        .p-icon {
+            border-color: $pentagon-skyblue-color transparent;
+            &::before {
+                border-color: transparent transparent $pentagon-skyblue-color;
+            }
+        }
+    }
+
+    // primary
+    &.pi-primary {
+        .p-icon {
+            border-color: $primary-color transparent;
+            &::before {
+                border-color: transparent transparent $primary-color;
+            }
+        }
+    }
+
+    // secondary
+    &.pi-secondary {
+        .p-icon {
+            border-color: $secondary-color transparent;
+            &::before {
+                border-color: transparent transparent $secondary-color;
+            }
         }
     }
 }
