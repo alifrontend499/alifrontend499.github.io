@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gravity Classes</title>
+
+    <!-- FEATHER ICONS -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="otp-body">
+    <div id="otp-form">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="otp-form">
+                <!-- img -->
+                <div class="app-main-heading mb-4 text-center">
+                    <p class="app-heading text-white app-fw-600">Verify your <br> Phone Number</p>
+                    <p class="app-desc mt-2 app-fs-18 text-white-50">Enter your OTP code here</p>
+                </div>
+
+                <!-- input -->
+                <div class="app-form-container d-flex">
+                    <div class="app-form app-form-lg no-arrows mb-5">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                    <div class="app-form app-form-lg no-arrows mb-4">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                    <div class="app-form app-form-lg no-arrows mb-4">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                    <div class="app-form app-form-lg no-arrows mb-4">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                    <div class="app-form app-form-lg no-arrows mb-4">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                    <div class="app-form app-form-lg no-arrows mb-4">
+                        <input type="number" class="form-control text-center" maxlength="1" max="1" min="1"
+                            minlength="1">
+                    </div>
+                </div>
+
+                <!-- btns -->
+                <div class="btns text-center">
+                    <p class="app-desc mt-2 text-white mb-3">Didn't you receive any code ?</p>
+                    <div class="btn w-100 app-btn app-btn-lg app-btn-rounded app-btn-secondary text-uppercase">resend
+                        new code
+                    </div>
+                    <p class="app-desc mt-2 text-white mt-3">OTP Expires in 2.00 min</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/jquery/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SCRIPT CUSTOM -->
+    <script src="js/app.js"></script>
+
+    <script>
+        $(function () {
+            $('.app-form-container input').keyup(function (ev) {
+                if ($(this).val().length >= 1) {
+                    if ($(this).parent().next().length) {
+                        $(this).parent().next().find('input').focus()
+                    }
+                }
+            })
+            $('.app-form-container input').keydown(function (ev) {
+                if (event.key !== "Backspace" && $(this).val().length > 0) {
+                    ev.preventDefault()
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

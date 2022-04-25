@@ -39,6 +39,21 @@
         }
     }
 
+    // no right arrows on input type number
+    &.no-arrows {
+        input[type="number"] {
+            /* Chrome, Safari, Edge, Opera */
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            -moz-appearance: textfield;
+        }
+    }
+
     // default height
     > input:not([type="radio"]):not([type="checkbox"]),
     > select {
@@ -59,6 +74,14 @@
         > input:not([type="radio"]):not([type="checkbox"]),
         > select {
             height: 30px;
+        }
+    }
+    &.app-form-lg {
+        > input:not([type="radio"]):not([type="checkbox"]),
+        > select {
+            height: 50px;
+            padding: 11px 15px 10px;
+            font-size: 16px;
         }
     }
 

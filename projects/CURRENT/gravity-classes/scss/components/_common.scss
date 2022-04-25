@@ -511,7 +511,7 @@ $defaultMarginAndPadding: 25px;
         left: 0;
         height: 100%;
         width: 100%;
-        padding: 0 5px;
+        padding: 2px 5px 0;
         overflow: hidden;
     }
 }
@@ -577,5 +577,23 @@ $defaultMarginAndPadding: 25px;
                 background-color: #e7e7e7;
             }
         }
+    }
+}
+
+/* table or question */
+.table-for-question {
+    .img-text-block {
+        .img {
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+    td,
+    th {
+        vertical-align: middle;
+        border: 1px solid #333;
+        padding: 7px 15px;
+        font-size: 15px;
     }
 }

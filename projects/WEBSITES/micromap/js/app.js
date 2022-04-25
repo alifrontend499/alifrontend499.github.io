@@ -97,16 +97,20 @@ $(function () {
         // open mega menu
         $('.st-head-menu > li.has-menu > a').click(function (ev) {
             ev.preventDefault()
-            ev.stopPropagation()
-            $(this).parent().toggleClass('active')
-            $(this).next('.mega-menu').slideToggle(200)
+            if ($(window).width() < 768) {
+                ev.stopPropagation()
+                $(this).parent().toggleClass('active')
+                $(this).next('.mega-menu').slideToggle(200)
+            }
         })
         // closing mega menu on clicking outside
         $(document).mouseup(function (e) {
-            var container = $(".mega-menu");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-                container.hide();
-                $('.st-head-menu > li').removeClass('active')
+            if ($(window).width() < 768) {
+                var container = $(".mega-menu");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.hide();
+                    $('.st-head-menu > li').removeClass('active')
+                }
             }
         });
 
@@ -141,41 +145,41 @@ $(function () {
                 // for main category
                 if ($this.closest('.frac').hasClass('main-cat')) {
                     $this.closest('.frac.main-cat')
-                    .next().addClass('active')
-                    .nextAll().removeClass('active')
+                        .next().addClass('active')
+                        .nextAll().removeClass('active')
 
                     $this.closest('.frac.main-cat')
-                    .next().find('.frac-inner').html(html)
+                        .next().find('.frac-inner').html(html)
                 }
 
                 // for main category type
                 if ($this.closest('.frac').hasClass('cat-type')) {
                     $this.closest('.frac.cat-type')
-                    .next().addClass('active')
-                    .nextAll().removeClass('active')
+                        .next().addClass('active')
+                        .nextAll().removeClass('active')
 
                     $this.closest('.frac.cat-type')
-                    .next().find('.frac-inner').html(html)
+                        .next().find('.frac-inner').html(html)
                 }
 
                 // for main brands
                 if ($this.closest('.frac').hasClass('brands')) {
                     $this.closest('.frac.brands')
-                    .next().addClass('active')
-                    .nextAll().removeClass('active')
+                        .next().addClass('active')
+                        .nextAll().removeClass('active')
 
                     $this.closest('.frac.brands')
-                    .next().find('.frac-inner').html(html)
+                        .next().find('.frac-inner').html(html)
                 }
 
                 // for main brands sub category
                 if ($this.closest('.frac').hasClass('brands-sub-cat')) {
                     $this.closest('.frac.brands-sub-cat')
-                    .next().addClass('active')
-                    .nextAll().removeClass('active')
+                        .next().addClass('active')
+                        .nextAll().removeClass('active')
 
                     $this.closest('.frac.brands-sub-cat')
-                    .next().find('.frac-inner').html(html)
+                        .next().find('.frac-inner').html(html)
                 }
             }, 1000)
         })

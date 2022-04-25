@@ -61,6 +61,7 @@ body {
         background: #fff;
         position: relative;
         background-color: $primary-color;
+        z-index: 12;
     }
     .close-icon {
         color: #fff;
@@ -881,6 +882,61 @@ body.root-page-contact {
             width: 70px;
             img {
             }
+        }
+    }
+}
+
+// login
+.login-body,
+#login-form {
+    height: 100vh;
+    padding-bottom: 0;
+    background-color: $primary-color;
+    background: rgb(28, 83, 113);
+    background: radial-gradient(
+        circle,
+        rgba(28, 83, 113, 1) 22%,
+        rgba(12, 55, 79, 1) 100%
+    );
+}
+
+#login-form {
+    padding: 15px 15px;
+    overflow: auto;
+}
+
+.login-form {
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+// otp
+.otp-body,
+#otp-form {
+    height: 100vh;
+    padding-bottom: 0;
+    background-color: $primary-color;
+    background: rgb(28, 83, 113);
+    background: radial-gradient(
+        circle,
+        rgba(28, 83, 113, 1) 22%,
+        rgba(12, 55, 79, 1) 100%
+    );
+}
+
+#otp-form {
+    padding: 15px 15px;
+    overflow: auto;
+}
+
+.otp-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .app-form-container {
+        > .app-form {
+            padding: 0 4px;
         }
     }
 }

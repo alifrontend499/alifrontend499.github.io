@@ -38,7 +38,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media screen and (min-width: 768px) { .ST_main-head { margin-bottom: 20px; } }
 @media screen and (min-width: 992px) { .ST_main-head { margin-bottom: 35px; } }
 .ST_main-head span { color: #fde428; }
-.ST_main-head::after { content: ''; display: block; height: 7px; width: 75px; background-color: #fde428; margin: 15px auto 0; border-radius: 20px; }
+.ST_main-head::after { content: ""; display: block; height: 7px; width: 75px; background-color: #fde428; margin: 15px auto 0; border-radius: 20px; }
 
 .ST_main-head-small { font-weight: 600; font-size: 30px; color: #000; margin-bottom: 15px; }
 @media screen and (min-width: 768px) { .ST_main-head-small { margin-bottom: 20px; } }
@@ -78,7 +78,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .st-head-menu > li > a { color: #747474; text-decoration: none !important; outline: none !important; transition: 0.3s; }
 .st-head-menu > li > a:hover { color: #1a317c; }
 .st-head-menu > li.has-menu.active > a { position: relative; }
-.st-head-menu > li.has-menu.active > a::after { content: '\f0de'; font-family: "Font Awesome 5 Free"; position: absolute; bottom: -20px; left: 45px; }
+.st-head-menu > li.has-menu.active > a::after { content: "\f0de"; font-family: "Font Awesome 5 Free"; position: absolute; bottom: -20px; left: 45px; }
 @media screen and (min-width: 768px) { .st-head-menu > li.has-menu.active > a::after { left: 50%; transform: translatex(-50%); } }
 .st-head-menu > li:hover > a { color: #1a317c; }
 .st-head-menu > li.active > a { color: #1a317c; }
@@ -89,13 +89,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 .st-head-menu > li.cart { padding-right: 0; }
 .st-head-menu > li.cart > a { color: #333; }
 .st-head-menu > li.cart > a > .cart-count { top: -13px; right: -2px; min-height: 15px; min-width: 15px; background: #fde428; border-radius: 50%; font-size: 7px; font-size: 10px; color: #000; padding: 0 2px; }
-.st-head-menu .mega-menu { top: 100%; padding-top: 11px; z-index: 12; display: none; }
+.st-head-menu .mega-menu { top: 90%; z-index: -12; opacity: 0; visibility: hidden; }
 @media screen and (max-width: 768px) { .st-head-menu .mega-menu { width: calc(100% - 10px); margin-left: 5px; }
   .st-head-menu .mega-menu > .inner { max-height: 250px; overflow: auto; } }
 @media screen and (min-width: 768px) { .st-head-menu .mega-menu { right: 0; width: calc(100% + 80px); position: absolute; } }
 @media screen and (min-width: 1200px) { .st-head-menu .mega-menu { left: 50%; transform: translateX(-50%); } }
 .st-head-menu .mega-menu > .inner { background-color: #fff; position: relative; border: 1px solid #d6d6d6; }
-.st-head-menu .mega-menu > .inner::after { content: ''; top: 0; height: 5px; width: 5px; }
+.st-head-menu .mega-menu > .inner::after { content: ""; top: 0; height: 5px; width: 5px; }
 .st-head-menu .mega-menu .main-level > .frac { width: 100%; }
 .st-head-menu .mega-menu .main-level > .frac:not(.active) { display: none; }
 @media screen and (min-width: 768px) { .st-head-menu .mega-menu .main-level > .frac { width: 20%; } }
@@ -113,6 +113,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .st-head-menu .mega-menu .main-level .mm-menu > li > a > i:hover { background-color: #1a317c; color: #fff; }
 .st-head-menu .mega-menu .main-level .mm-menu > li:hover > a, .st-head-menu .mega-menu .main-level .mm-menu > li.active > a { background: #efefef; }
 .st-head-menu .mega-menu .loading { top: 0; left: 0; background: rgba(0, 0, 0, 0.1); color: #1a317c; font-size: 40px; }
+.st-head-menu > li:hover > .mega-menu { opacity: 1; visibility: visible; z-index: 12; }
 
 .ST_def-mar-T, .ST_def-mar-TB { margin-top: 20px; }
 @media screen and (min-width: 992px) { .ST_def-mar-T, .ST_def-mar-TB { margin-top: 70px; } }
@@ -138,7 +139,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .ST_breadcrumbs > ul > li > a { color: #333; text-decoration: none; display: flex; align-items: center; }
 .ST_breadcrumbs > ul > li > a i { color: #1a317c; margin-right: 5px; }
 .ST_breadcrumbs > ul > li:not(:last-child) { padding-right: 20px; }
-.ST_breadcrumbs > ul > li:not(:last-child):after { content: '/'; margin: 0 5px 0 6px; position: absolute; right: 0; top: 0; }
+.ST_breadcrumbs > ul > li:not(:last-child):after { content: "/"; margin: 0 5px 0 6px; position: absolute; right: 0; top: 0; }
 .ST_breadcrumbs > ul > li:hover > a { color: #1a317c; }
 .ST_breadcrumbs > ul > li.active > a { color: #1a317c; pointer-events: none !important; }
 

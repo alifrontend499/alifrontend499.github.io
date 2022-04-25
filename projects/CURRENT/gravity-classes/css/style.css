@@ -77,8 +77,7 @@ button.no-browser-style { background: transparent; padding: initial; line-height
 .app-btn.app-btn-sm { padding-top: 5px; padding-bottom: 5px; }
 @media screen and (min-width: 576px) { .app-btn.app-btn-sm { padding-top: 7px; padding-bottom: 7px; } }
 .app-btn.app-btn-md { padding: 12px 15px 11px; font-size: 16px; }
-.app-btn.app-btn-lg { padding: 14px 25px 15px; font-size: 19px; }
-@media screen and (min-width: 576px) { .app-btn.app-btn-lg { padding: 14px 25px 15px; min-width: 200px; } }
+.app-btn.app-btn-lg { padding: 13px 15px 11px; font-size: 18px; font-weight: 600; }
 .app-btn.app-btn-secondary { background-color: #019c9e; color: #fff; }
 .app-btn.app-btn-secondary:hover { background-color: #018385; color: #fff; }
 .app-btn.app-btn-secondary:active, .app-btn.app-btn-secondary.active { background-color: #016a6b; color: #fff; }
@@ -208,9 +207,12 @@ a.app-text-dark:hover { color: #242424 !important; }
 .app-form > input:not([type="radio"]):not([type="checkbox"]):-ms-input-placeholder, .app-form > select:-ms-input-placeholder, .app-form > textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: #6e6e6e; }
 .app-form > input:not([type="radio"]):not([type="checkbox"])::-ms-input-placeholder, .app-form > select::-ms-input-placeholder, .app-form > textarea::-ms-input-placeholder { /* Microsoft Edge */ color: #6e6e6e; }
 .app-form:not(.no-shadow) > input:not([type="radio"]):not([type="checkbox"]):focus, .app-form:not(.no-shadow) > select:focus, .app-form:not(.no-shadow) > textarea:focus { -webkit-box-shadow: 0px 0px 2px 0px #019c9e; box-shadow: 0px 0px 2px 0px #019c9e; }
+.app-form.no-arrows input[type="number"] { /* Chrome, Safari, Edge, Opera */ /* Firefox */ -moz-appearance: textfield; }
+.app-form.no-arrows input[type="number"]::-webkit-outer-spin-button, .app-form.no-arrows input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .app-form > input:not([type="radio"]):not([type="checkbox"]), .app-form > select { height: 42px; }
 .app-form.app-form-rounded > input:not([type="radio"]):not([type="checkbox"]), .app-form.app-form-rounded > select { border-radius: 42px; }
 .app-form.app-form-sm > input:not([type="radio"]):not([type="checkbox"]), .app-form.app-form-sm > select { height: 30px; }
+.app-form.app-form-lg > input:not([type="radio"]):not([type="checkbox"]), .app-form.app-form-lg > select { height: 50px; padding: 11px 15px 10px; font-size: 16px; }
 .app-form.input-underline > input:not([type="radio"]):not([type="checkbox"]), .app-form.input-underline > select, .app-form.input-underline > textarea { background-color: transparent; border: none; border-bottom: 1px solid #b1b1b1; padding-left: 0; padding-right: 0; border-radius: 0; box-shadow: none; }
 .app-form.input-underline > input:not([type="radio"]):not([type="checkbox"]):focus, .app-form.input-underline > select:focus, .app-form.input-underline > textarea:focus { border-color: #0c374f; }
 .app-form.with-icon, .app-form.with-icon-right { position: relative; }
@@ -335,7 +337,7 @@ a.app-text-dark:hover { color: #242424 !important; }
 .round-icon-with-text.pi-dark-gray .r-icon { background-color: #a5a5a5; }
 .round-icon-with-text.pi-primary .r-icon { background-color: #0c374f; }
 .round-icon-with-text.pi-secondary .r-icon { background-color: #019c9e; }
-.round-icon-with-text .text { top: 0; left: 0; height: 100%; width: 100%; padding: 0 5px; overflow: hidden; }
+.round-icon-with-text .text { top: 0; left: 0; height: 100%; width: 100%; padding: 2px 5px 0; overflow: hidden; }
 
 .app-white-shadow-box { box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); border-radius: 12px; background-color: #fff; }
 
@@ -348,6 +350,10 @@ a.app-text-dark:hover { color: #242424 !important; }
 .faqs-wrapper .faq-item .faq-body { padding: 10px 10px; border: 1px solid #efefef; border-radius: 4px; margin-top: 5px; font-size: 14px; }
 .faqs-wrapper .faq-item.active .faq-header { background-color: #e7e7e7; }
 
+/* table or question */
+.table-for-question .img-text-block .img img { max-width: 100px; }
+.table-for-question td, .table-for-question th { vertical-align: middle; border: 1px solid #333; padding: 7px 15px; font-size: 15px; }
+
 body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px; color: #3d3d3d; padding-bottom: 80px; }
 
 #app-header { padding: 5px 0; }
@@ -359,7 +365,7 @@ body { font-family: "Nunito Sans", sans-serif; font-weight: 400; font-size: 15px
 .header-left-menu .overlay { position: fixed; top: 0; left: -100%; height: 100%; width: 100%; background: rgba(0, 0, 0, 0.3); z-index: 11; }
 .header-left-menu.active { left: 0; }
 .header-left-menu.active .overlay { left: 0; }
-.header-left-menu > .hlm-inner { height: 100%; overflow: auto; background: #fff; position: relative; background-color: #0c374f; }
+.header-left-menu > .hlm-inner { height: 100%; overflow: auto; background: #fff; position: relative; background-color: #0c374f; z-index: 12; }
 .header-left-menu .close-icon { color: #fff; }
 .header-left-menu .hlm-link { text-decoration: none; color: #fff; transition: 0.3s; font-size: 16px; padding: 12px 15px 11px; border-left: 5px solid transparent; margin-bottom: 5px; }
 .header-left-menu .hlm-link .icon { top: 1px; }
@@ -527,5 +533,18 @@ body.root-page-contact { background-color: #ebebeb; }
 .classes-sec .listing-item .li-inner { padding: 15px 15px; border-bottom: 2px solid #ccc; transition: 0.3s; background-color: transparent; }
 .classes-sec .listing-item .li-inner:hover, .classes-sec .listing-item .li-inner:active, .classes-sec .listing-item .li-inner.active { background: white; background: linear-gradient(180deg, white 0%, #d7d7d7 100%); }
 .classes-sec .listing-item .lt-sec { width: 70px; }
+
+.login-body, #login-form { height: 100vh; padding-bottom: 0; background-color: #0c374f; background: #1c5371; background: radial-gradient(circle, #1c5371 22%, #0c374f 100%); }
+
+#login-form { padding: 15px 15px; overflow: auto; }
+
+.login-form { height: 100%; padding-top: 15px; padding-bottom: 15px; }
+
+.otp-body, #otp-form { height: 100vh; padding-bottom: 0; background-color: #0c374f; background: #1c5371; background: radial-gradient(circle, #1c5371 22%, #0c374f 100%); }
+
+#otp-form { padding: 15px 15px; overflow: auto; }
+
+.otp-form { padding-top: 15px; padding-bottom: 15px; }
+.otp-form .app-form-container > .app-form { padding: 0 4px; }
 
 /*# sourceMappingURL=style.css.map */

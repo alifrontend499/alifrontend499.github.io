@@ -178,12 +178,9 @@ button.no-browser-style {
 
     // large btn
     &.app-btn-lg {
-        padding: 14px 25px 15px;
-        font-size: 19px;
-        @include min-width($sm-min) {
-            padding: 14px 25px 15px;
-            min-width: 200px;
-        }
+        padding: 13px 15px 11px;
+        font-size: 18px;
+        font-weight: 600;
     }
     // with icon
     &.with-icon {
